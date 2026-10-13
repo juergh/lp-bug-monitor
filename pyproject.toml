@@ -1,0 +1,39 @@
+[project]
+name = "lp-bug-monitor"
+version = "0.1.0"
+description = "Launchpad bug status scanner and HTML report generator for Ubuntu source packages"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "launchpadlib>=2.3.0",
+]
+
+[project.scripts]
+lp-bug-monitor = "lp_bug_monitor.cli:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+    "ruff>=0.15.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/lp_bug_monitor"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+filterwarnings = [
+    "ignore::DeprecationWarning:httplib2.*",
+]
