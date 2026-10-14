@@ -116,17 +116,51 @@ class BugRecord:
         )
 
 
+def is_ubuntu_task(task: Any) -> bool:
+    """Determine whether a bug task is targeted at Ubuntu or an Ubuntu series.
+
+    Non-Ubuntu tasks (upstream projects, other distributions) are ignored.
+    """
+    if isinstance(task, TaskRecord):
+        target = task.target
+        target_display = task.target_display
+        web_link = task.web_link
+    elif isinstance(task, dict):
+        target = str(task.get("target", ""))
+        target_display = str(task.get("target_display", ""))
+        web_link = str(task.get("web_link", ""))
+    else:
+        target = str(getattr(task, "bug_target_name", "") or "")
+        target_display = str(getattr(task, "bug_target_display_name", "") or "")
+        web_link = str(getattr(task, "web_link", "") or "")
+
+    target_combined = f"{target} {target_display}".lower()
+    if "(ubuntu" in target_combined:
+        return True
+    if target.strip().lower() == "ubuntu" or target_display.strip().lower() == "ubuntu":
+        return True
+    if "/ubuntu" in web_link.lower():
+        return True
+
+    distro_link = getattr(task, "distribution_link", None)
+    if isinstance(distro_link, str) and "/ubuntu" in distro_link.lower():
+        return True
+
+    return False
+
+
 def is_bug_closed(tasks: list[TaskRecord | dict[str, Any] | Any]) -> bool:
     """Determine if a bug is closed.
 
-    Rule: A closed bug can not have any non-closed bug tasks.
-    Therefore, if ANY task is not complete, the bug is NOT closed.
-    If all tasks are complete (or no tasks exist), the bug is considered closed.
+    Rule: Ignore non-Ubuntu tasks. A closed bug cannot have any non-closed Ubuntu bug tasks.
+    Therefore, if ANY Ubuntu task is not complete, the bug is NOT closed.
+    If all Ubuntu tasks are complete (or no Ubuntu tasks exist), the bug is considered closed.
     """
-    if not tasks:
+    ubuntu_tasks = [t for t in tasks if is_ubuntu_task(t)]
+    if not ubuntu_tasks:
         return True
 
-    for t in tasks:
+    for t in ubuntu_tasks:
         if isinstance(t, TaskRecord):
             complete = t.is_complete
         elif isinstance(t, dict):
@@ -222,12 +256,12 @@ def extract_bug_record(lp_bug: Any, matched_packages: set[str] | None = None) ->
 
     Returns None if the bug is closed (i.e. has zero non-closed tasks).
     """
-    raw_tasks = list(getattr(lp_bug, "bug_tasks", []))
+    raw_tasks = [t for t in getattr(lp_bug, "bug_tasks", []) if is_ubuntu_task(t)]
     task_records = [extract_task_record(t) for t in raw_tasks]
 
-    # Enforce rule: Ignore closed bugs. A closed bug can not have any non-closed bug tasks.
+    # Enforce rule: Ignore closed bugs. A closed bug cannot have any non-closed Ubuntu bug tasks.
     if is_bug_closed(task_records):
-        logger.debug("Bug #%s is closed (all tasks complete); ignoring", lp_bug.id)
+        logger.debug("Bug #%s is closed (all Ubuntu tasks complete); ignoring", lp_bug.id)
         return None
 
     last_activity_time, last_activity_summary = extract_last_activity(lp_bug)
