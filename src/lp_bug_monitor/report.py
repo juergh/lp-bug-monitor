@@ -251,12 +251,7 @@ def generate_html_report(
                 </div>
             </td>
             <td class="col-created font-mono">{created_time}</td>
-            <td class="col-activity" title="{last_act_summary}">
-                <div class="activity-wrap">
-                    <span class="activity-time font-mono">{last_act_time}</span>
-                    <span class="activity-desc text-muted">{last_act_summary}</span>
-                </div>
-            </td>
+            <td class="col-activity font-mono" title="{last_act_summary}">{last_act_time}</td>
         </tr>
         <tr class="details-row" id="details-{b_id}" style="display: none;">
             <td colspan="8">
@@ -353,8 +348,8 @@ def generate_html_report(
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     background: var(--bg-main);
     color: var(--text-main);
-    line-height: 1.5;
-    padding: 24px 32px;
+    line-height: 1.4;
+    padding: 16px 20px;
   }}
 
   a {{ color: var(--link-color); text-decoration: none; }}
@@ -369,83 +364,83 @@ def generate_html_report(
   .header {{
     background: linear-gradient(135deg, var(--brand-canonical), var(--brand-hover));
     color: white;
-    padding: 24px 32px;
-    border-radius: 12px;
-    margin-bottom: 24px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    padding: 14px 20px;
+    border-radius: 8px;
+    margin-bottom: 14px;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.1);
   }}
-  .header h1 {{ font-size: 1.75rem; font-weight: 700; margin-bottom: 8px; }}
-  .header p {{ color: rgba(255, 255, 255, 0.85); font-size: 0.95rem; }}
+  .header h1 {{ font-size: 1.35rem; font-weight: 700; margin-bottom: 4px; }}
+  .header p {{ color: rgba(255, 255, 255, 0.85); font-size: 0.85rem; }}
 
   /* Metric cards */
   .stats-bar {{
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
-    margin-bottom: 24px;
+    gap: 10px;
+    margin-bottom: 14px;
   }}
   .stat-card {{
     background: var(--bg-card);
-    padding: 16px 20px;
-    border-radius: 8px;
+    padding: 10px 14px;
+    border-radius: 6px;
     border: 1px solid var(--border-color);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
     flex: 1;
-    min-width: 180px;
+    min-width: 150px;
   }}
   .stat-card .label {{
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
     color: var(--text-muted);
     font-weight: 600;
     letter-spacing: 0.05em;
   }}
-  .stat-card .value {{ font-size: 1.8rem; font-weight: 700; color: var(--brand-canonical); margin-top: 4px; }}
-  .summary-chips {{ display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 4px; }}
+  .stat-card .value {{ font-size: 1.4rem; font-weight: 700; color: var(--brand-canonical); margin-top: 2px; }}
+  .summary-chips {{ display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-top: 4px; }}
   .summary-chip {{
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     background: #f3f4f6;
-    padding: 3px 8px;
+    padding: 2px 6px;
     border-radius: 4px;
     display: inline-flex;
     align-items: center;
-    gap: 6px;
+    gap: 5px;
   }}
-  .chip-status {{ width: 8px; height: 8px; border-radius: 50%; }}
+  .chip-status {{ width: 7px; height: 7px; border-radius: 50%; }}
 
   /* Controls bar */
   .controls-bar {{
     background: var(--bg-card);
-    padding: 16px 20px;
-    border-radius: 8px;
+    padding: 8px 12px;
+    border-radius: 6px;
     border: 1px solid var(--border-color);
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 8px;
     align-items: center;
     justify-content: space-between;
   }}
-  .filter-group {{ display: flex; flex-wrap: wrap; gap: 12px; align-items: center; flex: 1; }}
+  .filter-group {{ display: flex; flex-wrap: wrap; gap: 8px; align-items: center; flex: 1; }}
   .search-input {{
-    padding: 8px 12px;
+    padding: 5px 10px;
     border: 1px solid #d1d5db;
-    border-radius: 6px;
-    font-size: 0.9rem;
-    min-width: 260px;
+    border-radius: 5px;
+    font-size: 0.84rem;
+    min-width: 240px;
     flex: 1;
   }}
   .select-filter {{
-    padding: 8px 12px;
+    padding: 5px 10px;
     border: 1px solid #d1d5db;
-    border-radius: 6px;
-    font-size: 0.9rem;
+    border-radius: 5px;
+    font-size: 0.84rem;
     background: white;
   }}
   .btn {{
-    padding: 8px 14px;
-    border-radius: 6px;
-    font-size: 0.875rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.82rem;
     font-weight: 600;
     cursor: pointer;
     border: 1px solid transparent;
@@ -457,29 +452,31 @@ def generate_html_report(
   /* Table */
   .table-container {{
     background: var(--bg-card);
-    border-radius: 8px;
+    border-radius: 6px;
     border: 1px solid var(--border-color);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
     overflow-x: auto;
   }}
   table.bugs-table {{
     width: 100%;
     border-collapse: collapse;
     text-align: left;
-    font-size: 0.9rem;
+    font-size: 0.84rem;
+    line-height: 1.35;
   }}
   table.bugs-table th {{
     background: #f9fafb;
-    padding: 12px 16px;
+    padding: 6px 10px;
     font-weight: 600;
     color: #4b5563;
+    font-size: 0.8rem;
     border-bottom: 1px solid var(--border-color);
     user-select: none;
     cursor: pointer;
   }}
   table.bugs-table th:hover {{ background: #f3f4f6; color: #111827; }}
   table.bugs-table td {{
-    padding: 12px 16px;
+    padding: 5px 10px;
     border-bottom: 1px solid var(--border-color);
     vertical-align: middle;
   }}
@@ -488,48 +485,45 @@ def generate_html_report(
   .bug-row {{ cursor: pointer; transition: background 0.1s ease; }}
   .bug-row:hover {{ background: #fdf2e9; }}
   .bug-row.expanded {{ background: #fbf0e8; font-weight: 500; }}
-  .col-toggle {{ width: 36px; text-align: center; color: var(--text-muted); font-size: 0.8rem; }}
+  .col-toggle {{
+    width: 24px;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    padding: 5px 2px !important;
+  }}
   .toggle-icon {{ display: inline-block; transition: transform 0.2s ease; }}
   .expanded .toggle-icon {{ transform: rotate(90deg); color: var(--brand-orange); }}
-  .col-flame {{ width: 54px; text-align: center; white-space: nowrap; user-select: none; font-size: 0.95rem; }}
+  .col-flame {{ width: 48px; text-align: center; white-space: nowrap; user-select: none; font-size: 0.85rem; }}
   .flame-tier {{ cursor: default; letter-spacing: -1px; }}
   .flame-0 {{ color: #9ca3af; }}
-  .col-id {{ width: 100px; font-weight: 600; white-space: nowrap; }}
+  .col-id {{ width: 80px; font-weight: 600; white-space: nowrap; }}
   .col-title {{ max-width: 440px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }}
-  .col-package {{ width: 160px; white-space: nowrap; }}
-  .col-tasks {{ width: 260px; }}
-  .col-created {{ width: 140px; white-space: nowrap; }}
-  .col-activity {{ width: 220px; }}
+  .col-package {{ width: 140px; white-space: nowrap; }}
+  .col-tasks {{ width: auto; white-space: nowrap; }}
+  .col-created {{ width: 130px; white-space: nowrap; }}
+  .col-activity {{ width: 130px; white-space: nowrap; }}
 
-  .tasks-summary-wrap {{ display: flex; flex-direction: column; gap: 4px; }}
-  .task-count-pill {{ font-size: 0.8rem; }}
-  .status-badges-group {{ display: flex; flex-wrap: wrap; gap: 4px; }}
-
-  .activity-wrap {{ display: flex; flex-direction: column; gap: 2px; }}
-  .activity-time {{ font-size: 0.85rem; font-weight: 600; color: #374151; }}
-  .activity-desc {{
-    font-size: 0.75rem;
-    max-width: 220px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }}
+  .tasks-summary-wrap {{ display: flex; flex-wrap: wrap; align-items: center; gap: 5px; }}
+  .task-count-pill {{ font-size: 0.76rem; white-space: nowrap; }}
+  .status-badges-group {{ display: inline-flex; flex-wrap: wrap; align-items: center; gap: 3px; }}
 
   /* Badges */
   .package-pill {{
     background: #e0e7ff;
     color: #3730a3;
-    padding: 2px 8px;
-    border-radius: 9999px;
-    font-size: 0.8rem;
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 0.76rem;
     font-weight: 600;
   }}
   .status-badge {{
-    padding: 2px 8px;
-    border-radius: 4px;
-    font-size: 0.75rem;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 0.72rem;
     font-weight: 600;
     text-transform: capitalize;
+    white-space: nowrap;
   }}
   .badge-inprogress {{ background: #ffedd5; color: #9a3412; }}
   .badge-fixcommitted {{ background: #ccfbf1; color: #115e59; }}
@@ -543,49 +537,50 @@ def generate_html_report(
     background: #fef9c3;
     color: #854d0e;
     border: 1px solid #fde047;
-    padding: 1px 6px;
-    border-radius: 4px;
-    font-size: 0.75rem;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 0.72rem;
     font-weight: 700;
     white-space: nowrap;
   }}
 
   /* Details row */
   .details-row td {{ padding: 0 !important; background: #fafafa; border-bottom: 2px solid #e5e7eb; }}
-  .details-panel {{ padding: 20px 24px; }}
-  .details-grid {{ display: grid; grid-template-columns: 3fr 2fr; gap: 24px; }}
+  .details-panel {{ padding: 12px 16px; }}
+  .details-grid {{ display: grid; grid-template-columns: 3fr 2fr; gap: 16px; }}
   .details-tasks-card, .details-meta-card {{
     background: white;
     border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 16px;
+    border-radius: 6px;
+    padding: 12px;
     box-shadow: 0 1px 2px rgba(0,0,0,0.03);
   }}
   .details-tasks-card h4, .details-meta-card h4 {{
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     font-weight: 700;
     color: #374151;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
   }}
 
-  table.subtable {{ width: 100%; border-collapse: collapse; font-size: 0.85rem; }}
+  table.subtable {{ width: 100%; border-collapse: collapse; font-size: 0.8rem; }}
   table.subtable th {{
     background: #f9fafb;
-    padding: 8px 10px;
+    padding: 5px 8px;
     font-weight: 600;
     color: var(--text-muted);
     border-bottom: 1px solid var(--border-color);
     text-align: left;
+    font-size: 0.78rem;
   }}
-  table.subtable td {{ padding: 8px 10px; border-bottom: 1px solid #f3f4f6; }}
-  .link-ext {{ font-weight: 600; font-size: 0.8rem; }}
+  table.subtable td {{ padding: 4px 8px; border-bottom: 1px solid #f3f4f6; font-size: 0.8rem; }}
+  .link-ext {{ font-weight: 600; font-size: 0.78rem; }}
 
-  .meta-item {{ display: flex; gap: 8px; margin-bottom: 8px; font-size: 0.85rem; }}
+  .meta-item {{ display: flex; gap: 8px; margin-bottom: 5px; font-size: 0.82rem; }}
   .meta-item strong {{ min-width: 105px; color: var(--text-muted); }}
   .tags-wrap {{ display: flex; flex-wrap: wrap; gap: 4px; }}
-  .tag-pill {{ background: #f3f4f6; color: #4b5563; padding: 1px 6px; border-radius: 4px; font-size: 0.75rem; }}
+  .tag-pill {{ background: #f3f4f6; color: #4b5563; padding: 1px 5px; border-radius: 3px; font-size: 0.72rem; }}
 
-  .no-bugs {{ text-align: center; padding: 48px 16px; color: var(--text-muted); font-size: 1.1rem; }}
+  .no-bugs {{ text-align: center; padding: 32px 16px; color: var(--text-muted); font-size: 1rem; }}
 
   @media (max-width: 1024px) {{
     body {{ padding: 16px; }}
