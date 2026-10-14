@@ -95,8 +95,35 @@ def test_generate_html_report_with_bugs(tmp_path: Path):
     assert "2026-04-10 03:11" in content
     assert 'data-created="2026-04-10T03:11:23+00:00"' in content
     assert "sortTable('created')" in content
-    # Ensure importance is NOT in the HTML
-    assert "importance" not in content.lower()
+    assert "sortTable('flame')" in content
+    assert "col-flame" in content
+    assert "data-flame" in content
+    assert "Importance" in content
+
+
+def test_generate_html_report_with_info_added_flag(tmp_path: Path):
+    out_file = tmp_path / "info_added.html"
+    bugs = {
+        "999": {
+            "id": 999,
+            "title": "Needs info bug",
+            "package": "linux-firmware",
+            "has_activity_after_incomplete": True,
+            "tasks": [
+                {
+                    "target": "linux-firmware (Ubuntu)",
+                    "status": "Incomplete",
+                    "importance": "High",
+                    "is_complete": False,
+                }
+            ],
+        }
+    }
+    generate_html_report(bugs=bugs, output_path=out_file)
+    content = out_file.read_text(encoding="utf-8")
+    assert "⚠️ Info Added" in content
+    assert 'data-info-added="true"' in content
+    assert "__info_added__" in content
 
 
 def test_generate_html_report_multiple_packages(tmp_path: Path):

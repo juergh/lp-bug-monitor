@@ -40,6 +40,75 @@ def get_status_class(status: str) -> str:
     return "badge-default"
 
 
+IMPORTANCE_RANKS = {
+    "critical": 5,
+    "high": 4,
+    "medium": 3,
+    "low": 2,
+    "wishlist": 1,
+    "undecided": 0,
+}
+
+
+def compute_flame_tier(bug: dict[str, Any], ref_dt: datetime) -> tuple[int, str]:
+    """Calculate multi-flame tier (0-3) and tooltip explanation based on importance and recency."""
+    tasks = bug.get("tasks", [])
+    open_tasks = [t for t in tasks if not t.get("is_complete")]
+    importances = [t.get("importance", "Undecided") for t in open_tasks]
+
+    max_rank = 0
+    max_imp_name = "Undecided"
+    for imp in importances:
+        rank = IMPORTANCE_RANKS.get(str(imp).lower(), 0)
+        if rank > max_rank:
+            max_rank = rank
+            max_imp_name = str(imp)
+
+    last_act_str = bug.get("last_activity_time") or bug.get("date_last_updated")
+    days_ago: float | None = None
+    if last_act_str:
+        try:
+            act_dt = datetime.fromisoformat(str(last_act_str))
+            if act_dt.tzinfo is None:
+                act_dt = act_dt.replace(tzinfo=UTC)
+            days_ago = max(0.0, (ref_dt - act_dt).total_seconds() / 86400.0)
+        except Exception:
+            days_ago = None
+
+    has_info_added = bool(bug.get("has_activity_after_incomplete"))
+
+    # Tier 3 (Hot / 🔥🔥🔥)
+    if max_imp_name.lower() == "critical":
+        return 3, "Hot (Critical importance)"
+    if max_imp_name.lower() == "high" and days_ago is not None and days_ago <= 7:
+        return 3, f"Hot (High importance · Active {days_ago:.1f}d ago)"
+    if days_ago is not None and days_ago <= 2:
+        return 3, f"Hot (Active within 48h · {max_imp_name} importance)"
+    if has_info_added and days_ago is not None and days_ago <= 7:
+        return 3, f"Hot (Info added · Active {days_ago:.1f}d ago)"
+
+    # Tier 2 (Warm / 🔥🔥)
+    if max_imp_name.lower() == "high" and days_ago is not None and days_ago <= 30:
+        return 2, f"Warm (High importance · Active {days_ago:.1f}d ago)"
+    if max_imp_name.lower() == "medium" and days_ago is not None and days_ago <= 14:
+        return 2, f"Warm (Medium importance · Active {days_ago:.1f}d ago)"
+    if days_ago is not None and days_ago <= 7:
+        return 2, f"Warm (Active within 7d · {max_imp_name} importance)"
+    if has_info_added:
+        return 2, "Warm (Info added after Incomplete · Needs review)"
+
+    # Tier 1 (Simmering / 🔥)
+    if max_imp_name.lower() == "medium":
+        return 1, f"Moderate ({max_imp_name} importance)"
+    if days_ago is not None and days_ago <= 30:
+        return 1, f"Moderate (Active {days_ago:.1f}d ago · {max_imp_name} importance)"
+
+    # Tier 0 (Cold / —)
+    if days_ago is not None:
+        return 0, f"Cold (Inactive {days_ago:.0f}d · {max_imp_name} importance)"
+    return 0, f"Cold ({max_imp_name} importance)"
+
+
 def generate_html_report(
     bugs: dict[str, dict[str, Any]],
     output_path: Path | str,
@@ -91,6 +160,25 @@ def generate_html_report(
         iso_last_act = html.escape(b.get("last_activity_time") or "")
         last_act_summary = html.escape(b.get("last_activity_summary") or "Bug updated")
 
+        flame_tier, flame_reason = compute_flame_tier(b, scan_dt)
+        flame_icons = {3: "🔥🔥🔥", 2: "🔥🔥", 1: "🔥", 0: "—"}[flame_tier]
+        flame_html = f'<span class="flame-tier flame-{flame_tier}">{flame_icons}</span>'
+
+        has_info_added = bool(b.get("has_activity_after_incomplete"))
+        has_info_added_str = "true" if has_info_added else "false"
+        info_badge = ""
+        review_notice_html = ""
+        if has_info_added:
+            info_badge = (
+                ' <span class="badge-info-added" '
+                'title="Activity detected after task set to Incomplete - info may have been provided">'
+                "⚠️ Info Added</span>"
+            )
+            review_notice_html = (
+                '<div class="meta-item"><strong class="text-orange">Review:</strong> '
+                "<span>Activity occurred after task set to Incomplete</span></div>"
+            )
+
         tasks = b.get("tasks", [])
         open_tasks = [t for t in tasks if not t.get("is_complete")]
         closed_tasks = [t for t in tasks if t.get("is_complete")]
@@ -124,10 +212,13 @@ def generate_html_report(
                 f'<a href="{t_link}" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a>' if t_link else ""
             )
 
+            t_importance = html.escape(str(t.get("importance", "Undecided")))
+
             task_rows.append(
                 f"<tr>"
                 f'<td class="font-mono">{t_target}</td>'
                 f'<td><span class="status-badge {t_class}">{t_status}</span></td>'
+                f"<td>{t_importance}</td>"
                 f"<td>{t_assignee}</td>"
                 f"<td>{t_link_tag}</td>"
                 f"</tr>"
@@ -144,8 +235,10 @@ def generate_html_report(
         row = f"""
         <tr class="bug-row" id="row-{b_id}" onclick="toggleDetails({b_id})"
             data-bugid="{b_id}" data-package="{pkg.lower()}"
+            data-flame="{flame_tier}" data-info-added="{has_info_added_str}"
             data-statuses="{statuses_json}" data-created="{iso_created}" data-lastact="{iso_last_act}">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-{b_id}">▶</span></td>
+            <td class="col-flame" title="{html.escape(flame_reason)}">{flame_html}</td>
             <td class="col-id font-mono">
                 <a href="{web_link}" target="_blank" rel="noopener" onclick="event.stopPropagation()">#{b_id}</a>
             </td>
@@ -154,7 +247,7 @@ def generate_html_report(
             <td class="col-tasks">
                 <div class="tasks-summary-wrap">
                     {task_summary_pill}
-                    <div class="status-badges-group">{status_badges}</div>
+                    <div class="status-badges-group">{status_badges}{info_badge}</div>
                 </div>
             </td>
             <td class="col-created font-mono">{created_time}</td>
@@ -166,7 +259,7 @@ def generate_html_report(
             </td>
         </tr>
         <tr class="details-row" id="details-{b_id}" style="display: none;">
-            <td colspan="7">
+            <td colspan="8">
                 <div class="details-panel">
                     <div class="details-grid">
                         <div class="details-tasks-card">
@@ -176,6 +269,7 @@ def generate_html_report(
                                     <tr>
                                         <th>Target</th>
                                         <th>Status</th>
+                                        <th>Importance</th>
                                         <th>Assignee</th>
                                         <th>Action</th>
                                     </tr>
@@ -197,6 +291,10 @@ def generate_html_report(
                                 <span class="font-mono">{format_timestamp(b.get("date_last_updated"))}</span>
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>{last_act_summary}</span></div>
+                            <div class="meta-item">
+                                <strong>Heat:</strong> <span>{flame_icons} ({html.escape(flame_reason)})</span>
+                            </div>
+                            {review_notice_html}
                             <div class="meta-item"><strong>Active Targets:</strong>
                                 <span class="text-sm">{open_targets_str}</span>
                             </div>
@@ -393,6 +491,9 @@ def generate_html_report(
   .col-toggle {{ width: 36px; text-align: center; color: var(--text-muted); font-size: 0.8rem; }}
   .toggle-icon {{ display: inline-block; transition: transform 0.2s ease; }}
   .expanded .toggle-icon {{ transform: rotate(90deg); color: var(--brand-orange); }}
+  .col-flame {{ width: 54px; text-align: center; white-space: nowrap; user-select: none; font-size: 0.95rem; }}
+  .flame-tier {{ cursor: default; letter-spacing: -1px; }}
+  .flame-0 {{ color: #9ca3af; }}
   .col-id {{ width: 100px; font-weight: 600; white-space: nowrap; }}
   .col-title {{ max-width: 440px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }}
   .col-package {{ width: 160px; white-space: nowrap; }}
@@ -438,6 +539,16 @@ def generate_html_report(
   .badge-new {{ background: #dbeafe; color: #1e40af; }}
   .badge-closed {{ background: #e5e7eb; color: #374151; }}
   .badge-default {{ background: #f3f4f6; color: #374151; }}
+  .badge-info-added {{
+    background: #fef9c3;
+    color: #854d0e;
+    border: 1px solid #fde047;
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    white-space: nowrap;
+  }}
 
   /* Details row */
   .details-row td {{ padding: 0 !important; background: #fafafa; border-bottom: 2px solid #e5e7eb; }}
@@ -516,6 +627,7 @@ def generate_html_report(
     </select>
     <select id="filter-status" class="select-filter" onchange="applyFilters()">
       <option value="">All Open Statuses</option>
+      <option value="__info_added__">⚠️ Needs Review (Info Added)</option>
       {status_options}
     </select>
   </div>
@@ -531,6 +643,7 @@ def generate_html_report(
     <thead>
       <tr>
         <th class="col-toggle"></th>
+        <th onclick="sortTable('flame')" title="Importance &amp; Activity heat">🔥 ↕</th>
         <th onclick="sortTable('id')">Bug ID ↕</th>
         <th onclick="sortTable('title')">Summary / Title ↕</th>
         <th onclick="sortTable('package')">Source Package ↕</th>
@@ -540,14 +653,14 @@ def generate_html_report(
       </tr>
     </thead>
     <tbody id="bugs-tbody">
-      {table_body if sorted_bugs else '<tr><td colspan="7" class="no-bugs">No open bugs found!</td></tr>'}
+      {table_body if sorted_bugs else '<tr><td colspan="8" class="no-bugs">No open bugs found!</td></tr>'}
     </tbody>
   </table>
 </div>
 
 <script>
   let allExpanded = false;
-  let sortDirection = {{ 'lastact': -1, 'created': -1, 'id': 1, 'title': 1, 'package': 1 }};
+  let sortDirection = {{ 'flame': -1, 'lastact': -1, 'created': -1, 'id': 1, 'title': 1, 'package': 1 }};
 
   function toggleDetails(bugId) {{
     const detailsRow = document.getElementById('details-' + bugId);
@@ -603,11 +716,13 @@ def generate_html_report(
       const detailsRow = document.getElementById('details-' + bId);
       const pkg = r.getAttribute('data-package') || '';
       const statuses = JSON.parse(r.getAttribute('data-statuses') || '[]');
+      const isInfoAdded = r.getAttribute('data-info-added') === 'true';
       const textContent = (r.textContent + ' ' + (detailsRow ? detailsRow.textContent : '')).toLowerCase();
 
       let matchSearch = !search || textContent.includes(search);
       let matchPkg = !pkgFilter || pkg === pkgFilter;
-      let matchStatus = !statusFilter || statuses.includes(statusFilter);
+      let matchStatus = !statusFilter ||
+        (statusFilter === '__info_added__' ? isInfoAdded : statuses.includes(statusFilter));
 
       if (matchSearch && matchPkg && matchStatus) {{
         r.style.display = '';
@@ -632,7 +747,10 @@ def generate_html_report(
 
     rows.sort((a, b) => {{
       let valA, valB;
-      if (column === 'id') {{
+      if (column === 'flame') {{
+        valA = parseInt(a.getAttribute('data-flame') || '0', 10);
+        valB = parseInt(b.getAttribute('data-flame') || '0', 10);
+      }} else if (column === 'id') {{
         valA = parseInt(a.getAttribute('data-bugid'), 10);
         valB = parseInt(b.getAttribute('data-bugid'), 10);
       }} else if (column === 'created') {{
