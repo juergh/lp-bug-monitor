@@ -16,7 +16,7 @@ def test_load_nonexistent_state(tmp_path: Path):
 
 
 def test_save_and_load_roundtrip(tmp_path: Path):
-    state_file = tmp_path / "bugs_state.json"
+    state_file = tmp_path / "bugs-state.json"
     payload = {
         "last_scan_utc": "2026-10-13T10:00:00+00:00",
         "packages": ["linux-firmware", "linux-firmware-raspi"],

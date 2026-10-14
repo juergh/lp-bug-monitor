@@ -50,7 +50,7 @@ def test_parse_args_positional():
     assert args.packages is None
     assert args.packages_file is None
     assert args.output == Path("bugs.html")
-    assert args.state_file == Path("bugs_state.json")
+    assert args.state_file == Path("bugs-state.json")
     assert not args.full
 
 

@@ -14,7 +14,7 @@ wheels/
 .venv
 
 # Local state & output
-bugs_state.json
+bugs-state.json
 *.html
 *.tmp*
 .pytest_cache/

@@ -90,8 +90,8 @@ def create_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--state-file",
         type=Path,
-        default=Path("bugs_state.json"),
-        help="Path to JSON state file for incremental scans (default: bugs_state.json)",
+        default=Path("bugs-state.json"),
+        help="Path to JSON state file for incremental scans (default: bugs-state.json)",
     )
     parser.add_argument(
         "--full",
