@@ -91,6 +91,10 @@ def test_generate_html_report_with_bugs(tmp_path: Path):
     assert "details-2147678" in content
     assert "row-2147678" in content
     assert "Open Bug on Launchpad" not in content
+    assert "Created (UTC)" in content
+    assert "2026-04-10 03:11" in content
+    assert 'data-created="2026-04-10T03:11:23+00:00"' in content
+    assert "sortTable('created')" in content
     # Ensure importance is NOT in the HTML
     assert "importance" not in content.lower()
 

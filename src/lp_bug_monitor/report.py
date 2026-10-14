@@ -10,12 +10,12 @@ from typing import Any
 
 
 def format_timestamp(iso_str: str | None) -> str:
-    """Format an ISO timestamp into a concise UTC string."""
+    """Format an ISO timestamp into a concise YYYY-MM-DD HH:MM string."""
     if not iso_str:
         return "Unknown"
     try:
         dt = datetime.fromisoformat(iso_str)
-        return dt.strftime("%Y-%m-%d %H:%M UTC")
+        return dt.strftime("%Y-%m-%d %H:%M")
     except Exception:
         return str(iso_str)[:16]
 
@@ -85,6 +85,8 @@ def generate_html_report(
         pkg = html.escape(b.get("package", "unknown"))
         owner = html.escape(b.get("owner", "Unknown"))
         tags = [html.escape(tag) for tag in b.get("tags", [])]
+        created_time = format_timestamp(b.get("date_created"))
+        iso_created = html.escape(b.get("date_created") or "")
         last_act_time = format_timestamp(b.get("last_activity_time"))
         iso_last_act = html.escape(b.get("last_activity_time") or "")
         last_act_summary = html.escape(b.get("last_activity_summary") or "Bug updated")
@@ -142,7 +144,7 @@ def generate_html_report(
         row = f"""
         <tr class="bug-row" id="row-{b_id}" onclick="toggleDetails({b_id})"
             data-bugid="{b_id}" data-package="{pkg.lower()}"
-            data-statuses="{statuses_json}" data-lastact="{iso_last_act}">
+            data-statuses="{statuses_json}" data-created="{iso_created}" data-lastact="{iso_last_act}">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-{b_id}">▶</span></td>
             <td class="col-id font-mono">
                 <a href="{web_link}" target="_blank" rel="noopener" onclick="event.stopPropagation()">#{b_id}</a>
@@ -155,6 +157,7 @@ def generate_html_report(
                     <div class="status-badges-group">{status_badges}</div>
                 </div>
             </td>
+            <td class="col-created font-mono">{created_time}</td>
             <td class="col-activity" title="{last_act_summary}">
                 <div class="activity-wrap">
                     <span class="activity-time font-mono">{last_act_time}</span>
@@ -163,7 +166,7 @@ def generate_html_report(
             </td>
         </tr>
         <tr class="details-row" id="details-{b_id}" style="display: none;">
-            <td colspan="6">
+            <td colspan="7">
                 <div class="details-panel">
                     <div class="details-grid">
                         <div class="details-tasks-card">
@@ -394,6 +397,7 @@ def generate_html_report(
   .col-title {{ max-width: 440px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }}
   .col-package {{ width: 160px; white-space: nowrap; }}
   .col-tasks {{ width: 260px; }}
+  .col-created {{ width: 140px; white-space: nowrap; }}
   .col-activity {{ width: 220px; }}
 
   .tasks-summary-wrap {{ display: flex; flex-direction: column; gap: 4px; }}
@@ -531,18 +535,19 @@ def generate_html_report(
         <th onclick="sortTable('title')">Summary / Title ↕</th>
         <th onclick="sortTable('package')">Source Package ↕</th>
         <th>Active Tasks Summary</th>
+        <th onclick="sortTable('created')">Created (UTC) ↕</th>
         <th onclick="sortTable('lastact')">Last Activity (UTC) ↕</th>
       </tr>
     </thead>
     <tbody id="bugs-tbody">
-      {table_body if sorted_bugs else '<tr><td colspan="6" class="no-bugs">No open bugs found!</td></tr>'}
+      {table_body if sorted_bugs else '<tr><td colspan="7" class="no-bugs">No open bugs found!</td></tr>'}
     </tbody>
   </table>
 </div>
 
 <script>
   let allExpanded = false;
-  let sortDirection = {{ 'lastact': -1, 'id': 1, 'title': 1, 'package': 1 }};
+  let sortDirection = {{ 'lastact': -1, 'created': -1, 'id': 1, 'title': 1, 'package': 1 }};
 
   function toggleDetails(bugId) {{
     const detailsRow = document.getElementById('details-' + bugId);
@@ -630,6 +635,9 @@ def generate_html_report(
       if (column === 'id') {{
         valA = parseInt(a.getAttribute('data-bugid'), 10);
         valB = parseInt(b.getAttribute('data-bugid'), 10);
+      }} else if (column === 'created') {{
+        valA = a.getAttribute('data-created') || '';
+        valB = b.getAttribute('data-created') || '';
       }} else if (column === 'lastact') {{
         valA = a.getAttribute('data-lastact') || '';
         valB = b.getAttribute('data-lastact') || '';
