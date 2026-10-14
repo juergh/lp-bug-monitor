@@ -90,6 +90,7 @@ def test_generate_html_report_with_bugs(tmp_path: Path):
     assert "1 Closed" in content
     assert "details-2147678" in content
     assert "row-2147678" in content
+    assert "Open Bug on Launchpad" not in content
     # Ensure importance is NOT in the HTML
     assert "importance" not in content.lower()
 

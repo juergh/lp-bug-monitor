@@ -200,11 +200,6 @@ def generate_html_report(
                             <div class="meta-item"><strong>Tags:</strong>
                                 <div class="tags-wrap">{tag_pills}</div>
                             </div>
-                            <div class="meta-action">
-                                <a href="{web_link}" target="_blank" rel="noopener" class="btn btn-primary">
-                                    Open Bug on Launchpad ↗
-                                </a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -357,14 +352,6 @@ def generate_html_report(
   }}
   .btn-outline {{ background: white; border-color: #d1d5db; color: #374151; }}
   .btn-outline:hover {{ background: #f9fafb; }}
-  .btn-primary {{
-    background: var(--brand-orange);
-    color: white;
-    border-color: var(--brand-orange);
-    text-decoration: none;
-    display: inline-block;
-  }}
-  .btn-primary:hover {{ background: #d44312; text-decoration: none; }}
 
   /* Table */
   .table-container {{
@@ -480,7 +467,6 @@ def generate_html_report(
 
   .meta-item {{ display: flex; gap: 8px; margin-bottom: 8px; font-size: 0.85rem; }}
   .meta-item strong {{ min-width: 105px; color: var(--text-muted); }}
-  .meta-action {{ margin-top: 16px; }}
   .tags-wrap {{ display: flex; flex-wrap: wrap; gap: 4px; }}
   .tag-pill {{ background: #f3f4f6; color: #4b5563; padding: 1px 6px; border-radius: 4px; font-size: 0.75rem; }}
 
