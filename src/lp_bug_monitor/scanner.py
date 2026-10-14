@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import logging
 from dataclasses import asdict, dataclass, field
-from datetime import UTC, datetime
+from datetime import UTC, datetime, timedelta
 from typing import Any
 
 logger = logging.getLogger(__name__)
@@ -40,6 +40,7 @@ class TaskRecord:
     target_display: str
     status: str
     is_complete: bool
+    importance: str = "Undecided"
     assignee: str | None = None
     web_link: str = ""
     date_created: str | None = None
@@ -55,6 +56,7 @@ class TaskRecord:
             target_display=data.get("target_display", data.get("target", "")),
             status=data.get("status", "Unknown"),
             is_complete=data.get("is_complete", False),
+            importance=data.get("importance", "Undecided"),
             assignee=data.get("assignee"),
             web_link=data.get("web_link", ""),
             date_created=data.get("date_created"),
@@ -78,6 +80,7 @@ class BugRecord:
     owner: str = ""
     tags: list[str] = field(default_factory=list)
     tasks: list[TaskRecord] = field(default_factory=list)
+    has_activity_after_incomplete: bool = False
 
     @property
     def open_tasks(self) -> list[TaskRecord]:
@@ -113,6 +116,7 @@ class BugRecord:
             owner=data.get("owner", "Unknown"),
             tags=data.get("tags", []),
             tasks=tasks,
+            has_activity_after_incomplete=bool(data.get("has_activity_after_incomplete", False)),
         )
 
 
@@ -194,11 +198,14 @@ def extract_task_record(lp_task: Any) -> TaskRecord:
     if getattr(lp_task, "date_closed", None):
         date_closed = lp_task.date_closed.isoformat()
 
+    importance = str(getattr(lp_task, "importance", "Undecided") or "Undecided")
+
     return TaskRecord(
         target=getattr(lp_task, "bug_target_name", ""),
         target_display=getattr(lp_task, "bug_target_display_name", getattr(lp_task, "bug_target_name", "")),
         status=getattr(lp_task, "status", "Unknown"),
         is_complete=bool(getattr(lp_task, "is_complete", False)),
+        importance=importance,
         assignee=assignee_name,
         web_link=getattr(lp_task, "web_link", ""),
         date_created=date_created,
@@ -251,6 +258,57 @@ def extract_last_activity(lp_bug: Any) -> tuple[str, str | None]:
     return latest_dt.isoformat(), activity_summary
 
 
+def detect_activity_after_incomplete(lp_bug: Any, task_records: list[TaskRecord]) -> bool:
+    """Detect if activity occurred after an open task was marked Incomplete.
+
+    This indicates someone may have provided requested information, requiring review.
+    """
+    has_open_incomplete = any(t.status.lower().startswith("incomplete") and not t.is_complete for t in task_records)
+    if not has_open_incomplete:
+        return False
+
+    incomplete_dt: datetime | None = None
+    try:
+        activity_entries = list(getattr(lp_bug, "activity", []))
+        for act in activity_entries:
+            change = str(getattr(act, "whatchanged", "")).lower()
+            new_val = str(getattr(act, "newvalue", "")).lower()
+            if "status" in change and new_val.startswith("incomplete"):
+                dt = getattr(act, "datechanged", None)
+                if isinstance(dt, datetime):
+                    if incomplete_dt is None or dt > incomplete_dt:
+                        incomplete_dt = dt
+    except Exception as e:
+        logger.debug("Could not inspect activity for incomplete tasks on #%s: %s", getattr(lp_bug, "id", "?"), e)
+
+    threshold = timedelta(seconds=60)
+
+    if incomplete_dt is None:
+        date_created = getattr(lp_bug, "date_created", None)
+        date_msg = getattr(lp_bug, "date_last_message", None)
+        if isinstance(date_msg, datetime) and isinstance(date_created, datetime):
+            return (date_msg - date_created).total_seconds() > 300
+        return False
+
+    date_msg = getattr(lp_bug, "date_last_message", None)
+    if isinstance(date_msg, datetime) and (date_msg - incomplete_dt) > threshold:
+        return True
+
+    try:
+        for act in getattr(lp_bug, "activity", []):
+            act_dt = getattr(act, "datechanged", None)
+            if isinstance(act_dt, datetime) and (act_dt - incomplete_dt) > threshold:
+                return True
+    except Exception:
+        pass
+
+    date_updated = getattr(lp_bug, "date_last_updated", None)
+    if isinstance(date_updated, datetime) and (date_updated - incomplete_dt) > threshold:
+        return True
+
+    return False
+
+
 def extract_bug_record(lp_bug: Any, matched_packages: set[str] | None = None) -> BugRecord | None:
     """Extract a BugRecord from a Launchpad bug object.
 
@@ -265,6 +323,7 @@ def extract_bug_record(lp_bug: Any, matched_packages: set[str] | None = None) ->
         return None
 
     last_activity_time, last_activity_summary = extract_last_activity(lp_bug)
+    has_activity_after_incomplete = detect_activity_after_incomplete(lp_bug, task_records)
 
     owner_name = "Unknown"
     try:
@@ -293,6 +352,7 @@ def extract_bug_record(lp_bug: Any, matched_packages: set[str] | None = None) ->
         owner=owner_name,
         tags=tags,
         tasks=task_records,
+        has_activity_after_incomplete=has_activity_after_incomplete,
     )
 
 

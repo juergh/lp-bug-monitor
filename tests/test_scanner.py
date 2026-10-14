@@ -2,10 +2,15 @@
 
 from __future__ import annotations
 
-from datetime import UTC, datetime
+from datetime import UTC, datetime, timedelta
 from unittest.mock import MagicMock
 
-from lp_bug_monitor.scanner import scan_incremental
+from lp_bug_monitor.scanner import (
+    BugRecord,
+    TaskRecord,
+    detect_activity_after_incomplete,
+    scan_incremental,
+)
 
 
 def test_scan_incremental_removes_newly_closed_bugs():
@@ -110,3 +115,64 @@ def test_scan_incremental_adds_new_bug():
     assert updated["200"]["title"] == "Brand New Bug"
     assert len(updated["200"]["tasks"]) == 1
     assert updated["200"]["tasks"][0]["status"] == "New"
+
+
+def test_task_record_importance():
+    t = TaskRecord(
+        target="linux-firmware (Ubuntu)",
+        target_display="Ubuntu",
+        status="New",
+        is_complete=False,
+        importance="High",
+    )
+    d = t.to_dict()
+    assert d["importance"] == "High"
+    restored = TaskRecord.from_dict(d)
+    assert restored.importance == "High"
+
+
+def test_bug_record_activity_after_incomplete_roundtrip():
+    b = BugRecord(
+        id=300,
+        title="Incomplete test bug",
+        web_link="https://bugs.launchpad.net/bugs/300",
+        package="linux-firmware",
+        has_activity_after_incomplete=True,
+    )
+    d = b.to_dict()
+    assert d["has_activity_after_incomplete"] is True
+    restored = BugRecord.from_dict(d)
+    assert restored.has_activity_after_incomplete is True
+
+
+def test_detect_activity_after_incomplete():
+    now = datetime(2026, 10, 14, 12, 0, 0, tzinfo=UTC)
+    incomplete_time = now - timedelta(hours=2)
+
+    task = TaskRecord(
+        target="linux-firmware (Ubuntu)",
+        target_display="Ubuntu",
+        status="Incomplete",
+        is_complete=False,
+    )
+
+    act_entry = MagicMock()
+    act_entry.whatchanged = "status: linux-firmware (Ubuntu)"
+    act_entry.newvalue = "Incomplete"
+    act_entry.datechanged = incomplete_time
+
+    # Bug with a comment posted after it was marked incomplete
+    bug_with_reply = MagicMock()
+    bug_with_reply.activity = [act_entry]
+    bug_with_reply.date_last_message = incomplete_time + timedelta(hours=1)
+    bug_with_reply.date_last_updated = incomplete_time + timedelta(hours=1)
+
+    assert detect_activity_after_incomplete(bug_with_reply, [task]) is True
+
+    # Bug where no comment or activity occurred after incomplete
+    bug_without_reply = MagicMock()
+    bug_without_reply.activity = [act_entry]
+    bug_without_reply.date_last_message = incomplete_time - timedelta(days=1)
+    bug_without_reply.date_last_updated = incomplete_time
+
+    assert detect_activity_after_incomplete(bug_without_reply, [task]) is False
