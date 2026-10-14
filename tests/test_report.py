@@ -13,7 +13,7 @@ def test_generate_html_report_empty(tmp_path: Path):
     generate_html_report(bugs={}, output_path=out_file)
     assert out_file.is_file()
     content = out_file.read_text(encoding="utf-8")
-    assert "Ubuntu Bug Status Tracker" in content
+    assert "Ubuntu Bug Status (0 packages)" in content
     assert "No open bugs found!" in content
 
 
@@ -80,6 +80,7 @@ def test_generate_html_report_with_bugs(tmp_path: Path):
     content = out_file.read_text(encoding="utf-8")
 
     # Verify key details
+    assert "Ubuntu Bug Status (1 package)" in content
     assert "#2147678" in content
     assert "linux-firmware: Add Lenovo ISH firmware" in content
     assert "Aaron Ma" in content
@@ -91,3 +92,15 @@ def test_generate_html_report_with_bugs(tmp_path: Path):
     assert "row-2147678" in content
     # Ensure importance is NOT in the HTML
     assert "importance" not in content.lower()
+
+
+def test_generate_html_report_multiple_packages(tmp_path: Path):
+    out_file = tmp_path / "multi_pkgs.html"
+    generate_html_report(
+        bugs={},
+        output_path=out_file,
+        packages_scanned=["linux-firmware", "systemd", "udev"],
+    )
+    assert out_file.is_file()
+    content = out_file.read_text(encoding="utf-8")
+    assert "Ubuntu Bug Status (3 packages)" in content

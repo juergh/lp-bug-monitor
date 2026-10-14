@@ -63,7 +63,9 @@ def generate_html_report(
     all_pkgs = sorted(set(packages_scanned or []).union(pkgs_found))
     pkgs_label = ", ".join(all_pkgs) if all_pkgs else "monitored source packages"
 
-    dashboard_title = title or (f"Ubuntu Bug Status: {pkgs_label}" if all_pkgs else "Ubuntu Bug Status Tracker")
+    pkg_count = len(all_pkgs)
+    pkg_word = "package" if pkg_count == 1 else "packages"
+    dashboard_title = title or f"Ubuntu Bug Status ({pkg_count} {pkg_word})"
 
     # Precompute summary counts
     total_bugs = len(sorted_bugs)
