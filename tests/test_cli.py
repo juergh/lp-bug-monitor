@@ -109,7 +109,6 @@ def test_parse_args_custom_options():
             "-s",
             "noble",
             "jammy",
-            "--open",
             "--verbose",
         ]
     )
@@ -118,5 +117,4 @@ def test_parse_args_custom_options():
     assert args.title == "Kernel Bugs"
     assert args.full
     assert args.series == ["noble", "jammy"]
-    assert args.open
     assert args.verbose

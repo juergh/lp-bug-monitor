@@ -6,7 +6,6 @@ import argparse
 import json
 import logging
 import sys
-import webbrowser
 from datetime import UTC, datetime, timedelta
 from pathlib import Path
 
@@ -116,11 +115,6 @@ def create_parser() -> argparse.ArgumentParser:
         type=Path,
         metavar="PATH",
         help="Optional path to dump extracted bug data as JSON",
-    )
-    parser.add_argument(
-        "--open",
-        action="store_true",
-        help="Automatically open the generated HTML report in default browser",
     )
     parser.add_argument(
         "--dry-run",
@@ -259,12 +253,6 @@ def main(argv: list[str] | None = None) -> int:
             logger.info("Exported JSON bug data to %s", args.json)
         except Exception as e:
             logger.error("Failed to export JSON: %s", e)
-
-    # Optional browser open
-    if args.open:
-        out_uri = args.output.resolve().as_uri()
-        logger.info("Opening %s in default browser...", out_uri)
-        webbrowser.open(out_uri)
 
     return 0
 
