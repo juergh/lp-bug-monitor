@@ -3,11 +3,47 @@
 from __future__ import annotations
 
 import logging
+import re
 from dataclasses import asdict, dataclass, field
 from datetime import UTC, datetime, timedelta
 from typing import Any
 
 logger = logging.getLogger(__name__)
+
+SERIES_TARGET_REGEX = re.compile(r"\(Ubuntu\s+([A-Za-z0-9_.-]+)\)", re.IGNORECASE)
+
+
+def extract_series_name(target: str = "", lp_task: Any = None) -> str | None:
+    """Extract release series name (e.g. 'noble') from a task or target string.
+
+    Returns None for development release tasks (e.g. 'pkg (Ubuntu)').
+    """
+    if lp_task is not None:
+        try:
+            ds = getattr(lp_task, "distro_series", None)
+            if ds is not None:
+                ds_name = getattr(ds, "name", None)
+                if isinstance(ds_name, str) and ds_name:
+                    return ds_name.lower()
+        except Exception:
+            pass
+
+        try:
+            ds_link = getattr(lp_task, "distro_series_link", None)
+            if isinstance(ds_link, str) and ds_link:
+                parts = ds_link.rstrip("/").split("/")
+                if parts:
+                    return parts[-1].lower()
+        except Exception:
+            pass
+
+    if target:
+        m = SERIES_TARGET_REGEX.search(target)
+        if m:
+            return m.group(1).lower()
+
+    return None
+
 
 ALL_LAUNCHPAD_STATUSES = [
     "New",
@@ -41,6 +77,7 @@ class TaskRecord:
     status: str
     is_complete: bool
     importance: str = "Undecided"
+    series: str | None = None
     assignee: str | None = None
     web_link: str = ""
     date_created: str | None = None
@@ -51,12 +88,16 @@ class TaskRecord:
 
     @classmethod
     def from_dict(cls, data: dict[str, Any]) -> TaskRecord:
+        target = data.get("target", "")
+        target_display = data.get("target_display", target)
+        series = data.get("series") or extract_series_name(f"{target} {target_display}")
         return cls(
-            target=data.get("target", ""),
-            target_display=data.get("target_display", data.get("target", "")),
+            target=target,
+            target_display=target_display,
             status=data.get("status", "Unknown"),
             is_complete=data.get("is_complete", False),
             importance=data.get("importance", "Undecided"),
+            series=series,
             assignee=data.get("assignee"),
             web_link=data.get("web_link", ""),
             date_created=data.get("date_created"),
@@ -94,6 +135,24 @@ class BugRecord:
     def is_closed(self) -> bool:
         """A closed bug can not have any non-closed bug tasks."""
         return is_bug_closed(self.tasks)
+
+    @property
+    def open_series(self) -> list[str]:
+        """Return sorted unique series names for tasks that are currently open."""
+        series_set = set()
+        for t in self.tasks:
+            if not t.is_complete and t.series:
+                series_set.add(t.series.lower())
+        return sorted(series_set)
+
+    @property
+    def all_series(self) -> list[str]:
+        """Return sorted unique series names for all tasks on this bug."""
+        series_set = set()
+        for t in self.tasks:
+            if t.series:
+                series_set.add(t.series.lower())
+        return sorted(series_set)
 
     def to_dict(self) -> dict[str, Any]:
         data = asdict(self)
@@ -199,13 +258,17 @@ def extract_task_record(lp_task: Any) -> TaskRecord:
         date_closed = lp_task.date_closed.isoformat()
 
     importance = str(getattr(lp_task, "importance", "Undecided") or "Undecided")
+    target = getattr(lp_task, "bug_target_name", "")
+    target_display = getattr(lp_task, "bug_target_display_name", target)
+    series = extract_series_name(f"{target} {target_display}", lp_task=lp_task)
 
     return TaskRecord(
-        target=getattr(lp_task, "bug_target_name", ""),
-        target_display=getattr(lp_task, "bug_target_display_name", getattr(lp_task, "bug_target_name", "")),
+        target=target,
+        target_display=target_display,
         status=getattr(lp_task, "status", "Unknown"),
         is_complete=bool(getattr(lp_task, "is_complete", False)),
         importance=importance,
+        series=series,
         assignee=assignee_name,
         web_link=getattr(lp_task, "web_link", ""),
         date_created=date_created,

@@ -9,6 +9,7 @@ from lp_bug_monitor.scanner import (
     BugRecord,
     TaskRecord,
     detect_activity_after_incomplete,
+    extract_series_name,
     scan_incremental,
 )
 
@@ -176,3 +177,76 @@ def test_detect_activity_after_incomplete():
     bug_without_reply.date_last_updated = incomplete_time
 
     assert detect_activity_after_incomplete(bug_without_reply, [task]) is False
+
+
+def test_extract_series_name():
+    assert extract_series_name("linux-firmware (Ubuntu Noble)") == "noble"
+    assert extract_series_name("linux-firmware (Ubuntu Jammy)") == "jammy"
+    assert extract_series_name("linux-firmware (Ubuntu)") is None
+    assert extract_series_name("upstream") is None
+
+    mock_task = MagicMock()
+    mock_task.distro_series.name = "focal"
+    assert extract_series_name(lp_task=mock_task) == "focal"
+
+    mock_link_task = MagicMock()
+    mock_link_task.distro_series = None
+    mock_link_task.distro_series_link = "https://api.launchpad.net/1.0/ubuntu/plucky"
+    assert extract_series_name(lp_task=mock_link_task) == "plucky"
+
+
+def test_task_record_series():
+    t = TaskRecord(
+        target="linux-firmware (Ubuntu Noble)",
+        target_display="Noble",
+        status="In Progress",
+        is_complete=False,
+        series="noble",
+    )
+    d = t.to_dict()
+    assert d["series"] == "noble"
+    restored = TaskRecord.from_dict(d)
+    assert restored.series == "noble"
+
+    # Backward compatibility fallback from target string
+    legacy_dict = {
+        "target": "linux-firmware (Ubuntu Jammy)",
+        "target_display": "Jammy",
+        "status": "In Progress",
+        "is_complete": False,
+    }
+    legacy_task = TaskRecord.from_dict(legacy_dict)
+    assert legacy_task.series == "jammy"
+
+
+def test_bug_record_open_series():
+    t_noble = TaskRecord(
+        target="linux-firmware (Ubuntu Noble)",
+        target_display="Noble",
+        status="In Progress",
+        is_complete=False,
+        series="noble",
+    )
+    t_jammy = TaskRecord(
+        target="linux-firmware (Ubuntu Jammy)",
+        target_display="Jammy",
+        status="Fix Released",
+        is_complete=True,
+        series="jammy",
+    )
+    t_distro = TaskRecord(
+        target="linux-firmware (Ubuntu)",
+        target_display="Ubuntu",
+        status="Fix Released",
+        is_complete=True,
+        series=None,
+    )
+    bug = BugRecord(
+        id=500,
+        title="Series bug",
+        web_link="https://bugs.launchpad.net/bugs/500",
+        package="linux-firmware",
+        tasks=[t_noble, t_jammy, t_distro],
+    )
+    assert bug.open_series == ["noble"]
+    assert bug.all_series == ["jammy", "noble"]

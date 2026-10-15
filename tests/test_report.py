@@ -99,6 +99,10 @@ def test_generate_html_report_with_bugs(tmp_path: Path):
     assert "col-flame" in content
     assert "data-flame" in content
     assert "Importance" in content
+    assert "filter-series" in content
+    assert '<option value="noble">noble (1)</option>' in content
+    assert '<option value="questing">' not in content
+    assert 'data-series="[&quot;noble&quot;]"' in content
 
 
 def test_generate_html_report_with_info_added_flag(tmp_path: Path):
@@ -124,6 +128,58 @@ def test_generate_html_report_with_info_added_flag(tmp_path: Path):
     assert "⚠️ Info Added" in content
     assert 'data-info-added="true"' in content
     assert "__info_added__" in content
+
+
+def test_generate_html_report_series_filter_option_a(tmp_path: Path):
+    out_file = tmp_path / "series_report.html"
+    bugs = {
+        "101": {
+            "id": 101,
+            "title": "Bug active in noble, fixed in jammy",
+            "package": "linux-firmware",
+            "tasks": [
+                {
+                    "target": "linux-firmware (Ubuntu Noble)",
+                    "status": "In Progress",
+                    "is_complete": False,
+                },
+                {
+                    "target": "linux-firmware (Ubuntu Jammy)",
+                    "status": "Fix Released",
+                    "is_complete": True,
+                },
+            ],
+        },
+        "102": {
+            "id": 102,
+            "title": "Bug active in jammy, fixed in noble",
+            "package": "linux-firmware",
+            "tasks": [
+                {
+                    "target": "linux-firmware (Ubuntu Noble)",
+                    "status": "Fix Released",
+                    "is_complete": True,
+                },
+                {
+                    "target": "linux-firmware (Ubuntu Jammy)",
+                    "status": "Triaged",
+                    "is_complete": False,
+                },
+            ],
+        },
+    }
+    generate_html_report(bugs=bugs, output_path=out_file)
+    content = out_file.read_text(encoding="utf-8")
+
+    # Both series exist with count 1 (Option A: only open tasks count)
+    assert '<option value="jammy">jammy (1)</option>' in content
+    assert '<option value="noble">noble (1)</option>' in content
+
+    # Row 101 only targets noble; row 102 only targets jammy
+    assert 'id="row-101"' in content
+    assert 'data-series="[&quot;noble&quot;]"' in content
+    assert 'id="row-102"' in content
+    assert 'data-series="[&quot;jammy&quot;]"' in content
 
 
 def test_generate_html_report_multiple_packages(tmp_path: Path):

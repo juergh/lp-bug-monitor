@@ -8,6 +8,8 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
+from lp_bug_monitor.scanner import extract_series_name
+
 
 def format_timestamp(iso_str: str | None) -> str:
     """Format an ISO timestamp into a concise YYYY-MM-DD HH:MM string."""
@@ -139,11 +141,18 @@ def generate_html_report(
     # Precompute summary counts
     total_bugs = len(sorted_bugs)
     status_counts: dict[str, int] = {}
+    series_counts: dict[str, int] = {}
     for b in sorted_bugs:
+        open_series_for_b: set[str] = set()
         for t in b.get("tasks", []):
             if not t.get("is_complete"):
                 st = t.get("status", "Unknown")
                 status_counts[st] = status_counts.get(st, 0) + 1
+                s = t.get("series") or extract_series_name(f"{t.get('target', '')} {t.get('target_display', '')}")
+                if s:
+                    open_series_for_b.add(s.lower())
+        for s in open_series_for_b:
+            series_counts[s] = series_counts.get(s, 0) + 1
 
     # Build bug rows HTML
     rows_html: list[str] = []
@@ -230,11 +239,22 @@ def generate_html_report(
         else:
             tag_pills = '<span class="text-gray">None</span>'
 
+        open_series_list = sorted(
+            {
+                (t.get("series") or extract_series_name(f"{t.get('target', '')} {t.get('target_display', '')}")).lower()
+                for t in open_tasks
+                if (t.get("series") or extract_series_name(f"{t.get('target', '')} {t.get('target_display', '')}"))
+            }
+        )
+        series_json = html.escape(json.dumps(open_series_list))
+        open_series_str = ", ".join(open_series_list) if open_series_list else "None (distro only)"
+
         statuses_json = html.escape(json.dumps([s.lower() for s in open_statuses]))
 
         row = f"""
         <tr class="bug-row" id="row-{b_id}" onclick="toggleDetails({b_id})"
             data-bugid="{b_id}" data-package="{pkg.lower()}"
+            data-series="{series_json}"
             data-flame="{flame_tier}" data-info-added="{has_info_added_str}"
             data-statuses="{statuses_json}" data-created="{iso_created}" data-lastact="{iso_last_act}">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-{b_id}">▶</span></td>
@@ -290,6 +310,7 @@ def generate_html_report(
                                 <strong>Heat:</strong> <span>{flame_icons} ({html.escape(flame_reason)})</span>
                             </div>
                             {review_notice_html}
+                            <div class="meta-item"><strong>Open Series:</strong> <span>{open_series_str}</span></div>
                             <div class="meta-item"><strong>Active Targets:</strong>
                                 <span class="text-sm">{open_targets_str}</span>
                             </div>
@@ -314,6 +335,12 @@ def generate_html_report(
     status_options = "".join(
         f'<option value="{html.escape(s.lower())}">{html.escape(s)} ({status_counts[s]})</option>'
         for s in unique_statuses
+    )
+
+    # Series options for filter (Option A: series with open tasks)
+    unique_series = sorted(series_counts.keys())
+    series_options = "".join(
+        f'<option value="{html.escape(s)}">{html.escape(s)} ({series_counts[s]})</option>' for s in unique_series
     )
 
     # Summary cards HTML
@@ -622,6 +649,10 @@ def generate_html_report(
       <option value="">All Packages ({len(pkgs_found)})</option>
       {pkg_options}
     </select>
+    <select id="filter-series" class="select-filter" onchange="applyFilters()">
+      <option value="">All Series ({len(unique_series)})</option>
+      {series_options}
+    </select>
     <select id="filter-status" class="select-filter" onchange="applyFilters()">
       <option value="">All Open Statuses</option>
       <option value="__info_added__">⚠️ Needs Review (Info Added)</option>
@@ -703,6 +734,7 @@ def generate_html_report(
   function applyFilters() {{
     const search = document.getElementById('search-box').value.toLowerCase().trim();
     const pkgFilter = document.getElementById('filter-package').value;
+    const seriesFilter = document.getElementById('filter-series').value.toLowerCase();
     const statusFilter = document.getElementById('filter-status').value;
 
     const rows = document.querySelectorAll('.bug-row');
@@ -713,15 +745,17 @@ def generate_html_report(
       const detailsRow = document.getElementById('details-' + bId);
       const pkg = r.getAttribute('data-package') || '';
       const statuses = JSON.parse(r.getAttribute('data-statuses') || '[]');
+      const series = JSON.parse(r.getAttribute('data-series') || '[]');
       const isInfoAdded = r.getAttribute('data-info-added') === 'true';
       const textContent = (r.textContent + ' ' + (detailsRow ? detailsRow.textContent : '')).toLowerCase();
 
       let matchSearch = !search || textContent.includes(search);
       let matchPkg = !pkgFilter || pkg === pkgFilter;
+      let matchSeries = !seriesFilter || series.includes(seriesFilter);
       let matchStatus = !statusFilter ||
         (statusFilter === '__info_added__' ? isInfoAdded : statuses.includes(statusFilter));
 
-      if (matchSearch && matchPkg && matchStatus) {{
+      if (matchSearch && matchPkg && matchSeries && matchStatus) {{
         r.style.display = '';
         visibleCount++;
       }} else {{
