@@ -191,9 +191,23 @@ def main(argv: list[str] | None = None) -> int:
     state = load_state(args.state_file)
     existing_bugs = state.get("bugs", {})
     last_scan_utc = state.get("last_scan_utc")
+    state_packages = state.get("packages", [])
 
     scan_start_utc = datetime.now(UTC)
-    is_incremental = bool(last_scan_utc) and not args.full
+
+    # Automatically trigger a full scan if monitored packages have changed
+    packages_changed = bool(state_packages) and set(state_packages) != set(packages)
+    if packages_changed:
+        added = sorted(set(packages) - set(state_packages))
+        removed = sorted(set(state_packages) - set(packages))
+        changes = []
+        if added:
+            changes.append(f"added: {added}")
+        if removed:
+            changes.append(f"removed: {removed}")
+        logger.info("Monitored packages changed (%s); triggering full scan", "; ".join(changes))
+
+    is_incremental = bool(last_scan_utc) and not args.full and not packages_changed
 
     if is_incremental:
         try:
