@@ -22,7 +22,8 @@ jobs:
           path: data
 
       - name: Set up uv
-        uses: actions/setup-uv
+        uses: astral-sh/setup-uv@v5  # on Gihub
+        # uses: actions/setup-uv  # on Forgejo
 
       - name: Sync
         run: ./lp-bug-monitor -f data/packages.txt --state-file data/bugs-state.json -o data/bugs.html
@@ -30,8 +31,10 @@ jobs:
       - name: Commit and push
         run: |
           cd data
-          git config user.name "Forgejo Actions"
-          git config user.email "noreply+forgejo-actions@canonical.com"
+          git config user.name "Github Actions"
+          git config user.email "noreply+github-actions@github.com"
+          # git config user.name "Forgejo Actions"
+          # git config user.email "noreply+forgejo-actions@canonical.com"
           git add bugs.html bugs-state.json
           if git diff --cached --quiet; then
             echo "No changes to commit"
