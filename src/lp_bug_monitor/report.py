@@ -459,6 +459,8 @@ def generate_html_report(
   }}
   table.bugs-table {{
     width: 100%;
+    min-width: 960px;
+    table-layout: fixed;
     border-collapse: collapse;
     text-align: left;
     font-size: 0.84rem;
@@ -484,9 +486,9 @@ def generate_html_report(
   /* Main row */
   .bug-row {{ cursor: pointer; transition: background 0.1s ease; }}
   .bug-row:hover {{ background: #fdf2e9; }}
-  .bug-row.expanded {{ background: #fbf0e8; font-weight: 500; }}
+  .bug-row.expanded {{ background: #fbf0e8; }}
   .col-toggle {{
-    width: 24px;
+    width: 28px;
     text-align: center;
     color: var(--text-muted);
     font-size: 0.75rem;
@@ -498,9 +500,9 @@ def generate_html_report(
   .flame-tier {{ cursor: default; letter-spacing: -1px; }}
   .flame-0 {{ color: #9ca3af; }}
   .col-id {{ width: 80px; font-weight: 600; white-space: nowrap; }}
-  .col-title {{ max-width: 440px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }}
-  .col-package {{ width: 140px; white-space: nowrap; }}
-  .col-tasks {{ width: auto; white-space: nowrap; }}
+  .col-title {{ width: auto; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }}
+  .col-package {{ width: 280px; white-space: nowrap; }}
+  .col-tasks {{ width: 220px; white-space: nowrap; }}
   .col-created {{ width: 130px; white-space: nowrap; }}
   .col-activity {{ width: 130px; white-space: nowrap; }}
 
@@ -638,13 +640,13 @@ def generate_html_report(
     <thead>
       <tr>
         <th class="col-toggle"></th>
-        <th onclick="sortTable('flame')" title="Importance &amp; Activity heat">🔥 ↕</th>
-        <th onclick="sortTable('id')">Bug ID ↕</th>
-        <th onclick="sortTable('title')">Summary / Title ↕</th>
-        <th onclick="sortTable('package')">Source Package ↕</th>
-        <th>Active Tasks Summary</th>
-        <th onclick="sortTable('created')">Created (UTC) ↕</th>
-        <th onclick="sortTable('lastact')">Last Activity (UTC) ↕</th>
+        <th class="col-flame" onclick="sortTable('flame')" title="Importance &amp; Activity heat">🔥 ↕</th>
+        <th class="col-id" onclick="sortTable('id')">Bug ID ↕</th>
+        <th class="col-title" onclick="sortTable('title')">Summary / Title ↕</th>
+        <th class="col-package" onclick="sortTable('package')">Source Package ↕</th>
+        <th class="col-tasks">Active Tasks Summary</th>
+        <th class="col-created" onclick="sortTable('created')">Created (UTC) ↕</th>
+        <th class="col-activity" onclick="sortTable('lastact')">Last Activity (UTC) ↕</th>
       </tr>
     </thead>
     <tbody id="bugs-tbody">
