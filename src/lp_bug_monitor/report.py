@@ -625,7 +625,7 @@ def generate_html_report(
 
 <div class="header">
   <h1>{html.escape(dashboard_title)}</h1>
-  <p>Active open bugs filed against: {html.escape(pkgs_label)}. Generated on {scan_str}.</p>
+  <p>Generated on {scan_str}.</p>
 </div>
 
 <div class="stats-bar">
