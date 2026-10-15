@@ -5178,9 +5178,43 @@
       ],
       "title": "Only ship firmware relevant to the current architecture OR How Qualcomm eats 11% more space than Intel on amd64 image",
       "web_link": "https://bugs.launchpad.net/bugs/2170927"
+    },
+    "2171012": {
+      "date_created": "2026-10-15T18:59:07.939720+00:00",
+      "date_last_updated": "2026-10-15T18:59:07.939720+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2171012,
+      "last_activity_summary": "bug updated by mr-cottons-parrot",
+      "last_activity_time": "2026-10-15T18:59:07.939720+00:00",
+      "owner": "Andy Sheimo",
+      "package": "linux-firmware",
+      "packages": [
+        "linux-firmware"
+      ],
+      "tags": [
+        "amd64",
+        "apport-bug",
+        "resolute"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-15T18:59:07.939720+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "linux-firmware (Ubuntu)",
+          "target_display": "linux-firmware (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2171012"
+        }
+      ],
+      "title": "Mac mini 2014 intel i5 tries to instell nvidia drivers and panics.",
+      "web_link": "https://bugs.launchpad.net/bugs/2171012"
     }
   },
-  "last_scan_utc": "2026-10-15T14:18:23.380232+00:00",
+  "last_scan_utc": "2026-10-15T19:41:40.717236+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",

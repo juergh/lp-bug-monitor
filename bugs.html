@@ -269,13 +269,13 @@
 
 <div class="header">
   <h1>Ubuntu Bug Status (19 packages)</h1>
-  <p>Active open bugs filed against: linux-firmware, linux-firmware-amd-graphics, linux-firmware-amd-misc, linux-firmware-broadcom-wireless, linux-firmware-intel-graphics, linux-firmware-intel-misc, linux-firmware-intel-wireless, linux-firmware-marvell-prestera, linux-firmware-marvell-wireless, linux-firmware-mediatek, linux-firmware-mellanox-spectrum, linux-firmware-misc, linux-firmware-netronome, linux-firmware-nvidia-graphics, linux-firmware-qlogic, linux-firmware-qualcomm-graphics, linux-firmware-qualcomm-misc, linux-firmware-qualcomm-wireless, linux-firmware-realtek. Generated on 2026-10-15 14:18:23 UTC.</p>
+  <p>Generated on 2026-10-15 19:41:40 UTC.</p>
 </div>
 
 <div class="stats-bar">
   <div class="stat-card">
     <div class="label">Total Open Bugs</div>
-    <div class="value" id="stat-total">56</div>
+    <div class="value" id="stat-total">57</div>
   </div>
   <div class="stat-card">
     <div class="label">Source Packages Tracked</div>
@@ -284,7 +284,7 @@
   <div class="stat-card" style="flex: 2;">
     <div class="label">Active Task Status Breakdown</div>
     <div class="summary-chips">
-      <span class="summary-chip"><span class="chip-status badge-new"></span> New: <strong>75</strong></span><span class="summary-chip"><span class="chip-status badge-fixcommitted"></span> Fix Committed: <strong>5</strong></span><span class="summary-chip"><span class="chip-status badge-inprogress"></span> In Progress: <strong>20</strong></span><span class="summary-chip"><span class="chip-status badge-inprogress"></span> Triaged: <strong>1</strong></span><span class="summary-chip"><span class="chip-status badge-confirmed"></span> Confirmed: <strong>12</strong></span><span class="summary-chip"><span class="chip-status badge-incomplete"></span> Incomplete: <strong>19</strong></span>
+      <span class="summary-chip"><span class="chip-status badge-new"></span> New: <strong>76</strong></span><span class="summary-chip"><span class="chip-status badge-fixcommitted"></span> Fix Committed: <strong>5</strong></span><span class="summary-chip"><span class="chip-status badge-inprogress"></span> In Progress: <strong>20</strong></span><span class="summary-chip"><span class="chip-status badge-inprogress"></span> Triaged: <strong>1</strong></span><span class="summary-chip"><span class="chip-status badge-confirmed"></span> Confirmed: <strong>12</strong></span><span class="summary-chip"><span class="chip-status badge-incomplete"></span> Incomplete: <strong>19</strong></span>
     </div>
   </div>
 </div>
@@ -299,12 +299,12 @@
     </select>
     <select id="filter-series" class="select-filter" onchange="applyFilters()">
       <option value="">All Series (4)</option>
-      <option value="__none__">No nominations (26)</option><option value="jammy">jammy (2)</option><option value="noble">noble (16)</option><option value="resolute">resolute (15)</option><option value="stonking">stonking (5)</option>
+      <option value="__none__">No nominations (27)</option><option value="jammy">jammy (2)</option><option value="noble">noble (16)</option><option value="resolute">resolute (15)</option><option value="stonking">stonking (5)</option>
     </select>
     <select id="filter-status" class="select-filter" onchange="applyFilters()">
       <option value="">All Open Statuses</option>
       <option value="__info_added__">⚠️ Needs Review (Info Added)</option>
-      <option value="confirmed">Confirmed (12)</option><option value="fix committed">Fix Committed (5)</option><option value="in progress">In Progress (20)</option><option value="incomplete">Incomplete (19)</option><option value="new">New (75)</option><option value="triaged">Triaged (1)</option>
+      <option value="confirmed">Confirmed (12)</option><option value="fix committed">Fix Committed (5)</option><option value="in progress">In Progress (20)</option><option value="incomplete">Incomplete (19)</option><option value="new">New (76)</option><option value="triaged">Triaged (1)</option>
     </select>
   </div>
   <div class="action-group">
@@ -330,6 +330,78 @@
     </thead>
     <tbody id="bugs-tbody">
       
+        <tr class="bug-row" id="row-2171012" onclick="toggleDetails(2171012)"
+            data-bugid="2171012" data-package="linux-firmware"
+            data-series="[]"
+            data-flame="3" data-info-added="false"
+            data-statuses="[&quot;new&quot;]" data-created="2026-10-15T18:59:07.939720+00:00" data-lastact="2026-10-15T18:59:07.939720+00:00">
+            <td class="col-toggle"><span class="toggle-icon" id="toggle-2171012">▶</span></td>
+            <td class="col-flame" title="Hot (Active within 48h · Undecided importance)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
+            <td class="col-id font-mono">
+                <a href="https://bugs.launchpad.net/bugs/2171012" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2171012</a>
+            </td>
+            <td class="col-title" title="Mac mini 2014 intel i5 tries to instell nvidia drivers and panics.">Mac mini 2014 intel i5 tries to instell nvidia drivers and panics.</td>
+            <td class="col-package font-mono"><span class="package-pill">linux-firmware</span></td>
+            <td class="col-tasks">
+                <div class="tasks-summary-wrap">
+                    <span class="task-count-pill"><strong class="text-orange">1 Open</strong> / <span class="text-gray">0 Closed</span></span>
+                    <div class="status-badges-group"><span class="status-badge badge-new">New</span></div>
+                </div>
+            </td>
+            <td class="col-created font-mono">2026-10-15 18:59</td>
+            <td class="col-activity font-mono" title="bug updated by mr-cottons-parrot">2026-10-15 18:59</td>
+        </tr>
+        <tr class="details-row" id="details-2171012" style="display: none;">
+            <td colspan="8">
+                <div class="details-panel">
+                    <div class="details-grid">
+                        <div class="details-tasks-card">
+                            <h4>Target Tasks (1 total)</h4>
+                            <table class="subtable">
+                                <thead>
+                                    <tr>
+                                        <th>Target</th>
+                                        <th>Status</th>
+                                        <th>Importance</th>
+                                        <th>Assignee</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td class="font-mono">linux-firmware (Ubuntu)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2171012" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="details-meta-card">
+                            <h4>Bug Details</h4>
+                            <div class="meta-item"><strong>Reporter:</strong> <span>Andy Sheimo</span></div>
+                            <div class="meta-item">
+                                <strong>Created:</strong>
+                                <span class="font-mono">2026-10-15 18:59</span>
+                            </div>
+                            <div class="meta-item">
+                                <strong>Last Updated:</strong>
+                                <span class="font-mono">2026-10-15 18:59</span>
+                            </div>
+                            <div class="meta-item"><strong>Last Activity:</strong> <span>bug updated by mr-cottons-parrot</span></div>
+                            <div class="meta-item">
+                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (Active within 48h · Undecided importance))</span>
+                            </div>
+                            
+                            <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
+                            <div class="meta-item"><strong>Active Targets:</strong>
+                                <span class="text-sm">linux-firmware (Ubuntu)</span>
+                            </div>
+                            <div class="meta-item"><strong>Tags:</strong>
+                                <div class="tags-wrap"><span class="tag-pill">amd64</span><span class="tag-pill">apport-bug</span><span class="tag-pill">resolute</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        
+
         <tr class="bug-row" id="row-2170922" onclick="toggleDetails(2170922)"
             data-bugid="2170922" data-package="linux-firmware"
             data-series="[]"
@@ -1094,7 +1166,7 @@ It&#x27;s new Dell system with Intel NVL, need firmware-sof + kernel SDCA for In
             data-flame="3" data-info-added="true"
             data-statuses="[&quot;incomplete&quot;]" data-created="2024-01-17T19:52:39.923932+00:00" data-lastact="2026-10-13T14:27:39.215333+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2049676">▶</span></td>
-            <td class="col-flame" title="Hot (Active within 48h · Undecided importance)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
+            <td class="col-flame" title="Hot (Info added · Active 2.2d ago)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2049676" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2049676</a>
             </td>
@@ -1143,7 +1215,7 @@ It&#x27;s new Dell system with Intel NVL, need firmware-sof + kernel SDCA for In
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>bug updated by guyrutenberg</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (Active within 48h · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (Info added · Active 2.2d ago))</span>
                             </div>
                             <div class="meta-item"><strong class="text-orange">Review:</strong> <span>Activity occurred after task set to Incomplete</span></div>
                             <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
@@ -1598,7 +1670,7 @@ It&#x27;s new Dell system with Intel NVL, need firmware-sof + kernel SDCA for In
             data-flame="3" data-info-added="true"
             data-statuses="[&quot;incomplete&quot;]" data-created="2024-10-23T13:31:34.577857+00:00" data-lastact="2026-10-09T09:46:21.719273+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2085434">▶</span></td>
-            <td class="col-flame" title="Hot (High importance · Active 6.2d ago)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
+            <td class="col-flame" title="Hot (High importance · Active 6.4d ago)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2085434" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2085434</a>
             </td>
@@ -1647,7 +1719,7 @@ It&#x27;s new Dell system with Intel NVL, need firmware-sof + kernel SDCA for In
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>bug updated by dsteiner</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (High importance · Active 6.2d ago))</span>
+                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (High importance · Active 6.4d ago))</span>
                             </div>
                             <div class="meta-item"><strong class="text-orange">Review:</strong> <span>Activity occurred after task set to Incomplete</span></div>
                             <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
@@ -1670,7 +1742,7 @@ It&#x27;s new Dell system with Intel NVL, need firmware-sof + kernel SDCA for In
             data-flame="1" data-info-added="false"
             data-statuses="[&quot;new&quot;]" data-created="2026-10-07T15:27:07.216096+00:00" data-lastact="2026-10-08T07:00:21.012030+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2169867">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 7.3d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 7.5d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2169867" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2169867</a>
             </td>
@@ -1719,7 +1791,7 @@ It&#x27;s new Dell system with Intel NVL, need firmware-sof + kernel SDCA for In
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>linux-oem-7.0 (Ubuntu): status: Invalid by tjaalton</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 7.3d ago · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 7.5d ago · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>resolute</span></div>
@@ -1742,7 +1814,7 @@ It&#x27;s new Dell system with Intel NVL, need firmware-sof + kernel SDCA for In
             data-flame="1" data-info-added="false"
             data-statuses="[&quot;new&quot;]" data-created="2026-06-30T06:39:28.742942+00:00" data-lastact="2026-10-08T06:26:34.642162+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2158687">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 7.3d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 7.6d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2158687" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2158687</a>
             </td>
@@ -1791,7 +1863,7 @@ It&#x27;s new Dell system with Intel NVL, need firmware-sof + kernel SDCA for In
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>linux-oem-7.0 (Ubuntu): status: Invalid by tjaalton</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 7.3d ago · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 7.6d ago · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>resolute</span></div>
@@ -1814,7 +1886,7 @@ It&#x27;s new Dell system with Intel NVL, need firmware-sof + kernel SDCA for In
             data-flame="1" data-info-added="false"
             data-statuses="[&quot;in progress&quot;]" data-created="2026-09-18T03:39:43.511854+00:00" data-lastact="2026-10-08T06:19:16.649767+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2167668">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 7.3d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 7.6d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2167668" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2167668</a>
             </td>
@@ -1863,7 +1935,7 @@ It&#x27;s new Dell system with Intel NVL, need firmware-sof + kernel SDCA for In
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>affects: linux-firmware-amd-graphics (Ubuntu Resolute) by tjaalton</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 7.3d ago · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 7.6d ago · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>resolute, stonking</span></div>
@@ -1886,7 +1958,7 @@ It&#x27;s new Dell system with Intel NVL, need firmware-sof + kernel SDCA for In
             data-flame="1" data-info-added="false"
             data-statuses="[&quot;new&quot;]" data-created="2026-10-07T03:43:30.870036+00:00" data-lastact="2026-10-07T23:01:57.334203+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2169792">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 7.6d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 7.9d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2169792" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2169792</a>
             </td>
@@ -1935,7 +2007,7 @@ It&#x27;s new Dell system with Intel NVL, need firmware-sof + kernel SDCA for In
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>tags: amd64 apport-bug kernel-daily-bug linux-firmware-daily-bug resolute wayland-session by ubuntu-kernel-bot</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 7.6d ago · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 7.9d ago · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
@@ -1958,7 +2030,7 @@ It&#x27;s new Dell system with Intel NVL, need firmware-sof + kernel SDCA for In
             data-flame="1" data-info-added="false"
             data-statuses="[&quot;in progress&quot;]" data-created="2026-09-08T05:58:44.096220+00:00" data-lastact="2026-10-07T23:01:53.501704+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2166733">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 7.6d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 7.9d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2166733" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2166733</a>
             </td>
@@ -2007,7 +2079,7 @@ It&#x27;s new Dell system with Intel NVL, need firmware-sof + kernel SDCA for In
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>tags: kernel-daily-bug linux-firmware-daily-bug by ubuntu-kernel-bot</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 7.6d ago · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 7.9d ago · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>resolute</span></div>
@@ -2030,7 +2102,7 @@ It&#x27;s new Dell system with Intel NVL, need firmware-sof + kernel SDCA for In
             data-flame="1" data-info-added="false"
             data-statuses="[&quot;in progress&quot;]" data-created="2026-07-07T02:24:01.855733+00:00" data-lastact="2026-10-07T23:01:51.568379+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2159856">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 7.6d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 7.9d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2159856" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2159856</a>
             </td>
@@ -2079,7 +2151,7 @@ It&#x27;s new Dell system with Intel NVL, need firmware-sof + kernel SDCA for In
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>tags: kernel-daily-bug linux-firmware-daily-bug by ubuntu-kernel-bot</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 7.6d ago · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 7.9d ago · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>resolute</span></div>
@@ -2102,7 +2174,7 @@ It&#x27;s new Dell system with Intel NVL, need firmware-sof + kernel SDCA for In
             data-flame="1" data-info-added="false"
             data-statuses="[&quot;in progress&quot;]" data-created="2026-09-18T08:55:15.281959+00:00" data-lastact="2026-10-07T11:43:11.566681+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2167683">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 8.1d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 8.3d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2167683" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2167683</a>
             </td>
@@ -2151,7 +2223,7 @@ It&#x27;s new Dell system with Intel NVL, need firmware-sof + kernel SDCA for In
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>affects: linux-firmware-intel-graphics (Ubuntu Resolute) by tjaalton</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 8.1d ago · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 8.3d ago · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>resolute</span></div>
@@ -2174,7 +2246,7 @@ It&#x27;s new Dell system with Intel NVL, need firmware-sof + kernel SDCA for In
             data-flame="1" data-info-added="false"
             data-statuses="[&quot;fix committed&quot;, &quot;in progress&quot;, &quot;incomplete&quot;]" data-created="2026-07-30T14:41:59.415096+00:00" data-lastact="2026-10-07T09:38:36.344441+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2162157">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 8.2d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 8.4d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2162157" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2162157</a>
             </td>
@@ -2223,7 +2295,7 @@ It&#x27;s new Dell system with Intel NVL, need firmware-sof + kernel SDCA for In
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>backport-iwlwifi-dkms (Ubuntu Stonking): status: Incomplete by vicamo</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 8.2d ago · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 8.4d ago · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>resolute, stonking</span></div>
@@ -2246,7 +2318,7 @@ It&#x27;s new Dell system with Intel NVL, need firmware-sof + kernel SDCA for In
             data-flame="1" data-info-added="false"
             data-statuses="[&quot;new&quot;]" data-created="2026-09-18T14:15:50.626046+00:00" data-lastact="2026-09-29T14:40:16.534799+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2167722">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 16.0d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 16.2d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2167722" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2167722</a>
             </td>
@@ -2295,7 +2367,7 @@ It&#x27;s new Dell system with Intel NVL, need firmware-sof + kernel SDCA for In
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>linux-firmware-mediatek (Ubuntu): assignee: Ioanna Alifieraki (joalif) by joalif</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 16.0d ago · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 16.2d ago · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
@@ -2462,7 +2534,7 @@ It&#x27;s new Dell system with Intel NVL, need firmware-sof + kernel SDCA for In
             data-flame="1" data-info-added="false"
             data-statuses="[&quot;new&quot;]" data-created="2026-09-22T18:56:50.522486+00:00" data-lastact="2026-09-22T23:01:19.636659+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2167972">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 22.6d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 22.9d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2167972" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2167972</a>
             </td>
@@ -2511,7 +2583,7 @@ It&#x27;s new Dell system with Intel NVL, need firmware-sof + kernel SDCA for In
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>tags: amd64 apport-bug kernel-daily-bug linux-firmware-daily-bug resolute by ubuntu-kernel-bot</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 22.6d ago · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 22.9d ago · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
@@ -2534,7 +2606,7 @@ It&#x27;s new Dell system with Intel NVL, need firmware-sof + kernel SDCA for In
             data-flame="1" data-info-added="false"
             data-statuses="[&quot;new&quot;]" data-created="2026-09-10T14:34:30.859286+00:00" data-lastact="2026-09-22T06:11:25.762200+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2166983">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 23.3d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 23.6d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2166983" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2166983</a>
             </td>
@@ -2583,7 +2655,7 @@ It&#x27;s new Dell system with Intel NVL, need firmware-sof + kernel SDCA for In
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>tags: kernel-daily-bug linux-firmware-daily-bug by ubuntu-kernel-bot</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 23.3d ago · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 23.6d ago · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
@@ -2606,7 +2678,7 @@ It&#x27;s new Dell system with Intel NVL, need firmware-sof + kernel SDCA for In
             data-flame="1" data-info-added="false"
             data-statuses="[&quot;new&quot;]" data-created="2026-08-01T21:11:49.945736+00:00" data-lastact="2026-09-18T15:10:27.929075+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2162643">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 27.0d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 27.2d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2162643" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2162643</a>
             </td>
@@ -2655,7 +2727,7 @@ It&#x27;s new Dell system with Intel NVL, need firmware-sof + kernel SDCA for In
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>bug task added: linux-firmware (Ubuntu Noble) by juergh</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 27.0d ago · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 27.2d ago · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>noble</span></div>
@@ -2678,7 +2750,7 @@ It&#x27;s new Dell system with Intel NVL, need firmware-sof + kernel SDCA for In
             data-flame="1" data-info-added="false"
             data-statuses="[&quot;new&quot;]" data-created="2026-08-30T21:19:44.608090+00:00" data-lastact="2026-09-17T18:25:15.567534+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2165859">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 27.8d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 28.1d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2165859" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2165859</a>
             </td>
@@ -2727,7 +2799,7 @@ It&#x27;s new Dell system with Intel NVL, need firmware-sof + kernel SDCA for In
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>attachment added: 20260915_003026 (video-converter.com).mp4 https://bugs.launchpad.net/bugs/2165859/+attachment/6000292/+files/20260915_003026%20%28video-converter.com%29.mp4 by tpsantosku</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 27.8d ago · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 28.1d ago · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
@@ -2750,7 +2822,7 @@ It&#x27;s new Dell system with Intel NVL, need firmware-sof + kernel SDCA for In
             data-flame="1" data-info-added="false"
             data-statuses="[&quot;confirmed&quot;]" data-created="2026-01-26T08:30:55.994138+00:00" data-lastact="2026-09-16T07:32:20.876200+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2139060">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 29.3d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 29.5d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2139060" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2139060</a>
             </td>
@@ -2799,7 +2871,7 @@ It&#x27;s new Dell system with Intel NVL, need firmware-sof + kernel SDCA for In
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>bug updated by scroom43</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 29.3d ago · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 29.5d ago · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
