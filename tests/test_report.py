@@ -167,6 +167,18 @@ def test_generate_html_report_series_filter_option_a(tmp_path: Path):
                 },
             ],
         },
+        "103": {
+            "id": 103,
+            "title": "Bug without any series nominations",
+            "package": "linux-firmware",
+            "tasks": [
+                {
+                    "target": "linux-firmware (Ubuntu)",
+                    "status": "Confirmed",
+                    "is_complete": False,
+                },
+            ],
+        },
     }
     generate_html_report(bugs=bugs, output_path=out_file)
     content = out_file.read_text(encoding="utf-8")
@@ -174,12 +186,15 @@ def test_generate_html_report_series_filter_option_a(tmp_path: Path):
     # Both series exist with count 1 (Option A: only open tasks count)
     assert '<option value="jammy">jammy (1)</option>' in content
     assert '<option value="noble">noble (1)</option>' in content
+    assert '<option value="__none__">No nominations (1)</option>' in content
 
-    # Row 101 only targets noble; row 102 only targets jammy
+    # Row 101 only targets noble; row 102 only targets jammy; row 103 has no series
     assert 'id="row-101"' in content
     assert 'data-series="[&quot;noble&quot;]"' in content
     assert 'id="row-102"' in content
     assert 'data-series="[&quot;jammy&quot;]"' in content
+    assert 'id="row-103"' in content
+    assert 'data-series="[]"' in content
 
 
 def test_generate_html_report_multiple_packages(tmp_path: Path):

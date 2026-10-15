@@ -142,6 +142,7 @@ def generate_html_report(
     total_bugs = len(sorted_bugs)
     status_counts: dict[str, int] = {}
     series_counts: dict[str, int] = {}
+    no_series_count = 0
     for b in sorted_bugs:
         open_series_for_b: set[str] = set()
         for t in b.get("tasks", []):
@@ -153,6 +154,8 @@ def generate_html_report(
                     open_series_for_b.add(s.lower())
         for s in open_series_for_b:
             series_counts[s] = series_counts.get(s, 0) + 1
+        if not open_series_for_b:
+            no_series_count += 1
 
     # Build bug rows HTML
     rows_html: list[str] = []
@@ -339,7 +342,8 @@ def generate_html_report(
 
     # Series options for filter (Option A: series with open tasks)
     unique_series = sorted(series_counts.keys())
-    series_options = "".join(
+    none_option = f'<option value="__none__">No nominations ({no_series_count})</option>' if no_series_count > 0 else ""
+    series_options = none_option + "".join(
         f'<option value="{html.escape(s)}">{html.escape(s)} ({series_counts[s]})</option>' for s in unique_series
     )
 
@@ -751,7 +755,12 @@ def generate_html_report(
 
       let matchSearch = !search || textContent.includes(search);
       let matchPkg = !pkgFilter || pkg === pkgFilter;
-      let matchSeries = !seriesFilter || series.includes(seriesFilter);
+      let matchSeries = true;
+      if (seriesFilter === '__none__') {{
+        matchSeries = series.length === 0;
+      }} else if (seriesFilter) {{
+        matchSeries = series.includes(seriesFilter);
+      }}
       let matchStatus = !statusFilter ||
         (statusFilter === '__info_added__' ? isInfoAdded : statuses.includes(statusFilter));
 
