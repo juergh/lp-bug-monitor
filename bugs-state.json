@@ -953,11 +953,11 @@
     },
     "2146784": {
       "date_created": "2026-03-30T13:06:53.224745+00:00",
-      "date_last_updated": "2026-10-16T05:48:31.305599+00:00",
+      "date_last_updated": "2026-10-16T17:17:19.019936+00:00",
       "has_activity_after_incomplete": false,
       "id": 2146784,
       "last_activity_summary": "linux-firmware (Ubuntu): status: Invalid by juergh",
-      "last_activity_time": "2026-10-16T05:48:31.305599+00:00",
+      "last_activity_time": "2026-10-16T17:17:19.019936+00:00",
       "owner": "Leo Lin",
       "package": "linux-firmware",
       "packages": [
@@ -2799,15 +2799,14 @@
     },
     "2167302": {
       "date_created": "2026-09-15T07:10:15.851596+00:00",
-      "date_last_updated": "2026-10-16T05:24:58.803127+00:00",
+      "date_last_updated": "2026-10-16T21:31:09.728353+00:00",
       "has_activity_after_incomplete": false,
       "id": 2167302,
-      "last_activity_summary": "linux-firmware-amd-graphics (Ubuntu): status: Invalid by juergh",
-      "last_activity_time": "2026-10-16T05:24:58.803127+00:00",
+      "last_activity_summary": "bug task added: linux (Ubuntu) by superm1",
+      "last_activity_time": "2026-10-16T21:31:09.728353+00:00",
       "owner": "Nick Manchev",
-      "package": "linux-firmware",
+      "package": "linux-firmware-amd-graphics",
       "packages": [
-        "linux-firmware",
         "linux-firmware-amd-graphics"
       ],
       "tags": [
@@ -2815,6 +2814,18 @@
         "linux-firmware-daily-bug"
       ],
       "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-16T21:29:19.085392+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "linux (Ubuntu)",
+          "target_display": "linux (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux/+bug/2167302"
+        },
         {
           "assignee": null,
           "date_closed": "2026-10-16T05:24:56.556437+00:00",
@@ -2826,6 +2837,18 @@
           "target": "linux-firmware-amd-graphics (Ubuntu)",
           "target_display": "linux-firmware-amd-graphics (Ubuntu)",
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-amd-graphics/+bug/2167302"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-16T21:29:19.085392+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "noble",
+          "status": "New",
+          "target": "linux (Ubuntu Noble)",
+          "target_display": "linux (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux/+bug/2167302"
         },
         {
           "assignee": null,
@@ -4007,7 +4030,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2171012"
     }
   },
-  "last_scan_utc": "2026-10-16T16:03:29.286949+00:00",
+  "last_scan_utc": "2026-10-16T22:30:33.089775+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
