@@ -1,1425 +1,17 @@
 {
   "bugs": {
-    "1958518": {
-      "date_created": "2022-01-20T11:29:13.224366+00:00",
-      "date_last_updated": "2026-09-03T18:01:11.213311+00:00",
-      "has_activity_after_incomplete": false,
-      "id": 1958518,
-      "last_activity_summary": "linux-firmware (Ubuntu Noble): status: Fix Released by janitor",
-      "last_activity_time": "2026-09-03T18:01:11.213311+00:00",
-      "owner": "Rolf Leggewie",
-      "package": "linux-firmware",
-      "packages": [
-        "linux-firmware",
-        "linux-firmware-amd-graphics",
-        "linux-firmware-amd-misc",
-        "linux-firmware-broadcom-wireless",
-        "linux-firmware-intel-graphics",
-        "linux-firmware-intel-misc",
-        "linux-firmware-intel-wireless",
-        "linux-firmware-marvell-prestera",
-        "linux-firmware-marvell-wireless",
-        "linux-firmware-mediatek",
-        "linux-firmware-mellanox-spectrum",
-        "linux-firmware-misc",
-        "linux-firmware-netronome",
-        "linux-firmware-nvidia-graphics",
-        "linux-firmware-qlogic",
-        "linux-firmware-qualcomm-graphics",
-        "linux-firmware-qualcomm-misc",
-        "linux-firmware-qualcomm-wireless",
-        "linux-firmware-realtek"
-      ],
-      "tags": [
-        "kern-2009",
-        "kernel-daily-bug",
-        "linux-firmware-daily-bug",
-        "verification-done-noble"
-      ],
-      "tasks": [
-        {
-          "assignee": "Juerg Haefliger",
-          "date_closed": "2026-02-14T03:07:25.943793+00:00",
-          "date_created": "2022-01-20T11:29:13.224366+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": null,
-          "status": "Fix Released",
-          "target": "linux-firmware (Ubuntu)",
-          "target_display": "linux-firmware (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T17:54:50.307038+00:00",
-          "date_created": "2026-08-25T17:54:13.638251+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": null,
-          "status": "Fix Released",
-          "target": "linux-firmware-amd-graphics (Ubuntu)",
-          "target_display": "linux-firmware-amd-graphics (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-amd-graphics/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T17:54:53.712773+00:00",
-          "date_created": "2026-08-25T17:53:58.941722+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": null,
-          "status": "Fix Released",
-          "target": "linux-firmware-amd-misc (Ubuntu)",
-          "target_display": "linux-firmware-amd-misc (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-amd-misc/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T17:54:57.261523+00:00",
-          "date_created": "2026-08-25T17:53:46.042499+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": null,
-          "status": "Fix Released",
-          "target": "linux-firmware-broadcom-wireless (Ubuntu)",
-          "target_display": "linux-firmware-broadcom-wireless (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-broadcom-wireless/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T17:55:00.894191+00:00",
-          "date_created": "2026-08-25T17:53:31.440332+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": null,
-          "status": "Fix Released",
-          "target": "linux-firmware-intel-graphics (Ubuntu)",
-          "target_display": "linux-firmware-intel-graphics (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-intel-graphics/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T17:55:04.804494+00:00",
-          "date_created": "2026-08-25T17:53:17.377123+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": null,
-          "status": "Fix Released",
-          "target": "linux-firmware-intel-misc (Ubuntu)",
-          "target_display": "linux-firmware-intel-misc (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-intel-misc/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T17:55:08.965658+00:00",
-          "date_created": "2026-08-25T17:53:00.085334+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": null,
-          "status": "Fix Released",
-          "target": "linux-firmware-intel-wireless (Ubuntu)",
-          "target_display": "linux-firmware-intel-wireless (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-intel-wireless/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T17:55:12.625585+00:00",
-          "date_created": "2026-08-25T17:52:47.599559+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": null,
-          "status": "Fix Released",
-          "target": "linux-firmware-marvell-prestera (Ubuntu)",
-          "target_display": "linux-firmware-marvell-prestera (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-marvell-prestera/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T17:55:16.147727+00:00",
-          "date_created": "2026-08-25T17:52:34.075226+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": null,
-          "status": "Fix Released",
-          "target": "linux-firmware-marvell-wireless (Ubuntu)",
-          "target_display": "linux-firmware-marvell-wireless (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-marvell-wireless/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T17:55:19.421725+00:00",
-          "date_created": "2026-08-25T17:52:17.462736+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": null,
-          "status": "Fix Released",
-          "target": "linux-firmware-mediatek (Ubuntu)",
-          "target_display": "linux-firmware-mediatek (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-mediatek/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T17:55:22.993216+00:00",
-          "date_created": "2026-08-25T17:51:58.382194+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": null,
-          "status": "Fix Released",
-          "target": "linux-firmware-mellanox-spectrum (Ubuntu)",
-          "target_display": "linux-firmware-mellanox-spectrum (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-mellanox-spectrum/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T17:55:26.834520+00:00",
-          "date_created": "2026-08-25T17:51:47.094107+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": null,
-          "status": "Fix Released",
-          "target": "linux-firmware-misc (Ubuntu)",
-          "target_display": "linux-firmware-misc (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-misc/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T17:55:30.272196+00:00",
-          "date_created": "2026-08-25T17:51:34.421829+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": null,
-          "status": "Fix Released",
-          "target": "linux-firmware-netronome (Ubuntu)",
-          "target_display": "linux-firmware-netronome (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-netronome/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T17:55:33.311930+00:00",
-          "date_created": "2026-08-25T17:51:23.817807+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": null,
-          "status": "Fix Released",
-          "target": "linux-firmware-nvidia-graphics (Ubuntu)",
-          "target_display": "linux-firmware-nvidia-graphics (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-nvidia-graphics/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T17:55:36.961211+00:00",
-          "date_created": "2026-08-25T17:51:08.834700+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": null,
-          "status": "Fix Released",
-          "target": "linux-firmware-qlogic (Ubuntu)",
-          "target_display": "linux-firmware-qlogic (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-qlogic/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:20:38.465101+00:00",
-          "date_created": "2026-08-25T18:20:16.899967+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": null,
-          "status": "Fix Released",
-          "target": "linux-firmware-qualcomm-graphics (Ubuntu)",
-          "target_display": "linux-firmware-qualcomm-graphics (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-qualcomm-graphics/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:18:37.615884+00:00",
-          "date_created": "2026-08-25T18:18:15.737485+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": null,
-          "status": "Fix Released",
-          "target": "linux-firmware-qualcomm-misc (Ubuntu)",
-          "target_display": "linux-firmware-qualcomm-misc (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-qualcomm-misc/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T17:24:41.228024+00:00",
-          "date_created": "2026-08-25T17:23:38.834692+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": null,
-          "status": "Fix Released",
-          "target": "linux-firmware-qualcomm-wireless (Ubuntu)",
-          "target_display": "linux-firmware-qualcomm-wireless (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-qualcomm-wireless/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T17:55:40.515304+00:00",
-          "date_created": "2026-08-25T16:41:02.803782+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": null,
-          "status": "Fix Released",
-          "target": "linux-firmware-realtek (Ubuntu)",
-          "target_display": "linux-firmware-realtek (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-realtek/+bug/1958518"
-        },
-        {
-          "assignee": "Juerg Haefliger",
-          "date_closed": null,
-          "date_created": "2022-01-21T10:00:51.855718+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": "jammy",
-          "status": "Confirmed",
-          "target": "linux-firmware (Ubuntu Jammy)",
-          "target_display": "linux-firmware (Ubuntu Jammy)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/jammy/+source/linux-firmware/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": null,
-          "date_created": "2026-08-25T17:54:13.638251+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": "jammy",
-          "status": "New",
-          "target": "linux-firmware-amd-graphics (Ubuntu Jammy)",
-          "target_display": "linux-firmware-amd-graphics (Ubuntu Jammy)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/jammy/+source/linux-firmware-amd-graphics/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": null,
-          "date_created": "2026-08-25T17:53:58.941722+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": "jammy",
-          "status": "New",
-          "target": "linux-firmware-amd-misc (Ubuntu Jammy)",
-          "target_display": "linux-firmware-amd-misc (Ubuntu Jammy)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/jammy/+source/linux-firmware-amd-misc/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": null,
-          "date_created": "2026-08-25T17:53:46.042499+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": "jammy",
-          "status": "New",
-          "target": "linux-firmware-broadcom-wireless (Ubuntu Jammy)",
-          "target_display": "linux-firmware-broadcom-wireless (Ubuntu Jammy)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/jammy/+source/linux-firmware-broadcom-wireless/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": null,
-          "date_created": "2026-08-25T17:53:31.440332+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": "jammy",
-          "status": "New",
-          "target": "linux-firmware-intel-graphics (Ubuntu Jammy)",
-          "target_display": "linux-firmware-intel-graphics (Ubuntu Jammy)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/jammy/+source/linux-firmware-intel-graphics/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": null,
-          "date_created": "2026-08-25T17:53:17.377123+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": "jammy",
-          "status": "New",
-          "target": "linux-firmware-intel-misc (Ubuntu Jammy)",
-          "target_display": "linux-firmware-intel-misc (Ubuntu Jammy)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/jammy/+source/linux-firmware-intel-misc/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": null,
-          "date_created": "2026-08-25T17:53:00.085334+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": "jammy",
-          "status": "New",
-          "target": "linux-firmware-intel-wireless (Ubuntu Jammy)",
-          "target_display": "linux-firmware-intel-wireless (Ubuntu Jammy)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/jammy/+source/linux-firmware-intel-wireless/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": null,
-          "date_created": "2026-08-25T17:52:47.599559+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": "jammy",
-          "status": "New",
-          "target": "linux-firmware-marvell-prestera (Ubuntu Jammy)",
-          "target_display": "linux-firmware-marvell-prestera (Ubuntu Jammy)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/jammy/+source/linux-firmware-marvell-prestera/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": null,
-          "date_created": "2026-08-25T17:52:34.075226+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": "jammy",
-          "status": "New",
-          "target": "linux-firmware-marvell-wireless (Ubuntu Jammy)",
-          "target_display": "linux-firmware-marvell-wireless (Ubuntu Jammy)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/jammy/+source/linux-firmware-marvell-wireless/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": null,
-          "date_created": "2026-08-25T17:52:17.462736+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": "jammy",
-          "status": "New",
-          "target": "linux-firmware-mediatek (Ubuntu Jammy)",
-          "target_display": "linux-firmware-mediatek (Ubuntu Jammy)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/jammy/+source/linux-firmware-mediatek/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": null,
-          "date_created": "2026-08-25T17:51:58.382194+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": "jammy",
-          "status": "New",
-          "target": "linux-firmware-mellanox-spectrum (Ubuntu Jammy)",
-          "target_display": "linux-firmware-mellanox-spectrum (Ubuntu Jammy)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/jammy/+source/linux-firmware-mellanox-spectrum/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": null,
-          "date_created": "2026-08-25T17:51:47.094107+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": "jammy",
-          "status": "New",
-          "target": "linux-firmware-misc (Ubuntu Jammy)",
-          "target_display": "linux-firmware-misc (Ubuntu Jammy)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/jammy/+source/linux-firmware-misc/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": null,
-          "date_created": "2026-08-25T17:51:34.421829+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": "jammy",
-          "status": "New",
-          "target": "linux-firmware-netronome (Ubuntu Jammy)",
-          "target_display": "linux-firmware-netronome (Ubuntu Jammy)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/jammy/+source/linux-firmware-netronome/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": null,
-          "date_created": "2026-08-25T17:51:23.817807+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": "jammy",
-          "status": "New",
-          "target": "linux-firmware-nvidia-graphics (Ubuntu Jammy)",
-          "target_display": "linux-firmware-nvidia-graphics (Ubuntu Jammy)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/jammy/+source/linux-firmware-nvidia-graphics/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": null,
-          "date_created": "2026-08-25T17:51:08.834700+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": "jammy",
-          "status": "New",
-          "target": "linux-firmware-qlogic (Ubuntu Jammy)",
-          "target_display": "linux-firmware-qlogic (Ubuntu Jammy)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/jammy/+source/linux-firmware-qlogic/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": null,
-          "date_created": "2026-08-25T18:20:16.899967+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": "jammy",
-          "status": "New",
-          "target": "linux-firmware-qualcomm-graphics (Ubuntu Jammy)",
-          "target_display": "linux-firmware-qualcomm-graphics (Ubuntu Jammy)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/jammy/+source/linux-firmware-qualcomm-graphics/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": null,
-          "date_created": "2026-08-25T18:18:15.737485+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": "jammy",
-          "status": "New",
-          "target": "linux-firmware-qualcomm-misc (Ubuntu Jammy)",
-          "target_display": "linux-firmware-qualcomm-misc (Ubuntu Jammy)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/jammy/+source/linux-firmware-qualcomm-misc/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": null,
-          "date_created": "2026-08-25T17:23:38.834692+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": "jammy",
-          "status": "New",
-          "target": "linux-firmware-qualcomm-wireless (Ubuntu Jammy)",
-          "target_display": "linux-firmware-qualcomm-wireless (Ubuntu Jammy)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/jammy/+source/linux-firmware-qualcomm-wireless/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": null,
-          "date_created": "2026-08-25T16:41:02.803782+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": "jammy",
-          "status": "New",
-          "target": "linux-firmware-realtek (Ubuntu Jammy)",
-          "target_display": "linux-firmware-realtek (Ubuntu Jammy)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/jammy/+source/linux-firmware-realtek/+bug/1958518"
-        },
-        {
-          "assignee": "Juerg Haefliger",
-          "date_closed": "2026-09-03T18:01:06.782069+00:00",
-          "date_created": "2026-01-06T10:41:17.235578+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "noble",
-          "status": "Fix Released",
-          "target": "linux-firmware (Ubuntu Noble)",
-          "target_display": "linux-firmware (Ubuntu Noble)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-09-03T17:54:34.642721+00:00",
-          "date_created": "2026-08-25T17:54:13.638251+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "noble",
-          "status": "Fix Released",
-          "target": "linux-firmware-amd-graphics (Ubuntu Noble)",
-          "target_display": "linux-firmware-amd-graphics (Ubuntu Noble)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-amd-graphics/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-09-03T17:54:45.343726+00:00",
-          "date_created": "2026-08-25T17:53:58.941722+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "noble",
-          "status": "Fix Released",
-          "target": "linux-firmware-amd-misc (Ubuntu Noble)",
-          "target_display": "linux-firmware-amd-misc (Ubuntu Noble)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-amd-misc/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-09-03T17:54:53.358634+00:00",
-          "date_created": "2026-08-25T17:53:46.042499+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "noble",
-          "status": "Fix Released",
-          "target": "linux-firmware-broadcom-wireless (Ubuntu Noble)",
-          "target_display": "linux-firmware-broadcom-wireless (Ubuntu Noble)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-broadcom-wireless/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-09-03T17:55:04.382855+00:00",
-          "date_created": "2026-08-25T17:53:31.440332+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "noble",
-          "status": "Fix Released",
-          "target": "linux-firmware-intel-graphics (Ubuntu Noble)",
-          "target_display": "linux-firmware-intel-graphics (Ubuntu Noble)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-intel-graphics/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-09-03T17:55:18.623650+00:00",
-          "date_created": "2026-08-25T17:53:17.377123+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "noble",
-          "status": "Fix Released",
-          "target": "linux-firmware-intel-misc (Ubuntu Noble)",
-          "target_display": "linux-firmware-intel-misc (Ubuntu Noble)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-intel-misc/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-09-03T17:55:33.707009+00:00",
-          "date_created": "2026-08-25T17:53:00.085334+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "noble",
-          "status": "Fix Released",
-          "target": "linux-firmware-intel-wireless (Ubuntu Noble)",
-          "target_display": "linux-firmware-intel-wireless (Ubuntu Noble)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-intel-wireless/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-09-03T17:55:44.638427+00:00",
-          "date_created": "2026-08-25T17:52:47.599559+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "noble",
-          "status": "Fix Released",
-          "target": "linux-firmware-marvell-prestera (Ubuntu Noble)",
-          "target_display": "linux-firmware-marvell-prestera (Ubuntu Noble)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-marvell-prestera/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-09-03T17:56:04.970732+00:00",
-          "date_created": "2026-08-25T17:52:34.075226+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "noble",
-          "status": "Fix Released",
-          "target": "linux-firmware-marvell-wireless (Ubuntu Noble)",
-          "target_display": "linux-firmware-marvell-wireless (Ubuntu Noble)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-marvell-wireless/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-09-03T17:56:21.535305+00:00",
-          "date_created": "2026-08-25T17:52:17.462736+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "noble",
-          "status": "Fix Released",
-          "target": "linux-firmware-mediatek (Ubuntu Noble)",
-          "target_display": "linux-firmware-mediatek (Ubuntu Noble)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-mediatek/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-09-03T17:56:38.450761+00:00",
-          "date_created": "2026-08-25T17:51:58.382194+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "noble",
-          "status": "Fix Released",
-          "target": "linux-firmware-mellanox-spectrum (Ubuntu Noble)",
-          "target_display": "linux-firmware-mellanox-spectrum (Ubuntu Noble)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-mellanox-spectrum/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-09-03T17:56:54.372067+00:00",
-          "date_created": "2026-08-25T17:51:47.094107+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "noble",
-          "status": "Fix Released",
-          "target": "linux-firmware-misc (Ubuntu Noble)",
-          "target_display": "linux-firmware-misc (Ubuntu Noble)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-misc/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-09-03T17:57:09.291241+00:00",
-          "date_created": "2026-08-25T17:51:34.421829+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "noble",
-          "status": "Fix Released",
-          "target": "linux-firmware-netronome (Ubuntu Noble)",
-          "target_display": "linux-firmware-netronome (Ubuntu Noble)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-netronome/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-09-03T17:57:24.709774+00:00",
-          "date_created": "2026-08-25T17:51:23.817807+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "noble",
-          "status": "Fix Released",
-          "target": "linux-firmware-nvidia-graphics (Ubuntu Noble)",
-          "target_display": "linux-firmware-nvidia-graphics (Ubuntu Noble)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-nvidia-graphics/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-09-03T17:57:37.671489+00:00",
-          "date_created": "2026-08-25T17:51:08.834700+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "noble",
-          "status": "Fix Released",
-          "target": "linux-firmware-qlogic (Ubuntu Noble)",
-          "target_display": "linux-firmware-qlogic (Ubuntu Noble)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-qlogic/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-09-03T17:57:52.394278+00:00",
-          "date_created": "2026-08-25T18:20:16.899967+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "noble",
-          "status": "Fix Released",
-          "target": "linux-firmware-qualcomm-graphics (Ubuntu Noble)",
-          "target_display": "linux-firmware-qualcomm-graphics (Ubuntu Noble)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-qualcomm-graphics/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-09-03T17:58:09.026905+00:00",
-          "date_created": "2026-08-25T18:18:15.737485+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "noble",
-          "status": "Fix Released",
-          "target": "linux-firmware-qualcomm-misc (Ubuntu Noble)",
-          "target_display": "linux-firmware-qualcomm-misc (Ubuntu Noble)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-qualcomm-misc/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-09-03T17:58:25.058656+00:00",
-          "date_created": "2026-08-25T17:23:38.834692+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "noble",
-          "status": "Fix Released",
-          "target": "linux-firmware-qualcomm-wireless (Ubuntu Noble)",
-          "target_display": "linux-firmware-qualcomm-wireless (Ubuntu Noble)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-qualcomm-wireless/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-09-03T18:00:27.888679+00:00",
-          "date_created": "2026-08-25T16:41:02.803782+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "noble",
-          "status": "Fix Released",
-          "target": "linux-firmware-realtek (Ubuntu Noble)",
-          "target_display": "linux-firmware-realtek (Ubuntu Noble)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-realtek/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-01-06T10:41:29.214106+00:00",
-          "date_created": "2026-01-06T10:41:17.235578+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "plucky",
-          "status": "Won't Fix",
-          "target": "linux-firmware (Ubuntu Plucky)",
-          "target_display": "linux-firmware (Ubuntu Plucky)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/plucky/+source/linux-firmware/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:02:19.560059+00:00",
-          "date_created": "2026-08-25T17:54:13.638251+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "plucky",
-          "status": "Won't Fix",
-          "target": "linux-firmware-amd-graphics (Ubuntu Plucky)",
-          "target_display": "linux-firmware-amd-graphics (Ubuntu Plucky)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/plucky/+source/linux-firmware-amd-graphics/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:02:23.446825+00:00",
-          "date_created": "2026-08-25T17:53:58.941722+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "plucky",
-          "status": "Won't Fix",
-          "target": "linux-firmware-amd-misc (Ubuntu Plucky)",
-          "target_display": "linux-firmware-amd-misc (Ubuntu Plucky)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/plucky/+source/linux-firmware-amd-misc/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:02:27.195359+00:00",
-          "date_created": "2026-08-25T17:53:46.042499+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "plucky",
-          "status": "Won't Fix",
-          "target": "linux-firmware-broadcom-wireless (Ubuntu Plucky)",
-          "target_display": "linux-firmware-broadcom-wireless (Ubuntu Plucky)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/plucky/+source/linux-firmware-broadcom-wireless/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:02:30.311957+00:00",
-          "date_created": "2026-08-25T17:53:31.440332+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "plucky",
-          "status": "Won't Fix",
-          "target": "linux-firmware-intel-graphics (Ubuntu Plucky)",
-          "target_display": "linux-firmware-intel-graphics (Ubuntu Plucky)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/plucky/+source/linux-firmware-intel-graphics/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:02:33.434280+00:00",
-          "date_created": "2026-08-25T17:53:17.377123+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "plucky",
-          "status": "Won't Fix",
-          "target": "linux-firmware-intel-misc (Ubuntu Plucky)",
-          "target_display": "linux-firmware-intel-misc (Ubuntu Plucky)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/plucky/+source/linux-firmware-intel-misc/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:02:39.181007+00:00",
-          "date_created": "2026-08-25T17:53:00.085334+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "plucky",
-          "status": "Won't Fix",
-          "target": "linux-firmware-intel-wireless (Ubuntu Plucky)",
-          "target_display": "linux-firmware-intel-wireless (Ubuntu Plucky)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/plucky/+source/linux-firmware-intel-wireless/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:02:44.627305+00:00",
-          "date_created": "2026-08-25T17:52:47.599559+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "plucky",
-          "status": "Won't Fix",
-          "target": "linux-firmware-marvell-prestera (Ubuntu Plucky)",
-          "target_display": "linux-firmware-marvell-prestera (Ubuntu Plucky)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/plucky/+source/linux-firmware-marvell-prestera/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:02:50.783448+00:00",
-          "date_created": "2026-08-25T17:52:34.075226+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "plucky",
-          "status": "Won't Fix",
-          "target": "linux-firmware-marvell-wireless (Ubuntu Plucky)",
-          "target_display": "linux-firmware-marvell-wireless (Ubuntu Plucky)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/plucky/+source/linux-firmware-marvell-wireless/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:02:53.995025+00:00",
-          "date_created": "2026-08-25T17:52:17.462736+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "plucky",
-          "status": "Won't Fix",
-          "target": "linux-firmware-mediatek (Ubuntu Plucky)",
-          "target_display": "linux-firmware-mediatek (Ubuntu Plucky)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/plucky/+source/linux-firmware-mediatek/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:02:58.571400+00:00",
-          "date_created": "2026-08-25T17:51:58.382194+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "plucky",
-          "status": "Won't Fix",
-          "target": "linux-firmware-mellanox-spectrum (Ubuntu Plucky)",
-          "target_display": "linux-firmware-mellanox-spectrum (Ubuntu Plucky)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/plucky/+source/linux-firmware-mellanox-spectrum/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:03:02.918056+00:00",
-          "date_created": "2026-08-25T17:51:47.094107+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "plucky",
-          "status": "Won't Fix",
-          "target": "linux-firmware-misc (Ubuntu Plucky)",
-          "target_display": "linux-firmware-misc (Ubuntu Plucky)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/plucky/+source/linux-firmware-misc/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:03:06.558882+00:00",
-          "date_created": "2026-08-25T17:51:34.421829+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "plucky",
-          "status": "Won't Fix",
-          "target": "linux-firmware-netronome (Ubuntu Plucky)",
-          "target_display": "linux-firmware-netronome (Ubuntu Plucky)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/plucky/+source/linux-firmware-netronome/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:03:10.475214+00:00",
-          "date_created": "2026-08-25T17:51:23.817807+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "plucky",
-          "status": "Won't Fix",
-          "target": "linux-firmware-nvidia-graphics (Ubuntu Plucky)",
-          "target_display": "linux-firmware-nvidia-graphics (Ubuntu Plucky)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/plucky/+source/linux-firmware-nvidia-graphics/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:03:13.822186+00:00",
-          "date_created": "2026-08-25T17:51:08.834700+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "plucky",
-          "status": "Won't Fix",
-          "target": "linux-firmware-qlogic (Ubuntu Plucky)",
-          "target_display": "linux-firmware-qlogic (Ubuntu Plucky)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/plucky/+source/linux-firmware-qlogic/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:21:00.385289+00:00",
-          "date_created": "2026-08-25T18:20:16.899967+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "plucky",
-          "status": "Won't Fix",
-          "target": "linux-firmware-qualcomm-graphics (Ubuntu Plucky)",
-          "target_display": "linux-firmware-qualcomm-graphics (Ubuntu Plucky)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/plucky/+source/linux-firmware-qualcomm-graphics/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:19:21.668465+00:00",
-          "date_created": "2026-08-25T18:18:15.737485+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "plucky",
-          "status": "Won't Fix",
-          "target": "linux-firmware-qualcomm-misc (Ubuntu Plucky)",
-          "target_display": "linux-firmware-qualcomm-misc (Ubuntu Plucky)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/plucky/+source/linux-firmware-qualcomm-misc/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T17:25:18.056353+00:00",
-          "date_created": "2026-08-25T17:23:38.834692+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "plucky",
-          "status": "Won't Fix",
-          "target": "linux-firmware-qualcomm-wireless (Ubuntu Plucky)",
-          "target_display": "linux-firmware-qualcomm-wireless (Ubuntu Plucky)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/plucky/+source/linux-firmware-qualcomm-wireless/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T16:42:16.950118+00:00",
-          "date_created": "2026-08-25T16:41:02.803782+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "plucky",
-          "status": "Won't Fix",
-          "target": "linux-firmware-realtek (Ubuntu Plucky)",
-          "target_display": "linux-firmware-realtek (Ubuntu Plucky)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/plucky/+source/linux-firmware-realtek/+bug/1958518"
-        },
-        {
-          "assignee": "Juerg Haefliger",
-          "date_closed": "2026-02-14T09:44:32.813799+00:00",
-          "date_created": "2026-01-06T10:41:17.235578+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "questing",
-          "status": "Won't Fix",
-          "target": "linux-firmware (Ubuntu Questing)",
-          "target_display": "linux-firmware (Ubuntu Questing)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/questing/+source/linux-firmware/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:03:17.518875+00:00",
-          "date_created": "2026-08-25T17:54:13.638251+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "questing",
-          "status": "Won't Fix",
-          "target": "linux-firmware-amd-graphics (Ubuntu Questing)",
-          "target_display": "linux-firmware-amd-graphics (Ubuntu Questing)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/questing/+source/linux-firmware-amd-graphics/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:03:20.333419+00:00",
-          "date_created": "2026-08-25T17:53:58.941722+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "questing",
-          "status": "Won't Fix",
-          "target": "linux-firmware-amd-misc (Ubuntu Questing)",
-          "target_display": "linux-firmware-amd-misc (Ubuntu Questing)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/questing/+source/linux-firmware-amd-misc/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:03:23.924841+00:00",
-          "date_created": "2026-08-25T17:53:46.042499+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "questing",
-          "status": "Won't Fix",
-          "target": "linux-firmware-broadcom-wireless (Ubuntu Questing)",
-          "target_display": "linux-firmware-broadcom-wireless (Ubuntu Questing)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/questing/+source/linux-firmware-broadcom-wireless/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:03:27.763143+00:00",
-          "date_created": "2026-08-25T17:53:31.440332+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "questing",
-          "status": "Won't Fix",
-          "target": "linux-firmware-intel-graphics (Ubuntu Questing)",
-          "target_display": "linux-firmware-intel-graphics (Ubuntu Questing)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/questing/+source/linux-firmware-intel-graphics/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:03:31.339564+00:00",
-          "date_created": "2026-08-25T17:53:17.377123+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "questing",
-          "status": "Won't Fix",
-          "target": "linux-firmware-intel-misc (Ubuntu Questing)",
-          "target_display": "linux-firmware-intel-misc (Ubuntu Questing)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/questing/+source/linux-firmware-intel-misc/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:03:35.513621+00:00",
-          "date_created": "2026-08-25T17:53:00.085334+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "questing",
-          "status": "Won't Fix",
-          "target": "linux-firmware-intel-wireless (Ubuntu Questing)",
-          "target_display": "linux-firmware-intel-wireless (Ubuntu Questing)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/questing/+source/linux-firmware-intel-wireless/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:03:39.306712+00:00",
-          "date_created": "2026-08-25T17:52:47.599559+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "questing",
-          "status": "Won't Fix",
-          "target": "linux-firmware-marvell-prestera (Ubuntu Questing)",
-          "target_display": "linux-firmware-marvell-prestera (Ubuntu Questing)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/questing/+source/linux-firmware-marvell-prestera/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:03:42.529699+00:00",
-          "date_created": "2026-08-25T17:52:34.075226+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "questing",
-          "status": "Won't Fix",
-          "target": "linux-firmware-marvell-wireless (Ubuntu Questing)",
-          "target_display": "linux-firmware-marvell-wireless (Ubuntu Questing)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/questing/+source/linux-firmware-marvell-wireless/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:03:46.225436+00:00",
-          "date_created": "2026-08-25T17:52:17.462736+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "questing",
-          "status": "Won't Fix",
-          "target": "linux-firmware-mediatek (Ubuntu Questing)",
-          "target_display": "linux-firmware-mediatek (Ubuntu Questing)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/questing/+source/linux-firmware-mediatek/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:03:49.491655+00:00",
-          "date_created": "2026-08-25T17:51:58.382194+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "questing",
-          "status": "Won't Fix",
-          "target": "linux-firmware-mellanox-spectrum (Ubuntu Questing)",
-          "target_display": "linux-firmware-mellanox-spectrum (Ubuntu Questing)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/questing/+source/linux-firmware-mellanox-spectrum/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:03:52.341606+00:00",
-          "date_created": "2026-08-25T17:51:47.094107+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "questing",
-          "status": "Won't Fix",
-          "target": "linux-firmware-misc (Ubuntu Questing)",
-          "target_display": "linux-firmware-misc (Ubuntu Questing)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/questing/+source/linux-firmware-misc/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:03:55.718814+00:00",
-          "date_created": "2026-08-25T17:51:34.421829+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "questing",
-          "status": "Won't Fix",
-          "target": "linux-firmware-netronome (Ubuntu Questing)",
-          "target_display": "linux-firmware-netronome (Ubuntu Questing)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/questing/+source/linux-firmware-netronome/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:03:58.954536+00:00",
-          "date_created": "2026-08-25T17:51:23.817807+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "questing",
-          "status": "Won't Fix",
-          "target": "linux-firmware-nvidia-graphics (Ubuntu Questing)",
-          "target_display": "linux-firmware-nvidia-graphics (Ubuntu Questing)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/questing/+source/linux-firmware-nvidia-graphics/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:04:01.748945+00:00",
-          "date_created": "2026-08-25T17:51:08.834700+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "questing",
-          "status": "Won't Fix",
-          "target": "linux-firmware-qlogic (Ubuntu Questing)",
-          "target_display": "linux-firmware-qlogic (Ubuntu Questing)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/questing/+source/linux-firmware-qlogic/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:20:55.852334+00:00",
-          "date_created": "2026-08-25T18:20:16.899967+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "questing",
-          "status": "Won't Fix",
-          "target": "linux-firmware-qualcomm-graphics (Ubuntu Questing)",
-          "target_display": "linux-firmware-qualcomm-graphics (Ubuntu Questing)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/questing/+source/linux-firmware-qualcomm-graphics/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:19:26.174865+00:00",
-          "date_created": "2026-08-25T18:18:15.737485+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "questing",
-          "status": "Won't Fix",
-          "target": "linux-firmware-qualcomm-misc (Ubuntu Questing)",
-          "target_display": "linux-firmware-qualcomm-misc (Ubuntu Questing)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/questing/+source/linux-firmware-qualcomm-misc/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T17:25:08.031743+00:00",
-          "date_created": "2026-08-25T17:23:38.834692+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "questing",
-          "status": "Won't Fix",
-          "target": "linux-firmware-qualcomm-wireless (Ubuntu Questing)",
-          "target_display": "linux-firmware-qualcomm-wireless (Ubuntu Questing)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/questing/+source/linux-firmware-qualcomm-wireless/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T16:42:30.746856+00:00",
-          "date_created": "2026-08-25T16:41:02.803782+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "questing",
-          "status": "Won't Fix",
-          "target": "linux-firmware-realtek (Ubuntu Questing)",
-          "target_display": "linux-firmware-realtek (Ubuntu Questing)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/questing/+source/linux-firmware-realtek/+bug/1958518"
-        },
-        {
-          "assignee": "Juerg Haefliger",
-          "date_closed": "2026-02-14T03:07:25.943793+00:00",
-          "date_created": "2026-01-06T10:41:17.235578+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "resolute",
-          "status": "Fix Released",
-          "target": "linux-firmware (Ubuntu Resolute)",
-          "target_display": "linux-firmware (Ubuntu Resolute)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T17:56:30.236242+00:00",
-          "date_created": "2026-08-25T17:54:13.638251+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "resolute",
-          "status": "Fix Released",
-          "target": "linux-firmware-amd-graphics (Ubuntu Resolute)",
-          "target_display": "linux-firmware-amd-graphics (Ubuntu Resolute)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-amd-graphics/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T17:59:29.916960+00:00",
-          "date_created": "2026-08-25T17:53:58.941722+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "resolute",
-          "status": "Fix Released",
-          "target": "linux-firmware-amd-misc (Ubuntu Resolute)",
-          "target_display": "linux-firmware-amd-misc (Ubuntu Resolute)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-amd-misc/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:00:06.423314+00:00",
-          "date_created": "2026-08-25T17:53:46.042499+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "resolute",
-          "status": "Fix Released",
-          "target": "linux-firmware-broadcom-wireless (Ubuntu Resolute)",
-          "target_display": "linux-firmware-broadcom-wireless (Ubuntu Resolute)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-broadcom-wireless/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T17:56:37.928729+00:00",
-          "date_created": "2026-08-25T17:53:31.440332+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "resolute",
-          "status": "Fix Released",
-          "target": "linux-firmware-intel-graphics (Ubuntu Resolute)",
-          "target_display": "linux-firmware-intel-graphics (Ubuntu Resolute)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-intel-graphics/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:00:15.305342+00:00",
-          "date_created": "2026-08-25T17:53:17.377123+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "resolute",
-          "status": "Fix Released",
-          "target": "linux-firmware-intel-misc (Ubuntu Resolute)",
-          "target_display": "linux-firmware-intel-misc (Ubuntu Resolute)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-intel-misc/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:00:19.691110+00:00",
-          "date_created": "2026-08-25T17:53:00.085334+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "resolute",
-          "status": "Fix Released",
-          "target": "linux-firmware-intel-wireless (Ubuntu Resolute)",
-          "target_display": "linux-firmware-intel-wireless (Ubuntu Resolute)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-intel-wireless/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:06:54.440497+00:00",
-          "date_created": "2026-08-25T17:52:47.599559+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "resolute",
-          "status": "Fix Released",
-          "target": "linux-firmware-marvell-prestera (Ubuntu Resolute)",
-          "target_display": "linux-firmware-marvell-prestera (Ubuntu Resolute)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-marvell-prestera/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:06:58.219305+00:00",
-          "date_created": "2026-08-25T17:52:34.075226+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "resolute",
-          "status": "Fix Released",
-          "target": "linux-firmware-marvell-wireless (Ubuntu Resolute)",
-          "target_display": "linux-firmware-marvell-wireless (Ubuntu Resolute)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-marvell-wireless/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:07:01.124462+00:00",
-          "date_created": "2026-08-25T17:52:17.462736+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "resolute",
-          "status": "Fix Released",
-          "target": "linux-firmware-mediatek (Ubuntu Resolute)",
-          "target_display": "linux-firmware-mediatek (Ubuntu Resolute)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-mediatek/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:07:04.805785+00:00",
-          "date_created": "2026-08-25T17:51:58.382194+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "resolute",
-          "status": "Fix Released",
-          "target": "linux-firmware-mellanox-spectrum (Ubuntu Resolute)",
-          "target_display": "linux-firmware-mellanox-spectrum (Ubuntu Resolute)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-mellanox-spectrum/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T17:57:26.873596+00:00",
-          "date_created": "2026-08-25T17:51:47.094107+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "resolute",
-          "status": "Fix Released",
-          "target": "linux-firmware-misc (Ubuntu Resolute)",
-          "target_display": "linux-firmware-misc (Ubuntu Resolute)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-misc/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T17:57:31.681863+00:00",
-          "date_created": "2026-08-25T17:51:34.421829+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "resolute",
-          "status": "Fix Released",
-          "target": "linux-firmware-netronome (Ubuntu Resolute)",
-          "target_display": "linux-firmware-netronome (Ubuntu Resolute)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-netronome/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:07:09.244255+00:00",
-          "date_created": "2026-08-25T17:51:23.817807+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "resolute",
-          "status": "Fix Released",
-          "target": "linux-firmware-nvidia-graphics (Ubuntu Resolute)",
-          "target_display": "linux-firmware-nvidia-graphics (Ubuntu Resolute)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-nvidia-graphics/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T17:57:35.683078+00:00",
-          "date_created": "2026-08-25T17:51:08.834700+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "resolute",
-          "status": "Fix Released",
-          "target": "linux-firmware-qlogic (Ubuntu Resolute)",
-          "target_display": "linux-firmware-qlogic (Ubuntu Resolute)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-qlogic/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:20:34.728801+00:00",
-          "date_created": "2026-08-25T18:20:16.899967+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "resolute",
-          "status": "Fix Released",
-          "target": "linux-firmware-qualcomm-graphics (Ubuntu Resolute)",
-          "target_display": "linux-firmware-qualcomm-graphics (Ubuntu Resolute)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-qualcomm-graphics/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T18:18:41.977504+00:00",
-          "date_created": "2026-08-25T18:18:15.737485+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "resolute",
-          "status": "Fix Released",
-          "target": "linux-firmware-qualcomm-misc (Ubuntu Resolute)",
-          "target_display": "linux-firmware-qualcomm-misc (Ubuntu Resolute)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-qualcomm-misc/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T17:24:55.320325+00:00",
-          "date_created": "2026-08-25T17:23:38.834692+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "resolute",
-          "status": "Fix Released",
-          "target": "linux-firmware-qualcomm-wireless (Ubuntu Resolute)",
-          "target_display": "linux-firmware-qualcomm-wireless (Ubuntu Resolute)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-qualcomm-wireless/+bug/1958518"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-25T16:42:42.619967+00:00",
-          "date_created": "2026-08-25T16:41:02.803782+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "resolute",
-          "status": "Fix Released",
-          "target": "linux-firmware-realtek (Ubuntu Resolute)",
-          "target_display": "linux-firmware-realtek (Ubuntu Resolute)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-realtek/+bug/1958518"
-        }
-      ],
-      "title": "Split linux-firmware into multiple packages",
-      "web_link": "https://bugs.launchpad.net/bugs/1958518"
-    },
     "2048991": {
       "date_created": "2024-01-11T09:51:09.123853+00:00",
-      "date_last_updated": "2025-04-18T12:32:08.859612+00:00",
+      "date_last_updated": "2026-10-16T06:42:02.221811+00:00",
       "has_activity_after_incomplete": true,
       "id": 2048991,
-      "last_activity_summary": "tags: kern-8906 kernel-daily-bug verification-done-jammy by juergh",
-      "last_activity_time": "2025-04-18T12:32:08.859612+00:00",
+      "last_activity_summary": "affects: linux-firmware-intel-graphics (Ubuntu) by juergh",
+      "last_activity_time": "2026-10-16T06:42:02.221811+00:00",
       "owner": "You-Sheng Yang",
       "package": "linux-firmware",
       "packages": [
-        "linux-firmware"
+        "linux-firmware",
+        "linux-firmware-intel-graphics"
       ],
       "tags": [
         "kern-8906",
@@ -1435,9 +27,9 @@
           "is_complete": true,
           "series": null,
           "status": "Won't Fix",
-          "target": "linux-firmware (Ubuntu)",
-          "target_display": "linux-firmware (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2048991"
+          "target": "linux-firmware-intel-graphics (Ubuntu)",
+          "target_display": "linux-firmware-intel-graphics (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-intel-graphics/+bug/2048991"
         },
         {
           "assignee": "You-Sheng Yang",
@@ -1447,9 +39,9 @@
           "is_complete": true,
           "series": "jammy",
           "status": "Fix Released",
-          "target": "linux-firmware (Ubuntu Jammy)",
-          "target_display": "linux-firmware (Ubuntu Jammy)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/jammy/+source/linux-firmware/+bug/2048991"
+          "target": "linux-firmware-intel-graphics (Ubuntu Jammy)",
+          "target_display": "linux-firmware-intel-graphics (Ubuntu Jammy)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/jammy/+source/linux-firmware-intel-graphics/+bug/2048991"
         },
         {
           "assignee": null,
@@ -1459,9 +51,9 @@
           "is_complete": false,
           "series": "noble",
           "status": "Incomplete",
-          "target": "linux-firmware (Ubuntu Noble)",
-          "target_display": "linux-firmware (Ubuntu Noble)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware/+bug/2048991"
+          "target": "linux-firmware-intel-graphics (Ubuntu Noble)",
+          "target_display": "linux-firmware-intel-graphics (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-intel-graphics/+bug/2048991"
         }
       ],
       "title": "upstream Intel VSC firmware paths moved to intel/vsc/",
@@ -1564,11 +156,11 @@
     },
     "2088354": {
       "date_created": "2024-11-17T01:25:29.409572+00:00",
-      "date_last_updated": "2026-06-08T14:09:03.456260+00:00",
-      "has_activity_after_incomplete": true,
+      "date_last_updated": "2026-10-16T05:51:17.155496+00:00",
+      "has_activity_after_incomplete": false,
       "id": 2088354,
-      "last_activity_summary": "linux-firmware (Ubuntu): status: Incomplete by juergh",
-      "last_activity_time": "2026-06-08T14:09:03.456260+00:00",
+      "last_activity_summary": "linux-firmware (Ubuntu): status: Invalid by juergh",
+      "last_activity_time": "2026-10-16T05:51:17.155496+00:00",
       "owner": "Scott Hinchley",
       "package": "linux-firmware",
       "packages": [
@@ -1582,15 +174,27 @@
       "tasks": [
         {
           "assignee": "Juerg Haefliger",
-          "date_closed": null,
+          "date_closed": "2026-10-16T05:50:29.516330+00:00",
           "date_created": "2024-11-17T01:25:29.409572+00:00",
           "importance": "Undecided",
-          "is_complete": false,
+          "is_complete": true,
           "series": null,
-          "status": "Incomplete",
+          "status": "Invalid",
           "target": "linux-firmware (Ubuntu)",
           "target_display": "linux-firmware (Ubuntu)",
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2088354"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-16T05:50:19.271994+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "noble",
+          "status": "New",
+          "target": "linux-firmware (Ubuntu Noble)",
+          "target_display": "linux-firmware (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware/+bug/2088354"
         }
       ],
       "title": "Intel(R) Wireless-AC 9260 iwlwifi fails to load firmware after upgrade to 24.04",
@@ -1598,15 +202,16 @@
     },
     "2112472": {
       "date_created": "2025-06-04T14:09:14.394451+00:00",
-      "date_last_updated": "2026-01-19T11:27:04.044705+00:00",
+      "date_last_updated": "2026-10-16T06:39:46.828556+00:00",
       "has_activity_after_incomplete": true,
       "id": 2112472,
-      "last_activity_summary": "linux-firmware (Ubuntu Plucky): status: Won't Fix by utkarsh",
-      "last_activity_time": "2026-01-19T11:27:04.044705+00:00",
+      "last_activity_summary": "affects: linux-firmware-mediatek (Ubuntu) by juergh",
+      "last_activity_time": "2026-10-16T06:39:46.828556+00:00",
       "owner": "You-Sheng Yang",
       "package": "linux-firmware",
       "packages": [
-        "linux-firmware"
+        "linux-firmware",
+        "linux-firmware-mediatek"
       ],
       "tags": [],
       "tasks": [
@@ -1618,9 +223,9 @@
           "is_complete": true,
           "series": null,
           "status": "Fix Released",
-          "target": "linux-firmware (Ubuntu)",
-          "target_display": "linux-firmware (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2112472"
+          "target": "linux-firmware-mediatek (Ubuntu)",
+          "target_display": "linux-firmware-mediatek (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-mediatek/+bug/2112472"
         },
         {
           "assignee": "You-Sheng Yang",
@@ -1630,9 +235,9 @@
           "is_complete": false,
           "series": "noble",
           "status": "Incomplete",
-          "target": "linux-firmware (Ubuntu Noble)",
-          "target_display": "linux-firmware (Ubuntu Noble)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware/+bug/2112472"
+          "target": "linux-firmware-mediatek (Ubuntu Noble)",
+          "target_display": "linux-firmware-mediatek (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-mediatek/+bug/2112472"
         },
         {
           "assignee": null,
@@ -1642,9 +247,9 @@
           "is_complete": true,
           "series": "oracular",
           "status": "Won't Fix",
-          "target": "linux-firmware (Ubuntu Oracular)",
-          "target_display": "linux-firmware (Ubuntu Oracular)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/oracular/+source/linux-firmware/+bug/2112472"
+          "target": "linux-firmware-mediatek (Ubuntu Oracular)",
+          "target_display": "linux-firmware-mediatek (Ubuntu Oracular)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/oracular/+source/linux-firmware-mediatek/+bug/2112472"
         },
         {
           "assignee": null,
@@ -1654,9 +259,9 @@
           "is_complete": true,
           "series": "plucky",
           "status": "Won't Fix",
-          "target": "linux-firmware (Ubuntu Plucky)",
-          "target_display": "linux-firmware (Ubuntu Plucky)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/plucky/+source/linux-firmware/+bug/2112472"
+          "target": "linux-firmware-mediatek (Ubuntu Plucky)",
+          "target_display": "linux-firmware-mediatek (Ubuntu Plucky)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/plucky/+source/linux-firmware-mediatek/+bug/2112472"
         },
         {
           "assignee": null,
@@ -1666,9 +271,9 @@
           "is_complete": true,
           "series": "questing",
           "status": "Fix Released",
-          "target": "linux-firmware (Ubuntu Questing)",
-          "target_display": "linux-firmware (Ubuntu Questing)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/questing/+source/linux-firmware/+bug/2112472"
+          "target": "linux-firmware-mediatek (Ubuntu Questing)",
+          "target_display": "linux-firmware-mediatek (Ubuntu Questing)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/questing/+source/linux-firmware-mediatek/+bug/2112472"
         }
       ],
       "title": "Update Mediatek MT7925 WiFi/BT firmware for WiFi 7",
@@ -1676,15 +281,16 @@
     },
     "2127044": {
       "date_created": "2025-10-08T02:29:43.709279+00:00",
-      "date_last_updated": "2026-08-18T13:29:33.443551+00:00",
+      "date_last_updated": "2026-10-16T06:32:24.330352+00:00",
       "has_activity_after_incomplete": false,
       "id": 2127044,
-      "last_activity_summary": "tags: cert-sru jira-stella-2051 kernel-daily-bug kernel-spammed-noble-linux-azure-fde-6.17-v2 kernel-spammed-noble-linux-nvidia-6.17-v2 kernel-spammed-noble-linux-oem-6.14-v2 kernel-spammed-noble-linux-oem-6.17-v2 kernel-spammed-noble-linux-vmware-6.17-v2 kernel-spammed-questing-linux-intel-v2 kernel-spammed-questing-linux-v2 oem-priority stella verification-done-noble-linux-oem-6.14 verification-done-noble-linux-oem-6.17 verification-needed-noble-linux-azure-fde-6.17 verification-needed-noble-linux-nvidia-6.17 verification-needed-noble-linux-vmware-6.17 verification-needed-questing-linux verification-needed-questing-linux-intel by kevinyeh",
-      "last_activity_time": "2026-08-18T13:29:33.443551+00:00",
+      "last_activity_summary": "bug task deleted updated by juergh",
+      "last_activity_time": "2026-10-16T06:33:07.678846+00:00",
       "owner": "AceLan Kao",
       "package": "linux-firmware",
       "packages": [
-        "linux-firmware"
+        "linux-firmware",
+        "linux-firmware-mediatek"
       ],
       "tags": [
         "cert-sru",
@@ -1722,15 +328,15 @@
         },
         {
           "assignee": null,
-          "date_closed": "2025-12-26T06:42:44.576722+00:00",
-          "date_created": "2025-12-23T16:08:08.636023+00:00",
+          "date_closed": "2026-10-16T06:32:22.546885+00:00",
+          "date_created": "2026-10-16T06:31:08.058108+00:00",
           "importance": "Undecided",
           "is_complete": true,
           "series": null,
           "status": "Invalid",
-          "target": "linux-firmware (Ubuntu)",
-          "target_display": "linux-firmware (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2127044"
+          "target": "linux-firmware-mediatek (Ubuntu)",
+          "target_display": "linux-firmware-mediatek (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-mediatek/+bug/2127044"
         },
         {
           "assignee": null,
@@ -1771,14 +377,14 @@
         {
           "assignee": "AceLan Kao",
           "date_closed": null,
-          "date_created": "2025-12-23T16:08:08.636023+00:00",
+          "date_created": "2026-10-16T06:31:08.058108+00:00",
           "importance": "Undecided",
           "is_complete": false,
           "series": "noble",
           "status": "In Progress",
-          "target": "linux-firmware (Ubuntu Noble)",
-          "target_display": "linux-firmware (Ubuntu Noble)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware/+bug/2127044"
+          "target": "linux-firmware-mediatek (Ubuntu Noble)",
+          "target_display": "linux-firmware-mediatek (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-mediatek/+bug/2127044"
         },
         {
           "assignee": "AceLan Kao",
@@ -1817,16 +423,16 @@
           "web_link": "https://bugs.launchpad.net/ubuntu/questing/+source/linux/+bug/2127044"
         },
         {
-          "assignee": "AceLan Kao",
-          "date_closed": "2026-07-10T16:19:02.083903+00:00",
-          "date_created": "2026-01-05T07:18:30.560095+00:00",
+          "assignee": null,
+          "date_closed": "2026-10-16T06:32:04.462558+00:00",
+          "date_created": "2026-10-16T06:31:08.058108+00:00",
           "importance": "Undecided",
           "is_complete": true,
           "series": "questing",
           "status": "Won't Fix",
-          "target": "linux-firmware (Ubuntu Questing)",
-          "target_display": "linux-firmware (Ubuntu Questing)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/questing/+source/linux-firmware/+bug/2127044"
+          "target": "linux-firmware-mediatek (Ubuntu Questing)",
+          "target_display": "linux-firmware-mediatek (Ubuntu Questing)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/questing/+source/linux-firmware-mediatek/+bug/2127044"
         },
         {
           "assignee": null,
@@ -1858,15 +464,16 @@
     },
     "2127965": {
       "date_created": "2025-10-16T07:32:39.298330+00:00",
-      "date_last_updated": "2026-07-10T16:16:26.365919+00:00",
+      "date_last_updated": "2026-10-16T06:34:14.631944+00:00",
       "has_activity_after_incomplete": false,
       "id": 2127965,
-      "last_activity_summary": "linux-firmware (Ubuntu Questing): status: Won't Fix by oreiche",
-      "last_activity_time": "2026-07-10T16:16:26.365919+00:00",
+      "last_activity_summary": "affects: linux-firmware-qualcomm-wireless (Ubuntu) by juergh",
+      "last_activity_time": "2026-10-16T06:34:14.631944+00:00",
       "owner": "AceLan Kao",
       "package": "linux-firmware",
       "packages": [
-        "linux-firmware"
+        "linux-firmware",
+        "linux-firmware-qualcomm-wireless"
       ],
       "tags": [
         "jira-somerville-2728",
@@ -1886,9 +493,9 @@
           "is_complete": true,
           "series": null,
           "status": "Fix Released",
-          "target": "linux-firmware (Ubuntu)",
-          "target_display": "linux-firmware (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2127965"
+          "target": "linux-firmware-qualcomm-wireless (Ubuntu)",
+          "target_display": "linux-firmware-qualcomm-wireless (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-qualcomm-wireless/+bug/2127965"
         },
         {
           "assignee": "AceLan Kao",
@@ -1898,9 +505,9 @@
           "is_complete": false,
           "series": "noble",
           "status": "Confirmed",
-          "target": "linux-firmware (Ubuntu Noble)",
-          "target_display": "linux-firmware (Ubuntu Noble)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware/+bug/2127965"
+          "target": "linux-firmware-qualcomm-wireless (Ubuntu Noble)",
+          "target_display": "linux-firmware-qualcomm-wireless (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-qualcomm-wireless/+bug/2127965"
         },
         {
           "assignee": "AceLan Kao",
@@ -1910,9 +517,9 @@
           "is_complete": true,
           "series": "plucky",
           "status": "Won't Fix",
-          "target": "linux-firmware (Ubuntu Plucky)",
-          "target_display": "linux-firmware (Ubuntu Plucky)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/plucky/+source/linux-firmware/+bug/2127965"
+          "target": "linux-firmware-qualcomm-wireless (Ubuntu Plucky)",
+          "target_display": "linux-firmware-qualcomm-wireless (Ubuntu Plucky)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/plucky/+source/linux-firmware-qualcomm-wireless/+bug/2127965"
         },
         {
           "assignee": "AceLan Kao",
@@ -1922,9 +529,9 @@
           "is_complete": true,
           "series": "questing",
           "status": "Won't Fix",
-          "target": "linux-firmware (Ubuntu Questing)",
-          "target_display": "linux-firmware (Ubuntu Questing)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/questing/+source/linux-firmware/+bug/2127965"
+          "target": "linux-firmware-qualcomm-wireless (Ubuntu Questing)",
+          "target_display": "linux-firmware-qualcomm-wireless (Ubuntu Questing)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/questing/+source/linux-firmware-qualcomm-wireless/+bug/2127965"
         }
       ],
       "title": "WCN7851: Wifi 6E support in Azerbaijan/Serbia",
@@ -2150,15 +757,16 @@
     },
     "2143794": {
       "date_created": "2026-03-10T06:04:36.275155+00:00",
-      "date_last_updated": "2026-07-10T16:13:59.231933+00:00",
+      "date_last_updated": "2026-10-16T06:35:12.788852+00:00",
       "has_activity_after_incomplete": false,
       "id": 2143794,
-      "last_activity_summary": "linux-firmware (Ubuntu Questing): status: Won't Fix by oreiche",
-      "last_activity_time": "2026-07-10T16:13:59.231933+00:00",
+      "last_activity_summary": "affects: linux-firmware-misc (Ubuntu) by juergh",
+      "last_activity_time": "2026-10-16T06:35:12.788852+00:00",
       "owner": "AaronMa",
       "package": "linux-firmware",
       "packages": [
-        "linux-firmware"
+        "linux-firmware",
+        "linux-firmware-misc"
       ],
       "tags": [
         "jira-sutton-3781",
@@ -2175,9 +783,9 @@
           "is_complete": true,
           "series": null,
           "status": "Fix Released",
-          "target": "linux-firmware (Ubuntu)",
-          "target_display": "linux-firmware (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2143794"
+          "target": "linux-firmware-misc (Ubuntu)",
+          "target_display": "linux-firmware-misc (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-misc/+bug/2143794"
         },
         {
           "assignee": null,
@@ -2187,9 +795,9 @@
           "is_complete": false,
           "series": "noble",
           "status": "In Progress",
-          "target": "linux-firmware (Ubuntu Noble)",
-          "target_display": "linux-firmware (Ubuntu Noble)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware/+bug/2143794"
+          "target": "linux-firmware-misc (Ubuntu Noble)",
+          "target_display": "linux-firmware-misc (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-misc/+bug/2143794"
         },
         {
           "assignee": null,
@@ -2199,9 +807,9 @@
           "is_complete": true,
           "series": "questing",
           "status": "Won't Fix",
-          "target": "linux-firmware (Ubuntu Questing)",
-          "target_display": "linux-firmware (Ubuntu Questing)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/questing/+source/linux-firmware/+bug/2143794"
+          "target": "linux-firmware-misc (Ubuntu Questing)",
+          "target_display": "linux-firmware-misc (Ubuntu Questing)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/questing/+source/linux-firmware-misc/+bug/2143794"
         },
         {
           "assignee": null,
@@ -2211,9 +819,9 @@
           "is_complete": true,
           "series": "resolute",
           "status": "Fix Released",
-          "target": "linux-firmware (Ubuntu Resolute)",
-          "target_display": "linux-firmware (Ubuntu Resolute)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware/+bug/2143794"
+          "target": "linux-firmware-misc (Ubuntu Resolute)",
+          "target_display": "linux-firmware-misc (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-misc/+bug/2143794"
         }
       ],
       "title": "Add Cirrus CS35L57 firmware for Lenovo systems with Intel Panther Lake audio (SSID 17aa:2355)",
@@ -2265,11 +873,11 @@
     },
     "2146784": {
       "date_created": "2026-03-30T13:06:53.224745+00:00",
-      "date_last_updated": "2026-03-30T23:04:28.939796+00:00",
+      "date_last_updated": "2026-10-16T05:48:31.305599+00:00",
       "has_activity_after_incomplete": false,
       "id": 2146784,
-      "last_activity_summary": "tags: kernel-daily-bug by ubuntu-kernel-bot",
-      "last_activity_time": "2026-03-30T23:04:28.939796+00:00",
+      "last_activity_summary": "linux-firmware (Ubuntu): status: Invalid by juergh",
+      "last_activity_time": "2026-10-16T05:48:31.305599+00:00",
       "owner": "Leo Lin",
       "package": "linux-firmware",
       "packages": [
@@ -2281,15 +889,27 @@
       "tasks": [
         {
           "assignee": "Leo Lin",
-          "date_closed": null,
+          "date_closed": "2026-10-16T05:48:29.532686+00:00",
           "date_created": "2026-03-30T13:06:53.224745+00:00",
           "importance": "Undecided",
-          "is_complete": false,
+          "is_complete": true,
           "series": null,
-          "status": "New",
+          "status": "Invalid",
           "target": "linux-firmware (Ubuntu)",
           "target_display": "linux-firmware (Ubuntu)",
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2146784"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-16T05:48:22.195553+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "noble",
+          "status": "New",
+          "target": "linux-firmware (Ubuntu Noble)",
+          "target_display": "linux-firmware (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware/+bug/2146784"
         }
       ],
       "title": "gfx1153 hangs on certain test cases in TheRock CI",
@@ -2811,15 +1431,16 @@
     },
     "2147678": {
       "date_created": "2026-04-10T03:11:23.968664+00:00",
-      "date_last_updated": "2026-07-10T16:14:37.435497+00:00",
+      "date_last_updated": "2026-10-16T06:25:55.912111+00:00",
       "has_activity_after_incomplete": false,
       "id": 2147678,
-      "last_activity_summary": "linux-firmware (Ubuntu Questing): status: Won't Fix by oreiche",
-      "last_activity_time": "2026-07-10T16:14:37.435497+00:00",
+      "last_activity_summary": "affects: linux-firmware-intel-misc (Ubuntu) by juergh",
+      "last_activity_time": "2026-10-16T06:25:55.912111+00:00",
       "owner": "AaronMa",
       "package": "linux-firmware",
       "packages": [
-        "linux-firmware"
+        "linux-firmware",
+        "linux-firmware-intel-misc"
       ],
       "tags": [
         "jira-sutton-3300",
@@ -2836,9 +1457,9 @@
           "is_complete": false,
           "series": null,
           "status": "In Progress",
-          "target": "linux-firmware (Ubuntu)",
-          "target_display": "linux-firmware (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2147678"
+          "target": "linux-firmware-intel-misc (Ubuntu)",
+          "target_display": "linux-firmware-intel-misc (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-intel-misc/+bug/2147678"
         },
         {
           "assignee": null,
@@ -2848,9 +1469,9 @@
           "is_complete": false,
           "series": "noble",
           "status": "In Progress",
-          "target": "linux-firmware (Ubuntu Noble)",
-          "target_display": "linux-firmware (Ubuntu Noble)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware/+bug/2147678"
+          "target": "linux-firmware-intel-misc (Ubuntu Noble)",
+          "target_display": "linux-firmware-intel-misc (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-intel-misc/+bug/2147678"
         },
         {
           "assignee": null,
@@ -2860,9 +1481,9 @@
           "is_complete": true,
           "series": "questing",
           "status": "Won't Fix",
-          "target": "linux-firmware (Ubuntu Questing)",
-          "target_display": "linux-firmware (Ubuntu Questing)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/questing/+source/linux-firmware/+bug/2147678"
+          "target": "linux-firmware-intel-misc (Ubuntu Questing)",
+          "target_display": "linux-firmware-intel-misc (Ubuntu Questing)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/questing/+source/linux-firmware-intel-misc/+bug/2147678"
         },
         {
           "assignee": null,
@@ -2872,9 +1493,9 @@
           "is_complete": false,
           "series": "resolute",
           "status": "In Progress",
-          "target": "linux-firmware (Ubuntu Resolute)",
-          "target_display": "linux-firmware (Ubuntu Resolute)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware/+bug/2147678"
+          "target": "linux-firmware-intel-misc (Ubuntu Resolute)",
+          "target_display": "linux-firmware-intel-misc (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-intel-misc/+bug/2147678"
         }
       ],
       "title": "linux-firmware: Add Lenovo ISH firmware for Intel Panther Lake ThinkPad systems",
@@ -3012,15 +1633,16 @@
     },
     "2156650": {
       "date_created": "2026-06-13T10:48:32.807608+00:00",
-      "date_last_updated": "2026-10-13T09:53:47.211799+00:00",
-      "has_activity_after_incomplete": false,
+      "date_last_updated": "2026-10-16T06:26:36.555442+00:00",
+      "has_activity_after_incomplete": true,
       "id": 2156650,
-      "last_activity_summary": "linux-firmware (Ubuntu Noble): status: Incomplete by juergh",
-      "last_activity_time": "2026-10-13T09:53:47.211799+00:00",
+      "last_activity_summary": "affects: linux-firmware-realtek (Ubuntu) by juergh",
+      "last_activity_time": "2026-10-16T06:26:36.555442+00:00",
       "owner": "Jacob Olson",
       "package": "linux-firmware",
       "packages": [
-        "linux-firmware"
+        "linux-firmware",
+        "linux-firmware-realtek"
       ],
       "tags": [
         "amd64",
@@ -3039,9 +1661,9 @@
           "is_complete": true,
           "series": null,
           "status": "Invalid",
-          "target": "linux-firmware (Ubuntu)",
-          "target_display": "linux-firmware (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2156650"
+          "target": "linux-firmware-realtek (Ubuntu)",
+          "target_display": "linux-firmware-realtek (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-realtek/+bug/2156650"
         },
         {
           "assignee": null,
@@ -3051,9 +1673,9 @@
           "is_complete": false,
           "series": "noble",
           "status": "Incomplete",
-          "target": "linux-firmware (Ubuntu Noble)",
-          "target_display": "linux-firmware (Ubuntu Noble)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware/+bug/2156650"
+          "target": "linux-firmware-realtek (Ubuntu Noble)",
+          "target_display": "linux-firmware-realtek (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-realtek/+bug/2156650"
         }
       ],
       "title": "Realtek Bluetooth Issue (BT500)",
@@ -3226,15 +1848,16 @@
     },
     "2160682": {
       "date_created": "2026-07-15T07:33:52.713471+00:00",
-      "date_last_updated": "2026-08-19T02:33:24.649342+00:00",
+      "date_last_updated": "2026-10-16T06:18:26.617435+00:00",
       "has_activity_after_incomplete": true,
       "id": 2160682,
-      "last_activity_summary": "description: * WhP2/SpP2/LzP2 (ES)\n\u00a0\u00a0* WiFi\n\u00a0\u00a0\u00a0\u00a0- iwlwifi-sc-a0-wh-b0.pnvm (optional)\n\u00a0\u00a0\u00a0\u00a0- iwlwifi-sc-a0-wh-b0-core103.ucode\n    - iwlwifi-sc2-a0-fm-c0-c103.ucode\n    - iwlwifi-sc2-a0-wh-b0-c103.ucode\n\u00a0\u00a0* BT\n\u00a0\u00a0\u00a0\u00a0- intel/ibt-00a2-01a1.ddc\n\u00a0\u00a0\u00a0\u00a0- intel/ibt-00a2-01a1.sfi\n\u00a0\u00a0\u00a0\u00a0- intel/ibt-00a2-01a1-iml.sfi by vicamo",
-      "last_activity_time": "2026-08-19T02:33:24.649342+00:00",
+      "last_activity_summary": "affects: linux-firmware-intel-wireless (Ubuntu) by juergh",
+      "last_activity_time": "2026-10-16T06:18:26.617435+00:00",
       "owner": "You-Sheng Yang",
       "package": "linux-firmware",
       "packages": [
-        "linux-firmware"
+        "linux-firmware",
+        "linux-firmware-intel-wireless"
       ],
       "tags": [
         "jira-somerville-5132",
@@ -3262,9 +1885,9 @@
           "is_complete": false,
           "series": null,
           "status": "Incomplete",
-          "target": "linux-firmware (Ubuntu)",
-          "target_display": "linux-firmware (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2160682"
+          "target": "linux-firmware-intel-wireless (Ubuntu)",
+          "target_display": "linux-firmware-intel-wireless (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-intel-wireless/+bug/2160682"
         },
         {
           "assignee": null,
@@ -3286,9 +1909,9 @@
           "is_complete": false,
           "series": "resolute",
           "status": "Incomplete",
-          "target": "linux-firmware (Ubuntu Resolute)",
-          "target_display": "linux-firmware (Ubuntu Resolute)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware/+bug/2160682"
+          "target": "linux-firmware-intel-wireless (Ubuntu Resolute)",
+          "target_display": "linux-firmware-intel-wireless (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-intel-wireless/+bug/2160682"
         },
         {
           "assignee": null,
@@ -3310,9 +1933,9 @@
           "is_complete": false,
           "series": "stonking",
           "status": "Incomplete",
-          "target": "linux-firmware (Ubuntu Stonking)",
-          "target_display": "linux-firmware (Ubuntu Stonking)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/stonking/+source/linux-firmware/+bug/2160682"
+          "target": "linux-firmware-intel-wireless (Ubuntu Stonking)",
+          "target_display": "linux-firmware-intel-wireless (Ubuntu Stonking)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/stonking/+source/linux-firmware-intel-wireless/+bug/2160682"
         }
       ],
       "title": "Support Intel WhP2 (BE211), SpP2 (BE213), LzP2 (AX221) WiFi/Bluetooth for Intel Nova Lake platforms",
@@ -3320,15 +1943,16 @@
     },
     "2161220": {
       "date_created": "2026-07-18T23:37:17.103587+00:00",
-      "date_last_updated": "2026-07-19T23:00:57.317394+00:00",
+      "date_last_updated": "2026-10-16T06:28:55.762238+00:00",
       "has_activity_after_incomplete": false,
       "id": 2161220,
-      "last_activity_summary": "bug task added: linux-firmware (Ubuntu Noble) by juergh",
-      "last_activity_time": "2026-08-28T12:35:18.589783+00:00",
+      "last_activity_summary": "linux-firmware-intel-graphics (Ubuntu): status: Invalid by juergh",
+      "last_activity_time": "2026-10-16T06:28:55.762238+00:00",
       "owner": "RootDev",
       "package": "linux-firmware",
       "packages": [
-        "linux-firmware"
+        "linux-firmware",
+        "linux-firmware-intel-graphics"
       ],
       "tags": [
         "kernel-daily-bug",
@@ -3337,15 +1961,15 @@
       "tasks": [
         {
           "assignee": null,
-          "date_closed": null,
+          "date_closed": "2026-10-16T06:28:54.319496+00:00",
           "date_created": "2026-07-18T23:37:17.103587+00:00",
           "importance": "Undecided",
-          "is_complete": false,
+          "is_complete": true,
           "series": null,
-          "status": "New",
-          "target": "linux-firmware (Ubuntu)",
-          "target_display": "linux-firmware (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2161220"
+          "status": "Invalid",
+          "target": "linux-firmware-intel-graphics (Ubuntu)",
+          "target_display": "linux-firmware-intel-graphics (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-intel-graphics/+bug/2161220"
         },
         {
           "assignee": null,
@@ -3355,9 +1979,9 @@
           "is_complete": false,
           "series": "noble",
           "status": "New",
-          "target": "linux-firmware (Ubuntu Noble)",
-          "target_display": "linux-firmware (Ubuntu Noble)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware/+bug/2161220"
+          "target": "linux-firmware-intel-graphics (Ubuntu Noble)",
+          "target_display": "linux-firmware-intel-graphics (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-intel-graphics/+bug/2161220"
         }
       ],
       "title": "linux-firmware: missing GuC firmware 70.44.1 for Intel Meteor Lake (i915/mtl_guc_70.bin)",
@@ -3365,15 +1989,16 @@
     },
     "2161558": {
       "date_created": "2026-07-22T18:34:35.184122+00:00",
-      "date_last_updated": "2026-07-22T23:01:34.432284+00:00",
+      "date_last_updated": "2026-10-16T06:22:34.636612+00:00",
       "has_activity_after_incomplete": false,
       "id": 2161558,
-      "last_activity_summary": "bug task added: linux-firmware (Ubuntu Resolute) by juergh",
-      "last_activity_time": "2026-08-28T12:33:59.680145+00:00",
+      "last_activity_summary": "affects: linux-firmware-realtek (Ubuntu) by juergh",
+      "last_activity_time": "2026-10-16T06:22:34.636612+00:00",
       "owner": "Gabriel Sosa",
       "package": "linux-firmware",
       "packages": [
-        "linux-firmware"
+        "linux-firmware",
+        "linux-firmware-realtek"
       ],
       "tags": [
         "kernel-daily-bug",
@@ -3388,9 +2013,9 @@
           "is_complete": false,
           "series": null,
           "status": "New",
-          "target": "linux-firmware (Ubuntu)",
-          "target_display": "linux-firmware (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2161558"
+          "target": "linux-firmware-realtek (Ubuntu)",
+          "target_display": "linux-firmware-realtek (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-realtek/+bug/2161558"
         },
         {
           "assignee": null,
@@ -3400,9 +2025,9 @@
           "is_complete": false,
           "series": "resolute",
           "status": "New",
-          "target": "linux-firmware (Ubuntu Resolute)",
-          "target_display": "linux-firmware (Ubuntu Resolute)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware/+bug/2161558"
+          "target": "linux-firmware-realtek (Ubuntu Resolute)",
+          "target_display": "linux-firmware-realtek (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-realtek/+bug/2161558"
         }
       ],
       "title": "RTL8852BE firmware regression causes unstable 5 GHz Wi-Fi",
@@ -3552,15 +2177,16 @@
     },
     "2162643": {
       "date_created": "2026-08-01T21:11:49.945736+00:00",
-      "date_last_updated": "2026-09-18T15:10:27.929075+00:00",
+      "date_last_updated": "2026-10-16T06:28:07.864673+00:00",
       "has_activity_after_incomplete": false,
       "id": 2162643,
-      "last_activity_summary": "bug task added: linux-firmware (Ubuntu Noble) by juergh",
-      "last_activity_time": "2026-09-18T15:10:27.929075+00:00",
+      "last_activity_summary": "linux-firmware-qualcomm-wireless (Ubuntu): status: Invalid by juergh",
+      "last_activity_time": "2026-10-16T06:28:07.864673+00:00",
       "owner": "karan khirsariya",
       "package": "linux-firmware",
       "packages": [
-        "linux-firmware"
+        "linux-firmware",
+        "linux-firmware-qualcomm-wireless"
       ],
       "tags": [
         "amd64",
@@ -3575,15 +2201,15 @@
       "tasks": [
         {
           "assignee": null,
-          "date_closed": null,
+          "date_closed": "2026-10-16T06:28:06.468911+00:00",
           "date_created": "2026-08-01T21:11:49.945736+00:00",
           "importance": "Undecided",
-          "is_complete": false,
+          "is_complete": true,
           "series": null,
-          "status": "New",
-          "target": "linux-firmware (Ubuntu)",
-          "target_display": "linux-firmware (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2162643"
+          "status": "Invalid",
+          "target": "linux-firmware-qualcomm-wireless (Ubuntu)",
+          "target_display": "linux-firmware-qualcomm-wireless (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-qualcomm-wireless/+bug/2162643"
         },
         {
           "assignee": null,
@@ -3593,9 +2219,9 @@
           "is_complete": false,
           "series": "noble",
           "status": "New",
-          "target": "linux-firmware (Ubuntu Noble)",
-          "target_display": "linux-firmware (Ubuntu Noble)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware/+bug/2162643"
+          "target": "linux-firmware-qualcomm-wireless (Ubuntu Noble)",
+          "target_display": "linux-firmware-qualcomm-wireless (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-qualcomm-wireless/+bug/2162643"
         }
       ],
       "title": "[SRU] ath12k WCN7850: 5 GHz non-functional on 24.04 LTS \u2014 packaged linux-firmware predates upstream regulatory fix",
@@ -3640,15 +2266,16 @@
     },
     "2163554": {
       "date_created": "2026-08-15T01:56:23.302382+00:00",
-      "date_last_updated": "2026-09-23T04:24:38.681349+00:00",
-      "has_activity_after_incomplete": true,
+      "date_last_updated": "2026-10-16T05:42:36.770053+00:00",
+      "has_activity_after_incomplete": false,
       "id": 2163554,
-      "last_activity_summary": "linux-firmware (Ubuntu): status: Incomplete by juergh",
-      "last_activity_time": "2026-09-23T04:24:38.681349+00:00",
+      "last_activity_summary": "linux-firmware-amd-graphics (Ubuntu): status: Invalid by juergh",
+      "last_activity_time": "2026-10-16T05:42:36.770053+00:00",
       "owner": "chleosl",
       "package": "linux-firmware",
       "packages": [
-        "linux-firmware"
+        "linux-firmware",
+        "linux-firmware-amd-graphics"
       ],
       "tags": [
         "amd64",
@@ -3663,15 +2290,27 @@
       "tasks": [
         {
           "assignee": null,
-          "date_closed": null,
+          "date_closed": "2026-10-16T05:36:56.055703+00:00",
           "date_created": "2026-08-15T01:56:23.302382+00:00",
           "importance": "Undecided",
-          "is_complete": false,
+          "is_complete": true,
           "series": null,
-          "status": "Incomplete",
-          "target": "linux-firmware (Ubuntu)",
-          "target_display": "linux-firmware (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2163554"
+          "status": "Invalid",
+          "target": "linux-firmware-amd-graphics (Ubuntu)",
+          "target_display": "linux-firmware-amd-graphics (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-amd-graphics/+bug/2163554"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-16T05:36:49.865238+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "noble",
+          "status": "New",
+          "target": "linux-firmware-amd-graphics (Ubuntu Noble)",
+          "target_display": "linux-firmware-amd-graphics (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-amd-graphics/+bug/2163554"
         }
       ],
       "title": "DCN314/Phoenix DMCUB 0x08004800 page-faults at GART 0x6026000 during eDP power transition, wedging display (2.29 regression)",
@@ -4009,11 +2648,11 @@
     },
     "2166983": {
       "date_created": "2026-09-10T14:34:30.859286+00:00",
-      "date_last_updated": "2026-09-22T06:11:25.762200+00:00",
+      "date_last_updated": "2026-10-16T05:35:03.821777+00:00",
       "has_activity_after_incomplete": false,
       "id": 2166983,
-      "last_activity_summary": "tags: kernel-daily-bug linux-firmware-daily-bug by ubuntu-kernel-bot",
-      "last_activity_time": "2026-09-22T06:11:25.762200+00:00",
+      "last_activity_summary": "linux-firmware (Ubuntu): status: Triaged by juergh",
+      "last_activity_time": "2026-10-16T05:35:03.821777+00:00",
       "owner": "Simon Johnsson",
       "package": "linux-firmware",
       "packages": [
@@ -4028,10 +2667,10 @@
           "assignee": null,
           "date_closed": null,
           "date_created": "2026-09-10T14:34:30.859286+00:00",
-          "importance": "Undecided",
+          "importance": "Wishlist",
           "is_complete": false,
           "series": null,
-          "status": "New",
+          "status": "Triaged",
           "target": "linux-firmware (Ubuntu)",
           "target_display": "linux-firmware (Ubuntu)",
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2166983"
@@ -4042,15 +2681,16 @@
     },
     "2167302": {
       "date_created": "2026-09-15T07:10:15.851596+00:00",
-      "date_last_updated": "2026-09-16T06:31:54.074693+00:00",
-      "has_activity_after_incomplete": true,
+      "date_last_updated": "2026-10-16T05:24:58.803127+00:00",
+      "has_activity_after_incomplete": false,
       "id": 2167302,
-      "last_activity_summary": "linux-firmware (Ubuntu): status: Incomplete by juergh",
-      "last_activity_time": "2026-09-16T06:31:54.074693+00:00",
+      "last_activity_summary": "linux-firmware-amd-graphics (Ubuntu): status: Invalid by juergh",
+      "last_activity_time": "2026-10-16T05:24:58.803127+00:00",
       "owner": "Nick Manchev",
       "package": "linux-firmware",
       "packages": [
-        "linux-firmware"
+        "linux-firmware",
+        "linux-firmware-amd-graphics"
       ],
       "tags": [
         "kernel-daily-bug",
@@ -4059,15 +2699,27 @@
       "tasks": [
         {
           "assignee": null,
-          "date_closed": null,
+          "date_closed": "2026-10-16T05:24:56.556437+00:00",
           "date_created": "2026-09-15T07:10:15.851596+00:00",
           "importance": "Undecided",
-          "is_complete": false,
+          "is_complete": true,
           "series": null,
-          "status": "Incomplete",
-          "target": "linux-firmware (Ubuntu)",
-          "target_display": "linux-firmware (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2167302"
+          "status": "Invalid",
+          "target": "linux-firmware-amd-graphics (Ubuntu)",
+          "target_display": "linux-firmware-amd-graphics (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-amd-graphics/+bug/2167302"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-16T05:24:28.054794+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "noble",
+          "status": "New",
+          "target": "linux-firmware-amd-graphics (Ubuntu Noble)",
+          "target_display": "linux-firmware-amd-graphics (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-amd-graphics/+bug/2167302"
         }
       ],
       "title": "[linux-firmware] DMCUB firmware regression causes severe input lag on Navi 33 (RX 7600)",
@@ -4491,15 +3143,16 @@
     },
     "2167915": {
       "date_created": "2026-09-22T05:16:43.345570+00:00",
-      "date_last_updated": "2026-10-14T07:54:32.021740+00:00",
+      "date_last_updated": "2026-10-16T03:17:08.350105+00:00",
       "has_activity_after_incomplete": false,
       "id": 2167915,
-      "last_activity_summary": "description: [Impact]\nDell Slate-2 Systems using Cirrus CS42L45 codec + CS35L63 amp need new SDCA feature support and the corresponding linux-firmware to have all audio function work\n\n[Fix]\n======= linux kernel ======\nNeed the following patches on 7.3 (which are already in Stonking)\n\nee1811eacdbb soundwire: bus_type: Create IRQ mapping before calling driver probe()\ndf036250d7d5 ASoC: SDCA: Remove sdca_function_data duplication\n9557ec3f9c9f ASoC: SDCA: Add RJ support to class driver\na158fe7b0c81 ASoC: SOF: Intel: NVL-S: add platform name\nab463b465585 ASoC: SOF: Intel: NVL: add platform name\n\n====== linux-firmware ======\nAMP FW: https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/commit/?id=2ded07e3da99f522881039f13595f34d54acdc74 [git.kernel.org]\n\nCodec FW: https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/commit/?id=10f09227a370e02de71b584024c20dc8d3a02103 [git.kernel.org]\n\nYukon2 : https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/commit/?id=30f83ae033e8c7e99982af34663d797205a6c102 [git.kernel.org]\n\n\n====== firmware-sof ======\nhttps://github.com/thesofproject/sof-bin/releases/tag/v2026.09\n\n[Test Plan]\n1. Boot up The Dell Slate-2 system with CS42L45+CS35L63 audio solution\n2. Go to g-s-d for sound settings for audio intput/output device check\n3. Make sure they're not Dummy for audio input/output\n4. `aplay` to verify audio output function and `arecord` to verify audio input\n\n[Where problems could occur]\nIt's new Dell system with Intel NVL, need firmware-sof + kernel SDCA for Intel NVL + linux-firmware to work. Need to make sure no regression on older platforms. Ex. Intel WCL, PTL...etc by mschiu77",
-      "last_activity_time": "2026-10-14T07:54:32.021740+00:00",
+      "last_activity_summary": "bug task deleted updated by juergh",
+      "last_activity_time": "2026-10-16T06:20:12.967065+00:00",
       "owner": "Chris Chiu",
       "package": "linux-firmware",
       "packages": [
-        "linux-firmware"
+        "linux-firmware",
+        "linux-firmware-misc"
       ],
       "tags": [
         "jira-somerville-4795",
@@ -4536,14 +3189,14 @@
         {
           "assignee": null,
           "date_closed": null,
-          "date_created": "2026-09-22T05:18:19.747978+00:00",
+          "date_created": "2026-10-16T03:16:30.488666+00:00",
           "importance": "Undecided",
           "is_complete": false,
           "series": null,
-          "status": "In Progress",
-          "target": "linux-firmware (Ubuntu)",
-          "target_display": "linux-firmware (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2167915"
+          "status": "New",
+          "target": "linux-firmware-misc (Ubuntu)",
+          "target_display": "linux-firmware-misc (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-misc/+bug/2167915"
         },
         {
           "assignee": null,
@@ -4572,14 +3225,14 @@
         {
           "assignee": null,
           "date_closed": null,
-          "date_created": "2026-10-14T03:25:13.957129+00:00",
+          "date_created": "2026-10-16T03:16:30.488666+00:00",
           "importance": "Undecided",
           "is_complete": false,
           "series": "noble",
           "status": "In Progress",
-          "target": "linux-firmware (Ubuntu Noble)",
-          "target_display": "linux-firmware (Ubuntu Noble)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware/+bug/2167915"
+          "target": "linux-firmware-misc (Ubuntu Noble)",
+          "target_display": "linux-firmware-misc (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-misc/+bug/2167915"
         },
         {
           "assignee": null,
@@ -4608,14 +3261,14 @@
         {
           "assignee": null,
           "date_closed": null,
-          "date_created": "2026-09-22T05:18:19.747978+00:00",
+          "date_created": "2026-10-16T03:16:30.488666+00:00",
           "importance": "Undecided",
           "is_complete": false,
           "series": "resolute",
           "status": "In Progress",
-          "target": "linux-firmware (Ubuntu Resolute)",
-          "target_display": "linux-firmware (Ubuntu Resolute)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware/+bug/2167915"
+          "target": "linux-firmware-misc (Ubuntu Resolute)",
+          "target_display": "linux-firmware-misc (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-misc/+bug/2167915"
         },
         {
           "assignee": null,
@@ -4644,14 +3297,14 @@
         {
           "assignee": null,
           "date_closed": null,
-          "date_created": "2026-09-22T05:18:19.747978+00:00",
+          "date_created": "2026-10-16T03:16:30.488666+00:00",
           "importance": "Undecided",
           "is_complete": false,
           "series": "stonking",
           "status": "In Progress",
-          "target": "linux-firmware (Ubuntu Stonking)",
-          "target_display": "linux-firmware (Ubuntu Stonking)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/stonking/+source/linux-firmware/+bug/2167915"
+          "target": "linux-firmware-misc (Ubuntu Stonking)",
+          "target_display": "linux-firmware-misc (Ubuntu Stonking)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/stonking/+source/linux-firmware-misc/+bug/2167915"
         }
       ],
       "title": "Support Cirrus Logic CS42L45+CS35L63 on new Dell Slate",
@@ -4740,15 +3393,16 @@
     },
     "2169111": {
       "date_created": "2026-10-01T07:39:16.453495+00:00",
-      "date_last_updated": "2026-10-12T06:19:48.812068+00:00",
+      "date_last_updated": "2026-10-16T06:21:15.222802+00:00",
       "has_activity_after_incomplete": false,
       "id": 2169111,
-      "last_activity_summary": "tags: jira-stella-4236 kernel-daily-bug linux-firmware-daily-bug oem-priority stella by ubuntu-kernel-bot",
-      "last_activity_time": "2026-10-12T06:19:48.812068+00:00",
+      "last_activity_summary": "affects: linux-firmware-misc (Ubuntu) by juergh",
+      "last_activity_time": "2026-10-16T06:21:15.222802+00:00",
       "owner": "AceLan Kao",
       "package": "linux-firmware",
       "packages": [
-        "linux-firmware"
+        "linux-firmware",
+        "linux-firmware-misc"
       ],
       "tags": [
         "jira-stella-4236",
@@ -4766,9 +3420,9 @@
           "is_complete": true,
           "series": null,
           "status": "Fix Released",
-          "target": "linux-firmware (Ubuntu)",
-          "target_display": "linux-firmware (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2169111"
+          "target": "linux-firmware-misc (Ubuntu)",
+          "target_display": "linux-firmware-misc (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-misc/+bug/2169111"
         },
         {
           "assignee": "AceLan Kao",
@@ -4778,9 +3432,9 @@
           "is_complete": false,
           "series": "resolute",
           "status": "In Progress",
-          "target": "linux-firmware (Ubuntu Resolute)",
-          "target_display": "linux-firmware (Ubuntu Resolute)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware/+bug/2169111"
+          "target": "linux-firmware-misc (Ubuntu Resolute)",
+          "target_display": "linux-firmware-misc (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-misc/+bug/2169111"
         },
         {
           "assignee": null,
@@ -4790,9 +3444,9 @@
           "is_complete": true,
           "series": "stonking",
           "status": "Fix Released",
-          "target": "linux-firmware (Ubuntu Stonking)",
-          "target_display": "linux-firmware (Ubuntu Stonking)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/stonking/+source/linux-firmware/+bug/2169111"
+          "target": "linux-firmware-misc (Ubuntu Stonking)",
+          "target_display": "linux-firmware-misc (Ubuntu Stonking)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/stonking/+source/linux-firmware-misc/+bug/2169111"
         }
       ],
       "title": "No built-in speaker audio on HP systems with TI TAS2783 amplifiers",
@@ -5222,7 +3876,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2171012"
     }
   },
-  "last_scan_utc": "2026-10-16T03:03:45.653311+00:00",
+  "last_scan_utc": "2026-10-16T06:43:38.247948+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
