@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 from pathlib import Path
 from unittest.mock import patch
 
@@ -135,6 +136,100 @@ def test_parse_args_custom_options():
 def test_parse_args_no_workflow_url():
     args = parse_args(["linux-firmware", "--no-workflow-url"])
     assert args.workflow_url is None
+
+
+def test_parse_args_no_scan():
+    args = parse_args(["--no-scan"])
+    assert args.no_scan is True
+
+    args_alias = parse_args(["--report-only"])
+    assert args_alias.no_scan is True
+
+    args_default = parse_args(["linux-firmware"])
+    assert args_default.no_scan is False
+
+
+def test_resolve_packages_no_scan_empty():
+    parser = create_parser()
+    args = parse_args(["--no-scan"])
+    pkgs = resolve_packages(args, parser)
+    assert pkgs == []
+
+
+def test_main_no_scan_missing_state_file(tmp_path: Path):
+    missing = tmp_path / "missing-state.json"
+    exit_code = main(["--no-scan", "--state-file", str(missing)])
+    assert exit_code == 1
+
+
+@patch("lp_bug_monitor.cli.get_launchpad")
+@patch("lp_bug_monitor.cli.save_state")
+@patch("lp_bug_monitor.cli.generate_html_report")
+def test_main_no_scan_success(mock_generate_html, mock_save_state, mock_get_lp, tmp_path: Path):
+    state_file = tmp_path / "bugs-state.json"
+    state_data = {
+        "last_scan_utc": "2026-10-15T12:00:00+00:00",
+        "packages": ["linux-firmware"],
+        "bugs": {
+            "123": {
+                "id": 123,
+                "package": "linux-firmware",
+                "title": "Test bug",
+                "tasks": [],
+            }
+        },
+    }
+    state_file.write_text(json.dumps(state_data), encoding="utf-8")
+    out_html = tmp_path / "bugs.html"
+
+    exit_code = main(["--no-scan", "--state-file", str(state_file), "-o", str(out_html)])
+    assert exit_code == 0
+    assert not mock_get_lp.called
+    assert not mock_save_state.called
+    assert mock_generate_html.called
+    kwargs = mock_generate_html.call_args.kwargs
+    assert "123" in kwargs["bugs"]
+    assert kwargs["packages_scanned"] == ["linux-firmware"]
+    assert kwargs["scan_time_utc"].isoformat() == "2026-10-15T12:00:00+00:00"
+
+
+@patch("lp_bug_monitor.cli.get_launchpad")
+@patch("lp_bug_monitor.cli.save_state")
+@patch("lp_bug_monitor.cli.generate_html_report")
+def test_main_no_scan_cli_packages_override(mock_generate_html, mock_save_state, mock_get_lp, tmp_path: Path):
+    state_file = tmp_path / "bugs-state.json"
+    state_data = {
+        "last_scan_utc": "2026-10-15T12:00:00+00:00",
+        "packages": ["linux-firmware"],
+        "bugs": {},
+    }
+    state_file.write_text(json.dumps(state_data), encoding="utf-8")
+
+    exit_code = main(["systemd", "udev", "--no-scan", "--state-file", str(state_file)])
+    assert exit_code == 0
+    assert not mock_get_lp.called
+    assert mock_generate_html.called
+    assert mock_generate_html.call_args.kwargs["packages_scanned"] == ["systemd", "udev"]
+
+
+@patch("lp_bug_monitor.cli.get_launchpad")
+@patch("lp_bug_monitor.cli.save_state")
+@patch("lp_bug_monitor.cli.generate_html_report")
+def test_main_no_scan_with_json_export(mock_generate_html, mock_save_state, mock_get_lp, tmp_path: Path):
+    state_file = tmp_path / "bugs-state.json"
+    json_out = tmp_path / "exported.json"
+    state_data = {
+        "last_scan_utc": "2026-10-15T12:00:00+00:00",
+        "packages": ["linux-firmware"],
+        "bugs": {"456": {"id": 456, "package": "linux-firmware", "title": "Firmware error"}},
+    }
+    state_file.write_text(json.dumps(state_data), encoding="utf-8")
+
+    exit_code = main(["--no-scan", "--state-file", str(state_file), "--json", str(json_out)])
+    assert exit_code == 0
+    assert json_out.is_file()
+    exported = json.loads(json_out.read_text(encoding="utf-8"))
+    assert "456" in exported["bugs"]
 
 
 @patch("lp_bug_monitor.cli.get_launchpad")

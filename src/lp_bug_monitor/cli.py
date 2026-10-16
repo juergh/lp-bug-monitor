@@ -113,6 +113,13 @@ def create_parser() -> argparse.ArgumentParser:
         help="Force a full scan from scratch instead of an incremental scan",
     )
     parser.add_argument(
+        "--no-scan",
+        "--report-only",
+        action="store_true",
+        dest="no_scan",
+        help="Skip Launchpad scan and regenerate HTML status report directly from state file",
+    )
+    parser.add_argument(
         "-s",
         "--series",
         nargs="+",
@@ -168,7 +175,7 @@ def resolve_packages(args: argparse.Namespace, parser: argparse.ArgumentParser) 
     if args.pos_packages:
         packages.update(args.pos_packages)
 
-    if not packages:
+    if not packages and not getattr(args, "no_scan", False):
         parser.error("No source packages specified. Provide package names as arguments or via -f/--packages-file.")
 
     return sorted(packages)
@@ -186,6 +193,59 @@ def main(argv: list[str] | None = None) -> int:
     )
 
     packages = resolve_packages(args, parser)
+
+    if args.no_scan:
+        logger.info("Running in report-only mode (skipping Launchpad scan)...")
+        state_file = Path(args.state_file)
+        if not state_file.is_file():
+            logger.error("State file '%s' does not exist; cannot regenerate report", state_file)
+            return 1
+
+        state = load_state(state_file)
+        bugs = state.get("bugs", {})
+        state_packages = state.get("packages", [])
+
+        final_packages = packages if packages else state_packages
+        if not final_packages and bugs:
+            final_packages = sorted({b.get("package") for b in bugs.values() if b.get("package")})
+
+        scan_time = None
+        if state.get("last_scan_utc"):
+            try:
+                scan_time = datetime.fromisoformat(str(state["last_scan_utc"]))
+            except Exception:
+                scan_time = None
+
+        logger.info(
+            "Regenerating HTML report from state (%d bugs, %d packages)...",
+            len(bugs),
+            len(final_packages),
+        )
+        try:
+            generate_html_report(
+                bugs=bugs,
+                output_path=args.output,
+                scan_time_utc=scan_time,
+                packages_scanned=final_packages,
+                title=args.title,
+                workflow_url=args.workflow_url,
+            )
+            logger.info("Generated HTML status report at %s", args.output.resolve())
+        except Exception as e:
+            logger.error("Failed to generate HTML report: %s", e)
+            return 1
+
+        if args.json:
+            try:
+                args.json.parent.mkdir(parents=True, exist_ok=True)
+                with args.json.open("w", encoding="utf-8") as f:
+                    json.dump({"scan_time_utc": state.get("last_scan_utc"), "bugs": bugs}, f, indent=2)
+                logger.info("Exported JSON bug data to %s", args.json)
+            except Exception as e:
+                logger.error("Failed to export JSON: %s", e)
+
+        return 0
+
     logger.info("Monitoring %d source packages: %s", len(packages), packages)
 
     try:
