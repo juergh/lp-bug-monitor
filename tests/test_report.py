@@ -207,3 +207,33 @@ def test_generate_html_report_multiple_packages(tmp_path: Path):
     assert out_file.is_file()
     content = out_file.read_text(encoding="utf-8")
     assert "Ubuntu Bug Status (3 packages)" in content
+
+
+def test_generate_html_report_with_workflow_url(tmp_path: Path):
+    out_file = tmp_path / "wf_url.html"
+    wf_url = "https://github.com/juergh/lp-bug-monitor/actions/workflows/sync.yaml"
+    generate_html_report(
+        bugs={},
+        output_path=out_file,
+        workflow_url=wf_url,
+    )
+    assert out_file.is_file()
+    content = out_file.read_text(encoding="utf-8")
+    assert f'via <a href="{wf_url}" target="_blank" rel="noopener">GitHub Action</a>.' in content
+    assert f'href="{wf_url}"' in content
+    assert 'id="btn-regenerate"' in content
+    assert "🔄 Regenerate ↗" in content
+
+
+def test_generate_html_report_without_workflow_url(tmp_path: Path):
+    out_file = tmp_path / "no_wf_url.html"
+    generate_html_report(
+        bugs={},
+        output_path=out_file,
+        workflow_url=None,
+    )
+    assert out_file.is_file()
+    content = out_file.read_text(encoding="utf-8")
+    assert "GitHub Action" not in content
+    assert "btn-regenerate" not in content
+    assert "🔄 Regenerate ↗" not in content

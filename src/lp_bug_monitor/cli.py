@@ -21,6 +21,8 @@ from lp_bug_monitor.state import load_state, save_state
 
 logger = logging.getLogger("lp_bug_monitor")
 
+DEFAULT_WORKFLOW_URL = "https://github.com/juergh/lp-bug-monitor/actions/workflows/sync.yaml"
+
 
 def load_packages_from_file(path: Path | str) -> list[str]:
     """Load source package names from a text file.
@@ -78,6 +80,19 @@ def create_parser() -> argparse.ArgumentParser:
         type=str,
         default=None,
         help="Custom title for the HTML status report dashboard",
+    )
+    parser.add_argument(
+        "--workflow-url",
+        type=str,
+        default=DEFAULT_WORKFLOW_URL,
+        help=f"URL to GitHub Action for manual regeneration and run history (default: {DEFAULT_WORKFLOW_URL})",
+    )
+    parser.add_argument(
+        "--no-workflow-url",
+        action="store_const",
+        const=None,
+        dest="workflow_url",
+        help="Disable the GitHub Action link and Regenerate button in the HTML report",
     )
     parser.add_argument(
         "-o",
@@ -252,6 +267,7 @@ def main(argv: list[str] | None = None) -> int:
             scan_time_utc=scan_start_utc,
             packages_scanned=packages,
             title=args.title,
+            workflow_url=args.workflow_url,
         )
         logger.info("Generated HTML status report at %s", args.output.resolve())
     except Exception as e:

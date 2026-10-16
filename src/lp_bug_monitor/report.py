@@ -117,6 +117,7 @@ def generate_html_report(
     scan_time_utc: datetime | None = None,
     packages_scanned: list[str] | None = None,
     title: str | None = None,
+    workflow_url: str | None = None,
 ) -> None:
     """Generate a self-contained, responsive HTML report file with interactive expand/filter/sort."""
     scan_dt = scan_time_utc or datetime.now(UTC)
@@ -132,7 +133,6 @@ def generate_html_report(
     # Unique packages represented
     pkgs_found = sorted({b.get("package", "unknown") for b in sorted_bugs})
     all_pkgs = sorted(set(packages_scanned or []).union(pkgs_found))
-    pkgs_label = ", ".join(all_pkgs) if all_pkgs else "monitored source packages"
 
     pkg_count = len(all_pkgs)
     pkg_word = "package" if pkg_count == 1 else "packages"
@@ -354,6 +354,20 @@ def generate_html_report(
         for s, count in status_counts.items()
     )
 
+    if workflow_url:
+        wf_escaped = html.escape(workflow_url)
+        header_meta = (
+            f'Generated on {scan_str} via <a href="{wf_escaped}" target="_blank" rel="noopener">GitHub Action</a>.'
+        )
+        regenerate_btn = (
+            f'\n    <a href="{wf_escaped}" target="_blank" rel="noopener" class="btn btn-outline" '
+            f'id="btn-regenerate" title="Trigger a manual run or view workflow runs on GitHub">'
+            f"🔄 Regenerate ↗</a>"
+        )
+    else:
+        header_meta = f"Generated on {scan_str}."
+        regenerate_btn = ""
+
     html_content = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -402,6 +416,8 @@ def generate_html_report(
   }}
   .header h1 {{ font-size: 1.35rem; font-weight: 700; margin-bottom: 4px; }}
   .header p {{ color: rgba(255, 255, 255, 0.85); font-size: 0.85rem; }}
+  .header a {{ color: #ffffff; text-decoration: underline; text-underline-offset: 2px; }}
+  .header a:hover {{ color: #fed7aa; }}
 
   /* Metric cards */
   .stats-bar {{
@@ -453,6 +469,7 @@ def generate_html_report(
     justify-content: space-between;
   }}
   .filter-group {{ display: flex; flex-wrap: wrap; gap: 8px; align-items: center; flex: 1; }}
+  .action-group {{ display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }}
   .search-input {{
     padding: 5px 10px;
     border: 1px solid #d1d5db;
@@ -469,16 +486,20 @@ def generate_html_report(
     background: white;
   }}
   .btn {{
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 0.82rem;
     font-weight: 600;
     cursor: pointer;
     border: 1px solid transparent;
-    transition: background 0.15s ease;
+    text-decoration: none;
+    transition: background 0.15s ease, border-color 0.15s ease;
   }}
   .btn-outline {{ background: white; border-color: #d1d5db; color: #374151; }}
-  .btn-outline:hover {{ background: #f9fafb; }}
+  .btn-outline:hover {{ background: #f9fafb; color: #111827; text-decoration: none; }}
 
   /* Table */
   .table-container {{
@@ -625,7 +646,7 @@ def generate_html_report(
 
 <div class="header">
   <h1>{html.escape(dashboard_title)}</h1>
-  <p>Generated on {scan_str}.</p>
+  <p>{header_meta}</p>
 </div>
 
 <div class="stats-bar">
@@ -666,7 +687,7 @@ def generate_html_report(
   <div class="action-group">
     <button type="button" class="btn btn-outline" id="btn-toggle-all" onclick="toggleAllDetails()">
       Expand All
-    </button>
+    </button>{regenerate_btn}
   </div>
 </div>
 

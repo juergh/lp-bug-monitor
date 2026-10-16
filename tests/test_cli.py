@@ -7,7 +7,14 @@ from unittest.mock import patch
 
 import pytest
 
-from lp_bug_monitor.cli import create_parser, load_packages_from_file, main, parse_args, resolve_packages
+from lp_bug_monitor.cli import (
+    DEFAULT_WORKFLOW_URL,
+    create_parser,
+    load_packages_from_file,
+    main,
+    parse_args,
+    resolve_packages,
+)
 
 
 def test_load_packages_from_file(tmp_path: Path):
@@ -53,6 +60,7 @@ def test_parse_args_positional():
     assert args.output == Path("bugs.html")
     assert args.state_file == Path("bugs-state.json")
     assert not args.full
+    assert args.workflow_url == DEFAULT_WORKFLOW_URL
 
 
 def test_resolve_packages_positional():
@@ -110,6 +118,8 @@ def test_parse_args_custom_options():
             "-s",
             "noble",
             "jammy",
+            "--workflow-url",
+            "https://example.com/custom/workflow",
             "--verbose",
         ]
     )
@@ -118,7 +128,13 @@ def test_parse_args_custom_options():
     assert args.title == "Kernel Bugs"
     assert args.full
     assert args.series == ["noble", "jammy"]
+    assert args.workflow_url == "https://example.com/custom/workflow"
     assert args.verbose
+
+
+def test_parse_args_no_workflow_url():
+    args = parse_args(["linux-firmware", "--no-workflow-url"])
+    assert args.workflow_url is None
 
 
 @patch("lp_bug_monitor.cli.get_launchpad")
@@ -212,3 +228,5 @@ def test_packages_unchanged_keeps_incremental_scan(
     assert exit_code == 0
     assert mock_scan_incremental.called
     assert not mock_scan_full.called
+    assert mock_generate_html.called
+    assert mock_generate_html.call_args.kwargs["workflow_url"] == DEFAULT_WORKFLOW_URL
