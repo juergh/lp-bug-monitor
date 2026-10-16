@@ -46,6 +46,8 @@
   }
   .header h1 { font-size: 1.35rem; font-weight: 700; margin-bottom: 4px; }
   .header p { color: rgba(255, 255, 255, 0.85); font-size: 0.85rem; }
+  .header a { color: #ffffff; text-decoration: underline; text-underline-offset: 2px; }
+  .header a:hover { color: #fed7aa; }
 
   /* Metric cards */
   .stats-bar {
@@ -97,6 +99,7 @@
     justify-content: space-between;
   }
   .filter-group { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; flex: 1; }
+  .action-group { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
   .search-input {
     padding: 5px 10px;
     border: 1px solid #d1d5db;
@@ -113,16 +116,20 @@
     background: white;
   }
   .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 0.82rem;
     font-weight: 600;
     cursor: pointer;
     border: 1px solid transparent;
-    transition: background 0.15s ease;
+    text-decoration: none;
+    transition: background 0.15s ease, border-color 0.15s ease;
   }
   .btn-outline { background: white; border-color: #d1d5db; color: #374151; }
-  .btn-outline:hover { background: #f9fafb; }
+  .btn-outline:hover { background: #f9fafb; color: #111827; text-decoration: none; }
 
   /* Table */
   .table-container {
@@ -171,7 +178,7 @@
   }
   .toggle-icon { display: inline-block; transition: transform 0.2s ease; }
   .expanded .toggle-icon { transform: rotate(90deg); color: var(--brand-orange); }
-  .col-flame { width: 48px; text-align: center; white-space: nowrap; user-select: none; font-size: 0.85rem; }
+  .col-flame { width: 60px; text-align: center; white-space: nowrap; user-select: none; font-size: 0.85rem; }
   .flame-tier { cursor: default; letter-spacing: -1px; }
   .flame-0 { color: #9ca3af; }
   .col-id { width: 80px; font-weight: 600; white-space: nowrap; }
@@ -269,7 +276,7 @@
 
 <div class="header">
   <h1>Ubuntu Bug Status (19 packages)</h1>
-  <p>Generated on 2026-10-16 06:43:38 UTC.</p>
+  <p>Generated on 2026-10-16 07:32:51 UTC via <a href="https://github.com/juergh/lp-bug-monitor/actions/workflows/sync.yaml" target="_blank" rel="noopener">GitHub Action</a>.</p>
 </div>
 
 <div class="stats-bar">
@@ -311,6 +318,7 @@
     <button type="button" class="btn btn-outline" id="btn-toggle-all" onclick="toggleAllDetails()">
       Expand All
     </button>
+    <a href="https://github.com/juergh/lp-bug-monitor/actions/workflows/sync.yaml" target="_blank" rel="noopener" class="btn btn-outline" id="btn-regenerate" title="Trigger a manual run or view workflow runs on GitHub">🔄 Regenerate ↗</a>
   </div>
 </div>
 
@@ -2338,7 +2346,7 @@ Test packages of linux-firmware-amd-graphics including these firmware were built
             data-flame="3" data-info-added="true"
             data-statuses="[&quot;incomplete&quot;]" data-created="2026-02-08T00:02:59.908329+00:00" data-lastact="2026-10-13T20:24:16.834230+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2141211">▶</span></td>
-            <td class="col-flame" title="Hot (Info added · Active 2.4d ago)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
+            <td class="col-flame" title="Hot (Info added · Active 2.5d ago)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2141211" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2141211</a>
             </td>
@@ -2387,7 +2395,7 @@ Test packages of linux-firmware-amd-graphics including these firmware were built
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>linux-firmware (Ubuntu): status: Incomplete by juergh</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (Info added · Active 2.4d ago))</span>
+                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (Info added · Active 2.5d ago))</span>
                             </div>
                             <div class="meta-item"><strong class="text-orange">Review:</strong> <span>Activity occurred after task set to Incomplete</span></div>
                             <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
@@ -2914,7 +2922,7 @@ Test packages of linux-firmware-amd-graphics including these firmware were built
             data-flame="1" data-info-added="false"
             data-statuses="[&quot;in progress&quot;]" data-created="2026-09-18T03:39:43.511854+00:00" data-lastact="2026-10-08T06:19:16.649767+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2167668">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 8.0d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 8.1d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2167668" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2167668</a>
             </td>
@@ -2963,7 +2971,7 @@ Test packages of linux-firmware-amd-graphics including these firmware were built
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>affects: linux-firmware-amd-graphics (Ubuntu Resolute) by tjaalton</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 8.0d ago · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 8.1d ago · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>resolute, stonking</span></div>
@@ -2986,7 +2994,7 @@ Test packages of linux-firmware-amd-graphics including these firmware were built
             data-flame="1" data-info-added="false"
             data-statuses="[&quot;new&quot;]" data-created="2026-10-07T03:43:30.870036+00:00" data-lastact="2026-10-07T23:01:57.334203+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2169792">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 8.3d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 8.4d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2169792" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2169792</a>
             </td>
@@ -3035,7 +3043,7 @@ Test packages of linux-firmware-amd-graphics including these firmware were built
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>tags: amd64 apport-bug kernel-daily-bug linux-firmware-daily-bug resolute wayland-session by ubuntu-kernel-bot</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 8.3d ago · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 8.4d ago · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
@@ -3058,7 +3066,7 @@ Test packages of linux-firmware-amd-graphics including these firmware were built
             data-flame="1" data-info-added="false"
             data-statuses="[&quot;in progress&quot;]" data-created="2026-09-08T05:58:44.096220+00:00" data-lastact="2026-10-07T23:01:53.501704+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2166733">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 8.3d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 8.4d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2166733" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2166733</a>
             </td>
@@ -3107,7 +3115,7 @@ Test packages of linux-firmware-amd-graphics including these firmware were built
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>tags: kernel-daily-bug linux-firmware-daily-bug by ubuntu-kernel-bot</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 8.3d ago · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 8.4d ago · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>resolute</span></div>
@@ -3130,7 +3138,7 @@ Test packages of linux-firmware-amd-graphics including these firmware were built
             data-flame="1" data-info-added="false"
             data-statuses="[&quot;in progress&quot;]" data-created="2026-07-07T02:24:01.855733+00:00" data-lastact="2026-10-07T23:01:51.568379+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2159856">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 8.3d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 8.4d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2159856" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2159856</a>
             </td>
@@ -3179,7 +3187,7 @@ Test packages of linux-firmware-amd-graphics including these firmware were built
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>tags: kernel-daily-bug linux-firmware-daily-bug by ubuntu-kernel-bot</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 8.3d ago · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 8.4d ago · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>resolute</span></div>
@@ -3490,7 +3498,7 @@ Test packages of linux-firmware-amd-graphics including these firmware were built
             data-flame="1" data-info-added="false"
             data-statuses="[&quot;new&quot;]" data-created="2026-09-22T18:56:50.522486+00:00" data-lastact="2026-09-22T23:01:19.636659+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2167972">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 23.3d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 23.4d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2167972" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2167972</a>
             </td>
@@ -3539,7 +3547,7 @@ Test packages of linux-firmware-amd-graphics including these firmware were built
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>tags: amd64 apport-bug kernel-daily-bug linux-firmware-daily-bug resolute by ubuntu-kernel-bot</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 23.3d ago · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 23.4d ago · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
@@ -3631,10 +3639,10 @@ Test packages of linux-firmware-amd-graphics including these firmware were built
         <tr class="bug-row" id="row-2139060" onclick="toggleDetails(2139060)"
             data-bugid="2139060" data-package="linux-firmware"
             data-series="[]"
-            data-flame="1" data-info-added="false"
+            data-flame="0" data-info-added="false"
             data-statuses="[&quot;confirmed&quot;]" data-created="2026-01-26T08:30:55.994138+00:00" data-lastact="2026-09-16T07:32:20.876200+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2139060">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 30.0d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
+            <td class="col-flame" title="Cold (Inactive 30d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2139060" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2139060</a>
             </td>
@@ -3683,7 +3691,7 @@ Test packages of linux-firmware-amd-graphics including these firmware were built
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>bug updated by scroom43</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 30.0d ago · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>— (Cold (Inactive 30d · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
