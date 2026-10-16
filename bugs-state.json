@@ -61,15 +61,16 @@
     },
     "2049676": {
       "date_created": "2024-01-17T19:52:39.923932+00:00",
-      "date_last_updated": "2026-10-13T14:27:39.215333+00:00",
+      "date_last_updated": "2026-10-16T12:14:36.283620+00:00",
       "has_activity_after_incomplete": true,
       "id": 2049676,
-      "last_activity_summary": "bug updated by guyrutenberg",
-      "last_activity_time": "2026-10-13T14:27:39.215333+00:00",
+      "last_activity_summary": "bug task deleted updated by juergh",
+      "last_activity_time": "2026-10-16T12:15:04.292406+00:00",
       "owner": "costing",
       "package": "linux-firmware",
       "packages": [
-        "linux-firmware"
+        "linux-firmware",
+        "linux-firmware-intel-wireless"
       ],
       "tags": [
         "kern-8933",
@@ -87,6 +88,42 @@
           "target": "linux-firmware (Ubuntu)",
           "target_display": "linux-firmware (Ubuntu)",
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2049676"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-16T12:14:08.291653+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "linux-firmware-intel-wireless (Ubuntu)",
+          "target_display": "linux-firmware-intel-wireless (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-intel-wireless/+bug/2049676"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-16T12:13:05.960768+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "jammy",
+          "status": "New",
+          "target": "linux-firmware (Ubuntu Jammy)",
+          "target_display": "linux-firmware (Ubuntu Jammy)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/jammy/+source/linux-firmware/+bug/2049676"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-16T12:14:23.449800+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "noble",
+          "status": "New",
+          "target": "linux-firmware-intel-wireless (Ubuntu Noble)",
+          "target_display": "linux-firmware-intel-wireless (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-intel-wireless/+bug/2049676"
         }
       ],
       "title": "`iwlist scan` crashes iwlwifi with a \"Microcode SW error detected. Restarting 0x0.\" message",
@@ -564,15 +601,15 @@
     },
     "2128724": {
       "date_created": "2025-10-17T14:55:28.731670+00:00",
-      "date_last_updated": "2026-05-20T14:32:53.265234+00:00",
+      "date_last_updated": "2026-10-16T12:06:38.968092+00:00",
       "has_activity_after_incomplete": false,
       "id": 2128724,
-      "last_activity_summary": "attachment added: iwlwifi-crash-2026-05-19.txt https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2128724/+attachment/5972007/+files/iwlwifi-crash-2026-05-19.txt by bartlebee13",
-      "last_activity_time": "2026-05-20T14:32:53.265234+00:00",
+      "last_activity_summary": "linux-firmware-intel-wireless (Ubuntu): status: New by juergh",
+      "last_activity_time": "2026-10-16T12:06:38.968092+00:00",
       "owner": "Chef vom Dienst",
-      "package": "linux-firmware",
+      "package": "linux-firmware-intel-wireless",
       "packages": [
-        "linux-firmware"
+        "linux-firmware-intel-wireless"
       ],
       "tags": [
         "amd64",
@@ -601,9 +638,33 @@
           "is_complete": false,
           "series": null,
           "status": "New",
-          "target": "linux-firmware (Ubuntu)",
-          "target_display": "linux-firmware (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2128724"
+          "target": "linux-firmware-intel-wireless (Ubuntu)",
+          "target_display": "linux-firmware-intel-wireless (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-intel-wireless/+bug/2128724"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-16T12:04:50.847986+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "noble",
+          "status": "New",
+          "target": "linux (Ubuntu Noble)",
+          "target_display": "linux (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux/+bug/2128724"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-16T12:04:50.847986+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "noble",
+          "status": "Confirmed",
+          "target": "linux-firmware-intel-wireless (Ubuntu Noble)",
+          "target_display": "linux-firmware-intel-wireless (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-intel-wireless/+bug/2128724"
         }
       ],
       "title": "iwlwifi crashing after some hours, leaving WiFi broken",
@@ -2248,15 +2309,15 @@
     },
     "2163514": {
       "date_created": "2026-08-14T17:30:24.440732+00:00",
-      "date_last_updated": "2026-08-14T23:00:58.954221+00:00",
+      "date_last_updated": "2026-10-16T12:12:19.260106+00:00",
       "has_activity_after_incomplete": false,
       "id": 2163514,
-      "last_activity_summary": "tags: amd64 apport-bug kernel-daily-bug linux-firmware-daily-bug noble wayland-session by ubuntu-kernel-bot",
-      "last_activity_time": "2026-08-14T23:00:58.954221+00:00",
+      "last_activity_summary": "affects: linux-firmware-mediatek (Ubuntu) by juergh",
+      "last_activity_time": "2026-10-16T12:12:19.260106+00:00",
       "owner": "David Pineau",
-      "package": "linux-firmware",
+      "package": "linux-firmware-mediatek",
       "packages": [
-        "linux-firmware"
+        "linux-firmware-mediatek"
       ],
       "tags": [
         "amd64",
@@ -2275,9 +2336,21 @@
           "is_complete": false,
           "series": null,
           "status": "New",
-          "target": "linux-firmware (Ubuntu)",
-          "target_display": "linux-firmware (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2163514"
+          "target": "linux-firmware-mediatek (Ubuntu)",
+          "target_display": "linux-firmware-mediatek (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-mediatek/+bug/2163514"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-16T08:08:49.634471+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "noble",
+          "status": "New",
+          "target": "linux-firmware-mediatek (Ubuntu Noble)",
+          "target_display": "linux-firmware-mediatek (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-mediatek/+bug/2163514"
         }
       ],
       "title": "MT7922 (0489:e0d9): spurious \"Connection Timeout\" teardown of healthy eSCO+ACL links during HFP calls",
@@ -3934,7 +4007,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2171012"
     }
   },
-  "last_scan_utc": "2026-10-16T11:49:52.600066+00:00",
+  "last_scan_utc": "2026-10-16T16:03:29.286949+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
