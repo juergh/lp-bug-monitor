@@ -94,15 +94,16 @@
     },
     "2085434": {
       "date_created": "2024-10-23T13:31:34.577857+00:00",
-      "date_last_updated": "2026-10-09T09:46:21.719273+00:00",
-      "has_activity_after_incomplete": true,
+      "date_last_updated": "2026-10-16T07:52:41.702064+00:00",
+      "has_activity_after_incomplete": false,
       "id": 2085434,
-      "last_activity_summary": "bug updated by dsteiner",
-      "last_activity_time": "2026-10-09T09:46:21.719273+00:00",
+      "last_activity_summary": "linux-firmware-intel-graphics (Ubuntu): status: New by juergh",
+      "last_activity_time": "2026-10-16T07:52:41.702064+00:00",
       "owner": "Sascha Forster",
       "package": "linux-firmware",
       "packages": [
-        "linux-firmware"
+        "linux-firmware",
+        "linux-firmware-intel-graphics"
       ],
       "tags": [
         "amd64",
@@ -121,7 +122,7 @@
           "importance": "High",
           "is_complete": false,
           "series": null,
-          "status": "Incomplete",
+          "status": "New",
           "target": "linux (Ubuntu)",
           "target_display": "linux (Ubuntu)",
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux/+bug/2085434"
@@ -133,10 +134,10 @@
           "importance": "Undecided",
           "is_complete": false,
           "series": null,
-          "status": "Incomplete",
-          "target": "linux-firmware (Ubuntu)",
-          "target_display": "linux-firmware (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2085434"
+          "status": "New",
+          "target": "linux-firmware-intel-graphics (Ubuntu)",
+          "target_display": "linux-firmware-intel-graphics (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-intel-graphics/+bug/2085434"
         },
         {
           "assignee": null,
@@ -149,6 +150,30 @@
           "target": "linux-signed-oem-6.8 (Ubuntu)",
           "target_display": "linux-signed-oem-6.8 (Ubuntu)",
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-signed-oem-6.8/+bug/2085434"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-16T07:49:08.667958+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "noble",
+          "status": "New",
+          "target": "linux (Ubuntu Noble)",
+          "target_display": "linux (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux/+bug/2085434"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-16T07:49:08.667958+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "noble",
+          "status": "Confirmed",
+          "target": "linux-firmware-intel-graphics (Ubuntu Noble)",
+          "target_display": "linux-firmware-intel-graphics (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-intel-graphics/+bug/2085434"
         }
       ],
       "title": "i915 GPU hangs on Intel Meteor Lake [*ERROR* GT0: GUC: TLB invalidation response timed out for seqno ...]",
@@ -586,15 +611,16 @@
     },
     "2130490": {
       "date_created": "2025-11-01T13:38:33.610333+00:00",
-      "date_last_updated": "2026-08-30T21:30:24.673888+00:00",
-      "has_activity_after_incomplete": false,
+      "date_last_updated": "2026-10-16T08:04:47.693366+00:00",
+      "has_activity_after_incomplete": true,
       "id": 2130490,
-      "last_activity_summary": "linux-firmware (Ubuntu): status: Incomplete by c0rv07",
-      "last_activity_time": "2026-08-30T21:30:24.673888+00:00",
+      "last_activity_summary": "bug task added: linux-firmware-qualcomm-wireless (Ubuntu Noble) by juergh",
+      "last_activity_time": "2026-10-16T08:08:06.912904+00:00",
       "owner": "Jungmin Yoon",
       "package": "linux-firmware",
       "packages": [
-        "linux-firmware"
+        "linux-firmware",
+        "linux-firmware-qualcomm-wireless"
       ],
       "tags": [
         "apport-collected",
@@ -611,9 +637,21 @@
           "is_complete": false,
           "series": null,
           "status": "Incomplete",
-          "target": "linux-firmware (Ubuntu)",
-          "target_display": "linux-firmware (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2130490"
+          "target": "linux-firmware-qualcomm-wireless (Ubuntu)",
+          "target_display": "linux-firmware-qualcomm-wireless (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-qualcomm-wireless/+bug/2130490"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-16T08:08:06.912904+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "noble",
+          "status": "New",
+          "target": "linux-firmware-qualcomm-wireless (Ubuntu Noble)",
+          "target_display": "linux-firmware-qualcomm-wireless (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-qualcomm-wireless/+bug/2130490"
         }
       ],
       "title": "ath12k : DFS-UNSET disables some channels of 5GHz and 6GHz by default",
@@ -621,15 +659,16 @@
     },
     "2139060": {
       "date_created": "2026-01-26T08:30:55.994138+00:00",
-      "date_last_updated": "2026-09-16T07:32:20.876200+00:00",
+      "date_last_updated": "2026-10-16T07:58:02.863723+00:00",
       "has_activity_after_incomplete": false,
       "id": 2139060,
-      "last_activity_summary": "bug updated by scroom43",
-      "last_activity_time": "2026-09-16T07:32:20.876200+00:00",
+      "last_activity_summary": "bug task added: linux-firmware-intel-misc (Ubuntu Resolute) by juergh",
+      "last_activity_time": "2026-10-16T07:58:11.493166+00:00",
       "owner": "You-Sheng Yang",
       "package": "linux-firmware",
       "packages": [
-        "linux-firmware"
+        "linux-firmware",
+        "linux-firmware-intel-misc"
       ],
       "tags": [
         "kernel-daily-bug"
@@ -643,9 +682,21 @@
           "is_complete": false,
           "series": null,
           "status": "Confirmed",
-          "target": "linux-firmware (Ubuntu)",
-          "target_display": "linux-firmware (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2139060"
+          "target": "linux-firmware-intel-misc (Ubuntu)",
+          "target_display": "linux-firmware-intel-misc (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-intel-misc/+bug/2139060"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-16T07:58:11.493166+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "resolute",
+          "status": "New",
+          "target": "linux-firmware-intel-misc (Ubuntu Resolute)",
+          "target_display": "linux-firmware-intel-misc (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-intel-misc/+bug/2139060"
         }
       ],
       "title": "Failed to load ISH firmware on Intel Panther Lake, Wildcat Lake RVP platforms: ISH loader: cmd 2 failed 10",
@@ -722,38 +773,6 @@
       ],
       "title": "no sound after update",
       "web_link": "https://bugs.launchpad.net/bugs/2141209"
-    },
-    "2141211": {
-      "date_created": "2026-02-08T00:02:59.908329+00:00",
-      "date_last_updated": "2026-10-13T20:24:16.834230+00:00",
-      "has_activity_after_incomplete": true,
-      "id": 2141211,
-      "last_activity_summary": "linux-firmware (Ubuntu): status: Incomplete by juergh",
-      "last_activity_time": "2026-10-13T20:24:16.834230+00:00",
-      "owner": "C M",
-      "package": "linux-firmware",
-      "packages": [
-        "linux-firmware"
-      ],
-      "tags": [
-        "kernel-daily-bug"
-      ],
-      "tasks": [
-        {
-          "assignee": null,
-          "date_closed": null,
-          "date_created": "2026-02-08T00:02:59.908329+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": null,
-          "status": "Incomplete",
-          "target": "linux-firmware (Ubuntu)",
-          "target_display": "linux-firmware (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2141211"
-        }
-      ],
-      "title": "mt7925e fails to load compressed firmware (.zst), causing persistent Wi-Fi failure after linux-firmware updates",
-      "web_link": "https://bugs.launchpad.net/bugs/2141211"
     },
     "2143794": {
       "date_created": "2026-03-10T06:04:36.275155+00:00",
@@ -2485,15 +2504,16 @@
     },
     "2166635": {
       "date_created": "2026-09-07T04:49:33.409577+00:00",
-      "date_last_updated": "2026-09-07T23:01:05.214499+00:00",
+      "date_last_updated": "2026-10-16T08:01:49.710608+00:00",
       "has_activity_after_incomplete": false,
       "id": 2166635,
-      "last_activity_summary": "tags: amd64 apport-bug kernel-daily-bug linux-firmware-daily-bug noble wayland-session by ubuntu-kernel-bot",
-      "last_activity_time": "2026-09-07T23:01:05.214499+00:00",
+      "last_activity_summary": "affects: linux-firmware-intel-wireless (Ubuntu) by juergh",
+      "last_activity_time": "2026-10-16T08:01:49.710608+00:00",
       "owner": "Robert Vertesi",
       "package": "linux-firmware",
       "packages": [
-        "linux-firmware"
+        "linux-firmware",
+        "linux-firmware-intel-wireless"
       ],
       "tags": [
         "amd64",
@@ -2512,9 +2532,21 @@
           "is_complete": false,
           "series": null,
           "status": "New",
-          "target": "linux-firmware (Ubuntu)",
-          "target_display": "linux-firmware (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2166635"
+          "target": "linux-firmware-intel-wireless (Ubuntu)",
+          "target_display": "linux-firmware-intel-wireless (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-intel-wireless/+bug/2166635"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-16T08:01:25.743859+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "noble",
+          "status": "New",
+          "target": "linux-firmware-intel-wireless (Ubuntu Noble)",
+          "target_display": "linux-firmware-intel-wireless (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-intel-wireless/+bug/2166635"
         }
       ],
       "title": "iwlwifi BE201 firmware crash (ADVANCED_SYSASSERT/NMI_INTERRUPT_UMAC_FATAL) \u2014 missing 102.ucode, falls back to 101",
@@ -2615,15 +2647,16 @@
     },
     "2166808": {
       "date_created": "2026-09-08T19:05:45.967578+00:00",
-      "date_last_updated": "2026-09-08T23:01:27.165254+00:00",
+      "date_last_updated": "2026-10-16T08:00:34.515929+00:00",
       "has_activity_after_incomplete": false,
       "id": 2166808,
-      "last_activity_summary": "tags: kernel-daily-bug linux-firmware-daily-bug by ubuntu-kernel-bot",
-      "last_activity_time": "2026-09-08T23:01:27.165254+00:00",
+      "last_activity_summary": "affects: linux-firmware-misc (Ubuntu) by juergh",
+      "last_activity_time": "2026-10-16T08:00:34.515929+00:00",
       "owner": "saied",
       "package": "linux-firmware",
       "packages": [
-        "linux-firmware"
+        "linux-firmware",
+        "linux-firmware-misc"
       ],
       "tags": [
         "kernel-daily-bug",
@@ -2638,9 +2671,21 @@
           "is_complete": false,
           "series": null,
           "status": "New",
-          "target": "linux-firmware (Ubuntu)",
-          "target_display": "linux-firmware (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2166808"
+          "target": "linux-firmware-misc (Ubuntu)",
+          "target_display": "linux-firmware-misc (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-misc/+bug/2166808"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-16T08:00:04.550162+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "resolute",
+          "status": "New",
+          "target": "linux-firmware-misc (Ubuntu Resolute)",
+          "target_display": "linux-firmware-misc (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-misc/+bug/2166808"
         }
       ],
       "title": "[Lenovo ThinkBook 16p G6 IAX, 17aa:3921] Misnamed Cirrus CS35L56 firmware leaves speakers untuned",
@@ -2727,15 +2772,16 @@
     },
     "2167666": {
       "date_created": "2026-09-18T03:09:50.633935+00:00",
-      "date_last_updated": "2026-09-28T05:47:23.595230+00:00",
-      "has_activity_after_incomplete": true,
+      "date_last_updated": "2026-10-16T07:55:45.304217+00:00",
+      "has_activity_after_incomplete": false,
       "id": 2167666,
-      "last_activity_summary": "attachment added: acpidump.txt https://bugs.launchpad.net/bugs/2167666/+attachment/6001740/+files/acpidump.txt by kazu-ueda",
-      "last_activity_time": "2026-09-28T05:47:23.595230+00:00",
+      "last_activity_summary": "linux-firmware-intel-wireless (Ubuntu): status: New by juergh",
+      "last_activity_time": "2026-10-16T07:55:45.304217+00:00",
       "owner": "Kazunori Ueda",
       "package": "linux-firmware",
       "packages": [
-        "linux-firmware"
+        "linux-firmware",
+        "linux-firmware-intel-wireless"
       ],
       "tags": [
         "apport-collected",
@@ -2751,10 +2797,22 @@
           "importance": "Undecided",
           "is_complete": false,
           "series": null,
-          "status": "Incomplete",
-          "target": "linux-firmware (Ubuntu)",
-          "target_display": "linux-firmware (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2167666"
+          "status": "New",
+          "target": "linux-firmware-intel-wireless (Ubuntu)",
+          "target_display": "linux-firmware-intel-wireless (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-intel-wireless/+bug/2167666"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-16T07:55:23.654145+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "resolute",
+          "status": "Confirmed",
+          "target": "linux-firmware-intel-wireless (Ubuntu Resolute)",
+          "target_display": "linux-firmware-intel-wireless (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-intel-wireless/+bug/2167666"
         }
       ],
       "title": "Intel AX211 (0000:00:14.3) iwlwifi firmware crash (ADVANCED_SYSASSERT) after resume causes s2idle suspend to hang; does not reproduce on Windows 11 on same hardware",
@@ -3876,7 +3934,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2171012"
     }
   },
-  "last_scan_utc": "2026-10-16T07:32:51.003750+00:00",
+  "last_scan_utc": "2026-10-16T08:44:42.433878+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
