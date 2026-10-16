@@ -20,3 +20,5 @@ bugs-state.json
 .pytest_cache/
 .ruff_cache/
 
+# worktree
+/data/
