@@ -5052,11 +5052,11 @@
     },
     "2170529": {
       "date_created": "2026-10-12T06:33:54.148237+00:00",
-      "date_last_updated": "2026-10-12T23:01:29.596067+00:00",
+      "date_last_updated": "2026-10-16T01:17:09.926094+00:00",
       "has_activity_after_incomplete": false,
       "id": 2170529,
-      "last_activity_summary": "tags: kernel-daily-bug linux-firmware-daily-bug by ubuntu-kernel-bot",
-      "last_activity_time": "2026-10-12T23:01:29.596067+00:00",
+      "last_activity_summary": "description: BugLink: https://bugs.launchpad.net/bugs/2170529\n\n[ Impact ]\n\ngfx1103 covers both GC 11.0.1 (PHX1/HPT1) and GC 11.0.4 (PHX2/HPT2).\n\nThere are known stability issues with ROCm on with gfx1103 that are root caused to the GC firmware.\n\nThere's a PyTorch test failure reported publicly[1]. From our internal testing this may also manifest as GPU hang when running workload with vLLM and ComfyUI. The updated firmware resolves these issues.\n\n[ Fix ]\n\nUpdate linux-firmware binaries for gfx1103 to at least commit 9ec083c3aba9[2]\n\n[ Test Plan ]\n\n1. For all releases: boot and run basic graphic tests (e.g. glxgears, glmark2). Make sure graphic functions work.\n\n2. Additionally, for a release where ROCm is meant to support: re-run the test in [1], and make sure that doesn't reproduce.\n\n[ Where problems could occur]\n\nBad firmware may impact compute workload and graphic rendering on the said silicon. However because of how amdgpu works, this only impacts platforms with the said IP blocks.\n\nTest packages of linux-firmware-amd-graphics including these firmware were built for Noble, Resolute, Stonking and wrere tested internally by our team, and they confirmed the firmware is working on the respective releases.\n\n[ Additional information]\n\n[1] https://github.com/ROCm/TheRock/issues/6252\n[2] https://gitlab.com/kernel-firmware/linux-firmware/-/commit/9ec083c3aba932190e3c160e52cbb7e264148b61 by 0xff07",
+      "last_activity_time": "2026-10-16T01:17:09.926094+00:00",
       "owner": "Leo Lin",
       "package": "linux-firmware-amd-graphics",
       "packages": [
@@ -5080,7 +5080,7 @@
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-amd-graphics/+bug/2170529"
         },
         {
-          "assignee": null,
+          "assignee": "Leo Lin",
           "date_closed": null,
           "date_created": "2026-10-12T14:03:52.814381+00:00",
           "importance": "Undecided",
@@ -5092,7 +5092,7 @@
           "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-amd-graphics/+bug/2170529"
         },
         {
-          "assignee": null,
+          "assignee": "Leo Lin",
           "date_closed": null,
           "date_created": "2026-10-12T14:03:52.814381+00:00",
           "importance": "Undecided",
@@ -5104,7 +5104,7 @@
           "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-amd-graphics/+bug/2170529"
         },
         {
-          "assignee": null,
+          "assignee": "Leo Lin",
           "date_closed": null,
           "date_created": "2026-10-12T14:03:52.814381+00:00",
           "importance": "Undecided",
@@ -5121,17 +5121,20 @@
     },
     "2170922": {
       "date_created": "2026-10-15T06:47:01.248587+00:00",
-      "date_last_updated": "2026-10-15T10:19:49.762366+00:00",
+      "date_last_updated": "2026-10-15T23:01:36.143901+00:00",
       "has_activity_after_incomplete": false,
       "id": 2170922,
-      "last_activity_summary": "description: [ Impact ]\n\nBackporting new firmware for HWE kernels to LTSes is a constant source of pain and always results in problems. To limit the risk we always try to backport only select firmwares that we think are safe but we never get it 100% correct. The main issues are typically:\n\n1. Some backported firmware that the HWE kernel needs is also loaded by the GA kernel which can cause issues for GA kernel users. New firmware with old kernels is a combination that firmware vendors typically don't test and is not really supported.\n\n2. Missing HWE firmwares. Finding the exact firmwares that a particular kernel wants it not trivial. We're constantly missing blobs so when LTS users upgrade to a newer HWE kernel they sometimes experience regressions and HW that used to work no longer does because firmware is missing. We also deliberately exclude firmwares that we *think* might cause issues for GA kernel users.\n\n3. Identifying and backporting firmwares is an expensive task and the results are never satisfying for both the firmware package maintainers and (more importantly) the users.\n\n[ Fix ]\n\nIntroduce a new set of firmware packages: linux-firmware-hwe-<foo>. The idea is that HWE kernels depend on linux-firmware-hwe (instead of linux-firmware) which installs the same firmware binaries as the Ubuntu release where the HWE kernel comes from. Take Resolute as an example. The first HWE kernel for Resolute will be 7.3 from Stonking. The new set of linux-firmware-hwe for Resolute will be a backport of linux-firmware from Stonking. The full set, no backporting of individual blobs. That way we have the same combination of kernel+firmware in both the interim and the LTS releases.\n\nThe caveat with this is that it's not possible to have both linux-firmware and linux-firmware-hwe installed at the same time (we might work around that in the future). So you either have the firmwares for the GA kernel *or* the firmwares for the HWE kernel. But you can have both GA *and* HWE kernels installed at the same time. In that case and if you choose to boot the GA kernel you'll run old kernel plus new firmware which could be problematic.\n\nNote that at the time of a new Ubuntu release, linux-firmware-hwe-<foo> will just be metapackages that depend on linux-firmware-<foo>. When the first HWE kernel is added to an LTS, these metapackages will be replaced with packages that provide real HWE firmwares.\n\n[ Test Case ]\n\nTBD\n\n[ Where Problems Could Occur ]\n\nTBD by juergh",
-      "last_activity_time": "2026-10-15T10:19:49.762366+00:00",
+      "last_activity_summary": "tags: kernel-daily-bug linux-firmware-daily-bug by ubuntu-kernel-bot",
+      "last_activity_time": "2026-10-15T23:01:36.143901+00:00",
       "owner": "Juerg Haefliger",
       "package": "linux-firmware",
       "packages": [
         "linux-firmware"
       ],
-      "tags": [],
+      "tags": [
+        "kernel-daily-bug",
+        "linux-firmware-daily-bug"
+      ],
       "tasks": [
         {
           "assignee": null,
@@ -5151,17 +5154,20 @@
     },
     "2170927": {
       "date_created": "2026-10-15T07:11:52.795215+00:00",
-      "date_last_updated": "2026-10-15T07:12:50.990604+00:00",
+      "date_last_updated": "2026-10-15T23:01:32.866495+00:00",
       "has_activity_after_incomplete": false,
       "id": 2170927,
-      "last_activity_summary": "attachment added: 2026-10-15-08_48_05.png https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2170927/+attachment/6009381/+files/2026-10-15-08_48_05.png by skia",
-      "last_activity_time": "2026-10-15T07:12:50.990604+00:00",
+      "last_activity_summary": "tags: kernel-daily-bug linux-firmware-daily-bug by ubuntu-kernel-bot",
+      "last_activity_time": "2026-10-15T23:01:32.866495+00:00",
       "owner": "Skia",
       "package": "linux-firmware",
       "packages": [
         "linux-firmware"
       ],
-      "tags": [],
+      "tags": [
+        "kernel-daily-bug",
+        "linux-firmware-daily-bug"
+      ],
       "tasks": [
         {
           "assignee": null,
@@ -5181,11 +5187,11 @@
     },
     "2171012": {
       "date_created": "2026-10-15T18:59:07.939720+00:00",
-      "date_last_updated": "2026-10-15T18:59:07.939720+00:00",
+      "date_last_updated": "2026-10-16T02:37:54.527017+00:00",
       "has_activity_after_incomplete": false,
       "id": 2171012,
-      "last_activity_summary": "bug updated by mr-cottons-parrot",
-      "last_activity_time": "2026-10-15T18:59:07.939720+00:00",
+      "last_activity_summary": "tags: amd64 apport-bug kernel-daily-bug linux-firmware-daily-bug resolute by ubuntu-kernel-bot",
+      "last_activity_time": "2026-10-16T02:37:54.527017+00:00",
       "owner": "Andy Sheimo",
       "package": "linux-firmware",
       "packages": [
@@ -5194,6 +5200,8 @@
       "tags": [
         "amd64",
         "apport-bug",
+        "kernel-daily-bug",
+        "linux-firmware-daily-bug",
         "resolute"
       ],
       "tasks": [
@@ -5214,7 +5222,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2171012"
     }
   },
-  "last_scan_utc": "2026-10-15T22:52:54.162404+00:00",
+  "last_scan_utc": "2026-10-16T03:03:45.653311+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
