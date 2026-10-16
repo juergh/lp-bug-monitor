@@ -5,7 +5,7 @@ from __future__ import annotations
 from datetime import UTC, datetime
 from pathlib import Path
 
-from lp_bug_monitor.report import generate_html_report
+from lp_bug_monitor.report import generate_html_report, get_bug_packages
 
 
 def test_generate_html_report_empty(tmp_path: Path):
@@ -237,3 +237,66 @@ def test_generate_html_report_without_workflow_url(tmp_path: Path):
     assert "GitHub Action" not in content
     assert "btn-regenerate" not in content
     assert "🔄 Regenerate ↗" not in content
+
+
+def test_get_bug_packages():
+    # Bug with stale linux-firmware in packages, but open task on linux-firmware-intel-wireless
+    bug_retargeted = {
+        "id": 2160682,
+        "package": "linux-firmware",
+        "packages": ["linux-firmware", "linux-firmware-intel-wireless"],
+        "tasks": [
+            {
+                "target": "linux (Ubuntu)",
+                "status": "Incomplete",
+                "is_complete": False,
+            },
+            {
+                "target": "linux-firmware-intel-wireless (Ubuntu)",
+                "status": "Incomplete",
+                "is_complete": False,
+            },
+        ],
+    }
+    assert get_bug_packages(bug_retargeted) == ["linux-firmware-intel-wireless"]
+
+    # Bug with multiple active packages
+    bug_multi = {
+        "id": 200,
+        "package": "pkg-a",
+        "packages": ["pkg-a", "pkg-b"],
+        "tasks": [
+            {"target": "pkg-a (Ubuntu)", "status": "New", "is_complete": False},
+            {"target": "pkg-b (Ubuntu)", "status": "New", "is_complete": False},
+        ],
+    }
+    assert get_bug_packages(bug_multi) == ["pkg-a", "pkg-b"]
+
+
+def test_generate_html_report_retargeted_package_display(tmp_path: Path):
+    out_file = tmp_path / "retargeted.html"
+    bugs = {
+        "2160682": {
+            "id": 2160682,
+            "title": "Nova Lake WiFi firmware",
+            "package": "linux-firmware",
+            "packages": ["linux-firmware", "linux-firmware-intel-wireless"],
+            "tasks": [
+                {
+                    "target": "linux-firmware-intel-wireless (Ubuntu)",
+                    "status": "Incomplete",
+                    "is_complete": False,
+                }
+            ],
+        }
+    }
+    generate_html_report(bugs=bugs, output_path=out_file)
+    content = out_file.read_text(encoding="utf-8")
+
+    # Table column and row metadata must show linux-firmware-intel-wireless, NOT linux-firmware
+    assert '<span class="package-pill">linux-firmware-intel-wireless</span>' in content
+    assert '<span class="package-pill">linux-firmware</span>' not in content
+    assert 'data-package="linux-firmware-intel-wireless"' in content
+    assert 'data-packages="[&quot;linux-firmware-intel-wireless&quot;]"' in content
+    assert '<option value="linux-firmware-intel-wireless">linux-firmware-intel-wireless</option>' in content
+    assert '<option value="linux-firmware">linux-firmware</option>' not in content

@@ -9,6 +9,8 @@ from lp_bug_monitor.scanner import (
     BugRecord,
     TaskRecord,
     detect_activity_after_incomplete,
+    extract_bug_record,
+    extract_package_name,
     extract_series_name,
     scan_incremental,
 )
@@ -250,3 +252,111 @@ def test_bug_record_open_series():
     )
     assert bug.open_series == ["noble"]
     assert bug.all_series == ["jammy", "noble"]
+
+
+def test_extract_package_name():
+    assert extract_package_name("linux-firmware (Ubuntu)") == "linux-firmware"
+    assert extract_package_name("linux-firmware-intel-wireless (Ubuntu Noble)") == "linux-firmware-intel-wireless"
+    assert extract_package_name("linux (Ubuntu)") == "linux"
+    assert extract_package_name("upstream") is None
+    assert extract_package_name("") is None
+
+    mock_task = MagicMock()
+    mock_task.source_package_name = "linux-firmware-intel-graphics"
+    assert extract_package_name(lp_task=mock_task) == "linux-firmware-intel-graphics"
+
+
+def test_scan_incremental_drops_stale_retargeted_package():
+    ubuntu_mock = MagicMock()
+    sp_mock = MagicMock()
+    ubuntu_mock.getSourcePackage.return_value = sp_mock
+    ubuntu_mock.getSeries.return_value = None
+
+    # Bug 2160682 previously was recorded under linux-firmware
+    existing_bugs = {
+        "2160682": {
+            "id": 2160682,
+            "title": "Retargeted bug",
+            "package": "linux-firmware",
+            "packages": ["linux-firmware"],
+            "tasks": [
+                {
+                    "target": "linux-firmware (Ubuntu)",
+                    "status": "Incomplete",
+                    "is_complete": False,
+                }
+            ],
+        }
+    }
+
+    # On Launchpad, the task was retargeted to linux-firmware-intel-wireless
+    retargeted_task = MagicMock()
+    retargeted_task.bug_target_name = "linux-firmware-intel-wireless (Ubuntu)"
+    retargeted_task.bug_target_display_name = "linux-firmware-intel-wireless (Ubuntu)"
+    retargeted_task.status = "Incomplete"
+    retargeted_task.is_complete = False
+    retargeted_task.assignee = None
+    retargeted_task.web_link = "https://bugs.launchpad.net/bugs/2160682"
+    retargeted_task.date_created = None
+    retargeted_task.date_closed = None
+
+    bug_retargeted = MagicMock()
+    bug_retargeted.id = 2160682
+    bug_retargeted.title = "Retargeted bug"
+    bug_retargeted.web_link = "https://bugs.launchpad.net/bugs/2160682"
+    bug_retargeted.bug_tasks = [retargeted_task]
+    bug_retargeted.activity = []
+    bug_retargeted.date_created = datetime.now(UTC)
+    bug_retargeted.date_last_updated = datetime.now(UTC)
+    bug_retargeted.date_last_message = None
+    bug_retargeted.owner = None
+    bug_retargeted.tags = []
+
+    modified_task = MagicMock()
+    modified_task.bug = bug_retargeted
+    sp_mock.searchTasks.return_value = [modified_task]
+
+    updated = scan_incremental(
+        ubuntu=ubuntu_mock,
+        packages=["linux-firmware", "linux-firmware-intel-wireless"],
+        series_list=[],
+        existing_bugs=existing_bugs,
+        since_utc=datetime.now(UTC),
+    )
+
+    assert "2160682" in updated
+    assert updated["2160682"]["package"] == "linux-firmware-intel-wireless"
+    assert updated["2160682"]["packages"] == ["linux-firmware-intel-wireless"]
+
+
+def test_extract_bug_record_filters_stale_packages():
+    open_task = MagicMock()
+    open_task.bug_target_name = "linux-firmware-intel-wireless (Ubuntu Noble)"
+    open_task.bug_target_display_name = "Noble"
+    open_task.status = "Incomplete"
+    open_task.is_complete = False
+    open_task.assignee = None
+    open_task.web_link = ""
+    open_task.date_created = None
+    open_task.date_closed = None
+
+    lp_bug = MagicMock()
+    lp_bug.id = 2160682
+    lp_bug.title = "Firmware bug"
+    lp_bug.web_link = "https://bugs.launchpad.net/bugs/2160682"
+    lp_bug.bug_tasks = [open_task]
+    lp_bug.activity = []
+    lp_bug.date_created = datetime.now(UTC)
+    lp_bug.date_last_updated = datetime.now(UTC)
+    lp_bug.date_last_message = None
+    lp_bug.owner = None
+    lp_bug.tags = []
+
+    # Suppose matched_packages had stale linux-firmware along with intel-wireless
+    record = extract_bug_record(
+        lp_bug,
+        matched_packages={"linux-firmware", "linux-firmware-intel-wireless"},
+    )
+    assert record is not None
+    assert record.package == "linux-firmware-intel-wireless"
+    assert record.packages == ["linux-firmware-intel-wireless"]

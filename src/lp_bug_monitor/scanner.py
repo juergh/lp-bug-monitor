@@ -11,6 +11,23 @@ from typing import Any
 logger = logging.getLogger(__name__)
 
 SERIES_TARGET_REGEX = re.compile(r"\(Ubuntu\s+([A-Za-z0-9_.-]+)\)", re.IGNORECASE)
+PACKAGE_TARGET_REGEX = re.compile(r"^([a-z0-9+.-]+)\s+\(Ubuntu", re.IGNORECASE)
+
+
+def extract_package_name(target: str = "", lp_task: Any = None) -> str | None:
+    """Extract source package name (e.g. 'linux-firmware') from a task or target string."""
+    if lp_task is not None:
+        try:
+            spn = getattr(lp_task, "source_package_name", None)
+            if spn:
+                return str(spn).strip().lower()
+        except Exception:
+            pass
+    if target:
+        m = PACKAGE_TARGET_REGEX.match(target.strip())
+        if m:
+            return m.group(1).lower()
+    return None
 
 
 def extract_series_name(target: str = "", lp_task: Any = None) -> str | None:
@@ -396,7 +413,21 @@ def extract_bug_record(lp_bug: Any, matched_packages: set[str] | None = None) ->
         pass
 
     tags = list(getattr(lp_bug, "tags", []))
-    matched_pkgs = sorted(matched_packages) if matched_packages else ["unknown"]
+
+    task_pkgs = {pkg for t in task_records if (pkg := extract_package_name(t.target))}
+    open_task_pkgs = {pkg for t in task_records if not t.is_complete and (pkg := extract_package_name(t.target))}
+
+    if matched_packages:
+        # Prioritize packages with open tasks, fallback to any tasks on the bug
+        valid_pkgs = {p for p in matched_packages if p in open_task_pkgs}
+        if not valid_pkgs:
+            valid_pkgs = {p for p in matched_packages if p in task_pkgs}
+        selected_pkgs = valid_pkgs if valid_pkgs else matched_packages
+        matched_pkgs = sorted(selected_pkgs)
+    else:
+        selected_pkgs = open_task_pkgs or task_pkgs
+        matched_pkgs = sorted(selected_pkgs) if selected_pkgs else ["unknown"]
+
     primary_pkg = matched_pkgs[0] if matched_pkgs else "unknown"
 
     date_created = getattr(lp_bug, "date_created", None)

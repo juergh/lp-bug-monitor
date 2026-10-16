@@ -8,7 +8,7 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
-from lp_bug_monitor.scanner import extract_series_name
+from lp_bug_monitor.scanner import extract_package_name, extract_series_name
 
 
 def format_timestamp(iso_str: str | None) -> str:
@@ -50,6 +50,31 @@ IMPORTANCE_RANKS = {
     "wishlist": 1,
     "undecided": 0,
 }
+
+
+def get_bug_packages(bug: dict[str, Any]) -> list[str]:
+    """Determine the valid source packages for a bug, prioritizing open tasks."""
+    tasks = bug.get("tasks", [])
+    open_tasks = [t for t in tasks if not t.get("is_complete")]
+
+    open_task_pkgs = {pkg for t in open_tasks if (pkg := extract_package_name(t.get("target", "")))}
+    all_task_pkgs = {pkg for t in tasks if (pkg := extract_package_name(t.get("target", "")))}
+
+    raw_pkgs = bug.get("packages") or ([bug["package"]] if bug.get("package") else [])
+
+    if raw_pkgs:
+        valid_pkgs = [p for p in raw_pkgs if p in open_task_pkgs]
+        if not valid_pkgs:
+            valid_pkgs = [p for p in raw_pkgs if p in all_task_pkgs]
+        if valid_pkgs:
+            return sorted(set(valid_pkgs))
+        return sorted(set(raw_pkgs))
+
+    if open_task_pkgs:
+        return sorted(open_task_pkgs)
+    if all_task_pkgs:
+        return sorted(all_task_pkgs)
+    return ["unknown"]
 
 
 def compute_flame_tier(bug: dict[str, Any], ref_dt: datetime) -> tuple[int, str]:
@@ -131,7 +156,10 @@ def generate_html_report(
     )
 
     # Unique packages represented
-    pkgs_found = sorted({b.get("package", "unknown") for b in sorted_bugs})
+    pkgs_found_set: set[str] = set()
+    for b in sorted_bugs:
+        pkgs_found_set.update(get_bug_packages(b))
+    pkgs_found = sorted(pkgs_found_set)
     all_pkgs = sorted(set(packages_scanned or []).union(pkgs_found))
 
     pkg_count = len(all_pkgs)
@@ -163,7 +191,10 @@ def generate_html_report(
         b_id = b["id"]
         title = html.escape(b.get("title", ""))
         web_link = html.escape(b.get("web_link", f"https://bugs.launchpad.net/bugs/{b_id}"))
-        pkg = html.escape(b.get("package", "unknown"))
+        b_pkgs = get_bug_packages(b)
+        primary_pkg = b_pkgs[0] if b_pkgs else b.get("package", "unknown")
+        pkg_pills = "".join(f'<span class="package-pill">{html.escape(p)}</span>' for p in b_pkgs)
+        packages_json = html.escape(json.dumps([p.lower() for p in b_pkgs]))
         owner = html.escape(b.get("owner", "Unknown"))
         tags = [html.escape(tag) for tag in b.get("tags", [])]
         created_time = format_timestamp(b.get("date_created"))
@@ -256,7 +287,8 @@ def generate_html_report(
 
         row = f"""
         <tr class="bug-row" id="row-{b_id}" onclick="toggleDetails({b_id})"
-            data-bugid="{b_id}" data-package="{pkg.lower()}"
+            data-bugid="{b_id}" data-package="{primary_pkg.lower()}"
+            data-packages="{packages_json}"
             data-series="{series_json}"
             data-flame="{flame_tier}" data-info-added="{has_info_added_str}"
             data-statuses="{statuses_json}" data-created="{iso_created}" data-lastact="{iso_last_act}">
@@ -266,7 +298,7 @@ def generate_html_report(
                 <a href="{web_link}" target="_blank" rel="noopener" onclick="event.stopPropagation()">#{b_id}</a>
             </td>
             <td class="col-title" title="{title}">{title}</td>
-            <td class="col-package font-mono"><span class="package-pill">{pkg}</span></td>
+            <td class="col-package font-mono">{pkg_pills}</td>
             <td class="col-tasks">
                 <div class="tasks-summary-wrap">
                     {task_summary_pill}
@@ -769,13 +801,14 @@ def generate_html_report(
       const bId = r.getAttribute('data-bugid');
       const detailsRow = document.getElementById('details-' + bId);
       const pkg = r.getAttribute('data-package') || '';
+      const pkgs = JSON.parse(r.getAttribute('data-packages') || '[]');
       const statuses = JSON.parse(r.getAttribute('data-statuses') || '[]');
       const series = JSON.parse(r.getAttribute('data-series') || '[]');
       const isInfoAdded = r.getAttribute('data-info-added') === 'true';
       const textContent = (r.textContent + ' ' + (detailsRow ? detailsRow.textContent : '')).toLowerCase();
 
       let matchSearch = !search || textContent.includes(search);
-      let matchPkg = !pkgFilter || pkg === pkgFilter;
+      let matchPkg = !pkgFilter || pkgs.includes(pkgFilter) || pkg === pkgFilter;
       let matchSeries = true;
       if (seriesFilter === '__none__') {{
         matchSeries = series.length === 0;
