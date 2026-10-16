@@ -548,7 +548,7 @@ def generate_html_report(
   }}
   .toggle-icon {{ display: inline-block; transition: transform 0.2s ease; }}
   .expanded .toggle-icon {{ transform: rotate(90deg); color: var(--brand-orange); }}
-  .col-flame {{ width: 48px; text-align: center; white-space: nowrap; user-select: none; font-size: 0.85rem; }}
+  .col-flame {{ width: 60px; text-align: center; white-space: nowrap; user-select: none; font-size: 0.85rem; }}
   .flame-tier {{ cursor: default; letter-spacing: -1px; }}
   .flame-0 {{ color: #9ca3af; }}
   .col-id {{ width: 80px; font-weight: 600; white-space: nowrap; }}
