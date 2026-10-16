@@ -2772,11 +2772,11 @@
     },
     "2167666": {
       "date_created": "2026-09-18T03:09:50.633935+00:00",
-      "date_last_updated": "2026-10-16T07:55:45.304217+00:00",
+      "date_last_updated": "2026-10-16T09:06:41.718916+00:00",
       "has_activity_after_incomplete": false,
       "id": 2167666,
       "last_activity_summary": "linux-firmware-intel-wireless (Ubuntu): status: New by juergh",
-      "last_activity_time": "2026-10-16T07:55:45.304217+00:00",
+      "last_activity_time": "2026-10-16T09:06:41.718916+00:00",
       "owner": "Kazunori Ueda",
       "package": "linux-firmware",
       "packages": [
@@ -3679,11 +3679,11 @@
     },
     "2170415": {
       "date_created": "2026-10-10T02:35:11.229573+00:00",
-      "date_last_updated": "2026-10-10T23:02:05.714388+00:00",
+      "date_last_updated": "2026-10-16T10:55:08.049773+00:00",
       "has_activity_after_incomplete": false,
       "id": 2170415,
-      "last_activity_summary": "tags: amd64 apport-bug kernel-daily-bug linux-firmware-daily-bug resolute wayland-session by ubuntu-kernel-bot",
-      "last_activity_time": "2026-10-10T23:02:05.714388+00:00",
+      "last_activity_summary": "linux (Ubuntu): assignee: Canonical Kernel Team (canonical-kernel-team) by changwei2025",
+      "last_activity_time": "2026-10-16T10:55:08.049773+00:00",
       "owner": "Rob Bleile",
       "package": "linux-firmware-misc",
       "packages": [
@@ -3699,10 +3699,10 @@
       ],
       "tasks": [
         {
-          "assignee": null,
+          "assignee": "Canonical Kernel Team",
           "date_closed": null,
           "date_created": "2026-10-10T02:35:11.229573+00:00",
-          "importance": "Undecided",
+          "importance": "Medium",
           "is_complete": false,
           "series": null,
           "status": "Confirmed",
@@ -3714,7 +3714,7 @@
           "assignee": null,
           "date_closed": null,
           "date_created": "2026-10-10T09:38:57.431659+00:00",
-          "importance": "Undecided",
+          "importance": "Medium",
           "is_complete": false,
           "series": null,
           "status": "Confirmed",
@@ -3934,7 +3934,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2171012"
     }
   },
-  "last_scan_utc": "2026-10-16T08:44:42.433878+00:00",
+  "last_scan_utc": "2026-10-16T11:16:35.350942+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
