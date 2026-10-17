@@ -61,11 +61,11 @@
     },
     "2049676": {
       "date_created": "2024-01-17T19:52:39.923932+00:00",
-      "date_last_updated": "2026-10-16T12:14:36.283620+00:00",
+      "date_last_updated": "2026-10-16T23:01:58.636765+00:00",
       "has_activity_after_incomplete": true,
       "id": 2049676,
-      "last_activity_summary": "bug task deleted updated by juergh",
-      "last_activity_time": "2026-10-16T12:15:04.292406+00:00",
+      "last_activity_summary": "tags: kern-8933 kernel-daily-bug linux-firmware-daily-bug by ubuntu-kernel-bot",
+      "last_activity_time": "2026-10-16T23:01:58.636765+00:00",
       "owner": "costing",
       "package": "linux-firmware",
       "packages": [
@@ -74,7 +74,8 @@
       ],
       "tags": [
         "kern-8933",
-        "kernel-daily-bug"
+        "kernel-daily-bug",
+        "linux-firmware-daily-bug"
       ],
       "tasks": [
         {
@@ -343,15 +344,14 @@
     },
     "2127044": {
       "date_created": "2025-10-08T02:29:43.709279+00:00",
-      "date_last_updated": "2026-10-16T06:32:24.330352+00:00",
+      "date_last_updated": "2026-10-16T23:02:05.877920+00:00",
       "has_activity_after_incomplete": false,
       "id": 2127044,
-      "last_activity_summary": "bug task deleted updated by juergh",
-      "last_activity_time": "2026-10-16T06:33:07.678846+00:00",
+      "last_activity_summary": "tags: cert-sru jira-stella-2051 kernel-daily-bug kernel-spammed-noble-linux-azure-fde-6.17-v2 kernel-spammed-noble-linux-nvidia-6.17-v2 kernel-spammed-noble-linux-oem-6.14-v2 kernel-spammed-noble-linux-oem-6.17-v2 kernel-spammed-noble-linux-vmware-6.17-v2 kernel-spammed-questing-linux-intel-v2 kernel-spammed-questing-linux-v2 linux-firmware-daily-bug oem-priority stella verification-done-noble-linux-oem-6.14 verification-done-noble-linux-oem-6.17 verification-needed-noble-linux-azure-fde-6.17 verification-needed-noble-linux-nvidia-6.17 verification-needed-noble-linux-vmware-6.17 verification-needed-questing-linux verification-needed-questing-linux-intel by ubuntu-kernel-bot",
+      "last_activity_time": "2026-10-16T23:02:05.877920+00:00",
       "owner": "AceLan Kao",
-      "package": "linux-firmware",
+      "package": "linux-firmware-mediatek",
       "packages": [
-        "linux-firmware",
         "linux-firmware-mediatek"
       ],
       "tags": [
@@ -365,6 +365,7 @@
         "kernel-spammed-noble-linux-vmware-6.17-v2",
         "kernel-spammed-questing-linux-intel-v2",
         "kernel-spammed-questing-linux-v2",
+        "linux-firmware-daily-bug",
         "oem-priority",
         "stella",
         "verification-done-noble-linux-oem-6.14",
@@ -4030,7 +4031,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2171012"
     }
   },
-  "last_scan_utc": "2026-10-16T22:30:33.089775+00:00",
+  "last_scan_utc": "2026-10-17T02:56:16.497484+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
