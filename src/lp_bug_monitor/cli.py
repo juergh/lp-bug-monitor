@@ -296,6 +296,7 @@ def main(argv: list[str] | None = None) -> int:
                 series_list=series_list,
                 existing_bugs=existing_bugs,
                 since_utc=since_utc,
+                lp=lp,
             )
         except Exception as e:
             logger.warning("Incremental scan failed (%s); falling back to full scan", e)

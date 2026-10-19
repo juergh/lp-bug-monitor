@@ -392,8 +392,14 @@ def detect_activity_after_incomplete(lp_bug: Any, task_records: list[TaskRecord]
 def extract_bug_record(lp_bug: Any, matched_packages: set[str] | None = None) -> BugRecord | None:
     """Extract a BugRecord from a Launchpad bug object.
 
-    Returns None if the bug is closed (i.e. has zero non-closed tasks).
+    Returns None if the bug is closed (i.e. has zero non-closed tasks)
+    or if the bug has been marked as a duplicate of another bug.
     """
+    dup_link = getattr(lp_bug, "duplicate_of_link", None)
+    if dup_link:
+        logger.debug("Bug #%s is a duplicate of %s; ignoring", lp_bug.id, str(dup_link).rsplit("/", 1)[-1])
+        return None
+
     raw_tasks = [t for t in getattr(lp_bug, "bug_tasks", []) if is_ubuntu_task(t)]
     task_records = [extract_task_record(t) for t in raw_tasks]
 
@@ -519,10 +525,12 @@ def scan_incremental(
     series_list: list[str],
     existing_bugs: dict[str, dict[str, Any]],
     since_utc: datetime,
+    lp: Any | None = None,
 ) -> dict[str, dict[str, Any]]:
     """Perform an incremental scan for bugs modified since `since_utc`.
 
-    Updates modified bugs, adds new bugs, and removes bugs that have closed since the last scan.
+    Updates modified bugs, adds new bugs, and removes bugs that have closed
+    or been marked as duplicates since the last scan.
     """
     logger.info("Starting incremental scan for changes since %s...", since_utc.isoformat())
     updated_bugs: dict[str, dict[str, Any]] = dict(existing_bugs)
@@ -578,6 +586,7 @@ def scan_incremental(
     added_count = 0
     updated_count = 0
     closed_count = 0
+    duped_count = 0
 
     for b_id, bug_obj in modified_bug_objects.items():
         matched_pkgs = bug_matched_packages.get(b_id, set())
@@ -590,9 +599,9 @@ def scan_incremental(
         b_key = str(b_id)
 
         if record is None:
-            # Bug is closed (all tasks complete)
+            # Bug is closed (all tasks complete) or marked as a duplicate
             if b_key in updated_bugs:
-                logger.info("Bug #%d has closed all tasks; removing from active bugs", b_id)
+                logger.info("Bug #%d has closed or been marked as a duplicate; removing from active bugs", b_id)
                 del updated_bugs[b_key]
                 closed_count += 1
         else:
@@ -603,11 +612,42 @@ def scan_incremental(
                 added_count += 1
             updated_bugs[b_key] = record.to_dict()
 
+    # Prune pass: bugs present in state but not touched by the modified-since
+    # query. Launchpad's searchTasks(modified_since=...) matches bug task
+    # changes only, so a bug newly marked as a duplicate never shows up there.
+    # Probe those bugs directly for their duplicate_of_link.
+    if lp is not None:
+        unrefreshed_ids = sorted(int(b_id) for b_id in existing_bugs if b_id not in modified_bug_objects)
+        stale_dupes = scan_duplicate_prune(lp, unrefreshed_ids)
+        for b_key in stale_dupes:
+            if b_key in updated_bugs:
+                del updated_bugs[b_key]
+                duped_count += 1
+
     logger.info(
-        "Incremental update finished: %d added, %d updated, %d closed. Total active: %d",
+        "Incremental update finished: %d added, %d updated, %d closed, %d duplicates. Total active: %d",
         added_count,
         updated_count,
         closed_count,
+        duped_count,
         len(updated_bugs),
     )
     return updated_bugs
+
+
+def scan_duplicate_prune(lp: Any, bug_ids: list[int]) -> list[str]:
+    """Probe Launchpad for bugs that have been marked as a duplicate.
+
+    Returns the keys (str bug ids) of bugs whose `duplicate_of_link` is set.
+    """
+    stale_dupes: list[str] = []
+    for b_id in bug_ids:
+        try:
+            bug = lp.load(f"/bugs/{b_id}")
+            dup_link = getattr(bug, "duplicate_of_link", None)
+            if dup_link:
+                logger.info("Bug #%d is marked as a duplicate of %s; removing from active bugs", b_id, dup_link)
+                stale_dupes.append(str(b_id))
+        except Exception as e:
+            logger.debug("Could not probe bug #%d for duplicate status: %s", b_id, e)
+    return stale_dupes

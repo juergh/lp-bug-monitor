@@ -162,6 +162,7 @@ def test_extract_bug_record_filters_non_ubuntu_tasks():
     mock_bug = MagicMock()
     mock_bug.id = 123
     mock_bug.title = "Firmware issue"
+    mock_bug.duplicate_of_link = None
     mock_bug.bug_tasks = [mock_ubuntu_task, mock_upstream_task]
     mock_bug.activity = []
     mock_bug.date_created = None
@@ -200,7 +201,52 @@ def test_extract_bug_record_none_if_all_ubuntu_tasks_closed():
     mock_bug = MagicMock()
     mock_bug.id = 124
     mock_bug.title = "Closed in Ubuntu"
+    mock_bug.duplicate_of_link = None
     mock_bug.bug_tasks = [mock_ubuntu_task, mock_upstream_task]
 
     record = extract_bug_record(mock_bug, matched_packages={"linux-firmware"})
     assert record is None
+
+
+def _make_open_ubuntu_task():
+    task = MagicMock()
+    task.bug_target_name = "linux-firmware (Ubuntu)"
+    task.bug_target_display_name = "linux-firmware (Ubuntu)"
+    task.status = "Confirmed"
+    task.is_complete = False
+    task.assignee = None
+    task.web_link = "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2141209"
+    task.date_created = None
+    task.date_closed = None
+    return task
+
+
+def test_extract_bug_record_none_if_marked_duplicate():
+    """Bug 2141209 case: all Ubuntu tasks are still open (Confirmed), but the
+    bug was marked as a duplicate of another bug. It must be treated as closed."""
+    mock_bug = MagicMock()
+    mock_bug.id = 2141209
+    mock_bug.title = "no sound after update"
+    mock_bug.duplicate_of_link = "https://api.launchpad.net/1.0/bugs/2141223"
+    mock_bug.bug_tasks = [_make_open_ubuntu_task()]
+
+    record = extract_bug_record(mock_bug, matched_packages={"linux-firmware"})
+    assert record is None
+
+
+def test_extract_bug_record_keeps_bug_without_duplicate_link():
+    mock_bug = MagicMock()
+    mock_bug.id = 2141223
+    mock_bug.title = "Master bug"
+    mock_bug.duplicate_of_link = None
+    mock_bug.bug_tasks = [_make_open_ubuntu_task()]
+    mock_bug.activity = []
+    mock_bug.date_created = None
+    mock_bug.date_last_updated = None
+    mock_bug.date_last_message = None
+    mock_bug.owner = None
+    mock_bug.tags = []
+
+    record = extract_bug_record(mock_bug, matched_packages={"linux-firmware"})
+    assert record is not None
+    assert record.id == 2141223

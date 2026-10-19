@@ -12,6 +12,7 @@ from lp_bug_monitor.scanner import (
     extract_bug_record,
     extract_package_name,
     extract_series_name,
+    scan_duplicate_prune,
     scan_incremental,
 )
 
@@ -52,6 +53,7 @@ def test_scan_incremental_removes_newly_closed_bugs():
     bug_100 = MagicMock()
     bug_100.id = 100
     bug_100.title = "Existing Bug"
+    bug_100.duplicate_of_link = None
     bug_100.bug_tasks = [closed_task_1]
     bug_100.activity = []
 
@@ -94,6 +96,7 @@ def test_scan_incremental_adds_new_bug():
     bug_200.id = 200
     bug_200.title = "Brand New Bug"
     bug_200.web_link = "https://bugs.launchpad.net/bugs/200"
+    bug_200.duplicate_of_link = None
     bug_200.bug_tasks = [open_task]
     bug_200.activity = []
     bug_200.date_created = datetime.now(UTC)
@@ -304,6 +307,7 @@ def test_scan_incremental_drops_stale_retargeted_package():
     bug_retargeted.id = 2160682
     bug_retargeted.title = "Retargeted bug"
     bug_retargeted.web_link = "https://bugs.launchpad.net/bugs/2160682"
+    bug_retargeted.duplicate_of_link = None
     bug_retargeted.bug_tasks = [retargeted_task]
     bug_retargeted.activity = []
     bug_retargeted.date_created = datetime.now(UTC)
@@ -344,6 +348,7 @@ def test_extract_bug_record_filters_stale_packages():
     lp_bug.id = 2160682
     lp_bug.title = "Firmware bug"
     lp_bug.web_link = "https://bugs.launchpad.net/bugs/2160682"
+    lp_bug.duplicate_of_link = None
     lp_bug.bug_tasks = [open_task]
     lp_bug.activity = []
     lp_bug.date_created = datetime.now(UTC)
@@ -360,3 +365,195 @@ def test_extract_bug_record_filters_stale_packages():
     assert record is not None
     assert record.package == "linux-firmware-intel-wireless"
     assert record.packages == ["linux-firmware-intel-wireless"]
+
+
+def test_scan_incremental_prunes_existing_bug_marked_duplicate():
+    """Bug marked as duplicate: its tasks don't change, so it never shows up in
+    the modified-since query. The prune pass must remove it from state."""
+    ubuntu_mock = MagicMock()
+    sp_mock = MagicMock()
+    ubuntu_mock.getSourcePackage.return_value = sp_mock
+    ubuntu_mock.getSeries.return_value = None
+    sp_mock.searchTasks.return_value = []
+
+    existing_bugs = {
+        "2141209": {
+            "id": 2141209,
+            "title": "no sound after update",
+            "package": "linux-firmware",
+            "tasks": [
+                {
+                    "target": "linux-firmware (Ubuntu)",
+                    "status": "Confirmed",
+                    "is_complete": False,
+                }
+            ],
+        }
+    }
+
+    lp_mock = MagicMock()
+    dupe_bug = MagicMock()
+    dupe_bug.duplicate_of_link = "https://api.launchpad.net/1.0/bugs/2141223"
+    lp_mock.load.return_value = dupe_bug
+
+    updated = scan_incremental(
+        ubuntu=ubuntu_mock,
+        packages=["linux-firmware"],
+        series_list=[],
+        existing_bugs=existing_bugs,
+        since_utc=datetime.now(UTC),
+        lp=lp_mock,
+    )
+
+    assert "2141209" not in updated
+    assert len(updated) == 0
+    lp_mock.load.assert_called_once_with("/bugs/2141209")
+
+
+def test_scan_incremental_probe_keeps_non_duplicate_bugs():
+    """Existing bugs that were not modified and are not duplicates stay in state."""
+    ubuntu_mock = MagicMock()
+    sp_mock = MagicMock()
+    ubuntu_mock.getSourcePackage.return_value = sp_mock
+    ubuntu_mock.getSeries.return_value = None
+    sp_mock.searchTasks.return_value = []
+
+    existing_bugs = {
+        "200": {
+            "id": 200,
+            "title": "Still active",
+            "package": "linux-firmware",
+            "tasks": [
+                {
+                    "target": "linux-firmware (Ubuntu)",
+                    "status": "Confirmed",
+                    "is_complete": False,
+                }
+            ],
+        }
+    }
+
+    lp_mock = MagicMock()
+    open_bug = MagicMock()
+    open_bug.duplicate_of_link = None
+    lp_mock.load.return_value = open_bug
+
+    updated = scan_incremental(
+        ubuntu=ubuntu_mock,
+        packages=["linux-firmware"],
+        series_list=[],
+        existing_bugs=existing_bugs,
+        since_utc=datetime.now(UTC),
+        lp=lp_mock,
+    )
+
+    assert "200" in updated
+
+
+def test_scan_incremental_without_lp_skips_probe_pass():
+    """Without an lp handle, unrefreshed bugs are left untouched (old behavior)."""
+    ubuntu_mock = MagicMock()
+    sp_mock = MagicMock()
+    ubuntu_mock.getSourcePackage.return_value = sp_mock
+    ubuntu_mock.getSeries.return_value = None
+    sp_mock.searchTasks.return_value = []
+
+    existing_bugs = {
+        "200": {
+            "id": 200,
+            "title": "Untouched",
+            "package": "linux-firmware",
+            "tasks": [
+                {
+                    "target": "linux-firmware (Ubuntu)",
+                    "status": "Confirmed",
+                    "is_complete": False,
+                }
+            ],
+        }
+    }
+
+    updated = scan_incremental(
+        ubuntu=ubuntu_mock,
+        packages=["linux-firmware"],
+        series_list=[],
+        existing_bugs=existing_bugs,
+        since_utc=datetime.now(UTC),
+    )
+
+    assert "200" in updated
+
+
+def test_scan_incremental_drops_refreshed_bug_marked_duplicate():
+    """A dupe bug that does show up in the modified-since query is dropped directly."""
+    ubuntu_mock = MagicMock()
+    sp_mock = MagicMock()
+    ubuntu_mock.getSourcePackage.return_value = sp_mock
+    ubuntu_mock.getSeries.return_value = None
+
+    existing_bugs = {
+        "300": {
+            "id": 300,
+            "title": "Was active",
+            "package": "linux-firmware",
+            "tasks": [
+                {
+                    "target": "linux-firmware (Ubuntu)",
+                    "status": "Confirmed",
+                    "is_complete": False,
+                }
+            ],
+        }
+    }
+
+    dupe_task = MagicMock()
+    dupe_task.bug_target_name = "linux-firmware (Ubuntu)"
+    dupe_task.bug_target_display_name = "linux-firmware (Ubuntu)"
+    dupe_task.status = "Confirmed"
+    dupe_task.is_complete = False
+    dupe_task.assignee = None
+    dupe_task.web_link = "https://bugs.launchpad.net/bugs/300"
+    dupe_task.date_created = None
+    dupe_task.date_closed = None
+
+    bug_300 = MagicMock()
+    bug_300.id = 300
+    bug_300.title = "Was active"
+    bug_300.duplicate_of_link = "https://api.launchpad.net/1.0/bugs/301"
+    bug_300.bug_tasks = [dupe_task]
+    bug_300.activity = []
+
+    modified_task = MagicMock()
+    modified_task.bug = bug_300
+    sp_mock.searchTasks.return_value = [modified_task]
+
+    updated = scan_incremental(
+        ubuntu=ubuntu_mock,
+        packages=["linux-firmware"],
+        series_list=[],
+        existing_bugs=existing_bugs,
+        since_utc=datetime.now(UTC),
+    )
+
+    assert "300" not in updated
+    assert len(updated) == 0
+
+
+def test_scan_duplicate_prune_detects_duplicates_and_ignores_errors():
+    lp_mock = MagicMock()
+
+    def load_side_effect(path):
+        if path == "/bugs/1":
+            bug = MagicMock()
+            bug.duplicate_of_link = "https://api.launchpad.net/1.0/bugs/99"
+            return bug
+        if path == "/bugs/2":
+            bug = MagicMock()
+            bug.duplicate_of_link = None
+            return bug
+        raise RuntimeError("boom")
+
+    lp_mock.load.side_effect = load_side_effect
+
+    result = scan_duplicate_prune(lp_mock, [1, 2, 3])
+    assert result == ["1"]
