@@ -219,15 +219,15 @@
     },
     "2088354": {
       "date_created": "2024-11-17T01:25:29.409572+00:00",
-      "date_last_updated": "2026-10-16T05:51:17.155496+00:00",
+      "date_last_updated": "2026-10-19T08:30:58.426648+00:00",
       "has_activity_after_incomplete": false,
       "id": 2088354,
-      "last_activity_summary": "linux-firmware (Ubuntu): status: Invalid by juergh",
-      "last_activity_time": "2026-10-16T05:51:17.155496+00:00",
+      "last_activity_summary": "affects: linux-firmware-intel-wireless (Ubuntu) by juergh",
+      "last_activity_time": "2026-10-19T08:30:58.426648+00:00",
       "owner": "Scott Hinchley",
-      "package": "linux-firmware",
+      "package": "linux-firmware-intel-wireless",
       "packages": [
-        "linux-firmware"
+        "linux-firmware-intel-wireless"
       ],
       "tags": [
         "apport-collected",
@@ -243,9 +243,9 @@
           "is_complete": true,
           "series": null,
           "status": "Invalid",
-          "target": "linux-firmware (Ubuntu)",
-          "target_display": "linux-firmware (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2088354"
+          "target": "linux-firmware-intel-wireless (Ubuntu)",
+          "target_display": "linux-firmware-intel-wireless (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-intel-wireless/+bug/2088354"
         },
         {
           "assignee": null,
@@ -255,9 +255,9 @@
           "is_complete": false,
           "series": "noble",
           "status": "New",
-          "target": "linux-firmware (Ubuntu Noble)",
-          "target_display": "linux-firmware (Ubuntu Noble)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware/+bug/2088354"
+          "target": "linux-firmware-intel-wireless (Ubuntu Noble)",
+          "target_display": "linux-firmware-intel-wireless (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-intel-wireless/+bug/2088354"
         }
       ],
       "title": "Intel(R) Wireless-AC 9260 iwlwifi fails to load firmware after upgrade to 24.04",
@@ -764,78 +764,6 @@
       "title": "Failed to load ISH firmware on Intel Panther Lake, Wildcat Lake RVP platforms: ISH loader: cmd 2 failed 10",
       "web_link": "https://bugs.launchpad.net/bugs/2139060"
     },
-    "2141209": {
-      "date_created": "2026-02-07T23:34:55.966439+00:00",
-      "date_last_updated": "2026-03-22T19:58:45.731819+00:00",
-      "has_activity_after_incomplete": false,
-      "id": 2141209,
-      "last_activity_summary": "linux-firmware (Ubuntu Noble): status: Confirmed by janitor",
-      "last_activity_time": "2026-03-22T19:58:45.731819+00:00",
-      "owner": "Robert Brown",
-      "package": "linux-firmware",
-      "packages": [
-        "linux-firmware"
-      ],
-      "tags": [
-        "amd64",
-        "apport-bug",
-        "kernel-daily-bug",
-        "noble",
-        "wayland-session"
-      ],
-      "tasks": [
-        {
-          "assignee": null,
-          "date_closed": null,
-          "date_created": "2026-02-07T23:34:55.966439+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": null,
-          "status": "Confirmed",
-          "target": "alsa-driver (Ubuntu)",
-          "target_display": "alsa-driver (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/alsa-driver/+bug/2141209"
-        },
-        {
-          "assignee": null,
-          "date_closed": null,
-          "date_created": "2026-02-08T22:35:57.471041+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": null,
-          "status": "Confirmed",
-          "target": "linux-firmware (Ubuntu)",
-          "target_display": "linux-firmware (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2141209"
-        },
-        {
-          "assignee": null,
-          "date_closed": null,
-          "date_created": "2026-02-09T08:13:36.407840+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": "noble",
-          "status": "Confirmed",
-          "target": "alsa-driver (Ubuntu Noble)",
-          "target_display": "alsa-driver (Ubuntu Noble)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/alsa-driver/+bug/2141209"
-        },
-        {
-          "assignee": "Juerg Haefliger",
-          "date_closed": null,
-          "date_created": "2026-02-09T08:13:36.407840+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": "noble",
-          "status": "Confirmed",
-          "target": "linux-firmware (Ubuntu Noble)",
-          "target_display": "linux-firmware (Ubuntu Noble)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware/+bug/2141209"
-        }
-      ],
-      "title": "no sound after update",
-      "web_link": "https://bugs.launchpad.net/bugs/2141209"
-    },
     "2143794": {
       "date_created": "2026-03-10T06:04:36.275155+00:00",
       "date_last_updated": "2026-10-16T06:35:12.788852+00:00",
@@ -954,15 +882,15 @@
     },
     "2146784": {
       "date_created": "2026-03-30T13:06:53.224745+00:00",
-      "date_last_updated": "2026-10-16T17:17:19.019936+00:00",
+      "date_last_updated": "2026-10-19T08:29:46.154717+00:00",
       "has_activity_after_incomplete": false,
       "id": 2146784,
-      "last_activity_summary": "linux-firmware (Ubuntu): status: Invalid by juergh",
-      "last_activity_time": "2026-10-16T17:17:19.019936+00:00",
+      "last_activity_summary": "affects: linux-firmware-amd-graphics (Ubuntu) by juergh",
+      "last_activity_time": "2026-10-19T08:29:46.154717+00:00",
       "owner": "Leo Lin",
-      "package": "linux-firmware",
+      "package": "linux-firmware-amd-graphics",
       "packages": [
-        "linux-firmware"
+        "linux-firmware-amd-graphics"
       ],
       "tags": [
         "kernel-daily-bug"
@@ -976,9 +904,9 @@
           "is_complete": true,
           "series": null,
           "status": "Invalid",
-          "target": "linux-firmware (Ubuntu)",
-          "target_display": "linux-firmware (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2146784"
+          "target": "linux-firmware-amd-graphics (Ubuntu)",
+          "target_display": "linux-firmware-amd-graphics (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-amd-graphics/+bug/2146784"
         },
         {
           "assignee": null,
@@ -988,9 +916,9 @@
           "is_complete": false,
           "series": "noble",
           "status": "New",
-          "target": "linux-firmware (Ubuntu Noble)",
-          "target_display": "linux-firmware (Ubuntu Noble)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware/+bug/2146784"
+          "target": "linux-firmware-amd-graphics (Ubuntu Noble)",
+          "target_display": "linux-firmware-amd-graphics (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-amd-graphics/+bug/2146784"
         }
       ],
       "title": "gfx1153 hangs on certain test cases in TheRock CI",
@@ -1667,11 +1595,11 @@
     },
     "2150701": {
       "date_created": "2026-04-30T04:57:52.261838+00:00",
-      "date_last_updated": "2026-10-19T03:01:32.026169+00:00",
+      "date_last_updated": "2026-10-19T05:18:21.519044+00:00",
       "has_activity_after_incomplete": false,
       "id": 2150701,
       "last_activity_summary": "linux-firmware (Ubuntu): assignee updated by juergh",
-      "last_activity_time": "2026-10-19T03:01:32.026169+00:00",
+      "last_activity_time": "2026-10-19T05:18:21.519044+00:00",
       "owner": "Stephen Torri",
       "package": "linux-firmware",
       "packages": [
@@ -2356,58 +2284,6 @@
       ],
       "title": "MT7922 (0489:e0d9): spurious \"Connection Timeout\" teardown of healthy eSCO+ACL links during HFP calls",
       "web_link": "https://bugs.launchpad.net/bugs/2163514"
-    },
-    "2163554": {
-      "date_created": "2026-08-15T01:56:23.302382+00:00",
-      "date_last_updated": "2026-10-16T05:42:36.770053+00:00",
-      "has_activity_after_incomplete": false,
-      "id": 2163554,
-      "last_activity_summary": "linux-firmware-amd-graphics (Ubuntu): status: Invalid by juergh",
-      "last_activity_time": "2026-10-16T05:42:36.770053+00:00",
-      "owner": "chleosl",
-      "package": "linux-firmware",
-      "packages": [
-        "linux-firmware",
-        "linux-firmware-amd-graphics"
-      ],
-      "tags": [
-        "amd64",
-        "amdgpu",
-        "apport-bug",
-        "kernel-daily-bug",
-        "linux-firmware-daily-bug",
-        "noble",
-        "regression-update",
-        "wayland-session"
-      ],
-      "tasks": [
-        {
-          "assignee": null,
-          "date_closed": "2026-10-16T05:36:56.055703+00:00",
-          "date_created": "2026-08-15T01:56:23.302382+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": null,
-          "status": "Invalid",
-          "target": "linux-firmware-amd-graphics (Ubuntu)",
-          "target_display": "linux-firmware-amd-graphics (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-amd-graphics/+bug/2163554"
-        },
-        {
-          "assignee": null,
-          "date_closed": null,
-          "date_created": "2026-10-16T05:36:49.865238+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": "noble",
-          "status": "New",
-          "target": "linux-firmware-amd-graphics (Ubuntu Noble)",
-          "target_display": "linux-firmware-amd-graphics (Ubuntu Noble)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-amd-graphics/+bug/2163554"
-        }
-      ],
-      "title": "DCN314/Phoenix DMCUB 0x08004800 page-faults at GART 0x6026000 during eDP power transition, wedging display (2.29 regression)",
-      "web_link": "https://bugs.launchpad.net/bugs/2163554"
     },
     "2164527": {
       "date_created": "2026-08-19T12:58:32.319177+00:00",
@@ -4031,7 +3907,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2171012"
     }
   },
-  "last_scan_utc": "2026-10-19T03:11:34.909530+00:00",
+  "last_scan_utc": "2026-10-19T09:27:31.120011+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
