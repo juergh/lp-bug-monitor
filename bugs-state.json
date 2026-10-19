@@ -1667,11 +1667,11 @@
     },
     "2150701": {
       "date_created": "2026-04-30T04:57:52.261838+00:00",
-      "date_last_updated": "2026-10-13T09:46:32.661908+00:00",
+      "date_last_updated": "2026-10-19T03:01:32.026169+00:00",
       "has_activity_after_incomplete": false,
       "id": 2150701,
       "last_activity_summary": "linux-firmware (Ubuntu): assignee updated by juergh",
-      "last_activity_time": "2026-10-13T09:46:32.661908+00:00",
+      "last_activity_time": "2026-10-19T03:01:32.026169+00:00",
       "owner": "Stephen Torri",
       "package": "linux-firmware",
       "packages": [
@@ -3609,11 +3609,11 @@
     },
     "2169792": {
       "date_created": "2026-10-07T03:43:30.870036+00:00",
-      "date_last_updated": "2026-10-07T23:01:57.334203+00:00",
+      "date_last_updated": "2026-10-19T02:34:26.058677+00:00",
       "has_activity_after_incomplete": false,
       "id": 2169792,
       "last_activity_summary": "tags: amd64 apport-bug kernel-daily-bug linux-firmware-daily-bug resolute wayland-session by ubuntu-kernel-bot",
-      "last_activity_time": "2026-10-07T23:01:57.334203+00:00",
+      "last_activity_time": "2026-10-19T02:34:26.058677+00:00",
       "owner": "Sam Blaine",
       "package": "linux-firmware-misc",
       "packages": [
@@ -3658,11 +3658,11 @@
     },
     "2169867": {
       "date_created": "2026-10-07T15:27:07.216096+00:00",
-      "date_last_updated": "2026-10-08T07:00:21.012030+00:00",
+      "date_last_updated": "2026-10-19T02:47:33.534212+00:00",
       "has_activity_after_incomplete": false,
       "id": 2169867,
       "last_activity_summary": "linux-oem-7.0 (Ubuntu): status: Invalid by tjaalton",
-      "last_activity_time": "2026-10-08T07:00:21.012030+00:00",
+      "last_activity_time": "2026-10-19T02:47:33.534212+00:00",
       "owner": "Dan Osment",
       "package": "linux-firmware-misc",
       "packages": [
@@ -3776,11 +3776,11 @@
     },
     "2170415": {
       "date_created": "2026-10-10T02:35:11.229573+00:00",
-      "date_last_updated": "2026-10-16T10:55:08.049773+00:00",
+      "date_last_updated": "2026-10-19T02:24:59.330654+00:00",
       "has_activity_after_incomplete": false,
       "id": 2170415,
       "last_activity_summary": "linux (Ubuntu): assignee: Canonical Kernel Team (canonical-kernel-team) by changwei2025",
-      "last_activity_time": "2026-10-16T10:55:08.049773+00:00",
+      "last_activity_time": "2026-10-19T02:24:59.330654+00:00",
       "owner": "Rob Bleile",
       "package": "linux-firmware-misc",
       "packages": [
@@ -4031,7 +4031,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2171012"
     }
   },
-  "last_scan_utc": "2026-10-18T22:12:33.647443+00:00",
+  "last_scan_utc": "2026-10-19T03:11:34.909530+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
