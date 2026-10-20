@@ -3653,11 +3653,11 @@
     },
     "2170415": {
       "date_created": "2026-10-10T02:35:11.229573+00:00",
-      "date_last_updated": "2026-10-20T00:19:37.569354+00:00",
+      "date_last_updated": "2026-10-20T22:11:45.204151+00:00",
       "has_activity_after_incomplete": false,
       "id": 2170415,
       "last_activity_summary": "linux (Ubuntu): assignee: Canonical Kernel Team (canonical-kernel-team) by changwei2025",
-      "last_activity_time": "2026-10-20T00:19:37.569354+00:00",
+      "last_activity_time": "2026-10-20T22:11:45.204151+00:00",
       "owner": "Rob Bleile",
       "package": "linux-firmware-misc",
       "packages": [
@@ -3908,7 +3908,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2171012"
     }
   },
-  "last_scan_utc": "2026-10-20T16:20:09.880701+00:00",
+  "last_scan_utc": "2026-10-20T22:55:19.244568+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
