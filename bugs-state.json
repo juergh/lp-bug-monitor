@@ -3379,11 +3379,11 @@
     },
     "2168847": {
       "date_created": "2026-09-29T11:54:20.173084+00:00",
-      "date_last_updated": "2026-10-15T02:14:22.796312+00:00",
+      "date_last_updated": "2026-10-20T06:21:37.064637+00:00",
       "has_activity_after_incomplete": false,
       "id": 2168847,
-      "last_activity_summary": "linux-firmware-amd-graphics (Ubuntu Noble): status: Fix Committed by juergh",
-      "last_activity_time": "2026-10-15T02:14:22.796312+00:00",
+      "last_activity_summary": "bug updated by tjaalton",
+      "last_activity_time": "2026-10-20T06:21:37.064637+00:00",
       "owner": "Mario Limonciello",
       "package": "linux-firmware-amd-graphics",
       "packages": [
@@ -3907,7 +3907,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2171012"
     }
   },
-  "last_scan_utc": "2026-10-20T03:20:13.749330+00:00",
+  "last_scan_utc": "2026-10-20T09:06:31.444896+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
