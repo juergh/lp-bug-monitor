@@ -3608,11 +3608,11 @@
     },
     "2170403": {
       "date_created": "2026-10-09T20:06:45.167926+00:00",
-      "date_last_updated": "2026-10-14T09:19:57.942989+00:00",
+      "date_last_updated": "2026-10-22T13:52:12.667383+00:00",
       "has_activity_after_incomplete": false,
       "id": 2170403,
-      "last_activity_summary": "linux-firmware-amd-misc (Ubuntu Noble): status: Fix Committed by juergh",
-      "last_activity_time": "2026-10-14T09:19:57.942989+00:00",
+      "last_activity_summary": "linux-firmware-amd-misc (Ubuntu Noble): assignee: Juerg Haefliger (juergh) by superm1",
+      "last_activity_time": "2026-10-22T13:52:12.667383+00:00",
       "owner": "Mario Limonciello",
       "package": "linux-firmware-amd-misc",
       "packages": [
@@ -3636,7 +3636,7 @@
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-amd-misc/+bug/2170403"
         },
         {
-          "assignee": "Leo Lin",
+          "assignee": "Juerg Haefliger",
           "date_closed": null,
           "date_created": "2026-10-09T20:06:56.739942+00:00",
           "importance": "Undecided",
@@ -3944,11 +3944,11 @@
     },
     "2171895": {
       "date_created": "2026-10-22T07:32:21.092801+00:00",
-      "date_last_updated": "2026-10-22T07:32:21.092801+00:00",
+      "date_last_updated": "2026-10-22T09:27:24.697313+00:00",
       "has_activity_after_incomplete": false,
       "id": 2171895,
-      "last_activity_summary": "bug updated by francesco.cavaleri",
-      "last_activity_time": "2026-10-22T07:32:21.092801+00:00",
+      "last_activity_summary": "summary: bluetooth does not work - Realtek RTL8852BU Bluetooth (0bda:b853) fails to initialize: \"Opcode 0xfcf0 failed: -16\", no controller available by francesco.cavaleri",
+      "last_activity_time": "2026-10-22T09:27:24.697313+00:00",
       "owner": "Francesco",
       "package": "linux-firmware",
       "packages": [
@@ -3974,11 +3974,11 @@
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2171895"
         }
       ],
-      "title": "bluetooth does not work",
+      "title": "bluetooth does not work - Realtek RTL8852BU Bluetooth (0bda:b853) fails to initialize: \"Opcode 0xfcf0 failed: -16\", no controller available",
       "web_link": "https://bugs.launchpad.net/bugs/2171895"
     }
   },
-  "last_scan_utc": "2026-10-22T09:08:51.791330+00:00",
+  "last_scan_utc": "2026-10-22T16:36:47.843049+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
