@@ -3906,9 +3906,79 @@
       ],
       "title": "Mac mini 2014 intel i5 tries to instell nvidia drivers and panics.",
       "web_link": "https://bugs.launchpad.net/bugs/2171012"
+    },
+    "2171894": {
+      "date_created": "2026-10-22T07:32:17.100477+00:00",
+      "date_last_updated": "2026-10-22T07:32:17.100477+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2171894,
+      "last_activity_summary": "bug updated by francesco.cavaleri",
+      "last_activity_time": "2026-10-22T07:32:17.100477+00:00",
+      "owner": "Francesco",
+      "package": "linux-firmware",
+      "packages": [
+        "linux-firmware"
+      ],
+      "tags": [
+        "amd64",
+        "apport-bug",
+        "resolute",
+        "wayland-session"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-22T07:32:17.100477+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "linux-firmware (Ubuntu)",
+          "target_display": "linux-firmware (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2171894"
+        }
+      ],
+      "title": "bluetooth does not work",
+      "web_link": "https://bugs.launchpad.net/bugs/2171894"
+    },
+    "2171895": {
+      "date_created": "2026-10-22T07:32:21.092801+00:00",
+      "date_last_updated": "2026-10-22T07:32:21.092801+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2171895,
+      "last_activity_summary": "bug updated by francesco.cavaleri",
+      "last_activity_time": "2026-10-22T07:32:21.092801+00:00",
+      "owner": "Francesco",
+      "package": "linux-firmware",
+      "packages": [
+        "linux-firmware"
+      ],
+      "tags": [
+        "amd64",
+        "apport-bug",
+        "resolute",
+        "wayland-session"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-22T07:32:21.092801+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "linux-firmware (Ubuntu)",
+          "target_display": "linux-firmware (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2171895"
+        }
+      ],
+      "title": "bluetooth does not work",
+      "web_link": "https://bugs.launchpad.net/bugs/2171895"
     }
   },
-  "last_scan_utc": "2026-10-22T03:13:40.899075+00:00",
+  "last_scan_utc": "2026-10-22T09:08:51.791330+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
