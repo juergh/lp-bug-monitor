@@ -3702,11 +3702,11 @@
     },
     "2170487": {
       "date_created": "2026-10-11T12:51:16.717267+00:00",
-      "date_last_updated": "2026-10-11T23:02:01.356356+00:00",
+      "date_last_updated": "2026-10-23T00:42:37.004895+00:00",
       "has_activity_after_incomplete": false,
       "id": 2170487,
       "last_activity_summary": "tags: amd64 apport-bug kernel-daily-bug linux-firmware-daily-bug noble by ubuntu-kernel-bot",
-      "last_activity_time": "2026-10-11T23:02:01.356356+00:00",
+      "last_activity_time": "2026-10-23T00:42:37.004895+00:00",
       "owner": "Geert Uytterhoeven",
       "package": "linux-firmware-realtek",
       "packages": [
@@ -3909,11 +3909,11 @@
     },
     "2171894": {
       "date_created": "2026-10-22T07:32:17.100477+00:00",
-      "date_last_updated": "2026-10-22T07:32:17.100477+00:00",
+      "date_last_updated": "2026-10-22T23:02:17.088015+00:00",
       "has_activity_after_incomplete": false,
       "id": 2171894,
-      "last_activity_summary": "bug updated by francesco.cavaleri",
-      "last_activity_time": "2026-10-22T07:32:17.100477+00:00",
+      "last_activity_summary": "tags: amd64 apport-bug kernel-daily-bug linux-firmware-daily-bug resolute wayland-session by ubuntu-kernel-bot",
+      "last_activity_time": "2026-10-22T23:02:17.088015+00:00",
       "owner": "Francesco",
       "package": "linux-firmware",
       "packages": [
@@ -3922,6 +3922,8 @@
       "tags": [
         "amd64",
         "apport-bug",
+        "kernel-daily-bug",
+        "linux-firmware-daily-bug",
         "resolute",
         "wayland-session"
       ],
@@ -3944,11 +3946,11 @@
     },
     "2171895": {
       "date_created": "2026-10-22T07:32:21.092801+00:00",
-      "date_last_updated": "2026-10-22T09:27:24.697313+00:00",
+      "date_last_updated": "2026-10-22T23:02:20.252488+00:00",
       "has_activity_after_incomplete": false,
       "id": 2171895,
-      "last_activity_summary": "summary: bluetooth does not work - Realtek RTL8852BU Bluetooth (0bda:b853) fails to initialize: \"Opcode 0xfcf0 failed: -16\", no controller available by francesco.cavaleri",
-      "last_activity_time": "2026-10-22T09:27:24.697313+00:00",
+      "last_activity_summary": "tags: amd64 apport-bug kernel-daily-bug linux-firmware-daily-bug resolute wayland-session by ubuntu-kernel-bot",
+      "last_activity_time": "2026-10-22T23:02:20.252488+00:00",
       "owner": "Francesco",
       "package": "linux-firmware",
       "packages": [
@@ -3957,6 +3959,8 @@
       "tags": [
         "amd64",
         "apport-bug",
+        "kernel-daily-bug",
+        "linux-firmware-daily-bug",
         "resolute",
         "wayland-session"
       ],
@@ -3978,7 +3982,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2171895"
     }
   },
-  "last_scan_utc": "2026-10-22T22:57:30.269513+00:00",
+  "last_scan_utc": "2026-10-23T03:19:18.547572+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
