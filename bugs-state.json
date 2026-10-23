@@ -3980,9 +3980,43 @@
       ],
       "title": "bluetooth does not work - Realtek RTL8852BU Bluetooth (0bda:b853) fails to initialize: \"Opcode 0xfcf0 failed: -16\", no controller available",
       "web_link": "https://bugs.launchpad.net/bugs/2171895"
+    },
+    "2171935": {
+      "date_created": "2026-10-22T11:49:51.793626+00:00",
+      "date_last_updated": "2026-10-23T09:40:07.748958+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2171935,
+      "last_activity_summary": "information type: Public by sudhackar",
+      "last_activity_time": "2026-10-23T09:40:07.748958+00:00",
+      "owner": "rellai",
+      "package": "linux-firmware-realtek",
+      "packages": [
+        "linux-firmware-realtek"
+      ],
+      "tags": [
+        "amd64",
+        "apport-bug",
+        "stonking"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-22T11:49:51.793626+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "linux-firmware-realtek (Ubuntu)",
+          "target_display": "linux-firmware-realtek (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-realtek/+bug/2171935"
+        }
+      ],
+      "title": "RTL8852AU (0bda:4852) \u2014 firmware 20260915 breaks simultaneous BLE HID connections (Connection Timeout 0x08)",
+      "web_link": "https://bugs.launchpad.net/bugs/2171935"
     }
   },
-  "last_scan_utc": "2026-10-23T09:05:39.219860+00:00",
+  "last_scan_utc": "2026-10-23T16:26:27.459955+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
