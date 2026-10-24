@@ -4014,9 +4014,44 @@
       ],
       "title": "RTL8852AU (0bda:4852) \u2014 firmware 20260915 breaks simultaneous BLE HID connections (Connection Timeout 0x08)",
       "web_link": "https://bugs.launchpad.net/bugs/2171935"
+    },
+    "2172107": {
+      "date_created": "2026-10-24T08:33:30.909832+00:00",
+      "date_last_updated": "2026-10-24T08:33:30.909832+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2172107,
+      "last_activity_summary": "bug updated by wmortl",
+      "last_activity_time": "2026-10-24T08:33:30.909832+00:00",
+      "owner": "William M Mortl",
+      "package": "linux-firmware",
+      "packages": [
+        "linux-firmware"
+      ],
+      "tags": [
+        "amd64",
+        "apport-bug",
+        "stonking",
+        "wayland-session"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-24T08:33:30.909832+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "linux-firmware (Ubuntu)",
+          "target_display": "linux-firmware (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2172107"
+        }
+      ],
+      "title": "[Ubuntu 26.10] HP Panther Lake Intel ISH fails to initialize due to missing firmware lookup symlink \u2014 confirmed fix",
+      "web_link": "https://bugs.launchpad.net/bugs/2172107"
     }
   },
-  "last_scan_utc": "2026-10-24T03:12:55.314884+00:00",
+  "last_scan_utc": "2026-10-24T08:37:56.705387+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
