@@ -4017,11 +4017,11 @@
     },
     "2172107": {
       "date_created": "2026-10-24T08:33:30.909832+00:00",
-      "date_last_updated": "2026-10-24T08:33:30.909832+00:00",
+      "date_last_updated": "2026-10-24T23:00:59.384562+00:00",
       "has_activity_after_incomplete": false,
       "id": 2172107,
-      "last_activity_summary": "bug updated by wmortl",
-      "last_activity_time": "2026-10-24T08:33:30.909832+00:00",
+      "last_activity_summary": "tags: amd64 apport-bug kernel-daily-bug linux-firmware-daily-bug stonking wayland-session by ubuntu-kernel-bot",
+      "last_activity_time": "2026-10-24T23:00:59.384562+00:00",
       "owner": "William M Mortl",
       "package": "linux-firmware",
       "packages": [
@@ -4030,6 +4030,8 @@
       "tags": [
         "amd64",
         "apport-bug",
+        "kernel-daily-bug",
+        "linux-firmware-daily-bug",
         "stonking",
         "wayland-session"
       ],
@@ -4051,7 +4053,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2172107"
     }
   },
-  "last_scan_utc": "2026-10-24T22:13:54.849414+00:00",
+  "last_scan_utc": "2026-10-25T03:08:15.763653+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
