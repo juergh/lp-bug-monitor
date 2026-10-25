@@ -3908,11 +3908,11 @@
     },
     "2171894": {
       "date_created": "2026-10-22T07:32:17.100477+00:00",
-      "date_last_updated": "2026-10-22T23:02:17.088015+00:00",
+      "date_last_updated": "2026-10-25T17:18:19.985226+00:00",
       "has_activity_after_incomplete": false,
       "id": 2171894,
-      "last_activity_summary": "tags: amd64 apport-bug kernel-daily-bug linux-firmware-daily-bug resolute wayland-session by ubuntu-kernel-bot",
-      "last_activity_time": "2026-10-22T23:02:17.088015+00:00",
+      "last_activity_summary": "linux-firmware (Ubuntu): importance: Medium by changwei2025",
+      "last_activity_time": "2026-10-25T17:18:19.985226+00:00",
       "owner": "Francesco",
       "package": "linux-firmware",
       "packages": [
@@ -3931,7 +3931,7 @@
           "assignee": null,
           "date_closed": null,
           "date_created": "2026-10-22T07:32:17.100477+00:00",
-          "importance": "Undecided",
+          "importance": "Medium",
           "is_complete": false,
           "series": null,
           "status": "New",
@@ -3942,43 +3942,6 @@
       ],
       "title": "bluetooth does not work",
       "web_link": "https://bugs.launchpad.net/bugs/2171894"
-    },
-    "2171895": {
-      "date_created": "2026-10-22T07:32:21.092801+00:00",
-      "date_last_updated": "2026-10-22T23:02:20.252488+00:00",
-      "has_activity_after_incomplete": false,
-      "id": 2171895,
-      "last_activity_summary": "tags: amd64 apport-bug kernel-daily-bug linux-firmware-daily-bug resolute wayland-session by ubuntu-kernel-bot",
-      "last_activity_time": "2026-10-22T23:02:20.252488+00:00",
-      "owner": "Francesco",
-      "package": "linux-firmware",
-      "packages": [
-        "linux-firmware"
-      ],
-      "tags": [
-        "amd64",
-        "apport-bug",
-        "kernel-daily-bug",
-        "linux-firmware-daily-bug",
-        "resolute",
-        "wayland-session"
-      ],
-      "tasks": [
-        {
-          "assignee": null,
-          "date_closed": null,
-          "date_created": "2026-10-22T07:32:21.092801+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": null,
-          "status": "New",
-          "target": "linux-firmware (Ubuntu)",
-          "target_display": "linux-firmware (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2171895"
-        }
-      ],
-      "title": "bluetooth does not work - Realtek RTL8852BU Bluetooth (0bda:b853) fails to initialize: \"Opcode 0xfcf0 failed: -16\", no controller available",
-      "web_link": "https://bugs.launchpad.net/bugs/2171895"
     },
     "2171935": {
       "date_created": "2026-10-22T11:49:51.793626+00:00",
@@ -4016,11 +3979,11 @@
     },
     "2172107": {
       "date_created": "2026-10-24T08:33:30.909832+00:00",
-      "date_last_updated": "2026-10-24T23:00:59.384562+00:00",
+      "date_last_updated": "2026-10-25T17:50:45.203835+00:00",
       "has_activity_after_incomplete": false,
       "id": 2172107,
-      "last_activity_summary": "tags: amd64 apport-bug kernel-daily-bug linux-firmware-daily-bug stonking wayland-session by ubuntu-kernel-bot",
-      "last_activity_time": "2026-10-24T23:00:59.384562+00:00",
+      "last_activity_summary": "linux-firmware (Ubuntu): assignee: Canonical Kernel Team (canonical-kernel-team) by changwei2025",
+      "last_activity_time": "2026-10-25T17:50:45.203835+00:00",
       "owner": "William M Mortl",
       "package": "linux-firmware",
       "packages": [
@@ -4036,10 +3999,10 @@
       ],
       "tasks": [
         {
-          "assignee": null,
+          "assignee": "Canonical Kernel Team",
           "date_closed": null,
           "date_created": "2026-10-24T08:33:30.909832+00:00",
-          "importance": "Undecided",
+          "importance": "Medium",
           "is_complete": false,
           "series": null,
           "status": "New",
@@ -4052,7 +4015,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2172107"
     }
   },
-  "last_scan_utc": "2026-10-25T15:31:44.737108+00:00",
+  "last_scan_utc": "2026-10-25T18:43:07.930829+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
