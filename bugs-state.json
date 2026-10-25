@@ -2745,15 +2745,14 @@
     },
     "2167666": {
       "date_created": "2026-09-18T03:09:50.633935+00:00",
-      "date_last_updated": "2026-10-16T09:06:41.718916+00:00",
+      "date_last_updated": "2026-10-25T10:15:02.691213+00:00",
       "has_activity_after_incomplete": false,
       "id": 2167666,
-      "last_activity_summary": "linux-firmware-intel-wireless (Ubuntu): status: New by juergh",
-      "last_activity_time": "2026-10-16T09:06:41.718916+00:00",
+      "last_activity_summary": "linux-firmware-intel-wireless (Ubuntu): status: Confirmed by janitor",
+      "last_activity_time": "2026-10-25T10:15:02.691213+00:00",
       "owner": "Kazunori Ueda",
-      "package": "linux-firmware",
+      "package": "linux-firmware-intel-wireless",
       "packages": [
-        "linux-firmware",
         "linux-firmware-intel-wireless"
       ],
       "tags": [
@@ -2770,7 +2769,7 @@
           "importance": "Undecided",
           "is_complete": false,
           "series": null,
-          "status": "New",
+          "status": "Confirmed",
           "target": "linux-firmware-intel-wireless (Ubuntu)",
           "target_display": "linux-firmware-intel-wireless (Ubuntu)",
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-intel-wireless/+bug/2167666"
@@ -4053,7 +4052,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2172107"
     }
   },
-  "last_scan_utc": "2026-10-25T08:56:18.292948+00:00",
+  "last_scan_utc": "2026-10-25T15:31:44.737108+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
