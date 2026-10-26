@@ -4013,9 +4013,58 @@
       ],
       "title": "[Ubuntu 26.10] HP Panther Lake Intel ISH fails to initialize due to missing firmware lookup symlink \u2014 confirmed fix",
       "web_link": "https://bugs.launchpad.net/bugs/2172107"
+    },
+    "2172184": {
+      "date_created": "2026-10-25T20:10:12.827361+00:00",
+      "date_last_updated": "2026-10-25T23:01:20.916981+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2172184,
+      "last_activity_summary": "tags: amd64 apport-bug kernel-daily-bug linux-firmware-daily-bug resolute wayland-session by ubuntu-kernel-bot",
+      "last_activity_time": "2026-10-25T23:01:20.916981+00:00",
+      "owner": "Anik Khoma",
+      "package": "linux-firmware-misc",
+      "packages": [
+        "linux-firmware-misc"
+      ],
+      "tags": [
+        "amd64",
+        "apport-bug",
+        "kernel-daily-bug",
+        "linux-firmware-daily-bug",
+        "resolute",
+        "wayland-session"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-25T20:10:12.827361+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "Confirmed",
+          "target": "linux (Ubuntu)",
+          "target_display": "linux (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux/+bug/2172184"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-25T22:36:18.712299+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "Confirmed",
+          "target": "linux-firmware-misc (Ubuntu)",
+          "target_display": "linux-firmware-misc (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-misc/+bug/2172184"
+        }
+      ],
+      "title": "No sound from internal speakers on ASUS ExpertBook PM5406CGA (ALC294 + 2x CS35L41, SSID 1043:3601) \u2014 missing realtek quirk",
+      "web_link": "https://bugs.launchpad.net/bugs/2172184"
     }
   },
-  "last_scan_utc": "2026-10-25T22:17:03.623697+00:00",
+  "last_scan_utc": "2026-10-26T03:08:20.950255+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
