@@ -3378,11 +3378,11 @@
     },
     "2168847": {
       "date_created": "2026-09-29T11:54:20.173084+00:00",
-      "date_last_updated": "2026-10-20T13:51:41.422306+00:00",
+      "date_last_updated": "2026-10-29T07:26:42.372904+00:00",
       "has_activity_after_incomplete": false,
       "id": 2168847,
       "last_activity_summary": "tags: kernel-daily-bug linux-firmware-daily-bug verification-done-noble by superm1",
-      "last_activity_time": "2026-10-20T13:51:41.422306+00:00",
+      "last_activity_time": "2026-10-29T07:26:42.372904+00:00",
       "owner": "Mario Limonciello",
       "package": "linux-firmware-amd-graphics",
       "packages": [
@@ -4064,7 +4064,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2172184"
     }
   },
-  "last_scan_utc": "2026-10-29T04:18:41.202209+00:00",
+  "last_scan_utc": "2026-10-29T14:56:25.846598+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
