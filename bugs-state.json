@@ -4064,7 +4064,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2172184"
     }
   },
-  "last_scan_utc": "2026-10-30T14:48:44.124161+00:00",
+  "last_scan_utc": "2026-10-30T20:23:12.011416+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
