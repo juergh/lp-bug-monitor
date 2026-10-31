@@ -1764,11 +1764,11 @@
     },
     "2158858": {
       "date_created": "2026-07-01T02:14:02.882535+00:00",
-      "date_last_updated": "2026-10-31T00:28:17.182522+00:00",
+      "date_last_updated": "2026-10-31T18:03:52.399732+00:00",
       "has_activity_after_incomplete": false,
       "id": 2158858,
-      "last_activity_summary": "tags: jira-stella-3686 jira-stella-3687 jira-stella-3688 kernel-daily-bug kernel-spammed-noble-linux-nvidia-7.0-v2 kernel-spammed-noble-linux-oracle-7.0-v2 kernel-spammed-resolute-linux-fips-v2 kernel-spammed-resolute-linux-nvidia-bos-v2 kernel-spammed-resolute-linux-nvidia-v2 kernel-spammed-resolute-linux-v2 linux-firmware-daily-bug oem-priority stella verification-done-noble verification-done-resolute verification-done-resolute-linux verification-needed-noble-linux-nvidia-7.0 verification-needed-noble-linux-oracle-7.0 verification-needed-resolute-linux-fips verification-needed-resolute-linux-nvidia verification-needed-resolute-linux-nvidia-bos by ubuntu-kernel-bot",
-      "last_activity_time": "2026-10-31T00:28:17.182522+00:00",
+      "last_activity_summary": "tags: jira-stella-3686 jira-stella-3687 jira-stella-3688 kernel-daily-bug kernel-spammed-noble-linux-nvidia-7.0-v2 kernel-spammed-noble-linux-oracle-7.0-v2 kernel-spammed-resolute-linux-fips-v2 kernel-spammed-resolute-linux-nvidia-bos-v2 kernel-spammed-resolute-linux-nvidia-v2 kernel-spammed-resolute-linux-raspi-v2 kernel-spammed-resolute-linux-v2 linux-firmware-daily-bug oem-priority stella verification-done-noble verification-done-resolute verification-done-resolute-linux verification-needed-noble-linux-nvidia-7.0 verification-needed-noble-linux-oracle-7.0 verification-needed-resolute-linux-fips verification-needed-resolute-linux-nvidia verification-needed-resolute-linux-nvidia-bos verification-needed-resolute-linux-raspi by ubuntu-kernel-bot",
+      "last_activity_time": "2026-10-31T18:03:52.399732+00:00",
       "owner": "Chris Chiu",
       "package": "linux-firmware",
       "packages": [
@@ -1785,6 +1785,7 @@
         "kernel-spammed-resolute-linux-fips-v2",
         "kernel-spammed-resolute-linux-nvidia-bos-v2",
         "kernel-spammed-resolute-linux-nvidia-v2",
+        "kernel-spammed-resolute-linux-raspi-v2",
         "kernel-spammed-resolute-linux-v2",
         "linux-firmware-daily-bug",
         "oem-priority",
@@ -1796,7 +1797,8 @@
         "verification-needed-noble-linux-oracle-7.0",
         "verification-needed-resolute-linux-fips",
         "verification-needed-resolute-linux-nvidia",
-        "verification-needed-resolute-linux-nvidia-bos"
+        "verification-needed-resolute-linux-nvidia-bos",
+        "verification-needed-resolute-linux-raspi"
       ],
       "tasks": [
         {
@@ -4238,11 +4240,11 @@
     },
     "2172647": {
       "date_created": "2026-10-31T00:53:41.380418+00:00",
-      "date_last_updated": "2026-10-31T00:53:41.380418+00:00",
+      "date_last_updated": "2026-10-31T23:01:39.442193+00:00",
       "has_activity_after_incomplete": false,
       "id": 2172647,
-      "last_activity_summary": "bug updated by aj45kdz2",
-      "last_activity_time": "2026-10-31T00:53:41.380418+00:00",
+      "last_activity_summary": "tags: amd64 apport-bug kernel-daily-bug linux-firmware-daily-bug resolute wayland-session by ubuntu-kernel-bot",
+      "last_activity_time": "2026-10-31T23:01:39.442193+00:00",
       "owner": "Amjad Soomro",
       "package": "linux-firmware-intel-wireless",
       "packages": [
@@ -4251,6 +4253,8 @@
       "tags": [
         "amd64",
         "apport-bug",
+        "kernel-daily-bug",
+        "linux-firmware-daily-bug",
         "resolute",
         "wayland-session"
       ],
@@ -4272,7 +4276,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2172647"
     }
   },
-  "last_scan_utc": "2026-10-31T16:47:40.238385+00:00",
+  "last_scan_utc": "2026-10-31T23:03:45.235110+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
