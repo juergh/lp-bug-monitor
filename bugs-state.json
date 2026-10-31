@@ -1762,6 +1762,179 @@
       "title": "[SRU] Fix black screen on DELL UP3218K 8K monitor",
       "web_link": "https://bugs.launchpad.net/bugs/2158687"
     },
+    "2158858": {
+      "date_created": "2026-07-01T02:14:02.882535+00:00",
+      "date_last_updated": "2026-10-31T00:28:17.182522+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2158858,
+      "last_activity_summary": "tags: jira-stella-3686 jira-stella-3687 jira-stella-3688 kernel-daily-bug kernel-spammed-noble-linux-nvidia-7.0-v2 kernel-spammed-noble-linux-oracle-7.0-v2 kernel-spammed-resolute-linux-fips-v2 kernel-spammed-resolute-linux-nvidia-bos-v2 kernel-spammed-resolute-linux-nvidia-v2 kernel-spammed-resolute-linux-v2 linux-firmware-daily-bug oem-priority stella verification-done-noble verification-done-resolute verification-done-resolute-linux verification-needed-noble-linux-nvidia-7.0 verification-needed-noble-linux-oracle-7.0 verification-needed-resolute-linux-fips verification-needed-resolute-linux-nvidia verification-needed-resolute-linux-nvidia-bos by ubuntu-kernel-bot",
+      "last_activity_time": "2026-10-31T00:28:17.182522+00:00",
+      "owner": "Chris Chiu",
+      "package": "linux-firmware",
+      "packages": [
+        "linux-firmware",
+        "linux-firmware-misc"
+      ],
+      "tags": [
+        "jira-stella-3686",
+        "jira-stella-3687",
+        "jira-stella-3688",
+        "kernel-daily-bug",
+        "kernel-spammed-noble-linux-nvidia-7.0-v2",
+        "kernel-spammed-noble-linux-oracle-7.0-v2",
+        "kernel-spammed-resolute-linux-fips-v2",
+        "kernel-spammed-resolute-linux-nvidia-bos-v2",
+        "kernel-spammed-resolute-linux-nvidia-v2",
+        "kernel-spammed-resolute-linux-v2",
+        "linux-firmware-daily-bug",
+        "oem-priority",
+        "stella",
+        "verification-done-noble",
+        "verification-done-resolute",
+        "verification-done-resolute-linux",
+        "verification-needed-noble-linux-nvidia-7.0",
+        "verification-needed-noble-linux-oracle-7.0",
+        "verification-needed-resolute-linux-fips",
+        "verification-needed-resolute-linux-nvidia",
+        "verification-needed-resolute-linux-nvidia-bos"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-07-01T02:14:02.882535+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "linux (Ubuntu)",
+          "target_display": "linux (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux/+bug/2158858"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2026-07-13T12:01:10.401001+00:00",
+          "date_created": "2026-07-01T02:14:49.644760+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": null,
+          "status": "Invalid",
+          "target": "linux-firmware (Ubuntu)",
+          "target_display": "linux-firmware (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2158858"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2026-07-13T12:00:32.502258+00:00",
+          "date_created": "2026-07-06T14:22:05.139081+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": null,
+          "status": "Fix Released",
+          "target": "linux-firmware-misc (Ubuntu)",
+          "target_display": "linux-firmware-misc (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-misc/+bug/2158858"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2026-07-13T11:59:52.206588+00:00",
+          "date_created": "2026-07-01T02:14:31.641705+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": null,
+          "status": "Invalid",
+          "target": "linux-oem-6.17 (Ubuntu)",
+          "target_display": "linux-oem-6.17 (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-oem-6.17/+bug/2158858"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2026-07-01T02:15:33.880981+00:00",
+          "date_created": "2026-07-01T02:15:13.346613+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": "noble",
+          "status": "Invalid",
+          "target": "linux (Ubuntu Noble)",
+          "target_display": "linux (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux/+bug/2158858"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2026-08-11T16:26:04.255727+00:00",
+          "date_created": "2026-07-01T02:15:13.346613+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": "noble",
+          "status": "Fix Released",
+          "target": "linux-firmware (Ubuntu Noble)",
+          "target_display": "linux-firmware (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware/+bug/2158858"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2026-08-10T07:38:30.556432+00:00",
+          "date_created": "2026-07-01T02:15:13.346613+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": "noble",
+          "status": "Fix Released",
+          "target": "linux-oem-6.17 (Ubuntu Noble)",
+          "target_display": "linux-oem-6.17 (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-oem-6.17/+bug/2158858"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2026-10-01T08:31:55.764004+00:00",
+          "date_created": "2026-07-01T02:15:13.346613+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": "resolute",
+          "status": "Fix Released",
+          "target": "linux (Ubuntu Resolute)",
+          "target_display": "linux (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux/+bug/2158858"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2026-07-06T14:22:39.861856+00:00",
+          "date_created": "2026-07-01T02:15:13.346613+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": "resolute",
+          "status": "Invalid",
+          "target": "linux-firmware (Ubuntu Resolute)",
+          "target_display": "linux-firmware (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware/+bug/2158858"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2026-08-11T16:21:55.906666+00:00",
+          "date_created": "2026-07-06T14:22:05.139081+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": "resolute",
+          "status": "Fix Released",
+          "target": "linux-firmware-misc (Ubuntu Resolute)",
+          "target_display": "linux-firmware-misc (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-misc/+bug/2158858"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2026-07-01T02:15:49.084349+00:00",
+          "date_created": "2026-07-01T02:15:13.346613+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": "resolute",
+          "status": "Invalid",
+          "target": "linux-oem-6.17 (Ubuntu Resolute)",
+          "target_display": "linux-oem-6.17 (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-oem-6.17/+bug/2158858"
+        }
+      ],
+      "title": "Fix no audio output and mute hotkey not working on HP ZBook 8 G2a",
+      "web_link": "https://bugs.launchpad.net/bugs/2158858"
+    },
     "2159856": {
       "date_created": "2026-07-07T02:24:01.855733+00:00",
       "date_last_updated": "2026-10-07T23:01:51.568379+00:00",
@@ -4062,9 +4235,44 @@
       ],
       "title": "No sound from internal speakers on ASUS ExpertBook PM5406CGA (ALC294 + 2x CS35L41, SSID 1043:3601) \u2014 missing realtek quirk",
       "web_link": "https://bugs.launchpad.net/bugs/2172184"
+    },
+    "2172647": {
+      "date_created": "2026-10-31T00:53:41.380418+00:00",
+      "date_last_updated": "2026-10-31T00:53:41.380418+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2172647,
+      "last_activity_summary": "bug updated by aj45kdz2",
+      "last_activity_time": "2026-10-31T00:53:41.380418+00:00",
+      "owner": "Amjad Soomro",
+      "package": "linux-firmware-intel-wireless",
+      "packages": [
+        "linux-firmware-intel-wireless"
+      ],
+      "tags": [
+        "amd64",
+        "apport-bug",
+        "resolute",
+        "wayland-session"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-31T00:53:41.380418+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "linux-firmware-intel-wireless (Ubuntu)",
+          "target_display": "linux-firmware-intel-wireless (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-intel-wireless/+bug/2172647"
+        }
+      ],
+      "title": "Ubuntu 26.04.1: Intel AX211 Wi-Fi fails with PNVM_MISSING after upgrade; restored by installing uncompressed PNVM",
+      "web_link": "https://bugs.launchpad.net/bugs/2172647"
     }
   },
-  "last_scan_utc": "2026-10-30T20:23:12.011416+00:00",
+  "last_scan_utc": "2026-10-31T03:58:35.680092+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
