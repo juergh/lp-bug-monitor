@@ -3981,11 +3981,11 @@
     },
     "2170922": {
       "date_created": "2026-10-15T06:47:01.248587+00:00",
-      "date_last_updated": "2026-10-15T23:01:36.143901+00:00",
+      "date_last_updated": "2026-11-03T12:25:14.182225+00:00",
       "has_activity_after_incomplete": false,
       "id": 2170922,
-      "last_activity_summary": "tags: kernel-daily-bug linux-firmware-daily-bug by ubuntu-kernel-bot",
-      "last_activity_time": "2026-10-15T23:01:36.143901+00:00",
+      "last_activity_summary": "bug task added: linux-firmware (Ubuntu Tenacious) by juergh",
+      "last_activity_time": "2026-11-03T12:25:14.182225+00:00",
       "owner": "Juerg Haefliger",
       "package": "linux-firmware",
       "packages": [
@@ -3993,13 +3993,26 @@
       ],
       "tags": [
         "kernel-daily-bug",
-        "linux-firmware-daily-bug"
+        "linux-firmware-daily-bug",
+        "needs-packaging"
       ],
       "tasks": [
         {
           "assignee": null,
           "date_closed": null,
-          "date_created": "2026-10-15T06:47:01.248587+00:00",
+          "date_created": "2026-11-03T12:21:41.503089+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "~juergh/ubuntu/linux-firmware-hwe",
+          "target_display": "linux-firmware-hwe from Juerg Haefliger",
+          "web_link": "https://bugs.launchpad.net/~juergh/+archive/ubuntu/linux-firmware-hwe/+bug/2170922"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-03T12:22:43.594238+00:00",
           "importance": "Undecided",
           "is_complete": false,
           "series": null,
@@ -4007,9 +4020,33 @@
           "target": "linux-firmware (Ubuntu)",
           "target_display": "linux-firmware (Ubuntu)",
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2170922"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-03T12:21:41.503089+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "~juergh/ubuntu/linux-firmware-hwe/tenacious",
+          "target_display": "linux-firmware-hwe tenacious",
+          "web_link": "https://bugs.launchpad.net/~juergh/+archive/ubuntu/linux-firmware-hwe/+series/tenacious/+bug/2170922"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-03T12:23:45.437130+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "tenacious",
+          "status": "New",
+          "target": "linux-firmware (Ubuntu Tenacious)",
+          "target_display": "linux-firmware (Ubuntu Tenacious)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/tenacious/+source/linux-firmware/+bug/2170922"
         }
       ],
-      "title": "Introduce linux-firmware-hwe",
+      "title": "[needs-packaging] linux-firmware-hwe",
       "web_link": "https://bugs.launchpad.net/bugs/2170922"
     },
     "2170927": {
@@ -4276,7 +4313,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2172647"
     }
   },
-  "last_scan_utc": "2026-11-03T11:37:03.740351+00:00",
+  "last_scan_utc": "2026-11-03T19:00:56.622088+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
