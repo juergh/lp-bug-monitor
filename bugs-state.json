@@ -342,6 +342,38 @@
       "title": "Update Mediatek MT7925 WiFi/BT firmware for WiFi 7",
       "web_link": "https://bugs.launchpad.net/bugs/2112472"
     },
+    "2113756": {
+      "date_created": "2025-06-09T06:54:43.419479+00:00",
+      "date_last_updated": "2026-11-04T18:45:37.538892+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2113756,
+      "last_activity_summary": "affects: linux-firmware (Ubuntu) by toomanypatterns",
+      "last_activity_time": "2026-11-04T18:45:37.538892+00:00",
+      "owner": "Vincent Manapat",
+      "package": "linux-firmware",
+      "packages": [
+        "linux-firmware"
+      ],
+      "tags": [
+        "bot-comment"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2025-06-09T06:54:43.419479+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "Confirmed",
+          "target": "linux-firmware (Ubuntu)",
+          "target_display": "linux-firmware (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2113756"
+        }
+      ],
+      "title": "Intel Wireless-AC 9260 Bluetooth: Repeated \"Invalid exception type\" errors causing disconnects",
+      "web_link": "https://bugs.launchpad.net/bugs/2113756"
+    },
     "2127044": {
       "date_created": "2025-10-08T02:29:43.709279+00:00",
       "date_last_updated": "2026-10-16T23:02:05.877920+00:00",
@@ -3551,52 +3583,6 @@
       "title": "Intel Bluetooth (ibt-0040-1020) repeatedly crashes with \"Hardware error 0x0c\", forcing full BT stack reset every 5\u201310 minutes",
       "web_link": "https://bugs.launchpad.net/bugs/2167972"
     },
-    "2168847": {
-      "date_created": "2026-09-29T11:54:20.173084+00:00",
-      "date_last_updated": "2026-10-29T07:26:42.372904+00:00",
-      "has_activity_after_incomplete": false,
-      "id": 2168847,
-      "last_activity_summary": "tags: kernel-daily-bug linux-firmware-daily-bug verification-done-noble by superm1",
-      "last_activity_time": "2026-10-29T07:26:42.372904+00:00",
-      "owner": "Mario Limonciello",
-      "package": "linux-firmware-amd-graphics",
-      "packages": [
-        "linux-firmware-amd-graphics"
-      ],
-      "tags": [
-        "kernel-daily-bug",
-        "linux-firmware-daily-bug",
-        "verification-done-noble"
-      ],
-      "tasks": [
-        {
-          "assignee": null,
-          "date_closed": "2026-09-29T14:59:28.430124+00:00",
-          "date_created": "2026-09-29T11:54:20.173084+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": null,
-          "status": "Fix Released",
-          "target": "linux-firmware-amd-graphics (Ubuntu)",
-          "target_display": "linux-firmware-amd-graphics (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-amd-graphics/+bug/2168847"
-        },
-        {
-          "assignee": "Juerg Haefliger",
-          "date_closed": null,
-          "date_created": "2026-09-29T14:34:17.263860+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": "noble",
-          "status": "Fix Committed",
-          "target": "linux-firmware-amd-graphics (Ubuntu Noble)",
-          "target_display": "linux-firmware-amd-graphics (Ubuntu Noble)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-amd-graphics/+bug/2168847"
-        }
-      ],
-      "title": "HWK SoC fails to boot with HWE 7.0 + linux-firmware 0ubuntu3.1",
-      "web_link": "https://bugs.launchpad.net/bugs/2168847"
-    },
     "2169111": {
       "date_created": "2026-10-01T07:39:16.453495+00:00",
       "date_last_updated": "2026-10-16T06:21:15.222802+00:00",
@@ -4313,7 +4299,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2172647"
     }
   },
-  "last_scan_utc": "2026-11-04T00:22:10.955655+00:00",
+  "last_scan_utc": "2026-11-04T19:20:14.376446+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
