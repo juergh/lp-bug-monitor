@@ -1796,11 +1796,11 @@
     },
     "2158858": {
       "date_created": "2026-07-01T02:14:02.882535+00:00",
-      "date_last_updated": "2026-10-31T18:03:52.399732+00:00",
+      "date_last_updated": "2026-11-04T20:40:59.059101+00:00",
       "has_activity_after_incomplete": false,
       "id": 2158858,
-      "last_activity_summary": "tags: jira-stella-3686 jira-stella-3687 jira-stella-3688 kernel-daily-bug kernel-spammed-noble-linux-nvidia-7.0-v2 kernel-spammed-noble-linux-oracle-7.0-v2 kernel-spammed-resolute-linux-fips-v2 kernel-spammed-resolute-linux-nvidia-bos-v2 kernel-spammed-resolute-linux-nvidia-v2 kernel-spammed-resolute-linux-raspi-v2 kernel-spammed-resolute-linux-v2 linux-firmware-daily-bug oem-priority stella verification-done-noble verification-done-resolute verification-done-resolute-linux verification-needed-noble-linux-nvidia-7.0 verification-needed-noble-linux-oracle-7.0 verification-needed-resolute-linux-fips verification-needed-resolute-linux-nvidia verification-needed-resolute-linux-nvidia-bos verification-needed-resolute-linux-raspi by ubuntu-kernel-bot",
-      "last_activity_time": "2026-10-31T18:03:52.399732+00:00",
+      "last_activity_summary": "tags: jira-stella-3686 jira-stella-3687 jira-stella-3688 kernel-daily-bug kernel-spammed-noble-linux-nvidia-7.0-v2 kernel-spammed-noble-linux-oracle-7.0-v2 kernel-spammed-resolute-linux-fips-v2 kernel-spammed-resolute-linux-nvidia-bos-v2 kernel-spammed-resolute-linux-nvidia-v2 kernel-spammed-resolute-linux-raspi-v2 kernel-spammed-resolute-linux-v2 linux-firmware-daily-bug oem-priority stella verification-done-noble verification-done-noble-linux-nvidia-7.0 verification-done-noble-linux-oracle-7.0 verification-done-resolute verification-done-resolute-linux verification-done-resolute-linux-fips verification-done-resolute-linux-nvidia verification-done-resolute-linux-nvidia-bos verification-done-resolute-linux-raspi by roxanan",
+      "last_activity_time": "2026-11-04T20:40:59.059101+00:00",
       "owner": "Chris Chiu",
       "package": "linux-firmware",
       "packages": [
@@ -1823,14 +1823,14 @@
         "oem-priority",
         "stella",
         "verification-done-noble",
+        "verification-done-noble-linux-nvidia-7.0",
+        "verification-done-noble-linux-oracle-7.0",
         "verification-done-resolute",
         "verification-done-resolute-linux",
-        "verification-needed-noble-linux-nvidia-7.0",
-        "verification-needed-noble-linux-oracle-7.0",
-        "verification-needed-resolute-linux-fips",
-        "verification-needed-resolute-linux-nvidia",
-        "verification-needed-resolute-linux-nvidia-bos",
-        "verification-needed-resolute-linux-raspi"
+        "verification-done-resolute-linux-fips",
+        "verification-done-resolute-linux-nvidia",
+        "verification-done-resolute-linux-nvidia-bos",
+        "verification-done-resolute-linux-raspi"
       ],
       "tasks": [
         {
@@ -4297,9 +4297,42 @@
       ],
       "title": "Ubuntu 26.04.1: Intel AX211 Wi-Fi fails with PNVM_MISSING after upgrade; restored by installing uncompressed PNVM",
       "web_link": "https://bugs.launchpad.net/bugs/2172647"
+    },
+    "2173021": {
+      "date_created": "2026-11-04T21:10:45.120163+00:00",
+      "date_last_updated": "2026-11-04T23:06:55.763594+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2173021,
+      "last_activity_summary": "tags: kernel-daily-bug linux-firmware-daily-bug by ubuntu-kernel-bot",
+      "last_activity_time": "2026-11-04T23:06:55.763594+00:00",
+      "owner": "Jhonathan",
+      "package": "linux-firmware",
+      "packages": [
+        "linux-firmware"
+      ],
+      "tags": [
+        "kernel-daily-bug",
+        "linux-firmware-daily-bug"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-04T21:10:45.120163+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "linux-firmware (Ubuntu)",
+          "target_display": "linux-firmware (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2173021"
+        }
+      ],
+      "title": "[MT7921] Bluetooth SCO (HFP/HSP microphone) broken \u2014 Setup Synchronous Connection rejected (0x20), corrupted SCO packets",
+      "web_link": "https://bugs.launchpad.net/bugs/2173021"
     }
   },
-  "last_scan_utc": "2026-11-04T19:20:14.376446+00:00",
+  "last_scan_utc": "2026-11-05T00:43:34.102577+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
