@@ -4331,14 +4331,58 @@
       "title": "[MT7921] Bluetooth SCO (HFP/HSP microphone) broken \u2014 Setup Synchronous Connection rejected (0x20), corrupted SCO packets",
       "web_link": "https://bugs.launchpad.net/bugs/2173021"
     },
-    "2173040": {
-      "date_created": "2026-11-05T00:58:05.047766+00:00",
-      "date_last_updated": "2026-11-05T05:34:29.341008+00:00",
+    "2173041": {
+      "date_created": "2026-11-05T01:05:48.037466+00:00",
+      "date_last_updated": "2026-11-05T15:58:55.285391+00:00",
       "has_activity_after_incomplete": false,
-      "id": 2173040,
-      "last_activity_summary": "linux-firmware (Ubuntu): status: Confirmed by janitor",
-      "last_activity_time": "2026-11-05T05:34:29.341008+00:00",
-      "owner": "Carl Nimbus",
+      "id": 2173041,
+      "last_activity_summary": "bug updated by jkolthoff",
+      "last_activity_time": "2026-11-05T19:14:43.324716+00:00",
+      "owner": "Adrien Lebrun",
+      "package": "linux-firmware-amd-graphics",
+      "packages": [
+        "linux-firmware-amd-graphics"
+      ],
+      "tags": [
+        "regression-update"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": "2026-11-05T14:36:27.152790+00:00",
+          "date_created": "2026-11-05T01:05:48.037466+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": null,
+          "status": "Invalid",
+          "target": "linux-firmware-amd-graphics (Ubuntu)",
+          "target_display": "linux-firmware-amd-graphics (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-amd-graphics/+bug/2173041"
+        },
+        {
+          "assignee": "Juerg Haefliger",
+          "date_closed": null,
+          "date_created": "2026-11-05T14:32:25.777120+00:00",
+          "importance": "Critical",
+          "is_complete": false,
+          "series": "noble",
+          "status": "Confirmed",
+          "target": "linux-firmware-amd-graphics (Ubuntu Noble)",
+          "target_display": "linux-firmware-amd-graphics (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-amd-graphics/+bug/2173041"
+        }
+      ],
+      "title": "black screen after upgrading linux-firmware-amd-graphics to 0ubuntu3.4",
+      "web_link": "https://bugs.launchpad.net/bugs/2173041"
+    },
+    "2173164": {
+      "date_created": "2026-11-05T17:50:03.742110+00:00",
+      "date_last_updated": "2026-11-05T17:50:03.742110+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2173164,
+      "last_activity_summary": "bug updated by cyrber07",
+      "last_activity_time": "2026-11-05T17:50:03.742110+00:00",
+      "owner": "Cyril BERTRAND",
       "package": "linux-firmware",
       "packages": [
         "linux-firmware"
@@ -4348,86 +4392,21 @@
         {
           "assignee": null,
           "date_closed": null,
-          "date_created": "2026-11-05T00:58:05.047766+00:00",
+          "date_created": "2026-11-05T17:50:03.742110+00:00",
           "importance": "Undecided",
           "is_complete": false,
           "series": null,
-          "status": "Confirmed",
+          "status": "New",
           "target": "linux-firmware (Ubuntu)",
           "target_display": "linux-firmware (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2173040"
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2173164"
         }
       ],
-      "title": "linux-firmware-amd-graphics 0ubuntu3.4: dcn_4_0_1_dmcub.bin.zst is a symlink to dcn_3_2_0_dmcub.bin.zst, RX 9070 XT DMUB load fails, no display manager",
-      "web_link": "https://bugs.launchpad.net/bugs/2173040"
-    },
-    "2173041": {
-      "date_created": "2026-11-05T01:05:48.037466+00:00",
-      "date_last_updated": "2026-11-05T07:57:24.995124+00:00",
-      "has_activity_after_incomplete": false,
-      "id": 2173041,
-      "last_activity_summary": "bug updated by billal066",
-      "last_activity_time": "2026-11-05T08:02:41.210811+00:00",
-      "owner": "Adrien Lebrun",
-      "package": "linux-firmware-amd-graphics",
-      "packages": [
-        "linux-firmware-amd-graphics"
-      ],
-      "tags": [],
-      "tasks": [
-        {
-          "assignee": null,
-          "date_closed": null,
-          "date_created": "2026-11-05T01:05:48.037466+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": null,
-          "status": "Confirmed",
-          "target": "linux-firmware-amd-graphics (Ubuntu)",
-          "target_display": "linux-firmware-amd-graphics (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-amd-graphics/+bug/2173041"
-        }
-      ],
-      "title": "black screen after upgrading linux-firmware-amd-graphics to 0ubuntu3.4",
-      "web_link": "https://bugs.launchpad.net/bugs/2173041"
-    },
-    "2173043": {
-      "date_created": "2026-11-05T01:08:47.752608+00:00",
-      "date_last_updated": "2026-11-05T01:40:49.584517+00:00",
-      "has_activity_after_incomplete": false,
-      "id": 2173043,
-      "last_activity_summary": "linux-firmware-amd-graphics (Ubuntu): status: Confirmed by janitor",
-      "last_activity_time": "2026-11-05T01:40:49.584517+00:00",
-      "owner": "fish",
-      "package": "linux-firmware-amd-graphics",
-      "packages": [
-        "linux-firmware-amd-graphics"
-      ],
-      "tags": [
-        "amd64",
-        "apport-bug",
-        "noble",
-        "wayland-session"
-      ],
-      "tasks": [
-        {
-          "assignee": null,
-          "date_closed": null,
-          "date_created": "2026-11-05T01:08:47.752608+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": null,
-          "status": "Confirmed",
-          "target": "linux-firmware-amd-graphics (Ubuntu)",
-          "target_display": "linux-firmware-amd-graphics (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-amd-graphics/+bug/2173043"
-        }
-      ],
-      "title": "Latest update to linux-firmware-amd-graphics is incompatible with rx9070xt. Caused black screens and DMCUB errors. Temp resolved by grabbing upstream firmware",
-      "web_link": "https://bugs.launchpad.net/bugs/2173043"
+      "title": "Intel AX210 AP mode firmware crashes on Ubuntu 24.04 \u2013 outdated firmware update requested",
+      "web_link": "https://bugs.launchpad.net/bugs/2173164"
     }
   },
-  "last_scan_utc": "2026-11-05T11:50:47.440243+00:00",
+  "last_scan_utc": "2026-11-05T19:28:40.641197+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
