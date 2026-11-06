@@ -4333,17 +4333,19 @@
     },
     "2173041": {
       "date_created": "2026-11-05T01:05:48.037466+00:00",
-      "date_last_updated": "2026-11-05T15:58:55.285391+00:00",
+      "date_last_updated": "2026-11-06T00:31:09.267089+00:00",
       "has_activity_after_incomplete": false,
       "id": 2173041,
-      "last_activity_summary": "bug updated by jkolthoff",
-      "last_activity_time": "2026-11-05T19:14:43.324716+00:00",
+      "last_activity_summary": "tags: kernel-daily-bug linux-firmware-daily-bug regression-update by ubuntu-kernel-bot",
+      "last_activity_time": "2026-11-06T00:31:09.267089+00:00",
       "owner": "Adrien Lebrun",
       "package": "linux-firmware-amd-graphics",
       "packages": [
         "linux-firmware-amd-graphics"
       ],
       "tags": [
+        "kernel-daily-bug",
+        "linux-firmware-daily-bug",
         "regression-update"
       ],
       "tasks": [
@@ -4377,17 +4379,20 @@
     },
     "2173164": {
       "date_created": "2026-11-05T17:50:03.742110+00:00",
-      "date_last_updated": "2026-11-05T17:50:03.742110+00:00",
+      "date_last_updated": "2026-11-05T23:02:38.737674+00:00",
       "has_activity_after_incomplete": false,
       "id": 2173164,
-      "last_activity_summary": "bug updated by cyrber07",
-      "last_activity_time": "2026-11-05T17:50:03.742110+00:00",
+      "last_activity_summary": "tags: kernel-daily-bug linux-firmware-daily-bug by ubuntu-kernel-bot",
+      "last_activity_time": "2026-11-05T23:02:38.737674+00:00",
       "owner": "Cyril BERTRAND",
       "package": "linux-firmware",
       "packages": [
         "linux-firmware"
       ],
-      "tags": [],
+      "tags": [
+        "kernel-daily-bug",
+        "linux-firmware-daily-bug"
+      ],
       "tasks": [
         {
           "assignee": null,
@@ -4406,7 +4411,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2173164"
     }
   },
-  "last_scan_utc": "2026-11-05T19:28:40.641197+00:00",
+  "last_scan_utc": "2026-11-06T00:43:50.779196+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
