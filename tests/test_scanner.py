@@ -12,9 +12,24 @@ from lp_bug_monitor.scanner import (
     extract_bug_record,
     extract_package_name,
     extract_series_name,
-    scan_duplicate_prune,
+    prune_stale_bugs,
     scan_incremental,
 )
+
+
+def make_lp_task(target: str, status: str, is_complete: bool) -> MagicMock:
+    """Build a Launchpad-like bug task mock for probing tests."""
+    task = MagicMock()
+    task.bug_target_name = target
+    task.bug_target_display_name = target
+    task.status = status
+    task.is_complete = is_complete
+    task.importance = "Undecided"
+    task.assignee = None
+    task.web_link = f"https://bugs.launchpad.net/ubuntu/+source/{target.split(' ')[0]}/+bug/1"
+    task.date_created = None
+    task.date_closed = None
+    return task
 
 
 def test_scan_incremental_removes_newly_closed_bugs():
@@ -436,6 +451,7 @@ def test_scan_incremental_probe_keeps_non_duplicate_bugs():
     lp_mock = MagicMock()
     open_bug = MagicMock()
     open_bug.duplicate_of_link = None
+    open_bug.bug_tasks = [make_lp_task("linux-firmware (Ubuntu)", "Confirmed", False)]
     lp_mock.load.return_value = open_bug
 
     updated = scan_incremental(
@@ -448,6 +464,71 @@ def test_scan_incremental_probe_keeps_non_duplicate_bugs():
     )
 
     assert "200" in updated
+
+
+def test_scan_incremental_does_not_probe_refreshed_bugs():
+    """Bugs refreshed by the modified-since query must not be probed again by
+    the prune pass (state keys are strings, query results are int-keyed)."""
+    ubuntu_mock = MagicMock()
+    sp_mock = MagicMock()
+    ubuntu_mock.getSourcePackage.return_value = sp_mock
+    ubuntu_mock.getSeries.return_value = None
+
+    open_task = MagicMock()
+    open_task.bug_target_name = "linux-firmware (Ubuntu)"
+    open_task.bug_target_display_name = "linux-firmware (Ubuntu)"
+    open_task.status = "Confirmed"
+    open_task.is_complete = False
+    open_task.assignee = None
+    open_task.web_link = "https://bugs.launchpad.net/bugs/200"
+    open_task.date_created = None
+    open_task.date_closed = None
+
+    bug_200 = MagicMock()
+    bug_200.id = 200
+    bug_200.title = "Refreshed bug"
+    bug_200.web_link = "https://bugs.launchpad.net/bugs/200"
+    bug_200.duplicate_of_link = None
+    bug_200.bug_tasks = [open_task]
+    bug_200.activity = []
+    bug_200.date_created = datetime.now(UTC)
+    bug_200.date_last_updated = datetime.now(UTC)
+    bug_200.date_last_message = None
+    bug_200.owner = None
+    bug_200.tags = []
+
+    modified_task = MagicMock()
+    modified_task.bug = bug_200
+    sp_mock.searchTasks.return_value = [modified_task]
+
+    existing_bugs = {
+        "200": {
+            "id": 200,
+            "title": "Refreshed bug",
+            "package": "linux-firmware",
+            "tasks": [
+                {
+                    "target": "linux-firmware (Ubuntu)",
+                    "status": "Confirmed",
+                    "is_complete": False,
+                }
+            ],
+        }
+    }
+
+    lp_mock = MagicMock()
+
+    updated = scan_incremental(
+        ubuntu=ubuntu_mock,
+        packages=["linux-firmware"],
+        series_list=[],
+        existing_bugs=existing_bugs,
+        since_utc=datetime.now(UTC),
+        lp=lp_mock,
+    )
+
+    assert "200" in updated
+    lp_mock.load.assert_not_called()
 
 
 def test_scan_incremental_without_lp_skips_probe_pass():
@@ -539,7 +620,7 @@ def test_scan_incremental_drops_refreshed_bug_marked_duplicate():
     assert len(updated) == 0
 
 
-def test_scan_duplicate_prune_detects_duplicates_and_ignores_errors():
+def test_prune_stale_bugs_detects_duplicates_and_ignores_errors():
     lp_mock = MagicMock()
 
     def load_side_effect(path):
@@ -550,10 +631,95 @@ def test_scan_duplicate_prune_detects_duplicates_and_ignores_errors():
         if path == "/bugs/2":
             bug = MagicMock()
             bug.duplicate_of_link = None
+            bug.bug_tasks = [make_lp_task("linux-firmware (Ubuntu)", "Confirmed", False)]
             return bug
-        raise RuntimeError("boom")
+        if path == "/bugs/3":
+            raise RuntimeError("boom")
+        raise AssertionError(f"unexpected load: {path}")
 
     lp_mock.load.side_effect = load_side_effect
 
-    result = scan_duplicate_prune(lp_mock, [1, 2, 3])
+    result = prune_stale_bugs(lp_mock, [1, 2, 3], ["linux-firmware"])
     assert result == ["1"]
+
+
+def test_prune_stale_bugs_prunes_retargeted_bug():
+    """A bug whose only open task was retargeted to an unmonitored package
+    (e.g. linux-firmware -> linux) must be pruned from state."""
+    lp_mock = MagicMock()
+    retargeted_bug = MagicMock()
+    retargeted_bug.duplicate_of_link = None
+    retargeted_bug.bug_tasks = [make_lp_task("linux (Ubuntu)", "New", False)]
+    lp_mock.load.return_value = retargeted_bug
+
+    result = prune_stale_bugs(lp_mock, [2171012], ["linux-firmware", "linux-firmware-intel-graphics"])
+    assert result == ["2171012"]
+
+
+def test_prune_stale_bugs_keeps_bug_with_open_monitored_task():
+    lp_mock = MagicMock()
+    active_bug = MagicMock()
+    active_bug.duplicate_of_link = None
+    active_bug.bug_tasks = [
+        make_lp_task("linux (Ubuntu)", "New", False),
+        make_lp_task("linux-firmware (Ubuntu noble)", "Confirmed", False),
+    ]
+    lp_mock.load.return_value = active_bug
+
+    result = prune_stale_bugs(lp_mock, [100], ["linux-firmware"])
+    assert result == []
+
+
+def test_prune_stale_bugs_prunes_fully_closed_bug():
+    lp_mock = MagicMock()
+    closed_bug = MagicMock()
+    closed_bug.duplicate_of_link = None
+    closed_bug.bug_tasks = [make_lp_task("linux-firmware (Ubuntu)", "Fix Released", True)]
+    lp_mock.load.return_value = closed_bug
+
+    result = prune_stale_bugs(lp_mock, [100], ["linux-firmware"])
+    assert result == ["100"]
+
+
+def test_scan_incremental_prunes_retargeted_bug():
+    """Bug retargeted away from the monitored package: its task no longer
+    matches the modified-since queries, so the prune pass must remove it."""
+    ubuntu_mock = MagicMock()
+    sp_mock = MagicMock()
+    ubuntu_mock.getSourcePackage.return_value = sp_mock
+    ubuntu_mock.getSeries.return_value = None
+    sp_mock.searchTasks.return_value = []
+
+    existing_bugs = {
+        "2171012": {
+            "id": 2171012,
+            "title": "Mac mini 2014 intel i5 tries to instell nvidia drivers and panics.",
+            "package": "linux-firmware",
+            "tasks": [
+                {
+                    "target": "linux-firmware (Ubuntu)",
+                    "status": "New",
+                    "is_complete": False,
+                }
+            ],
+        }
+    }
+
+    lp_mock = MagicMock()
+    retargeted_bug = MagicMock()
+    retargeted_bug.duplicate_of_link = None
+    retargeted_bug.bug_tasks = [make_lp_task("linux (Ubuntu)", "New", False)]
+    lp_mock.load.return_value = retargeted_bug
+
+    updated = scan_incremental(
+        ubuntu=ubuntu_mock,
+        packages=["linux-firmware"],
+        series_list=[],
+        existing_bugs=existing_bugs,
+        since_utc=datetime.now(UTC),
+        lp=lp_mock,
+    )
+
+    assert "2171012" not in updated
+    assert len(updated) == 0
+    lp_mock.load.assert_called_once_with("/bugs/2171012")

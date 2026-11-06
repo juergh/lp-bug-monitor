@@ -319,9 +319,77 @@ def test_packages_unchanged_keeps_incremental_scan(
     }
     mock_scan_incremental.return_value = {}
 
-    exit_code = main(["linux-firmware", "--dry-run"])
+    exit_code = main(["linux-firmware", "--dry-run", "--full-scan-interval", "0"])
     assert exit_code == 0
     assert mock_scan_incremental.called
     assert not mock_scan_full.called
     assert mock_generate_html.called
     assert mock_generate_html.call_args.kwargs["workflow_url"] == DEFAULT_WORKFLOW_URL
+
+
+@patch("lp_bug_monitor.cli.get_launchpad")
+@patch("lp_bug_monitor.cli.get_ubuntu_distribution")
+@patch("lp_bug_monitor.cli.get_active_series")
+@patch("lp_bug_monitor.cli.save_state")
+@patch("lp_bug_monitor.cli.generate_html_report")
+@patch("lp_bug_monitor.cli.scan_full")
+@patch("lp_bug_monitor.cli.scan_incremental")
+@patch("lp_bug_monitor.cli.load_state")
+def test_stale_last_scan_triggers_full_scan(
+    mock_load_state,
+    mock_scan_incremental,
+    mock_scan_full,
+    mock_generate_html,
+    mock_save_state,
+    mock_get_series,
+    mock_get_distro,
+    mock_get_lp,
+):
+    """A last scan older than --full-scan-interval forces a full scan even
+    when the package list is unchanged."""
+    mock_load_state.return_value = {
+        "last_scan_utc": "2026-10-14T10:00:00+00:00",
+        "packages": ["linux-firmware"],
+        "bugs": {},
+    }
+    mock_scan_full.return_value = {}
+
+    exit_code = main(["linux-firmware", "--dry-run"])
+    assert exit_code == 0
+    assert mock_scan_full.called
+    assert not mock_scan_incremental.called
+
+
+@patch("lp_bug_monitor.cli.get_launchpad")
+@patch("lp_bug_monitor.cli.get_ubuntu_distribution")
+@patch("lp_bug_monitor.cli.get_active_series")
+@patch("lp_bug_monitor.cli.save_state")
+@patch("lp_bug_monitor.cli.generate_html_report")
+@patch("lp_bug_monitor.cli.scan_full")
+@patch("lp_bug_monitor.cli.scan_incremental")
+@patch("lp_bug_monitor.cli.load_state")
+def test_recent_last_scan_keeps_incremental_scan(
+    mock_load_state,
+    mock_scan_incremental,
+    mock_scan_full,
+    mock_generate_html,
+    mock_save_state,
+    mock_get_series,
+    mock_get_distro,
+    mock_get_lp,
+):
+    """A last scan within --full-scan-interval keeps the incremental path."""
+    from datetime import UTC, datetime, timedelta
+
+    recent = (datetime.now(UTC) - timedelta(hours=1)).isoformat()
+    mock_load_state.return_value = {
+        "last_scan_utc": recent,
+        "packages": ["linux-firmware"],
+        "bugs": {},
+    }
+    mock_scan_incremental.return_value = {}
+
+    exit_code = main(["linux-firmware", "--dry-run"])
+    assert exit_code == 0
+    assert mock_scan_incremental.called
+    assert not mock_scan_full.called

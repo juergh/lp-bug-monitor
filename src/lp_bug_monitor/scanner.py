@@ -529,8 +529,9 @@ def scan_incremental(
 ) -> dict[str, dict[str, Any]]:
     """Perform an incremental scan for bugs modified since `since_utc`.
 
-    Updates modified bugs, adds new bugs, and removes bugs that have closed
-    or been marked as duplicates since the last scan.
+    Updates modified bugs, adds new bugs, and removes bugs that have closed,
+    been marked as duplicates, or been retargeted away from the monitored
+    packages since the last scan.
     """
     logger.info("Starting incremental scan for changes since %s...", since_utc.isoformat())
     updated_bugs: dict[str, dict[str, Any]] = dict(existing_bugs)
@@ -586,7 +587,7 @@ def scan_incremental(
     added_count = 0
     updated_count = 0
     closed_count = 0
-    duped_count = 0
+    pruned_count = 0
 
     for b_id, bug_obj in modified_bug_objects.items():
         matched_pkgs = bug_matched_packages.get(b_id, set())
@@ -613,41 +614,69 @@ def scan_incremental(
             updated_bugs[b_key] = record.to_dict()
 
     # Prune pass: bugs present in state but not touched by the modified-since
-    # query. Launchpad's searchTasks(modified_since=...) matches bug task
-    # changes only, so a bug newly marked as a duplicate never shows up there.
-    # Probe those bugs directly for their duplicate_of_link.
+    # query. Launchpad's searchTasks(modified_since=...) only matches tasks on
+    # the scanned packages, so bugs that were marked as duplicates or whose
+    # tasks were retargeted away from the monitored packages never show up
+    # there. Probe those bugs directly and drop stale ones.
     if lp is not None:
-        unrefreshed_ids = sorted(int(b_id) for b_id in existing_bugs if b_id not in modified_bug_objects)
-        stale_dupes = scan_duplicate_prune(lp, unrefreshed_ids)
-        for b_key in stale_dupes:
+        unrefreshed_ids = sorted(int(b_id) for b_id in existing_bugs if int(b_id) not in modified_bug_objects)
+        stale_bugs = prune_stale_bugs(lp, unrefreshed_ids, packages)
+        for b_key in stale_bugs:
             if b_key in updated_bugs:
                 del updated_bugs[b_key]
-                duped_count += 1
+                pruned_count += 1
 
     logger.info(
-        "Incremental update finished: %d added, %d updated, %d closed, %d duplicates. Total active: %d",
+        "Incremental update finished: %d added, %d updated, %d closed, %d pruned. Total active: %d",
         added_count,
         updated_count,
         closed_count,
-        duped_count,
+        pruned_count,
         len(updated_bugs),
     )
     return updated_bugs
 
 
-def scan_duplicate_prune(lp: Any, bug_ids: list[int]) -> list[str]:
-    """Probe Launchpad for bugs that have been marked as a duplicate.
+def prune_stale_bugs(lp: Any, bug_ids: list[int], packages: list[str]) -> list[str]:
+    """Probe Launchpad for bugs that have gone stale in the state file.
 
-    Returns the keys (str bug ids) of bugs whose `duplicate_of_link` is set.
+    A bug is stale and should be removed from the active set if:
+    - it has been marked as a duplicate of another bug, or
+    - it no longer has an open Ubuntu bug task targeting one of the monitored
+      source packages (e.g. its task was retargeted to an unmonitored package).
+
+    Returns the keys (str bug ids) of stale bugs.
     """
-    stale_dupes: list[str] = []
+    monitored_pkgs = {p.lower() for p in packages}
+    stale_bugs: list[str] = []
     for b_id in bug_ids:
         try:
             bug = lp.load(f"/bugs/{b_id}")
-            dup_link = getattr(bug, "duplicate_of_link", None)
-            if dup_link:
-                logger.info("Bug #%d is marked as a duplicate of %s; removing from active bugs", b_id, dup_link)
-                stale_dupes.append(str(b_id))
         except Exception as e:
-            logger.debug("Could not probe bug #%d for duplicate status: %s", b_id, e)
-    return stale_dupes
+            logger.debug("Could not probe bug #%d: %s", b_id, e)
+            continue
+
+        dup_link = getattr(bug, "duplicate_of_link", None)
+        if dup_link:
+            logger.info("Bug #%d is marked as a duplicate of %s; removing from active bugs", b_id, dup_link)
+            stale_bugs.append(str(b_id))
+            continue
+
+        try:
+            task_records = [extract_task_record(t) for t in getattr(bug, "bug_tasks", []) if is_ubuntu_task(t)]
+        except Exception as e:
+            logger.debug("Could not inspect tasks of bug #%d: %s", b_id, e)
+            continue
+
+        open_pkgs = {pkg for t in task_records if not t.is_complete and (pkg := extract_package_name(t.target))}
+        if open_pkgs & monitored_pkgs:
+            continue
+
+        logger.info(
+            "Bug #%d has no open tasks on monitored packages (%s); removing from active bugs",
+            b_id,
+            ", ".join(sorted(monitored_pkgs)) or "none",
+        )
+        stale_bugs.append(str(b_id))
+
+    return stale_bugs

@@ -113,6 +113,16 @@ def create_parser() -> argparse.ArgumentParser:
         help="Force a full scan from scratch instead of an incremental scan",
     )
     parser.add_argument(
+        "--full-scan-interval",
+        type=float,
+        default=48.0,
+        metavar="HOURS",
+        help=(
+            "Force a full scan if the last scan is older than this many hours "
+            "(default: 48, 0 disables the periodic full scan)"
+        ),
+    )
+    parser.add_argument(
         "--no-scan",
         "--report-only",
         action="store_true",
@@ -283,6 +293,23 @@ def main(argv: list[str] | None = None) -> int:
         logger.info("Monitored packages changed (%s); triggering full scan", "; ".join(changes))
 
     is_incremental = bool(last_scan_utc) and not args.full and not packages_changed
+
+    # Periodic full scan: guard against changes that incremental scans cannot
+    # see (e.g. bugs retargeted away from the monitored packages).
+    if is_incremental and args.full_scan_interval > 0:
+        try:
+            last_dt = datetime.fromisoformat(str(last_scan_utc))
+            age_hours = (scan_start_utc - last_dt).total_seconds() / 3600.0
+            if age_hours >= args.full_scan_interval:
+                logger.info(
+                    "Last scan is %.1f hours old (full-scan interval: %g h); forcing full scan",
+                    age_hours,
+                    args.full_scan_interval,
+                )
+                is_incremental = False
+        except Exception as e:
+            logger.warning("Could not determine last scan age (%s); forcing full scan", e)
+            is_incremental = False
 
     if is_incremental:
         try:
