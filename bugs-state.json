@@ -4226,44 +4226,9 @@
       ],
       "title": "Intel AX210 AP mode firmware crashes on Ubuntu 24.04 \u2013 outdated firmware update requested",
       "web_link": "https://bugs.launchpad.net/bugs/2173164"
-    },
-    "2173569": {
-      "date_created": "2026-11-06T18:45:51.351865+00:00",
-      "date_last_updated": "2026-11-06T18:45:51.351865+00:00",
-      "has_activity_after_incomplete": false,
-      "id": 2173569,
-      "last_activity_summary": "bug updated by tank208",
-      "last_activity_time": "2026-11-06T18:45:51.351865+00:00",
-      "owner": "Will Hall",
-      "package": "linux-firmware",
-      "packages": [
-        "linux-firmware"
-      ],
-      "tags": [
-        "amd64",
-        "apport-bug",
-        "noble",
-        "wayland-session"
-      ],
-      "tasks": [
-        {
-          "assignee": null,
-          "date_closed": null,
-          "date_created": "2026-11-06T18:45:51.351865+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": null,
-          "status": "New",
-          "target": "linux-firmware (Ubuntu)",
-          "target_display": "linux-firmware (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2173569"
-        }
-      ],
-      "title": "linux-firmware-amd-graphics 0ubuntu3.4: dcn_4_0_1_dmcub symlinked to dcn_3_2_0, RX 9070 XT display fails to init",
-      "web_link": "https://bugs.launchpad.net/bugs/2173569"
     }
   },
-  "last_scan_utc": "2026-11-06T18:52:50.227534+00:00",
+  "last_scan_utc": "2026-11-06T23:56:16.169396+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
