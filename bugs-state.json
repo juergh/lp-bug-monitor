@@ -4056,11 +4056,11 @@
     },
     "2172647": {
       "date_created": "2026-10-31T00:53:41.380418+00:00",
-      "date_last_updated": "2026-11-06T06:53:18.095809+00:00",
-      "has_activity_after_incomplete": false,
+      "date_last_updated": "2026-11-07T00:27:14.041811+00:00",
+      "has_activity_after_incomplete": true,
       "id": 2172647,
-      "last_activity_summary": "linux-firmware-intel-wireless (Ubuntu): status: Incomplete by juergh",
-      "last_activity_time": "2026-11-06T06:53:18.095809+00:00",
+      "last_activity_summary": "attachment added: AX211-Success-Kernel-7.0.log https://bugs.launchpad.net/ubuntu/+source/linux-firmware-intel-wireless/+bug/2172647/+attachment/6015651/+files/AX211-Success-Kernel-7.0.log by aj45kdz2",
+      "last_activity_time": "2026-11-07T00:27:14.041811+00:00",
       "owner": "Amjad Soomro",
       "package": "linux-firmware-intel-wireless",
       "packages": [
@@ -4138,11 +4138,11 @@
     },
     "2173041": {
       "date_created": "2026-11-05T01:05:48.037466+00:00",
-      "date_last_updated": "2026-11-06T18:01:20.420791+00:00",
+      "date_last_updated": "2026-11-07T03:52:12.182538+00:00",
       "has_activity_after_incomplete": false,
       "id": 2173041,
       "last_activity_summary": "bug updated by migaxmoitax",
-      "last_activity_time": "2026-11-06T18:01:20.420791+00:00",
+      "last_activity_time": "2026-11-07T03:52:12.182538+00:00",
       "owner": "Adrien Lebrun",
       "package": "linux-firmware-amd-graphics",
       "packages": [
@@ -4228,7 +4228,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2173164"
     }
   },
-  "last_scan_utc": "2026-11-06T23:56:16.169396+00:00",
+  "last_scan_utc": "2026-11-07T04:53:18.124521+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
