@@ -4138,11 +4138,11 @@
     },
     "2173041": {
       "date_created": "2026-11-05T01:05:48.037466+00:00",
-      "date_last_updated": "2026-11-07T09:04:22.892947+00:00",
+      "date_last_updated": "2026-11-07T21:00:21.600779+00:00",
       "has_activity_after_incomplete": false,
       "id": 2173041,
-      "last_activity_summary": "bug updated by migaxmoitax",
-      "last_activity_time": "2026-11-07T09:04:22.892947+00:00",
+      "last_activity_summary": "bug updated by mtr-rdr",
+      "last_activity_time": "2026-11-07T21:00:21.600779+00:00",
       "owner": "Adrien Lebrun",
       "package": "linux-firmware-amd-graphics",
       "packages": [
@@ -4228,7 +4228,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2173164"
     }
   },
-  "last_scan_utc": "2026-11-07T19:51:36.105782+00:00",
+  "last_scan_utc": "2026-11-07T23:24:00.293701+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
