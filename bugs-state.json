@@ -4138,11 +4138,11 @@
     },
     "2173041": {
       "date_created": "2026-11-05T01:05:48.037466+00:00",
-      "date_last_updated": "2026-11-08T01:40:41.845005+00:00",
+      "date_last_updated": "2026-11-08T12:10:12.785980+00:00",
       "has_activity_after_incomplete": false,
       "id": 2173041,
       "last_activity_summary": "bug updated by mtr-rdr",
-      "last_activity_time": "2026-11-08T01:40:41.845005+00:00",
+      "last_activity_time": "2026-11-08T12:10:12.785980+00:00",
       "owner": "Adrien Lebrun",
       "package": "linux-firmware-amd-graphics",
       "packages": [
@@ -4226,9 +4226,44 @@
       ],
       "title": "Intel AX210 AP mode firmware crashes on Ubuntu 24.04 \u2013 outdated firmware update requested",
       "web_link": "https://bugs.launchpad.net/bugs/2173164"
+    },
+    "2173683": {
+      "date_created": "2026-11-08T14:26:04.329840+00:00",
+      "date_last_updated": "2026-11-08T14:29:59.798427+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2173683,
+      "last_activity_summary": "bug updated by chris125991",
+      "last_activity_time": "2026-11-08T14:29:59.798427+00:00",
+      "owner": "chris125991",
+      "package": "linux-firmware",
+      "packages": [
+        "linux-firmware"
+      ],
+      "tags": [
+        "linux-firmware",
+        "noble",
+        "regression-update",
+        "ubuntu-bug"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-08T14:26:04.329840+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "linux-firmware (Ubuntu)",
+          "target_display": "linux-firmware (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2173683"
+        }
+      ],
+      "title": "linux-firmware-amd-graphics 20240318.git3b128b60-0ubuntu3.4: amdgpu/dcn_4_0_1_dmcub.bin.zst is a symlink to dcn_3_2_0_dmcub.bin.zst, DMCUB load fails and display stays black on AMD 1002:7590",
+      "web_link": "https://bugs.launchpad.net/bugs/2173683"
     }
   },
-  "last_scan_utc": "2026-11-08T04:22:13.705520+00:00",
+  "last_scan_utc": "2026-11-08T14:45:00.565811+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
