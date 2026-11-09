@@ -723,3 +723,106 @@ def test_scan_incremental_prunes_retargeted_bug():
     assert "2171012" not in updated
     assert len(updated) == 0
     lp_mock.load.assert_called_once_with("/bugs/2171012")
+
+
+def test_prune_stale_bugs_prunes_ignored_tag_bug():
+    lp_mock = MagicMock()
+    tracking_bug = MagicMock()
+    tracking_bug.duplicate_of_link = None
+    tracking_bug.bug_tasks = [make_lp_task("linux-firmware (Ubuntu)", "Confirmed", False)]
+    tracking_bug.tags = ["kernel-release-tracking-bug"]
+    lp_mock.load.return_value = tracking_bug
+
+    result = prune_stale_bugs(lp_mock, [100], ["linux-firmware"])
+    assert result == ["100"]
+
+
+def test_scan_incremental_drops_refreshed_bug_with_ignored_tag():
+    """A bug that gains an ignored tag and shows up in modified-since is dropped."""
+    ubuntu_mock = MagicMock()
+    sp_mock = MagicMock()
+    ubuntu_mock.getSourcePackage.return_value = sp_mock
+    ubuntu_mock.getSeries.return_value = None
+
+    existing_bugs = {
+        "400": {
+            "id": 400,
+            "title": "Was active",
+            "package": "linux-firmware",
+            "tasks": [
+                {
+                    "target": "linux-firmware (Ubuntu)",
+                    "status": "Confirmed",
+                    "is_complete": False,
+                }
+            ],
+        }
+    }
+
+    tracking_task = make_lp_task("linux-firmware (Ubuntu)", "Confirmed", False)
+    bug_400 = MagicMock()
+    bug_400.id = 400
+    bug_400.title = "Tracking bug"
+    bug_400.duplicate_of_link = None
+    bug_400.bug_tasks = [tracking_task]
+    bug_400.activity = []
+    bug_400.tags = ["kernel-release-tracking-bug"]
+
+    modified_task = MagicMock()
+    modified_task.bug = bug_400
+    sp_mock.searchTasks.return_value = [modified_task]
+
+    updated = scan_incremental(
+        ubuntu=ubuntu_mock,
+        packages=["linux-firmware"],
+        series_list=[],
+        existing_bugs=existing_bugs,
+        since_utc=datetime.now(UTC),
+    )
+
+    assert "400" not in updated
+    assert len(updated) == 0
+
+
+def test_scan_incremental_prunes_existing_bug_tagged_kernel_release_tracking():
+    """An unrefreshed bug tagged kernel-release-tracking-bug is pruned via probe."""
+    ubuntu_mock = MagicMock()
+    sp_mock = MagicMock()
+    ubuntu_mock.getSourcePackage.return_value = sp_mock
+    ubuntu_mock.getSeries.return_value = None
+    sp_mock.searchTasks.return_value = []
+
+    existing_bugs = {
+        "500": {
+            "id": 500,
+            "title": "Unrefreshed tracking bug",
+            "package": "linux-firmware",
+            "tasks": [
+                {
+                    "target": "linux-firmware (Ubuntu)",
+                    "status": "Confirmed",
+                    "is_complete": False,
+                }
+            ],
+        }
+    }
+
+    lp_mock = MagicMock()
+    tracking_bug = MagicMock()
+    tracking_bug.duplicate_of_link = None
+    tracking_bug.bug_tasks = [make_lp_task("linux-firmware (Ubuntu)", "Confirmed", False)]
+    tracking_bug.tags = ["kernel-release-tracking-bug"]
+    lp_mock.load.return_value = tracking_bug
+
+    updated = scan_incremental(
+        ubuntu=ubuntu_mock,
+        packages=["linux-firmware"],
+        series_list=[],
+        existing_bugs=existing_bugs,
+        since_utc=datetime.now(UTC),
+        lp=lp_mock,
+    )
+
+    assert "500" not in updated
+    assert len(updated) == 0
+    lp_mock.load.assert_called_once_with("/bugs/500")

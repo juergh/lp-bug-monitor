@@ -250,3 +250,34 @@ def test_extract_bug_record_keeps_bug_without_duplicate_link():
     record = extract_bug_record(mock_bug, matched_packages={"linux-firmware"})
     assert record is not None
     assert record.id == 2141223
+
+
+def test_extract_bug_record_none_if_kernel_release_tracking_bug():
+    mock_bug = MagicMock()
+    mock_bug.id = 2141224
+    mock_bug.title = "Noble release tracking bug"
+    mock_bug.duplicate_of_link = None
+    mock_bug.bug_tasks = [_make_open_ubuntu_task()]
+    mock_bug.tags = ["kernel-release-tracking-bug"]
+
+    record = extract_bug_record(mock_bug, matched_packages={"linux-firmware"})
+    assert record is None
+
+
+def test_extract_bug_record_keeps_bug_with_other_tags():
+    mock_bug = MagicMock()
+    mock_bug.id = 2141225
+    mock_bug.title = "Sound issue"
+    mock_bug.duplicate_of_link = None
+    mock_bug.bug_tasks = [_make_open_ubuntu_task()]
+    mock_bug.activity = []
+    mock_bug.date_created = None
+    mock_bug.date_last_updated = None
+    mock_bug.date_last_message = None
+    mock_bug.owner = None
+    mock_bug.tags = ["oem-priority", "kernel-daily-bug"]
+
+    record = extract_bug_record(mock_bug, matched_packages={"linux-firmware"})
+    assert record is not None
+    assert record.id == 2141225
+    assert record.tags == ["oem-priority", "kernel-daily-bug"]

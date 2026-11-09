@@ -84,6 +84,10 @@ CLOSED_STATUSES = {
     "Opinion",
 }
 
+IGNORED_TAGS = {
+    "kernel-release-tracking-bug",
+}
+
 
 @dataclass
 class TaskRecord:
@@ -392,12 +396,19 @@ def detect_activity_after_incomplete(lp_bug: Any, task_records: list[TaskRecord]
 def extract_bug_record(lp_bug: Any, matched_packages: set[str] | None = None) -> BugRecord | None:
     """Extract a BugRecord from a Launchpad bug object.
 
-    Returns None if the bug is closed (i.e. has zero non-closed tasks)
-    or if the bug has been marked as a duplicate of another bug.
+    Returns None if the bug is closed (i.e. has zero non-closed tasks),
+    if the bug has been marked as a duplicate of another bug, or if it
+    has an ignored tag.
     """
     dup_link = getattr(lp_bug, "duplicate_of_link", None)
     if dup_link:
         logger.debug("Bug #%s is a duplicate of %s; ignoring", lp_bug.id, str(dup_link).rsplit("/", 1)[-1])
+        return None
+
+    tags = [str(t) for t in getattr(lp_bug, "tags", [])]
+    ignored = [t for t in tags if t.lower() in IGNORED_TAGS]
+    if ignored:
+        logger.debug("Bug #%s has ignored tag (%s); ignoring", lp_bug.id, ", ".join(ignored))
         return None
 
     raw_tasks = [t for t in getattr(lp_bug, "bug_tasks", []) if is_ubuntu_task(t)]
@@ -417,8 +428,6 @@ def extract_bug_record(lp_bug: Any, matched_packages: set[str] | None = None) ->
             owner_name = lp_bug.owner.display_name or lp_bug.owner.name
     except Exception:
         pass
-
-    tags = list(getattr(lp_bug, "tags", []))
 
     task_pkgs = {pkg for t in task_records if (pkg := extract_package_name(t.target))}
     open_task_pkgs = {pkg for t in task_records if not t.is_complete and (pkg := extract_package_name(t.target))}
@@ -641,7 +650,8 @@ def prune_stale_bugs(lp: Any, bug_ids: list[int], packages: list[str]) -> list[s
     """Probe Launchpad for bugs that have gone stale in the state file.
 
     A bug is stale and should be removed from the active set if:
-    - it has been marked as a duplicate of another bug, or
+    - it has been marked as a duplicate of another bug,
+    - it has an ignored tag (e.g. 'kernel-release-tracking-bug'), or
     - it no longer has an open Ubuntu bug task targeting one of the monitored
       source packages (e.g. its task was retargeted to an unmonitored package).
 
@@ -659,6 +669,17 @@ def prune_stale_bugs(lp: Any, bug_ids: list[int], packages: list[str]) -> list[s
         dup_link = getattr(bug, "duplicate_of_link", None)
         if dup_link:
             logger.info("Bug #%d is marked as a duplicate of %s; removing from active bugs", b_id, dup_link)
+            stale_bugs.append(str(b_id))
+            continue
+
+        bug_tags = {str(t).lower() for t in getattr(bug, "tags", [])}
+        matching_ignored = bug_tags & IGNORED_TAGS
+        if matching_ignored:
+            logger.info(
+                "Bug #%d has ignored tag (%s); removing from active bugs",
+                b_id,
+                ", ".join(sorted(matching_ignored)),
+            )
             stale_bugs.append(str(b_id))
             continue
 
