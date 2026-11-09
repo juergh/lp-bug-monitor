@@ -1,0 +1,2784 @@
+{
+  "bugs": {
+    "1869383": {
+      "date_created": "2020-03-27T15:15:39.404863+00:00",
+      "date_last_updated": "2020-04-16T08:32:08.236916+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 1869383,
+      "last_activity_summary": "tags: focal kernel-release-tracking-bug kernel-sru-cycle-d2020.03.23-1 kernel-sru-derivative-of-1868347 by apw",
+      "last_activity_time": "2020-04-16T08:32:08.236916+00:00",
+      "owner": "Juerg Haefliger",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "focal",
+        "kernel-release-tracking-bug",
+        "kernel-sru-cycle-d2020.03.23-1",
+        "kernel-sru-derivative-of-1868347"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2020-03-27T15:20:27.957532+00:00",
+          "importance": "Medium",
+          "is_complete": false,
+          "series": "focal",
+          "status": "Confirmed",
+          "target": "linux-raspi (Ubuntu Focal)",
+          "target_display": "linux-raspi (Ubuntu Focal)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/focal/+source/linux-raspi/+bug/1869383"
+        }
+      ],
+      "title": "focal/linux-raspi: 5.4.0-1007.7 -proposed tracker",
+      "web_link": "https://bugs.launchpad.net/bugs/1869383"
+    },
+    "1876862": {
+      "date_created": "2020-05-05T07:04:06.576524+00:00",
+      "date_last_updated": "2020-08-28T01:37:35.914525+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 1876862,
+      "last_activity_summary": "bug updated by knitzsche",
+      "last_activity_time": "2020-08-28T01:37:35.914525+00:00",
+      "owner": "Chris Halse Rogers",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": "2020-05-14T06:27:10.295206+00:00",
+          "date_created": "2020-05-05T07:04:06.576524+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": null,
+          "status": "Fix Released",
+          "target": "linux-raspi (Ubuntu)",
+          "target_display": "linux-raspi (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/1876862"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2020-05-13T15:40:18.834712+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "bionic",
+          "status": "Confirmed",
+          "target": "linux-raspi (Ubuntu Bionic)",
+          "target_display": "linux-raspi (Ubuntu Bionic)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/bionic/+source/linux-raspi/+bug/1876862"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2020-06-10T10:39:30.739027+00:00",
+          "date_created": "2020-05-05T07:21:56.995305+00:00",
+          "importance": "Medium",
+          "is_complete": true,
+          "series": "focal",
+          "status": "Fix Released",
+          "target": "linux-raspi (Ubuntu Focal)",
+          "target_display": "linux-raspi (Ubuntu Focal)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/focal/+source/linux-raspi/+bug/1876862"
+        }
+      ],
+      "title": "Missing v3d driver disables 3D support on RPi4",
+      "web_link": "https://bugs.launchpad.net/bugs/1876862"
+    },
+    "1885730": {
+      "date_created": "2020-06-30T14:21:22.254945+00:00",
+      "date_last_updated": "2025-04-18T12:33:37.489353+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 1885730,
+      "last_activity_summary": "tags: id-5efdfa465220b783b19272c2 kernel-daily-bug by juergh",
+      "last_activity_time": "2025-04-18T12:33:37.489353+00:00",
+      "owner": "Julian Andres Klode",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "id-5efdfa465220b783b19272c2",
+        "kernel-daily-bug"
+      ],
+      "tasks": [
+        {
+          "assignee": "Colin Ian King",
+          "date_closed": "2020-09-23T13:33:29.270152+00:00",
+          "date_created": "2020-06-30T14:21:44.579524+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": null,
+          "status": "Fix Released",
+          "target": "linux (Ubuntu)",
+          "target_display": "linux (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1885730"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2020-08-20T13:54:56.152328+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "Confirmed",
+          "target": "linux-oem-5.6 (Ubuntu)",
+          "target_display": "linux-oem-5.6 (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-oem-5.6/+bug/1885730"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2020-10-08T10:59:46.171038+00:00",
+          "date_created": "2020-10-05T13:38:29.114484+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": null,
+          "status": "Fix Released",
+          "target": "linux-raspi (Ubuntu)",
+          "target_display": "linux-raspi (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/1885730"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2020-09-28T20:30:57.137402+00:00",
+          "date_created": "2020-08-20T13:54:47.979121+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": null,
+          "status": "Fix Released",
+          "target": "linux-riscv (Ubuntu)",
+          "target_display": "linux-riscv (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-riscv/+bug/1885730"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2020-08-03T15:26:50.050118+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "focal",
+          "status": "Triaged",
+          "target": "linux (Ubuntu Focal)",
+          "target_display": "linux (Ubuntu Focal)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/focal/+source/linux/+bug/1885730"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2020-09-01T10:46:04.480474+00:00",
+          "date_created": "2020-08-20T13:54:56.152328+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": "focal",
+          "status": "Won't Fix",
+          "target": "linux-oem-5.6 (Ubuntu Focal)",
+          "target_display": "linux-oem-5.6 (Ubuntu Focal)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/focal/+source/linux-oem-5.6/+bug/1885730"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2020-10-05T13:38:29.114484+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "focal",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Focal)",
+          "target_display": "linux-raspi (Ubuntu Focal)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/focal/+source/linux-raspi/+bug/1885730"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2020-08-20T13:54:47.979121+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "focal",
+          "status": "Confirmed",
+          "target": "linux-riscv (Ubuntu Focal)",
+          "target_display": "linux-riscv (Ubuntu Focal)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/focal/+source/linux-riscv/+bug/1885730"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2020-08-03T15:27:07.182400+00:00",
+          "date_created": "2020-08-03T15:26:50.050118+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": "focal",
+          "status": "Fix Released",
+          "target": "systemd (Ubuntu Focal)",
+          "target_display": "systemd (Ubuntu Focal)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/focal/+source/systemd/+bug/1885730"
+        },
+        {
+          "assignee": "Colin Ian King",
+          "date_closed": "2020-09-23T13:33:29.270152+00:00",
+          "date_created": "2020-07-02T17:10:44.769756+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": "groovy",
+          "status": "Fix Released",
+          "target": "linux (Ubuntu Groovy)",
+          "target_display": "linux (Ubuntu Groovy)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/groovy/+source/linux/+bug/1885730"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2024-07-26T16:05:33.071476+00:00",
+          "date_created": "2020-08-20T13:54:56.152328+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": "groovy",
+          "status": "Won't Fix",
+          "target": "linux-oem-5.6 (Ubuntu Groovy)",
+          "target_display": "linux-oem-5.6 (Ubuntu Groovy)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/groovy/+source/linux-oem-5.6/+bug/1885730"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2020-10-08T10:59:46.171038+00:00",
+          "date_created": "2020-10-05T13:38:29.114484+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": "groovy",
+          "status": "Fix Released",
+          "target": "linux-raspi (Ubuntu Groovy)",
+          "target_display": "linux-raspi (Ubuntu Groovy)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/groovy/+source/linux-raspi/+bug/1885730"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2020-09-28T20:30:57.137402+00:00",
+          "date_created": "2020-08-20T13:54:47.979121+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": "groovy",
+          "status": "Fix Released",
+          "target": "linux-riscv (Ubuntu Groovy)",
+          "target_display": "linux-riscv (Ubuntu Groovy)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/groovy/+source/linux-riscv/+bug/1885730"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2020-07-17T09:56:18.048937+00:00",
+          "date_created": "2020-07-02T17:10:44.769756+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": "groovy",
+          "status": "Invalid",
+          "target": "systemd (Ubuntu Groovy)",
+          "target_display": "systemd (Ubuntu Groovy)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/groovy/+source/systemd/+bug/1885730"
+        }
+      ],
+      "title": "Please switch default, hwe, oem kernel flavours governor to CONFIG_CPU_FREQ_DEFAULT_GOV_ONDEMAND=y , such that advanced userspace utilities such as game-mode can be later used to rev-up to to performance, or rev-down to powersave.",
+      "web_link": "https://bugs.launchpad.net/bugs/1885730"
+    },
+    "1900663": {
+      "date_created": "2020-10-20T06:45:00.495524+00:00",
+      "date_last_updated": "2025-04-18T18:05:07.398548+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 1900663,
+      "last_activity_summary": "tags: kernel-daily-bug by juergh",
+      "last_activity_time": "2025-04-18T18:05:07.398548+00:00",
+      "owner": "Juerg Haefliger",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "kernel-daily-bug"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": "2021-03-18T17:16:13.681398+00:00",
+          "date_created": "2020-10-20T06:45:00.495524+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": null,
+          "status": "Fix Released",
+          "target": "linux-raspi (Ubuntu)",
+          "target_display": "linux-raspi (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/1900663"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2020-10-20T06:45:30.080152+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "focal",
+          "status": "Confirmed",
+          "target": "linux-raspi (Ubuntu Focal)",
+          "target_display": "linux-raspi (Ubuntu Focal)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/focal/+source/linux-raspi/+bug/1900663"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2021-07-28T23:14:36.887186+00:00",
+          "date_created": "2020-10-20T06:45:30.080152+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": "groovy",
+          "status": "Won't Fix",
+          "target": "linux-raspi (Ubuntu Groovy)",
+          "target_display": "linux-raspi (Ubuntu Groovy)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/groovy/+source/linux-raspi/+bug/1900663"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2021-03-18T17:16:13.681398+00:00",
+          "date_created": "2021-01-29T14:37:21.445948+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": "hirsute",
+          "status": "Fix Released",
+          "target": "linux-raspi (Ubuntu Hirsute)",
+          "target_display": "linux-raspi (Ubuntu Hirsute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/hirsute/+source/linux-raspi/+bug/1900663"
+        }
+      ],
+      "title": "Re-enable memory cgroups",
+      "web_link": "https://bugs.launchpad.net/bugs/1900663"
+    },
+    "2060300": {
+      "date_created": "2024-04-05T13:27:35.647884+00:00",
+      "date_last_updated": "2026-07-10T16:33:53.097318+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2060300,
+      "last_activity_summary": "linux-raspi (Ubuntu Questing): status: Won't Fix by oreiche",
+      "last_activity_time": "2026-07-10T16:33:53.097318+00:00",
+      "owner": "Dave Jones",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "kern-10444",
+        "kernel-daily-bug"
+      ],
+      "tasks": [
+        {
+          "assignee": "Juerg Haefliger",
+          "date_closed": null,
+          "date_created": "2024-04-05T13:27:35.647884+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "linux-raspi (Ubuntu)",
+          "target_display": "linux-raspi (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2060300"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2026-07-10T16:33:52.199441+00:00",
+          "date_created": "2026-03-24T07:04:48.310372+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": "questing",
+          "status": "Won't Fix",
+          "target": "linux-raspi (Ubuntu Questing)",
+          "target_display": "linux-raspi (Ubuntu Questing)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/questing/+source/linux-raspi/+bug/2060300"
+        },
+        {
+          "assignee": "Juerg Haefliger",
+          "date_closed": null,
+          "date_created": "2026-03-24T07:04:48.310372+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "resolute",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Resolute)",
+          "target_display": "linux-raspi (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-raspi/+bug/2060300"
+        }
+      ],
+      "title": "KMS overlay causes OOM oops on 3A+",
+      "web_link": "https://bugs.launchpad.net/bugs/2060300"
+    },
+    "2060677": {
+      "date_created": "2024-04-09T12:28:43.191802+00:00",
+      "date_last_updated": "2025-04-18T07:54:46.839934+00:00",
+      "has_activity_after_incomplete": true,
+      "id": 2060677,
+      "last_activity_summary": "bug updated by smaioli",
+      "last_activity_time": "2025-07-28T20:53:23.547801+00:00",
+      "owner": "Dave Jones",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "kern-10457",
+        "kernel-daily-bug"
+      ],
+      "tasks": [
+        {
+          "assignee": "Jose Ogando Justo",
+          "date_closed": null,
+          "date_created": "2024-04-09T12:28:43.191802+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "Incomplete",
+          "target": "linux-raspi (Ubuntu)",
+          "target_display": "linux-raspi (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2060677"
+        }
+      ],
+      "title": "Consistent (zfs?) errors at shutdown",
+      "web_link": "https://bugs.launchpad.net/bugs/2060677"
+    },
+    "2063365": {
+      "date_created": "2024-04-24T18:56:25.890986+00:00",
+      "date_last_updated": "2025-04-18T15:13:05.766633+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2063365,
+      "last_activity_summary": "bug task added: linux-raspi (Ubuntu Stonking) by oreiche",
+      "last_activity_time": "2026-05-14T17:28:12.911157+00:00",
+      "owner": "Paul Larson",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "iso-testing",
+        "kern-10760",
+        "kernel-daily-bug"
+      ],
+      "tasks": [
+        {
+          "assignee": "Pragyansh Chaturvedi",
+          "date_closed": null,
+          "date_created": "2024-04-24T18:56:25.890986+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "Confirmed",
+          "target": "linux-raspi (Ubuntu)",
+          "target_display": "linux-raspi (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2063365"
+        },
+        {
+          "assignee": "Pragyansh Chaturvedi",
+          "date_closed": null,
+          "date_created": "2025-10-24T10:57:07.099625+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "resolute",
+          "status": "Confirmed",
+          "target": "linux-raspi (Ubuntu Resolute)",
+          "target_display": "linux-raspi (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-raspi/+bug/2063365"
+        },
+        {
+          "assignee": "Pragyansh Chaturvedi",
+          "date_closed": null,
+          "date_created": "2026-05-14T17:28:12.911157+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "stonking",
+          "status": "Confirmed",
+          "target": "linux-raspi (Ubuntu Stonking)",
+          "target_display": "linux-raspi (Ubuntu Stonking)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/stonking/+source/linux-raspi/+bug/2063365"
+        }
+      ],
+      "title": "brcmfmac: brcmf_set_channel: set chanspec 0x100c fail, reason -52",
+      "web_link": "https://bugs.launchpad.net/bugs/2063365"
+    },
+    "2107482": {
+      "date_created": "2025-04-16T15:36:34.079447+00:00",
+      "date_last_updated": "2026-07-10T16:24:03.412810+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2107482,
+      "last_activity_summary": "linux-raspi (Ubuntu Questing): status: Won't Fix by oreiche",
+      "last_activity_time": "2026-07-10T16:24:03.412810+00:00",
+      "owner": "Juerg Haefliger",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "kern-13040"
+      ],
+      "tasks": [
+        {
+          "assignee": "Juerg Haefliger",
+          "date_closed": null,
+          "date_created": "2025-04-16T15:36:34.079447+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "linux-raspi (Ubuntu)",
+          "target_display": "linux-raspi (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2107482"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2025-04-16T15:36:49.785167+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "focal",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Focal)",
+          "target_display": "linux-raspi (Ubuntu Focal)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/focal/+source/linux-raspi/+bug/2107482"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2025-04-16T15:36:49.785167+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "jammy",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Jammy)",
+          "target_display": "linux-raspi (Ubuntu Jammy)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/jammy/+source/linux-raspi/+bug/2107482"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2025-04-16T15:36:49.785167+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "noble",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Noble)",
+          "target_display": "linux-raspi (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-raspi/+bug/2107482"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2025-07-10T20:27:29.358231+00:00",
+          "date_created": "2025-04-16T15:36:49.785167+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": "oracular",
+          "status": "Won't Fix",
+          "target": "linux-raspi (Ubuntu Oracular)",
+          "target_display": "linux-raspi (Ubuntu Oracular)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/oracular/+source/linux-raspi/+bug/2107482"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2026-01-19T11:38:29.327699+00:00",
+          "date_created": "2025-04-16T15:36:49.785167+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": "plucky",
+          "status": "Won't Fix",
+          "target": "linux-raspi (Ubuntu Plucky)",
+          "target_display": "linux-raspi (Ubuntu Plucky)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/plucky/+source/linux-raspi/+bug/2107482"
+        },
+        {
+          "assignee": "Juerg Haefliger",
+          "date_closed": "2026-07-10T16:24:02.163930+00:00",
+          "date_created": "2025-06-11T06:19:58.781225+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": "questing",
+          "status": "Won't Fix",
+          "target": "linux-raspi (Ubuntu Questing)",
+          "target_display": "linux-raspi (Ubuntu Questing)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/questing/+source/linux-raspi/+bug/2107482"
+        }
+      ],
+      "title": "Missing PCI drivers",
+      "web_link": "https://bugs.launchpad.net/bugs/2107482"
+    },
+    "2107903": {
+      "date_created": "2025-04-21T20:49:23.503626+00:00",
+      "date_last_updated": "2025-10-29T10:24:09.047277+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2107903,
+      "last_activity_summary": "linux-raspi (Ubuntu): status: Triaged by juergh",
+      "last_activity_time": "2025-10-29T10:24:09.047277+00:00",
+      "owner": "Alex Radocea",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "apport-bug",
+        "arm64",
+        "arm64-image",
+        "kern-13058",
+        "plucky",
+        "raspi-image",
+        "staging"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2025-04-21T20:49:23.503626+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "Triaged",
+          "target": "linux-raspi (Ubuntu)",
+          "target_display": "linux-raspi (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2107903"
+        }
+      ],
+      "title": "mt7915e driver does not work on 6.14 and panics kernel shortly after boot",
+      "web_link": "https://bugs.launchpad.net/bugs/2107903"
+    },
+    "2109529": {
+      "date_created": "2025-04-28T19:07:19.350643+00:00",
+      "date_last_updated": "2025-06-11T06:01:43.186857+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2109529,
+      "last_activity_summary": "linux-raspi (Ubuntu): status: Deferred by juergh",
+      "last_activity_time": "2025-06-11T06:01:43.186857+00:00",
+      "owner": "Bugra Aydogar",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "apport-collected",
+        "kern-13110",
+        "noble"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2025-04-28T19:07:19.350643+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "Deferred",
+          "target": "linux-raspi (Ubuntu)",
+          "target_display": "linux-raspi (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2109529"
+        }
+      ],
+      "title": "MCP251xFD Driver Failure on Ubuntu with CAN Interface",
+      "web_link": "https://bugs.launchpad.net/bugs/2109529"
+    },
+    "2110845": {
+      "date_created": "2025-05-15T08:10:02.192734+00:00",
+      "date_last_updated": "2025-09-03T12:51:13.666325+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2110845,
+      "last_activity_summary": "description: This bug will contain status and test results related to a kernel source (or snap) as stated in the title.\n\nFor an explanation of the tasks and the associated workflow see:\n  https://wiki.ubuntu.com/Kernel/kernel-sru-workflow\n\n-- swm properties --\nbuilt:\n  from: 396a687399593ce4\n  route-entry: 1\ncomments:\n  abi-testing: 2\ndelta:\n  promote-to-proposed: [main, meta]\n  promote-to-updates: [main, meta]\nflag:\n  autoprep-requested: true\n  boot-testing-requested: true\n  bugs-spammed: true\n  proposed-announcement-sent: true\n  proposed-testing-requested: true\n  stream-from-cycle: true\nflavours:\n  linux-image-raspi: [arm64, armhf]\n  linux-image-raspi-hwe-18.04: [arm64, armhf]\n  linux-image-raspi-hwe-18.04-edge: [arm64, armhf]\n  linux-image-raspi2: [arm64, armhf]\n  linux-image-raspi2-hwe-18.04: [arm64, armhf]\n  linux-image-raspi2-hwe-18.04-edge: [arm64, armhf]\nissue: KSRU-17107\nkernel-stable-master-bug: 2110876\npackages:\n  main: linux-raspi\n  meta: linux-meta-raspi\nphase: Complete\nphase-changed: Wednesday, 16. July 2025 14:03 UTC\nreason: {}\nsynthetic:\n  :auto-prepare: Incomplete\n  :promote-to-as-proposed: Invalid\n  :promote-to-build-public: Invalid\ntesting:\n  verification-bugs: [2110845]\ntrackers:\n  bionic/linux-raspi-5.4: bug 2110844\n  focal/linux-denver: bug 2110841\n  focal/linux-raspi/pi-kernel: bug 2110842\nvariant: debs\nversions:\n  main: 5.4.0-1130.143\n  meta: 5.4.0.1130.161\nworkflow:\n  :auto-prepare: autoprep-failed\n~~:\n  announce:\n    swm-transition-crankable: 2025-06-02 14:02:41.254522\n  clamps:\n    new-review: 396a687399593ce4\n    promote-to-proposed: 396a687399593ce4\n    self: 5.4.0-1130.143\n    sru-review: 396a687399593ce4\n  tracker:\n    last-message: '2025-07-16 15:15:35.012231+00:00' by ubuntu-kernel-bot",
+      "last_activity_time": "2025-09-03T12:51:13.666325+00:00",
+      "owner": "Stefan Bader",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "boot-testing-passed",
+        "focal",
+        "kernel-jira-issue-ksru-17107",
+        "kernel-release-tracking-bug",
+        "kernel-release-tracking-bug-live",
+        "kernel-sru-cycle-2025.05.19-1",
+        "kernel-sru-derivative-of-2110876"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2025-05-15T08:29:40.745688+00:00",
+          "importance": "Medium",
+          "is_complete": false,
+          "series": "focal",
+          "status": "Confirmed",
+          "target": "linux-raspi (Ubuntu Focal)",
+          "target_display": "linux-raspi (Ubuntu Focal)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/focal/+source/linux-raspi/+bug/2110845"
+        }
+      ],
+      "title": "focal/linux-raspi: 5.4.0-1130.143 -proposed tracker",
+      "web_link": "https://bugs.launchpad.net/bugs/2110845"
+    },
+    "2114416": {
+      "date_created": "2025-06-13T14:49:33.873528+00:00",
+      "date_last_updated": "2025-09-03T13:36:12.249512+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2114416,
+      "last_activity_summary": "description: This bug will contain status and test results related to a kernel source (or snap) as stated in the title.\n\nFor an explanation of the tasks and the associated workflow see:\n  https://wiki.ubuntu.com/Kernel/kernel-sru-workflow\n\n-- swm properties --\nbuilt:\n  from: 9a4f833607c48980\n  route-entry: 1\ncomments:\n  abi-testing: 1\n  kernel-signoff: 2\ndelta:\n  promote-to-proposed: [main, meta]\n  promote-to-updates: [main, meta]\nflag:\n  autoprep-requested: true\n  boot-testing-requested: true\n  bugs-spammed: true\n  proposed-announcement-sent: true\n  proposed-testing-requested: true\n  stream-from-cycle: true\nflavours:\n  linux-image-raspi: [arm64, armhf]\n  linux-image-raspi-5.4: [arm64, armhf]\n  linux-image-raspi-hwe-18.04: [arm64, armhf]\n  linux-image-raspi-hwe-18.04-edge: [arm64, armhf]\n  linux-image-raspi2: [arm64, armhf]\n  linux-image-raspi2-hwe-18.04: [arm64, armhf]\n  linux-image-raspi2-hwe-18.04-edge: [arm64, armhf]\nissue: KSRU-17296\nkernel-stable-master-bug: 2114448\npackages:\n  main: linux-raspi\n  meta: linux-meta-raspi\nphase: Complete\nphase-changed: Monday, 28. July 2025 23:06 UTC\nreason: {}\nsynthetic:\n  :auto-prepare: Fix Released\n  :promote-to-as-proposed: Invalid\n  :promote-to-build-public: Invalid\ntesting:\n  verification-bugs: [2114416]\ntrackers:\n  bionic/linux-raspi-5.4: bug 2114415\n  focal/linux-denver: bug 2114412\n  focal/linux-raspi/pi-kernel: bug 2114413\nvariant: debs\nversions:\n  main: 5.4.0-1131.144\n  meta: 5.4.0.1131.162\nworkflow:\n  :auto-prepare: source-complete\n~~:\n  announce:\n    swm-transition-crankable: 2025-06-18 07:13:17.130418\n  clamps:\n    new-review: 9a4f833607c48980\n    promote-to-proposed: 9a4f833607c48980\n    self: 5.4.0-1131.144\n    sru-review: 9a4f833607c48980\n  tracker:\n    last-message: '2025-07-29 00:19:17.587536+00:00' by ubuntu-kernel-bot",
+      "last_activity_time": "2025-09-03T13:36:12.249512+00:00",
+      "owner": "Manuel Diewald",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "focal",
+        "kernel-jira-issue-ksru-17296",
+        "kernel-release-tracking-bug",
+        "kernel-release-tracking-bug-live",
+        "kernel-sru-cycle-s2025.05.19-1",
+        "kernel-sru-derivative-of-2114448"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2025-06-13T15:34:49.107259+00:00",
+          "importance": "Medium",
+          "is_complete": false,
+          "series": "focal",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Focal)",
+          "target_display": "linux-raspi (Ubuntu Focal)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/focal/+source/linux-raspi/+bug/2114416"
+        }
+      ],
+      "title": "focal/linux-raspi: 5.4.0-1131.144 -proposed tracker",
+      "web_link": "https://bugs.launchpad.net/bugs/2114416"
+    },
+    "2116475": {
+      "date_created": "2025-07-10T16:38:37.166117+00:00",
+      "date_last_updated": "2025-09-03T23:06:25.044781+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2116475,
+      "last_activity_summary": "description: This bug will contain status and test results related to a kernel source (or snap) as stated in the title.\n\nFor an explanation of the tasks and the associated workflow see:\n  https://wiki.ubuntu.com/Kernel/kernel-sru-workflow\n\n-- swm properties --\nbuilt:\n  from: 4e59a8c3cfa805d4\n  route-entry: 1\ncomments:\n  abi-testing: 1\n  kernel-signoff: 2\ndelta:\n  promote-to-proposed: [main, meta]\n  promote-to-updates: [main, meta]\nflag:\n  autoprep-requested: true\n  boot-testing-requested: true\n  bugs-spammed: true\n  proposed-announcement-sent: true\n  proposed-testing-requested: true\n  stream-from-cycle: true\nflavours:\n  linux-image-raspi: [arm64, armhf]\n  linux-image-raspi-5.4: [arm64, armhf]\n  linux-image-raspi-hwe-18.04: [arm64, armhf]\n  linux-image-raspi-hwe-18.04-edge: [arm64, armhf]\n  linux-image-raspi2: [arm64, armhf]\n  linux-image-raspi2-hwe-18.04: [arm64, armhf]\n  linux-image-raspi2-hwe-18.04-edge: [arm64, armhf]\nissue: KSRU-17705\nkernel-stable-master-bug: 2116506\npackages:\n  main: linux-raspi\n  meta: linux-meta-raspi\nphase: Complete\nphase-changed: Monday, 18. August 2025 22:43 UTC\nreason: {}\nsynthetic:\n  :auto-prepare: Fix Released\n  :promote-to-as-proposed: Invalid\n  :promote-to-build-public: Invalid\ntesting:\n  verification-bugs: [2116475]\ntrackers:\n  bionic/linux-raspi-5.4: bug 2116474\n  focal/linux-denver: bug 2116471\n  focal/linux-raspi/pi-kernel: bug 2116472\nvariant: debs\nversions:\n  main: 5.4.0-1132.145\n  meta: 5.4.0.1132.163\nworkflow:\n  :auto-prepare: source-complete\n~~:\n  announce:\n    swm-transition-crankable: 2025-07-16 14:38:49.730443\n  clamps:\n    new-review: 4e59a8c3cfa805d4\n    promote-to-proposed: 4e59a8c3cfa805d4\n    self: 5.4.0-1132.145\n    sru-review: 4e59a8c3cfa805d4\n  tracker:\n    last-message: '2025-08-19 00:15:01.401507+00:00' by ubuntu-kernel-bot",
+      "last_activity_time": "2025-09-03T23:06:25.044781+00:00",
+      "owner": "Manuel Diewald",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "focal",
+        "kernel-jira-issue-ksru-17705",
+        "kernel-release-tracking-bug",
+        "kernel-release-tracking-bug-live",
+        "kernel-sru-cycle-s2025.06.16-1",
+        "kernel-sru-derivative-of-2116506"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2025-07-10T18:09:31.608144+00:00",
+          "importance": "Medium",
+          "is_complete": false,
+          "series": "focal",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Focal)",
+          "target_display": "linux-raspi (Ubuntu Focal)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/focal/+source/linux-raspi/+bug/2116475"
+        }
+      ],
+      "title": "focal/linux-raspi: 5.4.0-1132.145 -proposed tracker",
+      "web_link": "https://bugs.launchpad.net/bugs/2116475"
+    },
+    "2116543": {
+      "date_created": "2025-07-10T17:44:25.721418+00:00",
+      "date_last_updated": "2025-10-07T08:30:35.669863+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2116543,
+      "last_activity_summary": "cve linked: 2025-38415 by janitor",
+      "last_activity_time": "2025-10-07T08:30:35.669863+00:00",
+      "owner": "Lars Lorentz Ludvigsen",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "kern-13705",
+        "kernel-daily-bug",
+        "kernel-spammed-noble-linux-raspi-v2",
+        "kernel-spammed-plucky-linux-raspi-v2",
+        "patch",
+        "verification-done-noble-linux-raspi",
+        "verification-needed-plucky-linux-raspi"
+      ],
+      "tasks": [
+        {
+          "assignee": "Juerg Haefliger",
+          "date_closed": "2025-07-30T14:29:15.770756+00:00",
+          "date_created": "2025-07-10T17:44:25.721418+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": null,
+          "status": "Fix Released",
+          "target": "linux-raspi (Ubuntu)",
+          "target_display": "linux-raspi (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2116543"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2025-07-30T14:29:07.041679+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "noble",
+          "status": "Fix Committed",
+          "target": "linux-raspi (Ubuntu Noble)",
+          "target_display": "linux-raspi (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-raspi/+bug/2116543"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2025-10-07T08:30:10.885908+00:00",
+          "date_created": "2025-07-30T14:29:07.041679+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": "plucky",
+          "status": "Fix Released",
+          "target": "linux-raspi (Ubuntu Plucky)",
+          "target_display": "linux-raspi (Ubuntu Plucky)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/plucky/+source/linux-raspi/+bug/2116543"
+        }
+      ],
+      "title": "Arducam ov9281 crashes on Raspberry Pi 4/5",
+      "web_link": "https://bugs.launchpad.net/bugs/2116543"
+    },
+    "2119787": {
+      "date_created": "2025-08-07T12:03:19.992528+00:00",
+      "date_last_updated": "2025-10-25T00:40:28.100325+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2119787,
+      "last_activity_summary": "description: This bug will contain status and test results related to a kernel source (or snap) as stated in the title.\n\nFor an explanation of the tasks and the associated workflow see:\n  https://wiki.ubuntu.com/Kernel/kernel-sru-workflow\n\n-- swm properties --\nbuilt:\n  from: fbfaa69cb7e232a3\n  route-entry: 1\ncomments:\n  abi-testing: 1\ndelta:\n  promote-to-proposed: [main, meta]\n  promote-to-updates: [main, meta]\nflag:\n  autoprep-requested: true\n  boot-testing-requested: true\n  bugs-spammed: true\n  proposed-announcement-sent: true\n  proposed-testing-requested: true\n  stream-from-cycle: true\nflavours:\n  linux-image-raspi: [arm64, armhf]\n  linux-image-raspi-5.4: [arm64, armhf]\n  linux-image-raspi-hwe-18.04: [arm64, armhf]\n  linux-image-raspi-hwe-18.04-edge: [arm64, armhf]\n  linux-image-raspi2: [arm64, armhf]\n  linux-image-raspi2-hwe-18.04: [arm64, armhf]\n  linux-image-raspi2-hwe-18.04-edge: [arm64, armhf]\nissue: KSRU-18129\nkernel-stable-master-bug: 2119818\npackages:\n  main: linux-raspi\n  meta: linux-meta-raspi\nphase: Complete\nphase-changed: Tuesday, 16. September 2025 20:48 UTC\nreason: {}\nsynthetic:\n  :auto-prepare: Fix Released\n  :promote-to-as-proposed: Invalid\n  :promote-to-build-public: Invalid\ntesting:\n  verification-bugs: [2119787]\ntrackers:\n  bionic/linux-raspi-5.4: bug 2119786\n  focal/linux-denver: bug 2119783\n  focal/linux-raspi/pi-kernel: bug 2119784\nvariant: debs\nversions:\n  main: 5.4.0-1133.146\n  meta: 5.4.0.1133.164\nworkflow:\n  :auto-prepare: source-complete\n~~:\n  announce:\n    swm-transition-crankable: 2025-08-18 19:19:03.506103\n  clamps:\n    new-review: fbfaa69cb7e232a3\n    promote-to-proposed: fbfaa69cb7e232a3\n    self: 5.4.0-1133.146\n    sru-review: fbfaa69cb7e232a3\n  tracker:\n    last-message: '2025-09-16 21:51:59.922086+00:00' by ubuntu-kernel-bot",
+      "last_activity_time": "2025-10-25T00:40:28.100325+00:00",
+      "owner": "Manuel Diewald",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "focal",
+        "kernel-jira-issue-ksru-18129",
+        "kernel-release-tracking-bug",
+        "kernel-release-tracking-bug-live",
+        "kernel-sru-cycle-s2025.07.14-1",
+        "kernel-sru-derivative-of-2119818"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2025-08-07T12:30:21.976109+00:00",
+          "importance": "Medium",
+          "is_complete": false,
+          "series": "focal",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Focal)",
+          "target_display": "linux-raspi (Ubuntu Focal)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/focal/+source/linux-raspi/+bug/2119787"
+        }
+      ],
+      "title": "focal/linux-raspi: 5.4.0-1133.146 -proposed tracker",
+      "web_link": "https://bugs.launchpad.net/bugs/2119787"
+    },
+    "2120029": {
+      "date_created": "2025-08-08T03:32:13.631561+00:00",
+      "date_last_updated": "2025-10-07T05:16:59.236809+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2120029,
+      "last_activity_summary": "description: This bug will contain status and test results related to a kernel source (or snap) as stated in the title.\n\nFor an explanation of the tasks and the associated workflow see:\n\u00a0\u00a0https://wiki.ubuntu.com/Kernel/kernel-sru-workflow\n\n-- swm properties --\nbuilt:\n  from: 7cb9b95d0c9a9895\n  route-entry: 1\ncomments:\n  abi-testing: 1\ndelta:\n  promote-to-proposed: []\n  promote-to-security: [main, meta]\n  promote-to-updates: [main, meta]\nflag:\n  autoprep-requested: true\n  boot-testing-requested: true\n  bugs-spammed: true\n  proposed-announcement-sent: true\n  proposed-testing-requested: true\n  stream-from-cycle: true\nflavours:\n  linux-image-raspi: [arm64]\n  linux-image-raspi-6.8: [arm64]\nissue: KSRU-18845\nkernel-stable-master-bug: 2121671\npackages:\n  main: linux-raspi\n  meta: linux-meta-raspi\nphase: Complete\nphase-changed: Wednesday, 01. October 2025 13:01 UTC\nreason: {}\nsynthetic:\n  :auto-prepare: Incomplete\n  :promote-to-as-proposed: Fix Released\n  :promote-to-build-public: Invalid\ntest-observer:\n  proposed: 239567\ntesting:\n  verification-bugs: [2120029, 2116543]\ntrackers:\n  noble/linux-raspi-realtime: bug 2120028\n  noble/linux-raspi/pi-kernel: bug 2120027\nvariant: debs\nversions:\n  main: 6.8.0-1039.43\n  meta: 6.8.0-1039.43\nworkflow:\n  :auto-prepare: autoprep-failed\n~~:\n  announce:\n    swm-transition-crankable: 2025-09-02 08:42:59.231617\n  clamps:\n    new-review: 7cb9b95d0c9a9895\n    promote-to-proposed: 7cb9b95d0c9a9895\n    self: 6.8.0-1039.43\n    sru-review: 7cb9b95d0c9a9895\n  tracker:\n    last-message: '2025-10-01 14:06:48.586191+00:00' by ubuntu-kernel-bot",
+      "last_activity_time": "2025-10-07T05:16:59.236809+00:00",
+      "owner": "Mehmet Basaran",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "boot-testing-passed",
+        "kernel-jira-issue-ksru-18845",
+        "kernel-release-tracking-bug",
+        "kernel-release-tracking-bug-live",
+        "kernel-sru-cycle-2025.08.11-7",
+        "kernel-sru-derivative-of-2120039",
+        "noble",
+        "regression-testing-passed"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2025-08-08T03:55:30.191633+00:00",
+          "importance": "Medium",
+          "is_complete": false,
+          "series": "noble",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Noble)",
+          "target_display": "linux-raspi (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-raspi/+bug/2120029"
+        }
+      ],
+      "title": "noble/linux-raspi: 6.8.0-1039.43 -proposed tracker",
+      "web_link": "https://bugs.launchpad.net/bugs/2120029"
+    },
+    "2121890": {
+      "date_created": "2025-09-02T19:35:52.846883+00:00",
+      "date_last_updated": "2025-10-27T10:16:48.210060+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2121890,
+      "last_activity_summary": "bug updated by juergh",
+      "last_activity_time": "2025-10-27T10:16:52.061797+00:00",
+      "owner": "Arvin Torshizi",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "apport-bug",
+        "arm64",
+        "arm64-image",
+        "jammy",
+        "kern-14341",
+        "kernel-daily-bug",
+        "raspi-image",
+        "staging"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2025-09-02T19:35:52.846883+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "linux-raspi (Ubuntu)",
+          "target_display": "linux-raspi (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2121890"
+        }
+      ],
+      "title": "latest lts kernel on aarch64 introduces filesystem corruption on abrupt shutdowns",
+      "web_link": "https://bugs.launchpad.net/bugs/2121890"
+    },
+    "2124124": {
+      "date_created": "2025-09-16T13:32:58.997398+00:00",
+      "date_last_updated": "2025-12-16T10:01:42.105516+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2124124,
+      "last_activity_summary": "kernel-sru-workflow: status: Fix Released by ubuntu-kernel-bot",
+      "last_activity_time": "2025-12-16T10:01:42.105516+00:00",
+      "owner": "Manuel Diewald",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "focal",
+        "kernel-jira-issue-ksru-18716",
+        "kernel-release-tracking-bug",
+        "kernel-release-tracking-bug-live",
+        "kernel-sru-cycle-s2025.08.11-1",
+        "kernel-sru-derivative-of-2124155"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2025-09-16T13:55:58.176680+00:00",
+          "importance": "Medium",
+          "is_complete": false,
+          "series": "focal",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Focal)",
+          "target_display": "linux-raspi (Ubuntu Focal)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/focal/+source/linux-raspi/+bug/2124124"
+        }
+      ],
+      "title": "focal/linux-raspi: 5.4.0-1134.147 -proposed tracker",
+      "web_link": "https://bugs.launchpad.net/bugs/2124124"
+    },
+    "2127298": {
+      "date_created": "2025-10-10T10:33:43.899057+00:00",
+      "date_last_updated": "2025-12-16T09:56:40.682043+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2127298,
+      "last_activity_summary": "description: This bug will contain status and test results related to a kernel source (or snap) as stated in the title.\n\nFor an explanation of the tasks and the associated workflow see:\n  https://wiki.ubuntu.com/Kernel/kernel-sru-workflow\n\n-- swm properties --\nbuilt:\n  from: ac086563dcb12c2d\n  route-entry: 1\ncomments:\n  abi-testing: 1\ndelta:\n  promote-to-proposed: [main, meta]\n  promote-to-updates: [main, meta]\nflag:\n  autoprep-requested: true\n  boot-testing-requested: true\n  bugs-spammed: true\n  proposed-announcement-sent: true\n  proposed-testing-requested: true\n  stream-from-cycle: true\nflavours:\n  linux-image-raspi: [arm64, armhf]\n  linux-image-raspi-5.4: [arm64, armhf]\n  linux-image-raspi-hwe-18.04: [arm64, armhf]\n  linux-image-raspi-hwe-18.04-edge: [arm64, armhf]\n  linux-image-raspi2: [arm64, armhf]\n  linux-image-raspi2-hwe-18.04: [arm64, armhf]\n  linux-image-raspi2-hwe-18.04-edge: [arm64, armhf]\nissue: KSRU-19057\nkernel-stable-master-bug: 2127329\npackages:\n  main: linux-raspi\n  meta: linux-meta-raspi\nphase: Complete\nphase-changed: Wednesday, 19. November 2025 10:10 UTC\nreason: {}\nsynthetic:\n  :auto-prepare: Fix Released\n  :promote-to-as-proposed: Invalid\n  :promote-to-build-public: Invalid\ntesting:\n  verification-bugs: [2127298]\ntrackers:\n  bionic/linux-raspi-5.4: bug 2127297\n  focal/linux-denver: bug 2127294\n  focal/linux-raspi/pi-kernel: bug 2127295\nvariant: debs\nversions:\n  main: 5.4.0-1135.148\n  meta: 5.4.0.1135.166\nworkflow:\n  :auto-prepare: source-complete\n~~:\n  announce:\n    swm-transition-crankable: 2025-10-14 09:04:45.450924\n  clamps:\n    new-review: ac086563dcb12c2d\n    promote-to-proposed: ac086563dcb12c2d\n    self: 5.4.0-1135.148\n    sru-review: ac086563dcb12c2d\n  tracker:\n    last-message: '2025-11-19 11:11:57.478874+00:00' by ubuntu-kernel-bot",
+      "last_activity_time": "2025-12-16T09:56:40.682043+00:00",
+      "owner": "Manuel Diewald",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "focal",
+        "kernel-jira-issue-ksru-19057",
+        "kernel-release-tracking-bug",
+        "kernel-release-tracking-bug-live",
+        "kernel-sru-cycle-s2025.09.15-1",
+        "kernel-sru-derivative-of-2127329"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2025-10-10T10:58:45.833269+00:00",
+          "importance": "Medium",
+          "is_complete": false,
+          "series": "focal",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Focal)",
+          "target_display": "linux-raspi (Ubuntu Focal)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/focal/+source/linux-raspi/+bug/2127298"
+        }
+      ],
+      "title": "focal/linux-raspi: 5.4.0-1135.148 -proposed tracker",
+      "web_link": "https://bugs.launchpad.net/bugs/2127298"
+    },
+    "2131363": {
+      "date_created": "2025-11-14T10:25:28.018819+00:00",
+      "date_last_updated": "2026-03-02T10:05:57.568846+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2131363,
+      "last_activity_summary": "description: This bug will contain status and test results related to a kernel source (or snap) as stated in the title.\n\nFor an explanation of the tasks and the associated workflow see:\n  https://wiki.ubuntu.com/Kernel/kernel-sru-workflow\n\n-- swm properties --\nbuilt:\n  from: 1be39da484184604\n  route-entry: 1\ncomments:\n  abi-testing: 1\ndelta:\n  promote-to-proposed: [main, meta]\n  promote-to-updates: [main, meta]\nflag:\n  autoprep-requested: true\n  boot-testing-requested: true\n  bugs-spammed: true\n  proposed-announcement-sent: true\n  proposed-testing-requested: true\n  stream-from-cycle: true\nflavours:\n  linux-image-raspi: [arm64, armhf]\n  linux-image-raspi-5.4: [arm64, armhf]\n  linux-image-raspi-hwe-18.04: [arm64, armhf]\n  linux-image-raspi-hwe-18.04-edge: [arm64, armhf]\n  linux-image-raspi2: [arm64, armhf]\n  linux-image-raspi2-hwe-18.04: [arm64, armhf]\n  linux-image-raspi2-hwe-18.04-edge: [arm64, armhf]\nissue: KSRU-19492\nkernel-stable-master-bug: 2131368\npackages:\n  main: linux-raspi\n  meta: linux-meta-raspi\nphase: Complete\nphase-changed: Monday, 05. January 2026 22:15 UTC\nreason: {}\nsynthetic:\n  :auto-prepare: Fix Released\n  :promote-to-as-proposed: Invalid\n  :promote-to-build-public: Invalid\ntesting:\n  verification-bugs: [2131363]\ntrackers:\n  bionic/linux-raspi-5.4: bug 2131362\n  focal/linux-raspi/pi-kernel: bug 2131360\nvariant: debs\nversions:\n  main: 5.4.0-1136.149\n  meta: 5.4.0.1136.167\nworkflow:\n  :auto-prepare: source-complete\n~~:\n  announce:\n    swm-transition-crankable: 2025-11-19 17:00:04.854937\n  clamps:\n    new-review: 1be39da484184604\n    promote-to-proposed: 1be39da484184604\n    self: 5.4.0-1136.149\n    sru-review: 1be39da484184604\n  tracker:\n    last-message: '2026-01-05 23:15:30.368966+00:00' by ubuntu-kernel-bot",
+      "last_activity_time": "2026-03-02T10:05:57.568846+00:00",
+      "owner": "Manuel Diewald",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "focal",
+        "kernel-jira-issue-ksru-19492",
+        "kernel-release-tracking-bug",
+        "kernel-release-tracking-bug-live",
+        "kernel-sru-cycle-s2025.10.13-1",
+        "kernel-sru-derivative-of-2131368"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2025-11-14T10:58:56.314418+00:00",
+          "importance": "Medium",
+          "is_complete": false,
+          "series": "focal",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Focal)",
+          "target_display": "linux-raspi (Ubuntu Focal)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/focal/+source/linux-raspi/+bug/2131363"
+        }
+      ],
+      "title": "focal/linux-raspi: 5.4.0-1136.149 -proposed tracker",
+      "web_link": "https://bugs.launchpad.net/bugs/2131363"
+    },
+    "2133877": {
+      "date_created": "2025-12-04T14:59:33.158844+00:00",
+      "date_last_updated": "2026-10-20T21:31:27.558096+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2133877,
+      "last_activity_summary": "bug updated by lxgaming",
+      "last_activity_time": "2026-10-20T21:31:27.558096+00:00",
+      "owner": "Aleksei",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "kernel-daily-bug"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2025-12-04T14:59:33.158844+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "Confirmed",
+          "target": "linux-raspi (Ubuntu)",
+          "target_display": "linux-raspi (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2133877"
+        }
+      ],
+      "title": "Complete network hang on Raspberry Pi 5 with kernel 6.17 under load - possibly related to CPU frequency scaling",
+      "web_link": "https://bugs.launchpad.net/bugs/2133877"
+    },
+    "2137978": {
+      "date_created": "2026-01-09T11:47:21.924333+00:00",
+      "date_last_updated": "2026-04-02T23:17:08.598475+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2137978,
+      "last_activity_summary": "description: This bug will contain status and test results related to a kernel source (or snap) as stated in the title.\n\nFor an explanation of the tasks and the associated workflow see:\n  https://wiki.ubuntu.com/Kernel/kernel-sru-workflow\n\n-- swm properties --\nbuilt:\n  from: 679fb8fab676ceb8\n  route-entry: 1\ncomments:\n  abi-testing: 1\ndelta:\n  promote-to-proposed: [main, meta]\n  promote-to-updates: [main, meta]\nflag:\n  autoprep-requested: true\n  boot-testing-requested: true\n  bugs-spammed: true\n  proposed-announcement-sent: true\n  proposed-testing-requested: true\n  stream-from-cycle: true\nflavours:\n  linux-image-raspi: [arm64, armhf]\n  linux-image-raspi-5.4: [arm64, armhf]\n  linux-image-raspi-hwe-18.04: [arm64, armhf]\n  linux-image-raspi-hwe-18.04-edge: [arm64, armhf]\n  linux-image-raspi2: [arm64, armhf]\n  linux-image-raspi2-hwe-18.04: [arm64, armhf]\n  linux-image-raspi2-hwe-18.04-edge: [arm64, armhf]\nissue: KSRU-20000\nkernel-stable-master-bug: 2137983\npackages:\n  main: linux-raspi\n  meta: linux-meta-raspi\nphase: Complete\nphase-changed: Tuesday, 03. March 2026 09:51 UTC\nreason: {}\nsynthetic:\n  :auto-prepare: Incomplete\n  :promote-to-as-proposed: Invalid\n  :promote-to-build-public: Invalid\ntesting:\n  verification-bugs: [2137978]\ntrackers:\n  bionic/linux-raspi-5.4: bug 2137977\n  focal/linux-raspi/pi-kernel: bug 2137974\nvariant: debs\nversions:\n  main: 5.4.0-1137.150\n  meta: 5.4.0.1137.168\nworkflow:\n  :auto-prepare: autoprep-failed\n~~:\n  announce:\n    swm-transition-crankable: 2026-01-19 17:25:13.655929\n  clamps:\n    new-review: 679fb8fab676ceb8\n    promote-to-proposed: 679fb8fab676ceb8\n    self: 5.4.0-1137.150\n    sru-review: 679fb8fab676ceb8\n  tracker:\n    last-message: '2026-03-03 10:57:41.881348+00:00' by ubuntu-kernel-bot",
+      "last_activity_time": "2026-04-02T23:17:08.598475+00:00",
+      "owner": "Manuel Diewald",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "focal",
+        "kernel-jira-issue-ksru-20000",
+        "kernel-release-tracking-bug",
+        "kernel-release-tracking-bug-live",
+        "kernel-sru-cycle-s2025.11.17-1",
+        "kernel-sru-derivative-of-2137983"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-01-09T12:10:43.242337+00:00",
+          "importance": "Medium",
+          "is_complete": false,
+          "series": "focal",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Focal)",
+          "target_display": "linux-raspi (Ubuntu Focal)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/focal/+source/linux-raspi/+bug/2137978"
+        }
+      ],
+      "title": "focal/linux-raspi: 5.4.0-1137.150 -proposed tracker",
+      "web_link": "https://bugs.launchpad.net/bugs/2137978"
+    },
+    "2140841": {
+      "date_created": "2026-02-06T10:23:52.843259+00:00",
+      "date_last_updated": "2026-05-05T12:53:40.653250+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2140841,
+      "last_activity_summary": "description: This bug will contain status and test results related to a kernel source (or snap) as stated in the title.\n\nFor an explanation of the tasks and the associated workflow see:\n  https://wiki.ubuntu.com/Kernel/kernel-sru-workflow\n\n-- swm properties --\nbuilt:\n  from: b37a3f7f2caf0096\n  route-entry: 1\ncomments:\n  abi-testing: 1\ndelta:\n  promote-to-proposed: []\n  promote-to-updates: [main, meta]\nflag:\n  autoprep-requested: true\n  boot-testing-requested: true\n  bugs-spammed: true\n  proposed-announcement-sent: true\n  proposed-testing-requested: true\n  stream-from-cycle: true\nflavours:\n  linux-image-raspi: [arm64, armhf]\n  linux-image-raspi-5.4: [arm64, armhf]\n  linux-image-raspi-hwe-18.04: [arm64, armhf]\n  linux-image-raspi-hwe-18.04-edge: [arm64, armhf]\n  linux-image-raspi2: [arm64, armhf]\n  linux-image-raspi2-hwe-18.04: [arm64, armhf]\n  linux-image-raspi2-hwe-18.04-edge: [arm64, armhf]\nissue: KSRU-21056\nkernel-stable-master-bug: 2140846\npackages:\n  main: linux-raspi\n  meta: linux-meta-raspi\nphase: Complete\nphase-changed: Monday, 20. April 2026 08:28 UTC\nreason: {}\nsynthetic:\n  :auto-prepare: Incomplete\n  :promote-to-as-proposed: Invalid\n  :promote-to-build-public: Invalid\ntesting:\n  verification-bugs: [2140841]\ntrackers:\n  bionic/linux-raspi-5.4: bug 2140840\n  focal/linux-raspi/pi-kernel: bug 2140838\nvariant: debs\nversions:\n  main: 5.4.0-1139.152\n  meta: 5.4.0.1139.170\nversions-replace:\n  main: [5.4.0-1138.151]\n  meta: [5.4.0.1138.169]\nworkflow:\n  :auto-prepare: autoprep-failed\n~~:\n  announce:\n    swm-transition-crankable: 2026-02-11 19:12:50.486534\n  clamps:\n    new-review: b37a3f7f2caf0096\n    promote-to-proposed: b37a3f7f2caf0096\n    self: 5.4.0-1139.152\n    sru-review: b37a3f7f2caf0096\n  tracker:\n    last-message: '2026-04-20 09:32:18.145717+00:00' by ubuntu-kernel-bot",
+      "last_activity_time": "2026-05-05T12:53:40.653250+00:00",
+      "owner": "Manuel Diewald",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "boot-testing-passed",
+        "focal",
+        "kernel-jira-issue-ksru-21056",
+        "kernel-release-tracking-bug",
+        "kernel-release-tracking-bug-live",
+        "kernel-sru-cycle-s2026.01.12-5",
+        "kernel-sru-derivative-of-2140846",
+        "regression-testing-passed"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-02-06T11:30:34.954530+00:00",
+          "importance": "Medium",
+          "is_complete": false,
+          "series": "focal",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Focal)",
+          "target_display": "linux-raspi (Ubuntu Focal)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/focal/+source/linux-raspi/+bug/2140841"
+        }
+      ],
+      "title": "focal/linux-raspi: 5.4.0-1139.152 -proposed tracker",
+      "web_link": "https://bugs.launchpad.net/bugs/2140841"
+    },
+    "2144152": {
+      "date_created": "2026-03-13T08:42:42.438530+00:00",
+      "date_last_updated": "2026-05-05T17:55:30.097586+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2144152,
+      "last_activity_summary": "description: This bug will contain status and test results related to a kernel source (or snap) as stated in the title.\n\nFor an explanation of the tasks and the associated workflow see:\n  https://wiki.ubuntu.com/Kernel/kernel-sru-workflow\n\n-- swm properties --\nbuilt:\n  from: 975f551572140476\n  route-entry: 1\ncomments:\n  abi-testing: 1\ndelta:\n  promote-to-proposed: [main, meta]\n  promote-to-updates: [main, meta]\nflag:\n  autoprep-requested: true\n  boot-testing-requested: true\n  bugs-spammed: true\n  proposed-announcement-sent: true\n  proposed-testing-requested: true\n  stream-from-cycle: true\nflavours:\n  linux-image-raspi: [arm64, armhf]\n  linux-image-raspi-5.4: [arm64, armhf]\n  linux-image-raspi-hwe-18.04: [arm64, armhf]\n  linux-image-raspi-hwe-18.04-edge: [arm64, armhf]\n  linux-image-raspi2: [arm64, armhf]\n  linux-image-raspi2-hwe-18.04: [arm64, armhf]\n  linux-image-raspi2-hwe-18.04-edge: [arm64, armhf]\nissue: KSRU-20796\nkernel-stable-master-bug: 2144157\npackages:\n  main: linux-raspi\n  meta: linux-meta-raspi\nphase: Complete\nphase-changed: Monday, 04. May 2026 14:25 UTC\nreason: {}\nsynthetic:\n  :auto-prepare: Triaged\n  :promote-to-as-proposed: Invalid\n  :promote-to-build-public: Invalid\ntesting:\n  verification-bugs: [2144152]\ntrackers:\n  bionic/linux-raspi-5.4: bug 2144151\n  focal/linux-raspi/pi-kernel: bug 2144149\nvariant: debs\nversions:\n  main: 5.4.0-1140.153\n  meta: 5.4.0.1140.171\nworkflow:\n  :auto-prepare: autoprep-requested\n~~:\n  announce:\n    swm-transition-crankable: 2026-03-18 11:06:07.447491\n  clamps:\n    new-review: 975f551572140476\n    promote-to-proposed: 975f551572140476\n    self: 5.4.0-1140.153\n    sru-review: 975f551572140476\n  tracker:\n    last-message: '2026-05-04 15:32:13.132367+00:00' by ubuntu-kernel-bot",
+      "last_activity_time": "2026-05-05T17:55:30.097586+00:00",
+      "owner": "Manuel Diewald",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "focal",
+        "kernel-jira-issue-ksru-20796",
+        "kernel-release-tracking-bug",
+        "kernel-release-tracking-bug-live",
+        "kernel-sru-cycle-s2026.02.09-1",
+        "kernel-sru-derivative-of-2144157",
+        "regression-testing-passed"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-03-13T11:21:45.147661+00:00",
+          "importance": "Medium",
+          "is_complete": false,
+          "series": "focal",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Focal)",
+          "target_display": "linux-raspi (Ubuntu Focal)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/focal/+source/linux-raspi/+bug/2144152"
+        }
+      ],
+      "title": "focal/linux-raspi: 5.4.0-1140.153 -proposed tracker",
+      "web_link": "https://bugs.launchpad.net/bugs/2144152"
+    },
+    "2153617": {
+      "date_created": "2026-05-21T13:10:42.187444+00:00",
+      "date_last_updated": "2026-07-25T08:58:56.643236+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2153617,
+      "last_activity_summary": "kernel-sru-workflow: status: Fix Released by ubuntu-kernel-bot",
+      "last_activity_time": "2026-07-25T08:58:56.643236+00:00",
+      "owner": "Manuel Diewald",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "focal",
+        "kernel-jira-issue-ksru-22252",
+        "kernel-override-hold-promote-to-updates",
+        "kernel-release-tracking-bug",
+        "kernel-release-tracking-bug-live",
+        "kernel-sru-cycle-s2026.05.11-1",
+        "kernel-sru-derivative-of-2153622",
+        "regression-testing-passed"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-05-21T15:26:18.889189+00:00",
+          "importance": "Medium",
+          "is_complete": false,
+          "series": "focal",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Focal)",
+          "target_display": "linux-raspi (Ubuntu Focal)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/focal/+source/linux-raspi/+bug/2153617"
+        }
+      ],
+      "title": "focal/linux-raspi: 5.4.0-1143.156 -proposed tracker",
+      "web_link": "https://bugs.launchpad.net/bugs/2153617"
+    },
+    "2155978": {
+      "date_created": "2026-06-08T22:03:11.547910+00:00",
+      "date_last_updated": "2026-06-08T23:04:11.989808+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2155978,
+      "last_activity_summary": "tags: kernel-daily-bug raspi by ubuntu-kernel-bot",
+      "last_activity_time": "2026-06-08T23:04:11.989808+00:00",
+      "owner": "CrowbarLabs",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "kernel-daily-bug",
+        "raspi"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-06-08T22:03:11.547910+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "linux-raspi (Ubuntu)",
+          "target_display": "linux-raspi (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2155978"
+        }
+      ],
+      "title": "linux-raspi 7.0.0-1011: AHCI SATA drives not detected on Pi 5 \u2014 regression from 7.0.0-1008 (64-bit DMA misdetection, errno=-12)",
+      "web_link": "https://bugs.launchpad.net/bugs/2155978"
+    },
+    "2157789": {
+      "date_created": "2026-06-22T10:19:38.437486+00:00",
+      "date_last_updated": "2026-09-29T05:36:07.602524+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2157789,
+      "last_activity_summary": "linux-raspi (Ubuntu Resolute): status: Confirmed by ewrdsee",
+      "last_activity_time": "2026-09-29T05:36:07.602524+00:00",
+      "owner": "Dave Jones",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "kernel-daily-bug",
+        "verification-done-resolute"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-06-24T15:25:34.228052+00:00",
+          "importance": "High",
+          "is_complete": false,
+          "series": null,
+          "status": "Confirmed",
+          "target": "dracut (Ubuntu)",
+          "target_display": "dracut (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/dracut/+bug/2157789"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-06-22T10:19:38.437486+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "Confirmed",
+          "target": "linux-raspi (Ubuntu)",
+          "target_display": "linux-raspi (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2157789"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2026-06-25T17:52:51.370543+00:00",
+          "date_created": "2026-06-25T11:52:56.561419+00:00",
+          "importance": "High",
+          "is_complete": true,
+          "series": null,
+          "status": "Fix Released",
+          "target": "ubuntu-raspi-settings (Ubuntu)",
+          "target_display": "ubuntu-raspi-settings (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/ubuntu-raspi-settings/+bug/2157789"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-06-24T15:25:57.890569+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "resolute",
+          "status": "Confirmed",
+          "target": "dracut (Ubuntu Resolute)",
+          "target_display": "dracut (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/dracut/+bug/2157789"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-06-24T15:25:57.890569+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "resolute",
+          "status": "Confirmed",
+          "target": "linux-raspi (Ubuntu Resolute)",
+          "target_display": "linux-raspi (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-raspi/+bug/2157789"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2026-08-05T12:10:24.660706+00:00",
+          "date_created": "2026-06-25T11:52:56.561419+00:00",
+          "importance": "Critical",
+          "is_complete": true,
+          "series": "resolute",
+          "status": "Fix Released",
+          "target": "ubuntu-raspi-settings (Ubuntu Resolute)",
+          "target_display": "ubuntu-raspi-settings (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/ubuntu-raspi-settings/+bug/2157789"
+        }
+      ],
+      "title": "[SRU] Dracut silently produces truncated initramfs with constrained RAM",
+      "web_link": "https://bugs.launchpad.net/bugs/2157789"
+    },
+    "2157829": {
+      "date_created": "2026-06-22T11:57:46.736105+00:00",
+      "date_last_updated": "2026-09-22T16:27:58.498511+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2157829,
+      "last_activity_summary": "description: This bug will contain status and test results related to a kernel source (or snap) as stated in the title.\n\nFor an explanation of the tasks and the associated workflow see:\n  https://wiki.ubuntu.com/Kernel/kernel-sru-workflow\n\n-- swm properties --\nbuilt:\n  from: dfa6ade7b83527ca\n  route-entry: 1\ncomments:\n  abi-testing: 1\ndelta:\n  promote-to-proposed: [main, meta]\n  promote-to-updates: [main, meta]\nflag:\n  autoprep-requested: true\n  boot-testing-requested: true\n  bugs-spammed: true\n  proposed-announcement-sent: true\n  proposed-testing-requested: true\n  stream-from-cycle: true\nflavours:\n  linux-image-raspi: [arm64, armhf]\n  linux-image-raspi-5.4: [arm64, armhf]\n  linux-image-raspi-hwe-18.04: [arm64, armhf]\n  linux-image-raspi-hwe-18.04-edge: [arm64, armhf]\n  linux-image-raspi2: [arm64, armhf]\n  linux-image-raspi2-hwe-18.04: [arm64, armhf]\n  linux-image-raspi2-hwe-18.04-edge: [arm64, armhf]\nissue: KSRU-22987\nkernel-stable-master-bug: 2157835\npackages:\n  main: linux-raspi\n  meta: linux-meta-raspi\nphase: Complete\nphase-changed: Tuesday, 28. July 2026 13:42 UTC\nreason: {}\nsynthetic:\n  :auto-prepare: Incomplete\n  :promote-to-as-proposed: Invalid\n  :promote-to-build-public: Invalid\ntesting:\n  verification-bugs: [2157829]\ntrackers:\n  bionic/linux-raspi-5.4: bug 2157828\n  focal/linux-raspi/pi-kernel: bug 2157826\nvariant: debs\nversions:\n  main: 5.4.0-1144.157\n  meta: 5.4.0.1144.175\nworkflow:\n  :auto-prepare: autoprep-failed\n~~:\n  clamps:\n    new-review: dfa6ade7b83527ca\n    promote-to-proposed: dfa6ade7b83527ca\n    self: 5.4.0-1144.157\n    sru-review: dfa6ade7b83527ca\n  tracker:\n    last-message: '2026-07-28 14:46:53.907892+00:00' by ubuntu-kernel-bot",
+      "last_activity_time": "2026-09-22T16:27:58.498511+00:00",
+      "owner": "Manuel Diewald",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "focal",
+        "kernel-jira-issue-ksru-22987",
+        "kernel-override-hold-promote-to-updates",
+        "kernel-release-tracking-bug",
+        "kernel-release-tracking-bug-live",
+        "kernel-sru-cycle-s2026.05.18-3",
+        "kernel-sru-derivative-of-2157835"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-06-22T13:52:08.614605+00:00",
+          "importance": "Medium",
+          "is_complete": false,
+          "series": "focal",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Focal)",
+          "target_display": "linux-raspi (Ubuntu Focal)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/focal/+source/linux-raspi/+bug/2157829"
+        }
+      ],
+      "title": "focal/linux-raspi: 5.4.0-1144.157 -proposed tracker",
+      "web_link": "https://bugs.launchpad.net/bugs/2157829"
+    },
+    "2158920": {
+      "date_created": "2026-07-01T17:48:54.927719+00:00",
+      "date_last_updated": "2026-11-04T16:47:42.266045+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2158920,
+      "last_activity_summary": "tags: kernel-daily-bug kernel-spammed-jammy-linux-hwe-6.8-v2 kernel-spammed-jammy-linux-ibm-6.8-v2 kernel-spammed-noble-linux-azure-nvidia-v2 kernel-spammed-noble-linux-azure-v2 kernel-spammed-noble-linux-raspi-v2 kernel-spammed-noble-linux-v2 verification-done-jammy-linux-hwe-6.8 verification-done-jammy-linux-ibm-6.8 verification-done-noble-linux verification-done-noble-linux-azure verification-done-noble-linux-azure-nvidia verification-done-noble-linux-raspi by roxanan",
+      "last_activity_time": "2026-11-04T16:47:42.266045+00:00",
+      "owner": "Alice C. Munduruca",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "kernel-daily-bug",
+        "kernel-spammed-jammy-linux-hwe-6.8-v2",
+        "kernel-spammed-jammy-linux-ibm-6.8-v2",
+        "kernel-spammed-noble-linux-azure-nvidia-v2",
+        "kernel-spammed-noble-linux-azure-v2",
+        "kernel-spammed-noble-linux-raspi-v2",
+        "kernel-spammed-noble-linux-v2",
+        "verification-done-jammy-linux-hwe-6.8",
+        "verification-done-jammy-linux-ibm-6.8",
+        "verification-done-noble-linux",
+        "verification-done-noble-linux-azure",
+        "verification-done-noble-linux-azure-nvidia",
+        "verification-done-noble-linux-raspi"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-07-01T17:48:54.927719+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "linux (Ubuntu)",
+          "target_display": "linux (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux/+bug/2158920"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-07-01T19:32:26.026035+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "linux-azure (Ubuntu)",
+          "target_display": "linux-azure (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-azure/+bug/2158920"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-07-16T02:05:09.694895+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "linux-raspi (Ubuntu)",
+          "target_display": "linux-raspi (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2158920"
+        },
+        {
+          "assignee": "Alice C. Munduruca",
+          "date_closed": "2026-09-03T13:11:55.945981+00:00",
+          "date_created": "2026-07-01T18:02:53.091222+00:00",
+          "importance": "High",
+          "is_complete": true,
+          "series": "noble",
+          "status": "Fix Released",
+          "target": "linux (Ubuntu Noble)",
+          "target_display": "linux (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux/+bug/2158920"
+        },
+        {
+          "assignee": "Alice C. Munduruca",
+          "date_closed": "2026-07-23T09:50:38.814004+00:00",
+          "date_created": "2026-07-01T19:32:26.026035+00:00",
+          "importance": "High",
+          "is_complete": true,
+          "series": "noble",
+          "status": "Fix Released",
+          "target": "linux-azure (Ubuntu Noble)",
+          "target_display": "linux-azure (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-azure/+bug/2158920"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2026-08-18T07:46:05.658950+00:00",
+          "date_created": "2026-07-16T02:05:09.694895+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": "noble",
+          "status": "Fix Released",
+          "target": "linux-raspi (Ubuntu Noble)",
+          "target_display": "linux-raspi (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-raspi/+bug/2158920"
+        }
+      ],
+      "title": "noble-stable-2026-06-16 dropped a bracket causing FTBFS",
+      "web_link": "https://bugs.launchpad.net/bugs/2158920"
+    },
+    "2159597": {
+      "date_created": "2026-07-05T18:08:41.342827+00:00",
+      "date_last_updated": "2026-08-10T20:32:37.992643+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2159597,
+      "last_activity_summary": "linux-raspi (Ubuntu): assignee: Juerg Haefliger (juergh) by jacobmartin",
+      "last_activity_time": "2026-08-10T20:32:37.992643+00:00",
+      "owner": "Denis Vanyushkin",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "kernel-daily-bug",
+        "regression-release"
+      ],
+      "tasks": [
+        {
+          "assignee": "Juerg Haefliger",
+          "date_closed": null,
+          "date_created": "2026-07-05T18:08:41.342827+00:00",
+          "importance": "Medium",
+          "is_complete": false,
+          "series": null,
+          "status": "Triaged",
+          "target": "linux-raspi (Ubuntu)",
+          "target_display": "linux-raspi (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2159597"
+        }
+      ],
+      "title": "44.1 kHz USB audio distorted on RPi 3B (dwc2 isoc OUT split), regression from 6.8-raspi to 7.0-raspi",
+      "web_link": "https://bugs.launchpad.net/bugs/2159597"
+    },
+    "2160182": {
+      "date_created": "2026-07-09T02:58:19.647648+00:00",
+      "date_last_updated": "2026-07-09T23:03:58.089562+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2160182,
+      "last_activity_summary": "tags: apport-package arm64 arm64-image kernel-daily-bug raspi-image resolute staging by ubuntu-kernel-bot",
+      "last_activity_time": "2026-07-09T23:03:58.089562+00:00",
+      "owner": "Dom A",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "apport-package",
+        "arm64",
+        "arm64-image",
+        "kernel-daily-bug",
+        "raspi-image",
+        "resolute",
+        "staging"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-07-09T02:58:19.647648+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "linux-raspi (Ubuntu)",
+          "target_display": "linux-raspi (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2160182"
+        }
+      ],
+      "title": "Kernel panic in bcmgenet_rx_poll/skb_release_data under network load (7.0.0-1014-raspi, Ubuntu 26.04, Pi 4)",
+      "web_link": "https://bugs.launchpad.net/bugs/2160182"
+    },
+    "2160935": {
+      "date_created": "2026-07-16T09:41:47.143560+00:00",
+      "date_last_updated": "2026-09-22T16:39:02.904929+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2160935,
+      "last_activity_summary": "kernel-sru-workflow: status: Fix Released by ubuntu-kernel-bot",
+      "last_activity_time": "2026-09-22T16:39:02.904929+00:00",
+      "owner": "Manuel Diewald",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "focal",
+        "kernel-jira-issue-ksru-23321",
+        "kernel-override-hold-promote-to-updates",
+        "kernel-release-tracking-bug",
+        "kernel-release-tracking-bug-live",
+        "kernel-sru-cycle-s2026.06.22-1",
+        "kernel-sru-derivative-of-2160940"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-07-16T10:28:03.755385+00:00",
+          "importance": "Medium",
+          "is_complete": false,
+          "series": "focal",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Focal)",
+          "target_display": "linux-raspi (Ubuntu Focal)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/focal/+source/linux-raspi/+bug/2160935"
+        }
+      ],
+      "title": "focal/linux-raspi: 5.4.0-1145.158 -proposed tracker",
+      "web_link": "https://bugs.launchpad.net/bugs/2160935"
+    },
+    "2161936": {
+      "date_created": "2026-07-28T00:49:02.888647+00:00",
+      "date_last_updated": "2026-07-28T23:05:16.243093+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2161936,
+      "last_activity_summary": "tags: kernel-daily-bug by ubuntu-kernel-bot",
+      "last_activity_time": "2026-07-28T23:05:16.243093+00:00",
+      "owner": "Rene Orozco Martinez",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "kernel-daily-bug"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-07-28T00:49:02.888647+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "linux-raspi (Ubuntu)",
+          "target_display": "linux-raspi (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2161936"
+        }
+      ],
+      "title": "[CM4] Unable to boot 7.0.0-1015-raspi from resolute proposed",
+      "web_link": "https://bugs.launchpad.net/bugs/2161936"
+    },
+    "2162033": {
+      "date_created": "2026-07-29T06:22:14.653878+00:00",
+      "date_last_updated": "2026-07-29T23:05:36.193214+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2162033,
+      "last_activity_summary": "tags: aspm kernel-daily-bug l1 linux-raspi m.2 nvme nvme-hat pi5 by ubuntu-kernel-bot",
+      "last_activity_time": "2026-07-29T23:05:36.193214+00:00",
+      "owner": "Vito Giarrusso",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "aspm",
+        "kernel-daily-bug",
+        "l1",
+        "linux-raspi",
+        "m.2",
+        "nvme",
+        "nvme-hat",
+        "pi5"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-07-29T06:22:14.653878+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "linux-raspi (Ubuntu)",
+          "target_display": "linux-raspi (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2162033"
+        }
+      ],
+      "title": "NVMe M.2 fails with I/O errors on Raspberry Pi 5 with kernel 7.0.0-1015-raspi when ASPM L1 is enabled",
+      "web_link": "https://bugs.launchpad.net/bugs/2162033"
+    },
+    "2162328": {
+      "date_created": "2026-07-30T16:47:15.339111+00:00",
+      "date_last_updated": "2026-10-12T11:31:33.365580+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2162328,
+      "last_activity_summary": "kernel-sru-workflow: status: Fix Released by ubuntu-kernel-bot",
+      "last_activity_time": "2026-10-12T11:31:33.365580+00:00",
+      "owner": "Edoardo Canepa",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "focal",
+        "kernel-jira-issue-ksru-23574",
+        "kernel-release-tracking-bug",
+        "kernel-release-tracking-bug-live",
+        "kernel-sru-cycle-s2026.07.06-1",
+        "kernel-sru-derivative-of-2162333"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-07-30T17:42:44.721941+00:00",
+          "importance": "Medium",
+          "is_complete": false,
+          "series": "focal",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Focal)",
+          "target_display": "linux-raspi (Ubuntu Focal)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/focal/+source/linux-raspi/+bug/2162328"
+        }
+      ],
+      "title": "focal/linux-raspi: 5.4.0-1146.159 -proposed tracker",
+      "web_link": "https://bugs.launchpad.net/bugs/2162328"
+    },
+    "2162573": {
+      "date_created": "2026-07-31T14:35:45.206511+00:00",
+      "date_last_updated": "2026-08-01T08:35:25.962604+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2162573,
+      "last_activity_summary": "description: I have an argon one V5 case fitted with an industra oled display connected to the Raspberry Pi 5 i2c bus. This displays various system information using various python scripts provided by Argon One, and is working fine on Ubuntu 24.04, 25.10 and Raspberry Pi OS. However on Ubuntu 26.04 it displays no information on the display and the following error is in syslog:-\n\n2026-07-31T14:48:34.076339+01:00 thirlmere kernel: i2c_designware 1f00074000.i2c: i2c_dw_handle_tx_abort: SDA stuck at low\n2026-07-31T14:48:34.078711+01:00 thirlmere python3[2851]: Unable to initialize OLED\n\nAs the hardware is working fine on other versions of Ubuntu and Raspberry Pi OS I can only assume it must be a bug introduced in to the i2c driver on Ubuntu 26.04\n\nResults from i2cdetect appear to show the hardware is working fine:-\n\ni2cdetect -y 1\n\u00a0\u00a0\u00a0\u00a0\u00a00  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f\n00:                         -- -- -- -- -- -- -- --\n10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --\n20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --\n30: -- -- -- -- -- -- -- -- -- -- -- -- 3c -- -- --\n40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --\n50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --\n60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --\n70: -- -- -- -- -- -- -- --\n\ni2cdetect -F 1\nFunctionalities implemented by /dev/i2c-1:\nI2C                              yes\nSMBus Quick Command              yes\nSMBus Send Byte                  yes\nSMBus Receive Byte               yes\nSMBus Write Byte                 yes\nSMBus Read Byte                  yes\nSMBus Write Word                 yes\nSMBus Read Word                  yes\nSMBus Process Call               no\nSMBus Block Write                yes\nSMBus Block Read                 yes\nSMBus Block Process Call         no\nSMBus PEC                        no\nI2C Block Write                  yes\nI2C Block Read                   yes\nSMBus Host Notify                no\n10-bit addressing                yes\nTarget mode                      yes\n\nOn Ubuntu 25.10 i2cdetect -F 1 returns the following:-\n\ni2cdetect -F 1\nFunctionalities implemented by /dev/i2c-1:\nI2C                              yes\nSMBus Quick Command              yes\nSMBus Send Byte                  yes\nSMBus Receive Byte               yes\nSMBus Write Byte                 yes\nSMBus Read Byte                  yes\nSMBus Write Word                 yes\nSMBus Read Word                  yes\nSMBus Process Call               no\nSMBus Block Write                yes\nSMBus Block Read                 yes\nSMBus Block Process Call         no\nSMBus PEC                        no\nI2C Block Write                  yes\nI2C Block Read                   yes\nSMBus Host Notify                no\n10-bit addressing                yes\nTarget mode                      no\n\nOn Raspberry Pi Os i2cdetect -F 1 returns the following:-\n\n i2cdetect -F 1\nFunctionalities implemented by /dev/i2c-1:\nI2C                              yes\nSMBus Quick Command              yes\nSMBus Send Byte                  yes\nSMBus Receive Byte               yes\nSMBus Write Byte                 yes\nSMBus Read Byte                  yes\nSMBus Write Word                 yes\nSMBus Read Word                  yes\nSMBus Process Call               no\nSMBus Block Write                yes\nSMBus Block Read                 yes\nSMBus Block Process Call         no\nSMBus PEC                        no\nI2C Block Write                  yes\nI2C Block Read                   yes\nSMBus Host Notify                no\n10-bit addressing                yes\nTarget mode                      no\n\nThe only differences I can see between the working systems on Ubuntu 25.10 and Raspberry Pi OS and the non working Ubuntu 26.04 is the value of Target Mode\n\nProblemType: Bug\nDistroRelease: Ubuntu 26.04\nPackage: linux-image-7.0.0-1015-raspi 7.0.0-1015.15\nProcVersionSignature: Ubuntu 7.0.0-1015.15-raspi 7.0.12\nUname: Linux 7.0.0-1015-raspi aarch64\nApportVersion: 2.34.1-0ubuntu0.1\nArchitecture: arm64\nAudioDevicesInUse:\n\u00a0USER        PID ACCESS COMMAND\n\u00a0/dev/snd/controlC0:  springle   3004 F.... wireplumber\n\u00a0/dev/snd/controlC3:  springle   3004 F.... wireplumber\n\u00a0/dev/snd/controlC1:  springle   3004 F.... wireplumber\n\u00a0/dev/snd/seq:        springle   2998 F.... pipewire\nCasperMD5CheckResult: unknown\nCloudArchitecture: aarch64\nCloudID: nocloud\nCloudName: unknown\nCloudPlatform: nocloud\nCloudSubPlatform: config-disk (/dev/sda1)\nCurrentDesktop: ubuntu:GNOME\nDate: Fri Jul 31 15:25:33 2026\nImageMediaBuild: 20260423\nIwDevWlan0Link: Not connected.\nLspci-vt:\n\u00a0-[0001:00]---00.0-[01-04]----00.0-[02-04]--+-03.0-[03]----00.0  Micron Technology Inc 2550 NVMe SSD (DRAM-less)\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\\-07.0-[04]----00.0  Micron/Crucial Technology P3 Plus NVMe PCIe SSD (DRAM-less)\n\u00a0-[0002:00]---00.0-[01]----00.0  Raspberry Pi Ltd RP1 PCIe 2.0 South Bridge\nProcFB: 0 vc4drmfb\nProcKernelCmdLine: reboot=w coherent_pool=1M 8250.nr_uarts=1 pci=pcie_bus_safe numa_policy=interleave nvme.max_host_mem_size_mb=0  numa=fake=8 system_heap.max_order=0 iommu_dma_numa_policy=interleave smsc95xx.macaddr=2C:CF:67:7E:B5:72 vc_mem.mem_base=0x3fc00000 vc_mem.mem_size=0x40000000  zswap.enabled=1 zswap.compressor=zstd multipath=off dwc_otg.lpm_enable=0 console=tty1 root=/dev/sda2 rootfstype=ext4 panic=10 rootwait fixrtc quiet splash\nSourcePackage: linux-raspi\nUpgradeStatus: No upgrade log present (probably fresh install)\nacpidump: by stevepringle",
+      "last_activity_time": "2026-08-01T08:35:25.962604+00:00",
+      "owner": "Steve Pringle",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "apport-bug",
+        "arm64",
+        "arm64-image",
+        "kernel-daily-bug",
+        "raspi-image",
+        "resolute",
+        "wayland-session"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-07-31T14:35:45.206511+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "linux-raspi (Ubuntu)",
+          "target_display": "linux-raspi (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2162573"
+        }
+      ],
+      "title": "i2c_designware driver returning sda stuck low error",
+      "web_link": "https://bugs.launchpad.net/bugs/2162573"
+    },
+    "2165400": {
+      "date_created": "2026-08-27T14:43:05.975893+00:00",
+      "date_last_updated": "2026-10-12T13:18:42.378183+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2165400,
+      "last_activity_summary": "kernel-sru-workflow: status: Fix Released by ubuntu-kernel-bot",
+      "last_activity_time": "2026-10-12T13:18:42.378183+00:00",
+      "owner": "Manuel Diewald",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "focal",
+        "kernel-jira-issue-ksru-23913",
+        "kernel-release-tracking-bug",
+        "kernel-release-tracking-bug-live",
+        "kernel-sru-cycle-s2026.08.03-1",
+        "kernel-sru-derivative-of-2166396"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-08-27T15:11:28.478502+00:00",
+          "importance": "Medium",
+          "is_complete": false,
+          "series": "focal",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Focal)",
+          "target_display": "linux-raspi (Ubuntu Focal)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/focal/+source/linux-raspi/+bug/2165400"
+        }
+      ],
+      "title": "focal/linux-raspi: 5.4.0-1147.160 -proposed tracker",
+      "web_link": "https://bugs.launchpad.net/bugs/2165400"
+    },
+    "2166421": {
+      "date_created": "2026-09-03T21:47:36.894180+00:00",
+      "date_last_updated": "2026-09-16T18:13:08.018961+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2166421,
+      "last_activity_summary": "bug updated by ffried",
+      "last_activity_time": "2026-10-13T07:25:34.272651+00:00",
+      "owner": "Krish De Souza",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "apport-collected",
+        "kernel-daily-bug",
+        "resolute"
+      ],
+      "tasks": [
+        {
+          "assignee": "Juerg Haefliger",
+          "date_closed": null,
+          "date_created": "2026-09-03T21:47:36.894180+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "Confirmed",
+          "target": "linux-raspi (Ubuntu)",
+          "target_display": "linux-raspi (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2166421"
+        }
+      ],
+      "title": "Malformed early option 'numa' passed in numa=fake=8",
+      "web_link": "https://bugs.launchpad.net/bugs/2166421"
+    },
+    "2167359": {
+      "date_created": "2026-09-15T14:52:26.226312+00:00",
+      "date_last_updated": "2026-09-15T23:07:35.230877+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2167359,
+      "last_activity_summary": "tags: kernel-daily-bug by ubuntu-kernel-bot",
+      "last_activity_time": "2026-09-15T23:07:35.230877+00:00",
+      "owner": "Alessio Faina",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "kernel-daily-bug"
+      ],
+      "tasks": [
+        {
+          "assignee": "Alessio Faina",
+          "date_closed": null,
+          "date_created": "2026-09-15T14:52:26.226312+00:00",
+          "importance": "Medium",
+          "is_complete": false,
+          "series": null,
+          "status": "In Progress",
+          "target": "linux-raspi (Ubuntu)",
+          "target_display": "linux-raspi (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2167359"
+        },
+        {
+          "assignee": "Alessio Faina",
+          "date_closed": "2026-09-15T16:10:55.637201+00:00",
+          "date_created": "2026-09-15T14:52:43.279857+00:00",
+          "importance": "Medium",
+          "is_complete": true,
+          "series": "stonking",
+          "status": "Won't Fix",
+          "target": "linux-raspi (Ubuntu Stonking)",
+          "target_display": "linux-raspi (Ubuntu Stonking)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/stonking/+source/linux-raspi/+bug/2167359"
+        }
+      ],
+      "title": "linux-raspi: Kernel build fails with CONFIG_DRM_XE enabled",
+      "web_link": "https://bugs.launchpad.net/bugs/2167359"
+    },
+    "2168109": {
+      "date_created": "2026-09-23T13:50:47.738290+00:00",
+      "date_last_updated": "2026-09-24T10:00:59.481391+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2168109,
+      "last_activity_summary": "affects: linux-raspi (Ubuntu) by juergh",
+      "last_activity_time": "2026-09-24T10:00:59.481391+00:00",
+      "owner": "Benjamin Drung",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "kernel-daily-bug"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-09-23T14:35:27.196171+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "linux-raspi (Ubuntu)",
+          "target_display": "linux-raspi (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2168109"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-09-23T13:50:47.738290+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "ubuntu-raspi-settings (Ubuntu)",
+          "target_display": "ubuntu-raspi-settings (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/ubuntu-raspi-settings/+bug/2168109"
+        }
+      ],
+      "title": "brcmfmac firmware files should be included automatically",
+      "web_link": "https://bugs.launchpad.net/bugs/2168109"
+    },
+    "2168323": {
+      "date_created": "2026-09-23T20:36:48.299144+00:00",
+      "date_last_updated": "2026-10-13T04:02:13.428016+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2168323,
+      "last_activity_summary": "description: This bug will contain status and test results related to a kernel source (or snap) as stated in the title.\n\nFor an explanation of the tasks and the associated workflow see:\n  https://wiki.ubuntu.com/Kernel/kernel-sru-workflow\n\n-- swm properties --\nbuilt:\n  from: 6667b9c28dcaabef\n  route-entry: 1\ncomments:\n  abi-testing: 1\ndelta:\n  promote-to-proposed: [main, meta]\n  promote-to-updates: [main, meta]\nflag:\n  autoprep-requested: true\n  boot-testing-requested: true\n  bugs-spammed: true\n  proposed-announcement-sent: true\n  proposed-testing-requested: true\n  stream-from-cycle: true\nflavours:\n  linux-image-raspi: [arm64, armhf]\n  linux-image-raspi-5.4: [arm64, armhf]\n  linux-image-raspi-hwe-18.04: [arm64, armhf]\n  linux-image-raspi-hwe-18.04-edge: [arm64, armhf]\n  linux-image-raspi2: [arm64, armhf]\n  linux-image-raspi2-hwe-18.04: [arm64, armhf]\n  linux-image-raspi2-hwe-18.04-edge: [arm64, armhf]\nissue: KSRU-24560\nkernel-stable-master-bug: 2168328\npackages:\n  main: linux-raspi\n  meta: linux-meta-raspi\nphase: Complete\nphase-changed: Tuesday, 13. October 2026 02:57 UTC\nreason: {}\nsynthetic:\n  :auto-prepare: Triaged\n  :promote-to-as-proposed: Invalid\n  :promote-to-build-public: Invalid\ntesting:\n  verification-bugs: [2168323]\ntrackers:\n  bionic/linux-raspi-5.4: bug 2168322\n  focal/linux-raspi/pi-kernel: bug 2168320\nvariant: debs\nversions:\n  main: 5.4.0-1148.161\n  meta: 5.4.0.1148.179\nworkflow:\n  :auto-prepare: autoprep-requested\n~~:\n  announce:\n    swm-transition-crankable: 2026-09-28 07:57:11.776263\n  clamps:\n    new-review: 6667b9c28dcaabef\n    promote-to-proposed: 6667b9c28dcaabef\n    self: 5.4.0-1148.161\n    sru-review: 6667b9c28dcaabef\n  tracker:\n    last-message: '2026-09-29 23:01:34.405033+00:00' by ubuntu-kernel-bot",
+      "last_activity_time": "2026-10-13T04:02:13.428016+00:00",
+      "owner": "Stefan Bader",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "focal",
+        "kernel-jira-issue-ksru-24560",
+        "kernel-release-tracking-bug",
+        "kernel-release-tracking-bug-live",
+        "kernel-sru-cycle-2026.09.28-2",
+        "kernel-sru-derivative-of-2168328"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-09-23T21:12:54.361174+00:00",
+          "importance": "Medium",
+          "is_complete": false,
+          "series": "focal",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Focal)",
+          "target_display": "linux-raspi (Ubuntu Focal)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/focal/+source/linux-raspi/+bug/2168323"
+        }
+      ],
+      "title": "focal/linux-raspi: 5.4.0-1148.161 -proposed tracker",
+      "web_link": "https://bugs.launchpad.net/bugs/2168323"
+    },
+    "2169990": {
+      "date_created": "2026-10-08T11:02:47.347994+00:00",
+      "date_last_updated": "2026-10-30T22:21:26.457292+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2169990,
+      "last_activity_summary": "description: This bug will contain status and test results related to a kernel source (or snap) as stated in the title.\n\nFor an explanation of the tasks and the associated workflow see:\n  https://wiki.ubuntu.com/Kernel/kernel-sru-workflow\n\n-- swm properties --\nbuilt:\n  route-entry: 2\nflag:\n  autoprep-requested: true\n  stream-from-cycle: true\nissue: KSRU-25385\nkernel-stable-master-bug: 2170920\npackages:\n  lmg: linux-main-generate-raspi\n  lmm: linux-main-modules-raspi\n  lms: linux-main-signed-raspi\n  main: linux-raspi\n  meta: linux-meta-raspi\nphase: Ready for Packaging\nphase-changed: Thursday, 15. October 2026 07:17 UTC\nreason: {}\nsynthetic:\n  :auto-prepare: Incomplete\n  prepare-package-lmg:\n  prepare-package-lmm:\n  prepare-package-lms:\ntrackers:\n  resolute/linux-raspi/pi-kernel: bug 2169988\n  resolute/linux-raspi/pi-rt-kernel: bug 2169989\n  unknown/unknown: bug 2169988\nvariant: debs\nworkflow:\n  :auto-prepare: autoprep-failed\n~~:\n  announce:\n    swm-transition-crankable: 2026-10-27 16:12:04.971754\n  tracker:\n    last-message: '2026-10-08 22:41:53.941081+00:00' by ubuntu-kernel-bot",
+      "last_activity_time": "2026-10-30T22:21:26.457292+00:00",
+      "owner": "Mehmet Basaran",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "kernel-jira-issue-ksru-25385",
+        "kernel-release-tracking-bug",
+        "kernel-release-tracking-bug-live",
+        "kernel-sru-cycle-2026.10.12-1",
+        "kernel-sru-derivative-of-2170001",
+        "resolute"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-08T11:43:30.772156+00:00",
+          "importance": "Medium",
+          "is_complete": false,
+          "series": "resolute",
+          "status": "Confirmed",
+          "target": "linux-raspi (Ubuntu Resolute)",
+          "target_display": "linux-raspi (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-raspi/+bug/2169990"
+        }
+      ],
+      "title": "resolute/linux-raspi: <version to be filled> -proposed tracker",
+      "web_link": "https://bugs.launchpad.net/bugs/2169990"
+    },
+    "2170039": {
+      "date_created": "2026-10-08T11:20:56.191721+00:00",
+      "date_last_updated": "2026-10-30T22:07:37.607413+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2170039,
+      "last_activity_summary": "description: This bug will contain status and test results related to a kernel source (or snap) as stated in the title.\n\nFor an explanation of the tasks and the associated workflow see:\n  https://wiki.ubuntu.com/Kernel/kernel-sru-workflow\n\n-- swm properties --\nbuilt:\n  route-entry: 2\nflag:\n  autoprep-requested: true\n  stream-from-cycle: true\nissue: KSRU-25363\nkernel-stable-master-bug: 2170052\npackages:\n  main: linux-raspi\n  meta: linux-meta-raspi\nphase: Ready for Packaging\nphase-changed: Wednesday, 14. October 2026 20:26 UTC\nreason: {}\nsynthetic:\n  :auto-prepare: Incomplete\ntrackers:\n  noble/linux-raspi-realtime: bug 2170038\n  noble/linux-raspi/pi-kernel: bug 2170037\n  unknown/unknown: bug 2170038\nvariant: debs\nworkflow:\n  :auto-prepare: testbuild-failed\n~~:\n  announce:\n    swm-transition-crankable: 2026-10-27 23:06:02.533656\n  tracker:\n    last-message: '2026-10-12 11:27:22.150116+00:00' by ubuntu-kernel-bot",
+      "last_activity_time": "2026-10-30T22:07:37.607413+00:00",
+      "owner": "Mehmet Basaran",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "kernel-jira-issue-ksru-25363",
+        "kernel-release-tracking-bug",
+        "kernel-release-tracking-bug-live",
+        "kernel-sru-cycle-2026.10.12-1",
+        "kernel-sru-derivative-of-2170052",
+        "noble"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-08T12:56:30.541137+00:00",
+          "importance": "Medium",
+          "is_complete": false,
+          "series": "noble",
+          "status": "Confirmed",
+          "target": "linux-raspi (Ubuntu Noble)",
+          "target_display": "linux-raspi (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-raspi/+bug/2170039"
+        }
+      ],
+      "title": "noble/linux-raspi: <version to be filled> -proposed tracker",
+      "web_link": "https://bugs.launchpad.net/bugs/2170039"
+    },
+    "2170116": {
+      "date_created": "2026-10-08T12:22:02.471509+00:00",
+      "date_last_updated": "2026-10-30T22:07:36.592792+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2170116,
+      "last_activity_summary": "description: This bug will contain status and test results related to a kernel source (or snap) as stated in the title.\n\nFor an explanation of the tasks and the associated workflow see:\n  https://wiki.ubuntu.com/Kernel/kernel-sru-workflow\n\n-- swm properties --\nbuilt:\n  route-entry: 2\nflag:\n  autoprep-requested: true\n  stream-from-cycle: true\nissue: KSRU-25317\nkernel-stable-master-bug: 2170970\npackages:\n  main: linux-raspi\n  meta: linux-meta-raspi\nphase: Ready for Packaging\nphase-changed: Thursday, 15. October 2026 20:19 UTC\nreason: {}\nsynthetic:\n  :auto-prepare: Incomplete\ntrackers:\n  jammy/linux-raspi/pi-kernel: bug 2170115\n  unknown/unknown: bug 2170115\nvariant: debs\nworkflow:\n  :auto-prepare: autoprep-failed\n~~:\n  announce:\n    swm-transition-crankable: 2026-10-27 23:06:09.219002\n  tracker:\n    last-message: '2026-10-12 09:45:35.020461+00:00' by ubuntu-kernel-bot",
+      "last_activity_time": "2026-10-30T22:07:36.592792+00:00",
+      "owner": "Mehmet Basaran",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "jammy",
+        "kernel-jira-issue-ksru-25317",
+        "kernel-release-tracking-bug",
+        "kernel-release-tracking-bug-live",
+        "kernel-sru-cycle-2026.10.12-1",
+        "kernel-sru-derivative-of-2170124"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-08T14:44:09.838343+00:00",
+          "importance": "Medium",
+          "is_complete": false,
+          "series": "jammy",
+          "status": "Confirmed",
+          "target": "linux-raspi (Ubuntu Jammy)",
+          "target_display": "linux-raspi (Ubuntu Jammy)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/jammy/+source/linux-raspi/+bug/2170116"
+        }
+      ],
+      "title": "jammy/linux-raspi: <version to be filled> -proposed tracker",
+      "web_link": "https://bugs.launchpad.net/bugs/2170116"
+    },
+    "2170166": {
+      "date_created": "2026-10-08T14:08:49.329119+00:00",
+      "date_last_updated": "2026-10-30T22:21:17.797359+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2170166,
+      "last_activity_summary": "description: This bug will contain status and test results related to a kernel source (or snap) as stated in the title.\n\nFor an explanation of the tasks and the associated workflow see:\n  https://wiki.ubuntu.com/Kernel/kernel-sru-workflow\n\n-- swm properties --\nbuilt:\n  route-entry: 2\nflag:\n  autoprep-requested: true\n  stream-from-cycle: true\nissue: KSRU-25292\nkernel-stable-master-bug: 2170171\npackages:\n  main: linux-raspi\n  meta: linux-meta-raspi\nphase: Ready for Packaging\nphase-changed: Thursday, 15. October 2026 06:02 UTC\nreason: {}\nsynthetic:\n  :auto-prepare: Fix Released\ntrackers:\n  bionic/linux-raspi-5.4: bug 2170165\n  focal/linux-raspi/pi-kernel: bug 2170163\n  unknown/unknown: bug 2170165\nvariant: debs\nworkflow:\n  :auto-prepare: source-complete\n~~:\n  announce:\n    swm-transition-crankable: 2026-10-27 16:10:09.293552\n  tracker:\n    last-message: '2026-10-08 14:08:49.329119+00:00' by ubuntu-kernel-bot",
+      "last_activity_time": "2026-10-30T22:21:17.797359+00:00",
+      "owner": "Mehmet Basaran",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "focal",
+        "kernel-jira-issue-ksru-25292",
+        "kernel-release-tracking-bug",
+        "kernel-release-tracking-bug-live",
+        "kernel-sru-cycle-2026.10.12-1",
+        "kernel-sru-derivative-of-2170171"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-08T15:59:11.548327+00:00",
+          "importance": "Medium",
+          "is_complete": false,
+          "series": "focal",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Focal)",
+          "target_display": "linux-raspi (Ubuntu Focal)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/focal/+source/linux-raspi/+bug/2170166"
+        }
+      ],
+      "title": "focal/linux-raspi: <version to be filled> -proposed tracker",
+      "web_link": "https://bugs.launchpad.net/bugs/2170166"
+    },
+    "2170238": {
+      "date_created": "2026-10-08T19:12:47.580099+00:00",
+      "date_last_updated": "2026-10-16T10:48:46.896992+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2170238,
+      "last_activity_summary": "linux-raspi (Ubuntu): assignee: Canonical Kernel Team (canonical-kernel-team) by changwei2025",
+      "last_activity_time": "2026-10-16T10:48:46.896992+00:00",
+      "owner": "Anton",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "kernel-daily-bug"
+      ],
+      "tasks": [
+        {
+          "assignee": "Canonical Kernel Team",
+          "date_closed": null,
+          "date_created": "2026-10-08T19:12:47.580099+00:00",
+          "importance": "Medium",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "linux-raspi (Ubuntu)",
+          "target_display": "linux-raspi (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2170238"
+        }
+      ],
+      "title": "Missing RPi commit \"of: Improve compatibility with old Pi 5 firmware\" - 7.0 kernel can't boot on Pi 5 with pre-2025-02 EEPROM",
+      "web_link": "https://bugs.launchpad.net/bugs/2170238"
+    },
+    "2171439": {
+      "date_created": "2026-10-19T19:29:26.942287+00:00",
+      "date_last_updated": "2026-10-23T04:31:40.901943+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2171439,
+      "last_activity_summary": "linux-raspi (Ubuntu): importance: Low by rossporter506",
+      "last_activity_time": "2026-10-23T04:31:40.901943+00:00",
+      "owner": "AdrianChallinor",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "apport-collected",
+        "arm64-image",
+        "kernel-daily-bug",
+        "raspi-image",
+        "resolute"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-19T19:29:26.942287+00:00",
+          "importance": "Low",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "linux-raspi (Ubuntu)",
+          "target_display": "linux-raspi (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2171439"
+        }
+      ],
+      "title": "linux-raspi: UBSAN array-index-out-of-bounds in minstrel_ht_tx_status via mt76x02u (MT7612U) - please backport \"wifi: mt76: mt76x02: validate TX-status rate index before mac80211 handoff\"",
+      "web_link": "https://bugs.launchpad.net/bugs/2171439"
+    },
+    "2171665": {
+      "date_created": "2026-10-21T16:05:17.261252+00:00",
+      "date_last_updated": "2026-11-06T21:13:26.620168+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2171665,
+      "last_activity_summary": "description: This bug will contain status and test results related to a kernel source (or snap) as stated in the title.\n\nFor an explanation of the tasks and the associated workflow see:\n  https://wiki.ubuntu.com/Kernel/kernel-sru-workflow\n\n-- swm properties --\nbuilt:\n  from: 69c87ac378cd98e3\n  route-entry: 1\ncomments:\n  abi-testing: 3\ndelta:\n  promote-to-proposed: [lmm, lms, main, meta, lmg]\n  promote-to-updates: [lmm, lms, main, meta]\nflag:\n  autoprep-requested: true\n  boot-testing-requested: true\n  bugs-spammed: true\n  proposed-announcement-sent: true\n  proposed-testing-requested: true\n  stream-from-cycle: true\nflavours:\n  linux-image-raspi: [arm64]\n  linux-image-raspi-7.0: [arm64]\n  linux-image-raspi-realtime: [arm64]\n  linux-image-raspi-realtime-7.0: [arm64]\nissue: KSRU-24948\nkernel-stable-master-bug: 2171676\npackages:\n  lmg: linux-main-generate-raspi\n  lmm: linux-main-modules-raspi\n  lms: linux-main-signed-raspi\n  main: linux-raspi\n  meta: linux-meta-raspi\nphase: Ready for Promote to Updates\nphase-changed: Friday, 06. November 2026 21:13 UTC\nreason:\n  :auto-prepare: Stalled -s prepare failed\n  promote-to-updates: Pending -- ready to copy\nsynthetic:\n  :auto-prepare: Incomplete\n  :promote-to-as-proposed: Fix Released\n  :promote-to-build-public: Invalid\n  prepare-package-lmg:\n    assignee: ecanepa\n    status: Fix Released\n  prepare-package-lmm:\n    assignee: ecanepa\n    status: Fix Released\n  prepare-package-lms:\n    assignee: ecanepa\n    status: Fix Released\ntest-observer:\n  proposed: 416691\ntesting:\n  verification-bugs: [2171665, 2163214, 2166443, 2160200, 2163293,\n    2164504, 2163121, 2163375, 2165189, 2172644, 2158858, 2163508,\n    2132119, 2165040, 2165477, 2156316, 2162803, 2164716, 2166356,\n    2162045, 2162695, 2162904, 2161748, 2165407, 2168063, 2164967,\n    2163062, 2160082, 2165872, 2162704, 2164666, 2164516]\ntrackers:\n  resolute/linux-raspi/pi-kernel: bug 2171662\n  resolute/linux-raspi/pi-rt-kernel: bug 2171664\nvariant: debs\nversions:\n  lmm: 7.0.0-1023.23\n  main: 7.0.0-1023.23\n  meta: 7.0.0-1023.23\nworkflow:\n  :auto-prepare: autoprep-failed\n~~:\n  announce:\n    swm-transition-crankable: 2026-10-29 20:28:40.979747\n  clamps:\n    new-review: 69c87ac378cd98e3\n    promote-to-proposed: 69c87ac378cd98e3\n    self: 7.0.0-1023.23\n    sru-review: 69c87ac378cd98e3\n  tracker:\n    last-message: '2026-11-06 20:03:15.667757+00:00' by ubuntu-kernel-bot",
+      "last_activity_time": "2026-11-06T21:13:26.620168+00:00",
+      "owner": "Stefan Bader",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "boot-testing-passed",
+        "certification-testing-passed",
+        "kernel-jira-issue-ksru-24948",
+        "kernel-override-hold-promote-to-updates",
+        "kernel-release-tracking-bug",
+        "kernel-release-tracking-bug-live",
+        "kernel-sru-cycle-2026.10.26-1",
+        "kernel-sru-derivative-of-2171676",
+        "resolute"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-21T18:30:25.173039+00:00",
+          "importance": "Medium",
+          "is_complete": false,
+          "series": "resolute",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Resolute)",
+          "target_display": "linux-raspi (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-raspi/+bug/2171665"
+        }
+      ],
+      "title": "resolute/linux-raspi: 7.0.0-1023.23 -proposed tracker",
+      "web_link": "https://bugs.launchpad.net/bugs/2171665"
+    },
+    "2171719": {
+      "date_created": "2026-10-21T17:31:08.840620+00:00",
+      "date_last_updated": "2026-11-06T02:00:43.352274+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2171719,
+      "last_activity_summary": "description: This bug will contain status and test results related to a kernel source (or snap) as stated in the title.\n\nFor an explanation of the tasks and the associated workflow see:\n  https://wiki.ubuntu.com/Kernel/kernel-sru-workflow\n\n-- swm properties --\nbuilt:\n  from: e5ffde89eda14a68\n  route-entry: 1\ncomments:\n  abi-testing: 1\ndelta:\n  promote-to-proposed: [main, meta]\n  promote-to-security: [main, meta]\n  promote-to-updates: [main, meta]\nflag:\n  autoprep-requested: true\n  boot-testing-requested: true\n  bugs-spammed: true\n  proposed-announcement-sent: true\n  proposed-testing-requested: true\n  stream-from-cycle: true\nflavours:\n  linux-image-raspi: [arm64]\n  linux-image-raspi-6.8: [arm64]\nissue: KSRU-24996\nkernel-stable-master-bug: 2171733\npackages:\n  main: linux-raspi\n  meta: linux-meta-raspi\nphase: Ready for Promote to Security\nphase-changed: Friday, 06. November 2026 02:00 UTC\nreason:\n  :auto-prepare: Stalled -s prepare failed\n  promote-to-security: Pending -- ready to copy\nsynthetic:\n  :auto-prepare: Incomplete\n  :promote-to-as-proposed: Fix Released\n  :promote-to-build-public: Invalid\ntest-observer:\n  proposed: 416690\ntesting:\n  verification-bugs: [2171719, 2164516, 2163508, 2165732, 2160493,\n    2168133, 2165535, 2168026, 2168142, 2166192, 2161547, 2089306,\n    2165140, 2167237, 2165873, 2162917, 2164507, 2164796, 2166353,\n    2166995, 2161004, 2071590, 2132119, 2164716]\ntrackers:\n  noble/linux-raspi-realtime: bug 2171718\n  noble/linux-raspi/pi-kernel: bug 2171717\nvariant: debs\nversions:\n  main: 6.8.0-1068.72\n  meta: 6.8.0-1068.72\nworkflow:\n  :auto-prepare: autoprep-failed\n~~:\n  announce:\n    swm-transition-crankable: 2026-10-30 20:34:51.159975\n  clamps:\n    new-review: e5ffde89eda14a68\n    promote-to-proposed: e5ffde89eda14a68\n    self: 6.8.0-1068.72\n    sru-review: e5ffde89eda14a68\n  tracker:\n    last-message: '2026-10-31 16:37:40.361670+00:00' by ubuntu-kernel-bot",
+      "last_activity_time": "2026-11-06T02:00:43.352274+00:00",
+      "owner": "Stefan Bader",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "boot-testing-passed",
+        "kernel-jira-issue-ksru-24996",
+        "kernel-override-hold-promote-to-updates",
+        "kernel-release-tracking-bug",
+        "kernel-release-tracking-bug-live",
+        "kernel-sru-cycle-2026.10.26-1",
+        "kernel-sru-derivative-of-2171733",
+        "noble"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-21T20:12:45.202221+00:00",
+          "importance": "Medium",
+          "is_complete": false,
+          "series": "noble",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Noble)",
+          "target_display": "linux-raspi (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-raspi/+bug/2171719"
+        }
+      ],
+      "title": "noble/linux-raspi: 6.8.0-1068.72 -proposed tracker",
+      "web_link": "https://bugs.launchpad.net/bugs/2171719"
+    },
+    "2171794": {
+      "date_created": "2026-10-21T18:39:14.145950+00:00",
+      "date_last_updated": "2026-11-05T13:24:45.344508+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2171794,
+      "last_activity_summary": "description: This bug will contain status and test results related to a kernel source (or snap) as stated in the title.\n\nFor an explanation of the tasks and the associated workflow see:\n  https://wiki.ubuntu.com/Kernel/kernel-sru-workflow\n\n-- swm properties --\nbuilt:\n  from: c7ff214dfb1c7c07\n  route-entry: 1\ncomments:\n  abi-testing: 1\ndelta:\n  promote-to-proposed: [main, meta]\nflag:\n  autoprep-requested: true\n  boot-testing-requested: true\n  bugs-spammed: true\n  proposed-announcement-sent: true\n  proposed-testing-requested: true\n  stream-from-cycle: true\nflavours:\n  linux-image-raspi: [arm64, armhf]\n  linux-image-raspi-5.15: [arm64, armhf]\n  linux-image-raspi-nolpae: [armhf]\nissue: KSRU-25062\nkernel-stable-master-bug: 2171802\npackages:\n  main: linux-raspi\n  meta: linux-meta-raspi\nphase: Holding before Promote to Updates\nphase-changed: Thursday, 05. November 2026 13:21 UTC\nreason:\n  :auto-prepare: Stalled -s prepare failed\n  promote-to-updates: Pending -- snap not yet in candidate\nsynthetic:\n  :auto-prepare: Incomplete\n  :promote-to-as-proposed: Fix Released\n  :promote-to-build-public: Invalid\ntest-observer:\n  proposed: 416689\ntesting:\n  verification-bugs: [2161176, 2164699, 2137199, 2165166, 2165595,\n    2166457, 2164516, 2165170, 2165124, 1961566, 2165125, 2163508,\n    2171794, 2165192, 2164800, 2168206, 1786013, 1956562]\ntrackers:\n  jammy/linux-raspi/pi-kernel: bug 2171793\nvariant: debs\nversions:\n  main: 5.15.0-1113.116\n  meta: 5.15.0.1113.111\nworkflow:\n  :auto-prepare: autoprep-failed\n~~:\n  announce:\n    swm-transition-crankable: 2026-10-29 20:28:30.547997\n  clamps:\n    new-review: c7ff214dfb1c7c07\n    promote-to-proposed: c7ff214dfb1c7c07\n    self: 5.15.0-1113.116\n    sru-review: c7ff214dfb1c7c07\n  tracker:\n    last-message: '2026-10-31 16:17:52.527785+00:00' by ubuntu-kernel-bot",
+      "last_activity_time": "2026-11-05T13:24:45.344508+00:00",
+      "owner": "Stefan Bader",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "boot-testing-passed",
+        "jammy",
+        "kernel-jira-issue-ksru-25062",
+        "kernel-release-tracking-bug",
+        "kernel-release-tracking-bug-live",
+        "kernel-sru-cycle-2026.10.26-1",
+        "kernel-sru-derivative-of-2171802"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-21T21:09:49.191424+00:00",
+          "importance": "Medium",
+          "is_complete": false,
+          "series": "jammy",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Jammy)",
+          "target_display": "linux-raspi (Ubuntu Jammy)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/jammy/+source/linux-raspi/+bug/2171794"
+        }
+      ],
+      "title": "jammy/linux-raspi: 5.15.0-1113.116 -proposed tracker",
+      "web_link": "https://bugs.launchpad.net/bugs/2171794"
+    },
+    "2171872": {
+      "date_created": "2026-10-22T06:24:52.412448+00:00",
+      "date_last_updated": "2026-11-06T05:25:47.209173+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2171872,
+      "last_activity_summary": "description: This bug will contain status and test results related to a kernel source (or snap) as stated in the title.\n\nFor an explanation of the tasks and the associated workflow see:\n  https://wiki.ubuntu.com/Kernel/kernel-sru-workflow\n\n-- swm properties --\nbuilt:\n  from: 63e681031c559303\n  route-entry: 1\ncomments:\n  abi-testing: 1\ndelta:\n  promote-to-proposed: [main, meta]\n  promote-to-updates: [main, meta]\nflag:\n  autoprep-requested: true\n  boot-testing-requested: true\n  bugs-spammed: true\n  proposed-announcement-sent: true\n  proposed-testing-requested: true\n  stream-from-cycle: true\nflavours:\n  linux-image-raspi: [arm64, armhf]\n  linux-image-raspi-5.4: [arm64, armhf]\n  linux-image-raspi-hwe-18.04: [arm64, armhf]\n  linux-image-raspi-hwe-18.04-edge: [arm64, armhf]\n  linux-image-raspi2: [arm64, armhf]\n  linux-image-raspi2-hwe-18.04: [arm64, armhf]\n  linux-image-raspi2-hwe-18.04-edge: [arm64, armhf]\nissue: KSRU-25101\nkernel-stable-master-bug: 2171877\npackages:\n  main: linux-raspi\n  meta: linux-meta-raspi\nphase: Complete\nphase-changed: Friday, 06. November 2026 04:09 UTC\nreason: {}\nsynthetic:\n  :auto-prepare: Fix Released\n  :promote-to-as-proposed: Invalid\n  :promote-to-build-public: Invalid\ntesting:\n  verification-bugs: [2170171, 2171872]\ntrackers:\n  bionic/linux-raspi-5.4: bug 2171871\n  focal/linux-raspi/pi-kernel: bug 2171869\nvariant: debs\nversions:\n  main: 5.4.0-1149.162\n  meta: 5.4.0.1149.180\nworkflow:\n  :auto-prepare: source-complete\n~~:\n  announce:\n    swm-transition-crankable: 2026-10-29 20:29:52.539512\n  clamps:\n    new-review: 63e681031c559303\n    promote-to-proposed: 63e681031c559303\n    self: 5.4.0-1149.162\n    sru-review: 63e681031c559303\n  tracker:\n    last-message: '2026-10-31 19:37:29.899277+00:00' by ubuntu-kernel-bot",
+      "last_activity_time": "2026-11-06T05:25:47.209173+00:00",
+      "owner": "Stefan Bader",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "boot-testing-passed",
+        "focal",
+        "kernel-jira-issue-ksru-25101",
+        "kernel-override-hold-promote-to-updates",
+        "kernel-release-tracking-bug",
+        "kernel-release-tracking-bug-live",
+        "kernel-sru-cycle-2026.10.26-1",
+        "kernel-sru-derivative-of-2171877"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-22T07:01:09.105528+00:00",
+          "importance": "Medium",
+          "is_complete": false,
+          "series": "focal",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Focal)",
+          "target_display": "linux-raspi (Ubuntu Focal)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/focal/+source/linux-raspi/+bug/2171872"
+        }
+      ],
+      "title": "focal/linux-raspi: 5.4.0-1149.162 -proposed tracker",
+      "web_link": "https://bugs.launchpad.net/bugs/2171872"
+    },
+    "2172394": {
+      "date_created": "2026-10-28T16:16:48.273277+00:00",
+      "date_last_updated": "2026-10-28T23:09:19.596434+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2172394,
+      "last_activity_summary": "tags: kernel-daily-bug by ubuntu-kernel-bot",
+      "last_activity_time": "2026-10-28T23:09:19.596434+00:00",
+      "owner": "Bob Guilfoyle",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "kernel-daily-bug"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-28T16:16:48.273277+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "linux-raspi (Ubuntu)",
+          "target_display": "linux-raspi (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2172394"
+        }
+      ],
+      "title": "Pi 4B Rev 1.4 hangs at xhci_hcd init / reboot-loops on Ubuntu 26.04 when BOOT_ORDER tries network first",
+      "web_link": "https://bugs.launchpad.net/bugs/2172394"
+    },
+    "2172496": {
+      "date_created": "2026-10-29T14:54:58.188890+00:00",
+      "date_last_updated": "2026-11-09T09:34:49.077412+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2172496,
+      "last_activity_summary": "kernel-sru-workflow: assignee: Gabriela Bittencourt (gbittencourt) by smb",
+      "last_activity_time": "2026-11-09T09:34:49.077412+00:00",
+      "owner": "Stefan Bader",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "focal",
+        "kernel-jira-issue-ksru-25194",
+        "kernel-release-tracking-bug",
+        "kernel-release-tracking-bug-live",
+        "kernel-sru-cycle-2026.11.02-1",
+        "kernel-sru-derivative-of-2172501"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-29T15:58:19.537176+00:00",
+          "importance": "Medium",
+          "is_complete": false,
+          "series": "focal",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Focal)",
+          "target_display": "linux-raspi (Ubuntu Focal)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/focal/+source/linux-raspi/+bug/2172496"
+        }
+      ],
+      "title": "focal/linux-raspi: 5.4.0-1150.163 -proposed tracker",
+      "web_link": "https://bugs.launchpad.net/bugs/2172496"
+    },
+    "2172644": {
+      "date_created": "2026-10-30T23:14:04.065470+00:00",
+      "date_last_updated": "2026-11-04T21:40:41.259605+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2172644,
+      "last_activity_summary": "tags: kernel-daily-bug kernel-spammed-resolute-linux-raspi-v2 verification-done-resolute-linux-raspi by ecanepa",
+      "last_activity_time": "2026-11-04T21:40:41.259605+00:00",
+      "owner": "Edoardo Canepa",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "kernel-daily-bug",
+        "kernel-spammed-resolute-linux-raspi-v2",
+        "verification-done-resolute-linux-raspi"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-30T23:14:04.065470+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "linux-raspi (Ubuntu)",
+          "target_display": "linux-raspi (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2172644"
+        }
+      ],
+      "title": "resolute/linux-raspi: FTBFS after rebase onto Ubuntu-7.0.0-43.43 (pps-gpio capture_clear, v3d stats refcount)",
+      "web_link": "https://bugs.launchpad.net/bugs/2172644"
+    },
+    "2172746": {
+      "date_created": "2026-11-02T10:56:43.874145+00:00",
+      "date_last_updated": "2026-11-02T23:09:09.439717+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2172746,
+      "last_activity_summary": "tags: apparmor kernel-daily-bug regression-proposed by ubuntu-kernel-bot",
+      "last_activity_time": "2026-11-02T23:09:09.439717+00:00",
+      "owner": "Benjamin Stein",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "apparmor",
+        "kernel-daily-bug",
+        "regression-proposed"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-02T10:56:43.874145+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "linux-raspi (Ubuntu)",
+          "target_display": "linux-raspi (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2172746"
+        }
+      ],
+      "title": "7.0.0-1023 (raspi, based on 7.0.0-43): AppArmor denies signals inside containers (forced stack //&unconfined), breaking Kubernetes nodes",
+      "web_link": "https://bugs.launchpad.net/bugs/2172746"
+    },
+    "2173148": {
+      "date_created": "2026-11-05T16:21:43.125062+00:00",
+      "date_last_updated": "2026-11-05T23:13:24.109136+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2173148,
+      "last_activity_summary": "tags: kernel-daily-bug by ubuntu-kernel-bot",
+      "last_activity_time": "2026-11-05T23:13:24.109136+00:00",
+      "owner": "Paolo Gentili",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "kernel-daily-bug"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-05T16:21:43.125062+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "linux-raspi (Ubuntu)",
+          "target_display": "linux-raspi (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2173148"
+        }
+      ],
+      "title": "Raspberry Pi 5 RTC alarm interrupt delayed by many minutes on rtcwake",
+      "web_link": "https://bugs.launchpad.net/bugs/2173148"
+    },
+    "2173218": {
+      "date_created": "2026-11-05T19:23:16.076908+00:00",
+      "date_last_updated": "2026-11-06T03:59:28.300285+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2173218,
+      "last_activity_summary": "description: This bug will contain status and test results related to a kernel source (or snap) as stated in the title.\n\nFor an explanation of the tasks and the associated workflow see:\n  https://wiki.ubuntu.com/Kernel/kernel-sru-workflow\n\n-- swm properties --\nbuilt:\n  route-entry: 1\nflag:\n  autoprep-requested: true\n  stream-from-cycle: true\nissue: KSRU-25523\nkernel-stable-master-bug: 2173225\npackages:\n  main: linux-raspi\n  meta: linux-meta-raspi\nphase: Holding before Packaging\nphase-changed: Thursday, 05. November 2026 21:07 UTC\nreason:\n  :auto-prepare: Stalled -s prepare failed\n  :prepare-packages: Holding -b Not ready to be cranked (preparation\n    failed)\n  prepare-package: Holding -- waiting for parent tracker\nsynthetic:\n  :auto-prepare: Incomplete\ntrackers:\n  jammy/linux-raspi/pi-kernel: bug 2173217\nvariant: debs\nworkflow:\n  :auto-prepare: autoprep-failed\n~~:\n  tracker:\n    last-message: '2026-11-05 19:23:16.076908+00:00' by ubuntu-kernel-bot",
+      "last_activity_time": "2026-11-06T03:59:28.300285+00:00",
+      "owner": "Mehmet Basaran",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "jammy",
+        "kernel-jira-issue-ksru-25523",
+        "kernel-release-tracking-bug",
+        "kernel-release-tracking-bug-live",
+        "kernel-sru-cycle-2026.11.09-1",
+        "kernel-sru-derivative-of-2173225"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-05T20:50:28.199677+00:00",
+          "importance": "Medium",
+          "is_complete": false,
+          "series": "jammy",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Jammy)",
+          "target_display": "linux-raspi (Ubuntu Jammy)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/jammy/+source/linux-raspi/+bug/2173218"
+        }
+      ],
+      "title": "jammy/linux-raspi: <version to be filled> -proposed tracker",
+      "web_link": "https://bugs.launchpad.net/bugs/2173218"
+    },
+    "2173367": {
+      "date_created": "2026-11-05T23:38:14.602970+00:00",
+      "date_last_updated": "2026-11-06T07:53:19.513353+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2173367,
+      "last_activity_summary": "description: This bug will contain status and test results related to a kernel source (or snap) as stated in the title.\n\nFor an explanation of the tasks and the associated workflow see:\n  https://wiki.ubuntu.com/Kernel/kernel-sru-workflow\n\n-- swm properties --\nbuilt:\n  route-entry: 1\nflag:\n  autoprep-requested: true\n  stream-from-cycle: true\nissue: KSRU-25622\nkernel-stable-master-bug: 2173378\npackages:\n  lmg: linux-main-generate-raspi\n  lmm: linux-main-modules-raspi\n  lms: linux-main-signed-raspi\n  main: linux-raspi\n  meta: linux-meta-raspi\nphase: Holding before Packaging\nphase-changed: Friday, 06. November 2026 01:23 UTC\nreason:\n  :auto-prepare: Stalled -s test-build failed\n  :prepare-packages: Holding -b Not ready to be cranked (test-build\n    failed)\n  prepare-package: Holding -- waiting for parent tracker\nsynthetic:\n  :auto-prepare: Incomplete\n  prepare-package-lmg:\n  prepare-package-lmm:\n  prepare-package-lms:\ntrackers:\n  resolute/linux-raspi/pi-kernel: bug 2173365\n  resolute/linux-raspi/pi-rt-kernel: bug 2173366\nvariant: debs\nworkflow:\n  :auto-prepare: testbuild-failed\n~~:\n  tracker:\n    last-message: '2026-11-05 23:38:14.602970+00:00' by ubuntu-kernel-bot",
+      "last_activity_time": "2026-11-06T07:53:19.513353+00:00",
+      "owner": "Mehmet Basaran",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "kernel-jira-issue-ksru-25622",
+        "kernel-release-tracking-bug",
+        "kernel-release-tracking-bug-live",
+        "kernel-sru-cycle-2026.11.09-1",
+        "kernel-sru-derivative-of-2173378",
+        "resolute"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-06T00:53:58.675273+00:00",
+          "importance": "Medium",
+          "is_complete": false,
+          "series": "resolute",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Resolute)",
+          "target_display": "linux-raspi (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-raspi/+bug/2173367"
+        }
+      ],
+      "title": "resolute/linux-raspi: <version to be filled> -proposed tracker",
+      "web_link": "https://bugs.launchpad.net/bugs/2173367"
+    },
+    "2173392": {
+      "date_created": "2026-11-06T00:17:37.920518+00:00",
+      "date_last_updated": "2026-11-06T08:44:26.178015+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2173392,
+      "last_activity_summary": "description: This bug will contain status and test results related to a kernel source (or snap) as stated in the title.\n\nFor an explanation of the tasks and the associated workflow see:\n  https://wiki.ubuntu.com/Kernel/kernel-sru-workflow\n\n-- swm properties --\nbuilt:\n  route-entry: 1\nflag:\n  autoprep-requested: true\n  stream-from-cycle: true\nissue: KSRU-25645\nkernel-stable-master-bug: 2173396\npackages:\n  lmg: linux-main-generate-raspi\n  lmm: linux-main-modules-raspi\n  lms: linux-main-signed-raspi\n  main: linux-raspi\n  meta: linux-meta-raspi\nphase: Holding before Packaging\nphase-changed: Friday, 06. November 2026 01:46 UTC\nreason:\n  :auto-prepare: Stalled -s prepare failed\n  :prepare-packages: Holding -b Not ready to be cranked (preparation\n    failed)\n  prepare-package: Holding -- waiting for parent tracker\nsynthetic:\n  :auto-prepare: Incomplete\n  prepare-package-lmg:\n  prepare-package-lmm:\n  prepare-package-lms:\ntrackers:\n  stonking/linux-raspi/pi-kernel: bug 2173391\nvariant: debs\nworkflow:\n  :auto-prepare: autoprep-failed\n~~:\n  tracker:\n    last-message: '2026-11-06 00:17:37.920518+00:00' by ubuntu-kernel-bot",
+      "last_activity_time": "2026-11-06T08:44:26.178015+00:00",
+      "owner": "Mehmet Basaran",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "kernel-jira-issue-ksru-25645",
+        "kernel-release-tracking-bug",
+        "kernel-release-tracking-bug-live",
+        "kernel-sru-cycle-2026.11.09-1",
+        "kernel-sru-derivative-of-2173396",
+        "stonking"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-06T01:27:11.121374+00:00",
+          "importance": "Medium",
+          "is_complete": false,
+          "series": "stonking",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Stonking)",
+          "target_display": "linux-raspi (Ubuntu Stonking)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/stonking/+source/linux-raspi/+bug/2173392"
+        }
+      ],
+      "title": "stonking/linux-raspi: <version to be filled> -proposed tracker",
+      "web_link": "https://bugs.launchpad.net/bugs/2173392"
+    },
+    "2173431": {
+      "date_created": "2026-11-06T00:37:34.183364+00:00",
+      "date_last_updated": "2026-11-06T06:52:32.819738+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2173431,
+      "last_activity_summary": "description: This bug will contain status and test results related to a kernel source (or snap) as stated in the title.\n\nFor an explanation of the tasks and the associated workflow see:\n  https://wiki.ubuntu.com/Kernel/kernel-sru-workflow\n\n-- swm properties --\nbuilt:\n  route-entry: 1\nflag:\n  autoprep-requested: true\n  stream-from-cycle: true\nissue: KSRU-25682\nkernel-stable-master-bug: 2173436\npackages:\n  main: linux-raspi\n  meta: linux-meta-raspi\nphase: Holding before Packaging\nphase-changed: Friday, 06. November 2026 02:40 UTC\nreason:\n  :auto-prepare: Stalled -s prepare failed\n  :prepare-packages: Holding -b Not ready to be cranked (preparation\n    failed)\n  prepare-package: Holding -- waiting for parent tracker\nsynthetic:\n  :auto-prepare: Incomplete\ntrackers:\n  bionic/linux-raspi-5.4: bug 2173430\n  focal/linux-raspi/pi-kernel: bug 2173428\nvariant: debs\nworkflow:\n  :auto-prepare: autoprep-failed\n~~:\n  tracker:\n    last-message: '2026-11-06 00:37:34.183364+00:00' by ubuntu-kernel-bot",
+      "last_activity_time": "2026-11-06T06:52:32.819738+00:00",
+      "owner": "Mehmet Basaran",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "focal",
+        "kernel-jira-issue-ksru-25682",
+        "kernel-release-tracking-bug",
+        "kernel-release-tracking-bug-live",
+        "kernel-sru-cycle-2026.11.09-2",
+        "kernel-sru-derivative-of-2173436"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-06T02:19:17.149695+00:00",
+          "importance": "Medium",
+          "is_complete": false,
+          "series": "focal",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Focal)",
+          "target_display": "linux-raspi (Ubuntu Focal)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/focal/+source/linux-raspi/+bug/2173431"
+        }
+      ],
+      "title": "focal/linux-raspi: <version to be filled> -proposed tracker",
+      "web_link": "https://bugs.launchpad.net/bugs/2173431"
+    },
+    "2173475": {
+      "date_created": "2026-11-06T01:01:56.360818+00:00",
+      "date_last_updated": "2026-11-06T18:30:35.446265+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2173475,
+      "last_activity_summary": "description: This bug will contain status and test results related to a kernel source (or snap) as stated in the title.\n\nFor an explanation of the tasks and the associated workflow see:\n  https://wiki.ubuntu.com/Kernel/kernel-sru-workflow\n\n-- swm properties --\nbuilt:\n  route-entry: 1\nflag:\n  autoprep-requested: true\n  stream-from-cycle: true\nissue: KSRU-25725\nkernel-stable-master-bug: 2173488\npackages:\n  main: linux-raspi\n  meta: linux-meta-raspi\nphase: Holding before Packaging\nphase-changed: Friday, 06. November 2026 03:28 UTC\nreason:\n  :auto-prepare: Stalled -s prepare failed\n  :prepare-packages: Holding -b Not ready to be cranked (preparation\n    failed)\n  prepare-package: Holding -- waiting for parent tracker\nsynthetic:\n  :auto-prepare: Incomplete\ntrackers:\n  noble/linux-raspi-realtime: bug 2173474\n  noble/linux-raspi/pi-kernel: bug 2173473\nvariant: debs\nworkflow:\n  :auto-prepare: autoprep-failed\n~~:\n  tracker:\n    last-message: '2026-11-06 01:01:56.360818+00:00' by ubuntu-kernel-bot",
+      "last_activity_time": "2026-11-06T18:30:35.446265+00:00",
+      "owner": "Mehmet Basaran",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "kernel-jira-issue-ksru-25725",
+        "kernel-release-tracking-bug",
+        "kernel-release-tracking-bug-live",
+        "kernel-sru-cycle-2026.11.09-2",
+        "kernel-sru-derivative-of-2173488",
+        "noble"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-06T03:07:06.974183+00:00",
+          "importance": "Medium",
+          "is_complete": false,
+          "series": "noble",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Noble)",
+          "target_display": "linux-raspi (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-raspi/+bug/2173475"
+        }
+      ],
+      "title": "noble/linux-raspi: <version to be filled> -proposed tracker",
+      "web_link": "https://bugs.launchpad.net/bugs/2173475"
+    },
+    "2173603": {
+      "date_created": "2026-11-07T00:06:33.838353+00:00",
+      "date_last_updated": "2026-11-07T23:07:52.644821+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2173603,
+      "last_activity_summary": "tags: kernel-daily-bug by ubuntu-kernel-bot",
+      "last_activity_time": "2026-11-07T23:07:52.644821+00:00",
+      "owner": "Maizi Liao",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "kernel-daily-bug"
+      ],
+      "tasks": [
+        {
+          "assignee": "Maizi Liao",
+          "date_closed": null,
+          "date_created": "2026-11-07T00:06:33.838353+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "linux-raspi (Ubuntu)",
+          "target_display": "linux-raspi (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2173603"
+        },
+        {
+          "assignee": "Maizi Liao",
+          "date_closed": null,
+          "date_created": "2026-11-07T00:07:45.858788+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "noble",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Noble)",
+          "target_display": "linux-raspi (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-raspi/+bug/2173603"
+        }
+      ],
+      "title": "rpivid rejects HEVC decode requests unless SPS/PPS controls are sent again",
+      "web_link": "https://bugs.launchpad.net/bugs/2173603"
+    },
+    "2173687": {
+      "date_created": "2026-11-08T15:19:08.002534+00:00",
+      "date_last_updated": "2026-11-09T07:05:23.583210+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2173687,
+      "last_activity_summary": "tags: kernel-daily-bug by ubuntu-kernel-bot",
+      "last_activity_time": "2026-11-09T07:05:23.583210+00:00",
+      "owner": "H v Neerven",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "kernel-daily-bug"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-08T15:19:08.002534+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "linux-raspi (Ubuntu)",
+          "target_display": "linux-raspi (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2173687"
+        }
+      ],
+      "title": " Raspberry Pi 5: new linux-raspi kernel hangs during early userspace (udev coldplug), piboot-try falls back",
+      "web_link": "https://bugs.launchpad.net/bugs/2173687"
+    }
+  },
+  "last_scan_utc": "2026-11-09T11:02:17.793551+00:00",
+  "packages": [
+    "linux-raspi"
+  ]
+}
