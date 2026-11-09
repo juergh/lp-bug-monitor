@@ -26,7 +26,7 @@ jobs:
         # uses: actions/setup-uv  # on Forgejo
 
       - name: Sync
-        run: ./lp-bug-monitor -f data/packages.txt --state-file data/bugs-state.json -o data/bugs.html
+        run: ./lp-bug-monitor scan-all data
 
       - name: Commit and push
         run: |
@@ -35,7 +35,7 @@ jobs:
           git config user.email "noreply+github-actions@github.com"
           # git config user.name "Forgejo Actions"
           # git config user.email "noreply+forgejo-actions@canonical.com"
-          git add bugs.html bugs-state.json
+          git add index.html '*/index.html' '*/bugs-state.json'
           if git diff --cached --quiet; then
             echo "No changes to commit"
             exit 0

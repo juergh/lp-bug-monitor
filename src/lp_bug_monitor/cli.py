@@ -8,6 +8,7 @@ import logging
 import sys
 from datetime import UTC, datetime, timedelta
 from pathlib import Path
+from typing import Any
 
 from lp_bug_monitor.client import (
     DEFAULT_CACHE_DIR,
@@ -15,7 +16,7 @@ from lp_bug_monitor.client import (
     get_launchpad,
     get_ubuntu_distribution,
 )
-from lp_bug_monitor.report import generate_html_report
+from lp_bug_monitor.report import generate_html_report, generate_index_page
 from lp_bug_monitor.scanner import scan_full, scan_incremental
 from lp_bug_monitor.state import load_state, save_state
 
@@ -191,19 +192,29 @@ def resolve_packages(args: argparse.Namespace, parser: argparse.ArgumentParser) 
     return sorted(packages)
 
 
-def main(argv: list[str] | None = None) -> int:
-    parser = create_parser()
-    args = parser.parse_args(argv)
-
-    log_level = logging.DEBUG if args.verbose else logging.INFO
+def setup_logging(verbose: bool) -> None:
+    """Configure logging for the CLI."""
+    log_level = logging.DEBUG if verbose else logging.INFO
     logging.basicConfig(
         level=log_level,
         format="%(asctime)s [%(levelname)s] %(message)s",
         datefmt="%H:%M:%S",
     )
 
-    packages = resolve_packages(args, parser)
 
+def run_scan(
+    args: argparse.Namespace,
+    packages: list[str],
+    lp: Any | None = None,
+    ubuntu: Any | None = None,
+    series_list: list[str] | None = None,
+) -> int:
+    """Scan one package set and generate its HTML status report.
+
+    `lp`, `ubuntu`, and `series_list` may be supplied to reuse an existing
+    Launchpad connection and series resolution (as done by scan-all);
+    otherwise they are created here.
+    """
     if args.no_scan:
         logger.info("Running in report-only mode (skipping Launchpad scan)...")
         state_file = Path(args.state_file)
@@ -259,8 +270,10 @@ def main(argv: list[str] | None = None) -> int:
     logger.info("Monitoring %d source packages: %s", len(packages), packages)
 
     try:
-        lp = get_launchpad(cache_dir=args.cache_dir)
-        ubuntu = get_ubuntu_distribution(lp)
+        if lp is None:
+            lp = get_launchpad(cache_dir=args.cache_dir)
+        if ubuntu is None:
+            ubuntu = get_ubuntu_distribution(lp)
     except Exception as e:
         logger.error("Failed to connect to Launchpad: %s", e)
         return 1
@@ -269,7 +282,7 @@ def main(argv: list[str] | None = None) -> int:
     if args.series:
         series_list = sorted(set(args.series))
         logger.info("Using user-specified series: %s", series_list)
-    else:
+    elif series_list is None:
         series_list = get_active_series(ubuntu)
 
     # Load existing state
@@ -373,6 +386,219 @@ def main(argv: list[str] | None = None) -> int:
             logger.error("Failed to export JSON: %s", e)
 
     return 0
+
+
+def set_title(name: str) -> str:
+    """Return the dashboard title for a package set."""
+    return f"Ubuntu Bug Status — {name}"
+
+
+def discover_sets(data_dir: Path | str) -> list[Path]:
+    """Discover package sets: subdirectories of data_dir containing a packages.txt file.
+
+    Hidden directories are ignored. Returns a sorted list of set directories.
+    """
+    root = Path(data_dir).expanduser().resolve()
+    if not root.is_dir():
+        raise FileNotFoundError(f"Data directory not found: {root}")
+
+    return sorted(
+        d for d in root.iterdir() if d.is_dir() and not d.name.startswith(".") and (d / "packages.txt").is_file()
+    )
+
+
+def build_set_summary(name: str, set_dir: Path) -> dict[str, Any]:
+    """Build the index-page summary record for one package set from its state file."""
+    state = load_state(set_dir / "bugs-state.json")
+    return {
+        "name": name,
+        "path": f"{name}/index.html",
+        "title": set_title(name),
+        "bug_count": len(state.get("bugs", {})),
+        "package_count": len(state.get("packages", [])),
+        "last_scan_utc": state.get("last_scan_utc"),
+    }
+
+
+def create_scan_all_parser() -> argparse.ArgumentParser:
+    """Create the argument parser for multi-set scanning."""
+    parser = argparse.ArgumentParser(
+        prog="lp-bug-monitor scan-all",
+        description=(
+            "Scan every package set under DATA_DIR. A set is a subdirectory containing a "
+            "packages.txt file; each set gets its own bugs-state.json and index.html dashboard, "
+            "and a shared index.html landing page links all dashboards."
+        ),
+    )
+    parser.add_argument(
+        "data_dir",
+        nargs="?",
+        default="data",
+        metavar="DATA_DIR",
+        help="Directory containing one subdirectory per package set (default: data)",
+    )
+    parser.add_argument(
+        "-v",
+        "--verbose",
+        action="store_true",
+        help="Enable detailed diagnostic logging",
+    )
+    parser.add_argument(
+        "--cache-dir",
+        type=Path,
+        default=DEFAULT_CACHE_DIR,
+        help=f"Launchpadlib HTTP cache directory (default: {DEFAULT_CACHE_DIR})",
+    )
+    parser.add_argument(
+        "-s",
+        "--series",
+        nargs="+",
+        metavar="SERIES",
+        help="Specific Ubuntu series to scan (default: all active series, e.g. noble, jammy, etc.)",
+    )
+    parser.add_argument(
+        "--full",
+        action="store_true",
+        help="Force full scans from scratch instead of incremental scans",
+    )
+    parser.add_argument(
+        "--full-scan-interval",
+        type=float,
+        default=48.0,
+        metavar="HOURS",
+        help=(
+            "Force a full scan if the last scan is older than this many hours "
+            "(default: 48, 0 disables the periodic full scan)"
+        ),
+    )
+    parser.add_argument(
+        "--no-scan",
+        "--report-only",
+        action="store_true",
+        dest="no_scan",
+        help="Skip Launchpad scans and regenerate dashboards from existing state files",
+    )
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Run scans and generate HTML without modifying the state files",
+    )
+    parser.add_argument(
+        "--workflow-url",
+        type=str,
+        default=DEFAULT_WORKFLOW_URL,
+        help=f"URL to GitHub Action for manual regeneration and run history (default: {DEFAULT_WORKFLOW_URL})",
+    )
+    parser.add_argument(
+        "--no-workflow-url",
+        action="store_const",
+        const=None,
+        dest="workflow_url",
+        help="Disable the GitHub Action link and Regenerate button in the HTML reports",
+    )
+    return parser
+
+
+def run_scan_all(argv: list[str] | None = None) -> int:
+    """Scan (or regenerate reports for) every package set under a data directory."""
+    parser = create_scan_all_parser()
+    args = parser.parse_args(argv)
+    setup_logging(args.verbose)
+
+    data_dir = Path(args.data_dir).expanduser().resolve()
+    try:
+        set_dirs = discover_sets(data_dir)
+    except FileNotFoundError as e:
+        logger.error("%s", e)
+        return 1
+
+    if not set_dirs:
+        logger.error(
+            "No package sets found in %s (expected subdirectories each containing a packages.txt file)",
+            data_dir,
+        )
+        return 1
+
+    logger.info("Found %d package set(s): %s", len(set_dirs), [d.name for d in set_dirs])
+
+    # Share a single Launchpad connection and series list across all sets
+    lp: Any | None = None
+    ubuntu: Any | None = None
+    series_list: list[str] | None = None
+    if not args.no_scan:
+        try:
+            lp = get_launchpad(cache_dir=args.cache_dir)
+            ubuntu = get_ubuntu_distribution(lp)
+        except Exception as e:
+            logger.error("Failed to connect to Launchpad: %s", e)
+            return 1
+        series_list = sorted(set(args.series)) if args.series else get_active_series(ubuntu)
+
+    failed: list[str] = []
+    summaries: list[dict[str, Any]] = []
+    for set_dir in set_dirs:
+        name = set_dir.name
+        logger.info("=== Package set '%s' ===", name)
+
+        try:
+            packages = load_packages_from_file(set_dir / "packages.txt")
+        except Exception as e:
+            logger.error("Failed to load packages for set '%s': %s", name, e)
+            failed.append(name)
+            continue
+
+        set_args = argparse.Namespace(
+            no_scan=args.no_scan,
+            full=args.full,
+            full_scan_interval=args.full_scan_interval,
+            series=args.series,
+            cache_dir=args.cache_dir,
+            state_file=set_dir / "bugs-state.json",
+            output=set_dir / "index.html",
+            title=set_title(name),
+            workflow_url=args.workflow_url,
+            json=None,
+            dry_run=args.dry_run,
+        )
+        try:
+            rc = run_scan(set_args, packages, lp=lp, ubuntu=ubuntu, series_list=series_list)
+        except Exception as e:
+            logger.error("Package set '%s' failed: %s", name, e)
+            rc = 1
+        if rc != 0:
+            failed.append(name)
+            continue
+
+        summaries.append(build_set_summary(name, set_dir))
+
+    if failed:
+        logger.error("Failed package set(s): %s", ", ".join(failed))
+
+    if not summaries:
+        return 1
+
+    # Landing page linking all dashboards
+    try:
+        generate_index_page(summaries, data_dir / "index.html", workflow_url=args.workflow_url)
+        logger.info("Generated index page at %s", (data_dir / "index.html").resolve())
+    except Exception as e:
+        logger.error("Failed to generate index page: %s", e)
+        return 1
+
+    return 1 if failed else 0
+
+
+def main(argv: list[str] | None = None) -> int:
+    argv_list = list(sys.argv[1:] if argv is None else argv)
+    if argv_list and argv_list[0] == "scan-all":
+        return run_scan_all(argv_list[1:])
+
+    parser = create_parser()
+    args = parser.parse_args(argv_list)
+    setup_logging(args.verbose)
+
+    packages = resolve_packages(args, parser)
+    return run_scan(args, packages)
 
 
 if __name__ == "__main__":

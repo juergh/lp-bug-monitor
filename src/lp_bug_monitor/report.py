@@ -22,6 +22,144 @@ def format_timestamp(iso_str: str | None) -> str:
         return str(iso_str)[:16]
 
 
+def generate_index_page(
+    sets: list[dict[str, Any]],
+    output_path: Path | str,
+    title: str = "Ubuntu Bug Dashboards",
+    workflow_url: str | None = None,
+    generated_time_utc: datetime | None = None,
+) -> None:
+    """Generate a landing page linking the dashboard of every package set.
+
+    Each entry in `sets` is a dict with keys: name, path, title, bug_count,
+    package_count, and last_scan_utc.
+    """
+    generated_str = (generated_time_utc or datetime.now(UTC)).strftime("%Y-%m-%d %H:%M:%S UTC")
+
+    cards_html: list[str] = []
+    for s in sets:
+        name = html.escape(str(s.get("name", "")))
+        path = html.escape(str(s.get("path") or f"{s.get('name', '')}/index.html"))
+        dashboard_title = html.escape(str(s.get("title") or s.get("name", "")))
+        bug_count = int(s.get("bug_count", 0))
+        pkg_count = int(s.get("package_count", 0))
+        last_scan = format_timestamp(s.get("last_scan_utc"))
+        cards_html.append(
+            f"""\
+      <a class="set-card" href="{path}">
+        <h2>{name}</h2>
+        <div class="set-dashboard-title">{dashboard_title}</div>
+        <div class="set-stats">
+          <span class="stat">Open bugs: <strong>{bug_count}</strong></span>
+          <span class="stat">Packages: <strong>{pkg_count}</strong></span>
+        </div>
+        <div class="set-scan">Last scan: {last_scan} UTC</div>
+      </a>"""
+        )
+    cards = "\n".join(cards_html) if cards_html else '<div class="no-sets">No package sets found.</div>'
+
+    if workflow_url:
+        wf_escaped = html.escape(workflow_url)
+        header_meta = (
+            f'Generated on {generated_str} via <a href="{wf_escaped}" target="_blank" rel="noopener">GitHub Action</a>.'
+        )
+    else:
+        header_meta = f"Generated on {generated_str}."
+
+    page = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{html.escape(title)}</title>
+<style>
+  :root {{
+    --bg-main: #f7f7f7;
+    --bg-card: #ffffff;
+    --text-main: #111827;
+    --text-muted: #6b7280;
+    --border-color: #e5e7eb;
+    --brand-canonical: #77216F;
+    --brand-orange: #E95420;
+    --brand-hover: #380C2A;
+    --link-color: #1d4ed8;
+  }}
+
+  * {{ box-sizing: border-box; margin: 0; padding: 0; }}
+  body {{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg-main);
+    color: var(--text-main);
+    line-height: 1.4;
+    padding: 16px 20px;
+  }}
+
+  .header {{
+    background: linear-gradient(135deg, var(--brand-canonical), var(--brand-hover));
+    color: white;
+    padding: 14px 20px;
+    border-radius: 8px;
+    margin-bottom: 14px;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+  }}
+  .header h1 {{ font-size: 1.35rem; font-weight: 700; margin-bottom: 4px; }}
+  .header p {{ color: rgba(255, 255, 255, 0.85); font-size: 0.85rem; }}
+  .header a {{ color: #ffffff; text-decoration: underline; text-underline-offset: 2px; }}
+  .header a:hover {{ color: #fed7aa; }}
+
+  .sets-grid {{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 12px;
+  }}
+  .set-card {{
+    display: block;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: var(--text-main);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }}
+  .set-card:hover {{
+    text-decoration: none;
+    border-color: var(--brand-orange);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }}
+  .set-card h2 {{ font-size: 1.05rem; color: var(--brand-canonical); margin-bottom: 2px; }}
+  .set-dashboard-title {{ font-size: 0.8rem; color: var(--text-muted); margin-bottom: 10px; }}
+  .set-stats {{ display: flex; gap: 12px; font-size: 0.85rem; margin-bottom: 6px; }}
+  .set-stats strong {{ color: var(--brand-orange); }}
+  .set-scan {{
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }}
+  .no-sets {{ text-align: center; padding: 32px 16px; color: var(--text-muted); }}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>{html.escape(title)}</h1>
+  <p>{header_meta}</p>
+</div>
+
+<div class="sets-grid">
+{cards}
+</div>
+
+</body>
+</html>
+"""
+
+    out_file = Path(output_path).resolve()
+    out_file.parent.mkdir(parents=True, exist_ok=True)
+    out_file.write_text(page, encoding="utf-8")
+
+
 def get_status_class(status: str) -> str:
     """Return CSS class for a given task status."""
     st = status.lower().replace("'", "").replace(" ", "-")
