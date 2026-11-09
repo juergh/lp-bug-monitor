@@ -1,1 +1,95 @@
-bugs.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ubuntu Bug Dashboards</title>
+<style>
+  :root {
+    --bg-main: #f7f7f7;
+    --bg-card: #ffffff;
+    --text-main: #111827;
+    --text-muted: #6b7280;
+    --border-color: #e5e7eb;
+    --brand-canonical: #77216F;
+    --brand-orange: #E95420;
+    --brand-hover: #380C2A;
+    --link-color: #1d4ed8;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg-main);
+    color: var(--text-main);
+    line-height: 1.4;
+    padding: 16px 20px;
+  }
+
+  .header {
+    background: linear-gradient(135deg, var(--brand-canonical), var(--brand-hover));
+    color: white;
+    padding: 14px 20px;
+    border-radius: 8px;
+    margin-bottom: 14px;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+  }
+  .header h1 { font-size: 1.35rem; font-weight: 700; margin-bottom: 4px; }
+  .header p { color: rgba(255, 255, 255, 0.85); font-size: 0.85rem; }
+  .header a { color: #ffffff; text-decoration: underline; text-underline-offset: 2px; }
+  .header a:hover { color: #fed7aa; }
+
+  .sets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 12px;
+  }
+  .set-card {
+    display: block;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: var(--text-main);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+  .set-card:hover {
+    text-decoration: none;
+    border-color: var(--brand-orange);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+  .set-card h2 { font-size: 1.05rem; color: var(--brand-canonical); margin-bottom: 2px; }
+  .set-dashboard-title { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 10px; }
+  .set-stats { display: flex; gap: 12px; font-size: 0.85rem; margin-bottom: 6px; }
+  .set-stats strong { color: var(--brand-orange); }
+  .set-scan {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+  .no-sets { text-align: center; padding: 32px 16px; color: var(--text-muted); }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Ubuntu Bug Dashboards</h1>
+  <p>Generated on 2026-11-09 10:33:38 UTC via <a href="https://github.com/juergh/lp-bug-monitor/actions/workflows/sync.yaml" target="_blank" rel="noopener">GitHub Action</a>.</p>
+</div>
+
+<div class="sets-grid">
+      <a class="set-card" href="linux-firmware/index.html">
+        <h2>linux-firmware</h2>
+        <div class="set-dashboard-title">Ubuntu Bug Status — linux-firmware</div>
+        <div class="set-stats">
+          <span class="stat">Open bugs: <strong>60</strong></span>
+          <span class="stat">Packages: <strong>19</strong></span>
+        </div>
+        <div class="set-scan">Last scan: 2026-11-09 04:36 UTC</div>
+      </a>
+</div>
+
+</body>
+</html>
