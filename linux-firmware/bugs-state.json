@@ -4255,11 +4255,11 @@
     },
     "2173041": {
       "date_created": "2026-11-05T01:05:48.037466+00:00",
-      "date_last_updated": "2026-11-09T10:06:13.475944+00:00",
+      "date_last_updated": "2026-11-09T11:17:04.072277+00:00",
       "has_activity_after_incomplete": false,
       "id": 2173041,
-      "last_activity_summary": "description: [ Impact ]\n\nPreliminary note: I recently migrated on Mint and don't now anything about how Linux works so I resorted to ChatGPT to find and fix the bug as well as to generate this report. I don't know if all the data are 100% accurate.\n\n# Regression: black screen after upgrading linux-firmware-amd-graphics to 0ubuntu3.4\n\n**Package:** linux-firmware-amd-graphics\n**Affected version:** 20240318.git3b128b60-0ubuntu3.4\n**Working version:** 20240318.git3b128b60-0ubuntu3.3\n**Distribution:** Linux Mint 22.x (Ubuntu 24.04 Noble base)\n\n## Hardware\n\n- CPU: AMD Ryzen 5 5500\n- GPU: AMD Radeon, Sapphire Technology, PCI ID 1002:7590\n- Motherboard: Gigabyte B550M AORUS ELITE\n\n## Description\n\nAfter upgrading `linux-firmware-amd-graphics` from version `0ubuntu3.3` to `0ubuntu3.4` on November 4, 2026, the system stopped displaying anything during normal boot.\n\nThe Linux Mint logo appeared, then the monitor lost its signal (\"Input Not Support\"). Recovery mode remained functional.\n\nThe issue occurred with multiple kernels, including 7.0.0-42 and 6.14.0-37.\n\nThe system logs contained repeated AMDGPU errors:\n\n- `dc_dmub_srv_log_diagnostic_data: DMCUB error - collecting diagnostic data`\n- `EDID CEA parser failed`\n\nXorg also repeatedly crashed.\n\n## Reproduction / workaround\n\nDowngrading `linux-firmware-amd-graphics` to version `20240318.git3b128b60-0ubuntu3.3` restored normal boot and display output.\n\nThe package downgrade also regenerated the initramfs.\n\nThe system now boots normally with version `0ubuntu3.3`.\n\n## Expected behaviour\n\nThe system should boot normally and initialize the AMD GPU display output after upgrading the firmware package.\n\n## Additional information\n\nThe regression appears to be associated with the DMCUB firmware changes introduced in version `0ubuntu3.4`, particularly the updates for DCN 3.2 and DCN 4.0.1.\n\n## Root cause\n\nUpdating to 0ubuntu3.4 turned dcn_4_0_1_dmcub.bin.zst into a symlink to dcn_3_2_0_dmcub.bin.zst.\n\nThey should be their own files.  They ARE NOT compatible.\n\nSee comment #4 for details.\n\n[ Fix ]\n\nSync all of amdgpu/dcn_* to Resolute's versions.\n\n3.4 -> 3.5 updates the following:\namdgpu/dcn_3_2_1_dmcub.bin\namdgpu/dcn_4_0_1_dmcub.bin\n\nDiff between new Noble 3.5 and latest Resolute 3.1:\n$ git diff --exit-code Ubuntu-amd-graphics-20240318.git3b128b60-0ubuntu3.5 Ubuntu-amd-graphics-20260319.git217ca6e4-0ubuntu3.1 -- 'amdgpu/dcn_*' && echo MATCH\nMATCH\n\n[ Test Plan ]\n\nAt the minimum, platforms that load the updated blobs need to be verified. I.e:\namdgpu/dcn_3_2_1_dmcub.bin -> RX 7600M (XT) /7700S /7600S\namdgpu/dcn_4_0_1_dmcub.bin -> RX 9070 (XT) / RX 9060 XT\n\n[ Where Problems Could Occur ]\n\nThe usual potential issues with opaque firmware blobs. Broken displays, failing boots, kernel stalls or panics, ... by juergh",
-      "last_activity_time": "2026-11-09T10:06:13.475944+00:00",
+      "last_activity_summary": "tags: kernel-daily-bug linux-firmware-daily-bug regression-update verification-done-noble by rorose",
+      "last_activity_time": "2026-11-09T11:17:04.072277+00:00",
       "owner": "Adrien Lebrun",
       "package": "linux-firmware-amd-graphics",
       "packages": [
@@ -4268,7 +4268,8 @@
       "tags": [
         "kernel-daily-bug",
         "linux-firmware-daily-bug",
-        "regression-update"
+        "regression-update",
+        "verification-done-noble"
       ],
       "tasks": [
         {
@@ -4421,7 +4422,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2173725"
     }
   },
-  "last_scan_utc": "2026-11-09T10:58:43.668528+00:00",
+  "last_scan_utc": "2026-11-09T12:19:59.401652+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
