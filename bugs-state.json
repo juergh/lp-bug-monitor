@@ -4093,18 +4093,19 @@
     },
     "2172895": {
       "date_created": "2026-11-04T02:20:06.152073+00:00",
-      "date_last_updated": "2026-11-08T15:03:38.927471+00:00",
+      "date_last_updated": "2026-11-08T23:00:56.642414+00:00",
       "has_activity_after_incomplete": false,
       "id": 2172895,
-      "last_activity_summary": "linux-firmware (Ubuntu Stonking): assignee: You-Sheng Yang (vicamo) by vicamo",
-      "last_activity_time": "2026-11-08T15:03:38.927471+00:00",
+      "last_activity_summary": "tags: kernel-daily-bug linux-firmware-daily-bug by ubuntu-kernel-bot",
+      "last_activity_time": "2026-11-08T23:00:56.642414+00:00",
       "owner": "You-Sheng Yang",
       "package": "linux-firmware",
       "packages": [
         "linux-firmware"
       ],
       "tags": [
-        "kernel-daily-bug"
+        "kernel-daily-bug",
+        "linux-firmware-daily-bug"
       ],
       "tasks": [
         {
@@ -4254,11 +4255,11 @@
     },
     "2173041": {
       "date_created": "2026-11-05T01:05:48.037466+00:00",
-      "date_last_updated": "2026-11-08T16:19:58.101829+00:00",
+      "date_last_updated": "2026-11-08T23:48:47.994401+00:00",
       "has_activity_after_incomplete": false,
       "id": 2173041,
       "last_activity_summary": "bug updated by somebody2112",
-      "last_activity_time": "2026-11-08T16:33:46.855428+00:00",
+      "last_activity_time": "2026-11-08T23:48:47.994401+00:00",
       "owner": "Adrien Lebrun",
       "package": "linux-firmware-amd-graphics",
       "packages": [
@@ -4342,42 +4343,9 @@
       ],
       "title": "Intel AX210 AP mode firmware crashes on Ubuntu 24.04 \u2013 outdated firmware update requested",
       "web_link": "https://bugs.launchpad.net/bugs/2173164"
-    },
-    "2173700": {
-      "date_created": "2026-11-08T18:16:57.584977+00:00",
-      "date_last_updated": "2026-11-08T18:16:57.584977+00:00",
-      "has_activity_after_incomplete": false,
-      "id": 2173700,
-      "last_activity_summary": "bug updated by fanatiker",
-      "last_activity_time": "2026-11-08T18:16:57.584977+00:00",
-      "owner": "Roman Gregor",
-      "package": "linux-firmware",
-      "packages": [
-        "linux-firmware"
-      ],
-      "tags": [
-        "noble",
-        "regression-update"
-      ],
-      "tasks": [
-        {
-          "assignee": null,
-          "date_closed": null,
-          "date_created": "2026-11-08T18:16:57.584977+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": null,
-          "status": "New",
-          "target": "linux-firmware (Ubuntu)",
-          "target_display": "linux-firmware (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2173700"
-        }
-      ],
-      "title": "linux-firmware-amd-graphics 0ubuntu3.4 (noble): dcn_4_0_1_dmcub.bin.zst is a symlink to dcn_3_2_0, RX 9070 XT desktop freezes",
-      "web_link": "https://bugs.launchpad.net/bugs/2173700"
     }
   },
-  "last_scan_utc": "2026-11-08T20:10:16.942413+00:00",
+  "last_scan_utc": "2026-11-09T04:36:00.647395+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
