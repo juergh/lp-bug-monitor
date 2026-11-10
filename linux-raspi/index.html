@@ -276,13 +276,13 @@
 
 <div class="header">
   <h1>Ubuntu Bug Status — linux-raspi</h1>
-  <p>Generated on 2026-11-09 12:23:19 UTC via <a href="https://github.com/juergh/lp-bug-monitor/actions/workflows/sync.yaml" target="_blank" rel="noopener">GitHub Action</a>.</p>
+  <p>Generated on 2026-11-10 02:41:10 UTC via <a href="https://github.com/juergh/lp-bug-monitor/actions/workflows/sync.yaml" target="_blank" rel="noopener">GitHub Action</a>.</p>
 </div>
 
 <div class="stats-bar">
   <div class="stat-card">
     <div class="label">Total Open Bugs</div>
-    <div class="value" id="stat-total">31</div>
+    <div class="value" id="stat-total">29</div>
   </div>
   <div class="stat-card">
     <div class="label">Source Packages Tracked</div>
@@ -291,7 +291,7 @@
   <div class="stat-card" style="flex: 2;">
     <div class="label">Active Task Status Breakdown</div>
     <div class="summary-chips">
-      <span class="summary-chip"><span class="chip-status badge-new"></span> New: <strong>27</strong></span><span class="summary-chip"><span class="chip-status badge-confirmed"></span> Confirmed: <strong>13</strong></span><span class="summary-chip"><span class="chip-status badge-inprogress"></span> In Progress: <strong>1</strong></span><span class="summary-chip"><span class="chip-status badge-inprogress"></span> Triaged: <strong>3</strong></span><span class="summary-chip"><span class="chip-status badge-fixcommitted"></span> Fix Committed: <strong>1</strong></span><span class="summary-chip"><span class="chip-status badge-incomplete"></span> Incomplete: <strong>1</strong></span><span class="summary-chip"><span class="chip-status badge-default"></span> Deferred: <strong>1</strong></span>
+      <span class="summary-chip"><span class="chip-status badge-inprogress"></span> In Progress: <strong>2</strong></span><span class="summary-chip"><span class="chip-status badge-new"></span> New: <strong>31</strong></span><span class="summary-chip"><span class="chip-status badge-confirmed"></span> Confirmed: <strong>13</strong></span><span class="summary-chip"><span class="chip-status badge-incomplete"></span> Incomplete: <strong>1</strong></span><span class="summary-chip"><span class="chip-status badge-inprogress"></span> Triaged: <strong>2</strong></span><span class="summary-chip"><span class="chip-status badge-fixcommitted"></span> Fix Committed: <strong>1</strong></span><span class="summary-chip"><span class="chip-status badge-default"></span> Deferred: <strong>1</strong></span>
     </div>
   </div>
 </div>
@@ -306,12 +306,12 @@
     </select>
     <select id="filter-series" class="select-filter" onchange="applyFilters()">
       <option value="">All Series (6)</option>
-      <option value="__none__">No nominations (22)</option><option value="bionic">bionic (1)</option><option value="focal">focal (3)</option><option value="jammy">jammy (1)</option><option value="noble">noble (3)</option><option value="resolute">resolute (3)</option><option value="stonking">stonking (1)</option>
+      <option value="__none__">No nominations (12)</option><option value="bionic">bionic (1)</option><option value="focal">focal (3)</option><option value="jammy">jammy (1)</option><option value="noble">noble (4)</option><option value="resolute">resolute (10)</option><option value="stonking">stonking (1)</option>
     </select>
     <select id="filter-status" class="select-filter" onchange="applyFilters()">
       <option value="">All Open Statuses</option>
       <option value="__info_added__">⚠️ Needs Review (Info Added)</option>
-      <option value="confirmed">Confirmed (13)</option><option value="deferred">Deferred (1)</option><option value="fix committed">Fix Committed (1)</option><option value="in progress">In Progress (1)</option><option value="incomplete">Incomplete (1)</option><option value="new">New (27)</option><option value="triaged">Triaged (3)</option>
+      <option value="confirmed">Confirmed (13)</option><option value="deferred">Deferred (1)</option><option value="fix committed">Fix Committed (1)</option><option value="in progress">In Progress (2)</option><option value="incomplete">Incomplete (1)</option><option value="new">New (31)</option><option value="triaged">Triaged (2)</option>
     </select>
   </div>
   <div class="action-group">
@@ -338,12 +338,85 @@
     </thead>
     <tbody id="bugs-tbody">
       
+        <tr class="bug-row" id="row-2173779" onclick="toggleDetails(2173779)"
+            data-bugid="2173779" data-package="linux-raspi"
+            data-packages="[&quot;linux-raspi&quot;]"
+            data-series="[&quot;resolute&quot;]"
+            data-flame="3" data-info-added="false"
+            data-statuses="[&quot;in progress&quot;]" data-created="2026-11-09T17:13:01.555352+00:00" data-lastact="2026-11-09T23:08:52.121212+00:00">
+            <td class="col-toggle"><span class="toggle-icon" id="toggle-2173779">▶</span></td>
+            <td class="col-flame" title="Hot (Active within 48h · Medium importance)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
+            <td class="col-id font-mono">
+                <a href="https://bugs.launchpad.net/bugs/2173779" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2173779</a>
+            </td>
+            <td class="col-title" title="PREEMPT_RT: RP1 IRQ threads do not follow smp_affinity">PREEMPT_RT: RP1 IRQ threads do not follow smp_affinity</td>
+            <td class="col-package font-mono"><span class="package-pill">linux-raspi</span></td>
+            <td class="col-tasks">
+                <div class="tasks-summary-wrap">
+                    <span class="task-count-pill"><strong class="text-orange">2 Open</strong> / <span class="text-gray">1 Closed</span></span>
+                    <div class="status-badges-group"><span class="status-badge badge-inprogress">In Progress</span></div>
+                </div>
+            </td>
+            <td class="col-created font-mono">2026-11-09 17:13</td>
+            <td class="col-activity font-mono" title="tags: kernel-daily-bug by ubuntu-kernel-bot">2026-11-09 23:08</td>
+        </tr>
+        <tr class="details-row" id="details-2173779" style="display: none;">
+            <td colspan="8">
+                <div class="details-panel">
+                    <div class="details-grid">
+                        <div class="details-tasks-card">
+                            <h4>Target Tasks (3 total)</h4>
+                            <table class="subtable">
+                                <thead>
+                                    <tr>
+                                        <th>Target</th>
+                                        <th>Status</th>
+                                        <th>Importance</th>
+                                        <th>Assignee</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td class="font-mono">linux-raspi (Ubuntu)</td><td><span class="status-badge badge-inprogress">In Progress</span></td><td>Medium</td><td>April Cardenas</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2173779" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-raspi (Ubuntu Resolute)</td><td><span class="status-badge badge-inprogress">In Progress</span></td><td>Medium</td><td>April Cardenas</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/linux-raspi/+bug/2173779" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-raspi (Ubuntu Stonking)</td><td><span class="status-badge badge-fixreleased">Fix Released</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/stonking/+source/linux-raspi/+bug/2173779" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="details-meta-card">
+                            <h4>Bug Details</h4>
+                            <div class="meta-item"><strong>Reporter:</strong> <span>April Cardenas</span></div>
+                            <div class="meta-item">
+                                <strong>Created:</strong>
+                                <span class="font-mono">2026-11-09 17:13</span>
+                            </div>
+                            <div class="meta-item">
+                                <strong>Last Updated:</strong>
+                                <span class="font-mono">2026-11-09 23:08</span>
+                            </div>
+                            <div class="meta-item"><strong>Last Activity:</strong> <span>tags: kernel-daily-bug by ubuntu-kernel-bot</span></div>
+                            <div class="meta-item">
+                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (Active within 48h · Medium importance))</span>
+                            </div>
+                            
+                            <div class="meta-item"><strong>Open Series:</strong> <span>resolute</span></div>
+                            <div class="meta-item"><strong>Active Targets:</strong>
+                                <span class="text-sm">linux-raspi (Ubuntu), linux-raspi (Ubuntu Resolute)</span>
+                            </div>
+                            <div class="meta-item"><strong>Tags:</strong>
+                                <div class="tags-wrap"><span class="tag-pill">kernel-daily-bug</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        
+
         <tr class="bug-row" id="row-2173687" onclick="toggleDetails(2173687)"
             data-bugid="2173687" data-package="linux-raspi"
             data-packages="[&quot;linux-raspi&quot;]"
             data-series="[]"
             data-flame="3" data-info-added="false"
-            data-statuses="[&quot;new&quot;]" data-created="2026-11-08T15:19:08.002534+00:00" data-lastact="2026-11-09T07:05:23.583210+00:00">
+            data-statuses="[&quot;new&quot;]" data-created="2026-11-08T15:19:08.002534+00:00" data-lastact="2026-11-09T19:03:08.714919+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2173687">▶</span></td>
             <td class="col-flame" title="Hot (Active within 48h · Undecided importance)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
             <td class="col-id font-mono">
@@ -358,7 +431,7 @@
                 </div>
             </td>
             <td class="col-created font-mono">2026-11-08 15:19</td>
-            <td class="col-activity font-mono" title="tags: kernel-daily-bug by ubuntu-kernel-bot">2026-11-09 07:05</td>
+            <td class="col-activity font-mono" title="tags: kernel-daily-bug by ubuntu-kernel-bot">2026-11-09 19:03</td>
         </tr>
         <tr class="details-row" id="details-2173687" style="display: none;">
             <td colspan="8">
@@ -390,7 +463,7 @@
                             </div>
                             <div class="meta-item">
                                 <strong>Last Updated:</strong>
-                                <span class="font-mono">2026-11-09 07:05</span>
+                                <span class="font-mono">2026-11-09 19:03</span>
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>tags: kernel-daily-bug by ubuntu-kernel-bot</span></div>
                             <div class="meta-item">
@@ -411,14 +484,525 @@
         </tr>
         
 
+        <tr class="bug-row" id="row-2162573" onclick="toggleDetails(2162573)"
+            data-bugid="2162573" data-package="linux-raspi"
+            data-packages="[&quot;linux-raspi&quot;]"
+            data-series="[&quot;resolute&quot;]"
+            data-flame="3" data-info-added="false"
+            data-statuses="[&quot;new&quot;]" data-created="2026-07-31T14:35:45.206511+00:00" data-lastact="2026-11-09T14:53:04.629251+00:00">
+            <td class="col-toggle"><span class="toggle-icon" id="toggle-2162573">▶</span></td>
+            <td class="col-flame" title="Hot (Active within 48h · Undecided importance)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
+            <td class="col-id font-mono">
+                <a href="https://bugs.launchpad.net/bugs/2162573" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2162573</a>
+            </td>
+            <td class="col-title" title="i2c_designware driver returning sda stuck low error">i2c_designware driver returning sda stuck low error</td>
+            <td class="col-package font-mono"><span class="package-pill">linux-raspi</span></td>
+            <td class="col-tasks">
+                <div class="tasks-summary-wrap">
+                    <span class="task-count-pill"><strong class="text-orange">2 Open</strong> / <span class="text-gray">0 Closed</span></span>
+                    <div class="status-badges-group"><span class="status-badge badge-new">New</span></div>
+                </div>
+            </td>
+            <td class="col-created font-mono">2026-07-31 14:35</td>
+            <td class="col-activity font-mono" title="bug task added: linux-raspi (Ubuntu Resolute) by juergh">2026-11-09 14:53</td>
+        </tr>
+        <tr class="details-row" id="details-2162573" style="display: none;">
+            <td colspan="8">
+                <div class="details-panel">
+                    <div class="details-grid">
+                        <div class="details-tasks-card">
+                            <h4>Target Tasks (2 total)</h4>
+                            <table class="subtable">
+                                <thead>
+                                    <tr>
+                                        <th>Target</th>
+                                        <th>Status</th>
+                                        <th>Importance</th>
+                                        <th>Assignee</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td class="font-mono">linux-raspi (Ubuntu)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2162573" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-raspi (Ubuntu Resolute)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/linux-raspi/+bug/2162573" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="details-meta-card">
+                            <h4>Bug Details</h4>
+                            <div class="meta-item"><strong>Reporter:</strong> <span>Steve Pringle</span></div>
+                            <div class="meta-item">
+                                <strong>Created:</strong>
+                                <span class="font-mono">2026-07-31 14:35</span>
+                            </div>
+                            <div class="meta-item">
+                                <strong>Last Updated:</strong>
+                                <span class="font-mono">2026-11-09 14:53</span>
+                            </div>
+                            <div class="meta-item"><strong>Last Activity:</strong> <span>bug task added: linux-raspi (Ubuntu Resolute) by juergh</span></div>
+                            <div class="meta-item">
+                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (Active within 48h · Undecided importance))</span>
+                            </div>
+                            
+                            <div class="meta-item"><strong>Open Series:</strong> <span>resolute</span></div>
+                            <div class="meta-item"><strong>Active Targets:</strong>
+                                <span class="text-sm">linux-raspi (Ubuntu), linux-raspi (Ubuntu Resolute)</span>
+                            </div>
+                            <div class="meta-item"><strong>Tags:</strong>
+                                <div class="tags-wrap"><span class="tag-pill">apport-bug</span><span class="tag-pill">arm64</span><span class="tag-pill">arm64-image</span><span class="tag-pill">kernel-daily-bug</span><span class="tag-pill">raspi-image</span><span class="tag-pill">resolute</span><span class="tag-pill">wayland-session</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        
+
+        <tr class="bug-row" id="row-2162033" onclick="toggleDetails(2162033)"
+            data-bugid="2162033" data-package="linux-raspi"
+            data-packages="[&quot;linux-raspi&quot;]"
+            data-series="[&quot;resolute&quot;]"
+            data-flame="3" data-info-added="false"
+            data-statuses="[&quot;new&quot;]" data-created="2026-07-29T06:22:14.653878+00:00" data-lastact="2026-11-09T14:44:46.841055+00:00">
+            <td class="col-toggle"><span class="toggle-icon" id="toggle-2162033">▶</span></td>
+            <td class="col-flame" title="Hot (Active within 48h · Undecided importance)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
+            <td class="col-id font-mono">
+                <a href="https://bugs.launchpad.net/bugs/2162033" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2162033</a>
+            </td>
+            <td class="col-title" title="NVMe M.2 fails with I/O errors on Raspberry Pi 5 with kernel 7.0.0-1015-raspi when ASPM L1 is enabled">NVMe M.2 fails with I/O errors on Raspberry Pi 5 with kernel 7.0.0-1015-raspi when ASPM L1 is enabled</td>
+            <td class="col-package font-mono"><span class="package-pill">linux-raspi</span></td>
+            <td class="col-tasks">
+                <div class="tasks-summary-wrap">
+                    <span class="task-count-pill"><strong class="text-orange">2 Open</strong> / <span class="text-gray">0 Closed</span></span>
+                    <div class="status-badges-group"><span class="status-badge badge-new">New</span></div>
+                </div>
+            </td>
+            <td class="col-created font-mono">2026-07-29 06:22</td>
+            <td class="col-activity font-mono" title="bug task added: linux-raspi (Ubuntu Resolute) by juergh">2026-11-09 14:44</td>
+        </tr>
+        <tr class="details-row" id="details-2162033" style="display: none;">
+            <td colspan="8">
+                <div class="details-panel">
+                    <div class="details-grid">
+                        <div class="details-tasks-card">
+                            <h4>Target Tasks (2 total)</h4>
+                            <table class="subtable">
+                                <thead>
+                                    <tr>
+                                        <th>Target</th>
+                                        <th>Status</th>
+                                        <th>Importance</th>
+                                        <th>Assignee</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td class="font-mono">linux-raspi (Ubuntu)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2162033" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-raspi (Ubuntu Resolute)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/linux-raspi/+bug/2162033" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="details-meta-card">
+                            <h4>Bug Details</h4>
+                            <div class="meta-item"><strong>Reporter:</strong> <span>Vito Giarrusso</span></div>
+                            <div class="meta-item">
+                                <strong>Created:</strong>
+                                <span class="font-mono">2026-07-29 06:22</span>
+                            </div>
+                            <div class="meta-item">
+                                <strong>Last Updated:</strong>
+                                <span class="font-mono">2026-11-09 14:44</span>
+                            </div>
+                            <div class="meta-item"><strong>Last Activity:</strong> <span>bug task added: linux-raspi (Ubuntu Resolute) by juergh</span></div>
+                            <div class="meta-item">
+                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (Active within 48h · Undecided importance))</span>
+                            </div>
+                            
+                            <div class="meta-item"><strong>Open Series:</strong> <span>resolute</span></div>
+                            <div class="meta-item"><strong>Active Targets:</strong>
+                                <span class="text-sm">linux-raspi (Ubuntu), linux-raspi (Ubuntu Resolute)</span>
+                            </div>
+                            <div class="meta-item"><strong>Tags:</strong>
+                                <div class="tags-wrap"><span class="tag-pill">aspm</span><span class="tag-pill">kernel-daily-bug</span><span class="tag-pill">l1</span><span class="tag-pill">linux-raspi</span><span class="tag-pill">m.2</span><span class="tag-pill">nvme</span><span class="tag-pill">nvme-hat</span><span class="tag-pill">pi5</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        
+
+        <tr class="bug-row" id="row-2161936" onclick="toggleDetails(2161936)"
+            data-bugid="2161936" data-package="linux-raspi"
+            data-packages="[&quot;linux-raspi&quot;]"
+            data-series="[&quot;resolute&quot;]"
+            data-flame="3" data-info-added="false"
+            data-statuses="[&quot;new&quot;]" data-created="2026-07-28T00:49:02.888647+00:00" data-lastact="2026-11-09T14:40:51.595335+00:00">
+            <td class="col-toggle"><span class="toggle-icon" id="toggle-2161936">▶</span></td>
+            <td class="col-flame" title="Hot (Active within 48h · Undecided importance)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
+            <td class="col-id font-mono">
+                <a href="https://bugs.launchpad.net/bugs/2161936" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2161936</a>
+            </td>
+            <td class="col-title" title="[CM4] Unable to boot 7.0.0-1015-raspi from resolute proposed">[CM4] Unable to boot 7.0.0-1015-raspi from resolute proposed</td>
+            <td class="col-package font-mono"><span class="package-pill">linux-raspi</span></td>
+            <td class="col-tasks">
+                <div class="tasks-summary-wrap">
+                    <span class="task-count-pill"><strong class="text-orange">2 Open</strong> / <span class="text-gray">0 Closed</span></span>
+                    <div class="status-badges-group"><span class="status-badge badge-new">New</span></div>
+                </div>
+            </td>
+            <td class="col-created font-mono">2026-07-28 00:49</td>
+            <td class="col-activity font-mono" title="bug task added: linux-raspi (Ubuntu Resolute) by juergh">2026-11-09 14:40</td>
+        </tr>
+        <tr class="details-row" id="details-2161936" style="display: none;">
+            <td colspan="8">
+                <div class="details-panel">
+                    <div class="details-grid">
+                        <div class="details-tasks-card">
+                            <h4>Target Tasks (2 total)</h4>
+                            <table class="subtable">
+                                <thead>
+                                    <tr>
+                                        <th>Target</th>
+                                        <th>Status</th>
+                                        <th>Importance</th>
+                                        <th>Assignee</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td class="font-mono">linux-raspi (Ubuntu)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2161936" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-raspi (Ubuntu Resolute)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/linux-raspi/+bug/2161936" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="details-meta-card">
+                            <h4>Bug Details</h4>
+                            <div class="meta-item"><strong>Reporter:</strong> <span>Rene Orozco Martinez</span></div>
+                            <div class="meta-item">
+                                <strong>Created:</strong>
+                                <span class="font-mono">2026-07-28 00:49</span>
+                            </div>
+                            <div class="meta-item">
+                                <strong>Last Updated:</strong>
+                                <span class="font-mono">2026-11-09 14:40</span>
+                            </div>
+                            <div class="meta-item"><strong>Last Activity:</strong> <span>bug task added: linux-raspi (Ubuntu Resolute) by juergh</span></div>
+                            <div class="meta-item">
+                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (Active within 48h · Undecided importance))</span>
+                            </div>
+                            
+                            <div class="meta-item"><strong>Open Series:</strong> <span>resolute</span></div>
+                            <div class="meta-item"><strong>Active Targets:</strong>
+                                <span class="text-sm">linux-raspi (Ubuntu), linux-raspi (Ubuntu Resolute)</span>
+                            </div>
+                            <div class="meta-item"><strong>Tags:</strong>
+                                <div class="tags-wrap"><span class="tag-pill">kernel-daily-bug</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        
+
+        <tr class="bug-row" id="row-2160182" onclick="toggleDetails(2160182)"
+            data-bugid="2160182" data-package="linux-raspi"
+            data-packages="[&quot;linux-raspi&quot;]"
+            data-series="[&quot;resolute&quot;]"
+            data-flame="3" data-info-added="false"
+            data-statuses="[&quot;new&quot;]" data-created="2026-07-09T02:58:19.647648+00:00" data-lastact="2026-11-09T14:36:55.170893+00:00">
+            <td class="col-toggle"><span class="toggle-icon" id="toggle-2160182">▶</span></td>
+            <td class="col-flame" title="Hot (Active within 48h · Undecided importance)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
+            <td class="col-id font-mono">
+                <a href="https://bugs.launchpad.net/bugs/2160182" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2160182</a>
+            </td>
+            <td class="col-title" title="Kernel panic in bcmgenet_rx_poll/skb_release_data under network load (7.0.0-1014-raspi, Ubuntu 26.04, Pi 4)">Kernel panic in bcmgenet_rx_poll/skb_release_data under network load (7.0.0-1014-raspi, Ubuntu 26.04, Pi 4)</td>
+            <td class="col-package font-mono"><span class="package-pill">linux-raspi</span></td>
+            <td class="col-tasks">
+                <div class="tasks-summary-wrap">
+                    <span class="task-count-pill"><strong class="text-orange">2 Open</strong> / <span class="text-gray">0 Closed</span></span>
+                    <div class="status-badges-group"><span class="status-badge badge-new">New</span></div>
+                </div>
+            </td>
+            <td class="col-created font-mono">2026-07-09 02:58</td>
+            <td class="col-activity font-mono" title="bug task added: linux-raspi (Ubuntu Resolute) by juergh">2026-11-09 14:36</td>
+        </tr>
+        <tr class="details-row" id="details-2160182" style="display: none;">
+            <td colspan="8">
+                <div class="details-panel">
+                    <div class="details-grid">
+                        <div class="details-tasks-card">
+                            <h4>Target Tasks (2 total)</h4>
+                            <table class="subtable">
+                                <thead>
+                                    <tr>
+                                        <th>Target</th>
+                                        <th>Status</th>
+                                        <th>Importance</th>
+                                        <th>Assignee</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td class="font-mono">linux-raspi (Ubuntu)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2160182" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-raspi (Ubuntu Resolute)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/linux-raspi/+bug/2160182" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="details-meta-card">
+                            <h4>Bug Details</h4>
+                            <div class="meta-item"><strong>Reporter:</strong> <span>Dom A</span></div>
+                            <div class="meta-item">
+                                <strong>Created:</strong>
+                                <span class="font-mono">2026-07-09 02:58</span>
+                            </div>
+                            <div class="meta-item">
+                                <strong>Last Updated:</strong>
+                                <span class="font-mono">2026-11-09 14:36</span>
+                            </div>
+                            <div class="meta-item"><strong>Last Activity:</strong> <span>bug task added: linux-raspi (Ubuntu Resolute) by juergh</span></div>
+                            <div class="meta-item">
+                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (Active within 48h · Undecided importance))</span>
+                            </div>
+                            
+                            <div class="meta-item"><strong>Open Series:</strong> <span>resolute</span></div>
+                            <div class="meta-item"><strong>Active Targets:</strong>
+                                <span class="text-sm">linux-raspi (Ubuntu), linux-raspi (Ubuntu Resolute)</span>
+                            </div>
+                            <div class="meta-item"><strong>Tags:</strong>
+                                <div class="tags-wrap"><span class="tag-pill">apport-package</span><span class="tag-pill">arm64</span><span class="tag-pill">arm64-image</span><span class="tag-pill">kernel-daily-bug</span><span class="tag-pill">raspi-image</span><span class="tag-pill">resolute</span><span class="tag-pill">staging</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        
+
+        <tr class="bug-row" id="row-2133877" onclick="toggleDetails(2133877)"
+            data-bugid="2133877" data-package="linux-raspi"
+            data-packages="[&quot;linux-raspi&quot;]"
+            data-series="[&quot;resolute&quot;]"
+            data-flame="3" data-info-added="false"
+            data-statuses="[&quot;confirmed&quot;, &quot;new&quot;]" data-created="2025-12-04T14:59:33.158844+00:00" data-lastact="2026-11-09T14:30:22.325695+00:00">
+            <td class="col-toggle"><span class="toggle-icon" id="toggle-2133877">▶</span></td>
+            <td class="col-flame" title="Hot (Active within 48h · Undecided importance)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
+            <td class="col-id font-mono">
+                <a href="https://bugs.launchpad.net/bugs/2133877" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2133877</a>
+            </td>
+            <td class="col-title" title="Complete network hang on Raspberry Pi 5 with kernel 6.17 under load - possibly related to CPU frequency scaling">Complete network hang on Raspberry Pi 5 with kernel 6.17 under load - possibly related to CPU frequency scaling</td>
+            <td class="col-package font-mono"><span class="package-pill">linux-raspi</span></td>
+            <td class="col-tasks">
+                <div class="tasks-summary-wrap">
+                    <span class="task-count-pill"><strong class="text-orange">2 Open</strong> / <span class="text-gray">0 Closed</span></span>
+                    <div class="status-badges-group"><span class="status-badge badge-confirmed">Confirmed</span><span class="status-badge badge-new">New</span></div>
+                </div>
+            </td>
+            <td class="col-created font-mono">2025-12-04 14:59</td>
+            <td class="col-activity font-mono" title="bug task added: linux-raspi (Ubuntu Resolute) by juergh">2026-11-09 14:30</td>
+        </tr>
+        <tr class="details-row" id="details-2133877" style="display: none;">
+            <td colspan="8">
+                <div class="details-panel">
+                    <div class="details-grid">
+                        <div class="details-tasks-card">
+                            <h4>Target Tasks (2 total)</h4>
+                            <table class="subtable">
+                                <thead>
+                                    <tr>
+                                        <th>Target</th>
+                                        <th>Status</th>
+                                        <th>Importance</th>
+                                        <th>Assignee</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td class="font-mono">linux-raspi (Ubuntu)</td><td><span class="status-badge badge-confirmed">Confirmed</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2133877" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-raspi (Ubuntu Resolute)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/linux-raspi/+bug/2133877" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="details-meta-card">
+                            <h4>Bug Details</h4>
+                            <div class="meta-item"><strong>Reporter:</strong> <span>Aleksei</span></div>
+                            <div class="meta-item">
+                                <strong>Created:</strong>
+                                <span class="font-mono">2025-12-04 14:59</span>
+                            </div>
+                            <div class="meta-item">
+                                <strong>Last Updated:</strong>
+                                <span class="font-mono">2026-11-09 14:17</span>
+                            </div>
+                            <div class="meta-item"><strong>Last Activity:</strong> <span>bug task added: linux-raspi (Ubuntu Resolute) by juergh</span></div>
+                            <div class="meta-item">
+                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (Active within 48h · Undecided importance))</span>
+                            </div>
+                            
+                            <div class="meta-item"><strong>Open Series:</strong> <span>resolute</span></div>
+                            <div class="meta-item"><strong>Active Targets:</strong>
+                                <span class="text-sm">linux-raspi (Ubuntu), linux-raspi (Ubuntu Resolute)</span>
+                            </div>
+                            <div class="meta-item"><strong>Tags:</strong>
+                                <div class="tags-wrap"><span class="tag-pill">kernel-daily-bug</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        
+
+        <tr class="bug-row" id="row-2155978" onclick="toggleDetails(2155978)"
+            data-bugid="2155978" data-package="linux-raspi"
+            data-packages="[&quot;linux-raspi&quot;]"
+            data-series="[&quot;resolute&quot;]"
+            data-flame="3" data-info-added="false"
+            data-statuses="[&quot;new&quot;]" data-created="2026-06-08T22:03:11.547910+00:00" data-lastact="2026-11-09T14:29:02.421207+00:00">
+            <td class="col-toggle"><span class="toggle-icon" id="toggle-2155978">▶</span></td>
+            <td class="col-flame" title="Hot (Active within 48h · Undecided importance)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
+            <td class="col-id font-mono">
+                <a href="https://bugs.launchpad.net/bugs/2155978" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2155978</a>
+            </td>
+            <td class="col-title" title="linux-raspi 7.0.0-1011: AHCI SATA drives not detected on Pi 5 — regression from 7.0.0-1008 (64-bit DMA misdetection, errno=-12)">linux-raspi 7.0.0-1011: AHCI SATA drives not detected on Pi 5 — regression from 7.0.0-1008 (64-bit DMA misdetection, errno=-12)</td>
+            <td class="col-package font-mono"><span class="package-pill">linux-raspi</span></td>
+            <td class="col-tasks">
+                <div class="tasks-summary-wrap">
+                    <span class="task-count-pill"><strong class="text-orange">2 Open</strong> / <span class="text-gray">0 Closed</span></span>
+                    <div class="status-badges-group"><span class="status-badge badge-new">New</span></div>
+                </div>
+            </td>
+            <td class="col-created font-mono">2026-06-08 22:03</td>
+            <td class="col-activity font-mono" title="bug task added: linux-raspi (Ubuntu Resolute) by juergh">2026-11-09 14:29</td>
+        </tr>
+        <tr class="details-row" id="details-2155978" style="display: none;">
+            <td colspan="8">
+                <div class="details-panel">
+                    <div class="details-grid">
+                        <div class="details-tasks-card">
+                            <h4>Target Tasks (2 total)</h4>
+                            <table class="subtable">
+                                <thead>
+                                    <tr>
+                                        <th>Target</th>
+                                        <th>Status</th>
+                                        <th>Importance</th>
+                                        <th>Assignee</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td class="font-mono">linux-raspi (Ubuntu)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2155978" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-raspi (Ubuntu Resolute)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/linux-raspi/+bug/2155978" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="details-meta-card">
+                            <h4>Bug Details</h4>
+                            <div class="meta-item"><strong>Reporter:</strong> <span>CrowbarLabs</span></div>
+                            <div class="meta-item">
+                                <strong>Created:</strong>
+                                <span class="font-mono">2026-06-08 22:03</span>
+                            </div>
+                            <div class="meta-item">
+                                <strong>Last Updated:</strong>
+                                <span class="font-mono">2026-11-09 14:28</span>
+                            </div>
+                            <div class="meta-item"><strong>Last Activity:</strong> <span>bug task added: linux-raspi (Ubuntu Resolute) by juergh</span></div>
+                            <div class="meta-item">
+                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (Active within 48h · Undecided importance))</span>
+                            </div>
+                            
+                            <div class="meta-item"><strong>Open Series:</strong> <span>resolute</span></div>
+                            <div class="meta-item"><strong>Active Targets:</strong>
+                                <span class="text-sm">linux-raspi (Ubuntu), linux-raspi (Ubuntu Resolute)</span>
+                            </div>
+                            <div class="meta-item"><strong>Tags:</strong>
+                                <div class="tags-wrap"><span class="tag-pill">kernel-daily-bug</span><span class="tag-pill">raspi</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        
+
+        <tr class="bug-row" id="row-2060677" onclick="toggleDetails(2060677)"
+            data-bugid="2060677" data-package="linux-raspi"
+            data-packages="[&quot;linux-raspi&quot;]"
+            data-series="[&quot;noble&quot;]"
+            data-flame="3" data-info-added="true"
+            data-statuses="[&quot;incomplete&quot;, &quot;new&quot;]" data-created="2024-04-09T12:28:43.191802+00:00" data-lastact="2026-11-09T12:28:29.397110+00:00">
+            <td class="col-toggle"><span class="toggle-icon" id="toggle-2060677">▶</span></td>
+            <td class="col-flame" title="Hot (Active within 48h · Undecided importance)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
+            <td class="col-id font-mono">
+                <a href="https://bugs.launchpad.net/bugs/2060677" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2060677</a>
+            </td>
+            <td class="col-title" title="Consistent (zfs?) errors at shutdown">Consistent (zfs?) errors at shutdown</td>
+            <td class="col-package font-mono"><span class="package-pill">linux-raspi</span></td>
+            <td class="col-tasks">
+                <div class="tasks-summary-wrap">
+                    <span class="task-count-pill"><strong class="text-orange">2 Open</strong> / <span class="text-gray">0 Closed</span></span>
+                    <div class="status-badges-group"><span class="status-badge badge-incomplete">Incomplete</span><span class="status-badge badge-new">New</span> <span class="badge-info-added" title="Activity detected after task set to Incomplete - info may have been provided">⚠️ Info Added</span></div>
+                </div>
+            </td>
+            <td class="col-created font-mono">2024-04-09 12:28</td>
+            <td class="col-activity font-mono" title="linux-raspi (Ubuntu): assignee updated by juergh">2026-11-09 12:28</td>
+        </tr>
+        <tr class="details-row" id="details-2060677" style="display: none;">
+            <td colspan="8">
+                <div class="details-panel">
+                    <div class="details-grid">
+                        <div class="details-tasks-card">
+                            <h4>Target Tasks (2 total)</h4>
+                            <table class="subtable">
+                                <thead>
+                                    <tr>
+                                        <th>Target</th>
+                                        <th>Status</th>
+                                        <th>Importance</th>
+                                        <th>Assignee</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td class="font-mono">linux-raspi (Ubuntu)</td><td><span class="status-badge badge-incomplete">Incomplete</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2060677" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-raspi (Ubuntu Noble)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/noble/+source/linux-raspi/+bug/2060677" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="details-meta-card">
+                            <h4>Bug Details</h4>
+                            <div class="meta-item"><strong>Reporter:</strong> <span>Dave Jones</span></div>
+                            <div class="meta-item">
+                                <strong>Created:</strong>
+                                <span class="font-mono">2024-04-09 12:28</span>
+                            </div>
+                            <div class="meta-item">
+                                <strong>Last Updated:</strong>
+                                <span class="font-mono">2026-11-09 12:28</span>
+                            </div>
+                            <div class="meta-item"><strong>Last Activity:</strong> <span>linux-raspi (Ubuntu): assignee updated by juergh</span></div>
+                            <div class="meta-item">
+                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (Active within 48h · Undecided importance))</span>
+                            </div>
+                            <div class="meta-item"><strong class="text-orange">Review:</strong> <span>Activity occurred after task set to Incomplete</span></div>
+                            <div class="meta-item"><strong>Open Series:</strong> <span>noble</span></div>
+                            <div class="meta-item"><strong>Active Targets:</strong>
+                                <span class="text-sm">linux-raspi (Ubuntu), linux-raspi (Ubuntu Noble)</span>
+                            </div>
+                            <div class="meta-item"><strong>Tags:</strong>
+                                <div class="tags-wrap"><span class="tag-pill">kern-10457</span><span class="tag-pill">kernel-daily-bug</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        
+
         <tr class="bug-row" id="row-2173603" onclick="toggleDetails(2173603)"
             data-bugid="2173603" data-package="linux-raspi"
             data-packages="[&quot;linux-raspi&quot;]"
             data-series="[&quot;noble&quot;]"
-            data-flame="3" data-info-added="false"
+            data-flame="2" data-info-added="false"
             data-statuses="[&quot;new&quot;]" data-created="2026-11-07T00:06:33.838353+00:00" data-lastact="2026-11-07T23:07:52.644821+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2173603">▶</span></td>
-            <td class="col-flame" title="Hot (Active within 48h · Undecided importance)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
+            <td class="col-flame" title="Warm (Active within 7d · Undecided importance)"><span class="flame-tier flame-2">🔥🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2173603" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2173603</a>
             </td>
@@ -467,7 +1051,7 @@
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>tags: kernel-daily-bug by ubuntu-kernel-bot</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (Active within 48h · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥🔥 (Warm (Active within 7d · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>noble</span></div>
@@ -630,87 +1214,14 @@
         </tr>
         
 
-        <tr class="bug-row" id="row-2158920" onclick="toggleDetails(2158920)"
-            data-bugid="2158920" data-package="linux-raspi"
-            data-packages="[&quot;linux-raspi&quot;]"
-            data-series="[]"
-            data-flame="2" data-info-added="false"
-            data-statuses="[&quot;new&quot;]" data-created="2026-07-01T17:48:54.927719+00:00" data-lastact="2026-11-04T16:47:42.266045+00:00">
-            <td class="col-toggle"><span class="toggle-icon" id="toggle-2158920">▶</span></td>
-            <td class="col-flame" title="Warm (Active within 7d · Undecided importance)"><span class="flame-tier flame-2">🔥🔥</span></td>
-            <td class="col-id font-mono">
-                <a href="https://bugs.launchpad.net/bugs/2158920" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2158920</a>
-            </td>
-            <td class="col-title" title="noble-stable-2026-06-16 dropped a bracket causing FTBFS">noble-stable-2026-06-16 dropped a bracket causing FTBFS</td>
-            <td class="col-package font-mono"><span class="package-pill">linux-raspi</span></td>
-            <td class="col-tasks">
-                <div class="tasks-summary-wrap">
-                    <span class="task-count-pill"><strong class="text-orange">3 Open</strong> / <span class="text-gray">3 Closed</span></span>
-                    <div class="status-badges-group"><span class="status-badge badge-new">New</span></div>
-                </div>
-            </td>
-            <td class="col-created font-mono">2026-07-01 17:48</td>
-            <td class="col-activity font-mono" title="tags: kernel-daily-bug kernel-spammed-jammy-linux-hwe-6.8-v2 kernel-spammed-jammy-linux-ibm-6.8-v2 kernel-spammed-noble-linux-azure-nvidia-v2 kernel-spammed-noble-linux-azure-v2 kernel-spammed-noble-linux-raspi-v2 kernel-spammed-noble-linux-v2 verification-done-jammy-linux-hwe-6.8 verification-done-jammy-linux-ibm-6.8 verification-done-noble-linux verification-done-noble-linux-azure verification-done-noble-linux-azure-nvidia verification-done-noble-linux-raspi by roxanan">2026-11-04 16:47</td>
-        </tr>
-        <tr class="details-row" id="details-2158920" style="display: none;">
-            <td colspan="8">
-                <div class="details-panel">
-                    <div class="details-grid">
-                        <div class="details-tasks-card">
-                            <h4>Target Tasks (6 total)</h4>
-                            <table class="subtable">
-                                <thead>
-                                    <tr>
-                                        <th>Target</th>
-                                        <th>Status</th>
-                                        <th>Importance</th>
-                                        <th>Assignee</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><td class="font-mono">linux (Ubuntu)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux/+bug/2158920" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-azure (Ubuntu)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux-azure/+bug/2158920" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-raspi (Ubuntu)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2158920" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux (Ubuntu Noble)</td><td><span class="status-badge badge-fixreleased">Fix Released</span></td><td>High</td><td>Alice C. Munduruca</td><td><a href="https://bugs.launchpad.net/ubuntu/noble/+source/linux/+bug/2158920" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-azure (Ubuntu Noble)</td><td><span class="status-badge badge-fixreleased">Fix Released</span></td><td>High</td><td>Alice C. Munduruca</td><td><a href="https://bugs.launchpad.net/ubuntu/noble/+source/linux-azure/+bug/2158920" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-raspi (Ubuntu Noble)</td><td><span class="status-badge badge-fixreleased">Fix Released</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/noble/+source/linux-raspi/+bug/2158920" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="details-meta-card">
-                            <h4>Bug Details</h4>
-                            <div class="meta-item"><strong>Reporter:</strong> <span>Alice C. Munduruca</span></div>
-                            <div class="meta-item">
-                                <strong>Created:</strong>
-                                <span class="font-mono">2026-07-01 17:48</span>
-                            </div>
-                            <div class="meta-item">
-                                <strong>Last Updated:</strong>
-                                <span class="font-mono">2026-11-04 16:47</span>
-                            </div>
-                            <div class="meta-item"><strong>Last Activity:</strong> <span>tags: kernel-daily-bug kernel-spammed-jammy-linux-hwe-6.8-v2 kernel-spammed-jammy-linux-ibm-6.8-v2 kernel-spammed-noble-linux-azure-nvidia-v2 kernel-spammed-noble-linux-azure-v2 kernel-spammed-noble-linux-raspi-v2 kernel-spammed-noble-linux-v2 verification-done-jammy-linux-hwe-6.8 verification-done-jammy-linux-ibm-6.8 verification-done-noble-linux verification-done-noble-linux-azure verification-done-noble-linux-azure-nvidia verification-done-noble-linux-raspi by roxanan</span></div>
-                            <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥🔥 (Warm (Active within 7d · Undecided importance))</span>
-                            </div>
-                            
-                            <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
-                            <div class="meta-item"><strong>Active Targets:</strong>
-                                <span class="text-sm">linux (Ubuntu), linux-azure (Ubuntu), linux-raspi (Ubuntu)</span>
-                            </div>
-                            <div class="meta-item"><strong>Tags:</strong>
-                                <div class="tags-wrap"><span class="tag-pill">kernel-daily-bug</span><span class="tag-pill">kernel-spammed-jammy-linux-hwe-6.8-v2</span><span class="tag-pill">kernel-spammed-jammy-linux-ibm-6.8-v2</span><span class="tag-pill">kernel-spammed-noble-linux-azure-nvidia-v2</span><span class="tag-pill">kernel-spammed-noble-linux-azure-v2</span><span class="tag-pill">kernel-spammed-noble-linux-raspi-v2</span><span class="tag-pill">kernel-spammed-noble-linux-v2</span><span class="tag-pill">verification-done-jammy-linux-hwe-6.8</span><span class="tag-pill">verification-done-jammy-linux-ibm-6.8</span><span class="tag-pill">verification-done-noble-linux</span><span class="tag-pill">verification-done-noble-linux-azure</span><span class="tag-pill">verification-done-noble-linux-azure-nvidia</span><span class="tag-pill">verification-done-noble-linux-raspi</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </td>
-        </tr>
-        
-
         <tr class="bug-row" id="row-2172746" onclick="toggleDetails(2172746)"
             data-bugid="2172746" data-package="linux-raspi"
             data-packages="[&quot;linux-raspi&quot;]"
             data-series="[]"
-            data-flame="2" data-info-added="false"
+            data-flame="1" data-info-added="false"
             data-statuses="[&quot;new&quot;]" data-created="2026-11-02T10:56:43.874145+00:00" data-lastact="2026-11-02T23:09:09.439717+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2172746">▶</span></td>
-            <td class="col-flame" title="Warm (Active within 7d · Undecided importance)"><span class="flame-tier flame-2">🔥🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 7.1d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2172746" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2172746</a>
             </td>
@@ -759,7 +1270,7 @@
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>tags: apparmor kernel-daily-bug regression-proposed by ubuntu-kernel-bot</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥🔥 (Warm (Active within 7d · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 7.1d ago · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
@@ -783,7 +1294,7 @@
             data-flame="1" data-info-added="false"
             data-statuses="[&quot;new&quot;]" data-created="2026-10-28T16:16:48.273277+00:00" data-lastact="2026-10-28T23:09:19.596434+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2172394">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 11.6d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 12.1d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2172394" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2172394</a>
             </td>
@@ -832,7 +1343,7 @@
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>tags: kernel-daily-bug by ubuntu-kernel-bot</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 11.6d ago · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 12.1d ago · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
@@ -856,7 +1367,7 @@
             data-flame="1" data-info-added="false"
             data-statuses="[&quot;new&quot;]" data-created="2026-10-19T19:29:26.942287+00:00" data-lastact="2026-10-23T04:31:40.901943+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2171439">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 17.3d ago · Low importance)"><span class="flame-tier flame-1">🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 17.9d ago · Low importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2171439" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2171439</a>
             </td>
@@ -905,7 +1416,7 @@
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>linux-raspi (Ubuntu): importance: Low by rossporter506</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 17.3d ago · Low importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 17.9d ago · Low importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
@@ -914,79 +1425,6 @@
                             </div>
                             <div class="meta-item"><strong>Tags:</strong>
                                 <div class="tags-wrap"><span class="tag-pill">apport-collected</span><span class="tag-pill">arm64-image</span><span class="tag-pill">kernel-daily-bug</span><span class="tag-pill">raspi-image</span><span class="tag-pill">resolute</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </td>
-        </tr>
-        
-
-        <tr class="bug-row" id="row-2133877" onclick="toggleDetails(2133877)"
-            data-bugid="2133877" data-package="linux-raspi"
-            data-packages="[&quot;linux-raspi&quot;]"
-            data-series="[]"
-            data-flame="1" data-info-added="false"
-            data-statuses="[&quot;confirmed&quot;]" data-created="2025-12-04T14:59:33.158844+00:00" data-lastact="2026-10-20T21:31:27.558096+00:00">
-            <td class="col-toggle"><span class="toggle-icon" id="toggle-2133877">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 19.6d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
-            <td class="col-id font-mono">
-                <a href="https://bugs.launchpad.net/bugs/2133877" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2133877</a>
-            </td>
-            <td class="col-title" title="Complete network hang on Raspberry Pi 5 with kernel 6.17 under load - possibly related to CPU frequency scaling">Complete network hang on Raspberry Pi 5 with kernel 6.17 under load - possibly related to CPU frequency scaling</td>
-            <td class="col-package font-mono"><span class="package-pill">linux-raspi</span></td>
-            <td class="col-tasks">
-                <div class="tasks-summary-wrap">
-                    <span class="task-count-pill"><strong class="text-orange">1 Open</strong> / <span class="text-gray">0 Closed</span></span>
-                    <div class="status-badges-group"><span class="status-badge badge-confirmed">Confirmed</span></div>
-                </div>
-            </td>
-            <td class="col-created font-mono">2025-12-04 14:59</td>
-            <td class="col-activity font-mono" title="bug updated by lxgaming">2026-10-20 21:31</td>
-        </tr>
-        <tr class="details-row" id="details-2133877" style="display: none;">
-            <td colspan="8">
-                <div class="details-panel">
-                    <div class="details-grid">
-                        <div class="details-tasks-card">
-                            <h4>Target Tasks (1 total)</h4>
-                            <table class="subtable">
-                                <thead>
-                                    <tr>
-                                        <th>Target</th>
-                                        <th>Status</th>
-                                        <th>Importance</th>
-                                        <th>Assignee</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><td class="font-mono">linux-raspi (Ubuntu)</td><td><span class="status-badge badge-confirmed">Confirmed</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2133877" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="details-meta-card">
-                            <h4>Bug Details</h4>
-                            <div class="meta-item"><strong>Reporter:</strong> <span>Aleksei</span></div>
-                            <div class="meta-item">
-                                <strong>Created:</strong>
-                                <span class="font-mono">2025-12-04 14:59</span>
-                            </div>
-                            <div class="meta-item">
-                                <strong>Last Updated:</strong>
-                                <span class="font-mono">2026-10-20 21:31</span>
-                            </div>
-                            <div class="meta-item"><strong>Last Activity:</strong> <span>bug updated by lxgaming</span></div>
-                            <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 19.6d ago · Undecided importance))</span>
-                            </div>
-                            
-                            <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
-                            <div class="meta-item"><strong>Active Targets:</strong>
-                                <span class="text-sm">linux-raspi (Ubuntu)</span>
-                            </div>
-                            <div class="meta-item"><strong>Tags:</strong>
-                                <div class="tags-wrap"><span class="tag-pill">kernel-daily-bug</span></div>
                             </div>
                         </div>
                     </div>
@@ -1075,7 +1513,7 @@
             data-flame="1" data-info-added="false"
             data-statuses="[&quot;confirmed&quot;]" data-created="2026-09-03T21:47:36.894180+00:00" data-lastact="2026-10-13T07:25:34.272651+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2166421">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 27.2d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 27.8d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2166421" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2166421</a>
             </td>
@@ -1124,7 +1562,7 @@
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>bug updated by ffried</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 27.2d ago · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 27.8d ago · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
@@ -1148,7 +1586,7 @@
             data-flame="0" data-info-added="false"
             data-statuses="[&quot;confirmed&quot;]" data-created="2026-06-22T10:19:38.437486+00:00" data-lastact="2026-09-29T05:36:07.602524+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2157789">▶</span></td>
-            <td class="col-flame" title="Cold (Inactive 41d · High importance)"><span class="flame-tier flame-0">—</span></td>
+            <td class="col-flame" title="Cold (Inactive 42d · High importance)"><span class="flame-tier flame-0">—</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2157789" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2157789</a>
             </td>
@@ -1197,7 +1635,7 @@
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>linux-raspi (Ubuntu Resolute): status: Confirmed by ewrdsee</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>— (Cold (Inactive 41d · High importance))</span>
+                                <strong>Heat:</strong> <span>— (Cold (Inactive 42d · High importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>resolute</span></div>
@@ -1221,7 +1659,7 @@
             data-flame="0" data-info-added="false"
             data-statuses="[&quot;new&quot;]" data-created="2026-09-23T13:50:47.738290+00:00" data-lastact="2026-09-24T10:00:59.481391+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2168109">▶</span></td>
-            <td class="col-flame" title="Cold (Inactive 46d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
+            <td class="col-flame" title="Cold (Inactive 47d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2168109" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2168109</a>
             </td>
@@ -1270,85 +1708,12 @@
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>affects: linux-raspi (Ubuntu) by juergh</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>— (Cold (Inactive 46d · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>— (Cold (Inactive 47d · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
                             <div class="meta-item"><strong>Active Targets:</strong>
                                 <span class="text-sm">linux-raspi (Ubuntu), ubuntu-raspi-settings (Ubuntu)</span>
-                            </div>
-                            <div class="meta-item"><strong>Tags:</strong>
-                                <div class="tags-wrap"><span class="tag-pill">kernel-daily-bug</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </td>
-        </tr>
-        
-
-        <tr class="bug-row" id="row-2167359" onclick="toggleDetails(2167359)"
-            data-bugid="2167359" data-package="linux-raspi"
-            data-packages="[&quot;linux-raspi&quot;]"
-            data-series="[]"
-            data-flame="1" data-info-added="false"
-            data-statuses="[&quot;in progress&quot;]" data-created="2026-09-15T14:52:26.226312+00:00" data-lastact="2026-09-15T23:07:35.230877+00:00">
-            <td class="col-toggle"><span class="toggle-icon" id="toggle-2167359">▶</span></td>
-            <td class="col-flame" title="Moderate (Medium importance)"><span class="flame-tier flame-1">🔥</span></td>
-            <td class="col-id font-mono">
-                <a href="https://bugs.launchpad.net/bugs/2167359" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2167359</a>
-            </td>
-            <td class="col-title" title="linux-raspi: Kernel build fails with CONFIG_DRM_XE enabled">linux-raspi: Kernel build fails with CONFIG_DRM_XE enabled</td>
-            <td class="col-package font-mono"><span class="package-pill">linux-raspi</span></td>
-            <td class="col-tasks">
-                <div class="tasks-summary-wrap">
-                    <span class="task-count-pill"><strong class="text-orange">1 Open</strong> / <span class="text-gray">1 Closed</span></span>
-                    <div class="status-badges-group"><span class="status-badge badge-inprogress">In Progress</span></div>
-                </div>
-            </td>
-            <td class="col-created font-mono">2026-09-15 14:52</td>
-            <td class="col-activity font-mono" title="tags: kernel-daily-bug by ubuntu-kernel-bot">2026-09-15 23:07</td>
-        </tr>
-        <tr class="details-row" id="details-2167359" style="display: none;">
-            <td colspan="8">
-                <div class="details-panel">
-                    <div class="details-grid">
-                        <div class="details-tasks-card">
-                            <h4>Target Tasks (2 total)</h4>
-                            <table class="subtable">
-                                <thead>
-                                    <tr>
-                                        <th>Target</th>
-                                        <th>Status</th>
-                                        <th>Importance</th>
-                                        <th>Assignee</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><td class="font-mono">linux-raspi (Ubuntu)</td><td><span class="status-badge badge-inprogress">In Progress</span></td><td>Medium</td><td>Alessio Faina</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2167359" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-raspi (Ubuntu Stonking)</td><td><span class="status-badge badge-closed">Won&#x27;t Fix</span></td><td>Medium</td><td>Alessio Faina</td><td><a href="https://bugs.launchpad.net/ubuntu/stonking/+source/linux-raspi/+bug/2167359" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="details-meta-card">
-                            <h4>Bug Details</h4>
-                            <div class="meta-item"><strong>Reporter:</strong> <span>Alessio Faina</span></div>
-                            <div class="meta-item">
-                                <strong>Created:</strong>
-                                <span class="font-mono">2026-09-15 14:52</span>
-                            </div>
-                            <div class="meta-item">
-                                <strong>Last Updated:</strong>
-                                <span class="font-mono">2026-09-15 23:07</span>
-                            </div>
-                            <div class="meta-item"><strong>Last Activity:</strong> <span>tags: kernel-daily-bug by ubuntu-kernel-bot</span></div>
-                            <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Medium importance))</span>
-                            </div>
-                            
-                            <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
-                            <div class="meta-item"><strong>Active Targets:</strong>
-                                <span class="text-sm">linux-raspi (Ubuntu)</span>
                             </div>
                             <div class="meta-item"><strong>Tags:</strong>
                                 <div class="tags-wrap"><span class="tag-pill">kernel-daily-bug</span></div>
@@ -1425,465 +1790,6 @@
                             </div>
                             <div class="meta-item"><strong>Tags:</strong>
                                 <div class="tags-wrap"><span class="tag-pill">kernel-daily-bug</span><span class="tag-pill">regression-release</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </td>
-        </tr>
-        
-
-        <tr class="bug-row" id="row-2162573" onclick="toggleDetails(2162573)"
-            data-bugid="2162573" data-package="linux-raspi"
-            data-packages="[&quot;linux-raspi&quot;]"
-            data-series="[]"
-            data-flame="0" data-info-added="false"
-            data-statuses="[&quot;new&quot;]" data-created="2026-07-31T14:35:45.206511+00:00" data-lastact="2026-08-01T08:35:25.962604+00:00">
-            <td class="col-toggle"><span class="toggle-icon" id="toggle-2162573">▶</span></td>
-            <td class="col-flame" title="Cold (Inactive 100d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
-            <td class="col-id font-mono">
-                <a href="https://bugs.launchpad.net/bugs/2162573" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2162573</a>
-            </td>
-            <td class="col-title" title="i2c_designware driver returning sda stuck low error">i2c_designware driver returning sda stuck low error</td>
-            <td class="col-package font-mono"><span class="package-pill">linux-raspi</span></td>
-            <td class="col-tasks">
-                <div class="tasks-summary-wrap">
-                    <span class="task-count-pill"><strong class="text-orange">1 Open</strong> / <span class="text-gray">0 Closed</span></span>
-                    <div class="status-badges-group"><span class="status-badge badge-new">New</span></div>
-                </div>
-            </td>
-            <td class="col-created font-mono">2026-07-31 14:35</td>
-            <td class="col-activity font-mono" title="description: I have an argon one V5 case fitted with an industra oled display connected to the Raspberry Pi 5 i2c bus. This displays various system information using various python scripts provided by Argon One, and is working fine on Ubuntu 24.04, 25.10 and Raspberry Pi OS. However on Ubuntu 26.04 it displays no information on the display and the following error is in syslog:-
-
-2026-07-31T14:48:34.076339+01:00 thirlmere kernel: i2c_designware 1f00074000.i2c: i2c_dw_handle_tx_abort: SDA stuck at low
-2026-07-31T14:48:34.078711+01:00 thirlmere python3[2851]: Unable to initialize OLED
-
-As the hardware is working fine on other versions of Ubuntu and Raspberry Pi OS I can only assume it must be a bug introduced in to the i2c driver on Ubuntu 26.04
-
-Results from i2cdetect appear to show the hardware is working fine:-
-
-i2cdetect -y 1
-     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
-00:                         -- -- -- -- -- -- -- --
-10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
-20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
-30: -- -- -- -- -- -- -- -- -- -- -- -- 3c -- -- --
-40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
-50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
-60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
-70: -- -- -- -- -- -- -- --
-
-i2cdetect -F 1
-Functionalities implemented by /dev/i2c-1:
-I2C                              yes
-SMBus Quick Command              yes
-SMBus Send Byte                  yes
-SMBus Receive Byte               yes
-SMBus Write Byte                 yes
-SMBus Read Byte                  yes
-SMBus Write Word                 yes
-SMBus Read Word                  yes
-SMBus Process Call               no
-SMBus Block Write                yes
-SMBus Block Read                 yes
-SMBus Block Process Call         no
-SMBus PEC                        no
-I2C Block Write                  yes
-I2C Block Read                   yes
-SMBus Host Notify                no
-10-bit addressing                yes
-Target mode                      yes
-
-On Ubuntu 25.10 i2cdetect -F 1 returns the following:-
-
-i2cdetect -F 1
-Functionalities implemented by /dev/i2c-1:
-I2C                              yes
-SMBus Quick Command              yes
-SMBus Send Byte                  yes
-SMBus Receive Byte               yes
-SMBus Write Byte                 yes
-SMBus Read Byte                  yes
-SMBus Write Word                 yes
-SMBus Read Word                  yes
-SMBus Process Call               no
-SMBus Block Write                yes
-SMBus Block Read                 yes
-SMBus Block Process Call         no
-SMBus PEC                        no
-I2C Block Write                  yes
-I2C Block Read                   yes
-SMBus Host Notify                no
-10-bit addressing                yes
-Target mode                      no
-
-On Raspberry Pi Os i2cdetect -F 1 returns the following:-
-
- i2cdetect -F 1
-Functionalities implemented by /dev/i2c-1:
-I2C                              yes
-SMBus Quick Command              yes
-SMBus Send Byte                  yes
-SMBus Receive Byte               yes
-SMBus Write Byte                 yes
-SMBus Read Byte                  yes
-SMBus Write Word                 yes
-SMBus Read Word                  yes
-SMBus Process Call               no
-SMBus Block Write                yes
-SMBus Block Read                 yes
-SMBus Block Process Call         no
-SMBus PEC                        no
-I2C Block Write                  yes
-I2C Block Read                   yes
-SMBus Host Notify                no
-10-bit addressing                yes
-Target mode                      no
-
-The only differences I can see between the working systems on Ubuntu 25.10 and Raspberry Pi OS and the non working Ubuntu 26.04 is the value of Target Mode
-
-ProblemType: Bug
-DistroRelease: Ubuntu 26.04
-Package: linux-image-7.0.0-1015-raspi 7.0.0-1015.15
-ProcVersionSignature: Ubuntu 7.0.0-1015.15-raspi 7.0.12
-Uname: Linux 7.0.0-1015-raspi aarch64
-ApportVersion: 2.34.1-0ubuntu0.1
-Architecture: arm64
-AudioDevicesInUse:
- USER        PID ACCESS COMMAND
- /dev/snd/controlC0:  springle   3004 F.... wireplumber
- /dev/snd/controlC3:  springle   3004 F.... wireplumber
- /dev/snd/controlC1:  springle   3004 F.... wireplumber
- /dev/snd/seq:        springle   2998 F.... pipewire
-CasperMD5CheckResult: unknown
-CloudArchitecture: aarch64
-CloudID: nocloud
-CloudName: unknown
-CloudPlatform: nocloud
-CloudSubPlatform: config-disk (/dev/sda1)
-CurrentDesktop: ubuntu:GNOME
-Date: Fri Jul 31 15:25:33 2026
-ImageMediaBuild: 20260423
-IwDevWlan0Link: Not connected.
-Lspci-vt:
- -[0001:00]---00.0-[01-04]----00.0-[02-04]--+-03.0-[03]----00.0  Micron Technology Inc 2550 NVMe SSD (DRAM-less)
-                                            \-07.0-[04]----00.0  Micron/Crucial Technology P3 Plus NVMe PCIe SSD (DRAM-less)
- -[0002:00]---00.0-[01]----00.0  Raspberry Pi Ltd RP1 PCIe 2.0 South Bridge
-ProcFB: 0 vc4drmfb
-ProcKernelCmdLine: reboot=w coherent_pool=1M 8250.nr_uarts=1 pci=pcie_bus_safe numa_policy=interleave nvme.max_host_mem_size_mb=0  numa=fake=8 system_heap.max_order=0 iommu_dma_numa_policy=interleave smsc95xx.macaddr=2C:CF:67:7E:B5:72 vc_mem.mem_base=0x3fc00000 vc_mem.mem_size=0x40000000  zswap.enabled=1 zswap.compressor=zstd multipath=off dwc_otg.lpm_enable=0 console=tty1 root=/dev/sda2 rootfstype=ext4 panic=10 rootwait fixrtc quiet splash
-SourcePackage: linux-raspi
-UpgradeStatus: No upgrade log present (probably fresh install)
-acpidump: by stevepringle">2026-08-01 08:35</td>
-        </tr>
-        <tr class="details-row" id="details-2162573" style="display: none;">
-            <td colspan="8">
-                <div class="details-panel">
-                    <div class="details-grid">
-                        <div class="details-tasks-card">
-                            <h4>Target Tasks (1 total)</h4>
-                            <table class="subtable">
-                                <thead>
-                                    <tr>
-                                        <th>Target</th>
-                                        <th>Status</th>
-                                        <th>Importance</th>
-                                        <th>Assignee</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><td class="font-mono">linux-raspi (Ubuntu)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2162573" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="details-meta-card">
-                            <h4>Bug Details</h4>
-                            <div class="meta-item"><strong>Reporter:</strong> <span>Steve Pringle</span></div>
-                            <div class="meta-item">
-                                <strong>Created:</strong>
-                                <span class="font-mono">2026-07-31 14:35</span>
-                            </div>
-                            <div class="meta-item">
-                                <strong>Last Updated:</strong>
-                                <span class="font-mono">2026-08-01 08:35</span>
-                            </div>
-                            <div class="meta-item"><strong>Last Activity:</strong> <span>description: I have an argon one V5 case fitted with an industra oled display connected to the Raspberry Pi 5 i2c bus. This displays various system information using various python scripts provided by Argon One, and is working fine on Ubuntu 24.04, 25.10 and Raspberry Pi OS. However on Ubuntu 26.04 it displays no information on the display and the following error is in syslog:-
-
-2026-07-31T14:48:34.076339+01:00 thirlmere kernel: i2c_designware 1f00074000.i2c: i2c_dw_handle_tx_abort: SDA stuck at low
-2026-07-31T14:48:34.078711+01:00 thirlmere python3[2851]: Unable to initialize OLED
-
-As the hardware is working fine on other versions of Ubuntu and Raspberry Pi OS I can only assume it must be a bug introduced in to the i2c driver on Ubuntu 26.04
-
-Results from i2cdetect appear to show the hardware is working fine:-
-
-i2cdetect -y 1
-     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
-00:                         -- -- -- -- -- -- -- --
-10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
-20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
-30: -- -- -- -- -- -- -- -- -- -- -- -- 3c -- -- --
-40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
-50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
-60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
-70: -- -- -- -- -- -- -- --
-
-i2cdetect -F 1
-Functionalities implemented by /dev/i2c-1:
-I2C                              yes
-SMBus Quick Command              yes
-SMBus Send Byte                  yes
-SMBus Receive Byte               yes
-SMBus Write Byte                 yes
-SMBus Read Byte                  yes
-SMBus Write Word                 yes
-SMBus Read Word                  yes
-SMBus Process Call               no
-SMBus Block Write                yes
-SMBus Block Read                 yes
-SMBus Block Process Call         no
-SMBus PEC                        no
-I2C Block Write                  yes
-I2C Block Read                   yes
-SMBus Host Notify                no
-10-bit addressing                yes
-Target mode                      yes
-
-On Ubuntu 25.10 i2cdetect -F 1 returns the following:-
-
-i2cdetect -F 1
-Functionalities implemented by /dev/i2c-1:
-I2C                              yes
-SMBus Quick Command              yes
-SMBus Send Byte                  yes
-SMBus Receive Byte               yes
-SMBus Write Byte                 yes
-SMBus Read Byte                  yes
-SMBus Write Word                 yes
-SMBus Read Word                  yes
-SMBus Process Call               no
-SMBus Block Write                yes
-SMBus Block Read                 yes
-SMBus Block Process Call         no
-SMBus PEC                        no
-I2C Block Write                  yes
-I2C Block Read                   yes
-SMBus Host Notify                no
-10-bit addressing                yes
-Target mode                      no
-
-On Raspberry Pi Os i2cdetect -F 1 returns the following:-
-
- i2cdetect -F 1
-Functionalities implemented by /dev/i2c-1:
-I2C                              yes
-SMBus Quick Command              yes
-SMBus Send Byte                  yes
-SMBus Receive Byte               yes
-SMBus Write Byte                 yes
-SMBus Read Byte                  yes
-SMBus Write Word                 yes
-SMBus Read Word                  yes
-SMBus Process Call               no
-SMBus Block Write                yes
-SMBus Block Read                 yes
-SMBus Block Process Call         no
-SMBus PEC                        no
-I2C Block Write                  yes
-I2C Block Read                   yes
-SMBus Host Notify                no
-10-bit addressing                yes
-Target mode                      no
-
-The only differences I can see between the working systems on Ubuntu 25.10 and Raspberry Pi OS and the non working Ubuntu 26.04 is the value of Target Mode
-
-ProblemType: Bug
-DistroRelease: Ubuntu 26.04
-Package: linux-image-7.0.0-1015-raspi 7.0.0-1015.15
-ProcVersionSignature: Ubuntu 7.0.0-1015.15-raspi 7.0.12
-Uname: Linux 7.0.0-1015-raspi aarch64
-ApportVersion: 2.34.1-0ubuntu0.1
-Architecture: arm64
-AudioDevicesInUse:
- USER        PID ACCESS COMMAND
- /dev/snd/controlC0:  springle   3004 F.... wireplumber
- /dev/snd/controlC3:  springle   3004 F.... wireplumber
- /dev/snd/controlC1:  springle   3004 F.... wireplumber
- /dev/snd/seq:        springle   2998 F.... pipewire
-CasperMD5CheckResult: unknown
-CloudArchitecture: aarch64
-CloudID: nocloud
-CloudName: unknown
-CloudPlatform: nocloud
-CloudSubPlatform: config-disk (/dev/sda1)
-CurrentDesktop: ubuntu:GNOME
-Date: Fri Jul 31 15:25:33 2026
-ImageMediaBuild: 20260423
-IwDevWlan0Link: Not connected.
-Lspci-vt:
- -[0001:00]---00.0-[01-04]----00.0-[02-04]--+-03.0-[03]----00.0  Micron Technology Inc 2550 NVMe SSD (DRAM-less)
-                                            \-07.0-[04]----00.0  Micron/Crucial Technology P3 Plus NVMe PCIe SSD (DRAM-less)
- -[0002:00]---00.0-[01]----00.0  Raspberry Pi Ltd RP1 PCIe 2.0 South Bridge
-ProcFB: 0 vc4drmfb
-ProcKernelCmdLine: reboot=w coherent_pool=1M 8250.nr_uarts=1 pci=pcie_bus_safe numa_policy=interleave nvme.max_host_mem_size_mb=0  numa=fake=8 system_heap.max_order=0 iommu_dma_numa_policy=interleave smsc95xx.macaddr=2C:CF:67:7E:B5:72 vc_mem.mem_base=0x3fc00000 vc_mem.mem_size=0x40000000  zswap.enabled=1 zswap.compressor=zstd multipath=off dwc_otg.lpm_enable=0 console=tty1 root=/dev/sda2 rootfstype=ext4 panic=10 rootwait fixrtc quiet splash
-SourcePackage: linux-raspi
-UpgradeStatus: No upgrade log present (probably fresh install)
-acpidump: by stevepringle</span></div>
-                            <div class="meta-item">
-                                <strong>Heat:</strong> <span>— (Cold (Inactive 100d · Undecided importance))</span>
-                            </div>
-                            
-                            <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
-                            <div class="meta-item"><strong>Active Targets:</strong>
-                                <span class="text-sm">linux-raspi (Ubuntu)</span>
-                            </div>
-                            <div class="meta-item"><strong>Tags:</strong>
-                                <div class="tags-wrap"><span class="tag-pill">apport-bug</span><span class="tag-pill">arm64</span><span class="tag-pill">arm64-image</span><span class="tag-pill">kernel-daily-bug</span><span class="tag-pill">raspi-image</span><span class="tag-pill">resolute</span><span class="tag-pill">wayland-session</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </td>
-        </tr>
-        
-
-        <tr class="bug-row" id="row-2162033" onclick="toggleDetails(2162033)"
-            data-bugid="2162033" data-package="linux-raspi"
-            data-packages="[&quot;linux-raspi&quot;]"
-            data-series="[]"
-            data-flame="0" data-info-added="false"
-            data-statuses="[&quot;new&quot;]" data-created="2026-07-29T06:22:14.653878+00:00" data-lastact="2026-07-29T23:05:36.193214+00:00">
-            <td class="col-toggle"><span class="toggle-icon" id="toggle-2162033">▶</span></td>
-            <td class="col-flame" title="Cold (Inactive 103d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
-            <td class="col-id font-mono">
-                <a href="https://bugs.launchpad.net/bugs/2162033" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2162033</a>
-            </td>
-            <td class="col-title" title="NVMe M.2 fails with I/O errors on Raspberry Pi 5 with kernel 7.0.0-1015-raspi when ASPM L1 is enabled">NVMe M.2 fails with I/O errors on Raspberry Pi 5 with kernel 7.0.0-1015-raspi when ASPM L1 is enabled</td>
-            <td class="col-package font-mono"><span class="package-pill">linux-raspi</span></td>
-            <td class="col-tasks">
-                <div class="tasks-summary-wrap">
-                    <span class="task-count-pill"><strong class="text-orange">1 Open</strong> / <span class="text-gray">0 Closed</span></span>
-                    <div class="status-badges-group"><span class="status-badge badge-new">New</span></div>
-                </div>
-            </td>
-            <td class="col-created font-mono">2026-07-29 06:22</td>
-            <td class="col-activity font-mono" title="tags: aspm kernel-daily-bug l1 linux-raspi m.2 nvme nvme-hat pi5 by ubuntu-kernel-bot">2026-07-29 23:05</td>
-        </tr>
-        <tr class="details-row" id="details-2162033" style="display: none;">
-            <td colspan="8">
-                <div class="details-panel">
-                    <div class="details-grid">
-                        <div class="details-tasks-card">
-                            <h4>Target Tasks (1 total)</h4>
-                            <table class="subtable">
-                                <thead>
-                                    <tr>
-                                        <th>Target</th>
-                                        <th>Status</th>
-                                        <th>Importance</th>
-                                        <th>Assignee</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><td class="font-mono">linux-raspi (Ubuntu)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2162033" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="details-meta-card">
-                            <h4>Bug Details</h4>
-                            <div class="meta-item"><strong>Reporter:</strong> <span>Vito Giarrusso</span></div>
-                            <div class="meta-item">
-                                <strong>Created:</strong>
-                                <span class="font-mono">2026-07-29 06:22</span>
-                            </div>
-                            <div class="meta-item">
-                                <strong>Last Updated:</strong>
-                                <span class="font-mono">2026-07-29 23:05</span>
-                            </div>
-                            <div class="meta-item"><strong>Last Activity:</strong> <span>tags: aspm kernel-daily-bug l1 linux-raspi m.2 nvme nvme-hat pi5 by ubuntu-kernel-bot</span></div>
-                            <div class="meta-item">
-                                <strong>Heat:</strong> <span>— (Cold (Inactive 103d · Undecided importance))</span>
-                            </div>
-                            
-                            <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
-                            <div class="meta-item"><strong>Active Targets:</strong>
-                                <span class="text-sm">linux-raspi (Ubuntu)</span>
-                            </div>
-                            <div class="meta-item"><strong>Tags:</strong>
-                                <div class="tags-wrap"><span class="tag-pill">aspm</span><span class="tag-pill">kernel-daily-bug</span><span class="tag-pill">l1</span><span class="tag-pill">linux-raspi</span><span class="tag-pill">m.2</span><span class="tag-pill">nvme</span><span class="tag-pill">nvme-hat</span><span class="tag-pill">pi5</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </td>
-        </tr>
-        
-
-        <tr class="bug-row" id="row-2161936" onclick="toggleDetails(2161936)"
-            data-bugid="2161936" data-package="linux-raspi"
-            data-packages="[&quot;linux-raspi&quot;]"
-            data-series="[]"
-            data-flame="0" data-info-added="false"
-            data-statuses="[&quot;new&quot;]" data-created="2026-07-28T00:49:02.888647+00:00" data-lastact="2026-07-28T23:05:16.243093+00:00">
-            <td class="col-toggle"><span class="toggle-icon" id="toggle-2161936">▶</span></td>
-            <td class="col-flame" title="Cold (Inactive 104d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
-            <td class="col-id font-mono">
-                <a href="https://bugs.launchpad.net/bugs/2161936" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2161936</a>
-            </td>
-            <td class="col-title" title="[CM4] Unable to boot 7.0.0-1015-raspi from resolute proposed">[CM4] Unable to boot 7.0.0-1015-raspi from resolute proposed</td>
-            <td class="col-package font-mono"><span class="package-pill">linux-raspi</span></td>
-            <td class="col-tasks">
-                <div class="tasks-summary-wrap">
-                    <span class="task-count-pill"><strong class="text-orange">1 Open</strong> / <span class="text-gray">0 Closed</span></span>
-                    <div class="status-badges-group"><span class="status-badge badge-new">New</span></div>
-                </div>
-            </td>
-            <td class="col-created font-mono">2026-07-28 00:49</td>
-            <td class="col-activity font-mono" title="tags: kernel-daily-bug by ubuntu-kernel-bot">2026-07-28 23:05</td>
-        </tr>
-        <tr class="details-row" id="details-2161936" style="display: none;">
-            <td colspan="8">
-                <div class="details-panel">
-                    <div class="details-grid">
-                        <div class="details-tasks-card">
-                            <h4>Target Tasks (1 total)</h4>
-                            <table class="subtable">
-                                <thead>
-                                    <tr>
-                                        <th>Target</th>
-                                        <th>Status</th>
-                                        <th>Importance</th>
-                                        <th>Assignee</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><td class="font-mono">linux-raspi (Ubuntu)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2161936" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="details-meta-card">
-                            <h4>Bug Details</h4>
-                            <div class="meta-item"><strong>Reporter:</strong> <span>Rene Orozco Martinez</span></div>
-                            <div class="meta-item">
-                                <strong>Created:</strong>
-                                <span class="font-mono">2026-07-28 00:49</span>
-                            </div>
-                            <div class="meta-item">
-                                <strong>Last Updated:</strong>
-                                <span class="font-mono">2026-07-28 23:05</span>
-                            </div>
-                            <div class="meta-item"><strong>Last Activity:</strong> <span>tags: kernel-daily-bug by ubuntu-kernel-bot</span></div>
-                            <div class="meta-item">
-                                <strong>Heat:</strong> <span>— (Cold (Inactive 104d · Undecided importance))</span>
-                            </div>
-                            
-                            <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
-                            <div class="meta-item"><strong>Active Targets:</strong>
-                                <span class="text-sm">linux-raspi (Ubuntu)</span>
-                            </div>
-                            <div class="meta-item"><strong>Tags:</strong>
-                                <div class="tags-wrap"><span class="tag-pill">kernel-daily-bug</span></div>
                             </div>
                         </div>
                     </div>
@@ -2038,152 +1944,6 @@ acpidump: by stevepringle</span></div>
         </tr>
         
 
-        <tr class="bug-row" id="row-2160182" onclick="toggleDetails(2160182)"
-            data-bugid="2160182" data-package="linux-raspi"
-            data-packages="[&quot;linux-raspi&quot;]"
-            data-series="[]"
-            data-flame="0" data-info-added="false"
-            data-statuses="[&quot;new&quot;]" data-created="2026-07-09T02:58:19.647648+00:00" data-lastact="2026-07-09T23:03:58.089562+00:00">
-            <td class="col-toggle"><span class="toggle-icon" id="toggle-2160182">▶</span></td>
-            <td class="col-flame" title="Cold (Inactive 123d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
-            <td class="col-id font-mono">
-                <a href="https://bugs.launchpad.net/bugs/2160182" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2160182</a>
-            </td>
-            <td class="col-title" title="Kernel panic in bcmgenet_rx_poll/skb_release_data under network load (7.0.0-1014-raspi, Ubuntu 26.04, Pi 4)">Kernel panic in bcmgenet_rx_poll/skb_release_data under network load (7.0.0-1014-raspi, Ubuntu 26.04, Pi 4)</td>
-            <td class="col-package font-mono"><span class="package-pill">linux-raspi</span></td>
-            <td class="col-tasks">
-                <div class="tasks-summary-wrap">
-                    <span class="task-count-pill"><strong class="text-orange">1 Open</strong> / <span class="text-gray">0 Closed</span></span>
-                    <div class="status-badges-group"><span class="status-badge badge-new">New</span></div>
-                </div>
-            </td>
-            <td class="col-created font-mono">2026-07-09 02:58</td>
-            <td class="col-activity font-mono" title="tags: apport-package arm64 arm64-image kernel-daily-bug raspi-image resolute staging by ubuntu-kernel-bot">2026-07-09 23:03</td>
-        </tr>
-        <tr class="details-row" id="details-2160182" style="display: none;">
-            <td colspan="8">
-                <div class="details-panel">
-                    <div class="details-grid">
-                        <div class="details-tasks-card">
-                            <h4>Target Tasks (1 total)</h4>
-                            <table class="subtable">
-                                <thead>
-                                    <tr>
-                                        <th>Target</th>
-                                        <th>Status</th>
-                                        <th>Importance</th>
-                                        <th>Assignee</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><td class="font-mono">linux-raspi (Ubuntu)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2160182" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="details-meta-card">
-                            <h4>Bug Details</h4>
-                            <div class="meta-item"><strong>Reporter:</strong> <span>Dom A</span></div>
-                            <div class="meta-item">
-                                <strong>Created:</strong>
-                                <span class="font-mono">2026-07-09 02:58</span>
-                            </div>
-                            <div class="meta-item">
-                                <strong>Last Updated:</strong>
-                                <span class="font-mono">2026-07-09 23:03</span>
-                            </div>
-                            <div class="meta-item"><strong>Last Activity:</strong> <span>tags: apport-package arm64 arm64-image kernel-daily-bug raspi-image resolute staging by ubuntu-kernel-bot</span></div>
-                            <div class="meta-item">
-                                <strong>Heat:</strong> <span>— (Cold (Inactive 123d · Undecided importance))</span>
-                            </div>
-                            
-                            <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
-                            <div class="meta-item"><strong>Active Targets:</strong>
-                                <span class="text-sm">linux-raspi (Ubuntu)</span>
-                            </div>
-                            <div class="meta-item"><strong>Tags:</strong>
-                                <div class="tags-wrap"><span class="tag-pill">apport-package</span><span class="tag-pill">arm64</span><span class="tag-pill">arm64-image</span><span class="tag-pill">kernel-daily-bug</span><span class="tag-pill">raspi-image</span><span class="tag-pill">resolute</span><span class="tag-pill">staging</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </td>
-        </tr>
-        
-
-        <tr class="bug-row" id="row-2155978" onclick="toggleDetails(2155978)"
-            data-bugid="2155978" data-package="linux-raspi"
-            data-packages="[&quot;linux-raspi&quot;]"
-            data-series="[]"
-            data-flame="0" data-info-added="false"
-            data-statuses="[&quot;new&quot;]" data-created="2026-06-08T22:03:11.547910+00:00" data-lastact="2026-06-08T23:04:11.989808+00:00">
-            <td class="col-toggle"><span class="toggle-icon" id="toggle-2155978">▶</span></td>
-            <td class="col-flame" title="Cold (Inactive 154d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
-            <td class="col-id font-mono">
-                <a href="https://bugs.launchpad.net/bugs/2155978" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2155978</a>
-            </td>
-            <td class="col-title" title="linux-raspi 7.0.0-1011: AHCI SATA drives not detected on Pi 5 — regression from 7.0.0-1008 (64-bit DMA misdetection, errno=-12)">linux-raspi 7.0.0-1011: AHCI SATA drives not detected on Pi 5 — regression from 7.0.0-1008 (64-bit DMA misdetection, errno=-12)</td>
-            <td class="col-package font-mono"><span class="package-pill">linux-raspi</span></td>
-            <td class="col-tasks">
-                <div class="tasks-summary-wrap">
-                    <span class="task-count-pill"><strong class="text-orange">1 Open</strong> / <span class="text-gray">0 Closed</span></span>
-                    <div class="status-badges-group"><span class="status-badge badge-new">New</span></div>
-                </div>
-            </td>
-            <td class="col-created font-mono">2026-06-08 22:03</td>
-            <td class="col-activity font-mono" title="tags: kernel-daily-bug raspi by ubuntu-kernel-bot">2026-06-08 23:04</td>
-        </tr>
-        <tr class="details-row" id="details-2155978" style="display: none;">
-            <td colspan="8">
-                <div class="details-panel">
-                    <div class="details-grid">
-                        <div class="details-tasks-card">
-                            <h4>Target Tasks (1 total)</h4>
-                            <table class="subtable">
-                                <thead>
-                                    <tr>
-                                        <th>Target</th>
-                                        <th>Status</th>
-                                        <th>Importance</th>
-                                        <th>Assignee</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><td class="font-mono">linux-raspi (Ubuntu)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2155978" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="details-meta-card">
-                            <h4>Bug Details</h4>
-                            <div class="meta-item"><strong>Reporter:</strong> <span>CrowbarLabs</span></div>
-                            <div class="meta-item">
-                                <strong>Created:</strong>
-                                <span class="font-mono">2026-06-08 22:03</span>
-                            </div>
-                            <div class="meta-item">
-                                <strong>Last Updated:</strong>
-                                <span class="font-mono">2026-06-08 23:04</span>
-                            </div>
-                            <div class="meta-item"><strong>Last Activity:</strong> <span>tags: kernel-daily-bug raspi by ubuntu-kernel-bot</span></div>
-                            <div class="meta-item">
-                                <strong>Heat:</strong> <span>— (Cold (Inactive 154d · Undecided importance))</span>
-                            </div>
-                            
-                            <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
-                            <div class="meta-item"><strong>Active Targets:</strong>
-                                <span class="text-sm">linux-raspi (Ubuntu)</span>
-                            </div>
-                            <div class="meta-item"><strong>Tags:</strong>
-                                <div class="tags-wrap"><span class="tag-pill">kernel-daily-bug</span><span class="tag-pill">raspi</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </td>
-        </tr>
-        
-
         <tr class="bug-row" id="row-2063365" onclick="toggleDetails(2063365)"
             data-bugid="2063365" data-package="linux-raspi"
             data-packages="[&quot;linux-raspi&quot;]"
@@ -2257,79 +2017,6 @@ acpidump: by stevepringle</span></div>
         </tr>
         
 
-        <tr class="bug-row" id="row-2107903" onclick="toggleDetails(2107903)"
-            data-bugid="2107903" data-package="linux-raspi"
-            data-packages="[&quot;linux-raspi&quot;]"
-            data-series="[]"
-            data-flame="0" data-info-added="false"
-            data-statuses="[&quot;triaged&quot;]" data-created="2025-04-21T20:49:23.503626+00:00" data-lastact="2025-10-29T10:24:09.047277+00:00">
-            <td class="col-toggle"><span class="toggle-icon" id="toggle-2107903">▶</span></td>
-            <td class="col-flame" title="Cold (Inactive 376d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
-            <td class="col-id font-mono">
-                <a href="https://bugs.launchpad.net/bugs/2107903" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2107903</a>
-            </td>
-            <td class="col-title" title="mt7915e driver does not work on 6.14 and panics kernel shortly after boot">mt7915e driver does not work on 6.14 and panics kernel shortly after boot</td>
-            <td class="col-package font-mono"><span class="package-pill">linux-raspi</span></td>
-            <td class="col-tasks">
-                <div class="tasks-summary-wrap">
-                    <span class="task-count-pill"><strong class="text-orange">1 Open</strong> / <span class="text-gray">0 Closed</span></span>
-                    <div class="status-badges-group"><span class="status-badge badge-inprogress">Triaged</span></div>
-                </div>
-            </td>
-            <td class="col-created font-mono">2025-04-21 20:49</td>
-            <td class="col-activity font-mono" title="linux-raspi (Ubuntu): status: Triaged by juergh">2025-10-29 10:24</td>
-        </tr>
-        <tr class="details-row" id="details-2107903" style="display: none;">
-            <td colspan="8">
-                <div class="details-panel">
-                    <div class="details-grid">
-                        <div class="details-tasks-card">
-                            <h4>Target Tasks (1 total)</h4>
-                            <table class="subtable">
-                                <thead>
-                                    <tr>
-                                        <th>Target</th>
-                                        <th>Status</th>
-                                        <th>Importance</th>
-                                        <th>Assignee</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><td class="font-mono">linux-raspi (Ubuntu)</td><td><span class="status-badge badge-inprogress">Triaged</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2107903" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="details-meta-card">
-                            <h4>Bug Details</h4>
-                            <div class="meta-item"><strong>Reporter:</strong> <span>Alex Radocea</span></div>
-                            <div class="meta-item">
-                                <strong>Created:</strong>
-                                <span class="font-mono">2025-04-21 20:49</span>
-                            </div>
-                            <div class="meta-item">
-                                <strong>Last Updated:</strong>
-                                <span class="font-mono">2025-10-29 10:24</span>
-                            </div>
-                            <div class="meta-item"><strong>Last Activity:</strong> <span>linux-raspi (Ubuntu): status: Triaged by juergh</span></div>
-                            <div class="meta-item">
-                                <strong>Heat:</strong> <span>— (Cold (Inactive 376d · Undecided importance))</span>
-                            </div>
-                            
-                            <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
-                            <div class="meta-item"><strong>Active Targets:</strong>
-                                <span class="text-sm">linux-raspi (Ubuntu)</span>
-                            </div>
-                            <div class="meta-item"><strong>Tags:</strong>
-                                <div class="tags-wrap"><span class="tag-pill">apport-bug</span><span class="tag-pill">arm64</span><span class="tag-pill">arm64-image</span><span class="tag-pill">kern-13058</span><span class="tag-pill">plucky</span><span class="tag-pill">raspi-image</span><span class="tag-pill">staging</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </td>
-        </tr>
-        
-
         <tr class="bug-row" id="row-2121890" onclick="toggleDetails(2121890)"
             data-bugid="2121890" data-package="linux-raspi"
             data-packages="[&quot;linux-raspi&quot;]"
@@ -2337,7 +2024,7 @@ acpidump: by stevepringle</span></div>
             data-flame="0" data-info-added="false"
             data-statuses="[&quot;new&quot;]" data-created="2025-09-02T19:35:52.846883+00:00" data-lastact="2025-10-27T10:16:52.061797+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2121890">▶</span></td>
-            <td class="col-flame" title="Cold (Inactive 378d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
+            <td class="col-flame" title="Cold (Inactive 379d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2121890" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2121890</a>
             </td>
@@ -2386,7 +2073,7 @@ acpidump: by stevepringle</span></div>
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>bug updated by juergh</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>— (Cold (Inactive 378d · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>— (Cold (Inactive 379d · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
@@ -2410,7 +2097,7 @@ acpidump: by stevepringle</span></div>
             data-flame="0" data-info-added="false"
             data-statuses="[&quot;fix committed&quot;]" data-created="2025-07-10T17:44:25.721418+00:00" data-lastact="2025-10-07T08:30:35.669863+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2116543">▶</span></td>
-            <td class="col-flame" title="Cold (Inactive 398d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
+            <td class="col-flame" title="Cold (Inactive 399d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2116543" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2116543</a>
             </td>
@@ -2459,7 +2146,7 @@ acpidump: by stevepringle</span></div>
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>cve linked: 2025-38415 by janitor</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>— (Cold (Inactive 398d · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>— (Cold (Inactive 399d · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>noble</span></div>
@@ -2476,79 +2163,6 @@ acpidump: by stevepringle</span></div>
         </tr>
         
 
-        <tr class="bug-row" id="row-2060677" onclick="toggleDetails(2060677)"
-            data-bugid="2060677" data-package="linux-raspi"
-            data-packages="[&quot;linux-raspi&quot;]"
-            data-series="[]"
-            data-flame="2" data-info-added="true"
-            data-statuses="[&quot;incomplete&quot;]" data-created="2024-04-09T12:28:43.191802+00:00" data-lastact="2025-07-28T20:53:23.547801+00:00">
-            <td class="col-toggle"><span class="toggle-icon" id="toggle-2060677">▶</span></td>
-            <td class="col-flame" title="Warm (Info added after Incomplete · Needs review)"><span class="flame-tier flame-2">🔥🔥</span></td>
-            <td class="col-id font-mono">
-                <a href="https://bugs.launchpad.net/bugs/2060677" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2060677</a>
-            </td>
-            <td class="col-title" title="Consistent (zfs?) errors at shutdown">Consistent (zfs?) errors at shutdown</td>
-            <td class="col-package font-mono"><span class="package-pill">linux-raspi</span></td>
-            <td class="col-tasks">
-                <div class="tasks-summary-wrap">
-                    <span class="task-count-pill"><strong class="text-orange">1 Open</strong> / <span class="text-gray">0 Closed</span></span>
-                    <div class="status-badges-group"><span class="status-badge badge-incomplete">Incomplete</span> <span class="badge-info-added" title="Activity detected after task set to Incomplete - info may have been provided">⚠️ Info Added</span></div>
-                </div>
-            </td>
-            <td class="col-created font-mono">2024-04-09 12:28</td>
-            <td class="col-activity font-mono" title="bug updated by smaioli">2025-07-28 20:53</td>
-        </tr>
-        <tr class="details-row" id="details-2060677" style="display: none;">
-            <td colspan="8">
-                <div class="details-panel">
-                    <div class="details-grid">
-                        <div class="details-tasks-card">
-                            <h4>Target Tasks (1 total)</h4>
-                            <table class="subtable">
-                                <thead>
-                                    <tr>
-                                        <th>Target</th>
-                                        <th>Status</th>
-                                        <th>Importance</th>
-                                        <th>Assignee</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><td class="font-mono">linux-raspi (Ubuntu)</td><td><span class="status-badge badge-incomplete">Incomplete</span></td><td>Undecided</td><td>Jose Ogando Justo</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2060677" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="details-meta-card">
-                            <h4>Bug Details</h4>
-                            <div class="meta-item"><strong>Reporter:</strong> <span>Dave Jones</span></div>
-                            <div class="meta-item">
-                                <strong>Created:</strong>
-                                <span class="font-mono">2024-04-09 12:28</span>
-                            </div>
-                            <div class="meta-item">
-                                <strong>Last Updated:</strong>
-                                <span class="font-mono">2025-04-18 07:54</span>
-                            </div>
-                            <div class="meta-item"><strong>Last Activity:</strong> <span>bug updated by smaioli</span></div>
-                            <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥🔥 (Warm (Info added after Incomplete · Needs review))</span>
-                            </div>
-                            <div class="meta-item"><strong class="text-orange">Review:</strong> <span>Activity occurred after task set to Incomplete</span></div>
-                            <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
-                            <div class="meta-item"><strong>Active Targets:</strong>
-                                <span class="text-sm">linux-raspi (Ubuntu)</span>
-                            </div>
-                            <div class="meta-item"><strong>Tags:</strong>
-                                <div class="tags-wrap"><span class="tag-pill">kern-10457</span><span class="tag-pill">kernel-daily-bug</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </td>
-        </tr>
-        
-
         <tr class="bug-row" id="row-2109529" onclick="toggleDetails(2109529)"
             data-bugid="2109529" data-package="linux-raspi"
             data-packages="[&quot;linux-raspi&quot;]"
@@ -2556,7 +2170,7 @@ acpidump: by stevepringle</span></div>
             data-flame="0" data-info-added="false"
             data-statuses="[&quot;deferred&quot;]" data-created="2025-04-28T19:07:19.350643+00:00" data-lastact="2025-06-11T06:01:43.186857+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2109529">▶</span></td>
-            <td class="col-flame" title="Cold (Inactive 516d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
+            <td class="col-flame" title="Cold (Inactive 517d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2109529" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2109529</a>
             </td>
@@ -2605,7 +2219,7 @@ acpidump: by stevepringle</span></div>
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>linux-raspi (Ubuntu): status: Deferred by juergh</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>— (Cold (Inactive 516d · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>— (Cold (Inactive 517d · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
@@ -2702,7 +2316,7 @@ acpidump: by stevepringle</span></div>
             data-flame="0" data-info-added="false"
             data-statuses="[&quot;confirmed&quot;, &quot;new&quot;, &quot;triaged&quot;]" data-created="2020-06-30T14:21:22.254945+00:00" data-lastact="2025-04-18T12:33:37.489353+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-1885730">▶</span></td>
-            <td class="col-flame" title="Cold (Inactive 570d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
+            <td class="col-flame" title="Cold (Inactive 571d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/1885730" target="_blank" rel="noopener" onclick="event.stopPropagation()">#1885730</a>
             </td>
@@ -2751,7 +2365,7 @@ acpidump: by stevepringle</span></div>
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>tags: id-5efdfa465220b783b19272c2 kernel-daily-bug by juergh</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>— (Cold (Inactive 570d · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>— (Cold (Inactive 571d · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>focal</span></div>
@@ -2775,7 +2389,7 @@ acpidump: by stevepringle</span></div>
             data-flame="0" data-info-added="false"
             data-statuses="[&quot;confirmed&quot;]" data-created="2020-05-05T07:04:06.576524+00:00" data-lastact="2020-08-28T01:37:35.914525+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-1876862">▶</span></td>
-            <td class="col-flame" title="Cold (Inactive 2264d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
+            <td class="col-flame" title="Cold (Inactive 2265d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/1876862" target="_blank" rel="noopener" onclick="event.stopPropagation()">#1876862</a>
             </td>
@@ -2824,7 +2438,7 @@ acpidump: by stevepringle</span></div>
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>bug updated by knitzsche</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>— (Cold (Inactive 2264d · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>— (Cold (Inactive 2265d · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>bionic</span></div>

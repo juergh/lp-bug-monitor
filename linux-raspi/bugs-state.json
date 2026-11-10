@@ -370,11 +370,11 @@
     },
     "2060677": {
       "date_created": "2024-04-09T12:28:43.191802+00:00",
-      "date_last_updated": "2025-04-18T07:54:46.839934+00:00",
+      "date_last_updated": "2026-11-09T12:28:29.397110+00:00",
       "has_activity_after_incomplete": true,
       "id": 2060677,
-      "last_activity_summary": "bug updated by smaioli",
-      "last_activity_time": "2025-07-28T20:53:23.547801+00:00",
+      "last_activity_summary": "linux-raspi (Ubuntu): assignee updated by juergh",
+      "last_activity_time": "2026-11-09T12:28:29.397110+00:00",
       "owner": "Dave Jones",
       "package": "linux-raspi",
       "packages": [
@@ -386,7 +386,7 @@
       ],
       "tasks": [
         {
-          "assignee": "Jose Ogando Justo",
+          "assignee": null,
           "date_closed": null,
           "date_created": "2024-04-09T12:28:43.191802+00:00",
           "importance": "Undecided",
@@ -396,6 +396,18 @@
           "target": "linux-raspi (Ubuntu)",
           "target_display": "linux-raspi (Ubuntu)",
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2060677"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-09T12:28:15.626727+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "noble",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Noble)",
+          "target_display": "linux-raspi (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-raspi/+bug/2060677"
         }
       ],
       "title": "Consistent (zfs?) errors at shutdown",
@@ -563,44 +575,6 @@
       "title": "Missing PCI drivers",
       "web_link": "https://bugs.launchpad.net/bugs/2107482"
     },
-    "2107903": {
-      "date_created": "2025-04-21T20:49:23.503626+00:00",
-      "date_last_updated": "2025-10-29T10:24:09.047277+00:00",
-      "has_activity_after_incomplete": false,
-      "id": 2107903,
-      "last_activity_summary": "linux-raspi (Ubuntu): status: Triaged by juergh",
-      "last_activity_time": "2025-10-29T10:24:09.047277+00:00",
-      "owner": "Alex Radocea",
-      "package": "linux-raspi",
-      "packages": [
-        "linux-raspi"
-      ],
-      "tags": [
-        "apport-bug",
-        "arm64",
-        "arm64-image",
-        "kern-13058",
-        "plucky",
-        "raspi-image",
-        "staging"
-      ],
-      "tasks": [
-        {
-          "assignee": null,
-          "date_closed": null,
-          "date_created": "2025-04-21T20:49:23.503626+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": null,
-          "status": "Triaged",
-          "target": "linux-raspi (Ubuntu)",
-          "target_display": "linux-raspi (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2107903"
-        }
-      ],
-      "title": "mt7915e driver does not work on 6.14 and panics kernel shortly after boot",
-      "web_link": "https://bugs.launchpad.net/bugs/2107903"
-    },
     "2109529": {
       "date_created": "2025-04-28T19:07:19.350643+00:00",
       "date_last_updated": "2025-06-11T06:01:43.186857+00:00",
@@ -738,11 +712,11 @@
     },
     "2133877": {
       "date_created": "2025-12-04T14:59:33.158844+00:00",
-      "date_last_updated": "2026-10-20T21:31:27.558096+00:00",
+      "date_last_updated": "2026-11-09T14:17:02.514994+00:00",
       "has_activity_after_incomplete": false,
       "id": 2133877,
-      "last_activity_summary": "bug updated by lxgaming",
-      "last_activity_time": "2026-10-20T21:31:27.558096+00:00",
+      "last_activity_summary": "bug task added: linux-raspi (Ubuntu Resolute) by juergh",
+      "last_activity_time": "2026-11-09T14:30:22.325695+00:00",
       "owner": "Aleksei",
       "package": "linux-raspi",
       "packages": [
@@ -763,6 +737,18 @@
           "target": "linux-raspi (Ubuntu)",
           "target_display": "linux-raspi (Ubuntu)",
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2133877"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-09T14:30:22.325695+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "resolute",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Resolute)",
+          "target_display": "linux-raspi (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-raspi/+bug/2133877"
         }
       ],
       "title": "Complete network hang on Raspberry Pi 5 with kernel 6.17 under load - possibly related to CPU frequency scaling",
@@ -770,11 +756,11 @@
     },
     "2155978": {
       "date_created": "2026-06-08T22:03:11.547910+00:00",
-      "date_last_updated": "2026-06-08T23:04:11.989808+00:00",
+      "date_last_updated": "2026-11-09T14:28:55.159008+00:00",
       "has_activity_after_incomplete": false,
       "id": 2155978,
-      "last_activity_summary": "tags: kernel-daily-bug raspi by ubuntu-kernel-bot",
-      "last_activity_time": "2026-06-08T23:04:11.989808+00:00",
+      "last_activity_summary": "bug task added: linux-raspi (Ubuntu Resolute) by juergh",
+      "last_activity_time": "2026-11-09T14:29:02.421207+00:00",
       "owner": "CrowbarLabs",
       "package": "linux-raspi",
       "packages": [
@@ -796,6 +782,18 @@
           "target": "linux-raspi (Ubuntu)",
           "target_display": "linux-raspi (Ubuntu)",
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2155978"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-09T14:29:02.421207+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "resolute",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Resolute)",
+          "target_display": "linux-raspi (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-raspi/+bug/2155978"
         }
       ],
       "title": "linux-raspi 7.0.0-1011: AHCI SATA drives not detected on Pi 5 \u2014 regression from 7.0.0-1008 (64-bit DMA misdetection, errno=-12)",
@@ -894,110 +892,6 @@
       "title": "[SRU] Dracut silently produces truncated initramfs with constrained RAM",
       "web_link": "https://bugs.launchpad.net/bugs/2157789"
     },
-    "2158920": {
-      "date_created": "2026-07-01T17:48:54.927719+00:00",
-      "date_last_updated": "2026-11-04T16:47:42.266045+00:00",
-      "has_activity_after_incomplete": false,
-      "id": 2158920,
-      "last_activity_summary": "tags: kernel-daily-bug kernel-spammed-jammy-linux-hwe-6.8-v2 kernel-spammed-jammy-linux-ibm-6.8-v2 kernel-spammed-noble-linux-azure-nvidia-v2 kernel-spammed-noble-linux-azure-v2 kernel-spammed-noble-linux-raspi-v2 kernel-spammed-noble-linux-v2 verification-done-jammy-linux-hwe-6.8 verification-done-jammy-linux-ibm-6.8 verification-done-noble-linux verification-done-noble-linux-azure verification-done-noble-linux-azure-nvidia verification-done-noble-linux-raspi by roxanan",
-      "last_activity_time": "2026-11-04T16:47:42.266045+00:00",
-      "owner": "Alice C. Munduruca",
-      "package": "linux-raspi",
-      "packages": [
-        "linux-raspi"
-      ],
-      "tags": [
-        "kernel-daily-bug",
-        "kernel-spammed-jammy-linux-hwe-6.8-v2",
-        "kernel-spammed-jammy-linux-ibm-6.8-v2",
-        "kernel-spammed-noble-linux-azure-nvidia-v2",
-        "kernel-spammed-noble-linux-azure-v2",
-        "kernel-spammed-noble-linux-raspi-v2",
-        "kernel-spammed-noble-linux-v2",
-        "verification-done-jammy-linux-hwe-6.8",
-        "verification-done-jammy-linux-ibm-6.8",
-        "verification-done-noble-linux",
-        "verification-done-noble-linux-azure",
-        "verification-done-noble-linux-azure-nvidia",
-        "verification-done-noble-linux-raspi"
-      ],
-      "tasks": [
-        {
-          "assignee": null,
-          "date_closed": null,
-          "date_created": "2026-07-01T17:48:54.927719+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": null,
-          "status": "New",
-          "target": "linux (Ubuntu)",
-          "target_display": "linux (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux/+bug/2158920"
-        },
-        {
-          "assignee": null,
-          "date_closed": null,
-          "date_created": "2026-07-01T19:32:26.026035+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": null,
-          "status": "New",
-          "target": "linux-azure (Ubuntu)",
-          "target_display": "linux-azure (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-azure/+bug/2158920"
-        },
-        {
-          "assignee": null,
-          "date_closed": null,
-          "date_created": "2026-07-16T02:05:09.694895+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": null,
-          "status": "New",
-          "target": "linux-raspi (Ubuntu)",
-          "target_display": "linux-raspi (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2158920"
-        },
-        {
-          "assignee": "Alice C. Munduruca",
-          "date_closed": "2026-09-03T13:11:55.945981+00:00",
-          "date_created": "2026-07-01T18:02:53.091222+00:00",
-          "importance": "High",
-          "is_complete": true,
-          "series": "noble",
-          "status": "Fix Released",
-          "target": "linux (Ubuntu Noble)",
-          "target_display": "linux (Ubuntu Noble)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux/+bug/2158920"
-        },
-        {
-          "assignee": "Alice C. Munduruca",
-          "date_closed": "2026-07-23T09:50:38.814004+00:00",
-          "date_created": "2026-07-01T19:32:26.026035+00:00",
-          "importance": "High",
-          "is_complete": true,
-          "series": "noble",
-          "status": "Fix Released",
-          "target": "linux-azure (Ubuntu Noble)",
-          "target_display": "linux-azure (Ubuntu Noble)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-azure/+bug/2158920"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-08-18T07:46:05.658950+00:00",
-          "date_created": "2026-07-16T02:05:09.694895+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": "noble",
-          "status": "Fix Released",
-          "target": "linux-raspi (Ubuntu Noble)",
-          "target_display": "linux-raspi (Ubuntu Noble)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-raspi/+bug/2158920"
-        }
-      ],
-      "title": "noble-stable-2026-06-16 dropped a bracket causing FTBFS",
-      "web_link": "https://bugs.launchpad.net/bugs/2158920"
-    },
     "2159597": {
       "date_created": "2026-07-05T18:08:41.342827+00:00",
       "date_last_updated": "2026-08-10T20:32:37.992643+00:00",
@@ -1033,11 +927,11 @@
     },
     "2160182": {
       "date_created": "2026-07-09T02:58:19.647648+00:00",
-      "date_last_updated": "2026-07-09T23:03:58.089562+00:00",
+      "date_last_updated": "2026-11-09T14:36:48.077013+00:00",
       "has_activity_after_incomplete": false,
       "id": 2160182,
-      "last_activity_summary": "tags: apport-package arm64 arm64-image kernel-daily-bug raspi-image resolute staging by ubuntu-kernel-bot",
-      "last_activity_time": "2026-07-09T23:03:58.089562+00:00",
+      "last_activity_summary": "bug task added: linux-raspi (Ubuntu Resolute) by juergh",
+      "last_activity_time": "2026-11-09T14:36:55.170893+00:00",
       "owner": "Dom A",
       "package": "linux-raspi",
       "packages": [
@@ -1064,6 +958,18 @@
           "target": "linux-raspi (Ubuntu)",
           "target_display": "linux-raspi (Ubuntu)",
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2160182"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-09T14:36:55.170893+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "resolute",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Resolute)",
+          "target_display": "linux-raspi (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-raspi/+bug/2160182"
         }
       ],
       "title": "Kernel panic in bcmgenet_rx_poll/skb_release_data under network load (7.0.0-1014-raspi, Ubuntu 26.04, Pi 4)",
@@ -1071,11 +977,11 @@
     },
     "2161936": {
       "date_created": "2026-07-28T00:49:02.888647+00:00",
-      "date_last_updated": "2026-07-28T23:05:16.243093+00:00",
+      "date_last_updated": "2026-11-09T14:40:51.595335+00:00",
       "has_activity_after_incomplete": false,
       "id": 2161936,
-      "last_activity_summary": "tags: kernel-daily-bug by ubuntu-kernel-bot",
-      "last_activity_time": "2026-07-28T23:05:16.243093+00:00",
+      "last_activity_summary": "bug task added: linux-raspi (Ubuntu Resolute) by juergh",
+      "last_activity_time": "2026-11-09T14:40:51.595335+00:00",
       "owner": "Rene Orozco Martinez",
       "package": "linux-raspi",
       "packages": [
@@ -1096,6 +1002,18 @@
           "target": "linux-raspi (Ubuntu)",
           "target_display": "linux-raspi (Ubuntu)",
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2161936"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-09T14:38:39.600946+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "resolute",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Resolute)",
+          "target_display": "linux-raspi (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-raspi/+bug/2161936"
         }
       ],
       "title": "[CM4] Unable to boot 7.0.0-1015-raspi from resolute proposed",
@@ -1103,11 +1021,11 @@
     },
     "2162033": {
       "date_created": "2026-07-29T06:22:14.653878+00:00",
-      "date_last_updated": "2026-07-29T23:05:36.193214+00:00",
+      "date_last_updated": "2026-11-09T14:44:46.841055+00:00",
       "has_activity_after_incomplete": false,
       "id": 2162033,
-      "last_activity_summary": "tags: aspm kernel-daily-bug l1 linux-raspi m.2 nvme nvme-hat pi5 by ubuntu-kernel-bot",
-      "last_activity_time": "2026-07-29T23:05:36.193214+00:00",
+      "last_activity_summary": "bug task added: linux-raspi (Ubuntu Resolute) by juergh",
+      "last_activity_time": "2026-11-09T14:44:46.841055+00:00",
       "owner": "Vito Giarrusso",
       "package": "linux-raspi",
       "packages": [
@@ -1135,6 +1053,18 @@
           "target": "linux-raspi (Ubuntu)",
           "target_display": "linux-raspi (Ubuntu)",
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2162033"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-09T14:42:22.782693+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "resolute",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Resolute)",
+          "target_display": "linux-raspi (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-raspi/+bug/2162033"
         }
       ],
       "title": "NVMe M.2 fails with I/O errors on Raspberry Pi 5 with kernel 7.0.0-1015-raspi when ASPM L1 is enabled",
@@ -1142,11 +1072,11 @@
     },
     "2162573": {
       "date_created": "2026-07-31T14:35:45.206511+00:00",
-      "date_last_updated": "2026-08-01T08:35:25.962604+00:00",
+      "date_last_updated": "2026-11-09T14:53:04.629251+00:00",
       "has_activity_after_incomplete": false,
       "id": 2162573,
-      "last_activity_summary": "description: I have an argon one V5 case fitted with an industra oled display connected to the Raspberry Pi 5 i2c bus. This displays various system information using various python scripts provided by Argon One, and is working fine on Ubuntu 24.04, 25.10 and Raspberry Pi OS. However on Ubuntu 26.04 it displays no information on the display and the following error is in syslog:-\n\n2026-07-31T14:48:34.076339+01:00 thirlmere kernel: i2c_designware 1f00074000.i2c: i2c_dw_handle_tx_abort: SDA stuck at low\n2026-07-31T14:48:34.078711+01:00 thirlmere python3[2851]: Unable to initialize OLED\n\nAs the hardware is working fine on other versions of Ubuntu and Raspberry Pi OS I can only assume it must be a bug introduced in to the i2c driver on Ubuntu 26.04\n\nResults from i2cdetect appear to show the hardware is working fine:-\n\ni2cdetect -y 1\n\u00a0\u00a0\u00a0\u00a0\u00a00  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f\n00:                         -- -- -- -- -- -- -- --\n10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --\n20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --\n30: -- -- -- -- -- -- -- -- -- -- -- -- 3c -- -- --\n40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --\n50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --\n60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --\n70: -- -- -- -- -- -- -- --\n\ni2cdetect -F 1\nFunctionalities implemented by /dev/i2c-1:\nI2C                              yes\nSMBus Quick Command              yes\nSMBus Send Byte                  yes\nSMBus Receive Byte               yes\nSMBus Write Byte                 yes\nSMBus Read Byte                  yes\nSMBus Write Word                 yes\nSMBus Read Word                  yes\nSMBus Process Call               no\nSMBus Block Write                yes\nSMBus Block Read                 yes\nSMBus Block Process Call         no\nSMBus PEC                        no\nI2C Block Write                  yes\nI2C Block Read                   yes\nSMBus Host Notify                no\n10-bit addressing                yes\nTarget mode                      yes\n\nOn Ubuntu 25.10 i2cdetect -F 1 returns the following:-\n\ni2cdetect -F 1\nFunctionalities implemented by /dev/i2c-1:\nI2C                              yes\nSMBus Quick Command              yes\nSMBus Send Byte                  yes\nSMBus Receive Byte               yes\nSMBus Write Byte                 yes\nSMBus Read Byte                  yes\nSMBus Write Word                 yes\nSMBus Read Word                  yes\nSMBus Process Call               no\nSMBus Block Write                yes\nSMBus Block Read                 yes\nSMBus Block Process Call         no\nSMBus PEC                        no\nI2C Block Write                  yes\nI2C Block Read                   yes\nSMBus Host Notify                no\n10-bit addressing                yes\nTarget mode                      no\n\nOn Raspberry Pi Os i2cdetect -F 1 returns the following:-\n\n i2cdetect -F 1\nFunctionalities implemented by /dev/i2c-1:\nI2C                              yes\nSMBus Quick Command              yes\nSMBus Send Byte                  yes\nSMBus Receive Byte               yes\nSMBus Write Byte                 yes\nSMBus Read Byte                  yes\nSMBus Write Word                 yes\nSMBus Read Word                  yes\nSMBus Process Call               no\nSMBus Block Write                yes\nSMBus Block Read                 yes\nSMBus Block Process Call         no\nSMBus PEC                        no\nI2C Block Write                  yes\nI2C Block Read                   yes\nSMBus Host Notify                no\n10-bit addressing                yes\nTarget mode                      no\n\nThe only differences I can see between the working systems on Ubuntu 25.10 and Raspberry Pi OS and the non working Ubuntu 26.04 is the value of Target Mode\n\nProblemType: Bug\nDistroRelease: Ubuntu 26.04\nPackage: linux-image-7.0.0-1015-raspi 7.0.0-1015.15\nProcVersionSignature: Ubuntu 7.0.0-1015.15-raspi 7.0.12\nUname: Linux 7.0.0-1015-raspi aarch64\nApportVersion: 2.34.1-0ubuntu0.1\nArchitecture: arm64\nAudioDevicesInUse:\n\u00a0USER        PID ACCESS COMMAND\n\u00a0/dev/snd/controlC0:  springle   3004 F.... wireplumber\n\u00a0/dev/snd/controlC3:  springle   3004 F.... wireplumber\n\u00a0/dev/snd/controlC1:  springle   3004 F.... wireplumber\n\u00a0/dev/snd/seq:        springle   2998 F.... pipewire\nCasperMD5CheckResult: unknown\nCloudArchitecture: aarch64\nCloudID: nocloud\nCloudName: unknown\nCloudPlatform: nocloud\nCloudSubPlatform: config-disk (/dev/sda1)\nCurrentDesktop: ubuntu:GNOME\nDate: Fri Jul 31 15:25:33 2026\nImageMediaBuild: 20260423\nIwDevWlan0Link: Not connected.\nLspci-vt:\n\u00a0-[0001:00]---00.0-[01-04]----00.0-[02-04]--+-03.0-[03]----00.0  Micron Technology Inc 2550 NVMe SSD (DRAM-less)\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\\-07.0-[04]----00.0  Micron/Crucial Technology P3 Plus NVMe PCIe SSD (DRAM-less)\n\u00a0-[0002:00]---00.0-[01]----00.0  Raspberry Pi Ltd RP1 PCIe 2.0 South Bridge\nProcFB: 0 vc4drmfb\nProcKernelCmdLine: reboot=w coherent_pool=1M 8250.nr_uarts=1 pci=pcie_bus_safe numa_policy=interleave nvme.max_host_mem_size_mb=0  numa=fake=8 system_heap.max_order=0 iommu_dma_numa_policy=interleave smsc95xx.macaddr=2C:CF:67:7E:B5:72 vc_mem.mem_base=0x3fc00000 vc_mem.mem_size=0x40000000  zswap.enabled=1 zswap.compressor=zstd multipath=off dwc_otg.lpm_enable=0 console=tty1 root=/dev/sda2 rootfstype=ext4 panic=10 rootwait fixrtc quiet splash\nSourcePackage: linux-raspi\nUpgradeStatus: No upgrade log present (probably fresh install)\nacpidump: by stevepringle",
-      "last_activity_time": "2026-08-01T08:35:25.962604+00:00",
+      "last_activity_summary": "bug task added: linux-raspi (Ubuntu Resolute) by juergh",
+      "last_activity_time": "2026-11-09T14:53:04.629251+00:00",
       "owner": "Steve Pringle",
       "package": "linux-raspi",
       "packages": [
@@ -1173,6 +1103,18 @@
           "target": "linux-raspi (Ubuntu)",
           "target_display": "linux-raspi (Ubuntu)",
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2162573"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-09T14:46:31.881115+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "resolute",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Resolute)",
+          "target_display": "linux-raspi (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-raspi/+bug/2162573"
         }
       ],
       "title": "i2c_designware driver returning sda stuck low error",
@@ -1211,50 +1153,6 @@
       ],
       "title": "Malformed early option 'numa' passed in numa=fake=8",
       "web_link": "https://bugs.launchpad.net/bugs/2166421"
-    },
-    "2167359": {
-      "date_created": "2026-09-15T14:52:26.226312+00:00",
-      "date_last_updated": "2026-09-15T23:07:35.230877+00:00",
-      "has_activity_after_incomplete": false,
-      "id": 2167359,
-      "last_activity_summary": "tags: kernel-daily-bug by ubuntu-kernel-bot",
-      "last_activity_time": "2026-09-15T23:07:35.230877+00:00",
-      "owner": "Alessio Faina",
-      "package": "linux-raspi",
-      "packages": [
-        "linux-raspi"
-      ],
-      "tags": [
-        "kernel-daily-bug"
-      ],
-      "tasks": [
-        {
-          "assignee": "Alessio Faina",
-          "date_closed": null,
-          "date_created": "2026-09-15T14:52:26.226312+00:00",
-          "importance": "Medium",
-          "is_complete": false,
-          "series": null,
-          "status": "In Progress",
-          "target": "linux-raspi (Ubuntu)",
-          "target_display": "linux-raspi (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2167359"
-        },
-        {
-          "assignee": "Alessio Faina",
-          "date_closed": "2026-09-15T16:10:55.637201+00:00",
-          "date_created": "2026-09-15T14:52:43.279857+00:00",
-          "importance": "Medium",
-          "is_complete": true,
-          "series": "stonking",
-          "status": "Won't Fix",
-          "target": "linux-raspi (Ubuntu Stonking)",
-          "target_display": "linux-raspi (Ubuntu Stonking)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/stonking/+source/linux-raspi/+bug/2167359"
-        }
-      ],
-      "title": "linux-raspi: Kernel build fails with CONFIG_DRM_XE enabled",
-      "web_link": "https://bugs.launchpad.net/bugs/2167359"
     },
     "2168109": {
       "date_created": "2026-09-23T13:50:47.738290+00:00",
@@ -1546,11 +1444,11 @@
     },
     "2173687": {
       "date_created": "2026-11-08T15:19:08.002534+00:00",
-      "date_last_updated": "2026-11-09T07:05:23.583210+00:00",
+      "date_last_updated": "2026-11-09T19:03:08.714919+00:00",
       "has_activity_after_incomplete": false,
       "id": 2173687,
       "last_activity_summary": "tags: kernel-daily-bug by ubuntu-kernel-bot",
-      "last_activity_time": "2026-11-09T07:05:23.583210+00:00",
+      "last_activity_time": "2026-11-09T19:03:08.714919+00:00",
       "owner": "H v Neerven",
       "package": "linux-raspi",
       "packages": [
@@ -1575,9 +1473,65 @@
       ],
       "title": " Raspberry Pi 5: new linux-raspi kernel hangs during early userspace (udev coldplug), piboot-try falls back",
       "web_link": "https://bugs.launchpad.net/bugs/2173687"
+    },
+    "2173779": {
+      "date_created": "2026-11-09T17:13:01.555352+00:00",
+      "date_last_updated": "2026-11-09T23:08:52.121212+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2173779,
+      "last_activity_summary": "tags: kernel-daily-bug by ubuntu-kernel-bot",
+      "last_activity_time": "2026-11-09T23:08:52.121212+00:00",
+      "owner": "April Cardenas",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "kernel-daily-bug"
+      ],
+      "tasks": [
+        {
+          "assignee": "April Cardenas",
+          "date_closed": null,
+          "date_created": "2026-11-09T17:13:01.555352+00:00",
+          "importance": "Medium",
+          "is_complete": false,
+          "series": null,
+          "status": "In Progress",
+          "target": "linux-raspi (Ubuntu)",
+          "target_display": "linux-raspi (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2173779"
+        },
+        {
+          "assignee": "April Cardenas",
+          "date_closed": null,
+          "date_created": "2026-11-09T17:15:19.026246+00:00",
+          "importance": "Medium",
+          "is_complete": false,
+          "series": "resolute",
+          "status": "In Progress",
+          "target": "linux-raspi (Ubuntu Resolute)",
+          "target_display": "linux-raspi (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-raspi/+bug/2173779"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2026-11-09T17:23:49.208954+00:00",
+          "date_created": "2026-11-09T17:23:39.814542+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": "stonking",
+          "status": "Fix Released",
+          "target": "linux-raspi (Ubuntu Stonking)",
+          "target_display": "linux-raspi (Ubuntu Stonking)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/stonking/+source/linux-raspi/+bug/2173779"
+        }
+      ],
+      "title": "PREEMPT_RT: RP1 IRQ threads do not follow smp_affinity",
+      "web_link": "https://bugs.launchpad.net/bugs/2173779"
     }
   },
-  "last_scan_utc": "2026-11-09T12:23:19.178821+00:00",
+  "last_scan_utc": "2026-11-10T02:41:10.466415+00:00",
   "packages": [
     "linux-raspi"
   ]
