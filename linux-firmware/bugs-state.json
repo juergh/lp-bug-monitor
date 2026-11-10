@@ -2909,11 +2909,11 @@
     },
     "2167668": {
       "date_created": "2026-09-18T03:39:43.511854+00:00",
-      "date_last_updated": "2026-11-06T18:29:12.901785+00:00",
+      "date_last_updated": "2026-11-10T16:53:51.043465+00:00",
       "has_activity_after_incomplete": false,
       "id": 2167668,
-      "last_activity_summary": "description: The following linux-firmware binaries will need to be backported into resolute to support gfx1170/gfx1171:\n\ndcn_4_2_dmcub.bin\ngc_11_7_0_imu.bin\ngc_11_7_0_me.bin\ngc_11_7_0_mec.bin\ngc_11_7_0_mes1.bin\ngc_11_7_0_mes_2.bin\ngc_11_7_0_pfp.bin\ngc_11_7_0_rlc.bin\ngc_11_7_1_imu.bin\ngc_11_7_1_me.bin\ngc_11_7_1_mec.bin\ngc_11_7_1_mes1.bin\ngc_11_7_1_mes_2.bin\ngc_11_7_1_pfp.bin\ngc_11_7_1_rlc.bin\npsp_15_0_0_ta.bin\npsp_15_0_0_toc.bin\npsp_15_0_9_ta.bin\npsp_15_0_9_toc.bin\nsdma_6_1_4.bin\nvcn_5_3_0.bin\nvpe_2_0_0.bin\n\ndcn_4_2_dmcub_l.bin\ngc_11_7_0_imu_l.bin\ngc_11_7_0_me_l.bin\ngc_11_7_0_mec_l.bin\ngc_11_7_0_mes1_l.bin\ngc_11_7_0_mes_2_l.bin\ngc_11_7_0_pfp_l.bin\ngc_11_7_0_rlc_l.bin\ngc_11_7_1_imu_l.bin\ngc_11_7_1_me_l.bin\ngc_11_7_1_mec_l.bin\ngc_11_7_1_mes1_l.bin\ngc_11_7_1_mes_2_l.bin\ngc_11_7_1_pfp_l.bin\ngc_11_7_1_rlc_l.bin\npsp_15_0_0_ta_l.bin\npsp_15_0_0_toc_l.bin\npsp_15_0_9_ta_l.bin\npsp_15_0_9_toc_l.bin\nsdma_6_1_4_l.bin\nvcn_5_3_0_l.bin\nvpe_2_0_0_l.bin by superm1",
-      "last_activity_time": "2026-11-06T18:29:12.901785+00:00",
+      "last_activity_summary": "description: The following linux-firmware binaries will need to be backported into resolute to support gfx1170/gfx1171:\n\ndcn_4_2_dmcub.bin\ngc_11_7_0_me.bin\ngc_11_7_0_mec.bin\ngc_11_7_0_mes1.bin\ngc_11_7_0_mes_2.bin\ngc_11_7_0_pfp.bin\ngc_11_7_0_rlc.bin\ngc_11_7_1_imu.bin\ngc_11_7_1_me.bin\ngc_11_7_1_mec.bin\ngc_11_7_1_mes1.bin\ngc_11_7_1_mes_2.bin\ngc_11_7_1_pfp.bin\ngc_11_7_1_rlc.bin\npsp_15_0_0_ta.bin\npsp_15_0_0_toc.bin\npsp_15_0_9_ta.bin\npsp_15_0_9_toc.bin\nsdma_6_1_4.bin\nvcn_5_3_0.bin\nvpe_2_0_0.bin\n\ndcn_4_2_dmcub_l.bin\ngc_11_7_0_me_l.bin\ngc_11_7_0_mec_l.bin\ngc_11_7_0_mes1_l.bin\ngc_11_7_0_mes_2_l.bin\ngc_11_7_0_pfp_l.bin\ngc_11_7_0_rlc_l.bin\ngc_11_7_1_imu_l.bin\ngc_11_7_1_me_l.bin\ngc_11_7_1_mec_l.bin\ngc_11_7_1_mes1_l.bin\ngc_11_7_1_mes_2_l.bin\ngc_11_7_1_pfp_l.bin\ngc_11_7_1_rlc_l.bin\npsp_15_0_0_ta_l.bin\npsp_15_0_0_toc_l.bin\npsp_15_0_9_ta_l.bin\npsp_15_0_9_toc_l.bin\nsdma_6_1_4_l.bin\nvcn_5_3_0_l.bin\nvpe_2_0_0_l.bin by superm1",
+      "last_activity_time": "2026-11-10T16:53:51.043465+00:00",
       "owner": "You-Sheng Yang",
       "package": "linux-firmware-amd-graphics",
       "packages": [
@@ -4733,9 +4733,44 @@
       ],
       "title": " Support SoundWire and SoF on AMD with Cirrus Logic IC Solution",
       "web_link": "https://bugs.launchpad.net/bugs/2173838"
+    },
+    "2173927": {
+      "date_created": "2026-11-10T21:25:14.345370+00:00",
+      "date_last_updated": "2026-11-10T21:25:14.345370+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2173927,
+      "last_activity_summary": "bug updated by hdizzle20176",
+      "last_activity_time": "2026-11-10T21:25:14.345370+00:00",
+      "owner": "Harry E Arter",
+      "package": "linux-firmware",
+      "packages": [
+        "linux-firmware"
+      ],
+      "tags": [
+        "amd64",
+        "apport-bug",
+        "resolute",
+        "wayland-session"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-10T21:25:14.345370+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "linux-firmware (Ubuntu)",
+          "target_display": "linux-firmware (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2173927"
+        }
+      ],
+      "title": "Missing Linux speaker amplifier firmware -XPS 13 DX13260 (SSID 10280e53)",
+      "web_link": "https://bugs.launchpad.net/bugs/2173927"
     }
   },
-  "last_scan_utc": "2026-11-10T12:05:09.917881+00:00",
+  "last_scan_utc": "2026-11-10T21:38:28.880965+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
