@@ -1198,6 +1198,75 @@
       "title": "brcmfmac firmware files should be included automatically",
       "web_link": "https://bugs.launchpad.net/bugs/2168109"
     },
+    "2169127": {
+      "date_created": "2026-10-01T09:11:44.186902+00:00",
+      "date_last_updated": "2026-11-10T10:23:59.574951+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2169127,
+      "last_activity_summary": "tags: kernel-daily-bug verification-needed-resolute by juliank",
+      "last_activity_time": "2026-11-10T10:23:59.574951+00:00",
+      "owner": "Dave Jones",
+      "package": "linux-raspi",
+      "packages": [
+        "linux-raspi"
+      ],
+      "tags": [
+        "kernel-daily-bug",
+        "verification-needed-resolute"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": "2026-10-01T14:06:15.571643+00:00",
+          "date_created": "2026-10-01T09:11:44.186902+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": null,
+          "status": "Invalid",
+          "target": "linux-raspi (Ubuntu)",
+          "target_display": "linux-raspi (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2169127"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2026-10-05T13:47:41.657521+00:00",
+          "date_created": "2026-10-01T14:06:04.256871+00:00",
+          "importance": "Critical",
+          "is_complete": true,
+          "series": null,
+          "status": "Fix Released",
+          "target": "ubuntu-raspi-settings (Ubuntu)",
+          "target_display": "ubuntu-raspi-settings (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/ubuntu-raspi-settings/+bug/2169127"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2026-10-01T14:33:04.569968+00:00",
+          "date_created": "2026-10-01T14:32:58.374818+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": "resolute",
+          "status": "Invalid",
+          "target": "linux-raspi (Ubuntu Resolute)",
+          "target_display": "linux-raspi (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-raspi/+bug/2169127"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-10-01T14:32:58.374818+00:00",
+          "importance": "Low",
+          "is_complete": false,
+          "series": "resolute",
+          "status": "Fix Committed",
+          "target": "ubuntu-raspi-settings (Ubuntu Resolute)",
+          "target_display": "ubuntu-raspi-settings (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/ubuntu-raspi-settings/+bug/2169127"
+        }
+      ],
+      "title": "[SRU][FFe] brcmfmac-cyw module missing from initrd",
+      "web_link": "https://bugs.launchpad.net/bugs/2169127"
+    },
     "2170238": {
       "date_created": "2026-10-08T19:12:47.580099+00:00",
       "date_last_updated": "2026-10-16T10:48:46.896992+00:00",
@@ -1531,7 +1600,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2173779"
     }
   },
-  "last_scan_utc": "2026-11-10T02:41:10.466415+00:00",
+  "last_scan_utc": "2026-11-10T12:09:27.384060+00:00",
   "packages": [
     "linux-raspi"
   ]

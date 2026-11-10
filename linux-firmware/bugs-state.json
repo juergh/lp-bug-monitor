@@ -1764,11 +1764,11 @@
     },
     "2159856": {
       "date_created": "2026-07-07T02:24:01.855733+00:00",
-      "date_last_updated": "2026-11-09T17:41:36.481009+00:00",
+      "date_last_updated": "2026-11-10T07:42:48.988052+00:00",
       "has_activity_after_incomplete": false,
       "id": 2159856,
-      "last_activity_summary": "linux-firmware-intel-wireless (Ubuntu Resolute): assignee: You-Sheng Yang (vicamo) by vicamo",
-      "last_activity_time": "2026-11-09T17:41:36.481009+00:00",
+      "last_activity_summary": "description: ============================= linux-firmware ==========================\n\n[Impact]\n\nWith kernel >= v7.3 or backport-iwlwifi-dkms >= 24.70, core API c107 and lower are supported, but it takes corresponding fw to take effect.\n\n[Fix]\n\nNew 24.70 firmware are in:\n* c5018ff6b11d (\"iwlwifi: add Bz/Sc FW for core24.70-49 release\")\n* 181c33e757b0 (\"iwlwifi: add Sc2/Wh FW for core24.70-99 release\")\n\nThe former is available in linux-firmware/stonking starting from version 20260915.git1522c78a-0ubuntu1, but the latter is not yet tagged in either upstream or ubuntu linux-firmware. The latter is for Sc2 so moved into bug 2160682.\n\n[Test Plan]\n\nCheck wifi link availability with `ip` or `iw`.\n\n[Where problems could occur]\n\nThis adds the corresponding firmware blobs to existing platforms that are used to be driven by core 103 or lower API. The firmware blobs are opaque, stable fix come later if ever found.\n\n[Other Info]\n\nWe are backporting core108 to Resolute in oem-7.3. Nominate for R, S and T. Yet the latter two already has it.\n\n============================= backport-iwlwifi-dkms ========================\n\n## FFE ##\n\n[Rationale]\n\n* Intel targets Nova Lake WiFi with 24.80 as planned in bug 2162157, yet the in-tree driver is not ready, and backport-iwlwifi 24.70 is the latest official release we may have so far. With backport-iwlwifi 24.70, we may drive the device with beta release firmwares. The final firmware is still pending for upstream review/verification.\n\n[ Scope ]\n\n* Support Intel WhP2 (BE211), SpP2 (BE213), LzP2 (AX221) WiFi/Bluetooth for Intel Nova Lake platforms.\n\n* Add the output of seeded-in-ubuntu backport-iwlwifi-dkms.\n\u00a0\u00a0```\n\u00a0\u00a0$ seeded-in-ubuntu backport-iwlwifi-dkms\n\u00a0\u00a0backport-iwlwifi-dkms's binaries are not seeded.\n\u00a0\u00a0```\n\n[ Regression Potential ]\n\n* backport-iwlwifi-dkms is never recommended and is only used whenever the hardware enablement is given no other choice for cutting edge Intel WiFi generations. People are not supposed to use backport-iwlwifi-dkms whenever there are compatible alternatives, that is, kernels with same/newer UCODE/CORE firmware API levels. When used in hardware enablement in oem projects, it will be migrated to the in-tree iwlwifi driver whenever available. We don't switch from an in-tree iwlwifi driver to backport-iwlwifi-dkms.\n\n* Migrating from 24.60 to 24.70, the backport compatibility is maintained as the lowest supported firmware level stays at core102.\n\n* backport-iwlwifi-dkms contains more features than the in-tree iwlwifi driver of the same firmware level, but mostly are for features under experiment or for hardware generations in the future. Switching back to in-tree driver doesn't cause problems for the PV generation that a firmware level is meant for.\n\n[ Testing ]\n\n* Smoke test:\n\u00a0\u00a0- PPA: https://launchpad.net/~vicamo/+archive/ubuntu/sru-2159856-2\n\u00a0\u00a0- Build: https://launchpad.net/~vicamo/+archive/ubuntu/sru-2159856-2/+build/33621591/+files/buildlog_ubuntu-stonking-amd64.backport-iwlwifi-dkms_1%3A24.70-14867-0ubuntu1_BUILDING.txt.gz\n\u00a0\u00a0- Installation: <link to the installation test>\n\u00a0\u00a0- Upgrade: <link to the upgrade test>\n\u00a0\u00a0- Autopkgtest: <autopkgtest results>\n\u00a0\u00a0- Does it break other packages: N/A\n\n[ Original Description ]\n\nhttps://git.kernel.org/pub/scm/linux/kernel/git/iwlwifi/backport-iwlwifi.git/log/?h=release/core24.70\nIntel is switching to a release naming scheme used on Windows. by vicamo",
+      "last_activity_time": "2026-11-10T07:42:48.988052+00:00",
       "owner": "You-Sheng Yang",
       "package": "linux-firmware-intel-wireless",
       "packages": [
@@ -1857,11 +1857,11 @@
     },
     "2160682": {
       "date_created": "2026-07-15T07:33:52.713471+00:00",
-      "date_last_updated": "2026-11-09T18:46:27.894127+00:00",
+      "date_last_updated": "2026-11-10T08:17:55.385404+00:00",
       "has_activity_after_incomplete": true,
       "id": 2160682,
-      "last_activity_summary": "linux-firmware-intel-wireless (Ubuntu Resolute): status: In Progress by vicamo",
-      "last_activity_time": "2026-11-09T18:46:27.894127+00:00",
+      "last_activity_summary": "description: [SRU Justification]\n\n[Impact]\n\nIntel WhP2 (BE211), SpP2 (BE213) WiFi/Bluetooth for Intel Nova Lake platforms take new firmware blob released with core108 API.\n\n[Fix]\n\nWiFi:\n* commit 181c33e757b0 (\"iwlwifi: add Sc2/Wh FW for core24.70-99 release\")\n* commit 47f558b2e0d3 (\"iwlwifi: add Sc2/Wh FW for core24.80-41 release\")\n\nBluetooth:\n* commit ca47bdb2ff05 (\"linux-firmware: Update firmware file for Intel Scorpius2 core\")\n* commit 416a692f3492 (\"linux-firmware: Update firmware file for Intel Scorpius2 core\")\n\n[Test Plan]\n\n1. While kernel is not yet ready, install prebuilt backport-iwlwifi-dkms of version >= 24.80 from ppa:~canonical-hwe-team/experimental-dkms or ppa:~vicamo/ppa-2162157\n2. reboot to the kernel with 24.80 iwlwifi dkms modules\n3. Check wifi link availability with `ip` or `iw`.\n\n[Where problems could occur]\n\nThis adds the corresponding firmware blobs to existing platforms that are used to be driven by core 103 or lower API. The firmware blobs are opaque, stable fix come later if ever found.\n\n[Other Info]\n\nIntel Nova Lake support is meant for Stonking 7.3 and on. Nominate for R, S and T.\n\n========== original bug report ==========\n\n* WhP2/SpP2/LzP2 (ES)\n\u00a0\u00a0* WiFi\n\u00a0\u00a0\u00a0\u00a0- iwlwifi-sc-a0-wh-b0.pnvm (optional)\n\u00a0\u00a0\u00a0\u00a0- iwlwifi-sc-a0-wh-b0-core103.ucode\n\u00a0\u00a0\u00a0\u00a0- iwlwifi-sc2-a0-fm-c0-c103.ucode\n\u00a0\u00a0\u00a0\u00a0- iwlwifi-sc2-a0-wh-b0-c103.ucode\n\u00a0\u00a0* BT\n\u00a0\u00a0\u00a0\u00a0- intel/ibt-00a2-01a1.ddc\n\u00a0\u00a0\u00a0\u00a0- intel/ibt-00a2-01a1.sfi\n\u00a0\u00a0\u00a0\u00a0- intel/ibt-00a2-01a1-iml.sfi\n* WhP2/SpP2 (QS)\n\u00a0\u00a0* WiFi\n\u00a0\u00a0\u00a0\u00a0- iwlwifi-sc2-a0-wh-b0-c108.ucode\n\u00a0\u00a0* BT\n\u00a0\u00a0\u00a0\u00a0- intel/ibt-02a2-01a1.ddc\n\u00a0\u00a0\u00a0\u00a0- intel/ibt-02a2-01a1.sfi\n\u00a0\u00a0\u00a0\u00a0- intel/ibt-02a2-01a1-iml.sfi by vicamo",
+      "last_activity_time": "2026-11-10T08:17:55.385404+00:00",
       "owner": "You-Sheng Yang",
       "package": "linux-firmware-intel-wireless",
       "packages": [
@@ -2092,11 +2092,11 @@
     },
     "2162157": {
       "date_created": "2026-07-30T14:41:59.415096+00:00",
-      "date_last_updated": "2026-11-09T17:25:16.263166+00:00",
+      "date_last_updated": "2026-11-10T07:48:48.536562+00:00",
       "has_activity_after_incomplete": true,
       "id": 2162157,
-      "last_activity_summary": "linux-firmware-intel-wireless (Ubuntu Resolute): importance: High by vicamo",
-      "last_activity_time": "2026-11-09T17:25:16.263166+00:00",
+      "last_activity_summary": "description: [Impact]\n\nWith kernel >= v7.4 or backport-iwlwifi-dkms >- 24.80, core API c108 and lower are supported, but it takes corresponding fw to take effect.\n\n[Fix]\n\nNew 24.70 firmware are:\n* b72356140 iwlwifi: add Bz/Sc FW for core24.80-41 release\n* 092f5591c iwlwifi: Update Bz/Fm firmware for core24.80-41 release\n* 723c52333 iwlwifi: Add Hr/Gf firmware for core24.80-41 release\n* 72caed257 iwlwifi: update ty/So/Ma firmwares for core24.80-41 release\n* 0029ab7d3 iwlwifi: Add cc/Qu/QuZ firmwares for core24.80-41 release\n\nWhile we don't SRU firmware for no strong reason, only commit b72356140 (\"iwlwifi: add Bz/Sc FW for core24.80-41 release\") is picked for it only adds firmware for new hardware models.\n\n[Test Plan]\n\nCheck wifi link availability with `ip` or `iw`.\n\n[Where problems could occur]\n\nThis adds the corresponding firmware blobs to existing platforms that are used to be driven by core 103 or lower API. The firmware blobs are opaque, stable fix come later if ever found.\n\n[Other Info]\n\nWe are backporting core108 to Resolute in oem-7.3. Nominate for R, S and T.\n\n========== original bug report =========\n\nhttps://git.kernel.org/pub/scm/linux/kernel/git/iwlwifi/backport-iwlwifi.git/log/?h=release/core24.80\n\n[ linux-firmware ]\n* b72356140 (tag: iwlwifi-fw-2026-09-23, korg-iwlwifi/for-upstream, korg-iwlwifi/HEAD) iwlwifi: add Bz/Sc FW for core24.80-41 release\n* 092f5591c iwlwifi: Update Bz/Fm firmware for core24.80-41 release\n* 723c52333 iwlwifi: Add Hr/Gf firmware for core24.80-41 release\n* 72caed257 iwlwifi: update ty/So/Ma firmwares for core24.80-41 release\n* 0029ab7d3 iwlwifi: Add cc/Qu/QuZ firmwares for core24.80-41 release by vicamo",
+      "last_activity_time": "2026-11-10T07:48:48.536562+00:00",
       "owner": "You-Sheng Yang",
       "package": "linux-firmware-intel-wireless",
       "packages": [
@@ -2621,11 +2621,11 @@
     },
     "2166733": {
       "date_created": "2026-09-08T05:58:44.096220+00:00",
-      "date_last_updated": "2026-10-07T23:01:53.501704+00:00",
+      "date_last_updated": "2026-11-10T07:41:05.450194+00:00",
       "has_activity_after_incomplete": false,
       "id": 2166733,
-      "last_activity_summary": "tags: kernel-daily-bug linux-firmware-daily-bug by ubuntu-kernel-bot",
-      "last_activity_time": "2026-10-07T23:01:53.501704+00:00",
+      "last_activity_summary": "description: SRU Justification:\n\n[Impact]\n\nWith kernel >= v7.2 or backport-iwlwifi-dkms >= 24.60, core API c106 and lower are supported, but it takes corresponding fw to take effect.\n\n[Fix]\n\n* New core106 firmwares are in commit 2ab4ce216003 (\"iwlwifi: add Bz/Sc FW for core24.60-33 release\").\n\n[Test Plan]\n\nCheck wifi link availability with `ip` or `iw`.\n\n[Where problems could occur]\n\nThis adds the corresponding firmware blobs to existing platforms that are used to be driven by core 103 or lower API. The firmware blobs are opaque, stable fix come later if ever found.\n\n[Other Info]\n\nWe are backporting core108 to Resolute in oem-7.3. Nominate for R, S and T. Yet the latter two already has it.\n\n========== original bug report ==========\n\nhttps://git.kernel.org/pub/scm/linux/kernel/git/iwlwifi/backport-iwlwifi.git/log/?h=release/core24.60\n\nIntel released core24.70 after core105 and was seem preparing release of core24.80 for NVL, then suddently 24.60 popped out.\n\nNew core106 firmwares are in commit 2ab4ce216003 (\"iwlwifi: add Bz/Sc FW for core24.60-33 release\"), which has been in linux-firmware/stonking starting from version 20260709.git2c35b1ed-0ubuntu1. by vicamo",
+      "last_activity_time": "2026-11-10T07:41:05.450194+00:00",
       "owner": "You-Sheng Yang",
       "package": "linux-firmware-intel-wireless",
       "packages": [
@@ -2966,11 +2966,11 @@
     },
     "2167683": {
       "date_created": "2026-09-18T08:55:15.281959+00:00",
-      "date_last_updated": "2026-10-07T11:43:11.566681+00:00",
+      "date_last_updated": "2026-11-10T08:34:01.411358+00:00",
       "has_activity_after_incomplete": false,
       "id": 2167683,
-      "last_activity_summary": "affects: linux-firmware-intel-graphics (Ubuntu Resolute) by tjaalton",
-      "last_activity_time": "2026-10-07T11:43:11.566681+00:00",
+      "last_activity_summary": "linux-firmware-intel-graphics (Ubuntu): status: Triaged by vicamo",
+      "last_activity_time": "2026-11-10T08:34:01.411358+00:00",
       "owner": "You-Sheng Yang",
       "package": "linux-firmware-intel-graphics",
       "packages": [
@@ -2982,22 +2982,22 @@
       ],
       "tasks": [
         {
-          "assignee": null,
-          "date_closed": "2026-10-07T09:08:48.408115+00:00",
+          "assignee": "You-Sheng Yang",
+          "date_closed": null,
           "date_created": "2026-09-18T08:55:15.281959+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
+          "importance": "High",
+          "is_complete": false,
           "series": null,
-          "status": "Fix Released",
+          "status": "Triaged",
           "target": "linux-firmware-intel-graphics (Ubuntu)",
           "target_display": "linux-firmware-intel-graphics (Ubuntu)",
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-intel-graphics/+bug/2167683"
         },
         {
-          "assignee": null,
+          "assignee": "You-Sheng Yang",
           "date_closed": null,
           "date_created": "2026-09-18T09:03:44.733079+00:00",
-          "importance": "Undecided",
+          "importance": "High",
           "is_complete": false,
           "series": "resolute",
           "status": "In Progress",
@@ -3006,13 +3006,13 @@
           "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-intel-graphics/+bug/2167683"
         },
         {
-          "assignee": null,
-          "date_closed": "2026-10-07T09:08:48.408115+00:00",
+          "assignee": "You-Sheng Yang",
+          "date_closed": null,
           "date_created": "2026-09-18T09:03:44.733079+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
+          "importance": "High",
+          "is_complete": false,
           "series": "stonking",
-          "status": "Fix Released",
+          "status": "In Progress",
           "target": "linux-firmware-intel-graphics (Ubuntu Stonking)",
           "target_display": "linux-firmware-intel-graphics (Ubuntu Stonking)",
           "web_link": "https://bugs.launchpad.net/ubuntu/stonking/+source/linux-firmware-intel-graphics/+bug/2167683"
@@ -3290,15 +3290,14 @@
     },
     "2167915": {
       "date_created": "2026-09-22T05:16:43.345570+00:00",
-      "date_last_updated": "2026-10-16T03:17:08.350105+00:00",
+      "date_last_updated": "2026-11-10T07:28:53.391782+00:00",
       "has_activity_after_incomplete": false,
       "id": 2167915,
-      "last_activity_summary": "bug task deleted updated by juergh",
-      "last_activity_time": "2026-10-16T06:20:12.967065+00:00",
+      "last_activity_summary": "linux-firmware-misc (Ubuntu Stonking): status: Fix Committed by juergh",
+      "last_activity_time": "2026-11-10T07:28:53.391782+00:00",
       "owner": "Chris Chiu",
-      "package": "linux-firmware",
+      "package": "linux-firmware-misc",
       "packages": [
-        "linux-firmware",
         "linux-firmware-misc"
       ],
       "tags": [
@@ -3448,7 +3447,7 @@
           "importance": "Undecided",
           "is_complete": false,
           "series": "stonking",
-          "status": "In Progress",
+          "status": "Fix Committed",
           "target": "linux-firmware-misc (Ubuntu Stonking)",
           "target_display": "linux-firmware-misc (Ubuntu Stonking)",
           "web_link": "https://bugs.launchpad.net/ubuntu/stonking/+source/linux-firmware-misc/+bug/2167915"
@@ -4372,11 +4371,11 @@
     },
     "2173041": {
       "date_created": "2026-11-05T01:05:48.037466+00:00",
-      "date_last_updated": "2026-11-09T19:03:29.564517+00:00",
+      "date_last_updated": "2026-11-10T06:48:22.230705+00:00",
       "has_activity_after_incomplete": false,
       "id": 2173041,
       "last_activity_summary": "tags: kernel-daily-bug linux-firmware-daily-bug regression-update verification-done-noble by rorose",
-      "last_activity_time": "2026-11-09T19:03:29.564517+00:00",
+      "last_activity_time": "2026-11-10T06:48:22.230705+00:00",
       "owner": "Adrien Lebrun",
       "package": "linux-firmware-amd-graphics",
       "packages": [
@@ -4524,11 +4523,11 @@
     },
     "2173725": {
       "date_created": "2026-11-09T07:27:53.183226+00:00",
-      "date_last_updated": "2026-11-09T23:01:52.817592+00:00",
+      "date_last_updated": "2026-11-10T05:59:07.250845+00:00",
       "has_activity_after_incomplete": false,
       "id": 2173725,
-      "last_activity_summary": "tags: kernel-daily-bug linux-firmware-daily-bug by ubuntu-kernel-bot",
-      "last_activity_time": "2026-11-09T23:01:52.817592+00:00",
+      "last_activity_summary": "tags: kernel-daily-bug linux-firmware-daily-bug originate-from-2170610 by 0xff07",
+      "last_activity_time": "2026-11-10T05:59:07.250845+00:00",
       "owner": "Leo Lin",
       "package": "linux-firmware-amd-misc",
       "packages": [
@@ -4536,7 +4535,8 @@
       ],
       "tags": [
         "kernel-daily-bug",
-        "linux-firmware-daily-bug"
+        "linux-firmware-daily-bug",
+        "originate-from-2170610"
       ],
       "tasks": [
         {
@@ -4566,9 +4566,176 @@
       ],
       "title": "[SRU] Update Zen6 PMF support for firmware changes",
       "web_link": "https://bugs.launchpad.net/bugs/2173725"
+    },
+    "2173838": {
+      "date_created": "2026-11-10T06:53:22.109455+00:00",
+      "date_last_updated": "2026-11-10T06:57:04.221387+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2173838,
+      "last_activity_summary": "bug updated by viralwang",
+      "last_activity_time": "2026-11-10T07:05:05.638780+00:00",
+      "owner": "Chris Chiu",
+      "package": "linux-firmware-misc",
+      "packages": [
+        "linux-firmware-misc"
+      ],
+      "tags": [
+        "jira-somerville-4911",
+        "jira-somerville-5869",
+        "oem-priority",
+        "somerville"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-10T06:54:41.915911+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "alsa-ucm-conf (Ubuntu)",
+          "target_display": "alsa-ucm-conf (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/alsa-ucm-conf/+bug/2173838"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-10T06:53:22.109455+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "linux (Ubuntu)",
+          "target_display": "linux (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux/+bug/2173838"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-10T06:54:18.285525+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "linux-firmware-misc (Ubuntu)",
+          "target_display": "linux-firmware-misc (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-misc/+bug/2173838"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-10T06:53:49.145358+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "linux-oem-7.3 (Ubuntu)",
+          "target_display": "linux-oem-7.3 (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-oem-7.3/+bug/2173838"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-10T06:54:52.000294+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "resolute",
+          "status": "New",
+          "target": "alsa-ucm-conf (Ubuntu Resolute)",
+          "target_display": "alsa-ucm-conf (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/alsa-ucm-conf/+bug/2173838"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-10T06:54:52.000294+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "resolute",
+          "status": "New",
+          "target": "linux (Ubuntu Resolute)",
+          "target_display": "linux (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux/+bug/2173838"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-10T06:54:52.000294+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "resolute",
+          "status": "New",
+          "target": "linux-firmware-misc (Ubuntu Resolute)",
+          "target_display": "linux-firmware-misc (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-misc/+bug/2173838"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-10T06:54:52.000294+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "resolute",
+          "status": "New",
+          "target": "linux-oem-7.3 (Ubuntu Resolute)",
+          "target_display": "linux-oem-7.3 (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-oem-7.3/+bug/2173838"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-10T06:54:52.000294+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "tenacious",
+          "status": "New",
+          "target": "alsa-ucm-conf (Ubuntu Tenacious)",
+          "target_display": "alsa-ucm-conf (Ubuntu Tenacious)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/tenacious/+source/alsa-ucm-conf/+bug/2173838"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-10T06:54:52.000294+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "tenacious",
+          "status": "New",
+          "target": "linux (Ubuntu Tenacious)",
+          "target_display": "linux (Ubuntu Tenacious)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/tenacious/+source/linux/+bug/2173838"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-10T06:54:52.000294+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "tenacious",
+          "status": "New",
+          "target": "linux-firmware-misc (Ubuntu Tenacious)",
+          "target_display": "linux-firmware-misc (Ubuntu Tenacious)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/tenacious/+source/linux-firmware-misc/+bug/2173838"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-10T06:54:52.000294+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "tenacious",
+          "status": "New",
+          "target": "linux-oem-7.3 (Ubuntu Tenacious)",
+          "target_display": "linux-oem-7.3 (Ubuntu Tenacious)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/tenacious/+source/linux-oem-7.3/+bug/2173838"
+        }
+      ],
+      "title": " Support SoundWire and SoF on AMD with Cirrus Logic IC Solution",
+      "web_link": "https://bugs.launchpad.net/bugs/2173838"
     }
   },
-  "last_scan_utc": "2026-11-10T02:31:59.686929+00:00",
+  "last_scan_utc": "2026-11-10T12:05:09.917881+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
