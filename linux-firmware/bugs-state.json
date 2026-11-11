@@ -2335,11 +2335,11 @@
     },
     "2165104": {
       "date_created": "2026-08-26T07:07:46.137225+00:00",
-      "date_last_updated": "2026-11-10T01:45:29.664803+00:00",
-      "has_activity_after_incomplete": false,
+      "date_last_updated": "2026-11-10T23:03:16.816842+00:00",
+      "has_activity_after_incomplete": true,
       "id": 2165104,
-      "last_activity_summary": "linux (Ubuntu Resolute): status: Won't Fix by vicamo",
-      "last_activity_time": "2026-11-10T01:45:29.664803+00:00",
+      "last_activity_summary": "tags: jira-sutton-5778 jira-sutton-5779 kernel-daily-bug linux-firmware-daily-bug by ubuntu-kernel-bot",
+      "last_activity_time": "2026-11-10T23:03:16.816842+00:00",
       "owner": "You-Sheng Yang",
       "package": "linux-firmware-intel-graphics",
       "packages": [
@@ -2348,7 +2348,8 @@
       "tags": [
         "jira-sutton-5778",
         "jira-sutton-5779",
-        "kernel-daily-bug"
+        "kernel-daily-bug",
+        "linux-firmware-daily-bug"
       ],
       "tasks": [
         {
@@ -4569,11 +4570,11 @@
     },
     "2173838": {
       "date_created": "2026-11-10T06:53:22.109455+00:00",
-      "date_last_updated": "2026-11-10T06:57:04.221387+00:00",
+      "date_last_updated": "2026-11-10T23:03:30.944463+00:00",
       "has_activity_after_incomplete": false,
       "id": 2173838,
-      "last_activity_summary": "bug updated by viralwang",
-      "last_activity_time": "2026-11-10T07:05:05.638780+00:00",
+      "last_activity_summary": "tags: jira-somerville-4911 jira-somerville-5869 kernel-daily-bug linux-firmware-daily-bug oem-priority somerville by ubuntu-kernel-bot",
+      "last_activity_time": "2026-11-10T23:03:30.944463+00:00",
       "owner": "Chris Chiu",
       "package": "linux-firmware-misc",
       "packages": [
@@ -4582,6 +4583,8 @@
       "tags": [
         "jira-somerville-4911",
         "jira-somerville-5869",
+        "kernel-daily-bug",
+        "linux-firmware-daily-bug",
         "oem-priority",
         "somerville"
       ],
@@ -4736,19 +4739,21 @@
     },
     "2173927": {
       "date_created": "2026-11-10T21:25:14.345370+00:00",
-      "date_last_updated": "2026-11-10T21:25:14.345370+00:00",
+      "date_last_updated": "2026-11-10T23:03:32.837304+00:00",
       "has_activity_after_incomplete": false,
       "id": 2173927,
-      "last_activity_summary": "bug updated by hdizzle20176",
-      "last_activity_time": "2026-11-10T21:25:14.345370+00:00",
+      "last_activity_summary": "tags: amd64 apport-bug kernel-daily-bug linux-firmware-daily-bug resolute wayland-session by ubuntu-kernel-bot",
+      "last_activity_time": "2026-11-10T23:03:32.837304+00:00",
       "owner": "Harry E Arter",
-      "package": "linux-firmware",
+      "package": "linux-firmware-misc",
       "packages": [
-        "linux-firmware"
+        "linux-firmware-misc"
       ],
       "tags": [
         "amd64",
         "apport-bug",
+        "kernel-daily-bug",
+        "linux-firmware-daily-bug",
         "resolute",
         "wayland-session"
       ],
@@ -4760,17 +4765,54 @@
           "importance": "Undecided",
           "is_complete": false,
           "series": null,
+          "status": "Confirmed",
+          "target": "linux-firmware-misc (Ubuntu)",
+          "target_display": "linux-firmware-misc (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-misc/+bug/2173927"
+        }
+      ],
+      "title": "Missing Cirrus amplifier firmware - Dell XPS 13 DX13260 (SSID 1028:0e53)",
+      "web_link": "https://bugs.launchpad.net/bugs/2173927"
+    },
+    "2173929": {
+      "date_created": "2026-11-10T22:00:58.207375+00:00",
+      "date_last_updated": "2026-11-10T23:03:10.473146+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2173929,
+      "last_activity_summary": "tags: amd64 apport-bug kernel-daily-bug linux-firmware-daily-bug resolute wayland-session by ubuntu-kernel-bot",
+      "last_activity_time": "2026-11-10T23:03:10.473146+00:00",
+      "owner": "cctrmrzr77",
+      "package": "linux-firmware",
+      "packages": [
+        "linux-firmware"
+      ],
+      "tags": [
+        "amd64",
+        "apport-bug",
+        "kernel-daily-bug",
+        "linux-firmware-daily-bug",
+        "resolute",
+        "wayland-session"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-10T22:00:58.207375+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
           "status": "New",
           "target": "linux-firmware (Ubuntu)",
           "target_display": "linux-firmware (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2173927"
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2173929"
         }
       ],
-      "title": "Missing Linux speaker amplifier firmware -XPS 13 DX13260 (SSID 10280e53)",
-      "web_link": "https://bugs.launchpad.net/bugs/2173927"
+      "title": "Intel Killer BE1750 (BE200, PCI 8086:272b) firmware crash ADVANCED_SYSASSERT, card unrecoverable until full shutdown",
+      "web_link": "https://bugs.launchpad.net/bugs/2173929"
     }
   },
-  "last_scan_utc": "2026-11-10T21:38:28.880965+00:00",
+  "last_scan_utc": "2026-11-11T04:39:22.550409+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
