@@ -2092,11 +2092,11 @@
     },
     "2162157": {
       "date_created": "2026-07-30T14:41:59.415096+00:00",
-      "date_last_updated": "2026-11-10T07:48:48.536562+00:00",
-      "has_activity_after_incomplete": true,
+      "date_last_updated": "2026-11-11T07:50:45.961862+00:00",
+      "has_activity_after_incomplete": false,
       "id": 2162157,
-      "last_activity_summary": "description: [Impact]\n\nWith kernel >= v7.4 or backport-iwlwifi-dkms >- 24.80, core API c108 and lower are supported, but it takes corresponding fw to take effect.\n\n[Fix]\n\nNew 24.70 firmware are:\n* b72356140 iwlwifi: add Bz/Sc FW for core24.80-41 release\n* 092f5591c iwlwifi: Update Bz/Fm firmware for core24.80-41 release\n* 723c52333 iwlwifi: Add Hr/Gf firmware for core24.80-41 release\n* 72caed257 iwlwifi: update ty/So/Ma firmwares for core24.80-41 release\n* 0029ab7d3 iwlwifi: Add cc/Qu/QuZ firmwares for core24.80-41 release\n\nWhile we don't SRU firmware for no strong reason, only commit b72356140 (\"iwlwifi: add Bz/Sc FW for core24.80-41 release\") is picked for it only adds firmware for new hardware models.\n\n[Test Plan]\n\nCheck wifi link availability with `ip` or `iw`.\n\n[Where problems could occur]\n\nThis adds the corresponding firmware blobs to existing platforms that are used to be driven by core 103 or lower API. The firmware blobs are opaque, stable fix come later if ever found.\n\n[Other Info]\n\nWe are backporting core108 to Resolute in oem-7.3. Nominate for R, S and T.\n\n========== original bug report =========\n\nhttps://git.kernel.org/pub/scm/linux/kernel/git/iwlwifi/backport-iwlwifi.git/log/?h=release/core24.80\n\n[ linux-firmware ]\n* b72356140 (tag: iwlwifi-fw-2026-09-23, korg-iwlwifi/for-upstream, korg-iwlwifi/HEAD) iwlwifi: add Bz/Sc FW for core24.80-41 release\n* 092f5591c iwlwifi: Update Bz/Fm firmware for core24.80-41 release\n* 723c52333 iwlwifi: Add Hr/Gf firmware for core24.80-41 release\n* 72caed257 iwlwifi: update ty/So/Ma firmwares for core24.80-41 release\n* 0029ab7d3 iwlwifi: Add cc/Qu/QuZ firmwares for core24.80-41 release by vicamo",
-      "last_activity_time": "2026-11-10T07:48:48.536562+00:00",
+      "last_activity_summary": "backport-iwlwifi-dkms (Ubuntu Stonking): assignee: You-Sheng Yang (vicamo) by vicamo",
+      "last_activity_time": "2026-11-11T07:50:45.961862+00:00",
       "owner": "You-Sheng Yang",
       "package": "linux-firmware-intel-wireless",
       "packages": [
@@ -2108,13 +2108,13 @@
       ],
       "tasks": [
         {
-          "assignee": null,
+          "assignee": "You-Sheng Yang",
           "date_closed": null,
           "date_created": "2026-07-30T14:41:59.415096+00:00",
-          "importance": "Undecided",
+          "importance": "High",
           "is_complete": false,
           "series": null,
-          "status": "Incomplete",
+          "status": "In Progress",
           "target": "backport-iwlwifi-dkms (Ubuntu)",
           "target_display": "backport-iwlwifi-dkms (Ubuntu)",
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/backport-iwlwifi-dkms/+bug/2162157"
@@ -2156,13 +2156,13 @@
           "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-intel-wireless/+bug/2162157"
         },
         {
-          "assignee": null,
+          "assignee": "You-Sheng Yang",
           "date_closed": null,
           "date_created": "2026-09-23T08:13:54.398707+00:00",
-          "importance": "Undecided",
+          "importance": "High",
           "is_complete": false,
           "series": "stonking",
-          "status": "Incomplete",
+          "status": "In Progress",
           "target": "backport-iwlwifi-dkms (Ubuntu Stonking)",
           "target_display": "backport-iwlwifi-dkms (Ubuntu Stonking)",
           "web_link": "https://bugs.launchpad.net/ubuntu/stonking/+source/backport-iwlwifi-dkms/+bug/2162157"
@@ -4327,19 +4327,21 @@
     },
     "2173021": {
       "date_created": "2026-11-04T21:10:45.120163+00:00",
-      "date_last_updated": "2026-11-06T06:53:59.328426+00:00",
-      "has_activity_after_incomplete": false,
+      "date_last_updated": "2026-11-11T18:30:56.576817+00:00",
+      "has_activity_after_incomplete": true,
       "id": 2173021,
-      "last_activity_summary": "linux-firmware-mediatek (Ubuntu Resolute): status: Incomplete by juergh",
-      "last_activity_time": "2026-11-06T06:53:59.328426+00:00",
+      "last_activity_summary": "attachment added: acpidump.txt https://bugs.launchpad.net/bugs/2173021/+attachment/6017114/+files/acpidump.txt by jhonathannc",
+      "last_activity_time": "2026-11-11T18:30:56.576817+00:00",
       "owner": "Jhonathan",
       "package": "linux-firmware-mediatek",
       "packages": [
         "linux-firmware-mediatek"
       ],
       "tags": [
+        "apport-collected",
         "kernel-daily-bug",
-        "linux-firmware-daily-bug"
+        "linux-firmware-daily-bug",
+        "resolute"
       ],
       "tasks": [
         {
@@ -4810,9 +4812,143 @@
       ],
       "title": "Intel Killer BE1750 (BE200, PCI 8086:272b) firmware crash ADVANCED_SYSASSERT, card unrecoverable until full shutdown",
       "web_link": "https://bugs.launchpad.net/bugs/2173929"
+    },
+    "2173970": {
+      "date_created": "2026-11-11T08:09:15.060610+00:00",
+      "date_last_updated": "2026-11-11T08:12:11.945909+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2173970,
+      "last_activity_summary": "backport-iwlwifi-dkms (Ubuntu Resolute): status: Won't Fix by vicamo",
+      "last_activity_time": "2026-11-11T08:12:11.945909+00:00",
+      "owner": "You-Sheng Yang",
+      "package": "linux-firmware-intel-wireless",
+      "packages": [
+        "linux-firmware-intel-wireless"
+      ],
+      "tags": [],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-11T08:09:15.060610+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "In Progress",
+          "target": "backport-iwlwifi-dkms (Ubuntu)",
+          "target_display": "backport-iwlwifi-dkms (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/backport-iwlwifi-dkms/+bug/2173970"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-11T08:10:12.844993+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "Incomplete",
+          "target": "linux-firmware-intel-wireless (Ubuntu)",
+          "target_display": "linux-firmware-intel-wireless (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-intel-wireless/+bug/2173970"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2026-11-11T08:12:10.938166+00:00",
+          "date_created": "2026-11-11T08:09:33.949052+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": "resolute",
+          "status": "Won't Fix",
+          "target": "backport-iwlwifi-dkms (Ubuntu Resolute)",
+          "target_display": "backport-iwlwifi-dkms (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/backport-iwlwifi-dkms/+bug/2173970"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-11T08:10:12.844993+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "resolute",
+          "status": "Incomplete",
+          "target": "linux-firmware-intel-wireless (Ubuntu Resolute)",
+          "target_display": "linux-firmware-intel-wireless (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-intel-wireless/+bug/2173970"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-11T08:09:33.949052+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "tenacious",
+          "status": "In Progress",
+          "target": "backport-iwlwifi-dkms (Ubuntu Tenacious)",
+          "target_display": "backport-iwlwifi-dkms (Ubuntu Tenacious)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/tenacious/+source/backport-iwlwifi-dkms/+bug/2173970"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-11T08:10:12.844993+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "tenacious",
+          "status": "Incomplete",
+          "target": "linux-firmware-intel-wireless (Ubuntu Tenacious)",
+          "target_display": "linux-firmware-intel-wireless (Ubuntu Tenacious)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/tenacious/+source/linux-firmware-intel-wireless/+bug/2173970"
+        }
+      ],
+      "title": "New upstream core24.90 release",
+      "web_link": "https://bugs.launchpad.net/bugs/2173970"
+    },
+    "2173976": {
+      "date_created": "2026-11-11T09:01:51.316440+00:00",
+      "date_last_updated": "2026-11-11T09:23:25.429708+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2173976,
+      "last_activity_summary": "description: [Hardware]\nMachine: HP EliteBook 6 G1i 16 inch Notebook Next Gen AI PC (CID 202501-36238)\nCPU: Intel Core Ultra 7 265H (Arrow Lake-H)\nWireless Adapter: Intel Wi-Fi 6E AX211 160MHz (CNVi, RF GF), with Bluetooth on the same combo\nPCI ID: 8086:7740\nSubsystem ID: 8086:0090\nBIOS: X74 Ver. 01.01.06\n\n[Environment]\nOS: Ubuntu 24.04 LTS (noble)\nSuspect Kernel: linux-image-7.0.0-43-generic (7.0.0-43.43~24.04.1 from noble-proposed)\nBaseline Working Kernel: linux-image-6.17.0-1033-oem (6.17.0-1033.33 from noble-updates)\nFirmware: linux-firmware-intel-wireless 20240318.git3b128b60-0ubuntu3.1, the same on both kernels\nOEM meta: linux-oem-24.04b, which moves from 6.17.0-1033.33 to 7.0.0-43.43~24.04.1 with this upload\n\n[Symptoms]\nOn kernel 7.0.0-43, iwlwifi loads the firmware, but the runtime firmware never reports alive. The driver logs NMI_INTERRUPT_UMAC_FATAL and \"Failed to start RT ucode: -110\", then \"Failed to run INIT ucode: -110\", and keeps retrying with \"timeout waiting for FW reset ACK\". No wireless interface is registered. The Bluetooth function of the same combo times out at the same time, so there is no Bluetooth either.\n\ndmesg excerpts on 7.0.0-43-generic:\n[    2.907813] iwlwifi 0000:00:14.3: PCI dev 7740/0090, rev=0x461, rfid=0x2010d000\n[    2.911964] iwlwifi 0000:00:14.3: loaded firmware version 100.d6bb293f.0 bz-b0-gf-a0-100.ucode op_mode iwlmvm\n[    5.155527] iwlwifi 0000:00:14.3: 0x00000071 | NMI_INTERRUPT_UMAC_FATAL\n[    5.155636] iwlwifi 0000:00:14.3: 0x20100502 | ADVANCED_SYSASSERT\n[    5.155919] iwlwifi 0000:00:14.3: Failed to start RT ucode: -110\n[    6.466236] iwlwifi 0000:00:14.3: timeout waiting for FW reset ACK (inta_hw=0x8, reset_done 0)\n[    6.946211] Bluetooth: hci0: Reading Intel version information failed (-110)\n[    6.946246] Bluetooth: hci0: command 0xfc05 tx timeout\n[    9.012555] iwlwifi 0000:00:14.3: Failed to run INIT ucode: -110\n[   11.106663] iwlwifi 0000:00:14.3: Failed to start RT ucode: -110\n\nCertification failures on 7.0.0-43: \"Detect if at least one Wireless LAN device is detected\" and \"Make sure at least one bluetooth device is detected\".\n\n[A/B Verification]\nOn the same physical DUT (hp-elitebook-6-g1i-16-inch-notebook-ai-pc-x8wbsku4aba-c36238), with the same firmware build on both kernels:\n1. 6.17.0-1033-oem (certification run, 2026-09-15): iwlwifi loads 100.d6bb293f.0 bz-b0-gf-a0-100.ucode and registers wlp0s20f3. All Wi-Fi and Bluetooth tests pass, for example \"Connect to WPA-encrypted 802.11ax Wi-Fi network on wlp0s20f3\" and \"Check if the system can connect to a Bluetooth speaker using A2DP profile\".\n\u00a0\u00a0\u00a0\u00a0\u00a0iwlwifi 0000:00:14.3: PCI dev 7740/0090, rev=0x461, rfid=0x2010d000\n\u00a0\u00a0\u00a0\u00a0\u00a0iwlwifi 0000:00:14.3: loaded firmware version 100.d6bb293f.0 bz-b0-gf-a0-100.ucode op_mode iwlmvm\n\u00a0\u00a0\u00a0\u00a0\u00a0iwlwifi 0000:00:14.3 wlp0s20f3: renamed from wlan0\n2. 7.0.0-43-generic (certification run, 2026-11-05): the failure above, with the same firmware file and build.\n\n[Cross-Machine Data]\nOn TO deb 416751 (7.0.0-43), the same AX211 RF (rfid 0x2010d000) with the same firmware (100.d6bb293f.0 bz-b0-gf-a0-100.ucode, iwlmvm):\n- hp-elitebook-6-g1i-16-inch-notebook-ai-pc-x8wbsku4aba-c36238 (8086:7740 / subsys 8086:0090): fails as above.\n- hp-zbook-8-g1i-16-inch-mobile-workstation-pc-1234567aba-c36189 (8086:7740 / subsys 8086:0094, Core Ultra 7 255H): passes. wlp0s20f3 comes up, with 0 firmware errors. An A/B of 7.0.0-42 against 7.0.0-43 on this machine behaves the same on both kernels.\n- dell-pro-13-plus-pb13250-0cf4-c36134 (8086:7740 / subsys 8086:4090): no UMAC_FATAL.\n\nNo other 8086:7740/0090 machine was available. The two sibling EliteBook 6 G1i 16 units (c36233 and c36237) fail lab provisioning (\"Failed to boot test image!\"). So whether this affects the 0090 module variant together with 7.0, or only this unit, is open.\n\nThe 7.0.0-42..43 diff has no iwlwifi changes, so 7.0.0-42 is expected to behave the same. by ecanepa",
+      "last_activity_time": "2026-11-11T09:23:25.429708+00:00",
+      "owner": "Edoardo Canepa",
+      "package": "linux-firmware",
+      "packages": [
+        "linux-firmware"
+      ],
+      "tags": [
+        "verification-needed-resolute"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-11T09:01:51.316440+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "linux-firmware (Ubuntu)",
+          "target_display": "linux-firmware (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2173976"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-11T09:03:46.395044+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "linux-hwe-7.0 (Ubuntu)",
+          "target_display": "linux-hwe-7.0 (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-hwe-7.0/+bug/2173976"
+        }
+      ],
+      "title": "[HP EliteBook 6 G1i 16] AX211 Wi-Fi and BT dead on 7.0: NMI_INTERRUPT_UMAC_FATAL with bz-b0-gf-a0-100 ",
+      "web_link": "https://bugs.launchpad.net/bugs/2173976"
     }
   },
-  "last_scan_utc": "2026-11-11T04:39:22.550409+00:00",
+  "last_scan_utc": "2026-11-11T22:28:01.725729+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",

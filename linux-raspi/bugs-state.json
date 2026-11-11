@@ -712,11 +712,11 @@
     },
     "2133877": {
       "date_created": "2025-12-04T14:59:33.158844+00:00",
-      "date_last_updated": "2026-11-09T14:17:02.514994+00:00",
+      "date_last_updated": "2026-11-11T18:38:20.378611+00:00",
       "has_activity_after_incomplete": false,
       "id": 2133877,
       "last_activity_summary": "bug task added: linux-raspi (Ubuntu Resolute) by juergh",
-      "last_activity_time": "2026-11-09T14:30:22.325695+00:00",
+      "last_activity_time": "2026-11-11T18:38:20.378611+00:00",
       "owner": "Aleksei",
       "package": "linux-raspi",
       "packages": [
@@ -1156,11 +1156,11 @@
     },
     "2168109": {
       "date_created": "2026-09-23T13:50:47.738290+00:00",
-      "date_last_updated": "2026-09-24T10:00:59.481391+00:00",
+      "date_last_updated": "2026-11-11T09:09:06.642220+00:00",
       "has_activity_after_incomplete": false,
       "id": 2168109,
-      "last_activity_summary": "affects: linux-raspi (Ubuntu) by juergh",
-      "last_activity_time": "2026-09-24T10:00:59.481391+00:00",
+      "last_activity_summary": "ubuntu-raspi-settings (Ubuntu Stonking): status: Fix Released by juergh",
+      "last_activity_time": "2026-11-11T09:09:06.642220+00:00",
       "owner": "Benjamin Drung",
       "package": "linux-raspi",
       "packages": [
@@ -1172,27 +1172,51 @@
       "tasks": [
         {
           "assignee": null,
-          "date_closed": null,
+          "date_closed": "2026-11-11T09:08:40.624203+00:00",
           "date_created": "2026-09-23T14:35:27.196171+00:00",
           "importance": "Undecided",
-          "is_complete": false,
+          "is_complete": true,
           "series": null,
-          "status": "New",
+          "status": "Invalid",
           "target": "linux-raspi (Ubuntu)",
           "target_display": "linux-raspi (Ubuntu)",
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2168109"
         },
         {
           "assignee": null,
-          "date_closed": null,
+          "date_closed": "2026-11-11T09:08:03.801983+00:00",
           "date_created": "2026-09-23T13:50:47.738290+00:00",
           "importance": "Undecided",
-          "is_complete": false,
+          "is_complete": true,
           "series": null,
-          "status": "New",
+          "status": "Fix Released",
           "target": "ubuntu-raspi-settings (Ubuntu)",
           "target_display": "ubuntu-raspi-settings (Ubuntu)",
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/ubuntu-raspi-settings/+bug/2168109"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-11T09:08:16.561205+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "stonking",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Stonking)",
+          "target_display": "linux-raspi (Ubuntu Stonking)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/stonking/+source/linux-raspi/+bug/2168109"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2026-11-11T09:09:05.713873+00:00",
+          "date_created": "2026-11-11T09:08:16.561205+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": "stonking",
+          "status": "Fix Released",
+          "target": "ubuntu-raspi-settings (Ubuntu Stonking)",
+          "target_display": "ubuntu-raspi-settings (Ubuntu Stonking)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/stonking/+source/ubuntu-raspi-settings/+bug/2168109"
         }
       ],
       "title": "brcmfmac firmware files should be included automatically",
@@ -1568,7 +1592,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2173959"
     }
   },
-  "last_scan_utc": "2026-11-11T04:42:49.518602+00:00",
+  "last_scan_utc": "2026-11-11T22:30:16.407187+00:00",
   "packages": [
     "linux-raspi"
   ]
