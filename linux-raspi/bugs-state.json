@@ -1256,11 +1256,11 @@
     },
     "2171439": {
       "date_created": "2026-10-19T19:29:26.942287+00:00",
-      "date_last_updated": "2026-10-23T04:31:40.901943+00:00",
+      "date_last_updated": "2026-11-12T07:45:15.752070+00:00",
       "has_activity_after_incomplete": false,
       "id": 2171439,
-      "last_activity_summary": "linux-raspi (Ubuntu): importance: Low by rossporter506",
-      "last_activity_time": "2026-10-23T04:31:40.901943+00:00",
+      "last_activity_summary": "bug task added: linux-raspi (Ubuntu Resolute) by juergh",
+      "last_activity_time": "2026-11-12T07:45:15.752070+00:00",
       "owner": "AdrianChallinor",
       "package": "linux-raspi",
       "packages": [
@@ -1285,6 +1285,18 @@
           "target": "linux-raspi (Ubuntu)",
           "target_display": "linux-raspi (Ubuntu)",
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2171439"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-12T07:40:55.841273+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "resolute",
+          "status": "New",
+          "target": "linux-raspi (Ubuntu Resolute)",
+          "target_display": "linux-raspi (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-raspi/+bug/2171439"
         }
       ],
       "title": "linux-raspi: UBSAN array-index-out-of-bounds in minstrel_ht_tx_status via mt76x02u (MT7612U) - please backport \"wifi: mt76: mt76x02: validate TX-status rate index before mac80211 handoff\"",
@@ -1321,40 +1333,6 @@
       ],
       "title": "Pi 4B Rev 1.4 hangs at xhci_hcd init / reboot-loops on Ubuntu 26.04 when BOOT_ORDER tries network first",
       "web_link": "https://bugs.launchpad.net/bugs/2172394"
-    },
-    "2172644": {
-      "date_created": "2026-10-30T23:14:04.065470+00:00",
-      "date_last_updated": "2026-11-04T21:40:41.259605+00:00",
-      "has_activity_after_incomplete": false,
-      "id": 2172644,
-      "last_activity_summary": "tags: kernel-daily-bug kernel-spammed-resolute-linux-raspi-v2 verification-done-resolute-linux-raspi by ecanepa",
-      "last_activity_time": "2026-11-04T21:40:41.259605+00:00",
-      "owner": "Edoardo Canepa",
-      "package": "linux-raspi",
-      "packages": [
-        "linux-raspi"
-      ],
-      "tags": [
-        "kernel-daily-bug",
-        "kernel-spammed-resolute-linux-raspi-v2",
-        "verification-done-resolute-linux-raspi"
-      ],
-      "tasks": [
-        {
-          "assignee": null,
-          "date_closed": null,
-          "date_created": "2026-10-30T23:14:04.065470+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": null,
-          "status": "New",
-          "target": "linux-raspi (Ubuntu)",
-          "target_display": "linux-raspi (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2172644"
-        }
-      ],
-      "title": "resolute/linux-raspi: FTBFS after rebase onto Ubuntu-7.0.0-43.43 (pps-gpio capture_clear, v3d stats refcount)",
-      "web_link": "https://bugs.launchpad.net/bugs/2172644"
     },
     "2172746": {
       "date_created": "2026-11-02T10:56:43.874145+00:00",
@@ -1593,7 +1571,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2173959"
     }
   },
-  "last_scan_utc": "2026-11-12T05:46:35.365070+00:00",
+  "last_scan_utc": "2026-11-12T16:37:21.075649+00:00",
   "packages": [
     "linux-raspi"
   ]

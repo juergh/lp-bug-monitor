@@ -1857,11 +1857,11 @@
     },
     "2160682": {
       "date_created": "2026-07-15T07:33:52.713471+00:00",
-      "date_last_updated": "2026-11-10T08:17:55.385404+00:00",
+      "date_last_updated": "2026-11-12T06:27:36.072483+00:00",
       "has_activity_after_incomplete": true,
       "id": 2160682,
-      "last_activity_summary": "description: [SRU Justification]\n\n[Impact]\n\nIntel WhP2 (BE211), SpP2 (BE213) WiFi/Bluetooth for Intel Nova Lake platforms take new firmware blob released with core108 API.\n\n[Fix]\n\nWiFi:\n* commit 181c33e757b0 (\"iwlwifi: add Sc2/Wh FW for core24.70-99 release\")\n* commit 47f558b2e0d3 (\"iwlwifi: add Sc2/Wh FW for core24.80-41 release\")\n\nBluetooth:\n* commit ca47bdb2ff05 (\"linux-firmware: Update firmware file for Intel Scorpius2 core\")\n* commit 416a692f3492 (\"linux-firmware: Update firmware file for Intel Scorpius2 core\")\n\n[Test Plan]\n\n1. While kernel is not yet ready, install prebuilt backport-iwlwifi-dkms of version >= 24.80 from ppa:~canonical-hwe-team/experimental-dkms or ppa:~vicamo/ppa-2162157\n2. reboot to the kernel with 24.80 iwlwifi dkms modules\n3. Check wifi link availability with `ip` or `iw`.\n\n[Where problems could occur]\n\nThis adds the corresponding firmware blobs to existing platforms that are used to be driven by core 103 or lower API. The firmware blobs are opaque, stable fix come later if ever found.\n\n[Other Info]\n\nIntel Nova Lake support is meant for Stonking 7.3 and on. Nominate for R, S and T.\n\n========== original bug report ==========\n\n* WhP2/SpP2/LzP2 (ES)\n\u00a0\u00a0* WiFi\n\u00a0\u00a0\u00a0\u00a0- iwlwifi-sc-a0-wh-b0.pnvm (optional)\n\u00a0\u00a0\u00a0\u00a0- iwlwifi-sc-a0-wh-b0-core103.ucode\n\u00a0\u00a0\u00a0\u00a0- iwlwifi-sc2-a0-fm-c0-c103.ucode\n\u00a0\u00a0\u00a0\u00a0- iwlwifi-sc2-a0-wh-b0-c103.ucode\n\u00a0\u00a0* BT\n\u00a0\u00a0\u00a0\u00a0- intel/ibt-00a2-01a1.ddc\n\u00a0\u00a0\u00a0\u00a0- intel/ibt-00a2-01a1.sfi\n\u00a0\u00a0\u00a0\u00a0- intel/ibt-00a2-01a1-iml.sfi\n* WhP2/SpP2 (QS)\n\u00a0\u00a0* WiFi\n\u00a0\u00a0\u00a0\u00a0- iwlwifi-sc2-a0-wh-b0-c108.ucode\n\u00a0\u00a0* BT\n\u00a0\u00a0\u00a0\u00a0- intel/ibt-02a2-01a1.ddc\n\u00a0\u00a0\u00a0\u00a0- intel/ibt-02a2-01a1.sfi\n\u00a0\u00a0\u00a0\u00a0- intel/ibt-02a2-01a1-iml.sfi by vicamo",
-      "last_activity_time": "2026-11-10T08:17:55.385404+00:00",
+      "last_activity_summary": "linux-firmware-intel-wireless (Ubuntu): status: Fix Committed by juergh",
+      "last_activity_time": "2026-11-12T06:27:36.072483+00:00",
       "owner": "You-Sheng Yang",
       "package": "linux-firmware-intel-wireless",
       "packages": [
@@ -1892,7 +1892,7 @@
           "importance": "Undecided",
           "is_complete": false,
           "series": null,
-          "status": "In Progress",
+          "status": "Fix Committed",
           "target": "linux-firmware-intel-wireless (Ubuntu)",
           "target_display": "linux-firmware-intel-wireless (Ubuntu)",
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-intel-wireless/+bug/2160682"
@@ -2092,11 +2092,11 @@
     },
     "2162157": {
       "date_created": "2026-07-30T14:41:59.415096+00:00",
-      "date_last_updated": "2026-11-11T07:50:45.961862+00:00",
+      "date_last_updated": "2026-11-12T06:25:56.577001+00:00",
       "has_activity_after_incomplete": false,
       "id": 2162157,
-      "last_activity_summary": "backport-iwlwifi-dkms (Ubuntu Stonking): assignee: You-Sheng Yang (vicamo) by vicamo",
-      "last_activity_time": "2026-11-11T07:50:45.961862+00:00",
+      "last_activity_summary": "linux-firmware-intel-wireless (Ubuntu): status: Fix Committed by juergh",
+      "last_activity_time": "2026-11-12T06:25:56.577001+00:00",
       "owner": "You-Sheng Yang",
       "package": "linux-firmware-intel-wireless",
       "packages": [
@@ -2126,7 +2126,7 @@
           "importance": "High",
           "is_complete": false,
           "series": null,
-          "status": "In Progress",
+          "status": "Fix Committed",
           "target": "linux-firmware-intel-wireless (Ubuntu)",
           "target_display": "linux-firmware-intel-wireless (Ubuntu)",
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-intel-wireless/+bug/2162157"
@@ -3808,11 +3808,11 @@
     },
     "2170529": {
       "date_created": "2026-10-12T06:33:54.148237+00:00",
-      "date_last_updated": "2026-10-16T01:17:09.926094+00:00",
+      "date_last_updated": "2026-11-12T15:51:24.228804+00:00",
       "has_activity_after_incomplete": false,
       "id": 2170529,
-      "last_activity_summary": "description: BugLink: https://bugs.launchpad.net/bugs/2170529\n\n[ Impact ]\n\ngfx1103 covers both GC 11.0.1 (PHX1/HPT1) and GC 11.0.4 (PHX2/HPT2).\n\nThere are known stability issues with ROCm on with gfx1103 that are root caused to the GC firmware.\n\nThere's a PyTorch test failure reported publicly[1]. From our internal testing this may also manifest as GPU hang when running workload with vLLM and ComfyUI. The updated firmware resolves these issues.\n\n[ Fix ]\n\nUpdate linux-firmware binaries for gfx1103 to at least commit 9ec083c3aba9[2]\n\n[ Test Plan ]\n\n1. For all releases: boot and run basic graphic tests (e.g. glxgears, glmark2). Make sure graphic functions work.\n\n2. Additionally, for a release where ROCm is meant to support: re-run the test in [1], and make sure that doesn't reproduce.\n\n[ Where problems could occur]\n\nBad firmware may impact compute workload and graphic rendering on the said silicon. However because of how amdgpu works, this only impacts platforms with the said IP blocks.\n\nTest packages of linux-firmware-amd-graphics including these firmware were built for Noble, Resolute, Stonking and wrere tested internally by our team, and they confirmed the firmware is working on the respective releases.\n\n[ Additional information]\n\n[1] https://github.com/ROCm/TheRock/issues/6252\n[2] https://gitlab.com/kernel-firmware/linux-firmware/-/commit/9ec083c3aba932190e3c160e52cbb7e264148b61 by 0xff07",
-      "last_activity_time": "2026-10-16T01:17:09.926094+00:00",
+      "last_activity_summary": "linux-firmware-amd-graphics (Ubuntu Noble): status: Fix Committed by juergh",
+      "last_activity_time": "2026-11-12T15:51:24.228804+00:00",
       "owner": "Leo Lin",
       "package": "linux-firmware-amd-graphics",
       "packages": [
@@ -3825,12 +3825,12 @@
       "tasks": [
         {
           "assignee": null,
-          "date_closed": null,
+          "date_closed": "2026-11-12T15:44:29.780420+00:00",
           "date_created": "2026-10-12T06:33:54.148237+00:00",
           "importance": "Undecided",
-          "is_complete": false,
+          "is_complete": true,
           "series": null,
-          "status": "New",
+          "status": "Invalid",
           "target": "linux-firmware-amd-graphics (Ubuntu)",
           "target_display": "linux-firmware-amd-graphics (Ubuntu)",
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-amd-graphics/+bug/2170529"
@@ -3842,7 +3842,7 @@
           "importance": "Undecided",
           "is_complete": false,
           "series": "noble",
-          "status": "New",
+          "status": "Fix Committed",
           "target": "linux-firmware-amd-graphics (Ubuntu Noble)",
           "target_display": "linux-firmware-amd-graphics (Ubuntu Noble)",
           "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-amd-graphics/+bug/2170529"
@@ -3854,7 +3854,7 @@
           "importance": "Undecided",
           "is_complete": false,
           "series": "resolute",
-          "status": "New",
+          "status": "Fix Committed",
           "target": "linux-firmware-amd-graphics (Ubuntu Resolute)",
           "target_display": "linux-firmware-amd-graphics (Ubuntu Resolute)",
           "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-amd-graphics/+bug/2170529"
@@ -3866,7 +3866,7 @@
           "importance": "Undecided",
           "is_complete": false,
           "series": "stonking",
-          "status": "New",
+          "status": "Fix Committed",
           "target": "linux-firmware-amd-graphics (Ubuntu Stonking)",
           "target_display": "linux-firmware-amd-graphics (Ubuntu Stonking)",
           "web_link": "https://bugs.launchpad.net/ubuntu/stonking/+source/linux-firmware-amd-graphics/+bug/2170529"
@@ -4210,11 +4210,11 @@
     },
     "2172895": {
       "date_created": "2026-11-04T02:20:06.152073+00:00",
-      "date_last_updated": "2026-11-10T01:39:10.784097+00:00",
+      "date_last_updated": "2026-11-12T16:19:36.077683+00:00",
       "has_activity_after_incomplete": false,
       "id": 2172895,
-      "last_activity_summary": "bug task deleted updated by vicamo",
-      "last_activity_time": "2026-11-10T01:39:47.492385+00:00",
+      "last_activity_summary": "linux-firmware-intel-misc (Ubuntu Resolute): status: Fix Committed by juergh",
+      "last_activity_time": "2026-11-12T16:19:36.077683+00:00",
       "owner": "You-Sheng Yang",
       "package": "linux-firmware-intel-misc",
       "packages": [
@@ -4244,7 +4244,7 @@
           "importance": "High",
           "is_complete": false,
           "series": null,
-          "status": "In Progress",
+          "status": "Fix Committed",
           "target": "linux-firmware-intel-misc (Ubuntu)",
           "target_display": "linux-firmware-intel-misc (Ubuntu)",
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-intel-misc/+bug/2172895"
@@ -4268,7 +4268,7 @@
           "importance": "High",
           "is_complete": false,
           "series": "resolute",
-          "status": "In Progress",
+          "status": "Fix Committed",
           "target": "linux-firmware-intel-misc (Ubuntu Resolute)",
           "target_display": "linux-firmware-intel-misc (Ubuntu Resolute)",
           "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-intel-misc/+bug/2172895"
@@ -4292,7 +4292,7 @@
           "importance": "High",
           "is_complete": false,
           "series": "stonking",
-          "status": "In Progress",
+          "status": "Fix Committed",
           "target": "linux-firmware-intel-misc (Ubuntu Stonking)",
           "target_display": "linux-firmware-intel-misc (Ubuntu Stonking)",
           "web_link": "https://bugs.launchpad.net/ubuntu/stonking/+source/linux-firmware-intel-misc/+bug/2172895"
@@ -4316,7 +4316,7 @@
           "importance": "High",
           "is_complete": false,
           "series": "tenacious",
-          "status": "In Progress",
+          "status": "Fix Committed",
           "target": "linux-firmware-intel-misc (Ubuntu Tenacious)",
           "target_display": "linux-firmware-intel-misc (Ubuntu Tenacious)",
           "web_link": "https://bugs.launchpad.net/ubuntu/tenacious/+source/linux-firmware-intel-misc/+bug/2172895"
@@ -4372,53 +4372,6 @@
       "title": "[MT7921] Bluetooth SCO (HFP/HSP microphone) broken \u2014 Setup Synchronous Connection rejected (0x20), corrupted SCO packets",
       "web_link": "https://bugs.launchpad.net/bugs/2173021"
     },
-    "2173041": {
-      "date_created": "2026-11-05T01:05:48.037466+00:00",
-      "date_last_updated": "2026-11-12T00:54:04.107542+00:00",
-      "has_activity_after_incomplete": false,
-      "id": 2173041,
-      "last_activity_summary": "bug updated by meamgood",
-      "last_activity_time": "2026-11-12T00:54:04.107542+00:00",
-      "owner": "Adrien Lebrun",
-      "package": "linux-firmware-amd-graphics",
-      "packages": [
-        "linux-firmware-amd-graphics"
-      ],
-      "tags": [
-        "kernel-daily-bug",
-        "linux-firmware-daily-bug",
-        "regression-update",
-        "verification-done-noble"
-      ],
-      "tasks": [
-        {
-          "assignee": null,
-          "date_closed": "2026-11-05T14:36:27.152790+00:00",
-          "date_created": "2026-11-05T01:05:48.037466+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": null,
-          "status": "Invalid",
-          "target": "linux-firmware-amd-graphics (Ubuntu)",
-          "target_display": "linux-firmware-amd-graphics (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-amd-graphics/+bug/2173041"
-        },
-        {
-          "assignee": "Juerg Haefliger",
-          "date_closed": null,
-          "date_created": "2026-11-05T14:32:25.777120+00:00",
-          "importance": "Critical",
-          "is_complete": false,
-          "series": "noble",
-          "status": "Fix Committed",
-          "target": "linux-firmware-amd-graphics (Ubuntu Noble)",
-          "target_display": "linux-firmware-amd-graphics (Ubuntu Noble)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-amd-graphics/+bug/2173041"
-        }
-      ],
-      "title": "black screen after upgrading linux-firmware-amd-graphics to 0ubuntu3.4",
-      "web_link": "https://bugs.launchpad.net/bugs/2173041"
-    },
     "2173164": {
       "date_created": "2026-11-05T17:50:03.742110+00:00",
       "date_last_updated": "2026-11-06T09:20:29.164805+00:00",
@@ -4464,17 +4417,85 @@
       "title": "Intel AX210 AP mode firmware crashes on Ubuntu 24.04 \u2013 outdated firmware update requested",
       "web_link": "https://bugs.launchpad.net/bugs/2173164"
     },
+    "2173379": {
+      "date_created": "2026-11-05T23:42:20.190955+00:00",
+      "date_last_updated": "2026-11-12T07:16:00.105170+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2173379,
+      "last_activity_summary": "bug task added: linux-firmware-intel-wireless (Ubuntu Noble) by juergh",
+      "last_activity_time": "2026-11-12T07:16:10.096297+00:00",
+      "owner": "Paolo Gentili",
+      "package": "linux-firmware-intel-wireless",
+      "packages": [
+        "linux-firmware-intel-wireless"
+      ],
+      "tags": [
+        "kernel-daily-bug"
+      ],
+      "tasks": [
+        {
+          "assignee": "AaronMa",
+          "date_closed": null,
+          "date_created": "2026-11-05T23:42:20.190955+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "Triaged",
+          "target": "linux (Ubuntu)",
+          "target_display": "linux (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux/+bug/2173379"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-06T18:05:42.332477+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "linux-firmware-intel-wireless (Ubuntu)",
+          "target_display": "linux-firmware-intel-wireless (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-intel-wireless/+bug/2173379"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-12T07:16:10.096297+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "noble",
+          "status": "New",
+          "target": "linux (Ubuntu Noble)",
+          "target_display": "linux (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux/+bug/2173379"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-12T07:16:10.096297+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "noble",
+          "status": "New",
+          "target": "linux-firmware-intel-wireless (Ubuntu Noble)",
+          "target_display": "linux-firmware-intel-wireless (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-intel-wireless/+bug/2173379"
+        }
+      ],
+      "title": "Intel BE201 fails firmware initialization with PHY_CONFIGURATION_CMD error on linux-oem-24.04d 7.0.0-43",
+      "web_link": "https://bugs.launchpad.net/bugs/2173379"
+    },
     "2173720": {
       "date_created": "2026-11-09T05:19:20.213746+00:00",
-      "date_last_updated": "2026-11-10T01:22:32.675104+00:00",
+      "date_last_updated": "2026-11-12T07:21:32.570636+00:00",
       "has_activity_after_incomplete": false,
       "id": 2173720,
-      "last_activity_summary": "linux-firmware (Ubuntu): status: Invalid by hwe-oem-bot",
-      "last_activity_time": "2026-11-10T01:22:32.675104+00:00",
+      "last_activity_summary": "affects: linux-firmware-intel-wireless (Ubuntu) by juergh",
+      "last_activity_time": "2026-11-12T07:21:32.570636+00:00",
       "owner": "HWE oem bot",
-      "package": "linux-firmware",
+      "package": "linux-firmware-intel-wireless",
       "packages": [
-        "linux-firmware"
+        "linux-firmware-intel-wireless"
       ],
       "tags": [
         "jira-pgn-20",
@@ -4492,9 +4513,9 @@
           "is_complete": true,
           "series": null,
           "status": "Invalid",
-          "target": "linux-firmware (Ubuntu)",
-          "target_display": "linux-firmware (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2173720"
+          "target": "linux-firmware-intel-wireless (Ubuntu)",
+          "target_display": "linux-firmware-intel-wireless (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-intel-wireless/+bug/2173720"
         },
         {
           "assignee": "HWE oem bot",
@@ -4504,9 +4525,9 @@
           "is_complete": false,
           "series": "resolute",
           "status": "In Progress",
-          "target": "linux-firmware (Ubuntu Resolute)",
-          "target_display": "linux-firmware (Ubuntu Resolute)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware/+bug/2173720"
+          "target": "linux-firmware-intel-wireless (Ubuntu Resolute)",
+          "target_display": "linux-firmware-intel-wireless (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-intel-wireless/+bug/2173720"
         },
         {
           "assignee": "HWE oem bot",
@@ -4516,9 +4537,9 @@
           "is_complete": false,
           "series": "stonking",
           "status": "In Progress",
-          "target": "linux-firmware (Ubuntu Stonking)",
-          "target_display": "linux-firmware (Ubuntu Stonking)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/stonking/+source/linux-firmware/+bug/2173720"
+          "target": "linux-firmware-intel-wireless (Ubuntu Stonking)",
+          "target_display": "linux-firmware-intel-wireless (Ubuntu Stonking)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/stonking/+source/linux-firmware-intel-wireless/+bug/2173720"
         }
       ],
       "title": "Intel Wi-Fi 7 firmware error and call trace at boot on Dell systems",
@@ -4526,11 +4547,11 @@
     },
     "2173725": {
       "date_created": "2026-11-09T07:27:53.183226+00:00",
-      "date_last_updated": "2026-11-10T05:59:07.250845+00:00",
+      "date_last_updated": "2026-11-12T12:38:32.620192+00:00",
       "has_activity_after_incomplete": false,
       "id": 2173725,
-      "last_activity_summary": "tags: kernel-daily-bug linux-firmware-daily-bug originate-from-2170610 by 0xff07",
-      "last_activity_time": "2026-11-10T05:59:07.250845+00:00",
+      "last_activity_summary": "linux-firmware-amd-misc (Ubuntu): status: Invalid by 0xff07",
+      "last_activity_time": "2026-11-12T12:38:32.620192+00:00",
       "owner": "Leo Lin",
       "package": "linux-firmware-amd-misc",
       "packages": [
@@ -4545,11 +4566,23 @@
         {
           "assignee": null,
           "date_closed": null,
-          "date_created": "2026-11-09T07:28:57.557336+00:00",
+          "date_created": "2026-11-12T12:36:18.059414+00:00",
           "importance": "Undecided",
           "is_complete": false,
           "series": null,
           "status": "New",
+          "target": "amd64-microcode (Ubuntu)",
+          "target_display": "amd64-microcode (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/amd64-microcode/+bug/2173725"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2026-11-12T12:36:35.525528+00:00",
+          "date_created": "2026-11-09T07:28:57.557336+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": null,
+          "status": "Invalid",
           "target": "linux-firmware-amd-misc (Ubuntu)",
           "target_display": "linux-firmware-amd-misc (Ubuntu)",
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-amd-misc/+bug/2173725"
@@ -4572,11 +4605,11 @@
     },
     "2173838": {
       "date_created": "2026-11-10T06:53:22.109455+00:00",
-      "date_last_updated": "2026-11-10T23:03:30.944463+00:00",
+      "date_last_updated": "2026-11-12T06:30:42.806706+00:00",
       "has_activity_after_incomplete": false,
       "id": 2173838,
-      "last_activity_summary": "tags: jira-somerville-4911 jira-somerville-5869 kernel-daily-bug linux-firmware-daily-bug oem-priority somerville by ubuntu-kernel-bot",
-      "last_activity_time": "2026-11-10T23:03:30.944463+00:00",
+      "last_activity_summary": "linux-firmware-misc (Ubuntu Tenacious): status: Fix Committed by juergh",
+      "last_activity_time": "2026-11-12T06:30:42.806706+00:00",
       "owner": "Chris Chiu",
       "package": "linux-firmware-misc",
       "packages": [
@@ -4622,7 +4655,7 @@
           "importance": "Undecided",
           "is_complete": false,
           "series": null,
-          "status": "New",
+          "status": "Fix Committed",
           "target": "linux-firmware-misc (Ubuntu)",
           "target_display": "linux-firmware-misc (Ubuntu)",
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-misc/+bug/2173838"
@@ -4718,7 +4751,7 @@
           "importance": "Undecided",
           "is_complete": false,
           "series": "tenacious",
-          "status": "New",
+          "status": "Fix Committed",
           "target": "linux-firmware-misc (Ubuntu Tenacious)",
           "target_display": "linux-firmware-misc (Ubuntu Tenacious)",
           "web_link": "https://bugs.launchpad.net/ubuntu/tenacious/+source/linux-firmware-misc/+bug/2173838"
@@ -4908,15 +4941,15 @@
     },
     "2173976": {
       "date_created": "2026-11-11T09:01:51.316440+00:00",
-      "date_last_updated": "2026-11-11T23:02:05.320157+00:00",
+      "date_last_updated": "2026-11-12T07:20:15.409020+00:00",
       "has_activity_after_incomplete": false,
       "id": 2173976,
-      "last_activity_summary": "tags: kernel-daily-bug linux-firmware-daily-bug verification-needed-resolute by ubuntu-kernel-bot",
-      "last_activity_time": "2026-11-11T23:02:05.320157+00:00",
+      "last_activity_summary": "bug task added: linux-hwe-7.0 (Ubuntu Noble) by juergh",
+      "last_activity_time": "2026-11-12T07:20:23.545939+00:00",
       "owner": "Edoardo Canepa",
-      "package": "linux-firmware",
+      "package": "linux-firmware-intel-wireless",
       "packages": [
-        "linux-firmware"
+        "linux-firmware-intel-wireless"
       ],
       "tags": [
         "kernel-daily-bug",
@@ -4932,9 +4965,9 @@
           "is_complete": false,
           "series": null,
           "status": "New",
-          "target": "linux-firmware (Ubuntu)",
-          "target_display": "linux-firmware (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2173976"
+          "target": "linux-firmware-intel-wireless (Ubuntu)",
+          "target_display": "linux-firmware-intel-wireless (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-intel-wireless/+bug/2173976"
         },
         {
           "assignee": null,
@@ -4947,13 +4980,37 @@
           "target": "linux-hwe-7.0 (Ubuntu)",
           "target_display": "linux-hwe-7.0 (Ubuntu)",
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-hwe-7.0/+bug/2173976"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-12T07:20:23.545939+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "noble",
+          "status": "New",
+          "target": "linux-firmware-intel-wireless (Ubuntu Noble)",
+          "target_display": "linux-firmware-intel-wireless (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-intel-wireless/+bug/2173976"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-12T07:20:23.545939+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "noble",
+          "status": "New",
+          "target": "linux-hwe-7.0 (Ubuntu Noble)",
+          "target_display": "linux-hwe-7.0 (Ubuntu Noble)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-hwe-7.0/+bug/2173976"
         }
       ],
       "title": "[HP EliteBook 6 G1i 16] AX211 Wi-Fi and BT dead on 7.0: NMI_INTERRUPT_UMAC_FATAL with bz-b0-gf-a0-100 ",
       "web_link": "https://bugs.launchpad.net/bugs/2173976"
     }
   },
-  "last_scan_utc": "2026-11-12T05:42:27.807803+00:00",
+  "last_scan_utc": "2026-11-12T16:33:30.034748+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
