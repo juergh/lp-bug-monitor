@@ -4374,11 +4374,11 @@
     },
     "2173041": {
       "date_created": "2026-11-05T01:05:48.037466+00:00",
-      "date_last_updated": "2026-11-10T06:48:22.230705+00:00",
+      "date_last_updated": "2026-11-12T00:54:04.107542+00:00",
       "has_activity_after_incomplete": false,
       "id": 2173041,
-      "last_activity_summary": "tags: kernel-daily-bug linux-firmware-daily-bug regression-update verification-done-noble by rorose",
-      "last_activity_time": "2026-11-10T06:48:22.230705+00:00",
+      "last_activity_summary": "bug updated by meamgood",
+      "last_activity_time": "2026-11-12T00:54:04.107542+00:00",
       "owner": "Adrien Lebrun",
       "package": "linux-firmware-amd-graphics",
       "packages": [
@@ -4815,17 +4815,20 @@
     },
     "2173970": {
       "date_created": "2026-11-11T08:09:15.060610+00:00",
-      "date_last_updated": "2026-11-11T08:12:11.945909+00:00",
-      "has_activity_after_incomplete": false,
+      "date_last_updated": "2026-11-11T23:02:19.795584+00:00",
+      "has_activity_after_incomplete": true,
       "id": 2173970,
-      "last_activity_summary": "backport-iwlwifi-dkms (Ubuntu Resolute): status: Won't Fix by vicamo",
-      "last_activity_time": "2026-11-11T08:12:11.945909+00:00",
+      "last_activity_summary": "tags: kernel-daily-bug linux-firmware-daily-bug by ubuntu-kernel-bot",
+      "last_activity_time": "2026-11-11T23:02:19.795584+00:00",
       "owner": "You-Sheng Yang",
       "package": "linux-firmware-intel-wireless",
       "packages": [
         "linux-firmware-intel-wireless"
       ],
-      "tags": [],
+      "tags": [
+        "kernel-daily-bug",
+        "linux-firmware-daily-bug"
+      ],
       "tasks": [
         {
           "assignee": null,
@@ -4905,17 +4908,19 @@
     },
     "2173976": {
       "date_created": "2026-11-11T09:01:51.316440+00:00",
-      "date_last_updated": "2026-11-11T09:23:25.429708+00:00",
+      "date_last_updated": "2026-11-11T23:02:05.320157+00:00",
       "has_activity_after_incomplete": false,
       "id": 2173976,
-      "last_activity_summary": "description: [Hardware]\nMachine: HP EliteBook 6 G1i 16 inch Notebook Next Gen AI PC (CID 202501-36238)\nCPU: Intel Core Ultra 7 265H (Arrow Lake-H)\nWireless Adapter: Intel Wi-Fi 6E AX211 160MHz (CNVi, RF GF), with Bluetooth on the same combo\nPCI ID: 8086:7740\nSubsystem ID: 8086:0090\nBIOS: X74 Ver. 01.01.06\n\n[Environment]\nOS: Ubuntu 24.04 LTS (noble)\nSuspect Kernel: linux-image-7.0.0-43-generic (7.0.0-43.43~24.04.1 from noble-proposed)\nBaseline Working Kernel: linux-image-6.17.0-1033-oem (6.17.0-1033.33 from noble-updates)\nFirmware: linux-firmware-intel-wireless 20240318.git3b128b60-0ubuntu3.1, the same on both kernels\nOEM meta: linux-oem-24.04b, which moves from 6.17.0-1033.33 to 7.0.0-43.43~24.04.1 with this upload\n\n[Symptoms]\nOn kernel 7.0.0-43, iwlwifi loads the firmware, but the runtime firmware never reports alive. The driver logs NMI_INTERRUPT_UMAC_FATAL and \"Failed to start RT ucode: -110\", then \"Failed to run INIT ucode: -110\", and keeps retrying with \"timeout waiting for FW reset ACK\". No wireless interface is registered. The Bluetooth function of the same combo times out at the same time, so there is no Bluetooth either.\n\ndmesg excerpts on 7.0.0-43-generic:\n[    2.907813] iwlwifi 0000:00:14.3: PCI dev 7740/0090, rev=0x461, rfid=0x2010d000\n[    2.911964] iwlwifi 0000:00:14.3: loaded firmware version 100.d6bb293f.0 bz-b0-gf-a0-100.ucode op_mode iwlmvm\n[    5.155527] iwlwifi 0000:00:14.3: 0x00000071 | NMI_INTERRUPT_UMAC_FATAL\n[    5.155636] iwlwifi 0000:00:14.3: 0x20100502 | ADVANCED_SYSASSERT\n[    5.155919] iwlwifi 0000:00:14.3: Failed to start RT ucode: -110\n[    6.466236] iwlwifi 0000:00:14.3: timeout waiting for FW reset ACK (inta_hw=0x8, reset_done 0)\n[    6.946211] Bluetooth: hci0: Reading Intel version information failed (-110)\n[    6.946246] Bluetooth: hci0: command 0xfc05 tx timeout\n[    9.012555] iwlwifi 0000:00:14.3: Failed to run INIT ucode: -110\n[   11.106663] iwlwifi 0000:00:14.3: Failed to start RT ucode: -110\n\nCertification failures on 7.0.0-43: \"Detect if at least one Wireless LAN device is detected\" and \"Make sure at least one bluetooth device is detected\".\n\n[A/B Verification]\nOn the same physical DUT (hp-elitebook-6-g1i-16-inch-notebook-ai-pc-x8wbsku4aba-c36238), with the same firmware build on both kernels:\n1. 6.17.0-1033-oem (certification run, 2026-09-15): iwlwifi loads 100.d6bb293f.0 bz-b0-gf-a0-100.ucode and registers wlp0s20f3. All Wi-Fi and Bluetooth tests pass, for example \"Connect to WPA-encrypted 802.11ax Wi-Fi network on wlp0s20f3\" and \"Check if the system can connect to a Bluetooth speaker using A2DP profile\".\n\u00a0\u00a0\u00a0\u00a0\u00a0iwlwifi 0000:00:14.3: PCI dev 7740/0090, rev=0x461, rfid=0x2010d000\n\u00a0\u00a0\u00a0\u00a0\u00a0iwlwifi 0000:00:14.3: loaded firmware version 100.d6bb293f.0 bz-b0-gf-a0-100.ucode op_mode iwlmvm\n\u00a0\u00a0\u00a0\u00a0\u00a0iwlwifi 0000:00:14.3 wlp0s20f3: renamed from wlan0\n2. 7.0.0-43-generic (certification run, 2026-11-05): the failure above, with the same firmware file and build.\n\n[Cross-Machine Data]\nOn TO deb 416751 (7.0.0-43), the same AX211 RF (rfid 0x2010d000) with the same firmware (100.d6bb293f.0 bz-b0-gf-a0-100.ucode, iwlmvm):\n- hp-elitebook-6-g1i-16-inch-notebook-ai-pc-x8wbsku4aba-c36238 (8086:7740 / subsys 8086:0090): fails as above.\n- hp-zbook-8-g1i-16-inch-mobile-workstation-pc-1234567aba-c36189 (8086:7740 / subsys 8086:0094, Core Ultra 7 255H): passes. wlp0s20f3 comes up, with 0 firmware errors. An A/B of 7.0.0-42 against 7.0.0-43 on this machine behaves the same on both kernels.\n- dell-pro-13-plus-pb13250-0cf4-c36134 (8086:7740 / subsys 8086:4090): no UMAC_FATAL.\n\nNo other 8086:7740/0090 machine was available. The two sibling EliteBook 6 G1i 16 units (c36233 and c36237) fail lab provisioning (\"Failed to boot test image!\"). So whether this affects the 0090 module variant together with 7.0, or only this unit, is open.\n\nThe 7.0.0-42..43 diff has no iwlwifi changes, so 7.0.0-42 is expected to behave the same. by ecanepa",
-      "last_activity_time": "2026-11-11T09:23:25.429708+00:00",
+      "last_activity_summary": "tags: kernel-daily-bug linux-firmware-daily-bug verification-needed-resolute by ubuntu-kernel-bot",
+      "last_activity_time": "2026-11-11T23:02:05.320157+00:00",
       "owner": "Edoardo Canepa",
       "package": "linux-firmware",
       "packages": [
         "linux-firmware"
       ],
       "tags": [
+        "kernel-daily-bug",
+        "linux-firmware-daily-bug",
         "verification-needed-resolute"
       ],
       "tasks": [
@@ -4948,7 +4953,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2173976"
     }
   },
-  "last_scan_utc": "2026-11-11T22:28:01.725729+00:00",
+  "last_scan_utc": "2026-11-12T05:42:27.807803+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
