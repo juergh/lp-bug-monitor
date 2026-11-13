@@ -2967,11 +2967,11 @@
     },
     "2167683": {
       "date_created": "2026-09-18T08:55:15.281959+00:00",
-      "date_last_updated": "2026-11-10T08:34:01.411358+00:00",
+      "date_last_updated": "2026-11-12T16:40:37.742823+00:00",
       "has_activity_after_incomplete": false,
       "id": 2167683,
-      "last_activity_summary": "linux-firmware-intel-graphics (Ubuntu): status: Triaged by vicamo",
-      "last_activity_time": "2026-11-10T08:34:01.411358+00:00",
+      "last_activity_summary": "linux-firmware-intel-graphics (Ubuntu Stonking): status: Fix Committed by juergh",
+      "last_activity_time": "2026-11-12T16:40:37.742823+00:00",
       "owner": "You-Sheng Yang",
       "package": "linux-firmware-intel-graphics",
       "packages": [
@@ -3013,7 +3013,7 @@
           "importance": "High",
           "is_complete": false,
           "series": "stonking",
-          "status": "In Progress",
+          "status": "Fix Committed",
           "target": "linux-firmware-intel-graphics (Ubuntu Stonking)",
           "target_display": "linux-firmware-intel-graphics (Ubuntu Stonking)",
           "web_link": "https://bugs.launchpad.net/ubuntu/stonking/+source/linux-firmware-intel-graphics/+bug/2167683"
@@ -4487,11 +4487,11 @@
     },
     "2173720": {
       "date_created": "2026-11-09T05:19:20.213746+00:00",
-      "date_last_updated": "2026-11-12T07:21:32.570636+00:00",
+      "date_last_updated": "2026-11-12T16:37:34.875109+00:00",
       "has_activity_after_incomplete": false,
       "id": 2173720,
-      "last_activity_summary": "affects: linux-firmware-intel-wireless (Ubuntu) by juergh",
-      "last_activity_time": "2026-11-12T07:21:32.570636+00:00",
+      "last_activity_summary": "linux-firmware-intel-wireless (Ubuntu Stonking): status: Fix Committed by juergh",
+      "last_activity_time": "2026-11-12T16:37:34.875109+00:00",
       "owner": "HWE oem bot",
       "package": "linux-firmware-intel-wireless",
       "packages": [
@@ -4536,7 +4536,7 @@
           "importance": "Undecided",
           "is_complete": false,
           "series": "stonking",
-          "status": "In Progress",
+          "status": "Fix Committed",
           "target": "linux-firmware-intel-wireless (Ubuntu Stonking)",
           "target_display": "linux-firmware-intel-wireless (Ubuntu Stonking)",
           "web_link": "https://bugs.launchpad.net/ubuntu/stonking/+source/linux-firmware-intel-wireless/+bug/2173720"
@@ -4545,71 +4545,13 @@
       "title": "Intel Wi-Fi 7 firmware error and call trace at boot on Dell systems",
       "web_link": "https://bugs.launchpad.net/bugs/2173720"
     },
-    "2173725": {
-      "date_created": "2026-11-09T07:27:53.183226+00:00",
-      "date_last_updated": "2026-11-12T12:38:32.620192+00:00",
-      "has_activity_after_incomplete": false,
-      "id": 2173725,
-      "last_activity_summary": "linux-firmware-amd-misc (Ubuntu): status: Invalid by 0xff07",
-      "last_activity_time": "2026-11-12T12:38:32.620192+00:00",
-      "owner": "Leo Lin",
-      "package": "linux-firmware-amd-misc",
-      "packages": [
-        "linux-firmware-amd-misc"
-      ],
-      "tags": [
-        "kernel-daily-bug",
-        "linux-firmware-daily-bug",
-        "originate-from-2170610"
-      ],
-      "tasks": [
-        {
-          "assignee": null,
-          "date_closed": null,
-          "date_created": "2026-11-12T12:36:18.059414+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": null,
-          "status": "New",
-          "target": "amd64-microcode (Ubuntu)",
-          "target_display": "amd64-microcode (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/amd64-microcode/+bug/2173725"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-11-12T12:36:35.525528+00:00",
-          "date_created": "2026-11-09T07:28:57.557336+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": null,
-          "status": "Invalid",
-          "target": "linux-firmware-amd-misc (Ubuntu)",
-          "target_display": "linux-firmware-amd-misc (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-amd-misc/+bug/2173725"
-        },
-        {
-          "assignee": null,
-          "date_closed": null,
-          "date_created": "2026-11-09T07:27:53.183226+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": null,
-          "status": "New",
-          "target": "linux-oem-7.3 (Ubuntu)",
-          "target_display": "linux-oem-7.3 (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-oem-7.3/+bug/2173725"
-        }
-      ],
-      "title": "[SRU] Update Zen6 PMF support for firmware changes",
-      "web_link": "https://bugs.launchpad.net/bugs/2173725"
-    },
     "2173838": {
       "date_created": "2026-11-10T06:53:22.109455+00:00",
-      "date_last_updated": "2026-11-12T06:30:42.806706+00:00",
+      "date_last_updated": "2026-11-12T17:00:37.777733+00:00",
       "has_activity_after_incomplete": false,
       "id": 2173838,
-      "last_activity_summary": "linux-firmware-misc (Ubuntu Tenacious): status: Fix Committed by juergh",
-      "last_activity_time": "2026-11-12T06:30:42.806706+00:00",
+      "last_activity_summary": "linux-firmware-misc (Ubuntu Stonking): status: Fix Committed by juergh",
+      "last_activity_time": "2026-11-12T17:00:37.777733+00:00",
       "owner": "Chris Chiu",
       "package": "linux-firmware-misc",
       "packages": [
@@ -4719,6 +4661,54 @@
           "target": "linux-oem-7.3 (Ubuntu Resolute)",
           "target_display": "linux-oem-7.3 (Ubuntu Resolute)",
           "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-oem-7.3/+bug/2173838"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-12T16:59:25.733574+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "stonking",
+          "status": "New",
+          "target": "alsa-ucm-conf (Ubuntu Stonking)",
+          "target_display": "alsa-ucm-conf (Ubuntu Stonking)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/stonking/+source/alsa-ucm-conf/+bug/2173838"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-12T16:59:25.733574+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "stonking",
+          "status": "New",
+          "target": "linux (Ubuntu Stonking)",
+          "target_display": "linux (Ubuntu Stonking)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/stonking/+source/linux/+bug/2173838"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-12T16:59:25.733574+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "stonking",
+          "status": "Fix Committed",
+          "target": "linux-firmware-misc (Ubuntu Stonking)",
+          "target_display": "linux-firmware-misc (Ubuntu Stonking)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/stonking/+source/linux-firmware-misc/+bug/2173838"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-12T16:59:25.733574+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "stonking",
+          "status": "New",
+          "target": "linux-oem-7.3 (Ubuntu Stonking)",
+          "target_display": "linux-oem-7.3 (Ubuntu Stonking)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/stonking/+source/linux-oem-7.3/+bug/2173838"
         },
         {
           "assignee": null,
@@ -5010,7 +5000,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2173976"
     }
   },
-  "last_scan_utc": "2026-11-12T16:33:30.034748+00:00",
+  "last_scan_utc": "2026-11-13T00:53:02.424260+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
