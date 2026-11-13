@@ -1402,11 +1402,11 @@
     },
     "2173603": {
       "date_created": "2026-11-07T00:06:33.838353+00:00",
-      "date_last_updated": "2026-11-07T23:07:52.644821+00:00",
+      "date_last_updated": "2026-11-13T16:09:45.260554+00:00",
       "has_activity_after_incomplete": false,
       "id": 2173603,
-      "last_activity_summary": "tags: kernel-daily-bug by ubuntu-kernel-bot",
-      "last_activity_time": "2026-11-07T23:07:52.644821+00:00",
+      "last_activity_summary": "linux-raspi (Ubuntu): status: In Progress by liaomaizi",
+      "last_activity_time": "2026-11-13T16:09:45.260554+00:00",
       "owner": "Maizi Liao",
       "package": "linux-raspi",
       "packages": [
@@ -1423,7 +1423,7 @@
           "importance": "Undecided",
           "is_complete": false,
           "series": null,
-          "status": "New",
+          "status": "In Progress",
           "target": "linux-raspi (Ubuntu)",
           "target_display": "linux-raspi (Ubuntu)",
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2173603"
@@ -1435,7 +1435,7 @@
           "importance": "Undecided",
           "is_complete": false,
           "series": "noble",
-          "status": "New",
+          "status": "In Progress",
           "target": "linux-raspi (Ubuntu Noble)",
           "target_display": "linux-raspi (Ubuntu Noble)",
           "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-raspi/+bug/2173603"
@@ -1571,7 +1571,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2173959"
     }
   },
-  "last_scan_utc": "2026-11-13T11:55:57.933891+00:00",
+  "last_scan_utc": "2026-11-13T19:14:50.460155+00:00",
   "packages": [
     "linux-raspi"
   ]
