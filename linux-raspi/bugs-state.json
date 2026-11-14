@@ -1534,11 +1534,11 @@
     },
     "2173959": {
       "date_created": "2026-11-11T03:06:51.350965+00:00",
-      "date_last_updated": "2026-11-11T23:18:47.661743+00:00",
+      "date_last_updated": "2026-11-14T20:57:23.867399+00:00",
       "has_activity_after_incomplete": false,
       "id": 2173959,
-      "last_activity_summary": "tags: apport-bug arm64 arm64-image kernel-daily-bug raspi-image resolute staging by ubuntu-kernel-bot",
-      "last_activity_time": "2026-11-11T23:18:47.661743+00:00",
+      "last_activity_summary": "linux-raspi (Ubuntu): status: Confirmed by janitor",
+      "last_activity_time": "2026-11-14T20:57:23.867399+00:00",
       "owner": "Serge Valcourt",
       "package": "linux-raspi",
       "packages": [
@@ -1561,7 +1561,7 @@
           "importance": "Undecided",
           "is_complete": false,
           "series": null,
-          "status": "New",
+          "status": "Confirmed",
           "target": "linux-raspi (Ubuntu)",
           "target_display": "linux-raspi (Ubuntu)",
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2173959"
@@ -1571,7 +1571,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2173959"
     }
   },
-  "last_scan_utc": "2026-11-14T17:42:19.917507+00:00",
+  "last_scan_utc": "2026-11-14T23:40:52.986062+00:00",
   "packages": [
     "linux-raspi"
   ]
