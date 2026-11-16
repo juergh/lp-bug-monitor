@@ -1122,11 +1122,11 @@
     },
     "2166421": {
       "date_created": "2026-09-03T21:47:36.894180+00:00",
-      "date_last_updated": "2026-09-16T18:13:08.018961+00:00",
+      "date_last_updated": "2026-11-16T17:49:54.216067+00:00",
       "has_activity_after_incomplete": false,
       "id": 2166421,
-      "last_activity_summary": "bug updated by ffried",
-      "last_activity_time": "2026-10-13T07:25:34.272651+00:00",
+      "last_activity_summary": "linux-raspi (Ubuntu Resolute): status: Confirmed by janitor",
+      "last_activity_time": "2026-11-16T17:49:54.216067+00:00",
       "owner": "Krish De Souza",
       "package": "linux-raspi",
       "packages": [
@@ -1149,6 +1149,18 @@
           "target": "linux-raspi (Ubuntu)",
           "target_display": "linux-raspi (Ubuntu)",
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2166421"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-09T14:54:08.187514+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "resolute",
+          "status": "Confirmed",
+          "target": "linux-raspi (Ubuntu Resolute)",
+          "target_display": "linux-raspi (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-raspi/+bug/2166421"
         }
       ],
       "title": "Malformed early option 'numa' passed in numa=fake=8",
@@ -1571,7 +1583,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2173959"
     }
   },
-  "last_scan_utc": "2026-11-16T04:45:46.260023+00:00",
+  "last_scan_utc": "2026-11-16T17:58:52.833193+00:00",
   "packages": [
     "linux-raspi"
   ]
