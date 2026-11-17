@@ -4474,64 +4474,6 @@
       "title": "Intel Wi-Fi 7 firmware error and call trace at boot on Dell systems",
       "web_link": "https://bugs.launchpad.net/bugs/2173720"
     },
-    "2173725": {
-      "date_created": "2026-11-09T07:27:53.183226+00:00",
-      "date_last_updated": "2026-11-16T10:31:09.973163+00:00",
-      "has_activity_after_incomplete": false,
-      "id": 2173725,
-      "last_activity_summary": "linux-firmware-amd-misc (Ubuntu): status: Invalid by 0xff07",
-      "last_activity_time": "2026-11-16T10:31:09.973163+00:00",
-      "owner": "Leo Lin",
-      "package": "linux-firmware-amd-misc",
-      "packages": [
-        "linux-firmware-amd-misc"
-      ],
-      "tags": [
-        "kernel-daily-bug",
-        "linux-firmware-daily-bug",
-        "originate-from-2170610"
-      ],
-      "tasks": [
-        {
-          "assignee": null,
-          "date_closed": null,
-          "date_created": "2026-11-12T12:36:18.059414+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": null,
-          "status": "New",
-          "target": "amd64-microcode (Ubuntu)",
-          "target_display": "amd64-microcode (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/amd64-microcode/+bug/2173725"
-        },
-        {
-          "assignee": null,
-          "date_closed": "2026-11-12T12:36:35.525528+00:00",
-          "date_created": "2026-11-09T07:28:57.557336+00:00",
-          "importance": "Undecided",
-          "is_complete": true,
-          "series": null,
-          "status": "Invalid",
-          "target": "linux-firmware-amd-misc (Ubuntu)",
-          "target_display": "linux-firmware-amd-misc (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-amd-misc/+bug/2173725"
-        },
-        {
-          "assignee": null,
-          "date_closed": null,
-          "date_created": "2026-11-09T07:27:53.183226+00:00",
-          "importance": "Undecided",
-          "is_complete": false,
-          "series": null,
-          "status": "New",
-          "target": "linux-oem-7.3 (Ubuntu)",
-          "target_display": "linux-oem-7.3 (Ubuntu)",
-          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-oem-7.3/+bug/2173725"
-        }
-      ],
-      "title": "[SRU] Update Zen6 PMF support for firmware changes",
-      "web_link": "https://bugs.launchpad.net/bugs/2173725"
-    },
     "2173838": {
       "date_created": "2026-11-10T06:53:22.109455+00:00",
       "date_last_updated": "2026-11-12T17:00:37.777733+00:00",
@@ -4918,11 +4860,11 @@
     },
     "2173976": {
       "date_created": "2026-11-11T09:01:51.316440+00:00",
-      "date_last_updated": "2026-11-16T04:49:51.563138+00:00",
+      "date_last_updated": "2026-11-17T00:43:41.738488+00:00",
       "has_activity_after_incomplete": false,
       "id": 2173976,
-      "last_activity_summary": "bug task added: linux-hwe-7.0 (Ubuntu Noble) by juergh",
-      "last_activity_time": "2026-11-16T04:49:51.563138+00:00",
+      "last_activity_summary": "linux-hwe-7.0 (Ubuntu Noble): status: Invalid by kiya956",
+      "last_activity_time": "2026-11-17T00:43:41.738488+00:00",
       "owner": "Edoardo Canepa",
       "package": "linux-firmware-intel-wireless",
       "packages": [
@@ -4960,24 +4902,24 @@
         },
         {
           "assignee": null,
-          "date_closed": null,
+          "date_closed": "2026-11-17T00:43:34.742199+00:00",
           "date_created": "2026-11-12T07:20:23.545939+00:00",
           "importance": "Undecided",
-          "is_complete": false,
+          "is_complete": true,
           "series": "noble",
-          "status": "New",
+          "status": "Invalid",
           "target": "linux-firmware-intel-wireless (Ubuntu Noble)",
           "target_display": "linux-firmware-intel-wireless (Ubuntu Noble)",
           "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-intel-wireless/+bug/2173976"
         },
         {
           "assignee": null,
-          "date_closed": null,
+          "date_closed": "2026-11-17T00:43:40.339022+00:00",
           "date_created": "2026-11-12T07:20:23.545939+00:00",
           "importance": "Undecided",
-          "is_complete": false,
+          "is_complete": true,
           "series": "noble",
-          "status": "New",
+          "status": "Invalid",
           "target": "linux-hwe-7.0 (Ubuntu Noble)",
           "target_display": "linux-hwe-7.0 (Ubuntu Noble)",
           "web_link": "https://bugs.launchpad.net/ubuntu/noble/+source/linux-hwe-7.0/+bug/2173976"
@@ -4988,11 +4930,11 @@
     },
     "2174563": {
       "date_created": "2026-11-16T06:12:39.029186+00:00",
-      "date_last_updated": "2026-11-16T06:35:28.381454+00:00",
+      "date_last_updated": "2026-11-16T23:01:39.665549+00:00",
       "has_activity_after_incomplete": false,
       "id": 2174563,
-      "last_activity_summary": "linux-firmware (Ubuntu Stonking): assignee: AceLan Kao (acelankao) by acelankao",
-      "last_activity_time": "2026-11-16T06:35:28.381454+00:00",
+      "last_activity_summary": "tags: jira-somerville-4786 kernel-daily-bug linux-firmware-daily-bug oem-priority somerville by ubuntu-kernel-bot",
+      "last_activity_time": "2026-11-16T23:01:39.665549+00:00",
       "owner": "AceLan Kao",
       "package": "linux-firmware",
       "packages": [
@@ -5000,6 +4942,8 @@
       ],
       "tags": [
         "jira-somerville-4786",
+        "kernel-daily-bug",
+        "linux-firmware-daily-bug",
         "oem-priority",
         "somerville"
       ],
@@ -5045,7 +4989,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2174563"
     }
   },
-  "last_scan_utc": "2026-11-16T17:54:30.508751+00:00",
+  "last_scan_utc": "2026-11-17T02:45:41.758702+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
