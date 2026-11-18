@@ -4416,11 +4416,11 @@
     },
     "2173720": {
       "date_created": "2026-11-09T05:19:20.213746+00:00",
-      "date_last_updated": "2026-11-12T16:37:34.875109+00:00",
+      "date_last_updated": "2026-11-18T02:23:15.813191+00:00",
       "has_activity_after_incomplete": false,
       "id": 2173720,
-      "last_activity_summary": "linux-firmware-intel-wireless (Ubuntu Stonking): status: Fix Committed by juergh",
-      "last_activity_time": "2026-11-12T16:37:34.875109+00:00",
+      "last_activity_summary": "linux-firmware-intel-wireless (Ubuntu Resolute): assignee: AceLan Kao (acelankao) by acelankao",
+      "last_activity_time": "2026-11-18T02:23:15.813191+00:00",
       "owner": "HWE oem bot",
       "package": "linux-firmware-intel-wireless",
       "packages": [
@@ -4447,7 +4447,7 @@
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-intel-wireless/+bug/2173720"
         },
         {
-          "assignee": "HWE oem bot",
+          "assignee": "AceLan Kao",
           "date_closed": null,
           "date_created": "2026-11-10T01:22:05.031261+00:00",
           "importance": "Undecided",
@@ -4459,7 +4459,7 @@
           "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-intel-wireless/+bug/2173720"
         },
         {
-          "assignee": "HWE oem bot",
+          "assignee": "AceLan Kao",
           "date_closed": null,
           "date_created": "2026-11-10T01:22:05.031261+00:00",
           "importance": "Undecided",
@@ -4968,7 +4968,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2174563"
     }
   },
-  "last_scan_utc": "2026-11-17T23:19:13.423404+00:00",
+  "last_scan_utc": "2026-11-18T05:51:27.035156+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
