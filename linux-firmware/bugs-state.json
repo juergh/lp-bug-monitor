@@ -4474,6 +4474,175 @@
       "title": "Intel Wi-Fi 7 firmware error and call trace at boot on Dell systems",
       "web_link": "https://bugs.launchpad.net/bugs/2173720"
     },
+    "2173725": {
+      "date_created": "2026-11-09T07:27:53.183226+00:00",
+      "date_last_updated": "2026-11-19T08:02:55.253377+00:00",
+      "has_activity_after_incomplete": false,
+      "id": 2173725,
+      "last_activity_summary": "tags: jira-somerville-5015 kernel-daily-bug linux-firmware-daily-bug oem-priority originate-from-2170610 somerville by acelankao",
+      "last_activity_time": "2026-11-19T08:02:55.253377+00:00",
+      "owner": "Leo Lin",
+      "package": "linux-firmware-amd-misc",
+      "packages": [
+        "linux-firmware-amd-misc"
+      ],
+      "tags": [
+        "jira-somerville-5015",
+        "kernel-daily-bug",
+        "linux-firmware-daily-bug",
+        "oem-priority",
+        "originate-from-2170610",
+        "somerville"
+      ],
+      "tasks": [
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-12T12:36:18.059414+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "amd64-microcode (Ubuntu)",
+          "target_display": "amd64-microcode (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/amd64-microcode/+bug/2173725"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2026-11-12T12:36:35.525528+00:00",
+          "date_created": "2026-11-09T07:28:57.557336+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": null,
+          "status": "Invalid",
+          "target": "linux-firmware-amd-misc (Ubuntu)",
+          "target_display": "linux-firmware-amd-misc (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-amd-misc/+bug/2173725"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2026-11-17T05:51:55.411320+00:00",
+          "date_created": "2026-11-09T07:27:53.183226+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": null,
+          "status": "Invalid",
+          "target": "linux-oem-7.3 (Ubuntu)",
+          "target_display": "linux-oem-7.3 (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-oem-7.3/+bug/2173725"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-17T05:50:49.006251+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "resolute",
+          "status": "New",
+          "target": "amd64-microcode (Ubuntu Resolute)",
+          "target_display": "amd64-microcode (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/amd64-microcode/+bug/2173725"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2026-11-17T05:51:19.435247+00:00",
+          "date_created": "2026-11-17T05:50:49.006251+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": "resolute",
+          "status": "Invalid",
+          "target": "linux-firmware-amd-misc (Ubuntu Resolute)",
+          "target_display": "linux-firmware-amd-misc (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-amd-misc/+bug/2173725"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-17T05:50:49.006251+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "resolute",
+          "status": "New",
+          "target": "linux-oem-7.3 (Ubuntu Resolute)",
+          "target_display": "linux-oem-7.3 (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-oem-7.3/+bug/2173725"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-17T05:50:49.006251+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "stonking",
+          "status": "New",
+          "target": "amd64-microcode (Ubuntu Stonking)",
+          "target_display": "amd64-microcode (Ubuntu Stonking)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/stonking/+source/amd64-microcode/+bug/2173725"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2026-11-17T05:51:06.338803+00:00",
+          "date_created": "2026-11-17T05:50:49.006251+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": "stonking",
+          "status": "Invalid",
+          "target": "linux-firmware-amd-misc (Ubuntu Stonking)",
+          "target_display": "linux-firmware-amd-misc (Ubuntu Stonking)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/stonking/+source/linux-firmware-amd-misc/+bug/2173725"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2026-11-17T05:51:37.895200+00:00",
+          "date_created": "2026-11-17T05:50:49.006251+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": "stonking",
+          "status": "Invalid",
+          "target": "linux-oem-7.3 (Ubuntu Stonking)",
+          "target_display": "linux-oem-7.3 (Ubuntu Stonking)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/stonking/+source/linux-oem-7.3/+bug/2173725"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-17T05:50:49.006251+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "tenacious",
+          "status": "New",
+          "target": "amd64-microcode (Ubuntu Tenacious)",
+          "target_display": "amd64-microcode (Ubuntu Tenacious)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/tenacious/+source/amd64-microcode/+bug/2173725"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2026-11-12T12:36:35.525528+00:00",
+          "date_created": "2026-11-17T05:50:49.006251+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": "tenacious",
+          "status": "Invalid",
+          "target": "linux-firmware-amd-misc (Ubuntu Tenacious)",
+          "target_display": "linux-firmware-amd-misc (Ubuntu Tenacious)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/tenacious/+source/linux-firmware-amd-misc/+bug/2173725"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2026-11-17T05:51:55.411320+00:00",
+          "date_created": "2026-11-17T05:50:49.006251+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": "tenacious",
+          "status": "Invalid",
+          "target": "linux-oem-7.3 (Ubuntu Tenacious)",
+          "target_display": "linux-oem-7.3 (Ubuntu Tenacious)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/tenacious/+source/linux-oem-7.3/+bug/2173725"
+        }
+      ],
+      "title": "[SRU] Update Zen6 PMF support for firmware changes",
+      "web_link": "https://bugs.launchpad.net/bugs/2173725"
+    },
     "2173838": {
       "date_created": "2026-11-10T06:53:22.109455+00:00",
       "date_last_updated": "2026-11-17T14:45:23.455479+00:00",
@@ -4968,7 +5137,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2174563"
     }
   },
-  "last_scan_utc": "2026-11-19T01:41:52.702155+00:00",
+  "last_scan_utc": "2026-11-19T12:28:46.837308+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
