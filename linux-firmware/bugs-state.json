@@ -1857,11 +1857,11 @@
     },
     "2160682": {
       "date_created": "2026-07-15T07:33:52.713471+00:00",
-      "date_last_updated": "2026-11-16T02:33:46.707571+00:00",
+      "date_last_updated": "2026-11-20T12:51:16.928562+00:00",
       "has_activity_after_incomplete": true,
       "id": 2160682,
-      "last_activity_summary": "linux-firmware-intel-wireless (Ubuntu): status: Fix Committed by juergh",
-      "last_activity_time": "2026-11-16T02:33:46.707571+00:00",
+      "last_activity_summary": "linux-firmware-intel-wireless (Ubuntu): status: Fix Released by tjaalton",
+      "last_activity_time": "2026-11-20T12:51:16.928562+00:00",
       "owner": "You-Sheng Yang",
       "package": "linux-firmware-intel-wireless",
       "packages": [
@@ -1887,12 +1887,12 @@
         },
         {
           "assignee": null,
-          "date_closed": null,
+          "date_closed": "2026-11-20T12:51:15.835402+00:00",
           "date_created": "2026-07-15T07:34:16.655292+00:00",
           "importance": "Undecided",
-          "is_complete": false,
+          "is_complete": true,
           "series": null,
-          "status": "Fix Committed",
+          "status": "Fix Released",
           "target": "linux-firmware-intel-wireless (Ubuntu)",
           "target_display": "linux-firmware-intel-wireless (Ubuntu)",
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-intel-wireless/+bug/2160682"
@@ -1940,7 +1940,7 @@
           "importance": "Undecided",
           "is_complete": false,
           "series": "stonking",
-          "status": "In Progress",
+          "status": "Fix Committed",
           "target": "linux-firmware-intel-wireless (Ubuntu Stonking)",
           "target_display": "linux-firmware-intel-wireless (Ubuntu Stonking)",
           "web_link": "https://bugs.launchpad.net/ubuntu/stonking/+source/linux-firmware-intel-wireless/+bug/2160682"
@@ -2092,11 +2092,11 @@
     },
     "2162157": {
       "date_created": "2026-07-30T14:41:59.415096+00:00",
-      "date_last_updated": "2026-11-13T03:09:56.299234+00:00",
+      "date_last_updated": "2026-11-20T12:51:21.066286+00:00",
       "has_activity_after_incomplete": false,
       "id": 2162157,
-      "last_activity_summary": "backport-iwlwifi-dkms (Ubuntu Stonking): status: Won't Fix by vicamo",
-      "last_activity_time": "2026-11-13T03:09:56.299234+00:00",
+      "last_activity_summary": "linux-firmware-intel-wireless (Ubuntu): status: Fix Released by tjaalton",
+      "last_activity_time": "2026-11-20T12:51:21.066286+00:00",
       "owner": "You-Sheng Yang",
       "package": "linux-firmware-intel-wireless",
       "packages": [
@@ -2121,12 +2121,12 @@
         },
         {
           "assignee": "You-Sheng Yang",
-          "date_closed": null,
+          "date_closed": "2026-11-20T12:51:19.893824+00:00",
           "date_created": "2026-09-23T08:13:37.449344+00:00",
           "importance": "High",
-          "is_complete": false,
+          "is_complete": true,
           "series": null,
-          "status": "Fix Committed",
+          "status": "Fix Released",
           "target": "linux-firmware-intel-wireless (Ubuntu)",
           "target_display": "linux-firmware-intel-wireless (Ubuntu)",
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-intel-wireless/+bug/2162157"
@@ -2967,11 +2967,11 @@
     },
     "2167683": {
       "date_created": "2026-09-18T08:55:15.281959+00:00",
-      "date_last_updated": "2026-11-12T16:40:37.742823+00:00",
+      "date_last_updated": "2026-11-20T12:46:22.669888+00:00",
       "has_activity_after_incomplete": false,
       "id": 2167683,
-      "last_activity_summary": "linux-firmware-intel-graphics (Ubuntu Stonking): status: Fix Committed by juergh",
-      "last_activity_time": "2026-11-12T16:40:37.742823+00:00",
+      "last_activity_summary": "bug updated by tjaalton",
+      "last_activity_time": "2026-11-20T12:46:22.669888+00:00",
       "owner": "You-Sheng Yang",
       "package": "linux-firmware-intel-graphics",
       "packages": [
@@ -2984,12 +2984,12 @@
       "tasks": [
         {
           "assignee": "You-Sheng Yang",
-          "date_closed": null,
+          "date_closed": "2026-11-20T12:45:55.669703+00:00",
           "date_created": "2026-09-18T08:55:15.281959+00:00",
           "importance": "High",
-          "is_complete": false,
+          "is_complete": true,
           "series": null,
-          "status": "Triaged",
+          "status": "Fix Released",
           "target": "linux-firmware-intel-graphics (Ubuntu)",
           "target_display": "linux-firmware-intel-graphics (Ubuntu)",
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-intel-graphics/+bug/2167683"
@@ -3291,11 +3291,11 @@
     },
     "2167915": {
       "date_created": "2026-09-22T05:16:43.345570+00:00",
-      "date_last_updated": "2026-11-19T21:33:14.466235+00:00",
+      "date_last_updated": "2026-11-20T12:54:13.626119+00:00",
       "has_activity_after_incomplete": false,
       "id": 2167915,
-      "last_activity_summary": "merge proposal linked: https://code.launchpad.net/~mschiu77/ubuntu/+source/firmware-sof/+git/firmware-sof/+merge/513909 by vpa1977",
-      "last_activity_time": "2026-11-19T21:33:14.466235+00:00",
+      "last_activity_summary": "bug updated by tjaalton",
+      "last_activity_time": "2026-11-20T12:54:13.626119+00:00",
       "owner": "Chris Chiu",
       "package": "linux-firmware-misc",
       "packages": [
@@ -3335,12 +3335,12 @@
         },
         {
           "assignee": null,
-          "date_closed": null,
+          "date_closed": "2026-11-20T12:53:37.093835+00:00",
           "date_created": "2026-10-16T03:16:30.488666+00:00",
           "importance": "Undecided",
-          "is_complete": false,
+          "is_complete": true,
           "series": null,
-          "status": "New",
+          "status": "Fix Released",
           "target": "linux-firmware-misc (Ubuntu)",
           "target_display": "linux-firmware-misc (Ubuntu)",
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-misc/+bug/2167915"
@@ -3807,11 +3807,11 @@
     },
     "2170529": {
       "date_created": "2026-10-12T06:33:54.148237+00:00",
-      "date_last_updated": "2026-11-12T15:51:24.228804+00:00",
+      "date_last_updated": "2026-11-20T14:24:55.558873+00:00",
       "has_activity_after_incomplete": false,
       "id": 2170529,
-      "last_activity_summary": "linux-firmware-amd-graphics (Ubuntu Noble): status: Fix Committed by juergh",
-      "last_activity_time": "2026-11-12T15:51:24.228804+00:00",
+      "last_activity_summary": "bug updated by tjaalton",
+      "last_activity_time": "2026-11-20T14:24:55.558873+00:00",
       "owner": "Leo Lin",
       "package": "linux-firmware-amd-graphics",
       "packages": [
@@ -4139,11 +4139,11 @@
     },
     "2172895": {
       "date_created": "2026-11-04T02:20:06.152073+00:00",
-      "date_last_updated": "2026-11-12T16:19:36.077683+00:00",
+      "date_last_updated": "2026-11-20T12:47:48.666337+00:00",
       "has_activity_after_incomplete": false,
       "id": 2172895,
-      "last_activity_summary": "linux-firmware-intel-misc (Ubuntu Resolute): status: Fix Committed by juergh",
-      "last_activity_time": "2026-11-12T16:19:36.077683+00:00",
+      "last_activity_summary": "bug updated by tjaalton",
+      "last_activity_time": "2026-11-20T12:47:48.666337+00:00",
       "owner": "You-Sheng Yang",
       "package": "linux-firmware-intel-misc",
       "packages": [
@@ -4168,12 +4168,12 @@
         },
         {
           "assignee": "You-Sheng Yang",
-          "date_closed": null,
+          "date_closed": "2026-11-20T12:47:22.921798+00:00",
           "date_created": "2026-11-10T01:37:50.764240+00:00",
           "importance": "High",
-          "is_complete": false,
+          "is_complete": true,
           "series": null,
-          "status": "Fix Committed",
+          "status": "Fix Released",
           "target": "linux-firmware-intel-misc (Ubuntu)",
           "target_display": "linux-firmware-intel-misc (Ubuntu)",
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-intel-misc/+bug/2172895"
@@ -4240,12 +4240,12 @@
         },
         {
           "assignee": "You-Sheng Yang",
-          "date_closed": null,
+          "date_closed": "2026-11-20T12:47:22.921798+00:00",
           "date_created": "2026-11-10T01:37:50.764240+00:00",
           "importance": "High",
-          "is_complete": false,
+          "is_complete": true,
           "series": "tenacious",
-          "status": "Fix Committed",
+          "status": "Fix Released",
           "target": "linux-firmware-intel-misc (Ubuntu Tenacious)",
           "target_display": "linux-firmware-intel-misc (Ubuntu Tenacious)",
           "web_link": "https://bugs.launchpad.net/ubuntu/tenacious/+source/linux-firmware-intel-misc/+bug/2172895"
@@ -4416,11 +4416,11 @@
     },
     "2173720": {
       "date_created": "2026-11-09T05:19:20.213746+00:00",
-      "date_last_updated": "2026-11-18T02:23:15.813191+00:00",
+      "date_last_updated": "2026-11-20T12:51:17.603448+00:00",
       "has_activity_after_incomplete": false,
       "id": 2173720,
-      "last_activity_summary": "linux-firmware-intel-wireless (Ubuntu Resolute): assignee: AceLan Kao (acelankao) by acelankao",
-      "last_activity_time": "2026-11-18T02:23:15.813191+00:00",
+      "last_activity_summary": "bug updated by tjaalton",
+      "last_activity_time": "2026-11-20T12:51:17.603448+00:00",
       "owner": "HWE oem bot",
       "package": "linux-firmware-intel-wireless",
       "packages": [
@@ -4441,7 +4441,7 @@
           "importance": "Undecided",
           "is_complete": true,
           "series": null,
-          "status": "Invalid",
+          "status": "Fix Released",
           "target": "linux-firmware-intel-wireless (Ubuntu)",
           "target_display": "linux-firmware-intel-wireless (Ubuntu)",
           "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-intel-wireless/+bug/2173720"
@@ -4476,11 +4476,11 @@
     },
     "2173838": {
       "date_created": "2026-11-10T06:53:22.109455+00:00",
-      "date_last_updated": "2026-11-17T14:45:23.455479+00:00",
+      "date_last_updated": "2026-11-20T12:54:23.723845+00:00",
       "has_activity_after_incomplete": false,
       "id": 2173838,
-      "last_activity_summary": "linux-firmware-amd-misc (Ubuntu Stonking): status: Fix Committed by juergh",
-      "last_activity_time": "2026-11-17T14:45:23.455479+00:00",
+      "last_activity_summary": "bug updated by tjaalton",
+      "last_activity_time": "2026-11-20T12:54:23.723845+00:00",
       "owner": "Chris Chiu",
       "package": "linux-firmware-amd-misc",
       "packages": [
@@ -4909,11 +4909,11 @@
     },
     "2174563": {
       "date_created": "2026-11-16T06:12:39.029186+00:00",
-      "date_last_updated": "2026-11-17T09:51:52.639686+00:00",
+      "date_last_updated": "2026-11-20T12:52:57.624256+00:00",
       "has_activity_after_incomplete": false,
       "id": 2174563,
-      "last_activity_summary": "linux-firmware-mediatek (Ubuntu Stonking): status: Fix Committed by juergh",
-      "last_activity_time": "2026-11-17T09:51:52.639686+00:00",
+      "last_activity_summary": "bug updated by tjaalton",
+      "last_activity_time": "2026-11-20T12:52:57.624256+00:00",
       "owner": "AceLan Kao",
       "package": "linux-firmware-mediatek",
       "packages": [
@@ -4968,7 +4968,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2174563"
     }
   },
-  "last_scan_utc": "2026-11-20T05:40:23.824217+00:00",
+  "last_scan_utc": "2026-11-20T16:41:23.972281+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
