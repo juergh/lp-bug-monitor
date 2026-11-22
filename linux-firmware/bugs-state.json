@@ -1857,11 +1857,11 @@
     },
     "2160682": {
       "date_created": "2026-07-15T07:33:52.713471+00:00",
-      "date_last_updated": "2026-11-20T12:51:16.928562+00:00",
+      "date_last_updated": "2026-11-22T15:36:23.464560+00:00",
       "has_activity_after_incomplete": true,
       "id": 2160682,
       "last_activity_summary": "linux-firmware-intel-wireless (Ubuntu): status: Fix Released by tjaalton",
-      "last_activity_time": "2026-11-20T12:51:16.928562+00:00",
+      "last_activity_time": "2026-11-22T15:36:23.464560+00:00",
       "owner": "You-Sheng Yang",
       "package": "linux-firmware-intel-wireless",
       "packages": [
@@ -2092,11 +2092,11 @@
     },
     "2162157": {
       "date_created": "2026-07-30T14:41:59.415096+00:00",
-      "date_last_updated": "2026-11-20T12:51:21.066286+00:00",
+      "date_last_updated": "2026-11-22T15:36:22.427041+00:00",
       "has_activity_after_incomplete": false,
       "id": 2162157,
       "last_activity_summary": "linux-firmware-intel-wireless (Ubuntu): status: Fix Released by tjaalton",
-      "last_activity_time": "2026-11-20T12:51:21.066286+00:00",
+      "last_activity_time": "2026-11-22T15:36:22.427041+00:00",
       "owner": "You-Sheng Yang",
       "package": "linux-firmware-intel-wireless",
       "packages": [
@@ -2967,11 +2967,11 @@
     },
     "2167683": {
       "date_created": "2026-09-18T08:55:15.281959+00:00",
-      "date_last_updated": "2026-11-20T12:46:22.669888+00:00",
+      "date_last_updated": "2026-11-22T15:36:19.610655+00:00",
       "has_activity_after_incomplete": false,
       "id": 2167683,
       "last_activity_summary": "bug updated by tjaalton",
-      "last_activity_time": "2026-11-20T12:46:22.669888+00:00",
+      "last_activity_time": "2026-11-22T15:36:19.610655+00:00",
       "owner": "You-Sheng Yang",
       "package": "linux-firmware-intel-graphics",
       "packages": [
@@ -3291,11 +3291,11 @@
     },
     "2167915": {
       "date_created": "2026-09-22T05:16:43.345570+00:00",
-      "date_last_updated": "2026-11-20T12:54:13.626119+00:00",
+      "date_last_updated": "2026-11-22T15:36:25.068866+00:00",
       "has_activity_after_incomplete": false,
       "id": 2167915,
       "last_activity_summary": "bug updated by tjaalton",
-      "last_activity_time": "2026-11-20T12:54:13.626119+00:00",
+      "last_activity_time": "2026-11-22T15:36:25.068866+00:00",
       "owner": "Chris Chiu",
       "package": "linux-firmware-misc",
       "packages": [
@@ -4139,11 +4139,11 @@
     },
     "2172895": {
       "date_created": "2026-11-04T02:20:06.152073+00:00",
-      "date_last_updated": "2026-11-20T12:47:48.666337+00:00",
+      "date_last_updated": "2026-11-22T15:36:20.423220+00:00",
       "has_activity_after_incomplete": false,
       "id": 2172895,
       "last_activity_summary": "bug updated by tjaalton",
-      "last_activity_time": "2026-11-20T12:47:48.666337+00:00",
+      "last_activity_time": "2026-11-22T15:36:20.423220+00:00",
       "owner": "You-Sheng Yang",
       "package": "linux-firmware-intel-misc",
       "packages": [
@@ -4416,11 +4416,11 @@
     },
     "2173720": {
       "date_created": "2026-11-09T05:19:20.213746+00:00",
-      "date_last_updated": "2026-11-20T12:51:17.603448+00:00",
+      "date_last_updated": "2026-11-22T15:36:21.387351+00:00",
       "has_activity_after_incomplete": false,
       "id": 2173720,
       "last_activity_summary": "bug updated by tjaalton",
-      "last_activity_time": "2026-11-20T12:51:17.603448+00:00",
+      "last_activity_time": "2026-11-22T15:36:21.387351+00:00",
       "owner": "HWE oem bot",
       "package": "linux-firmware-intel-wireless",
       "packages": [
@@ -4476,11 +4476,11 @@
     },
     "2173838": {
       "date_created": "2026-11-10T06:53:22.109455+00:00",
-      "date_last_updated": "2026-11-20T12:54:23.723845+00:00",
+      "date_last_updated": "2026-11-22T15:36:26.516304+00:00",
       "has_activity_after_incomplete": false,
       "id": 2173838,
       "last_activity_summary": "bug updated by tjaalton",
-      "last_activity_time": "2026-11-20T12:54:23.723845+00:00",
+      "last_activity_time": "2026-11-22T15:36:26.516304+00:00",
       "owner": "Chris Chiu",
       "package": "linux-firmware-amd-misc",
       "packages": [
@@ -4909,11 +4909,11 @@
     },
     "2174563": {
       "date_created": "2026-11-16T06:12:39.029186+00:00",
-      "date_last_updated": "2026-11-20T12:52:57.624256+00:00",
+      "date_last_updated": "2026-11-22T15:36:24.142505+00:00",
       "has_activity_after_incomplete": false,
       "id": 2174563,
       "last_activity_summary": "bug updated by tjaalton",
-      "last_activity_time": "2026-11-20T12:52:57.624256+00:00",
+      "last_activity_time": "2026-11-22T15:36:24.142505+00:00",
       "owner": "AceLan Kao",
       "package": "linux-firmware-mediatek",
       "packages": [
@@ -4968,7 +4968,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2174563"
     }
   },
-  "last_scan_utc": "2026-11-22T04:59:10.944558+00:00",
+  "last_scan_utc": "2026-11-22T15:54:31.353337+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
