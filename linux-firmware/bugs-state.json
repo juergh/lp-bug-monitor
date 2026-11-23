@@ -4966,9 +4966,171 @@
       ],
       "title": "MediaTek MT7922 WiFi regulatory domain not self-managed, firmware too old",
       "web_link": "https://bugs.launchpad.net/bugs/2174563"
+    },
+    "2175562": {
+      "date_created": "2026-11-23T07:36:07.731650+00:00",
+      "date_last_updated": "2026-11-23T07:46:35.914783+00:00",
+      "has_activity_after_incomplete": true,
+      "id": 2175562,
+      "last_activity_summary": "linux (Ubuntu Tenacious): assignee: You-Sheng Yang (vicamo) by vicamo",
+      "last_activity_time": "2026-11-23T07:46:35.914783+00:00",
+      "owner": "You-Sheng Yang",
+      "package": "linux-firmware-amd-misc",
+      "packages": [
+        "linux-firmware-amd-misc"
+      ],
+      "tags": [],
+      "tasks": [
+        {
+          "assignee": "You-Sheng Yang",
+          "date_closed": null,
+          "date_created": "2026-11-23T07:36:07.731650+00:00",
+          "importance": "High",
+          "is_complete": false,
+          "series": null,
+          "status": "In Progress",
+          "target": "linux (Ubuntu)",
+          "target_display": "linux (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux/+bug/2175562"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-23T07:43:03.045185+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "Incomplete",
+          "target": "linux-firmware-amd-misc (Ubuntu)",
+          "target_display": "linux-firmware-amd-misc (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-firmware-amd-misc/+bug/2175562"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2026-11-23T07:45:54.108775+00:00",
+          "date_created": "2026-11-23T07:43:56.685381+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": null,
+          "status": "Invalid",
+          "target": "linux-oem-7.3 (Ubuntu)",
+          "target_display": "linux-oem-7.3 (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/linux-oem-7.3/+bug/2175562"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2026-11-23T07:43:28.595638+00:00",
+          "date_created": "2026-11-23T07:43:13.687702+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": "resolute",
+          "status": "Won't Fix",
+          "target": "linux (Ubuntu Resolute)",
+          "target_display": "linux (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux/+bug/2175562"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-23T07:43:13.687702+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "resolute",
+          "status": "Incomplete",
+          "target": "linux-firmware-amd-misc (Ubuntu Resolute)",
+          "target_display": "linux-firmware-amd-misc (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-amd-misc/+bug/2175562"
+        },
+        {
+          "assignee": "You-Sheng Yang",
+          "date_closed": null,
+          "date_created": "2026-11-23T07:43:56.685381+00:00",
+          "importance": "High",
+          "is_complete": false,
+          "series": "resolute",
+          "status": "In Progress",
+          "target": "linux-oem-7.3 (Ubuntu Resolute)",
+          "target_display": "linux-oem-7.3 (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-oem-7.3/+bug/2175562"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2026-11-23T07:43:25.998287+00:00",
+          "date_created": "2026-11-23T07:43:13.687702+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": "stonking",
+          "status": "Won't Fix",
+          "target": "linux (Ubuntu Stonking)",
+          "target_display": "linux (Ubuntu Stonking)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/stonking/+source/linux/+bug/2175562"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2026-11-23T07:43:32.431294+00:00",
+          "date_created": "2026-11-23T07:43:13.687702+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": "stonking",
+          "status": "Won't Fix",
+          "target": "linux-firmware-amd-misc (Ubuntu Stonking)",
+          "target_display": "linux-firmware-amd-misc (Ubuntu Stonking)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/stonking/+source/linux-firmware-amd-misc/+bug/2175562"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2026-11-23T07:45:35.725749+00:00",
+          "date_created": "2026-11-23T07:43:56.685381+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": "stonking",
+          "status": "Invalid",
+          "target": "linux-oem-7.3 (Ubuntu Stonking)",
+          "target_display": "linux-oem-7.3 (Ubuntu Stonking)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/stonking/+source/linux-oem-7.3/+bug/2175562"
+        },
+        {
+          "assignee": "You-Sheng Yang",
+          "date_closed": null,
+          "date_created": "2026-11-23T07:43:13.687702+00:00",
+          "importance": "High",
+          "is_complete": false,
+          "series": "tenacious",
+          "status": "In Progress",
+          "target": "linux (Ubuntu Tenacious)",
+          "target_display": "linux (Ubuntu Tenacious)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/tenacious/+source/linux/+bug/2175562"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-23T07:43:13.687702+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "tenacious",
+          "status": "Incomplete",
+          "target": "linux-firmware-amd-misc (Ubuntu Tenacious)",
+          "target_display": "linux-firmware-amd-misc (Ubuntu Tenacious)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/tenacious/+source/linux-firmware-amd-misc/+bug/2175562"
+        },
+        {
+          "assignee": null,
+          "date_closed": "2026-11-23T07:45:54.108775+00:00",
+          "date_created": "2026-11-23T07:43:56.685381+00:00",
+          "importance": "Undecided",
+          "is_complete": true,
+          "series": "tenacious",
+          "status": "Invalid",
+          "target": "linux-oem-7.3 (Ubuntu Tenacious)",
+          "target_display": "linux-oem-7.3 (Ubuntu Tenacious)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/tenacious/+source/linux-oem-7.3/+bug/2175562"
+        }
+      ],
+      "title": "Support AIE4 NPU on AMD Medusa and Olympic Ridge platforms",
+      "web_link": "https://bugs.launchpad.net/bugs/2175562"
     }
   },
-  "last_scan_utc": "2026-11-23T05:41:57.597688+00:00",
+  "last_scan_utc": "2026-11-23T19:48:58.315712+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
