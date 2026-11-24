@@ -1168,11 +1168,11 @@
     },
     "2168109": {
       "date_created": "2026-09-23T13:50:47.738290+00:00",
-      "date_last_updated": "2026-11-11T09:09:06.642220+00:00",
+      "date_last_updated": "2026-11-24T12:00:38.495073+00:00",
       "has_activity_after_incomplete": false,
       "id": 2168109,
       "last_activity_summary": "ubuntu-raspi-settings (Ubuntu Stonking): status: Fix Released by juergh",
-      "last_activity_time": "2026-11-11T09:09:06.642220+00:00",
+      "last_activity_time": "2026-11-24T12:00:38.495073+00:00",
       "owner": "Benjamin Drung",
       "package": "linux-raspi",
       "packages": [
@@ -1583,7 +1583,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2173959"
     }
   },
-  "last_scan_utc": "2026-11-24T04:37:53.767781+00:00",
+  "last_scan_utc": "2026-11-24T19:22:15.574428+00:00",
   "packages": [
     "linux-raspi"
   ]
