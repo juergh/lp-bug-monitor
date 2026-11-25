@@ -2572,15 +2572,14 @@
     },
     "2166635": {
       "date_created": "2026-09-07T04:49:33.409577+00:00",
-      "date_last_updated": "2026-10-16T08:01:49.710608+00:00",
+      "date_last_updated": "2026-11-25T05:31:29.357146+00:00",
       "has_activity_after_incomplete": false,
       "id": 2166635,
       "last_activity_summary": "affects: linux-firmware-intel-wireless (Ubuntu) by juergh",
-      "last_activity_time": "2026-10-16T08:01:49.710608+00:00",
+      "last_activity_time": "2026-11-25T05:31:29.357146+00:00",
       "owner": "Robert Vertesi",
-      "package": "linux-firmware",
+      "package": "linux-firmware-intel-wireless",
       "packages": [
-        "linux-firmware",
         "linux-firmware-intel-wireless"
       ],
       "tags": [
@@ -3807,11 +3806,11 @@
     },
     "2170529": {
       "date_created": "2026-10-12T06:33:54.148237+00:00",
-      "date_last_updated": "2026-11-20T14:24:55.558873+00:00",
+      "date_last_updated": "2026-11-25T08:14:46.905905+00:00",
       "has_activity_after_incomplete": false,
       "id": 2170529,
       "last_activity_summary": "bug updated by tjaalton",
-      "last_activity_time": "2026-11-20T14:24:55.558873+00:00",
+      "last_activity_time": "2026-11-25T08:14:46.905905+00:00",
       "owner": "Leo Lin",
       "package": "linux-firmware-amd-graphics",
       "packages": [
@@ -4416,11 +4415,11 @@
     },
     "2173720": {
       "date_created": "2026-11-09T05:19:20.213746+00:00",
-      "date_last_updated": "2026-11-22T15:36:21.387351+00:00",
+      "date_last_updated": "2026-11-25T06:45:20.092724+00:00",
       "has_activity_after_incomplete": false,
       "id": 2173720,
-      "last_activity_summary": "bug updated by tjaalton",
-      "last_activity_time": "2026-11-22T15:36:21.387351+00:00",
+      "last_activity_summary": "tags: jira-pgn-20 kernel-daily-bug linux-firmware-daily-bug oem-priority pgn verification-done-stonking by acelankao",
+      "last_activity_time": "2026-11-25T06:45:20.092724+00:00",
       "owner": "HWE oem bot",
       "package": "linux-firmware-intel-wireless",
       "packages": [
@@ -4431,7 +4430,8 @@
         "kernel-daily-bug",
         "linux-firmware-daily-bug",
         "oem-priority",
-        "pgn"
+        "pgn",
+        "verification-done-stonking"
       ],
       "tasks": [
         {
@@ -4909,11 +4909,11 @@
     },
     "2174563": {
       "date_created": "2026-11-16T06:12:39.029186+00:00",
-      "date_last_updated": "2026-11-22T15:36:24.142505+00:00",
+      "date_last_updated": "2026-11-25T06:46:35.711726+00:00",
       "has_activity_after_incomplete": false,
       "id": 2174563,
-      "last_activity_summary": "bug updated by tjaalton",
-      "last_activity_time": "2026-11-22T15:36:24.142505+00:00",
+      "last_activity_summary": "tags: jira-somerville-4786 kernel-daily-bug linux-firmware-daily-bug oem-priority somerville verification-done-stonking by acelankao",
+      "last_activity_time": "2026-11-25T06:46:35.711726+00:00",
       "owner": "AceLan Kao",
       "package": "linux-firmware-mediatek",
       "packages": [
@@ -4924,7 +4924,8 @@
         "kernel-daily-bug",
         "linux-firmware-daily-bug",
         "oem-priority",
-        "somerville"
+        "somerville",
+        "verification-done-stonking"
       ],
       "tasks": [
         {
@@ -5133,7 +5134,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2175562"
     }
   },
-  "last_scan_utc": "2026-11-25T03:21:41.532707+00:00",
+  "last_scan_utc": "2026-11-25T13:52:22.789079+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",
