@@ -3290,11 +3290,11 @@
     },
     "2167915": {
       "date_created": "2026-09-22T05:16:43.345570+00:00",
-      "date_last_updated": "2026-11-26T05:36:36.500892+00:00",
+      "date_last_updated": "2026-11-26T08:14:19.087654+00:00",
       "has_activity_after_incomplete": false,
       "id": 2167915,
-      "last_activity_summary": "linux-firmware-misc (Ubuntu Noble): status: Fix Committed by juergh",
-      "last_activity_time": "2026-11-26T05:36:36.500892+00:00",
+      "last_activity_summary": "description: [Impact]\nDell Slate Systems using Cirrus CS42L45 codec + CS35L63 amp need new SDCA feature support and the corresponding linux-firmware to have all audio function work. We have Slate-3 GPT which is AMD platform with the same codec, and the Slate-2 Yukon which is Intel NVL platform. The machines powered by AMD doesn't support Soundwire/SOF yet and don't need new patches from kernel and firmware-sof.\n\n[Fix]\n======= linux kernel ======\nNeed the following patches on 7.3 (which are already in Stonking)\n\nee1811eacdbb soundwire: bus_type: Create IRQ mapping before calling driver probe()\ndf036250d7d5 ASoC: SDCA: Remove sdca_function_data duplication\n9557ec3f9c9f ASoC: SDCA: Add RJ support to class driver\na158fe7b0c81 ASoC: SOF: Intel: NVL-S: add platform name\nab463b465585 ASoC: SOF: Intel: NVL: add platform name\n\n====== linux-firmware ======\nAMP FW: https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/commit/?id=2ded07e3da99f522881039f13595f34d54acdc74 [git.kernel.org]\n\nCodec FW: https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/commit/?id=10f09227a370e02de71b584024c20dc8d3a02103 [git.kernel.org]\n\nYukon2 : https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/commit/?id=30f83ae033e8c7e99982af34663d797205a6c102 [git.kernel.org]\n\n====== firmware-sof ======\nhttps://github.com/thesofproject/sof-bin/releases/tag/v2026.09\n\n[Test Plan]\n1. Boot up The Dell Slate system with CS42L45+CS35L63 audio solution\n2. Install new linux-firmware only for Dell Slate 3 GPT, and install new kernel/linux-firmware/firmware-sof on the Dell Slate 2 Yukon\n3. Go to g-s-d for sound settings for audio intput/output device check\n4. Make sure they're not Dummy for audio input/output\n5. `aplay` to verify audio output function and `arecord` to verify audio input\n6. Verify the same steps on older machines for Intel PTL, WCL, ARL...etc\n\n[Where problems could occur]\nIt's new Dell system with Intel NVL, need firmware-sof + kernel SDCA for Intel NVL + linux-firmware to work. Need to make sure no regression on older platforms. Ex. Intel WCL, PTL...etc\n\n[Other Info]\nPer comment from Intel, the primary requirement is that the topology file (sof-nvl-foo.tplg) and DSP firmware (sof-nvl.ri) are a pair and need to be from the same major version.\n\nIf we upgrade of FW for only a single generation (e.g. only for NVL)\nThis will be problematic. The main problem is that you may have two platforms (let\u2019s say\nNVL and ARL) using same topology files. If you update FW for only NVL, you should also update the topology\nfiles used by NVL (FW+tplg always a pair!), but then if one of the topology files is used by some ARL\nproducts you may have problems (-> scenario 2 problem on ARL then).\n\nSo we need to upgrade the DSP FW and the TPLG both for all MTL+ platforms (include ARL/LNL/MTL/PTL/WCL/NVL) by mschiu77",
+      "last_activity_time": "2026-11-26T08:14:19.087654+00:00",
       "owner": "Chris Chiu",
       "package": "linux-firmware-misc",
       "packages": [
@@ -5211,7 +5211,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2176148"
     }
   },
-  "last_scan_utc": "2026-11-26T07:49:37.827893+00:00",
+  "last_scan_utc": "2026-11-26T18:06:23.560234+00:00",
   "packages": [
     "linux-firmware",
     "linux-firmware-amd-graphics",

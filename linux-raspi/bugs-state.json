@@ -712,11 +712,11 @@
     },
     "2133877": {
       "date_created": "2025-12-04T14:59:33.158844+00:00",
-      "date_last_updated": "2026-11-25T16:25:19.729859+00:00",
+      "date_last_updated": "2026-11-26T17:27:15.313614+00:00",
       "has_activity_after_incomplete": false,
       "id": 2133877,
       "last_activity_summary": "bug task added: linux-raspi (Ubuntu Resolute) by juergh",
-      "last_activity_time": "2026-11-25T16:25:19.729859+00:00",
+      "last_activity_time": "2026-11-26T17:27:15.313614+00:00",
       "owner": "Aleksei",
       "package": "linux-raspi",
       "packages": [
@@ -1585,7 +1585,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2173959"
     }
   },
-  "last_scan_utc": "2026-11-26T07:51:51.221607+00:00",
+  "last_scan_utc": "2026-11-26T18:09:03.523407+00:00",
   "packages": [
     "linux-raspi"
   ]
