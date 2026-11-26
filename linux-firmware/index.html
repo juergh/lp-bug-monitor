@@ -276,13 +276,13 @@
 
 <div class="header">
   <h1>Ubuntu Bug Status — linux-firmware</h1>
-  <p>Generated on 2026-11-25 23:58:27 UTC via <a href="https://github.com/juergh/lp-bug-monitor/actions/workflows/sync.yaml" target="_blank" rel="noopener">GitHub Action</a>.</p>
+  <p>Generated on 2026-11-26 07:49:37 UTC via <a href="https://github.com/juergh/lp-bug-monitor/actions/workflows/sync.yaml" target="_blank" rel="noopener">GitHub Action</a>.</p>
 </div>
 
 <div class="stats-bar">
   <div class="stat-card">
     <div class="label">Total Open Bugs</div>
-    <div class="value" id="stat-total">67</div>
+    <div class="value" id="stat-total">68</div>
   </div>
   <div class="stat-card">
     <div class="label">Source Packages Tracked</div>
@@ -291,7 +291,7 @@
   <div class="stat-card" style="flex: 2;">
     <div class="label">Active Task Status Breakdown</div>
     <div class="summary-chips">
-      <span class="summary-chip"><span class="chip-status badge-fixcommitted"></span> Fix Committed: <strong>17</strong></span><span class="summary-chip"><span class="chip-status badge-new"></span> New: <strong>96</strong></span><span class="summary-chip"><span class="chip-status badge-inprogress"></span> Triaged: <strong>3</strong></span><span class="summary-chip"><span class="chip-status badge-incomplete"></span> Incomplete: <strong>20</strong></span><span class="summary-chip"><span class="chip-status badge-inprogress"></span> In Progress: <strong>24</strong></span><span class="summary-chip"><span class="chip-status badge-confirmed"></span> Confirmed: <strong>14</strong></span>
+      <span class="summary-chip"><span class="chip-status badge-fixcommitted"></span> Fix Committed: <strong>18</strong></span><span class="summary-chip"><span class="chip-status badge-new"></span> New: <strong>88</strong></span><span class="summary-chip"><span class="chip-status badge-inprogress"></span> In Progress: <strong>29</strong></span><span class="summary-chip"><span class="chip-status badge-incomplete"></span> Incomplete: <strong>19</strong></span><span class="summary-chip"><span class="chip-status badge-confirmed"></span> Confirmed: <strong>14</strong></span><span class="summary-chip"><span class="chip-status badge-inprogress"></span> Triaged: <strong>2</strong></span>
     </div>
   </div>
 </div>
@@ -306,12 +306,12 @@
     </select>
     <select id="filter-series" class="select-filter" onchange="applyFilters()">
       <option value="">All Series (5)</option>
-      <option value="__none__">No nominations (15)</option><option value="jammy">jammy (2)</option><option value="noble">noble (25)</option><option value="resolute">resolute (28)</option><option value="stonking">stonking (12)</option><option value="tenacious">tenacious (4)</option>
+      <option value="__none__">No nominations (16)</option><option value="jammy">jammy (2)</option><option value="noble">noble (25)</option><option value="resolute">resolute (28)</option><option value="stonking">stonking (12)</option><option value="tenacious">tenacious (4)</option>
     </select>
     <select id="filter-status" class="select-filter" onchange="applyFilters()">
       <option value="">All Open Statuses</option>
       <option value="__info_added__">⚠️ Needs Review (Info Added)</option>
-      <option value="confirmed">Confirmed (14)</option><option value="fix committed">Fix Committed (17)</option><option value="in progress">In Progress (24)</option><option value="incomplete">Incomplete (20)</option><option value="new">New (96)</option><option value="triaged">Triaged (3)</option>
+      <option value="confirmed">Confirmed (14)</option><option value="fix committed">Fix Committed (18)</option><option value="in progress">In Progress (29)</option><option value="incomplete">Incomplete (19)</option><option value="new">New (88)</option><option value="triaged">Triaged (2)</option>
     </select>
   </div>
   <div class="action-group">
@@ -338,85 +338,12 @@
     </thead>
     <tbody id="bugs-tbody">
       
-        <tr class="bug-row" id="row-2170529" onclick="toggleDetails(2170529)"
-            data-bugid="2170529" data-package="linux-firmware-amd-graphics"
-            data-packages="[&quot;linux-firmware-amd-graphics&quot;]"
-            data-series="[&quot;noble&quot;, &quot;resolute&quot;, &quot;stonking&quot;]"
-            data-flame="3" data-info-added="false"
-            data-statuses="[&quot;fix committed&quot;, &quot;new&quot;]" data-created="2026-10-12T06:33:54.148237+00:00" data-lastact="2026-11-25T16:35:57.197724+00:00">
-            <td class="col-toggle"><span class="toggle-icon" id="toggle-2170529">▶</span></td>
-            <td class="col-flame" title="Hot (Active within 48h · Undecided importance)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
-            <td class="col-id font-mono">
-                <a href="https://bugs.launchpad.net/bugs/2170529" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2170529</a>
-            </td>
-            <td class="col-title" title="[SRU] Update GC firmware for gfx1103 ">[SRU] Update GC firmware for gfx1103 </td>
-            <td class="col-package font-mono"><span class="package-pill">linux-firmware-amd-graphics</span></td>
-            <td class="col-tasks">
-                <div class="tasks-summary-wrap">
-                    <span class="task-count-pill"><strong class="text-orange">4 Open</strong> / <span class="text-gray">4 Closed</span></span>
-                    <div class="status-badges-group"><span class="status-badge badge-fixcommitted">Fix Committed</span><span class="status-badge badge-new">New</span></div>
-                </div>
-            </td>
-            <td class="col-created font-mono">2026-10-12 06:33</td>
-            <td class="col-activity font-mono" title="linux-firmware-hwe-amd-graphics (Ubuntu Stonking): status: Invalid by tjaalton">2026-11-25 16:35</td>
-        </tr>
-        <tr class="details-row" id="details-2170529" style="display: none;">
-            <td colspan="8">
-                <div class="details-panel">
-                    <div class="details-grid">
-                        <div class="details-tasks-card">
-                            <h4>Target Tasks (8 total)</h4>
-                            <table class="subtable">
-                                <thead>
-                                    <tr>
-                                        <th>Target</th>
-                                        <th>Status</th>
-                                        <th>Importance</th>
-                                        <th>Assignee</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><td class="font-mono">linux-firmware-amd-graphics (Ubuntu)</td><td><span class="status-badge badge-closed">Invalid</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux-firmware-amd-graphics/+bug/2170529" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-hwe-amd-graphics (Ubuntu)</td><td><span class="status-badge badge-closed">Invalid</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux-firmware-hwe-amd-graphics/+bug/2170529" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-amd-graphics (Ubuntu Noble)</td><td><span class="status-badge badge-fixcommitted">Fix Committed</span></td><td>Undecided</td><td>Leo Lin</td><td><a href="https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-amd-graphics/+bug/2170529" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-hwe-amd-graphics (Ubuntu Noble)</td><td><span class="status-badge badge-closed">Invalid</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-hwe-amd-graphics/+bug/2170529" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-amd-graphics (Ubuntu Resolute)</td><td><span class="status-badge badge-fixcommitted">Fix Committed</span></td><td>Undecided</td><td>Leo Lin</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-amd-graphics/+bug/2170529" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-hwe-amd-graphics (Ubuntu Resolute)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-hwe-amd-graphics/+bug/2170529" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-amd-graphics (Ubuntu Stonking)</td><td><span class="status-badge badge-fixcommitted">Fix Committed</span></td><td>Undecided</td><td>Leo Lin</td><td><a href="https://bugs.launchpad.net/ubuntu/stonking/+source/linux-firmware-amd-graphics/+bug/2170529" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-hwe-amd-graphics (Ubuntu Stonking)</td><td><span class="status-badge badge-closed">Invalid</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/stonking/+source/linux-firmware-hwe-amd-graphics/+bug/2170529" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="details-meta-card">
-                            <h4>Bug Details</h4>
-                            <div class="meta-item"><strong>Reporter:</strong> <span>Leo Lin</span></div>
-                            <div class="meta-item">
-                                <strong>Created:</strong>
-                                <span class="font-mono">2026-10-12 06:33</span>
-                            </div>
-                            <div class="meta-item">
-                                <strong>Last Updated:</strong>
-                                <span class="font-mono">2026-11-25 16:35</span>
-                            </div>
-                            <div class="meta-item"><strong>Last Activity:</strong> <span>linux-firmware-hwe-amd-graphics (Ubuntu Stonking): status: Invalid by tjaalton</span></div>
-                            <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (Active within 48h · Undecided importance))</span>
-                            </div>
-                            
-                            <div class="meta-item"><strong>Open Series:</strong> <span>noble, resolute, stonking</span></div>
-                            <div class="meta-item"><strong>Active Targets:</strong>
-                                <span class="text-sm">linux-firmware-amd-graphics (Ubuntu Noble), linux-firmware-amd-graphics (Ubuntu Resolute), linux-firmware-hwe-amd-graphics (Ubuntu Resolute), linux-firmware-amd-graphics (Ubuntu Stonking)</span>
-                            </div>
-                            <div class="meta-item"><strong>Tags:</strong>
-                                <div class="tags-wrap"><span class="tag-pill">kernel-daily-bug</span><span class="tag-pill">linux-firmware-daily-bug</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </td>
-        </tr>
-        
-
         <tr class="bug-row" id="row-2170403" onclick="toggleDetails(2170403)"
             data-bugid="2170403" data-package="linux-firmware-amd-misc"
             data-packages="[&quot;linux-firmware-amd-misc&quot;]"
             data-series="[&quot;noble&quot;]"
             data-flame="3" data-info-added="false"
-            data-statuses="[&quot;fix committed&quot;]" data-created="2026-10-09T20:06:45.167926+00:00" data-lastact="2026-11-25T16:34:08.906464+00:00">
+            data-statuses="[&quot;fix committed&quot;]" data-created="2026-10-09T20:06:45.167926+00:00" data-lastact="2026-11-26T07:40:18.598404+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2170403">▶</span></td>
             <td class="col-flame" title="Hot (Active within 48h · Undecided importance)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
             <td class="col-id font-mono">
@@ -431,7 +358,7 @@
                 </div>
             </td>
             <td class="col-created font-mono">2026-10-09 20:06</td>
-            <td class="col-activity font-mono" title="linux-firmware-amd-misc (Ubuntu Noble): assignee: Leo Lin (0xff07) by 0xff07">2026-11-25 16:34</td>
+            <td class="col-activity font-mono" title="tags: kernel-daily-bug linux-firmware-daily-bug verification-done-noble by 0xff07">2026-11-26 07:40</td>
         </tr>
         <tr class="details-row" id="details-2170403" style="display: none;">
             <td colspan="8">
@@ -463,9 +390,9 @@
                             </div>
                             <div class="meta-item">
                                 <strong>Last Updated:</strong>
-                                <span class="font-mono">2026-11-25 16:34</span>
+                                <span class="font-mono">2026-11-26 07:40</span>
                             </div>
-                            <div class="meta-item"><strong>Last Activity:</strong> <span>linux-firmware-amd-misc (Ubuntu Noble): assignee: Leo Lin (0xff07) by 0xff07</span></div>
+                            <div class="meta-item"><strong>Last Activity:</strong> <span>tags: kernel-daily-bug linux-firmware-daily-bug verification-done-noble by 0xff07</span></div>
                             <div class="meta-item">
                                 <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (Active within 48h · Undecided importance))</span>
                             </div>
@@ -475,7 +402,80 @@
                                 <span class="text-sm">linux-firmware-amd-misc (Ubuntu Noble)</span>
                             </div>
                             <div class="meta-item"><strong>Tags:</strong>
-                                <div class="tags-wrap"><span class="tag-pill">kernel-daily-bug</span><span class="tag-pill">linux-firmware-daily-bug</span></div>
+                                <div class="tags-wrap"><span class="tag-pill">kernel-daily-bug</span><span class="tag-pill">linux-firmware-daily-bug</span><span class="tag-pill">verification-done-noble</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        
+
+        <tr class="bug-row" id="row-2170529" onclick="toggleDetails(2170529)"
+            data-bugid="2170529" data-package="linux-firmware-amd-graphics"
+            data-packages="[&quot;linux-firmware-amd-graphics&quot;]"
+            data-series="[&quot;noble&quot;, &quot;resolute&quot;, &quot;stonking&quot;]"
+            data-flame="3" data-info-added="false"
+            data-statuses="[&quot;fix committed&quot;, &quot;new&quot;]" data-created="2026-10-12T06:33:54.148237+00:00" data-lastact="2026-11-26T05:56:04.585770+00:00">
+            <td class="col-toggle"><span class="toggle-icon" id="toggle-2170529">▶</span></td>
+            <td class="col-flame" title="Hot (Active within 48h · Undecided importance)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
+            <td class="col-id font-mono">
+                <a href="https://bugs.launchpad.net/bugs/2170529" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2170529</a>
+            </td>
+            <td class="col-title" title="[SRU] Update GC firmware for gfx1103 ">[SRU] Update GC firmware for gfx1103 </td>
+            <td class="col-package font-mono"><span class="package-pill">linux-firmware-amd-graphics</span></td>
+            <td class="col-tasks">
+                <div class="tasks-summary-wrap">
+                    <span class="task-count-pill"><strong class="text-orange">4 Open</strong> / <span class="text-gray">4 Closed</span></span>
+                    <div class="status-badges-group"><span class="status-badge badge-fixcommitted">Fix Committed</span><span class="status-badge badge-new">New</span></div>
+                </div>
+            </td>
+            <td class="col-created font-mono">2026-10-12 06:33</td>
+            <td class="col-activity font-mono" title="tags: kernel-daily-bug linux-firmware-daily-bug verification-done-noble verification-done-resolute by 0xff07">2026-11-26 05:56</td>
+        </tr>
+        <tr class="details-row" id="details-2170529" style="display: none;">
+            <td colspan="8">
+                <div class="details-panel">
+                    <div class="details-grid">
+                        <div class="details-tasks-card">
+                            <h4>Target Tasks (8 total)</h4>
+                            <table class="subtable">
+                                <thead>
+                                    <tr>
+                                        <th>Target</th>
+                                        <th>Status</th>
+                                        <th>Importance</th>
+                                        <th>Assignee</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td class="font-mono">linux-firmware-amd-graphics (Ubuntu)</td><td><span class="status-badge badge-closed">Invalid</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux-firmware-amd-graphics/+bug/2170529" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-hwe-amd-graphics (Ubuntu)</td><td><span class="status-badge badge-closed">Invalid</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux-firmware-hwe-amd-graphics/+bug/2170529" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-amd-graphics (Ubuntu Noble)</td><td><span class="status-badge badge-fixcommitted">Fix Committed</span></td><td>Undecided</td><td>Leo Lin</td><td><a href="https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-amd-graphics/+bug/2170529" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-hwe-amd-graphics (Ubuntu Noble)</td><td><span class="status-badge badge-closed">Invalid</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-hwe-amd-graphics/+bug/2170529" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-amd-graphics (Ubuntu Resolute)</td><td><span class="status-badge badge-fixcommitted">Fix Committed</span></td><td>Undecided</td><td>Leo Lin</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-amd-graphics/+bug/2170529" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-hwe-amd-graphics (Ubuntu Resolute)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-hwe-amd-graphics/+bug/2170529" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-amd-graphics (Ubuntu Stonking)</td><td><span class="status-badge badge-fixcommitted">Fix Committed</span></td><td>Undecided</td><td>Leo Lin</td><td><a href="https://bugs.launchpad.net/ubuntu/stonking/+source/linux-firmware-amd-graphics/+bug/2170529" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-hwe-amd-graphics (Ubuntu Stonking)</td><td><span class="status-badge badge-closed">Invalid</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/stonking/+source/linux-firmware-hwe-amd-graphics/+bug/2170529" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="details-meta-card">
+                            <h4>Bug Details</h4>
+                            <div class="meta-item"><strong>Reporter:</strong> <span>Leo Lin</span></div>
+                            <div class="meta-item">
+                                <strong>Created:</strong>
+                                <span class="font-mono">2026-10-12 06:33</span>
+                            </div>
+                            <div class="meta-item">
+                                <strong>Last Updated:</strong>
+                                <span class="font-mono">2026-11-26 05:56</span>
+                            </div>
+                            <div class="meta-item"><strong>Last Activity:</strong> <span>tags: kernel-daily-bug linux-firmware-daily-bug verification-done-noble verification-done-resolute by 0xff07</span></div>
+                            <div class="meta-item">
+                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (Active within 48h · Undecided importance))</span>
+                            </div>
+                            
+                            <div class="meta-item"><strong>Open Series:</strong> <span>noble, resolute, stonking</span></div>
+                            <div class="meta-item"><strong>Active Targets:</strong>
+                                <span class="text-sm">linux-firmware-amd-graphics (Ubuntu Noble), linux-firmware-amd-graphics (Ubuntu Resolute), linux-firmware-hwe-amd-graphics (Ubuntu Resolute), linux-firmware-amd-graphics (Ubuntu Stonking)</span>
+                            </div>
+                            <div class="meta-item"><strong>Tags:</strong>
+                                <div class="tags-wrap"><span class="tag-pill">kernel-daily-bug</span><span class="tag-pill">linux-firmware-daily-bug</span><span class="tag-pill">verification-done-noble</span><span class="tag-pill">verification-done-resolute</span></div>
                             </div>
                         </div>
                     </div>
@@ -489,7 +489,7 @@
             data-packages="[&quot;linux-firmware-misc&quot;]"
             data-series="[&quot;noble&quot;, &quot;resolute&quot;, &quot;stonking&quot;]"
             data-flame="3" data-info-added="false"
-            data-statuses="[&quot;fix committed&quot;, &quot;in progress&quot;, &quot;incomplete&quot;, &quot;new&quot;, &quot;triaged&quot;]" data-created="2026-09-22T05:16:43.345570+00:00" data-lastact="2026-11-25T16:25:13.118649+00:00">
+            data-statuses="[&quot;fix committed&quot;, &quot;in progress&quot;, &quot;new&quot;]" data-created="2026-09-22T05:16:43.345570+00:00" data-lastact="2026-11-26T05:36:36.500892+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2167915">▶</span></td>
             <td class="col-flame" title="Hot (Active within 48h · Undecided importance)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
             <td class="col-id font-mono">
@@ -499,12 +499,12 @@
             <td class="col-package font-mono"><span class="package-pill">linux-firmware-misc</span></td>
             <td class="col-tasks">
                 <div class="tasks-summary-wrap">
-                    <span class="task-count-pill"><strong class="text-orange">7 Open</strong> / <span class="text-gray">5 Closed</span></span>
-                    <div class="status-badges-group"><span class="status-badge badge-fixcommitted">Fix Committed</span><span class="status-badge badge-inprogress">In Progress</span><span class="status-badge badge-incomplete">Incomplete</span><span class="status-badge badge-new">New</span><span class="status-badge badge-inprogress">Triaged</span></div>
+                    <span class="task-count-pill"><strong class="text-orange">6 Open</strong> / <span class="text-gray">6 Closed</span></span>
+                    <div class="status-badges-group"><span class="status-badge badge-fixcommitted">Fix Committed</span><span class="status-badge badge-inprogress">In Progress</span><span class="status-badge badge-new">New</span></div>
                 </div>
             </td>
             <td class="col-created font-mono">2026-09-22 05:16</td>
-            <td class="col-activity font-mono" title="linux-firmware-misc (Ubuntu Noble): status: Incomplete by tjaalton">2026-11-25 16:25</td>
+            <td class="col-activity font-mono" title="linux-firmware-misc (Ubuntu Noble): status: Fix Committed by juergh">2026-11-26 05:36</td>
         </tr>
         <tr class="details-row" id="details-2167915" style="display: none;">
             <td colspan="8">
@@ -523,7 +523,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr><td class="font-mono">firmware-sof (Ubuntu)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/firmware-sof/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux (Ubuntu)</td><td><span class="status-badge badge-fixreleased">Fix Released</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-misc (Ubuntu)</td><td><span class="status-badge badge-fixreleased">Fix Released</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux-firmware-misc/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">firmware-sof (Ubuntu Noble)</td><td><span class="status-badge badge-inprogress">Triaged</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/noble/+source/firmware-sof/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux (Ubuntu Noble)</td><td><span class="status-badge badge-closed">Invalid</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/noble/+source/linux/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-misc (Ubuntu Noble)</td><td><span class="status-badge badge-incomplete">Incomplete</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-misc/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">firmware-sof (Ubuntu Resolute)</td><td><span class="status-badge badge-inprogress">In Progress</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/firmware-sof/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux (Ubuntu Resolute)</td><td><span class="status-badge badge-closed">Invalid</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/linux/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-misc (Ubuntu Resolute)</td><td><span class="status-badge badge-fixcommitted">Fix Committed</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-misc/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">firmware-sof (Ubuntu Stonking)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/stonking/+source/firmware-sof/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux (Ubuntu Stonking)</td><td><span class="status-badge badge-fixreleased">Fix Released</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/stonking/+source/linux/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-misc (Ubuntu Stonking)</td><td><span class="status-badge badge-fixcommitted">Fix Committed</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/stonking/+source/linux-firmware-misc/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr>
+                                    <tr><td class="font-mono">firmware-sof (Ubuntu)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/firmware-sof/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux (Ubuntu)</td><td><span class="status-badge badge-fixreleased">Fix Released</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-misc (Ubuntu)</td><td><span class="status-badge badge-fixreleased">Fix Released</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux-firmware-misc/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">firmware-sof (Ubuntu Noble)</td><td><span class="status-badge badge-closed">Invalid</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/noble/+source/firmware-sof/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux (Ubuntu Noble)</td><td><span class="status-badge badge-closed">Invalid</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/noble/+source/linux/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-misc (Ubuntu Noble)</td><td><span class="status-badge badge-fixcommitted">Fix Committed</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-misc/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">firmware-sof (Ubuntu Resolute)</td><td><span class="status-badge badge-inprogress">In Progress</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/firmware-sof/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux (Ubuntu Resolute)</td><td><span class="status-badge badge-closed">Invalid</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/linux/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-misc (Ubuntu Resolute)</td><td><span class="status-badge badge-fixcommitted">Fix Committed</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-misc/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">firmware-sof (Ubuntu Stonking)</td><td><span class="status-badge badge-inprogress">In Progress</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/stonking/+source/firmware-sof/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux (Ubuntu Stonking)</td><td><span class="status-badge badge-fixreleased">Fix Released</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/stonking/+source/linux/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-misc (Ubuntu Stonking)</td><td><span class="status-badge badge-fixcommitted">Fix Committed</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/stonking/+source/linux-firmware-misc/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr>
                                 </tbody>
                             </table>
                         </div>
@@ -536,19 +536,165 @@
                             </div>
                             <div class="meta-item">
                                 <strong>Last Updated:</strong>
-                                <span class="font-mono">2026-11-25 16:25</span>
+                                <span class="font-mono">2026-11-26 05:36</span>
                             </div>
-                            <div class="meta-item"><strong>Last Activity:</strong> <span>linux-firmware-misc (Ubuntu Noble): status: Incomplete by tjaalton</span></div>
+                            <div class="meta-item"><strong>Last Activity:</strong> <span>linux-firmware-misc (Ubuntu Noble): status: Fix Committed by juergh</span></div>
                             <div class="meta-item">
                                 <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (Active within 48h · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>noble, resolute, stonking</span></div>
                             <div class="meta-item"><strong>Active Targets:</strong>
-                                <span class="text-sm">firmware-sof (Ubuntu), firmware-sof (Ubuntu Noble), linux-firmware-misc (Ubuntu Noble), firmware-sof (Ubuntu Resolute), linux-firmware-misc (Ubuntu Resolute), firmware-sof (Ubuntu Stonking), linux-firmware-misc (Ubuntu Stonking)</span>
+                                <span class="text-sm">firmware-sof (Ubuntu), linux-firmware-misc (Ubuntu Noble), firmware-sof (Ubuntu Resolute), linux-firmware-misc (Ubuntu Resolute), firmware-sof (Ubuntu Stonking), linux-firmware-misc (Ubuntu Stonking)</span>
                             </div>
                             <div class="meta-item"><strong>Tags:</strong>
-                                <div class="tags-wrap"><span class="tag-pill">jira-somerville-4795</span><span class="tag-pill">kernel-daily-bug</span><span class="tag-pill">linux-firmware-daily-bug</span><span class="tag-pill">oem-priority</span><span class="tag-pill">somerville</span></div>
+                                <div class="tags-wrap"><span class="tag-pill">jira-somerville-4795</span><span class="tag-pill">jira-wtn-466</span><span class="tag-pill">kernel-daily-bug</span><span class="tag-pill">linux-firmware-daily-bug</span><span class="tag-pill">oem-priority</span><span class="tag-pill">somerville</span><span class="tag-pill">verification-needed-stonking</span><span class="tag-pill">wtn</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        
+
+        <tr class="bug-row" id="row-2176148" onclick="toggleDetails(2176148)"
+            data-bugid="2176148" data-package="linux-firmware"
+            data-packages="[&quot;linux-firmware&quot;]"
+            data-series="[]"
+            data-flame="3" data-info-added="false"
+            data-statuses="[&quot;new&quot;]" data-created="2026-11-26T04:52:19.932692+00:00" data-lastact="2026-11-26T04:52:19.932692+00:00">
+            <td class="col-toggle"><span class="toggle-icon" id="toggle-2176148">▶</span></td>
+            <td class="col-flame" title="Hot (Active within 48h · Undecided importance)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
+            <td class="col-id font-mono">
+                <a href="https://bugs.launchpad.net/bugs/2176148" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2176148</a>
+            </td>
+            <td class="col-title" title="linux-firmware (MT7921K/RZ608): ~40% Wi-Fi RX packet loss after scan during A2DP streaming since 20251223">linux-firmware (MT7921K/RZ608): ~40% Wi-Fi RX packet loss after scan during A2DP streaming since 20251223</td>
+            <td class="col-package font-mono"><span class="package-pill">linux-firmware</span></td>
+            <td class="col-tasks">
+                <div class="tasks-summary-wrap">
+                    <span class="task-count-pill"><strong class="text-orange">1 Open</strong> / <span class="text-gray">0 Closed</span></span>
+                    <div class="status-badges-group"><span class="status-badge badge-new">New</span></div>
+                </div>
+            </td>
+            <td class="col-created font-mono">2026-11-26 04:52</td>
+            <td class="col-activity font-mono" title="bug updated by kosciany">2026-11-26 04:52</td>
+        </tr>
+        <tr class="details-row" id="details-2176148" style="display: none;">
+            <td colspan="8">
+                <div class="details-panel">
+                    <div class="details-grid">
+                        <div class="details-tasks-card">
+                            <h4>Target Tasks (1 total)</h4>
+                            <table class="subtable">
+                                <thead>
+                                    <tr>
+                                        <th>Target</th>
+                                        <th>Status</th>
+                                        <th>Importance</th>
+                                        <th>Assignee</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td class="font-mono">linux-firmware (Ubuntu)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2176148" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="details-meta-card">
+                            <h4>Bug Details</h4>
+                            <div class="meta-item"><strong>Reporter:</strong> <span>Karol Adamiak</span></div>
+                            <div class="meta-item">
+                                <strong>Created:</strong>
+                                <span class="font-mono">2026-11-26 04:52</span>
+                            </div>
+                            <div class="meta-item">
+                                <strong>Last Updated:</strong>
+                                <span class="font-mono">2026-11-26 04:52</span>
+                            </div>
+                            <div class="meta-item"><strong>Last Activity:</strong> <span>bug updated by kosciany</span></div>
+                            <div class="meta-item">
+                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (Active within 48h · Undecided importance))</span>
+                            </div>
+                            
+                            <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
+                            <div class="meta-item"><strong>Active Targets:</strong>
+                                <span class="text-sm">linux-firmware (Ubuntu)</span>
+                            </div>
+                            <div class="meta-item"><strong>Tags:</strong>
+                                <div class="tags-wrap"><span class="tag-pill">amd64</span><span class="tag-pill">apport-bug</span><span class="tag-pill">resolute</span><span class="tag-pill">wayland-session</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        
+
+        <tr class="bug-row" id="row-2173838" onclick="toggleDetails(2173838)"
+            data-bugid="2173838" data-package="linux-firmware-amd-misc"
+            data-packages="[&quot;linux-firmware-amd-misc&quot;, &quot;linux-firmware-misc&quot;]"
+            data-series="[&quot;resolute&quot;, &quot;stonking&quot;, &quot;tenacious&quot;]"
+            data-flame="3" data-info-added="false"
+            data-statuses="[&quot;fix committed&quot;, &quot;in progress&quot;, &quot;new&quot;]" data-created="2026-11-10T06:53:22.109455+00:00" data-lastact="2026-11-26T03:32:19.467015+00:00">
+            <td class="col-toggle"><span class="toggle-icon" id="toggle-2173838">▶</span></td>
+            <td class="col-flame" title="Hot (Active within 48h · Undecided importance)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
+            <td class="col-id font-mono">
+                <a href="https://bugs.launchpad.net/bugs/2173838" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2173838</a>
+            </td>
+            <td class="col-title" title=" Support SoundWire and SoF on AMD with Cirrus Logic IC Solution"> Support SoundWire and SoF on AMD with Cirrus Logic IC Solution</td>
+            <td class="col-package font-mono"><span class="package-pill">linux-firmware-amd-misc</span><span class="package-pill">linux-firmware-misc</span></td>
+            <td class="col-tasks">
+                <div class="tasks-summary-wrap">
+                    <span class="task-count-pill"><strong class="text-orange">12 Open</strong> / <span class="text-gray">7 Closed</span></span>
+                    <div class="status-badges-group"><span class="status-badge badge-fixcommitted">Fix Committed</span><span class="status-badge badge-inprogress">In Progress</span><span class="status-badge badge-new">New</span></div>
+                </div>
+            </td>
+            <td class="col-created font-mono">2026-11-10 06:53</td>
+            <td class="col-activity font-mono" title="linux (Ubuntu Resolute): status: Invalid by mschiu77">2026-11-26 03:32</td>
+        </tr>
+        <tr class="details-row" id="details-2173838" style="display: none;">
+            <td colspan="8">
+                <div class="details-panel">
+                    <div class="details-grid">
+                        <div class="details-tasks-card">
+                            <h4>Target Tasks (19 total)</h4>
+                            <table class="subtable">
+                                <thead>
+                                    <tr>
+                                        <th>Target</th>
+                                        <th>Status</th>
+                                        <th>Importance</th>
+                                        <th>Assignee</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td class="font-mono">alsa-ucm-conf (Ubuntu)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/alsa-ucm-conf/+bug/2173838" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux (Ubuntu)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux/+bug/2173838" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-misc (Ubuntu)</td><td><span class="status-badge badge-fixreleased">Fix Released</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux-firmware-misc/+bug/2173838" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-oem-7.3 (Ubuntu)</td><td><span class="status-badge badge-closed">Invalid</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux-oem-7.3/+bug/2173838" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">alsa-ucm-conf (Ubuntu Resolute)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/alsa-ucm-conf/+bug/2173838" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux (Ubuntu Resolute)</td><td><span class="status-badge badge-closed">Invalid</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/linux/+bug/2173838" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-amd-misc (Ubuntu Resolute)</td><td><span class="status-badge badge-inprogress">In Progress</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-amd-misc/+bug/2173838" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-misc (Ubuntu Resolute)</td><td><span class="status-badge badge-inprogress">In Progress</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-misc/+bug/2173838" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-oem-7.3 (Ubuntu Resolute)</td><td><span class="status-badge badge-inprogress">In Progress</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/linux-oem-7.3/+bug/2173838" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">alsa-ucm-conf (Ubuntu Stonking)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/stonking/+source/alsa-ucm-conf/+bug/2173838" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux (Ubuntu Stonking)</td><td><span class="status-badge badge-inprogress">In Progress</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/stonking/+source/linux/+bug/2173838" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-amd-misc (Ubuntu Stonking)</td><td><span class="status-badge badge-fixcommitted">Fix Committed</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/stonking/+source/linux-firmware-amd-misc/+bug/2173838" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-misc (Ubuntu Stonking)</td><td><span class="status-badge badge-fixcommitted">Fix Committed</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/stonking/+source/linux-firmware-misc/+bug/2173838" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-oem-7.3 (Ubuntu Stonking)</td><td><span class="status-badge badge-closed">Invalid</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/stonking/+source/linux-oem-7.3/+bug/2173838" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">alsa-ucm-conf (Ubuntu Tenacious)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/tenacious/+source/alsa-ucm-conf/+bug/2173838" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux (Ubuntu Tenacious)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/tenacious/+source/linux/+bug/2173838" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-amd-misc (Ubuntu Tenacious)</td><td><span class="status-badge badge-fixreleased">Fix Released</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/tenacious/+source/linux-firmware-amd-misc/+bug/2173838" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-misc (Ubuntu Tenacious)</td><td><span class="status-badge badge-fixreleased">Fix Released</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/tenacious/+source/linux-firmware-misc/+bug/2173838" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-oem-7.3 (Ubuntu Tenacious)</td><td><span class="status-badge badge-closed">Invalid</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/tenacious/+source/linux-oem-7.3/+bug/2173838" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="details-meta-card">
+                            <h4>Bug Details</h4>
+                            <div class="meta-item"><strong>Reporter:</strong> <span>Chris Chiu</span></div>
+                            <div class="meta-item">
+                                <strong>Created:</strong>
+                                <span class="font-mono">2026-11-10 06:53</span>
+                            </div>
+                            <div class="meta-item">
+                                <strong>Last Updated:</strong>
+                                <span class="font-mono">2026-11-26 03:32</span>
+                            </div>
+                            <div class="meta-item"><strong>Last Activity:</strong> <span>linux (Ubuntu Resolute): status: Invalid by mschiu77</span></div>
+                            <div class="meta-item">
+                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (Active within 48h · Undecided importance))</span>
+                            </div>
+                            
+                            <div class="meta-item"><strong>Open Series:</strong> <span>resolute, stonking, tenacious</span></div>
+                            <div class="meta-item"><strong>Active Targets:</strong>
+                                <span class="text-sm">alsa-ucm-conf (Ubuntu), linux (Ubuntu), alsa-ucm-conf (Ubuntu Resolute), linux-firmware-amd-misc (Ubuntu Resolute), linux-firmware-misc (Ubuntu Resolute), linux-oem-7.3 (Ubuntu Resolute), alsa-ucm-conf (Ubuntu Stonking), linux (Ubuntu Stonking), linux-firmware-amd-misc (Ubuntu Stonking), linux-firmware-misc (Ubuntu Stonking), alsa-ucm-conf (Ubuntu Tenacious), linux (Ubuntu Tenacious)</span>
+                            </div>
+                            <div class="meta-item"><strong>Tags:</strong>
+                                <div class="tags-wrap"><span class="tag-pill">jira-somerville-4911</span><span class="tag-pill">jira-somerville-5869</span><span class="tag-pill">kernel-daily-bug</span><span class="tag-pill">linux-firmware-daily-bug</span><span class="tag-pill">oem-priority</span><span class="tag-pill">somerville</span></div>
                             </div>
                         </div>
                     </div>
@@ -856,7 +1002,7 @@
             data-flame="3" data-info-added="true"
             data-statuses="[&quot;in progress&quot;, &quot;incomplete&quot;]" data-created="2026-11-23T07:36:07.731650+00:00" data-lastact="2026-11-23T23:01:15.812663+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2175562">▶</span></td>
-            <td class="col-flame" title="Hot (High importance · Active 2.0d ago)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
+            <td class="col-flame" title="Hot (High importance · Active 2.4d ago)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2175562" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2175562</a>
             </td>
@@ -905,7 +1051,7 @@
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>tags: kernel-daily-bug linux-firmware-daily-bug by ubuntu-kernel-bot</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (High importance · Active 2.0d ago))</span>
+                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (High importance · Active 2.4d ago))</span>
                             </div>
                             <div class="meta-item"><strong class="text-orange">Review:</strong> <span>Activity occurred after task set to Incomplete</span></div>
                             <div class="meta-item"><strong>Open Series:</strong> <span>resolute, tenacious</span></div>
@@ -922,79 +1068,6 @@
         </tr>
         
 
-        <tr class="bug-row" id="row-2173838" onclick="toggleDetails(2173838)"
-            data-bugid="2173838" data-package="linux-firmware-amd-misc"
-            data-packages="[&quot;linux-firmware-amd-misc&quot;, &quot;linux-firmware-misc&quot;]"
-            data-series="[&quot;resolute&quot;, &quot;stonking&quot;, &quot;tenacious&quot;]"
-            data-flame="2" data-info-added="false"
-            data-statuses="[&quot;fix committed&quot;, &quot;new&quot;]" data-created="2026-11-10T06:53:22.109455+00:00" data-lastact="2026-11-22T15:36:26.516304+00:00">
-            <td class="col-toggle"><span class="toggle-icon" id="toggle-2173838">▶</span></td>
-            <td class="col-flame" title="Warm (Active within 7d · Undecided importance)"><span class="flame-tier flame-2">🔥🔥</span></td>
-            <td class="col-id font-mono">
-                <a href="https://bugs.launchpad.net/bugs/2173838" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2173838</a>
-            </td>
-            <td class="col-title" title=" Support SoundWire and SoF on AMD with Cirrus Logic IC Solution"> Support SoundWire and SoF on AMD with Cirrus Logic IC Solution</td>
-            <td class="col-package font-mono"><span class="package-pill">linux-firmware-amd-misc</span><span class="package-pill">linux-firmware-misc</span></td>
-            <td class="col-tasks">
-                <div class="tasks-summary-wrap">
-                    <span class="task-count-pill"><strong class="text-orange">16 Open</strong> / <span class="text-gray">4 Closed</span></span>
-                    <div class="status-badges-group"><span class="status-badge badge-fixcommitted">Fix Committed</span><span class="status-badge badge-new">New</span></div>
-                </div>
-            </td>
-            <td class="col-created font-mono">2026-11-10 06:53</td>
-            <td class="col-activity font-mono" title="bug updated by tjaalton">2026-11-22 15:36</td>
-        </tr>
-        <tr class="details-row" id="details-2173838" style="display: none;">
-            <td colspan="8">
-                <div class="details-panel">
-                    <div class="details-grid">
-                        <div class="details-tasks-card">
-                            <h4>Target Tasks (20 total)</h4>
-                            <table class="subtable">
-                                <thead>
-                                    <tr>
-                                        <th>Target</th>
-                                        <th>Status</th>
-                                        <th>Importance</th>
-                                        <th>Assignee</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><td class="font-mono">alsa-ucm-conf (Ubuntu)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/alsa-ucm-conf/+bug/2173838" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux (Ubuntu)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux/+bug/2173838" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-amd-misc (Ubuntu)</td><td><span class="status-badge badge-fixreleased">Fix Released</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux-firmware-amd-misc/+bug/2173838" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-misc (Ubuntu)</td><td><span class="status-badge badge-fixreleased">Fix Released</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux-firmware-misc/+bug/2173838" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-oem-7.3 (Ubuntu)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux-oem-7.3/+bug/2173838" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">alsa-ucm-conf (Ubuntu Resolute)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/alsa-ucm-conf/+bug/2173838" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux (Ubuntu Resolute)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/linux/+bug/2173838" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-amd-misc (Ubuntu Resolute)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-amd-misc/+bug/2173838" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-misc (Ubuntu Resolute)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-misc/+bug/2173838" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-oem-7.3 (Ubuntu Resolute)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/linux-oem-7.3/+bug/2173838" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">alsa-ucm-conf (Ubuntu Stonking)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/stonking/+source/alsa-ucm-conf/+bug/2173838" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux (Ubuntu Stonking)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/stonking/+source/linux/+bug/2173838" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-amd-misc (Ubuntu Stonking)</td><td><span class="status-badge badge-fixcommitted">Fix Committed</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/stonking/+source/linux-firmware-amd-misc/+bug/2173838" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-misc (Ubuntu Stonking)</td><td><span class="status-badge badge-fixcommitted">Fix Committed</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/stonking/+source/linux-firmware-misc/+bug/2173838" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-oem-7.3 (Ubuntu Stonking)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/stonking/+source/linux-oem-7.3/+bug/2173838" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">alsa-ucm-conf (Ubuntu Tenacious)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/tenacious/+source/alsa-ucm-conf/+bug/2173838" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux (Ubuntu Tenacious)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/tenacious/+source/linux/+bug/2173838" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-amd-misc (Ubuntu Tenacious)</td><td><span class="status-badge badge-fixreleased">Fix Released</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/tenacious/+source/linux-firmware-amd-misc/+bug/2173838" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-misc (Ubuntu Tenacious)</td><td><span class="status-badge badge-fixreleased">Fix Released</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/tenacious/+source/linux-firmware-misc/+bug/2173838" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-oem-7.3 (Ubuntu Tenacious)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/tenacious/+source/linux-oem-7.3/+bug/2173838" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="details-meta-card">
-                            <h4>Bug Details</h4>
-                            <div class="meta-item"><strong>Reporter:</strong> <span>Chris Chiu</span></div>
-                            <div class="meta-item">
-                                <strong>Created:</strong>
-                                <span class="font-mono">2026-11-10 06:53</span>
-                            </div>
-                            <div class="meta-item">
-                                <strong>Last Updated:</strong>
-                                <span class="font-mono">2026-11-22 15:36</span>
-                            </div>
-                            <div class="meta-item"><strong>Last Activity:</strong> <span>bug updated by tjaalton</span></div>
-                            <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥🔥 (Warm (Active within 7d · Undecided importance))</span>
-                            </div>
-                            
-                            <div class="meta-item"><strong>Open Series:</strong> <span>resolute, stonking, tenacious</span></div>
-                            <div class="meta-item"><strong>Active Targets:</strong>
-                                <span class="text-sm">alsa-ucm-conf (Ubuntu), linux (Ubuntu), linux-oem-7.3 (Ubuntu), alsa-ucm-conf (Ubuntu Resolute), linux (Ubuntu Resolute), linux-firmware-amd-misc (Ubuntu Resolute), linux-firmware-misc (Ubuntu Resolute), linux-oem-7.3 (Ubuntu Resolute), alsa-ucm-conf (Ubuntu Stonking), linux (Ubuntu Stonking), linux-firmware-amd-misc (Ubuntu Stonking), linux-firmware-misc (Ubuntu Stonking), linux-oem-7.3 (Ubuntu Stonking), alsa-ucm-conf (Ubuntu Tenacious), linux (Ubuntu Tenacious), linux-oem-7.3 (Ubuntu Tenacious)</span>
-                            </div>
-                            <div class="meta-item"><strong>Tags:</strong>
-                                <div class="tags-wrap"><span class="tag-pill">jira-somerville-4911</span><span class="tag-pill">jira-somerville-5869</span><span class="tag-pill">kernel-daily-bug</span><span class="tag-pill">linux-firmware-daily-bug</span><span class="tag-pill">oem-priority</span><span class="tag-pill">somerville</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </td>
-        </tr>
-        
-
         <tr class="bug-row" id="row-2160682" onclick="toggleDetails(2160682)"
             data-bugid="2160682" data-package="linux-firmware-intel-wireless"
             data-packages="[&quot;linux-firmware-intel-wireless&quot;]"
@@ -1002,7 +1075,7 @@
             data-flame="3" data-info-added="true"
             data-statuses="[&quot;fix committed&quot;, &quot;in progress&quot;, &quot;incomplete&quot;]" data-created="2026-07-15T07:33:52.713471+00:00" data-lastact="2026-11-22T15:36:23.464560+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2160682">▶</span></td>
-            <td class="col-flame" title="Hot (Info added · Active 3.3d ago)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
+            <td class="col-flame" title="Hot (Info added · Active 3.7d ago)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2160682" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2160682</a>
             </td>
@@ -1051,7 +1124,7 @@
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>linux-firmware-intel-wireless (Ubuntu): status: Fix Released by tjaalton</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (Info added · Active 3.3d ago))</span>
+                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (Info added · Active 3.7d ago))</span>
                             </div>
                             <div class="meta-item"><strong class="text-orange">Review:</strong> <span>Activity occurred after task set to Incomplete</span></div>
                             <div class="meta-item"><strong>Open Series:</strong> <span>resolute, stonking</span></div>
@@ -1075,7 +1148,7 @@
             data-flame="3" data-info-added="false"
             data-statuses="[&quot;fix committed&quot;, &quot;in progress&quot;]" data-created="2026-07-30T14:41:59.415096+00:00" data-lastact="2026-11-22T15:36:22.427041+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2162157">▶</span></td>
-            <td class="col-flame" title="Hot (High importance · Active 3.3d ago)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
+            <td class="col-flame" title="Hot (High importance · Active 3.7d ago)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2162157" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2162157</a>
             </td>
@@ -1124,7 +1197,7 @@
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>linux-firmware-intel-wireless (Ubuntu): status: Fix Released by tjaalton</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (High importance · Active 3.3d ago))</span>
+                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (High importance · Active 3.7d ago))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>resolute, stonking</span></div>
@@ -1148,7 +1221,7 @@
             data-flame="3" data-info-added="false"
             data-statuses="[&quot;fix committed&quot;]" data-created="2026-11-04T02:20:06.152073+00:00" data-lastact="2026-11-22T15:36:20.423220+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2172895">▶</span></td>
-            <td class="col-flame" title="Hot (High importance · Active 3.3d ago)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
+            <td class="col-flame" title="Hot (High importance · Active 3.7d ago)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2172895" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2172895</a>
             </td>
@@ -1197,7 +1270,7 @@
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>bug updated by tjaalton</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (High importance · Active 3.3d ago))</span>
+                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (High importance · Active 3.7d ago))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>resolute, stonking</span></div>
@@ -1221,7 +1294,7 @@
             data-flame="3" data-info-added="false"
             data-statuses="[&quot;fix committed&quot;, &quot;in progress&quot;]" data-created="2026-09-18T08:55:15.281959+00:00" data-lastact="2026-11-22T15:36:19.610655+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2167683">▶</span></td>
-            <td class="col-flame" title="Hot (High importance · Active 3.3d ago)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
+            <td class="col-flame" title="Hot (High importance · Active 3.7d ago)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2167683" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2167683</a>
             </td>
@@ -1270,7 +1343,7 @@
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>bug updated by tjaalton</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (High importance · Active 3.3d ago))</span>
+                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (High importance · Active 3.7d ago))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>resolute, stonking</span></div>
@@ -1367,7 +1440,7 @@
             data-flame="1" data-info-added="false"
             data-statuses="[&quot;new&quot;]" data-created="2024-11-17T01:25:29.409572+00:00" data-lastact="2026-11-18T19:56:06.933671+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2088354">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 7.2d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 7.5d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2088354" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2088354</a>
             </td>
@@ -1416,7 +1489,7 @@
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>affects: linux-firmware-intel-wireless (Ubuntu) by juergh</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 7.2d ago · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 7.5d ago · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>noble</span></div>
@@ -1440,7 +1513,7 @@
             data-flame="1" data-info-added="false"
             data-statuses="[&quot;new&quot;, &quot;triaged&quot;]" data-created="2026-11-05T23:42:20.190955+00:00" data-lastact="2026-11-17T09:31:44.671862+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2173379">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 8.6d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 8.9d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2173379" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2173379</a>
             </td>
@@ -1489,7 +1562,7 @@
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>linux-firmware-intel-wireless (Ubuntu Noble): assignee: Juerg Haefliger (juergh) by anthonywong</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 8.6d ago · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 8.9d ago · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>noble</span></div>
@@ -1513,7 +1586,7 @@
             data-flame="1" data-info-added="false"
             data-statuses="[&quot;in progress&quot;]" data-created="2026-09-18T03:39:43.511854+00:00" data-lastact="2026-11-17T07:00:37.460803+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2167668">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 8.7d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 9.0d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2167668" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2167668</a>
             </td>
@@ -1650,7 +1723,7 @@ sdma_6_1_4_l.bin
 vcn_5_3_0_l.bin
 vpe_2_0_0_l.bin by superm1</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 8.7d ago · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 9.0d ago · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>resolute, stonking</span></div>
@@ -1674,7 +1747,7 @@ vpe_2_0_0_l.bin by superm1</span></div>
             data-flame="1" data-info-added="false"
             data-statuses="[&quot;fix committed&quot;]" data-created="2026-10-01T07:39:16.453495+00:00" data-lastact="2026-11-13T09:10:48.006604+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2169111">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 12.6d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 12.9d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2169111" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2169111</a>
             </td>
@@ -1723,7 +1796,7 @@ vpe_2_0_0_l.bin by superm1</span></div>
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>linux-firmware-misc (Ubuntu Resolute): status: Fix Committed by juergh</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 12.6d ago · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 12.9d ago · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>resolute</span></div>
@@ -1893,7 +1966,7 @@ vpe_2_0_0_l.bin by superm1</span></div>
             data-flame="1" data-info-added="false"
             data-statuses="[&quot;confirmed&quot;]" data-created="2026-11-10T21:25:14.345370+00:00" data-lastact="2026-11-10T23:03:32.837304+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2173927">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 15.0d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 15.4d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2173927" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2173927</a>
             </td>
@@ -1942,7 +2015,7 @@ vpe_2_0_0_l.bin by superm1</span></div>
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>tags: amd64 apport-bug kernel-daily-bug linux-firmware-daily-bug resolute wayland-session by ubuntu-kernel-bot</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 15.0d ago · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 15.4d ago · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
@@ -2039,7 +2112,7 @@ vpe_2_0_0_l.bin by superm1</span></div>
             data-flame="1" data-info-added="false"
             data-statuses="[&quot;new&quot;]" data-created="2026-11-10T22:00:58.207375+00:00" data-lastact="2026-11-10T23:03:10.473146+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2173929">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 15.0d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 15.4d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2173929" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2173929</a>
             </td>
@@ -2088,7 +2161,7 @@ vpe_2_0_0_l.bin by superm1</span></div>
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>tags: amd64 apport-bug kernel-daily-bug linux-firmware-daily-bug resolute wayland-session by ubuntu-kernel-bot</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 15.0d ago · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 15.4d ago · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
@@ -2112,7 +2185,7 @@ vpe_2_0_0_l.bin by superm1</span></div>
             data-flame="2" data-info-added="false"
             data-statuses="[&quot;in progress&quot;]" data-created="2026-07-07T02:24:01.855733+00:00" data-lastact="2026-11-10T07:42:48.988052+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2159856">▶</span></td>
-            <td class="col-flame" title="Warm (High importance · Active 15.7d ago)"><span class="flame-tier flame-2">🔥🔥</span></td>
+            <td class="col-flame" title="Warm (High importance · Active 16.0d ago)"><span class="flame-tier flame-2">🔥🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2159856" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2159856</a>
             </td>
@@ -2291,7 +2364,7 @@ We are backporting core108 to Resolute in oem-7.3. Nominate for R, S and T. Yet 
 https://git.kernel.org/pub/scm/linux/kernel/git/iwlwifi/backport-iwlwifi.git/log/?h=release/core24.70
 Intel is switching to a release naming scheme used on Windows. by vicamo</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥🔥 (Warm (High importance · Active 15.7d ago))</span>
+                                <strong>Heat:</strong> <span>🔥🔥 (Warm (High importance · Active 16.0d ago))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>resolute</span></div>
@@ -2315,7 +2388,7 @@ Intel is switching to a release naming scheme used on Windows. by vicamo</span><
             data-flame="1" data-info-added="false"
             data-statuses="[&quot;in progress&quot;]" data-created="2026-09-08T05:58:44.096220+00:00" data-lastact="2026-11-10T07:41:05.450194+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2166733">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 15.7d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 16.0d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2166733" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2166733</a>
             </td>
@@ -2420,7 +2493,7 @@ Intel released core24.70 after core105 and was seem preparing release of core24.
 
 New core106 firmwares are in commit 2ab4ce216003 (&quot;iwlwifi: add Bz/Sc FW for core24.60-33 release&quot;), which has been in linux-firmware/stonking starting from version 20260709.git2c35b1ed-0ubuntu1. by vicamo</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 15.7d ago · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 16.0d ago · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>resolute</span></div>
@@ -2590,7 +2663,7 @@ New core106 firmwares are in commit 2ab4ce216003 (&quot;iwlwifi: add Bz/Sc FW fo
             data-flame="1" data-info-added="false"
             data-statuses="[&quot;new&quot;]" data-created="2026-10-22T11:49:51.793626+00:00" data-lastact="2026-11-06T07:24:09.754028+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2171935">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 19.7d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 20.0d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2171935" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2171935</a>
             </td>
@@ -2639,7 +2712,7 @@ New core106 firmwares are in commit 2ab4ce216003 (&quot;iwlwifi: add Bz/Sc FW fo
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>bug task added: linux-firmware-realtek (Ubuntu Stonking) by juergh</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 19.7d ago · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 20.0d ago · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>stonking</span></div>
@@ -3539,7 +3612,7 @@ New core106 firmwares are in commit 2ab4ce216003 (&quot;iwlwifi: add Bz/Sc FW fo
             data-flame="0" data-info-added="false"
             data-statuses="[&quot;new&quot;]" data-created="2026-08-14T17:30:24.440732+00:00" data-lastact="2026-10-16T12:12:19.260106+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2163514">▶</span></td>
-            <td class="col-flame" title="Cold (Inactive 40d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
+            <td class="col-flame" title="Cold (Inactive 41d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2163514" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2163514</a>
             </td>
@@ -3588,7 +3661,7 @@ New core106 firmwares are in commit 2ab4ce216003 (&quot;iwlwifi: add Bz/Sc FW fo
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>affects: linux-firmware-mediatek (Ubuntu) by juergh</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>— (Cold (Inactive 40d · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>— (Cold (Inactive 41d · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>noble</span></div>
@@ -3612,7 +3685,7 @@ New core106 firmwares are in commit 2ab4ce216003 (&quot;iwlwifi: add Bz/Sc FW fo
             data-flame="0" data-info-added="false"
             data-statuses="[&quot;confirmed&quot;, &quot;new&quot;]" data-created="2025-10-17T14:55:28.731670+00:00" data-lastact="2026-10-16T12:06:38.968092+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2128724">▶</span></td>
-            <td class="col-flame" title="Cold (Inactive 40d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
+            <td class="col-flame" title="Cold (Inactive 41d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2128724" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2128724</a>
             </td>
@@ -3661,7 +3734,7 @@ New core106 firmwares are in commit 2ab4ce216003 (&quot;iwlwifi: add Bz/Sc FW fo
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>linux-firmware-intel-wireless (Ubuntu): status: New by juergh</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>— (Cold (Inactive 40d · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>— (Cold (Inactive 41d · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>noble</span></div>
@@ -4999,7 +5072,7 @@ New core106 firmwares are in commit 2ab4ce216003 (&quot;iwlwifi: add Bz/Sc FW fo
             data-flame="0" data-info-added="false"
             data-statuses="[&quot;new&quot;]" data-created="2026-09-18T14:15:50.626046+00:00" data-lastact="2026-09-29T14:40:16.534799+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2167722">▶</span></td>
-            <td class="col-flame" title="Cold (Inactive 57d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
+            <td class="col-flame" title="Cold (Inactive 58d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2167722" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2167722</a>
             </td>
@@ -5048,7 +5121,7 @@ New core106 firmwares are in commit 2ab4ce216003 (&quot;iwlwifi: add Bz/Sc FW fo
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>linux-firmware-mediatek (Ubuntu): assignee: Ioanna Alifieraki (joalif) by joalif</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>— (Cold (Inactive 57d · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>— (Cold (Inactive 58d · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
@@ -5145,7 +5218,7 @@ New core106 firmwares are in commit 2ab4ce216003 (&quot;iwlwifi: add Bz/Sc FW fo
             data-flame="0" data-info-added="false"
             data-statuses="[&quot;new&quot;]" data-created="2026-08-30T21:19:44.608090+00:00" data-lastact="2026-09-17T18:25:15.567534+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2165859">▶</span></td>
-            <td class="col-flame" title="Cold (Inactive 69d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
+            <td class="col-flame" title="Cold (Inactive 70d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2165859" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2165859</a>
             </td>
@@ -5194,7 +5267,7 @@ New core106 firmwares are in commit 2ab4ce216003 (&quot;iwlwifi: add Bz/Sc FW fo
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>attachment added: 20260915_003026 (video-converter.com).mp4 https://bugs.launchpad.net/bugs/2165859/+attachment/6000292/+files/20260915_003026%20%28video-converter.com%29.mp4 by tpsantosku</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>— (Cold (Inactive 69d · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>— (Cold (Inactive 70d · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
@@ -5218,7 +5291,7 @@ New core106 firmwares are in commit 2ab4ce216003 (&quot;iwlwifi: add Bz/Sc FW fo
             data-flame="0" data-info-added="false"
             data-statuses="[&quot;new&quot;]" data-created="2026-04-17T13:57:56.156313+00:00" data-lastact="2026-09-03T14:36:34.857503+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2148674">▶</span></td>
-            <td class="col-flame" title="Cold (Inactive 83d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
+            <td class="col-flame" title="Cold (Inactive 84d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2148674" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2148674</a>
             </td>
@@ -5267,7 +5340,7 @@ New core106 firmwares are in commit 2ab4ce216003 (&quot;iwlwifi: add Bz/Sc FW fo
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>tags: kernel-daily-bug linux-firmware-daily-bug by juergh</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>— (Cold (Inactive 83d · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>— (Cold (Inactive 84d · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
@@ -5291,7 +5364,7 @@ New core106 firmwares are in commit 2ab4ce216003 (&quot;iwlwifi: add Bz/Sc FW fo
             data-flame="0" data-info-added="false"
             data-statuses="[&quot;new&quot;]" data-created="2026-08-19T12:58:32.319177+00:00" data-lastact="2026-08-28T12:43:30.022471+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2164527">▶</span></td>
-            <td class="col-flame" title="Cold (Inactive 89d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
+            <td class="col-flame" title="Cold (Inactive 90d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2164527" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2164527</a>
             </td>
@@ -5340,7 +5413,7 @@ New core106 firmwares are in commit 2ab4ce216003 (&quot;iwlwifi: add Bz/Sc FW fo
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>bug task added: linux-firmware-qualcomm-wireless (Ubuntu Resolute) by juergh</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>— (Cold (Inactive 89d · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>— (Cold (Inactive 90d · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>resolute</span></div>
@@ -5437,7 +5510,7 @@ New core106 firmwares are in commit 2ab4ce216003 (&quot;iwlwifi: add Bz/Sc FW fo
             data-flame="0" data-info-added="false"
             data-statuses="[&quot;in progress&quot;]" data-created="2026-03-27T09:09:22.983235+00:00" data-lastact="2026-04-03T13:36:06.086024+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2146528">▶</span></td>
-            <td class="col-flame" title="Cold (Inactive 236d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
+            <td class="col-flame" title="Cold (Inactive 237d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2146528" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2146528</a>
             </td>
@@ -5486,7 +5559,7 @@ New core106 firmwares are in commit 2ab4ce216003 (&quot;iwlwifi: add Bz/Sc FW fo
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>linux-firmware-qualcomm-graphics (Ubuntu Resolute): milestone: ubuntu-26.04 by juergh</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>— (Cold (Inactive 236d · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>— (Cold (Inactive 237d · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>resolute</span></div>
