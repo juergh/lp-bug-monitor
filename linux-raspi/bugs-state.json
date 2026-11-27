@@ -801,11 +801,11 @@
     },
     "2157789": {
       "date_created": "2026-06-22T10:19:38.437486+00:00",
-      "date_last_updated": "2026-09-29T05:36:07.602524+00:00",
+      "date_last_updated": "2026-11-27T23:13:59.811917+00:00",
       "has_activity_after_incomplete": false,
       "id": 2157789,
-      "last_activity_summary": "linux-raspi (Ubuntu Resolute): status: Confirmed by ewrdsee",
-      "last_activity_time": "2026-09-29T05:36:07.602524+00:00",
+      "last_activity_summary": "bug task added: rust-threecpio (Ubuntu) by bdrung",
+      "last_activity_time": "2026-11-27T23:13:59.811917+00:00",
       "owner": "Dave Jones",
       "package": "linux-raspi",
       "packages": [
@@ -842,6 +842,18 @@
         },
         {
           "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-27T23:13:59.380081+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": null,
+          "status": "New",
+          "target": "rust-threecpio (Ubuntu)",
+          "target_display": "rust-threecpio (Ubuntu)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/+source/rust-threecpio/+bug/2157789"
+        },
+        {
+          "assignee": null,
           "date_closed": "2026-06-25T17:52:51.370543+00:00",
           "date_created": "2026-06-25T11:52:56.561419+00:00",
           "importance": "High",
@@ -875,6 +887,18 @@
           "target": "linux-raspi (Ubuntu Resolute)",
           "target_display": "linux-raspi (Ubuntu Resolute)",
           "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/linux-raspi/+bug/2157789"
+        },
+        {
+          "assignee": null,
+          "date_closed": null,
+          "date_created": "2026-11-27T23:13:59.380081+00:00",
+          "importance": "Undecided",
+          "is_complete": false,
+          "series": "resolute",
+          "status": "New",
+          "target": "rust-threecpio (Ubuntu Resolute)",
+          "target_display": "rust-threecpio (Ubuntu Resolute)",
+          "web_link": "https://bugs.launchpad.net/ubuntu/resolute/+source/rust-threecpio/+bug/2157789"
         },
         {
           "assignee": null,
@@ -1585,7 +1609,7 @@
       "web_link": "https://bugs.launchpad.net/bugs/2173959"
     }
   },
-  "last_scan_utc": "2026-11-27T13:30:40.967620+00:00",
+  "last_scan_utc": "2026-11-27T23:56:13.887815+00:00",
   "packages": [
     "linux-raspi"
   ]
