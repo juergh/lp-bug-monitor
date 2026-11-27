@@ -276,7 +276,7 @@
 
 <div class="header">
   <h1>Ubuntu Bug Status — linux-firmware</h1>
-  <p>Generated on 2026-11-27 02:38:43 UTC via <a href="https://github.com/juergh/lp-bug-monitor/actions/workflows/sync.yaml" target="_blank" rel="noopener">GitHub Action</a>.</p>
+  <p>Generated on 2026-11-27 13:28:02 UTC via <a href="https://github.com/juergh/lp-bug-monitor/actions/workflows/sync.yaml" target="_blank" rel="noopener">GitHub Action</a>.</p>
 </div>
 
 <div class="stats-bar">
@@ -291,7 +291,7 @@
   <div class="stat-card" style="flex: 2;">
     <div class="label">Active Task Status Breakdown</div>
     <div class="summary-chips">
-      <span class="summary-chip"><span class="chip-status badge-new"></span> New: <strong>89</strong></span><span class="summary-chip"><span class="chip-status badge-fixcommitted"></span> Fix Committed: <strong>18</strong></span><span class="summary-chip"><span class="chip-status badge-inprogress"></span> In Progress: <strong>29</strong></span><span class="summary-chip"><span class="chip-status badge-incomplete"></span> Incomplete: <strong>19</strong></span><span class="summary-chip"><span class="chip-status badge-confirmed"></span> Confirmed: <strong>14</strong></span><span class="summary-chip"><span class="chip-status badge-inprogress"></span> Triaged: <strong>2</strong></span>
+      <span class="summary-chip"><span class="chip-status badge-new"></span> New: <strong>93</strong></span><span class="summary-chip"><span class="chip-status badge-fixcommitted"></span> Fix Committed: <strong>18</strong></span><span class="summary-chip"><span class="chip-status badge-inprogress"></span> In Progress: <strong>29</strong></span><span class="summary-chip"><span class="chip-status badge-incomplete"></span> Incomplete: <strong>19</strong></span><span class="summary-chip"><span class="chip-status badge-confirmed"></span> Confirmed: <strong>14</strong></span><span class="summary-chip"><span class="chip-status badge-inprogress"></span> Triaged: <strong>2</strong></span>
     </div>
   </div>
 </div>
@@ -306,12 +306,12 @@
     </select>
     <select id="filter-series" class="select-filter" onchange="applyFilters()">
       <option value="">All Series (5)</option>
-      <option value="__none__">No nominations (17)</option><option value="jammy">jammy (2)</option><option value="noble">noble (25)</option><option value="resolute">resolute (28)</option><option value="stonking">stonking (12)</option><option value="tenacious">tenacious (4)</option>
+      <option value="__none__">No nominations (16)</option><option value="jammy">jammy (2)</option><option value="noble">noble (25)</option><option value="resolute">resolute (29)</option><option value="stonking">stonking (13)</option><option value="tenacious">tenacious (5)</option>
     </select>
     <select id="filter-status" class="select-filter" onchange="applyFilters()">
       <option value="">All Open Statuses</option>
       <option value="__info_added__">⚠️ Needs Review (Info Added)</option>
-      <option value="confirmed">Confirmed (14)</option><option value="fix committed">Fix Committed (18)</option><option value="in progress">In Progress (29)</option><option value="incomplete">Incomplete (19)</option><option value="new">New (89)</option><option value="triaged">Triaged (2)</option>
+      <option value="confirmed">Confirmed (14)</option><option value="fix committed">Fix Committed (18)</option><option value="in progress">In Progress (29)</option><option value="incomplete">Incomplete (19)</option><option value="new">New (93)</option><option value="triaged">Triaged (2)</option>
     </select>
   </div>
   <div class="action-group">
@@ -338,34 +338,77 @@
     </thead>
     <tbody id="bugs-tbody">
       
-        <tr class="bug-row" id="row-2158858" onclick="toggleDetails(2158858)"
-            data-bugid="2158858" data-package="linux-firmware"
-            data-packages="[&quot;linux-firmware&quot;, &quot;linux-firmware-misc&quot;]"
-            data-series="[]"
+        <tr class="bug-row" id="row-2167915" onclick="toggleDetails(2167915)"
+            data-bugid="2167915" data-package="linux-firmware-misc"
+            data-packages="[&quot;linux-firmware-misc&quot;]"
+            data-series="[&quot;noble&quot;, &quot;resolute&quot;, &quot;stonking&quot;]"
             data-flame="3" data-info-added="false"
-            data-statuses="[&quot;new&quot;]" data-created="2026-07-01T02:14:02.882535+00:00" data-lastact="2026-11-26T23:16:57.468784+00:00">
-            <td class="col-toggle"><span class="toggle-icon" id="toggle-2158858">▶</span></td>
+            data-statuses="[&quot;fix committed&quot;, &quot;in progress&quot;, &quot;new&quot;]" data-created="2026-09-22T05:16:43.345570+00:00" data-lastact="2026-11-27T12:48:23.962846+00:00">
+            <td class="col-toggle"><span class="toggle-icon" id="toggle-2167915">▶</span></td>
             <td class="col-flame" title="Hot (Active within 48h · Undecided importance)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
             <td class="col-id font-mono">
-                <a href="https://bugs.launchpad.net/bugs/2158858" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2158858</a>
+                <a href="https://bugs.launchpad.net/bugs/2167915" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2167915</a>
             </td>
-            <td class="col-title" title="Fix no audio output and mute hotkey not working on HP ZBook 8 G2a">Fix no audio output and mute hotkey not working on HP ZBook 8 G2a</td>
-            <td class="col-package font-mono"><span class="package-pill">linux-firmware</span><span class="package-pill">linux-firmware-misc</span></td>
+            <td class="col-title" title="Support Cirrus Logic CS42L45+CS35L63 on new Dell Slate">Support Cirrus Logic CS42L45+CS35L63 on new Dell Slate</td>
+            <td class="col-package font-mono"><span class="package-pill">linux-firmware-misc</span></td>
             <td class="col-tasks">
                 <div class="tasks-summary-wrap">
-                    <span class="task-count-pill"><strong class="text-orange">1 Open</strong> / <span class="text-gray">10 Closed</span></span>
-                    <div class="status-badges-group"><span class="status-badge badge-new">New</span></div>
+                    <span class="task-count-pill"><strong class="text-orange">6 Open</strong> / <span class="text-gray">6 Closed</span></span>
+                    <div class="status-badges-group"><span class="status-badge badge-fixcommitted">Fix Committed</span><span class="status-badge badge-inprogress">In Progress</span><span class="status-badge badge-new">New</span></div>
                 </div>
             </td>
-            <td class="col-created font-mono">2026-07-01 02:14</td>
-            <td class="col-activity font-mono" title="tags: jira-stella-3686 jira-stella-3687 jira-stella-3688 kernel-daily-bug kernel-spammed-noble-linux-nvidia-7.0-v2 kernel-spammed-noble-linux-oracle-7.0-v2 kernel-spammed-resolute-linux-fips-v2 kernel-spammed-resolute-linux-nvidia-bos-v2 kernel-spammed-resolute-linux-nvidia-tegra-v2 kernel-spammed-resolute-linux-nvidia-v2 kernel-spammed-resolute-linux-raspi-v2 kernel-spammed-resolute-linux-v2 linux-firmware-daily-bug oem-priority stella verification-done-noble verification-done-noble-linux-nvidia-7.0 verification-done-noble-linux-oracle-7.0 verification-done-resolute verification-done-resolute-linux verification-done-resolute-linux-fips verification-done-resolute-linux-nvidia verification-done-resolute-linux-nvidia-bos verification-done-resolute-linux-raspi verification-needed-resolute-linux-nvidia-tegra by ubuntu-kernel-bot">2026-11-26 23:16</td>
+            <td class="col-created font-mono">2026-09-22 05:16</td>
+            <td class="col-activity font-mono" title="description: [Impact]
+Dell Slate Systems using Cirrus CS42L45 codec + CS35L63 amp need new SDCA feature support and the corresponding linux-firmware to have all audio function work. We have Slate-3 GPT which is AMD platform with the same codec, and the Slate-2 Yukon which is Intel NVL platform. The machines powered by AMD doesn&#x27;t support Soundwire/SOF yet and don&#x27;t need new patches from kernel and firmware-sof.
+
+[Fix]
+======= linux kernel ======
+Need the following patches on 7.3 (which are already in Stonking)
+
+ee1811eacdbb soundwire: bus_type: Create IRQ mapping before calling driver probe()
+df036250d7d5 ASoC: SDCA: Remove sdca_function_data duplication
+9557ec3f9c9f ASoC: SDCA: Add RJ support to class driver
+a158fe7b0c81 ASoC: SOF: Intel: NVL-S: add platform name
+ab463b465585 ASoC: SOF: Intel: NVL: add platform name
+
+====== linux-firmware ======
+AMP FW: https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/commit/?id=2ded07e3da99f522881039f13595f34d54acdc74 [git.kernel.org]
+
+Codec FW: https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/commit/?id=10f09227a370e02de71b584024c20dc8d3a02103 [git.kernel.org]
+
+Yukon2 : https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/commit/?id=30f83ae033e8c7e99982af34663d797205a6c102 [git.kernel.org]
+
+====== firmware-sof ======
+https://github.com/thesofproject/sof-bin/releases/tag/v2026.09
+
+[Test Plan]
+1. Boot up The Dell Slate system with CS42L45+CS35L63 audio solution
+2. Install new linux-firmware only for Dell Slate 3 GPT, and install new kernel/linux-firmware/firmware-sof on the Dell Slate 2 Yukon
+3. Go to g-s-d for sound settings for audio intput/output device check
+4. Make sure they&#x27;re not Dummy for audio input/output
+5. `aplay` to verify audio output function and `arecord` to verify audio input
+6. Verify the same steps on older machines for Intel PTL, WCL, ARL...etc
+
+[Where problems could occur]
+It&#x27;s new Dell system with Intel NVL, need firmware-sof + kernel SDCA for Intel NVL + linux-firmware to work. Need to make sure no regression on older platforms. Ex. Intel WCL, PTL...etc
+
+[Other Info]
+Per comment from Intel, the primary requirement is that the topology file (sof-nvl-foo.tplg) and DSP firmware (sof-nvl.ri) are a pair and need to be from the same major version.
+
+If we upgrade of FW for only a single generation (e.g. only for NVL)
+This will be problematic. The main problem is that you may have two platforms (let’s say
+NVL and ARL) using same topology files. If you update FW for only NVL, you should also update the topology
+files used by NVL (FW+tplg always a pair!), but then if one of the topology files is used by some ARL
+products you may have problems (-&gt; scenario 2 problem on ARL then).
+
+So we need to upgrade the DSP FW and the TPLG both for all MTL+ platforms (include ARL/LNL/MTL/PTL/WCL/NVL) by mschiu77">2026-11-27 12:48</td>
         </tr>
-        <tr class="details-row" id="details-2158858" style="display: none;">
+        <tr class="details-row" id="details-2167915" style="display: none;">
             <td colspan="8">
                 <div class="details-panel">
                     <div class="details-grid">
                         <div class="details-tasks-card">
-                            <h4>Target Tasks (11 total)</h4>
+                            <h4>Target Tasks (12 total)</h4>
                             <table class="subtable">
                                 <thead>
                                     <tr>
@@ -377,7 +420,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr><td class="font-mono">linux (Ubuntu)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux/+bug/2158858" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware (Ubuntu)</td><td><span class="status-badge badge-closed">Invalid</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/2158858" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-misc (Ubuntu)</td><td><span class="status-badge badge-fixreleased">Fix Released</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux-firmware-misc/+bug/2158858" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-oem-6.17 (Ubuntu)</td><td><span class="status-badge badge-closed">Invalid</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux-oem-6.17/+bug/2158858" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux (Ubuntu Noble)</td><td><span class="status-badge badge-closed">Invalid</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/noble/+source/linux/+bug/2158858" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware (Ubuntu Noble)</td><td><span class="status-badge badge-fixreleased">Fix Released</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware/+bug/2158858" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-oem-6.17 (Ubuntu Noble)</td><td><span class="status-badge badge-fixreleased">Fix Released</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/noble/+source/linux-oem-6.17/+bug/2158858" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux (Ubuntu Resolute)</td><td><span class="status-badge badge-fixreleased">Fix Released</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/linux/+bug/2158858" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware (Ubuntu Resolute)</td><td><span class="status-badge badge-closed">Invalid</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware/+bug/2158858" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-misc (Ubuntu Resolute)</td><td><span class="status-badge badge-fixreleased">Fix Released</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-misc/+bug/2158858" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-oem-6.17 (Ubuntu Resolute)</td><td><span class="status-badge badge-closed">Invalid</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/linux-oem-6.17/+bug/2158858" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr>
+                                    <tr><td class="font-mono">firmware-sof (Ubuntu)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/firmware-sof/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux (Ubuntu)</td><td><span class="status-badge badge-fixreleased">Fix Released</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-misc (Ubuntu)</td><td><span class="status-badge badge-fixreleased">Fix Released</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux-firmware-misc/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">firmware-sof (Ubuntu Noble)</td><td><span class="status-badge badge-closed">Invalid</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/noble/+source/firmware-sof/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux (Ubuntu Noble)</td><td><span class="status-badge badge-closed">Invalid</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/noble/+source/linux/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-misc (Ubuntu Noble)</td><td><span class="status-badge badge-fixcommitted">Fix Committed</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-misc/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">firmware-sof (Ubuntu Resolute)</td><td><span class="status-badge badge-inprogress">In Progress</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/firmware-sof/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux (Ubuntu Resolute)</td><td><span class="status-badge badge-closed">Invalid</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/linux/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-misc (Ubuntu Resolute)</td><td><span class="status-badge badge-fixcommitted">Fix Committed</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-misc/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">firmware-sof (Ubuntu Stonking)</td><td><span class="status-badge badge-inprogress">In Progress</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/stonking/+source/firmware-sof/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux (Ubuntu Stonking)</td><td><span class="status-badge badge-fixreleased">Fix Released</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/stonking/+source/linux/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-misc (Ubuntu Stonking)</td><td><span class="status-badge badge-fixcommitted">Fix Committed</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/stonking/+source/linux-firmware-misc/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr>
                                 </tbody>
                             </table>
                         </div>
@@ -386,23 +429,139 @@
                             <div class="meta-item"><strong>Reporter:</strong> <span>Chris Chiu</span></div>
                             <div class="meta-item">
                                 <strong>Created:</strong>
-                                <span class="font-mono">2026-07-01 02:14</span>
+                                <span class="font-mono">2026-09-22 05:16</span>
                             </div>
                             <div class="meta-item">
                                 <strong>Last Updated:</strong>
-                                <span class="font-mono">2026-11-26 23:16</span>
+                                <span class="font-mono">2026-11-27 12:48</span>
                             </div>
-                            <div class="meta-item"><strong>Last Activity:</strong> <span>tags: jira-stella-3686 jira-stella-3687 jira-stella-3688 kernel-daily-bug kernel-spammed-noble-linux-nvidia-7.0-v2 kernel-spammed-noble-linux-oracle-7.0-v2 kernel-spammed-resolute-linux-fips-v2 kernel-spammed-resolute-linux-nvidia-bos-v2 kernel-spammed-resolute-linux-nvidia-tegra-v2 kernel-spammed-resolute-linux-nvidia-v2 kernel-spammed-resolute-linux-raspi-v2 kernel-spammed-resolute-linux-v2 linux-firmware-daily-bug oem-priority stella verification-done-noble verification-done-noble-linux-nvidia-7.0 verification-done-noble-linux-oracle-7.0 verification-done-resolute verification-done-resolute-linux verification-done-resolute-linux-fips verification-done-resolute-linux-nvidia verification-done-resolute-linux-nvidia-bos verification-done-resolute-linux-raspi verification-needed-resolute-linux-nvidia-tegra by ubuntu-kernel-bot</span></div>
+                            <div class="meta-item"><strong>Last Activity:</strong> <span>description: [Impact]
+Dell Slate Systems using Cirrus CS42L45 codec + CS35L63 amp need new SDCA feature support and the corresponding linux-firmware to have all audio function work. We have Slate-3 GPT which is AMD platform with the same codec, and the Slate-2 Yukon which is Intel NVL platform. The machines powered by AMD doesn&#x27;t support Soundwire/SOF yet and don&#x27;t need new patches from kernel and firmware-sof.
+
+[Fix]
+======= linux kernel ======
+Need the following patches on 7.3 (which are already in Stonking)
+
+ee1811eacdbb soundwire: bus_type: Create IRQ mapping before calling driver probe()
+df036250d7d5 ASoC: SDCA: Remove sdca_function_data duplication
+9557ec3f9c9f ASoC: SDCA: Add RJ support to class driver
+a158fe7b0c81 ASoC: SOF: Intel: NVL-S: add platform name
+ab463b465585 ASoC: SOF: Intel: NVL: add platform name
+
+====== linux-firmware ======
+AMP FW: https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/commit/?id=2ded07e3da99f522881039f13595f34d54acdc74 [git.kernel.org]
+
+Codec FW: https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/commit/?id=10f09227a370e02de71b584024c20dc8d3a02103 [git.kernel.org]
+
+Yukon2 : https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/commit/?id=30f83ae033e8c7e99982af34663d797205a6c102 [git.kernel.org]
+
+====== firmware-sof ======
+https://github.com/thesofproject/sof-bin/releases/tag/v2026.09
+
+[Test Plan]
+1. Boot up The Dell Slate system with CS42L45+CS35L63 audio solution
+2. Install new linux-firmware only for Dell Slate 3 GPT, and install new kernel/linux-firmware/firmware-sof on the Dell Slate 2 Yukon
+3. Go to g-s-d for sound settings for audio intput/output device check
+4. Make sure they&#x27;re not Dummy for audio input/output
+5. `aplay` to verify audio output function and `arecord` to verify audio input
+6. Verify the same steps on older machines for Intel PTL, WCL, ARL...etc
+
+[Where problems could occur]
+It&#x27;s new Dell system with Intel NVL, need firmware-sof + kernel SDCA for Intel NVL + linux-firmware to work. Need to make sure no regression on older platforms. Ex. Intel WCL, PTL...etc
+
+[Other Info]
+Per comment from Intel, the primary requirement is that the topology file (sof-nvl-foo.tplg) and DSP firmware (sof-nvl.ri) are a pair and need to be from the same major version.
+
+If we upgrade of FW for only a single generation (e.g. only for NVL)
+This will be problematic. The main problem is that you may have two platforms (let’s say
+NVL and ARL) using same topology files. If you update FW for only NVL, you should also update the topology
+files used by NVL (FW+tplg always a pair!), but then if one of the topology files is used by some ARL
+products you may have problems (-&gt; scenario 2 problem on ARL then).
+
+So we need to upgrade the DSP FW and the TPLG both for all MTL+ platforms (include ARL/LNL/MTL/PTL/WCL/NVL) by mschiu77</span></div>
                             <div class="meta-item">
                                 <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (Active within 48h · Undecided importance))</span>
                             </div>
                             
-                            <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
+                            <div class="meta-item"><strong>Open Series:</strong> <span>noble, resolute, stonking</span></div>
                             <div class="meta-item"><strong>Active Targets:</strong>
-                                <span class="text-sm">linux (Ubuntu)</span>
+                                <span class="text-sm">firmware-sof (Ubuntu), linux-firmware-misc (Ubuntu Noble), firmware-sof (Ubuntu Resolute), linux-firmware-misc (Ubuntu Resolute), firmware-sof (Ubuntu Stonking), linux-firmware-misc (Ubuntu Stonking)</span>
                             </div>
                             <div class="meta-item"><strong>Tags:</strong>
-                                <div class="tags-wrap"><span class="tag-pill">jira-stella-3686</span><span class="tag-pill">jira-stella-3687</span><span class="tag-pill">jira-stella-3688</span><span class="tag-pill">kernel-daily-bug</span><span class="tag-pill">kernel-spammed-noble-linux-nvidia-7.0-v2</span><span class="tag-pill">kernel-spammed-noble-linux-oracle-7.0-v2</span><span class="tag-pill">kernel-spammed-resolute-linux-fips-v2</span><span class="tag-pill">kernel-spammed-resolute-linux-nvidia-bos-v2</span><span class="tag-pill">kernel-spammed-resolute-linux-nvidia-tegra-v2</span><span class="tag-pill">kernel-spammed-resolute-linux-nvidia-v2</span><span class="tag-pill">kernel-spammed-resolute-linux-raspi-v2</span><span class="tag-pill">kernel-spammed-resolute-linux-v2</span><span class="tag-pill">linux-firmware-daily-bug</span><span class="tag-pill">oem-priority</span><span class="tag-pill">stella</span><span class="tag-pill">verification-done-noble</span><span class="tag-pill">verification-done-noble-linux-nvidia-7.0</span><span class="tag-pill">verification-done-noble-linux-oracle-7.0</span><span class="tag-pill">verification-done-resolute</span><span class="tag-pill">verification-done-resolute-linux</span><span class="tag-pill">verification-done-resolute-linux-fips</span><span class="tag-pill">verification-done-resolute-linux-nvidia</span><span class="tag-pill">verification-done-resolute-linux-nvidia-bos</span><span class="tag-pill">verification-done-resolute-linux-raspi</span><span class="tag-pill">verification-needed-resolute-linux-nvidia-tegra</span></div>
+                                <div class="tags-wrap"><span class="tag-pill">jira-somerville-4795</span><span class="tag-pill">jira-wtn-466</span><span class="tag-pill">kernel-daily-bug</span><span class="tag-pill">linux-firmware-daily-bug</span><span class="tag-pill">oem-priority</span><span class="tag-pill">somerville</span><span class="tag-pill">verification-needed-stonking</span><span class="tag-pill">wtn</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        
+
+        <tr class="bug-row" id="row-2173725" onclick="toggleDetails(2173725)"
+            data-bugid="2173725" data-package="linux-firmware-amd-misc"
+            data-packages="[&quot;linux-firmware-amd-misc&quot;]"
+            data-series="[&quot;resolute&quot;, &quot;stonking&quot;, &quot;tenacious&quot;]"
+            data-flame="3" data-info-added="false"
+            data-statuses="[&quot;new&quot;]" data-created="2026-11-09T07:27:53.183226+00:00" data-lastact="2026-11-27T03:51:48.237407+00:00">
+            <td class="col-toggle"><span class="toggle-icon" id="toggle-2173725">▶</span></td>
+            <td class="col-flame" title="Hot (Active within 48h · Undecided importance)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
+            <td class="col-id font-mono">
+                <a href="https://bugs.launchpad.net/bugs/2173725" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2173725</a>
+            </td>
+            <td class="col-title" title="[SRU] Update Zen6 PMF support for firmware changes">[SRU] Update Zen6 PMF support for firmware changes</td>
+            <td class="col-package font-mono"><span class="package-pill">linux-firmware-amd-misc</span></td>
+            <td class="col-tasks">
+                <div class="tasks-summary-wrap">
+                    <span class="task-count-pill"><strong class="text-orange">5 Open</strong> / <span class="text-gray">7 Closed</span></span>
+                    <div class="status-badges-group"><span class="status-badge badge-new">New</span></div>
+                </div>
+            </td>
+            <td class="col-created font-mono">2026-11-09 07:27</td>
+            <td class="col-activity font-mono" title="attachment added: [v2] amd64-microcode_3.20251202.1ubuntu3.tar.xz https://bugs.launchpad.net/bugs/2173725/+attachment/6020537/+files/amd64-microcode_3.20251202.1ubuntu3.tar.xz by acelankao">2026-11-27 03:51</td>
+        </tr>
+        <tr class="details-row" id="details-2173725" style="display: none;">
+            <td colspan="8">
+                <div class="details-panel">
+                    <div class="details-grid">
+                        <div class="details-tasks-card">
+                            <h4>Target Tasks (12 total)</h4>
+                            <table class="subtable">
+                                <thead>
+                                    <tr>
+                                        <th>Target</th>
+                                        <th>Status</th>
+                                        <th>Importance</th>
+                                        <th>Assignee</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td class="font-mono">amd64-microcode (Ubuntu)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/amd64-microcode/+bug/2173725" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-amd-misc (Ubuntu)</td><td><span class="status-badge badge-closed">Invalid</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux-firmware-amd-misc/+bug/2173725" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-oem-7.3 (Ubuntu)</td><td><span class="status-badge badge-closed">Invalid</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux-oem-7.3/+bug/2173725" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">amd64-microcode (Ubuntu Resolute)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/amd64-microcode/+bug/2173725" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-amd-misc (Ubuntu Resolute)</td><td><span class="status-badge badge-closed">Invalid</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-amd-misc/+bug/2173725" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-oem-7.3 (Ubuntu Resolute)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/linux-oem-7.3/+bug/2173725" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">amd64-microcode (Ubuntu Stonking)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/stonking/+source/amd64-microcode/+bug/2173725" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-amd-misc (Ubuntu Stonking)</td><td><span class="status-badge badge-closed">Invalid</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/stonking/+source/linux-firmware-amd-misc/+bug/2173725" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-oem-7.3 (Ubuntu Stonking)</td><td><span class="status-badge badge-closed">Invalid</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/stonking/+source/linux-oem-7.3/+bug/2173725" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">amd64-microcode (Ubuntu Tenacious)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/tenacious/+source/amd64-microcode/+bug/2173725" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-amd-misc (Ubuntu Tenacious)</td><td><span class="status-badge badge-closed">Invalid</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/tenacious/+source/linux-firmware-amd-misc/+bug/2173725" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-oem-7.3 (Ubuntu Tenacious)</td><td><span class="status-badge badge-closed">Invalid</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/tenacious/+source/linux-oem-7.3/+bug/2173725" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="details-meta-card">
+                            <h4>Bug Details</h4>
+                            <div class="meta-item"><strong>Reporter:</strong> <span>Leo Lin</span></div>
+                            <div class="meta-item">
+                                <strong>Created:</strong>
+                                <span class="font-mono">2026-11-09 07:27</span>
+                            </div>
+                            <div class="meta-item">
+                                <strong>Last Updated:</strong>
+                                <span class="font-mono">2026-11-27 03:51</span>
+                            </div>
+                            <div class="meta-item"><strong>Last Activity:</strong> <span>attachment added: [v2] amd64-microcode_3.20251202.1ubuntu3.tar.xz https://bugs.launchpad.net/bugs/2173725/+attachment/6020537/+files/amd64-microcode_3.20251202.1ubuntu3.tar.xz by acelankao</span></div>
+                            <div class="meta-item">
+                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (Active within 48h · Undecided importance))</span>
+                            </div>
+                            
+                            <div class="meta-item"><strong>Open Series:</strong> <span>resolute, stonking, tenacious</span></div>
+                            <div class="meta-item"><strong>Active Targets:</strong>
+                                <span class="text-sm">amd64-microcode (Ubuntu), amd64-microcode (Ubuntu Resolute), linux-oem-7.3 (Ubuntu Resolute), amd64-microcode (Ubuntu Stonking), amd64-microcode (Ubuntu Tenacious)</span>
+                            </div>
+                            <div class="meta-item"><strong>Tags:</strong>
+                                <div class="tags-wrap"><span class="tag-pill">jira-somerville-5015</span><span class="tag-pill">kernel-daily-bug</span><span class="tag-pill">linux-firmware-daily-bug</span><span class="tag-pill">oem-priority</span><span class="tag-pill">originate-from-2170610</span><span class="tag-pill">somerville</span></div>
                             </div>
                         </div>
                     </div>
@@ -476,165 +635,6 @@
                             </div>
                             <div class="meta-item"><strong>Tags:</strong>
                                 <div class="tags-wrap"><span class="tag-pill">amd64</span><span class="tag-pill">apport-bug</span><span class="tag-pill">kernel-daily-bug</span><span class="tag-pill">linux-firmware-daily-bug</span><span class="tag-pill">resolute</span><span class="tag-pill">wayland-session</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </td>
-        </tr>
-        
-
-        <tr class="bug-row" id="row-2167915" onclick="toggleDetails(2167915)"
-            data-bugid="2167915" data-package="linux-firmware-misc"
-            data-packages="[&quot;linux-firmware-misc&quot;]"
-            data-series="[&quot;noble&quot;, &quot;resolute&quot;, &quot;stonking&quot;]"
-            data-flame="3" data-info-added="false"
-            data-statuses="[&quot;fix committed&quot;, &quot;in progress&quot;, &quot;new&quot;]" data-created="2026-09-22T05:16:43.345570+00:00" data-lastact="2026-11-26T08:14:19.087654+00:00">
-            <td class="col-toggle"><span class="toggle-icon" id="toggle-2167915">▶</span></td>
-            <td class="col-flame" title="Hot (Active within 48h · Undecided importance)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
-            <td class="col-id font-mono">
-                <a href="https://bugs.launchpad.net/bugs/2167915" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2167915</a>
-            </td>
-            <td class="col-title" title="Support Cirrus Logic CS42L45+CS35L63 on new Dell Slate">Support Cirrus Logic CS42L45+CS35L63 on new Dell Slate</td>
-            <td class="col-package font-mono"><span class="package-pill">linux-firmware-misc</span></td>
-            <td class="col-tasks">
-                <div class="tasks-summary-wrap">
-                    <span class="task-count-pill"><strong class="text-orange">6 Open</strong> / <span class="text-gray">6 Closed</span></span>
-                    <div class="status-badges-group"><span class="status-badge badge-fixcommitted">Fix Committed</span><span class="status-badge badge-inprogress">In Progress</span><span class="status-badge badge-new">New</span></div>
-                </div>
-            </td>
-            <td class="col-created font-mono">2026-09-22 05:16</td>
-            <td class="col-activity font-mono" title="description: [Impact]
-Dell Slate Systems using Cirrus CS42L45 codec + CS35L63 amp need new SDCA feature support and the corresponding linux-firmware to have all audio function work. We have Slate-3 GPT which is AMD platform with the same codec, and the Slate-2 Yukon which is Intel NVL platform. The machines powered by AMD doesn&#x27;t support Soundwire/SOF yet and don&#x27;t need new patches from kernel and firmware-sof.
-
-[Fix]
-======= linux kernel ======
-Need the following patches on 7.3 (which are already in Stonking)
-
-ee1811eacdbb soundwire: bus_type: Create IRQ mapping before calling driver probe()
-df036250d7d5 ASoC: SDCA: Remove sdca_function_data duplication
-9557ec3f9c9f ASoC: SDCA: Add RJ support to class driver
-a158fe7b0c81 ASoC: SOF: Intel: NVL-S: add platform name
-ab463b465585 ASoC: SOF: Intel: NVL: add platform name
-
-====== linux-firmware ======
-AMP FW: https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/commit/?id=2ded07e3da99f522881039f13595f34d54acdc74 [git.kernel.org]
-
-Codec FW: https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/commit/?id=10f09227a370e02de71b584024c20dc8d3a02103 [git.kernel.org]
-
-Yukon2 : https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/commit/?id=30f83ae033e8c7e99982af34663d797205a6c102 [git.kernel.org]
-
-====== firmware-sof ======
-https://github.com/thesofproject/sof-bin/releases/tag/v2026.09
-
-[Test Plan]
-1. Boot up The Dell Slate system with CS42L45+CS35L63 audio solution
-2. Install new linux-firmware only for Dell Slate 3 GPT, and install new kernel/linux-firmware/firmware-sof on the Dell Slate 2 Yukon
-3. Go to g-s-d for sound settings for audio intput/output device check
-4. Make sure they&#x27;re not Dummy for audio input/output
-5. `aplay` to verify audio output function and `arecord` to verify audio input
-6. Verify the same steps on older machines for Intel PTL, WCL, ARL...etc
-
-[Where problems could occur]
-It&#x27;s new Dell system with Intel NVL, need firmware-sof + kernel SDCA for Intel NVL + linux-firmware to work. Need to make sure no regression on older platforms. Ex. Intel WCL, PTL...etc
-
-[Other Info]
-Per comment from Intel, the primary requirement is that the topology file (sof-nvl-foo.tplg) and DSP firmware (sof-nvl.ri) are a pair and need to be from the same major version.
-
-If we upgrade of FW for only a single generation (e.g. only for NVL)
-This will be problematic. The main problem is that you may have two platforms (let’s say
-NVL and ARL) using same topology files. If you update FW for only NVL, you should also update the topology
-files used by NVL (FW+tplg always a pair!), but then if one of the topology files is used by some ARL
-products you may have problems (-&gt; scenario 2 problem on ARL then).
-
-So we need to upgrade the DSP FW and the TPLG both for all MTL+ platforms (include ARL/LNL/MTL/PTL/WCL/NVL) by mschiu77">2026-11-26 08:14</td>
-        </tr>
-        <tr class="details-row" id="details-2167915" style="display: none;">
-            <td colspan="8">
-                <div class="details-panel">
-                    <div class="details-grid">
-                        <div class="details-tasks-card">
-                            <h4>Target Tasks (12 total)</h4>
-                            <table class="subtable">
-                                <thead>
-                                    <tr>
-                                        <th>Target</th>
-                                        <th>Status</th>
-                                        <th>Importance</th>
-                                        <th>Assignee</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><td class="font-mono">firmware-sof (Ubuntu)</td><td><span class="status-badge badge-new">New</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/firmware-sof/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux (Ubuntu)</td><td><span class="status-badge badge-fixreleased">Fix Released</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-misc (Ubuntu)</td><td><span class="status-badge badge-fixreleased">Fix Released</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/+source/linux-firmware-misc/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">firmware-sof (Ubuntu Noble)</td><td><span class="status-badge badge-closed">Invalid</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/noble/+source/firmware-sof/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux (Ubuntu Noble)</td><td><span class="status-badge badge-closed">Invalid</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/noble/+source/linux/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-misc (Ubuntu Noble)</td><td><span class="status-badge badge-fixcommitted">Fix Committed</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/noble/+source/linux-firmware-misc/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">firmware-sof (Ubuntu Resolute)</td><td><span class="status-badge badge-inprogress">In Progress</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/firmware-sof/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux (Ubuntu Resolute)</td><td><span class="status-badge badge-closed">Invalid</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/linux/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-misc (Ubuntu Resolute)</td><td><span class="status-badge badge-fixcommitted">Fix Committed</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/resolute/+source/linux-firmware-misc/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">firmware-sof (Ubuntu Stonking)</td><td><span class="status-badge badge-inprogress">In Progress</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/stonking/+source/firmware-sof/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux (Ubuntu Stonking)</td><td><span class="status-badge badge-fixreleased">Fix Released</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/stonking/+source/linux/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr><tr><td class="font-mono">linux-firmware-misc (Ubuntu Stonking)</td><td><span class="status-badge badge-fixcommitted">Fix Committed</span></td><td>Undecided</td><td>Unassigned</td><td><a href="https://bugs.launchpad.net/ubuntu/stonking/+source/linux-firmware-misc/+bug/2167915" target="_blank" rel="noopener" class="link-ext">Launchpad ↗</a></td></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="details-meta-card">
-                            <h4>Bug Details</h4>
-                            <div class="meta-item"><strong>Reporter:</strong> <span>Chris Chiu</span></div>
-                            <div class="meta-item">
-                                <strong>Created:</strong>
-                                <span class="font-mono">2026-09-22 05:16</span>
-                            </div>
-                            <div class="meta-item">
-                                <strong>Last Updated:</strong>
-                                <span class="font-mono">2026-11-26 08:14</span>
-                            </div>
-                            <div class="meta-item"><strong>Last Activity:</strong> <span>description: [Impact]
-Dell Slate Systems using Cirrus CS42L45 codec + CS35L63 amp need new SDCA feature support and the corresponding linux-firmware to have all audio function work. We have Slate-3 GPT which is AMD platform with the same codec, and the Slate-2 Yukon which is Intel NVL platform. The machines powered by AMD doesn&#x27;t support Soundwire/SOF yet and don&#x27;t need new patches from kernel and firmware-sof.
-
-[Fix]
-======= linux kernel ======
-Need the following patches on 7.3 (which are already in Stonking)
-
-ee1811eacdbb soundwire: bus_type: Create IRQ mapping before calling driver probe()
-df036250d7d5 ASoC: SDCA: Remove sdca_function_data duplication
-9557ec3f9c9f ASoC: SDCA: Add RJ support to class driver
-a158fe7b0c81 ASoC: SOF: Intel: NVL-S: add platform name
-ab463b465585 ASoC: SOF: Intel: NVL: add platform name
-
-====== linux-firmware ======
-AMP FW: https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/commit/?id=2ded07e3da99f522881039f13595f34d54acdc74 [git.kernel.org]
-
-Codec FW: https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/commit/?id=10f09227a370e02de71b584024c20dc8d3a02103 [git.kernel.org]
-
-Yukon2 : https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/commit/?id=30f83ae033e8c7e99982af34663d797205a6c102 [git.kernel.org]
-
-====== firmware-sof ======
-https://github.com/thesofproject/sof-bin/releases/tag/v2026.09
-
-[Test Plan]
-1. Boot up The Dell Slate system with CS42L45+CS35L63 audio solution
-2. Install new linux-firmware only for Dell Slate 3 GPT, and install new kernel/linux-firmware/firmware-sof on the Dell Slate 2 Yukon
-3. Go to g-s-d for sound settings for audio intput/output device check
-4. Make sure they&#x27;re not Dummy for audio input/output
-5. `aplay` to verify audio output function and `arecord` to verify audio input
-6. Verify the same steps on older machines for Intel PTL, WCL, ARL...etc
-
-[Where problems could occur]
-It&#x27;s new Dell system with Intel NVL, need firmware-sof + kernel SDCA for Intel NVL + linux-firmware to work. Need to make sure no regression on older platforms. Ex. Intel WCL, PTL...etc
-
-[Other Info]
-Per comment from Intel, the primary requirement is that the topology file (sof-nvl-foo.tplg) and DSP firmware (sof-nvl.ri) are a pair and need to be from the same major version.
-
-If we upgrade of FW for only a single generation (e.g. only for NVL)
-This will be problematic. The main problem is that you may have two platforms (let’s say
-NVL and ARL) using same topology files. If you update FW for only NVL, you should also update the topology
-files used by NVL (FW+tplg always a pair!), but then if one of the topology files is used by some ARL
-products you may have problems (-&gt; scenario 2 problem on ARL then).
-
-So we need to upgrade the DSP FW and the TPLG both for all MTL+ platforms (include ARL/LNL/MTL/PTL/WCL/NVL) by mschiu77</span></div>
-                            <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (Active within 48h · Undecided importance))</span>
-                            </div>
-                            
-                            <div class="meta-item"><strong>Open Series:</strong> <span>noble, resolute, stonking</span></div>
-                            <div class="meta-item"><strong>Active Targets:</strong>
-                                <span class="text-sm">firmware-sof (Ubuntu), linux-firmware-misc (Ubuntu Noble), firmware-sof (Ubuntu Resolute), linux-firmware-misc (Ubuntu Resolute), firmware-sof (Ubuntu Stonking), linux-firmware-misc (Ubuntu Stonking)</span>
-                            </div>
-                            <div class="meta-item"><strong>Tags:</strong>
-                                <div class="tags-wrap"><span class="tag-pill">jira-somerville-4795</span><span class="tag-pill">jira-wtn-466</span><span class="tag-pill">kernel-daily-bug</span><span class="tag-pill">linux-firmware-daily-bug</span><span class="tag-pill">oem-priority</span><span class="tag-pill">somerville</span><span class="tag-pill">verification-needed-stonking</span><span class="tag-pill">wtn</span></div>
                             </div>
                         </div>
                     </div>
@@ -939,10 +939,10 @@ So we need to upgrade the DSP FW and the TPLG both for all MTL+ platforms (inclu
             data-bugid="2174563" data-package="linux-firmware-mediatek"
             data-packages="[&quot;linux-firmware-mediatek&quot;]"
             data-series="[&quot;resolute&quot;, &quot;stonking&quot;]"
-            data-flame="3" data-info-added="false"
+            data-flame="2" data-info-added="false"
             data-statuses="[&quot;fix committed&quot;, &quot;in progress&quot;]" data-created="2026-11-16T06:12:39.029186+00:00" data-lastact="2026-11-25T06:46:35.711726+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2174563">▶</span></td>
-            <td class="col-flame" title="Hot (Active within 48h · Undecided importance)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
+            <td class="col-flame" title="Warm (Active within 7d · Undecided importance)"><span class="flame-tier flame-2">🔥🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2174563" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2174563</a>
             </td>
@@ -991,7 +991,7 @@ So we need to upgrade the DSP FW and the TPLG both for all MTL+ platforms (inclu
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>tags: jira-somerville-4786 kernel-daily-bug linux-firmware-daily-bug oem-priority somerville verification-done-stonking by acelankao</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (Active within 48h · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥🔥 (Warm (Active within 7d · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>resolute, stonking</span></div>
@@ -1012,10 +1012,10 @@ So we need to upgrade the DSP FW and the TPLG both for all MTL+ platforms (inclu
             data-bugid="2173720" data-package="linux-firmware-intel-wireless"
             data-packages="[&quot;linux-firmware-intel-wireless&quot;]"
             data-series="[&quot;resolute&quot;, &quot;stonking&quot;]"
-            data-flame="3" data-info-added="false"
+            data-flame="2" data-info-added="false"
             data-statuses="[&quot;fix committed&quot;, &quot;in progress&quot;]" data-created="2026-11-09T05:19:20.213746+00:00" data-lastact="2026-11-25T06:45:20.092724+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2173720">▶</span></td>
-            <td class="col-flame" title="Hot (Active within 48h · Undecided importance)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
+            <td class="col-flame" title="Warm (Active within 7d · Undecided importance)"><span class="flame-tier flame-2">🔥🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2173720" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2173720</a>
             </td>
@@ -1064,7 +1064,7 @@ So we need to upgrade the DSP FW and the TPLG both for all MTL+ platforms (inclu
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>tags: jira-pgn-20 kernel-daily-bug linux-firmware-daily-bug oem-priority pgn verification-done-stonking by acelankao</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (Active within 48h · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥🔥 (Warm (Active within 7d · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>resolute, stonking</span></div>
@@ -1085,10 +1085,10 @@ So we need to upgrade the DSP FW and the TPLG both for all MTL+ platforms (inclu
             data-bugid="2166635" data-package="linux-firmware-intel-wireless"
             data-packages="[&quot;linux-firmware-intel-wireless&quot;]"
             data-series="[&quot;noble&quot;]"
-            data-flame="3" data-info-added="false"
+            data-flame="2" data-info-added="false"
             data-statuses="[&quot;new&quot;]" data-created="2026-09-07T04:49:33.409577+00:00" data-lastact="2026-11-25T05:31:29.357146+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2166635">▶</span></td>
-            <td class="col-flame" title="Hot (Active within 48h · Undecided importance)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
+            <td class="col-flame" title="Warm (Active within 7d · Undecided importance)"><span class="flame-tier flame-2">🔥🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2166635" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2166635</a>
             </td>
@@ -1137,7 +1137,7 @@ So we need to upgrade the DSP FW and the TPLG both for all MTL+ platforms (inclu
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>affects: linux-firmware-intel-wireless (Ubuntu) by juergh</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (Active within 48h · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥🔥 (Warm (Active within 7d · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>noble</span></div>
@@ -1161,7 +1161,7 @@ So we need to upgrade the DSP FW and the TPLG both for all MTL+ platforms (inclu
             data-flame="3" data-info-added="true"
             data-statuses="[&quot;in progress&quot;, &quot;incomplete&quot;]" data-created="2026-11-23T07:36:07.731650+00:00" data-lastact="2026-11-23T23:01:15.812663+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2175562">▶</span></td>
-            <td class="col-flame" title="Hot (High importance · Active 3.2d ago)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
+            <td class="col-flame" title="Hot (High importance · Active 3.6d ago)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2175562" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2175562</a>
             </td>
@@ -1210,7 +1210,7 @@ So we need to upgrade the DSP FW and the TPLG both for all MTL+ platforms (inclu
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>tags: kernel-daily-bug linux-firmware-daily-bug by ubuntu-kernel-bot</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (High importance · Active 3.2d ago))</span>
+                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (High importance · Active 3.6d ago))</span>
                             </div>
                             <div class="meta-item"><strong class="text-orange">Review:</strong> <span>Activity occurred after task set to Incomplete</span></div>
                             <div class="meta-item"><strong>Open Series:</strong> <span>resolute, tenacious</span></div>
@@ -1234,7 +1234,7 @@ So we need to upgrade the DSP FW and the TPLG both for all MTL+ platforms (inclu
             data-flame="3" data-info-added="true"
             data-statuses="[&quot;fix committed&quot;, &quot;in progress&quot;, &quot;incomplete&quot;]" data-created="2026-07-15T07:33:52.713471+00:00" data-lastact="2026-11-22T15:36:23.464560+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2160682">▶</span></td>
-            <td class="col-flame" title="Hot (Info added · Active 4.5d ago)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
+            <td class="col-flame" title="Hot (Info added · Active 4.9d ago)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2160682" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2160682</a>
             </td>
@@ -1283,7 +1283,7 @@ So we need to upgrade the DSP FW and the TPLG both for all MTL+ platforms (inclu
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>linux-firmware-intel-wireless (Ubuntu): status: Fix Released by tjaalton</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (Info added · Active 4.5d ago))</span>
+                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (Info added · Active 4.9d ago))</span>
                             </div>
                             <div class="meta-item"><strong class="text-orange">Review:</strong> <span>Activity occurred after task set to Incomplete</span></div>
                             <div class="meta-item"><strong>Open Series:</strong> <span>resolute, stonking</span></div>
@@ -1307,7 +1307,7 @@ So we need to upgrade the DSP FW and the TPLG both for all MTL+ platforms (inclu
             data-flame="3" data-info-added="false"
             data-statuses="[&quot;fix committed&quot;, &quot;in progress&quot;]" data-created="2026-07-30T14:41:59.415096+00:00" data-lastact="2026-11-22T15:36:22.427041+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2162157">▶</span></td>
-            <td class="col-flame" title="Hot (High importance · Active 4.5d ago)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
+            <td class="col-flame" title="Hot (High importance · Active 4.9d ago)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2162157" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2162157</a>
             </td>
@@ -1356,7 +1356,7 @@ So we need to upgrade the DSP FW and the TPLG both for all MTL+ platforms (inclu
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>linux-firmware-intel-wireless (Ubuntu): status: Fix Released by tjaalton</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (High importance · Active 4.5d ago))</span>
+                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (High importance · Active 4.9d ago))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>resolute, stonking</span></div>
@@ -1380,7 +1380,7 @@ So we need to upgrade the DSP FW and the TPLG both for all MTL+ platforms (inclu
             data-flame="3" data-info-added="false"
             data-statuses="[&quot;fix committed&quot;]" data-created="2026-11-04T02:20:06.152073+00:00" data-lastact="2026-11-22T15:36:20.423220+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2172895">▶</span></td>
-            <td class="col-flame" title="Hot (High importance · Active 4.5d ago)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
+            <td class="col-flame" title="Hot (High importance · Active 4.9d ago)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2172895" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2172895</a>
             </td>
@@ -1429,7 +1429,7 @@ So we need to upgrade the DSP FW and the TPLG both for all MTL+ platforms (inclu
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>bug updated by tjaalton</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (High importance · Active 4.5d ago))</span>
+                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (High importance · Active 4.9d ago))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>resolute, stonking</span></div>
@@ -1453,7 +1453,7 @@ So we need to upgrade the DSP FW and the TPLG both for all MTL+ platforms (inclu
             data-flame="3" data-info-added="false"
             data-statuses="[&quot;fix committed&quot;, &quot;in progress&quot;]" data-created="2026-09-18T08:55:15.281959+00:00" data-lastact="2026-11-22T15:36:19.610655+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2167683">▶</span></td>
-            <td class="col-flame" title="Hot (High importance · Active 4.5d ago)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
+            <td class="col-flame" title="Hot (High importance · Active 4.9d ago)"><span class="flame-tier flame-3">🔥🔥🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2167683" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2167683</a>
             </td>
@@ -1502,7 +1502,7 @@ So we need to upgrade the DSP FW and the TPLG both for all MTL+ platforms (inclu
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>bug updated by tjaalton</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (High importance · Active 4.5d ago))</span>
+                                <strong>Heat:</strong> <span>🔥🔥🔥 (Hot (High importance · Active 4.9d ago))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>resolute, stonking</span></div>
@@ -1523,10 +1523,10 @@ So we need to upgrade the DSP FW and the TPLG both for all MTL+ platforms (inclu
             data-bugid="2167666" data-package="linux-firmware-intel-wireless"
             data-packages="[&quot;linux-firmware-intel-wireless&quot;]"
             data-series="[&quot;resolute&quot;]"
-            data-flame="2" data-info-added="false"
+            data-flame="1" data-info-added="false"
             data-statuses="[&quot;confirmed&quot;]" data-created="2026-09-18T03:09:50.633935+00:00" data-lastact="2026-11-20T05:07:37.204557+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2167666">▶</span></td>
-            <td class="col-flame" title="Warm (Active within 7d · Undecided importance)"><span class="flame-tier flame-2">🔥🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 7.3d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2167666" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2167666</a>
             </td>
@@ -1575,7 +1575,7 @@ So we need to upgrade the DSP FW and the TPLG both for all MTL+ platforms (inclu
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>linux-firmware-intel-wireless (Ubuntu): status: Confirmed by janitor</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥🔥 (Warm (Active within 7d · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 7.3d ago · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>resolute</span></div>
@@ -1599,7 +1599,7 @@ So we need to upgrade the DSP FW and the TPLG both for all MTL+ platforms (inclu
             data-flame="1" data-info-added="false"
             data-statuses="[&quot;new&quot;]" data-created="2024-11-17T01:25:29.409572+00:00" data-lastact="2026-11-18T19:56:06.933671+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2088354">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 8.3d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 8.7d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2088354" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2088354</a>
             </td>
@@ -1648,7 +1648,7 @@ So we need to upgrade the DSP FW and the TPLG both for all MTL+ platforms (inclu
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>affects: linux-firmware-intel-wireless (Ubuntu) by juergh</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 8.3d ago · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 8.7d ago · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>noble</span></div>
@@ -1672,7 +1672,7 @@ So we need to upgrade the DSP FW and the TPLG both for all MTL+ platforms (inclu
             data-flame="1" data-info-added="false"
             data-statuses="[&quot;new&quot;, &quot;triaged&quot;]" data-created="2026-11-05T23:42:20.190955+00:00" data-lastact="2026-11-17T09:31:44.671862+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2173379">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 9.7d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 10.2d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2173379" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2173379</a>
             </td>
@@ -1721,7 +1721,7 @@ So we need to upgrade the DSP FW and the TPLG both for all MTL+ platforms (inclu
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>linux-firmware-intel-wireless (Ubuntu Noble): assignee: Juerg Haefliger (juergh) by anthonywong</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 9.7d ago · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 10.2d ago · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>noble</span></div>
@@ -1745,7 +1745,7 @@ So we need to upgrade the DSP FW and the TPLG both for all MTL+ platforms (inclu
             data-flame="1" data-info-added="false"
             data-statuses="[&quot;in progress&quot;]" data-created="2026-09-18T03:39:43.511854+00:00" data-lastact="2026-11-17T07:00:37.460803+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2167668">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 9.8d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 10.3d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2167668" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2167668</a>
             </td>
@@ -1882,7 +1882,7 @@ sdma_6_1_4_l.bin
 vcn_5_3_0_l.bin
 vpe_2_0_0_l.bin by superm1</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 9.8d ago · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 10.3d ago · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>resolute, stonking</span></div>
@@ -1906,7 +1906,7 @@ vpe_2_0_0_l.bin by superm1</span></div>
             data-flame="1" data-info-added="false"
             data-statuses="[&quot;fix committed&quot;]" data-created="2026-10-01T07:39:16.453495+00:00" data-lastact="2026-11-13T09:10:48.006604+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2169111">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 13.7d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 14.2d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2169111" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2169111</a>
             </td>
@@ -1955,7 +1955,7 @@ vpe_2_0_0_l.bin by superm1</span></div>
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>linux-firmware-misc (Ubuntu Resolute): status: Fix Committed by juergh</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 13.7d ago · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 14.2d ago · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>resolute</span></div>
@@ -2125,7 +2125,7 @@ vpe_2_0_0_l.bin by superm1</span></div>
             data-flame="1" data-info-added="false"
             data-statuses="[&quot;confirmed&quot;]" data-created="2026-11-10T21:25:14.345370+00:00" data-lastact="2026-11-10T23:03:32.837304+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2173927">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 16.1d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 16.6d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2173927" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2173927</a>
             </td>
@@ -2174,7 +2174,7 @@ vpe_2_0_0_l.bin by superm1</span></div>
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>tags: amd64 apport-bug kernel-daily-bug linux-firmware-daily-bug resolute wayland-session by ubuntu-kernel-bot</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 16.1d ago · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 16.6d ago · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
@@ -2271,7 +2271,7 @@ vpe_2_0_0_l.bin by superm1</span></div>
             data-flame="1" data-info-added="false"
             data-statuses="[&quot;new&quot;]" data-created="2026-11-10T22:00:58.207375+00:00" data-lastact="2026-11-10T23:03:10.473146+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2173929">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 16.1d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 16.6d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2173929" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2173929</a>
             </td>
@@ -2320,7 +2320,7 @@ vpe_2_0_0_l.bin by superm1</span></div>
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>tags: amd64 apport-bug kernel-daily-bug linux-firmware-daily-bug resolute wayland-session by ubuntu-kernel-bot</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 16.1d ago · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 16.6d ago · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
@@ -2344,7 +2344,7 @@ vpe_2_0_0_l.bin by superm1</span></div>
             data-flame="2" data-info-added="false"
             data-statuses="[&quot;in progress&quot;]" data-created="2026-07-07T02:24:01.855733+00:00" data-lastact="2026-11-10T07:42:48.988052+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2159856">▶</span></td>
-            <td class="col-flame" title="Warm (High importance · Active 16.8d ago)"><span class="flame-tier flame-2">🔥🔥</span></td>
+            <td class="col-flame" title="Warm (High importance · Active 17.2d ago)"><span class="flame-tier flame-2">🔥🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2159856" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2159856</a>
             </td>
@@ -2523,7 +2523,7 @@ We are backporting core108 to Resolute in oem-7.3. Nominate for R, S and T. Yet 
 https://git.kernel.org/pub/scm/linux/kernel/git/iwlwifi/backport-iwlwifi.git/log/?h=release/core24.70
 Intel is switching to a release naming scheme used on Windows. by vicamo</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥🔥 (Warm (High importance · Active 16.8d ago))</span>
+                                <strong>Heat:</strong> <span>🔥🔥 (Warm (High importance · Active 17.2d ago))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>resolute</span></div>
@@ -2547,7 +2547,7 @@ Intel is switching to a release naming scheme used on Windows. by vicamo</span><
             data-flame="1" data-info-added="false"
             data-statuses="[&quot;in progress&quot;]" data-created="2026-09-08T05:58:44.096220+00:00" data-lastact="2026-11-10T07:41:05.450194+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2166733">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 16.8d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 17.2d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2166733" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2166733</a>
             </td>
@@ -2652,7 +2652,7 @@ Intel released core24.70 after core105 and was seem preparing release of core24.
 
 New core106 firmwares are in commit 2ab4ce216003 (&quot;iwlwifi: add Bz/Sc FW for core24.60-33 release&quot;), which has been in linux-firmware/stonking starting from version 20260709.git2c35b1ed-0ubuntu1. by vicamo</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 16.8d ago · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 17.2d ago · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>resolute</span></div>
@@ -2822,7 +2822,7 @@ New core106 firmwares are in commit 2ab4ce216003 (&quot;iwlwifi: add Bz/Sc FW fo
             data-flame="1" data-info-added="false"
             data-statuses="[&quot;new&quot;]" data-created="2026-10-22T11:49:51.793626+00:00" data-lastact="2026-11-06T07:24:09.754028+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2171935">▶</span></td>
-            <td class="col-flame" title="Moderate (Active 20.8d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
+            <td class="col-flame" title="Moderate (Active 21.3d ago · Undecided importance)"><span class="flame-tier flame-1">🔥</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2171935" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2171935</a>
             </td>
@@ -2871,7 +2871,7 @@ New core106 firmwares are in commit 2ab4ce216003 (&quot;iwlwifi: add Bz/Sc FW fo
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>bug task added: linux-firmware-realtek (Ubuntu Stonking) by juergh</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 20.8d ago · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>🔥 (Moderate (Active 21.3d ago · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>stonking</span></div>
@@ -3114,7 +3114,7 @@ New core106 firmwares are in commit 2ab4ce216003 (&quot;iwlwifi: add Bz/Sc FW fo
             data-flame="0" data-info-added="false"
             data-statuses="[&quot;confirmed&quot;]" data-created="2026-10-25T20:10:12.827361+00:00" data-lastact="2026-10-25T23:01:20.916981+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2172184">▶</span></td>
-            <td class="col-flame" title="Cold (Inactive 32d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
+            <td class="col-flame" title="Cold (Inactive 33d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2172184" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2172184</a>
             </td>
@@ -3163,7 +3163,7 @@ New core106 firmwares are in commit 2ab4ce216003 (&quot;iwlwifi: add Bz/Sc FW fo
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>tags: amd64 apport-bug kernel-daily-bug linux-firmware-daily-bug resolute wayland-session by ubuntu-kernel-bot</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>— (Cold (Inactive 32d · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>— (Cold (Inactive 33d · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
@@ -3625,7 +3625,7 @@ New core106 firmwares are in commit 2ab4ce216003 (&quot;iwlwifi: add Bz/Sc FW fo
             data-flame="0" data-info-added="false"
             data-statuses="[&quot;in progress&quot;]" data-created="2025-10-08T02:29:43.709279+00:00" data-lastact="2026-10-16T23:02:05.877920+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2127044">▶</span></td>
-            <td class="col-flame" title="Cold (Inactive 41d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
+            <td class="col-flame" title="Cold (Inactive 42d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2127044" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2127044</a>
             </td>
@@ -3674,7 +3674,7 @@ New core106 firmwares are in commit 2ab4ce216003 (&quot;iwlwifi: add Bz/Sc FW fo
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>tags: cert-sru jira-stella-2051 kernel-daily-bug kernel-spammed-noble-linux-azure-fde-6.17-v2 kernel-spammed-noble-linux-nvidia-6.17-v2 kernel-spammed-noble-linux-oem-6.14-v2 kernel-spammed-noble-linux-oem-6.17-v2 kernel-spammed-noble-linux-vmware-6.17-v2 kernel-spammed-questing-linux-intel-v2 kernel-spammed-questing-linux-v2 linux-firmware-daily-bug oem-priority stella verification-done-noble-linux-oem-6.14 verification-done-noble-linux-oem-6.17 verification-needed-noble-linux-azure-fde-6.17 verification-needed-noble-linux-nvidia-6.17 verification-needed-noble-linux-vmware-6.17 verification-needed-questing-linux verification-needed-questing-linux-intel by ubuntu-kernel-bot</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>— (Cold (Inactive 41d · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>— (Cold (Inactive 42d · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>noble</span></div>
@@ -3698,7 +3698,7 @@ New core106 firmwares are in commit 2ab4ce216003 (&quot;iwlwifi: add Bz/Sc FW fo
             data-flame="0" data-info-added="false"
             data-statuses="[&quot;new&quot;]" data-created="2026-09-15T07:10:15.851596+00:00" data-lastact="2026-10-16T21:31:09.728353+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2167302">▶</span></td>
-            <td class="col-flame" title="Cold (Inactive 41d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
+            <td class="col-flame" title="Cold (Inactive 42d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2167302" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2167302</a>
             </td>
@@ -3747,7 +3747,7 @@ New core106 firmwares are in commit 2ab4ce216003 (&quot;iwlwifi: add Bz/Sc FW fo
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>bug task added: linux (Ubuntu) by superm1</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>— (Cold (Inactive 41d · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>— (Cold (Inactive 42d · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>noble</span></div>
@@ -5231,7 +5231,7 @@ New core106 firmwares are in commit 2ab4ce216003 (&quot;iwlwifi: add Bz/Sc FW fo
             data-flame="0" data-info-added="false"
             data-statuses="[&quot;new&quot;]" data-created="2026-09-18T14:15:50.626046+00:00" data-lastact="2026-09-29T14:40:16.534799+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2167722">▶</span></td>
-            <td class="col-flame" title="Cold (Inactive 58d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
+            <td class="col-flame" title="Cold (Inactive 59d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2167722" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2167722</a>
             </td>
@@ -5280,7 +5280,7 @@ New core106 firmwares are in commit 2ab4ce216003 (&quot;iwlwifi: add Bz/Sc FW fo
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>linux-firmware-mediatek (Ubuntu): assignee: Ioanna Alifieraki (joalif) by joalif</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>— (Cold (Inactive 58d · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>— (Cold (Inactive 59d · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
@@ -5304,7 +5304,7 @@ New core106 firmwares are in commit 2ab4ce216003 (&quot;iwlwifi: add Bz/Sc FW fo
             data-flame="0" data-info-added="false"
             data-statuses="[&quot;new&quot;]" data-created="2026-09-22T18:56:50.522486+00:00" data-lastact="2026-09-22T23:01:19.636659+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2167972">▶</span></td>
-            <td class="col-flame" title="Cold (Inactive 65d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
+            <td class="col-flame" title="Cold (Inactive 66d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2167972" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2167972</a>
             </td>
@@ -5353,7 +5353,7 @@ New core106 firmwares are in commit 2ab4ce216003 (&quot;iwlwifi: add Bz/Sc FW fo
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>tags: amd64 apport-bug kernel-daily-bug linux-firmware-daily-bug resolute by ubuntu-kernel-bot</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>— (Cold (Inactive 65d · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>— (Cold (Inactive 66d · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
@@ -5377,7 +5377,7 @@ New core106 firmwares are in commit 2ab4ce216003 (&quot;iwlwifi: add Bz/Sc FW fo
             data-flame="0" data-info-added="false"
             data-statuses="[&quot;new&quot;]" data-created="2026-08-30T21:19:44.608090+00:00" data-lastact="2026-09-17T18:25:15.567534+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2165859">▶</span></td>
-            <td class="col-flame" title="Cold (Inactive 70d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
+            <td class="col-flame" title="Cold (Inactive 71d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2165859" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2165859</a>
             </td>
@@ -5426,7 +5426,7 @@ New core106 firmwares are in commit 2ab4ce216003 (&quot;iwlwifi: add Bz/Sc FW fo
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>attachment added: 20260915_003026 (video-converter.com).mp4 https://bugs.launchpad.net/bugs/2165859/+attachment/6000292/+files/20260915_003026%20%28video-converter.com%29.mp4 by tpsantosku</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>— (Cold (Inactive 70d · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>— (Cold (Inactive 71d · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
@@ -5596,7 +5596,7 @@ New core106 firmwares are in commit 2ab4ce216003 (&quot;iwlwifi: add Bz/Sc FW fo
             data-flame="0" data-info-added="false"
             data-statuses="[&quot;new&quot;]" data-created="2026-07-26T09:28:07.750699+00:00" data-lastact="2026-07-27T23:00:58.894003+00:00">
             <td class="col-toggle"><span class="toggle-icon" id="toggle-2161831">▶</span></td>
-            <td class="col-flame" title="Cold (Inactive 122d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
+            <td class="col-flame" title="Cold (Inactive 123d · Undecided importance)"><span class="flame-tier flame-0">—</span></td>
             <td class="col-id font-mono">
                 <a href="https://bugs.launchpad.net/bugs/2161831" target="_blank" rel="noopener" onclick="event.stopPropagation()">#2161831</a>
             </td>
@@ -5645,7 +5645,7 @@ New core106 firmwares are in commit 2ab4ce216003 (&quot;iwlwifi: add Bz/Sc FW fo
                             </div>
                             <div class="meta-item"><strong>Last Activity:</strong> <span>tags: amd64 apport-bug kernel-daily-bug linux-firmware-daily-bug resolute wayland-session by ubuntu-kernel-bot</span></div>
                             <div class="meta-item">
-                                <strong>Heat:</strong> <span>— (Cold (Inactive 122d · Undecided importance))</span>
+                                <strong>Heat:</strong> <span>— (Cold (Inactive 123d · Undecided importance))</span>
                             </div>
                             
                             <div class="meta-item"><strong>Open Series:</strong> <span>None (distro only)</span></div>
